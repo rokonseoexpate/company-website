@@ -116,7 +116,7 @@
                                                         </div>
                                                         <div class="list-group">
                                                             <a class="list-group-item d-flex"
-                                                                href="digital_marketing.html">
+                                                                href="digital-marketing">
                                                                 <div><i class="fa-solid fa-chart-pie"></i></div>
                                                                 <div>
                                                                     <h5>Digital Marketing</h5>
@@ -127,7 +127,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="traning.html">
+                                                            <a class="list-group-item d-flex" href="traning">
                                                                 <div><i class="fa-solid fa-money-check-dollar"></i>
                                                                 </div>
                                                                 <div>
@@ -140,7 +140,7 @@
                                                     </div>
                                                     <div class="booknowbtn text-center mb-4">
                                                         <div class="">
-                                                            <a type="submit" class=" btn" href="services.html">More
+                                                            <a type="submit" class="btn" href="services">More
                                                                 Services</a>
                                                         </div>
                                                     </div>
@@ -293,11 +293,11 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="history.html">History</a></li>
+                                        <li><a class="dropdown-item" href="history">History</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="contact">Contact</a></li>
+                                        <li><a class="dropdown-item" href=" ">Contact</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>

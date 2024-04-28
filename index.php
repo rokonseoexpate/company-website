@@ -21,7 +21,7 @@
                 </div>
                 <div class="top-body-button pt-3">
                     <div class="d-flex gap-3">
-                        <a type="button" href="contact.html">Services</a>
+                        <a type="button" href="contact">Services</a>
                         <a type="button" href="#">Portfolio</a>
                     </div>
                 </div>
