@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="home.html">
+                        <a class="navbar-brand" href="index">
                             <img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="" height="auto">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -64,7 +64,7 @@
                                                     <div class="col-lg-4 col-sm-6 py-4">
                                                         <div class="list-group">
                                                             <a class="list-group-item d-flex"
-                                                                href="web_development.html">
+                                                                href="web-development">
                                                                 <div><i class="fa-brands fa-webflow"></i></div>
                                                                 <div>
                                                                     <h5>Web Development</h5>
@@ -76,7 +76,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="photo_editor.html">
+                                                            <a class="list-group-item d-flex" href="photo-editor">
                                                                 <div><i class="fa-solid fa-paintbrush"></i></div>
                                                                 <div>
                                                                     <h5>Graphic Design</h5>
@@ -89,7 +89,7 @@
                                                         </div>
                                                         <div class="list-group">
                                                             <a class="list-group-item d-flex"
-                                                                href="content_writing.html">
+                                                                href="content-writing">
                                                                 <div><i class="fa-solid fa-book-open"></i></div>
                                                                 <div>
                                                                     <h5>Content Writing</h5>
@@ -104,7 +104,7 @@
                                                     <div class="col-lg-4 col-sm-6 py-4">
                                                         <div class="list-group">
                                                             <a class="list-group-item d-flex"
-                                                                href="app_development.html">
+                                                                href="app-development">
                                                                 <div><i class="fa-solid fa-mobile-screen"></i></div>
                                                                 <div>
                                                                     <h5>Mobile App Development</h5>
