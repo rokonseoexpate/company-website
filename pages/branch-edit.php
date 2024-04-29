@@ -3,6 +3,7 @@
     ob_start();
     $content = ob_get_clean();
     include '../layouts/master.php';
+    include '../controller/backend/branch.php';
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
@@ -12,7 +13,7 @@
             <h1>Update list</h1>
             <a href="branch-list.php" class="btn btn-sm btn-info">View List</a>
         </div>
-        <form>
+        <form action="" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="name">Branch</label>
                 <input type="text" class="form-control" id="name" placeholder="Branch">

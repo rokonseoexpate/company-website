@@ -1,12 +1,11 @@
 <?php
-    $title = "Add new page";
+    $title = "Branch list";
     ob_start();
     $content = ob_get_clean();
     include '../layouts/master.php';
+    include '../controller/backend/branch.php';
 ?>
-
 <div class="content-wrapper p-3" style="min-height: 485px;">
-
     <div class="card px-3">
         <div class="d-flex  justify-content-between align-items-center">
             <h1>Branch list</h1>

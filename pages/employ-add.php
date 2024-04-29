@@ -12,38 +12,38 @@
             <h1>Add New Employ</h1>
             <a href="employ-list.php" class="btn btn-sm btn-info">View List</a>
         </div>
-        <form>
+        <form action="" method="POST" enctype="multipart/form-data">
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Name">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                 </div>
                 <div class="form-group col-md-6">
                 <label for="designation">Designation</label>
-                <input type="text" class="form-control" id="designation" placeholder="Designation">
+                <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="branch">Branch</label>
-                    <select id="branch" class="form-control">
+                    <select id="branch" class="form-control" name="branch">
                         <option selected>Choose...</option>
                         <option>...</option>
                     </select>
                 </div>
                 <div class="form-group col-md-4">
                     <label for="ein">EIN No</label>
-                    <input type="number" class="form-control" id="ein" placeholder="Ein No">
+                    <input type="number" class="form-control" id="ein_no" name="image" placeholder="Ein No">
                 </div>
                 
                 <div class="form-group col-md-2">
                     <label for="team">Team No</label>
-                    <input type="text" class="form-control" id="team" placeholder="Team No">
+                    <input type="text" class="form-control" id="team_no" name="image" placeholder="Team No">
                 </div>
 
                 <div class="form-group">
                     <label for="image">Image</label>
-                    <input type="file" class="form-control-file" id="image" placeholder="image">
+                    <input type="file" class="form-control-file" id="image" name="image" placeholder="image">
                 </div>
             </div>
             <button type="submit" class="btn btn-primary my-3">Create</button>

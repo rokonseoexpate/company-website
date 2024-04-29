@@ -12,7 +12,7 @@
             <h1>Update Employ</h1>
             <a href="employ-list.php" class="btn btn-sm btn-info">View List</a>
         </div>
-        <form>
+        <form action="" method="POST" enctype="multipart/form-data">
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="name">Name</label>
