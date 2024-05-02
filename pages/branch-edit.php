@@ -3,7 +3,7 @@
     ob_start();
     $content = ob_get_clean();
     include '../layouts/master.php';
-    include '../controller/backend/branch.php';
+    require_once '../config/dbconnect.php';
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
@@ -26,7 +26,7 @@
                 <label for="image">Image</label>
                 <input type="file" class="form-control-file" id="image" placeholder="image">
             </div>
-            <button type="submit" class="btn btn-primary my-3">Create</button>
+            <button type="submit" class="btn btn-primary my-3">Update</button>
         </form>
     </div>
 

@@ -3,8 +3,9 @@
     ob_start();
     $content = ob_get_clean();
     include '../layouts/master.php';
-    include '../controller/backend/branch.php';
+    require_once '../config/dbconnect.php';
 ?>
+
 <div class="content-wrapper p-3" style="min-height: 485px;">
     <div class="card px-3">
         <div class="d-flex  justify-content-between align-items-center">
@@ -22,16 +23,25 @@
                 </tr>
             </thead>
             <tbody>
+                <?php
+                    $qry = "SELECT * FROM branches";
+                    if ($result = $conn ->query($qry)) {
+                        while ($row = $result -> fetch_assoc()) {  
+                ?>
                 <tr>
-                    <th>1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>Otto</td>
+                    <th><?php echo $row['id']; ?></th>
+                    <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['map']; ?></td>
+                    <td><?php echo $row['image']; ?></td>
                     <td class="text-right">
-                        <a href="branch-edit.php" class="btn btn-sm btn-info">Edit</a>
-                        <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                        <a href="branch-edit.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
+                        <a href="../controller/backend/branch.php?id=<?php echo  $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
                     </td>
                 </tr>
+                <?php
+                        } 
+                    } 
+                ?>  
             </tbody>
         </table>
     </div>
