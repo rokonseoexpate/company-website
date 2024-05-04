@@ -29,11 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
     if($num > 0) { 
         $_SESSION['username'] = $username;
-        header('Location: dashboard');
+        header('Location: dashboard.php');
     } 
     else { 
         $_SESSION['login_error'] = "Invalid username or password";
-        header('Location: login');
+        header('Location: login.php');
         exit();
     } 
 }

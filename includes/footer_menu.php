@@ -3,7 +3,7 @@
 			<div class="row">
 				<div class="col-sm-3 contact_info">
 					<div class="">
-						<h5 class="mb-4"><a class="navbar-brand" href="home.html"><img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="" height="auto"></a></h5>		
+						<h5 class="mb-4"><a class="navbar-brand" href="index"><img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="" height="auto"></a></h5>		
 					</div>
 					<div class="address d-flex gap-3">
 						<p>Diving Into Technology <br> ISO 9001 & 27001 Certified</p>
@@ -19,16 +19,16 @@
 				<div class="col-sm-3 contact_info">
 					<div class="about_info ">
 						<div class=" ">
-							<p><a href="about.html">About Us</a></p>
+							<p><a href="about">About Us</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="award.html">Awards</a></p>
+							<p><a href="award">Awards</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="history.html">History</a></p>
+							<p><a href="history">History</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="contact.html">Contact</a></p>
+							<p><a href="contact">Contact</a></p>
 						</div>
 						<div class="">
 							<p><a href="#">Notice</a></p>
@@ -44,7 +44,7 @@
 							<p><a href="#">Hire </a></p>
 						</div>
 						<div class=" ">
-							<p><a href="services.html">Services </a></p>
+							<p><a href="services">Services </a></p>
 						</div>
 						<div class=" ">
 							<p><a href="#">Products </a></p>
@@ -56,7 +56,7 @@
 							<p><a href="#">Expertise</a></p>
 						</div>
 						<div class="">
-							<p><a href="domain_hosting.html">Domain & Hosting</a></p>
+							<p><a href="domain-hosting">Domain & Hosting</a></p>
 						</div>
 					</div>
 				</div>
@@ -109,28 +109,28 @@
 					<div class="about_info ">
 						<h5>Services</h5>
 						<div class="pt-2 ">
-							<p><a href="app_development.html">Mobile App Development</a></p>
+							<p><a href="app-development">Mobile App Development</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="web_development.html">Web Development</a></p>
+							<p><a href="web-development">Web Development</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="software_development.html">Software Development</a></p>
+							<p><a href="software-development">Software Development</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="digital_marketing.html">Digital Marketing</a></p>
+							<p><a href="digital-marketing">Digital Marketing</a></p>
 						</div>
 						<div class="">
-							<p><a href="seo_service.html">SEO</a></p>
+							<p><a href="seo-service">SEO</a></p>
 						</div>
 						<div class="">
-							<p><a href="photo_editor.html">Graphic Design</a></p>
+							<p><a href="photo-editor">Graphic Design</a></p>
 						</div>
 						<div class="">
-							<p><a href="content_writing.html">Content Writing</a></p>
+							<p><a href="content-writing">Content Writing</a></p>
 						</div>
 						<div class="">
-							<p><a href="traning.html">Professional Training</a></p>
+							<p><a href="traning">Professional Training</a></p>
 						</div>
 						<div class="">
 							<p><a href="#">Outsourcing</a></p>
@@ -167,7 +167,7 @@
 					<div class="about_info ">
 						<h5>Technologies</h5>
 						<div class=" pt-2">
-							<p><a href="app_development.html">Mobile App </a></p>
+							<p><a href="app-development">Mobile App </a></p>
 						</div>
 						<div class=" ">
 							<p><a href="#">Front-end </a></p>

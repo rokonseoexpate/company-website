@@ -52,6 +52,24 @@
                 </li>
 
                 <li class="nav-item">
+                    <a href="branch-list.php" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>
+                            Branch
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="employ-list.php" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>
+                            Employ
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a href="changePassword" class="nav-link">
                         <i class="nav-icon fas fa-parking"></i>
                         <p>
