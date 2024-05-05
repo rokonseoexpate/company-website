@@ -62,14 +62,38 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="employ-list.php" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
+                    <a href="employee-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'employee-list.php' || basename($_SERVER['PHP_SELF']) == 'employee-add.php'|| basename($_SERVER['PHP_SELF']) == 'employee-edit.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-user-astronaut"></i>
                         <p>
-                            Employ
+                            Employee
                         </p>
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a href="job-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'job-list.php' || basename($_SERVER['PHP_SELF']) == 'job-add.php'|| basename($_SERVER['PHP_SELF']) == 'job-edit.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-briefcase"></i>
+                        <p>
+                            Jobs
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="department-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'department-list.php' || basename($_SERVER['PHP_SELF']) == 'department-add.php'|| basename($_SERVER['PHP_SELF']) == 'department-edit.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-building"></i>
+                        <p>
+                            Departments
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="notice-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'notice-list.php' || basename($_SERVER['PHP_SELF']) == 'notice-add.php'|| basename($_SERVER['PHP_SELF']) == 'notice-edit.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-bell"></i>
+                        <p>
+                            Notices
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="changePassword.php" class="nav-link">
                         <i class="nav-icon fas fa-parking"></i>
