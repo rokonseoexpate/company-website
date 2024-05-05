@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Apr 28, 2024 at 04:39 AM
--- Server version: 8.0.30
--- PHP Version: 8.1.10
+-- Host: 127.0.0.1
+-- Generation Time: May 05, 2024 at 05:37 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,11 +24,52 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `branches`
+--
+
+CREATE TABLE `branches` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `map` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `branches`
+--
+
+INSERT INTO `branches` (`id`, `name`, `map`, `image`) VALUES
+(1, 'Cameron Clark', 'Sed est voluptatum r', 'Nihil dicta eum magn'),
+(2, 'Urielle Serrano', 'Expedita tempore un', 'Qui ipsum enim praes'),
+(3, 'Nicole Vasquez', 'Aliquid fugiat ex h', 'Praesentium fugit a'),
+(4, 'Cassidy Williams', 'Nulla sunt ea volupt', 'Est eos sunt qui tot'),
+(5, 'Madeline Wall', 'Officia quam harum d', 'Magnam do non mollit'),
+(6, 'Imani Savage', 'Reprehenderit volupt', 'Illum nulla dolores');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `employs`
+--
+
+CREATE TABLE `employs` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `designation` varchar(255) NOT NULL,
+  `branch` varchar(255) NOT NULL,
+  `ein_no` int(11) NOT NULL,
+  `team_no` int(11) NOT NULL,
+  `image` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -45,9 +86,15 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 --
 
 --
--- Indexes for table `users`
+-- Indexes for table `branches`
 --
-ALTER TABLE `users`
+ALTER TABLE `branches`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `employs`
+--
+ALTER TABLE `employs`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -55,10 +102,16 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `branches`
 --
-ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `branches`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `employs`
+--
+ALTER TABLE `employs`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
