@@ -31,12 +31,17 @@ if (isset($_POST['submit'])) {
     <div class="content-wrapper p-3" style="min-height: 485px;">
 
     <div class="card px-3">
-        <div class="d-flex  justify-content-between align-items-center">
-            <h1><?php echo $title; ?></h1>
-            <a href="branch-list.php" class="btn btn-sm btn-info">View List</a>
-        </div>
+        <div class="d-flex justify-content-between align-items-center">
 
-            <form action="" method="POST" enctype="multipart/form-data" id="submit">
+                <h1><?php echo $title; ?></h1>
+
+
+                <a href="branch-list.php" class="btn btn-primary">Branch List</a>
+
+            </div>
+
+
+        <form action="" method="POST" enctype="multipart/form-data" id="submit">
                 <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
@@ -65,7 +70,7 @@ if (isset($_POST['submit'])) {
                 </div>
             </form>
 
-
+    </div>
     </div>
 
 </div>
