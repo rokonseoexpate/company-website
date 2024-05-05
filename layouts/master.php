@@ -42,6 +42,7 @@ $username = $_SESSION['username'];
     <!-- summernote -->
     <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
     <link rel="stylesheet" href="../assets/plugins/summernote/summernote-bs4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -103,10 +104,32 @@ $username = $_SESSION['username'];
     <script src="../assets/js/pages/dashboard.js"></script>
 
     <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         $('.dropify').dropify();
     </script>
+
+    <?php if (isset($successMessage)): ?>
+        <script>
+            iziToast.success({
+                title: 'Success',
+                position:'topRight',
+                message: '<?php echo $successMessage; ?>',
+            });
+        </script>
+    <?php endif; ?>
+
+    <?php if (isset($errorMessage)): ?>
+        <script>
+            iziToast.error({
+                title: 'Error',
+                position:'topRight',
+                message: '<?php echo $errorMessage; ?>',
+            });
+        </script>
+    <?php endif; ?>
+
 </body>
 
 </html>
