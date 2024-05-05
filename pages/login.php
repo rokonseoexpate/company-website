@@ -3,7 +3,7 @@ session_start();
 
 // Redirect to dashboard if user is already logged in
 if (isset($_SESSION['username'])) {
-    header('Location: dashboard');
+    header('Location: dashboard.php');
     exit();
 }
 ?>

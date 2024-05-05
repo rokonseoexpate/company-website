@@ -15,6 +15,9 @@ class DB_con {
             die("Connection Failed: " . mysqli_connect_error());
         }
     }
+    public function get_connection() {
+        return $this->conn;
+    }
 
     public function branches($name, $image, $map) {
         $sql = "INSERT INTO branches (name, image, map) VALUES ('$name', '$image', '$map')";
