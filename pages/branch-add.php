@@ -40,10 +40,7 @@
                     <button type="submit" class="btn btn-primary my-3" name="submit">Create</button>
                 </div>
             </form>
-
-
     </div>
-
 </div>
 
 <?php

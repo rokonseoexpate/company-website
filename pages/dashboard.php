@@ -72,9 +72,7 @@
                                 style="font-family: &quot;Font Awesome 5 Free&quot;, Bangla506, sans-serif;"></i></a>
                     </div>
                 </div>
-
                 <div class="col-lg-3 col-6">
-
                     <div class="small-box bg-danger">
                         <div class="inner">
                             <h3>65</h3>
@@ -91,5 +89,4 @@
             </div>
         </div>
     </section>
-
 </div>

@@ -4,7 +4,7 @@ session_start();
 
 // Check if user is logged in, otherwise redirect to login page
 if (!isset($_SESSION['username'])) {
-    header('Location: login');
+    header('Location: login.php');
     exit();
 }
 
@@ -37,6 +37,9 @@ $username = $_SESSION['username'];
     <link rel="stylesheet" href="../assets/css/adminlte.min.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Daterange picker -->
     <link rel="stylesheet" href="../assets/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
