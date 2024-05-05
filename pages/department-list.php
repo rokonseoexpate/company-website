@@ -1,5 +1,5 @@
 <?php
-$title = "Branch list";
+$title = "Department list";
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -15,7 +15,7 @@ $conn = $db->get_connection();
                 <h1><?php echo $title; ?></h1>
             </div>
             <div>
-                <a href="branch-add.php" class="btn btn-primary">Create Branch</a>
+                <a href="department-add.php" class="btn btn-primary">Create Department</a>
             </div>
         </div>
 
@@ -25,15 +25,14 @@ $conn = $db->get_connection();
                 <tr>
                     <th>#</th>
                     <th>Name</th>
-                    <th>Map</th>
-                    <th>Image</th>
+                    <th>Department Employee</th>
                     <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php
                 $i = 1;
-                $qry = "SELECT * FROM branches";
+                $qry = "SELECT * FROM departments ORDER BY id DESC";
                 $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
 
                 if ($result) {
@@ -42,10 +41,23 @@ $conn = $db->get_connection();
                         <tr>
                             <td><?php echo $i++; ?></td>
                             <td><?php echo $row['name']; ?></td>
-                            <td><?php echo $row['map']; ?></td>
-                            <td><img src="<?php echo $row['image']; ?>" alt="" class="img-fluid" width="250px"></td>
+                            <td>
+                                <?php
+                                // Decode the JSON string and retrieve employee names
+                                $employee_ids = json_decode($row['employee_id']);
+                                foreach ($employee_ids as $employee_id) {
+                                    $employee_query = "SELECT name FROM employees WHERE id = $employee_id";
+                                    $employee_result = mysqli_query($conn, $employee_query);
+                                    $employee_row = mysqli_fetch_assoc($employee_result);
+                                    // Display employee names as badges
+                                    ?>
+                                    <span class="badge badge-primary"><?php echo $employee_row['name']; ?></span>
+                                    <?php
+                                }
+                                ?>
+                            </td>
                             <td class="text-right">
-                                <a href="branch-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
+                                <a href="department-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
                                 <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
                             </td>
                         </tr>
@@ -58,11 +70,12 @@ $conn = $db->get_connection();
                 // Delete functionality
                 if (isset($_GET['delete_id'])) {
                     $delete_id = $_GET['delete_id'];
-                    $sql_delete = "DELETE FROM branches WHERE id = $delete_id";
+                    $sql_delete = "DELETE FROM departments WHERE id = $delete_id";
 
                     if (mysqli_query($conn, $sql_delete)) {
                         // Display success message
-                        $successMessage = "Record deleted successfully!";
+                        $successMessage = "Departments deleted successfully!";
+                        echo $successMessage;
 
                         // Refresh the page after deletion
                         header("Location: $_SERVER[PHP_SELF]");

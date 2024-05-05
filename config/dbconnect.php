@@ -1,14 +1,31 @@
 <?php
 
-$server = "localhost";
-$user = "root";
-$password = "";
-$db = "php_admin_panel";
+class DB_con {
+    private $conn;
 
-$conn = mysqli_connect($server,$user,$password,$db);
+    function __construct() {
+        $server = "localhost";
+        $user = "root";
+        $password = "";
+        $db = "php_admin_panel";
 
-if(!$conn) {
-    die("Connection Failed:".mysqli_connect_error());
+        $this->conn = mysqli_connect($server, $user, $password, $db);
+
+        if (!$this->conn) {
+            die("Connection Failed: " . mysqli_connect_error());
+        }
+    }
+    public function get_connection() {
+        return $this->conn;
+    }
+
+    public function branches($name, $image, $map) {
+        $sql = "INSERT INTO branches (name, image, map) VALUES ('$name', '$image', '$map')";
+        $result = mysqli_query($this->conn, $sql);
+        return $result;
+    }
+
+    // Add other methods for database operations here
 }
 
 ?>

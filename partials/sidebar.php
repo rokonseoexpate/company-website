@@ -19,6 +19,10 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item menu-open">
                     <a href="dashboard" class="nav-link active">
+                <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                <li class="nav-item">
+                    <a href="dashboard.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'dashboard.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -26,6 +30,7 @@
                     </a>
                 </li>
 
+ 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
@@ -36,11 +41,11 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="all-pages" class="nav-link">
+                            <a href="all-pages.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>All Pages </p>
                             </a>
-                            <a href="create-page" class="nav-link">
+                            <a href="create-page.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add New Page </p>
                             </a>
@@ -50,7 +55,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="branch-list.php" class="nav-link">
+                    <a href="branch-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'branch-list.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Branch
@@ -79,14 +84,40 @@
                 <li class="nav-item">
                     <a href="employ-list.php" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
+                    <a href="employee-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'employee-list.php' || basename($_SERVER['PHP_SELF']) == 'employee-add.php'|| basename($_SERVER['PHP_SELF']) == 'employee-edit.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-user-astronaut"></i>
                         <p>
-                            Employ
+                            Employee
                         </p>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="changePassword" class="nav-link">
+                    <a href="job-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'job-list.php' || basename($_SERVER['PHP_SELF']) == 'job-add.php'|| basename($_SERVER['PHP_SELF']) == 'job-edit.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-briefcase"></i>
+                        <p>
+                            Jobs
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="department-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'department-list.php' || basename($_SERVER['PHP_SELF']) == 'department-add.php'|| basename($_SERVER['PHP_SELF']) == 'department-edit.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-building"></i>
+                        <p>
+                            Departments
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="notice-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'notice-list.php' || basename($_SERVER['PHP_SELF']) == 'notice-add.php'|| basename($_SERVER['PHP_SELF']) == 'notice-edit.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-bell"></i>
+                        <p>
+                            Notices
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="changePassword.php" class="nav-link">
                         <i class="nav-icon fas fa-parking"></i>
                         <p>
                             Change Password
@@ -95,7 +126,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="logout" class="nav-link">
+                    <a href="logout.php" class="nav-link">
                         <i class="nav-icon fas fa-sign-out-alt"></i>
                         <p>
                             Logout
