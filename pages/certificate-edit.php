@@ -2,6 +2,8 @@
 $title = "Update Certificates";
 ob_start();
 require_once '../config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];

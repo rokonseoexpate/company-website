@@ -3,6 +3,8 @@ $title = "Add Office Location";
 ob_start();
 
 require_once '../config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
@@ -12,10 +14,10 @@ if (isset($_POST['submit'])) {
     if (empty($name)) {
         echo "<script>alert('Name field is required');</script>";
         echo "<script>window.location.href='office-add.php';</script>";
-        exit; 
+        exit;
     }
 
-    if(empty($address)) {
+    if (empty($address)) {
         echo "<script>alert('Address field is required');</script>";
         echo "<script>window.location.href='office-add.php';</script>";
         exit;
@@ -26,7 +28,7 @@ if (isset($_POST['submit'])) {
 
     if ($result === TRUE) {
         header("Location: office.php");
-        exit; 
+        exit;
     } else {
         echo "Error: " . $query . "<br>" . $conn->error;
     }

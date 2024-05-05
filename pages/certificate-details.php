@@ -3,6 +3,8 @@ $title = "Certificates Details";
 ob_start();
 
 require_once '../config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -39,7 +41,7 @@ if (isset($_GET['id'])) {
                 </tr>
                 <tr>
                     <th>Image</th>
-                    <td> <img src="<?php echo $newImagePath ?>" alt=""> </td>
+                    <td> <img class="w-100" src="<?php echo $newImagePath ?>" alt=""> </td>
                 </tr>
             </tbody>
         </table>

@@ -73,7 +73,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="certificates.php" class="nav-link">
+                    <a href="office.php" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Our Office
@@ -82,8 +82,6 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="employ-list.php" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
                     <a href="employee-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'employee-list.php' || basename($_SERVER['PHP_SELF']) == 'employee-add.php'|| basename($_SERVER['PHP_SELF']) == 'employee-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-user-astronaut"></i>
                         <p>

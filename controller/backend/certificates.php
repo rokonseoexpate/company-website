@@ -1,5 +1,7 @@
 <?php
 require_once '../../config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 
 //  =========  Add Data ===================
 if (isset($_POST['submit'])) {
@@ -38,22 +40,3 @@ if (isset($_POST['submit'])) {
 
 
 
-
-//  =========  Edit Data ==================
-
-
-
-//  =========  Delete Data ===================
-
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-    $sql = "DELETE FROM branches WHERE id = $id";
-
-    if ($conn->query($sql) === TRUE) {
-        $referrer = $_SERVER['HTTP_REFERER'];
-        header("Location: $referrer");
-    } else {
-        echo "Error deleting record: " . $conn->error;
-    }
-}
-$conn->close();
