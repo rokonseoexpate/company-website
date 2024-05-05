@@ -40,6 +40,7 @@ $username = $_SESSION['username'];
     <!-- Daterange picker -->
     <link rel="stylesheet" href="../assets/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
+    <link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
     <link rel="stylesheet" href="../assets/plugins/summernote/summernote-bs4.min.css">
 </head>
 
@@ -65,13 +66,14 @@ $username = $_SESSION['username'];
     </div>
     <!-- ./wrapper -->
 
+
     <!-- jQuery -->
     <script src="../assets/plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
-    $.widget.bridge('uibutton', $.ui.button)
+        $.widget.bridge('uibutton', $.ui.button)
     </script>
     <!-- Bootstrap 4 -->
     <script src="../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -99,6 +101,12 @@ $username = $_SESSION['username'];
 
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="../assets/js/pages/dashboard.js"></script>
+
+    <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+
+    <script>
+        $('.dropify').dropify();
+    </script>
 </body>
 
 </html>

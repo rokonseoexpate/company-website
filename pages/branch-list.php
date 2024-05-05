@@ -24,12 +24,13 @@
             </thead>
             <tbody>
                 <?php
+                   $i = 1;
                     $qry = "SELECT * FROM branches";
                     if ($result = $conn ->query($qry)) {
                         while ($row = $result -> fetch_assoc()) {  
                 ?>
                 <tr>
-                    <th><?php echo $row['id']; ?></th>
+                    <th><?php echo $i++ ?></th>
                     <td><?php echo $row['name']; ?></td>
                     <td><?php echo $row['map']; ?></td>
                     <td><?php echo $row['image']; ?></td>
