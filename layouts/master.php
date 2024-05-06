@@ -20,8 +20,7 @@ $username = $_SESSION['username'];
     <title><?php echo $title; ?></title>
 
     <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
@@ -138,9 +137,8 @@ $username = $_SESSION['username'];
         $('.dropify').dropify();
     </script>
 
-    <?php if (isset($successMessage)): ?>
+    <?php if (isset($successMessage)) : ?>
         <script>
-
             iziToast.success({
                 title: 'Success',
                 position: 'topRight',
@@ -149,22 +147,24 @@ $username = $_SESSION['username'];
         </script>
     <?php endif; ?>
 
-    <?php if (isset($errorMessage)): ?>
+    <?php if (isset($errorMessage)) : ?>
         <script>
             iziToast.error({
                 title: 'Error',
-                position:'topRight',
+                position: 'topRight',
                 message: '<?php echo $errorMessage; ?>',
             });
         </script>
     <?php endif; ?>
 
     <script>
-        $(function () {
+        $(function() {
             $('.select2').select2()
 
             $("#example1").DataTable({
-                "responsive": true, "lengthChange": false, "autoWidth": false,
+                "responsive": true,
+                "lengthChange": false,
+                "autoWidth": false,
                 "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
             }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
             $('#example2').DataTable({
@@ -179,9 +179,18 @@ $username = $_SESSION['username'];
         });
     </script>
     <script>
-        $(function () {
+        $(function() {
             // Summernote
             $('#summernote').summernote({
+                placeholder: 'Enter your Inquiry here...',
+                height: 300,
+            });
+        })
+    </script>
+
+    <script>
+        $(function() {
+            $('#shortDescription').summernote({
                 placeholder: 'Enter your Inquiry here...',
                 height: 300,
             });
