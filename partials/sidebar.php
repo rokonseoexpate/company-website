@@ -17,10 +17,8 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                <li class="nav-item menu-open">
-                    <a href="dashboard" class="nav-link active">
-                <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+
+
                 <li class="nav-item">
                     <a href="dashboard.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'dashboard.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -28,6 +26,29 @@
                             Dashboard
                         </p>
                     </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-history"></i>
+                        <p>
+                            History
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="all-pages.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>All Pages </p>
+                            </a>
+                            <a href="create-page.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Add New Page </p>
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
 
                 <li class="nav-item">
