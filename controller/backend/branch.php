@@ -44,5 +44,29 @@
     }
 
 }
-    $conn->close();
-?>
+ 
+
+
+
+
+
+
+
+//  =========  Edit Data ==================
+
+
+
+//  =========  Delete Data ===================
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $sql = "DELETE FROM branches WHERE id = $id";
+
+    if ($conn->query($sql) === TRUE) {
+        $referrer = $_SERVER['HTTP_REFERER'];
+        header("Location: $referrer");
+    } else {
+        echo "Error deleting record: " . $conn->error;
+    }
+}
+$conn->close();
