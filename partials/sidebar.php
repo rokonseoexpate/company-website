@@ -117,7 +117,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="branch-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'branch-list.php') ? 'active' : ''; ?>">
+                    <a href="branch-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'branch-list.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Branch
@@ -127,7 +127,7 @@
 
                 <li class="nav-item">
                     <a href="certificates.php" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
+                        <i class="nav-icon fas fa-certificate"></i>
                         <p>
                             Certificate
                         </p>
@@ -136,7 +136,7 @@
 
                 <li class="nav-item">
                     <a href="office.php" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
+                        <i class="nav-icon fas fa-building-circle-check"></i>
                         <p>
                             Our Office
                         </p>
@@ -144,7 +144,34 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="employee-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'employee-list.php' || basename($_SERVER['PHP_SELF']) == 'employee-add.php'|| basename($_SERVER['PHP_SELF']) == 'employee-edit.php') ? 'active' : ''; ?>">
+                    <a href="trusted.php" class="nav-link">
+                        <i class="nav-icon fas fa-copy"></i>
+                        <p>
+                            Trusted By
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="award.php" class="nav-link">
+                        <i class="nav-icon fas fa-award"></i>
+                        <p>
+                            Award
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="blogs.php" class="nav-link">
+                        <i class="nav-icon fas fa-blog"></i>
+                        <p>
+                            Blog
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="employee-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'employee-list.php' || basename($_SERVER['PHP_SELF']) == 'employee-add.php' || basename($_SERVER['PHP_SELF']) == 'employee-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-user-astronaut"></i>
                         <p>
                             Employee
@@ -153,7 +180,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="job-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'job-list.php' || basename($_SERVER['PHP_SELF']) == 'job-add.php'|| basename($_SERVER['PHP_SELF']) == 'job-edit.php') ? 'active' : ''; ?>">
+                    <a href="job-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'job-list.php' || basename($_SERVER['PHP_SELF']) == 'job-add.php' || basename($_SERVER['PHP_SELF']) == 'job-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-briefcase"></i>
                         <p>
                             Jobs
@@ -161,7 +188,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="department-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'department-list.php' || basename($_SERVER['PHP_SELF']) == 'department-add.php'|| basename($_SERVER['PHP_SELF']) == 'department-edit.php') ? 'active' : ''; ?>">
+                    <a href="department-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'department-list.php' || basename($_SERVER['PHP_SELF']) == 'department-add.php' || basename($_SERVER['PHP_SELF']) == 'department-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-building"></i>
                         <p>
                             Departments
@@ -169,7 +196,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="notice-list.php"  class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'notice-list.php' || basename($_SERVER['PHP_SELF']) == 'notice-add.php'|| basename($_SERVER['PHP_SELF']) == 'notice-edit.php') ? 'active' : ''; ?>">
+                    <a href="notice-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'notice-list.php' || basename($_SERVER['PHP_SELF']) == 'notice-add.php' || basename($_SERVER['PHP_SELF']) == 'notice-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-bell"></i>
                         <p>
                             Notices

@@ -39,7 +39,7 @@ if (isset($_GET['id'])) {
             <h1>Certificates</h1>
             <a href="certificate-add.php" class="btn btn-sm btn-info"><i class="fa-solid fa-plus"></i></a>
         </div>
-        <table class="table table-striped table-bordered">
+        <table class="table table-striped table-bordered" id="example1">
             <thead>
                 <tr class="text-center">
                     <th>#</th>
