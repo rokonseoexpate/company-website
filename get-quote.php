@@ -1,5 +1,5 @@
 <?php
-$title = "Free Trial";
+$title = "Get Quote";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -26,13 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         for ($i = 0; $i < $fileCount; $i++) {
             $fileName = $_FILES['files']['name'][$i];
             $fileTmpName = $_FILES['files']['tmp_name'][$i];
+            $fileName = str_replace(' ', '-', $fileName); // Replace spaces with hyphens
+            $fileName = time() . '-' . $fileName; // Add timestamp to make it unique
             $files[] = $fileName;
             // You can handle file upload here
             move_uploaded_file($fileTmpName, 'uploads/' . $fileName);
         }
     }
-
-    // You can perform further validation and processing here
 
     // Example: Insert data into database
     require_once 'config/dbconnect.php'; // Include your database connection file
@@ -69,8 +69,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_close($conn);
 } else {
     // Redirect back to the form page if accessed directly without form submission
-    $successMessage = "Form submitted successfully!";
-  
+  //  $successMessage = "Form submitted successfully!";
+
 }
 ?>
 
@@ -304,7 +304,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row">
             <p>Complete Form &  Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
             <div class="col-12">
-                <form class="row g-3 py-5 px-5">
+                <form class="row g-3" id="freeTrialForm" method="POST" action="get-quote.php" enctype="multipart/form-data">
                     <div class="col-12">
                         <label for="fullname" class="form-label">First Name & Last Name <span>*</span></label>
                         <input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name">
