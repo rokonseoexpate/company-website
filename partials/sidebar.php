@@ -28,8 +28,8 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
+                <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'history.php' || basename($_SERVER['PHP_SELF']) == 'history-journey-list.php'|| basename($_SERVER['PHP_SELF']) == 'history-gallery-list.php'|| basename($_SERVER['PHP_SELF']) == 'history-projects-list.php') ? 'menu-open' : ''; ?>">
+                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history.php' || basename($_SERVER['PHP_SELF']) == 'history-journey-list.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-history"></i>
                         <p>
                             History
@@ -38,18 +38,60 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="all-pages.php" class="nav-link">
+                            <a href="history.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history.php') ? 'active' : ''; ?>">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>All Pages </p>
+                                <p>History Page </p>
                             </a>
-                            <a href="create-page.php" class="nav-link">
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="history-journey-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history-journey-list.php') ? 'active' : ''; ?>">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Add New Page </p>
+                                <p>History Journey </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="history-gallery-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history-gallery-list.php') ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>History Gallery </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="history-projects-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history-projects-list.php') ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>History Projects </p>
                             </a>
                         </li>
 
                     </ul>
                 </li>
+
+                <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php' ||basename($_SERVER['PHP_SELF']) == 'portfolio-projects-add.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php'|| basename($_SERVER['PHP_SELF']) == 'portfolio-projects-list.php') ? 'menu-open' : ''; ?>">
+                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php'|| basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-code"></i>
+                        <p>
+                            Web Development
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="portfolio-category-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php') ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Portfolio Category </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="portfolio-projects-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-projects-list.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-projects-add.php') ? 'active' : ''; ?>">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Portfolio Projects </p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">

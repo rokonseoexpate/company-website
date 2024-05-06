@@ -602,7 +602,7 @@
 	<!--================================top_our_transform section end here=======================-->
 
 	<!--===========================footer part start===================================-->
-	<?php 
+<?php
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>
