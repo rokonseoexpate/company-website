@@ -258,7 +258,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!--================================photo editor sub Header section end here=======================-->
 
     <!--================================top-body section start here=======================-->
-    <section class="top-body" style="background-image: url(assets/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+    <section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
         <div class="container ">
             <div class="row">
                 <div class="col-12" style="z-index:500;">
@@ -571,7 +571,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="container">
             <div class="row">
                 <div class="PAY_IMG">
-                    <img src="assets/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
+                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
                 </div>
             </div>
         </div>

@@ -6,10 +6,10 @@ $db = new DB_con();
 $conn = $db->get_connection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $journey_id = $_POST['journey_id'];
-    $year = $_POST['year'];
-    $details = $_POST['details'];
+    // Retrieve form data and escape them
+    $journey_id = mysqli_real_escape_string($conn, $_POST['journey_id']);
+    $year = mysqli_real_escape_string($conn, $_POST['year']);
+    $details = mysqli_real_escape_string($conn, $_POST['details']);
 
     // Prepare the update query
     $update_query = "UPDATE history_journeys SET year='$year', details='$details' WHERE id='$journey_id'";
