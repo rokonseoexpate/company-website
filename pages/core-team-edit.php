@@ -98,7 +98,7 @@ if (isset($_POST['submit'])) {
                         <label for="type">Type <span class="text-danger">*</span></label>
                         <select name="type" id="type" class="form-control">
                             <option value="">Select Type</option>
-                            <option value="core_team" <?php echo $type == 'core_type' ? 'selected' : '' ?>>Core Team</option>
+                            <option value="core_team" <?php echo $type == 'core_team' ? 'selected' : '' ?>>Core Team</option>
                             <option value="advisor" <?php echo $type == 'advisor' ? 'selected' : '' ?>>Advisor</option>
                         </select>
                         <div id="typeError" class="error text-danger"></div>

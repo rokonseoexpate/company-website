@@ -13,6 +13,7 @@ if (isset($_GET['id'])) {
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
 }
+
 if (isset($_POST['submit'])) {
     $title = $_POST['title'];
     $slug = preg_replace('/[^A-Za-z0-9\-]/', '', str_replace(' ', '-', strtolower($title)));
@@ -22,7 +23,7 @@ if (isset($_POST['submit'])) {
     $blogCategoryId = $_POST['blog_category_id']; // Corrected variable name
 
     $imagePath = $row['image'];
-    $path = $imagePath; 
+    $path = $imagePath;
 
     if ($_FILES['image']['name'] != '') {
         // Handle image upload
@@ -37,19 +38,24 @@ if (isset($_POST['submit'])) {
         }
     }
 
-    // Update record in the database
-    $sql = "UPDATE blogs SET blog_category_id='$blogCategoryId', title='$title', description='$description', slug='$slug', short_description='$short_description', image='$path' WHERE id=$id"; // Corrected variable name
+    // Update record in the database using prepared statement
+    $sql = "UPDATE blogs SET blog_category_id=?, title=?, description=?, slug=?, short_description=?, image=? WHERE id=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("isssssi", $blogCategoryId, $title, $description, $slug, $short_description, $path, $id);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute()) {
         $successMessage = "Successfully updated record!";
     } else {
-        echo "Error updating record: " . $conn->error;
+        echo "Error updating record: " . $stmt->error;
     }
+
+    $stmt->close();
 
     // Redirect to the list page after updating
     header("Location: blogs.php");
     exit();
 }
+
 
 // Fetch blog categories
 $blogCategoryQuery = "SELECT * FROM blog_categories";

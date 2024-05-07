@@ -8,14 +8,13 @@ $conn = $db->get_connection();
 
 $titleErr = "";
 $description = "";
-
 if (isset($_POST['submit'])) {
     $title = $_POST['title'];
     $slug = preg_replace('/[^A-Za-z0-9\-]/', '', str_replace(' ', '-', strtolower($title)));
     $slug = trim($slug, '-') . random_int(11111, 99999);
 
     $blog_category_id = $_POST['blog_category_id'];
-    $type = $_POST['type'];
+    // $type = $_POST['type'];
     $short = $_POST['short'];
     $description = $_POST['description'];
 
@@ -31,17 +30,23 @@ if (isset($_POST['submit'])) {
             move_uploaded_file($_FILES['image']['tmp_name'], $image);
         }
 
-        $query = "INSERT INTO `blogs`(`title`, `slug`, `blog_category_id`, `type`, `short_description`, `description`, `image`) VALUES('$title', '$slug', '$blog_category_id', '$type', '$short', '$description', '$image')";
-        $result = $conn->query($query);
-
-        if ($result === TRUE) {
+        // Prepare and bind parameters for the query
+        $query = "INSERT INTO blogs (title, slug, blog_category_id, short_description, description, image) VALUES (?, ?, ?, ?, ?, ?)";
+        $stmt = $conn->prepare($query);
+        $stmt->bind_param("ssisss", $title, $slug, $blog_category_id, $short, $description, $image);
+        
+        // Execute the statement
+        if ($stmt->execute()) {
             header("Location: blogs.php");
             exit;
         } else {
-            echo "Error: " . $query . "<br>" . $conn->error;
+            echo "Error: " . $stmt->error;
         }
+
+        $stmt->close();
     }
 }
+
 
 // Fetch blog categories
 $blogCategoryQuery = "SELECT * FROM blog_categories";

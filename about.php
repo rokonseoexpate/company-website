@@ -1,6 +1,10 @@
 <?php
 $title = "Home";
 ob_start();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
 ?>
 <!--================================top-body section start here=======================-->
 <section class="top-body top_about_us" style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
@@ -190,202 +194,33 @@ ob_start();
 			</div>
 			<div class="Core_Team_members">
 				<div class="container mt-2">
+
 					<div class="row">
-						
+						<?php
+						$query = "SELECT * FROM teams WHERE type='core_team' ORDER BY order_by ASC";
+						$result = $conn->query($query);
+						foreach ($result as $team) {
+
+							$imagePath = $team['image'];
+							$imageName = basename($imagePath);
+							$newImagePath = 'uploads/' . $imageName;
+						?>
 							<div class="col-md-3 col-sm-6">
 								<div class="card card-block">
-									<img src="frontend/images/Md-Mizanur-Rahman-Managing-Director-3-scaled.jpg" alt="Md-Mizanur-Rahman">
+									<img src="<?php echo $newImagePath ?>" alt="Md-Mizanur-Rahman">
 									<div class="card-body">
-										<h5 class="card-title ">Md Mizanur Rahman</h5>
-										<p class="card-text">Managing Director</p>
+										<h5 class="card-title "><?php echo $team['name']; ?></h5>
+										<p class="card-text"><?php echo $team['designation']; ?></p>
 										<div class="d-flex gap-2" style=" justify-content:center;">
-											<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-											<a href="#"><i class="fa-brands fa-facebook"></i></a>
-											<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+											<a href="<?php echo $team['website'] ?>"><i class="fa-brands fa-wordpress"></i></a>
+											<a href="<?php echo $team['website'] ?>"><i class="fa-brands fa-facebook"></i></a>
+											<a href="<?php echo $team['website'] ?>"><i class="fa-brands fa-linkedin"></i></a>
 										</div>
 									</div>
 								</div>
 							</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Mst-Razia-Sultana-Director-1-scaled.jpg" alt="Mst-Razia-Sultana">
-								<div class="card-body">
-									<h5 class="card-title">Mst Razia Sultana</h5>
-									<p class="card-text">Director</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Shajahan-Ali-Director-Admin-1-scaled.jpg" alt="Shajahan-Ali-Director">
-								<div class="card-body">
-									<h5 class="card-title">Shajahan Ali</h5>
-									<p class="card-text">Director (Admin)</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Shakil-Ahmmed-CEO-1-scaled.jpg" alt="Shakil-Ahmmed-CEO">
-								<div class="card-body">
-									<h5 class="card-title ">Shakil Ahmmed</h5>
-									<p class="card-text">CEO</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+						<?php } ?>
 
-
-					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Md-Abdur-Razzak-CFO-1-scaled.jpg" alt="Md Abdur Razzak">
-								<div class="card-body">
-									<h5 class="card-title ">Md Abdur Razzak</h5>
-									<p class="card-text">CFO</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Atiqur-Rahman-Project-Director-1-scaled.jpg" alt="Atiqur Rahman">
-								<div class="card-body">
-									<h5 class="card-title">Atiqur Rahman</h5>
-									<p class="card-text">Project Director</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Md.-Rezwan-Rifat-Head-of-Operations-1-scaled.jpg" alt="Md. Rezwan (Rifat)">
-								<div class="card-body">
-									<h5 class="card-title">Md. Rezwan (Rifat)</h5>
-									<p class="card-text">Head of Operations</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Md-Rashed-Hossain-Head-of-HR-1-scaled.jpg" alt="Md Rashed Hossain">
-								<div class="card-body">
-									<h5 class="card-title ">Md Rashed Hossain</h5>
-									<p class="card-text">Head of HR</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row" style="justify-content: center;">
-						<div class="col-md-1"></div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Md-Rabbi-Hossain-Chief-Technical-Officer-1-scaled.jpg" alt="Md Rabbi Hossain">
-								<div class="card-body">
-									<h5 class="card-title">Md Rabbi Hossain</h5>
-									<p class="card-text">Chief Technical Officer</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Sadia-Afrin-Customer-Relationship-Manager-1-scaled.jpg" alt="Sadia Afrin">
-								<div class="card-body">
-									<h5 class="card-title">Sadia Afrin</h5>
-									<p class="card-text">Customer Relationship Manager</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Md.-Nihal-Ahmed-Head-of-Content-Writing-1-scaled.jpg" alt="Md. Nihal Ahmed">
-								<div class="card-body">
-									<h5 class="card-title">Md. Nihal Ahmed</h5>
-									<p class="card-text">Head of Content Writing</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-1"></div>
-					</div>
-					<div class="row" style="justify-content: center;">
-						<div class="col-md-3"></div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Mosaraf-Hossain-Head-of-Audit-scaled.jpg" alt="Mosaraf Hossain">
-								<div class="card-body">
-									<h5 class="card-title">Mosaraf Hossain</h5>
-									<p class="card-text">Head of Audit</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/ATM.-Meshkat-Hasan-Head-Of-Web-Development-scaled.jpg" alt="ATM. Meshkat Hasan">
-								<div class="card-body">
-									<h5 class="card-title">ATM. Meshkat Hasan</h5>
-									<p class="card-text">Head Of Web Development</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3"></div>
 					</div>
 				</div>
 			</div>
@@ -404,48 +239,30 @@ ob_start();
 			<div class="Core_Team_members">
 				<div class="container mt-2">
 					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Md.Azharul-Islam-Khan-Basudeb-Acharjee-scaled.jpg" alt="Basudeb Acharjee">
-								<div class="card-body">
-									<h5 class="card-title">Basudeb Acharjee</h5>
-									<p class="card-text">Advisor</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+						<?php
+						$query = "SELECT * FROM teams WHERE type='advisor' ORDER BY order_by ASC";
+						$result = $conn->query($query);
+						foreach ($result as $advisor) {
+
+							$imagePath = $advisor['image'];
+							$imageName = basename($imagePath);
+							$newImagePath = 'uploads/' . $imageName;
+						?>
+							<div class="col-md-3 col-sm-6">
+								<div class="card card-block">
+									<img src="<?php echo $newImagePath ?>" alt="Basudeb Acharjee">
+									<div class="card-body">
+										<h5 class="card-title"><?php echo $advisor['name'] ?></h5>
+										<p class="card-text"><?php echo $advisor['designation'] ?></p>
+										<div class="d-flex gap-2" style=" justify-content:center;">
+											<a href="<?php echo $advisor['website'] ?>"><i class="fa-brands fa-wordpress"></i></a>
+											<a href="<?php echo $advisor['facebook'] ?>"><i class="fa-brands fa-facebook"></i></a>
+											<a href="<?php echo $advisor['linkedin'] ?>"><i class="fa-brands fa-linkedin"></i></a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Md.Azharul-Islam-Khan-Advisor-scaled.jpg" alt="Md.Azharul Islam Khan">
-								<div class="card-body">
-									<h5 class="card-title">Md.Azharul Islam Khan</h5>
-									<p class="card-text">Advisor</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="card card-block">
-								<img src="frontend/images/Ragebul-Ahsan-Ripu-Advisor-809x1024.jpg" alt="Ragebul Ahsan Ripu">
-								<div class="card-body">
-									<h5 class="card-title">Ragebul Ahsan Ripu</h5>
-									<p class="card-text">Advisor</p>
-									<div class="d-flex gap-2" style=" justify-content:center;">
-										<a href="home.html"><i class="fa-brands fa-wordpress"></i></a>
-										<a href="#"><i class="fa-brands fa-facebook"></i></a>
-										<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
@@ -869,150 +686,46 @@ ob_start();
 			<div>
 				<div class=" container">
 					<div class="row">
-						<div class="col-lg-4 col-md-12 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ">
-									<img src="frontend/images/Waz Mahfil.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Waz Mahfil</h5>
-									</a>
-									<a href="#" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
+						<?php
 
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-									<img src="frontend/images/Womens Day.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">International Women's Day</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
+						$blogQuery = "SELECT blogs.*, blog_categories.name as category_name
+										FROM blogs 
+										LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+										WHERE blog_category_id = 4
+										ORDER BY blogs.id DESC";
 
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-									<img src="frontend/images/Iftar Mahfil.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
+						$blogs = $conn->query($blogQuery);
+						foreach ($blogs as $blog) {
+
+							$imagePath = $blog['image'];
+							$imageName = basename($imagePath);
+							$newImagePath = 'uploads/' . $imageName;
+						?>
+							<div class="col-lg-4 col-md-12 mb-4">
+								<div class="card" style="background: #00000091;">
+									<div class="bg-image hover-zoom ">
+										<img src="<?php echo $newImagePath ?>" class="w-100" />
+										<a href="#!">
+											<div class="mask">
+												<div class="d-flex justify-content-start align-items-end h-100">
+													<h5><span class="badge bg-success ms-2"><?php echo $blog['category_name'] ?></span></h5>
+												</div>
 											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Iftar Mahfil</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="" class="text-reset">
+											<h5 class="card-title mb-3 text-light"><?php echo $blog['title'] ?></h5>
+										</a>
+										<a href="#" class="text-reset">
+											<p class="text-danger">Read Insight →</p>
+										</a>
+									</div>
 								</div>
 							</div>
-						</div>
+						<?php } ?>
 					</div>
 
-					<div class="row">
-						<div class="col-lg-4 col-md-12 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-									<img src="frontend/images/Employye Birthday.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5>
-													<span class="badge bg-success ms-2">Culture and Engagement</span>
-												</h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Employye Birthday</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-									<img src="frontend/images/birthday-celebr.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">birthday-celebr</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-									<img src="frontend/images/blanket 21  Feb.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5>
-													<span class="badge bg-success ms-2">Culture and Engagement</span>
-												</h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">21 February</h5>
-									</a>
-									<a href="#" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -1031,150 +744,46 @@ ob_start();
 			<div>
 				<div class=" container">
 					<div class="row">
-						<div class="col-lg-4 col-md-12 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ">
-									<img src="frontend/images/Blod Donet.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">CSR</span></h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Blod Donet</h5>
-									</a>
-									<a href="#" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
+						<?php
 
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-									<img src="frontend/images/Ballo Bibaho.JPG" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">CSR</span></h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Child Marriges</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
+						$blogQuery = "SELECT blogs.*, blog_categories.name as category_name
+				FROM blogs 
+				LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+				WHERE blog_category_id = 5
+				ORDER BY blogs.id DESC";
 
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-									<img src="frontend/images/Atim and gorib sikkhtaire majhe taka bitoron.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">CSR</span></h5>
+						$blogs = $conn->query($blogQuery);
+						foreach ($blogs as $csr) {
+
+							$imagePath = $csr['image'];
+							$imageName = basename($imagePath);
+							$newImagePath = 'uploads/' . $imageName;
+						?>
+							<div class="col-lg-4 col-md-12 mb-4">
+								<div class="card" style="background: #00000091;">
+									<div class="bg-image hover-zoom ">
+										<img src="<?php echo  $newImagePath ?>" class="w-100" />
+										<a href="#!">
+											<div class="mask">
+												<div class="d-flex justify-content-start align-items-end h-100">
+													<h5><span class="badge bg-success ms-2"><?php echo $csr['category_name'] ?></span></h5>
+												</div>
 											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Atim and gorib sikkhtaire majhe taka bitoron</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="" class="text-reset">
+											<h5 class="card-title mb-3 text-light"><?php echo $csr['title'] ?></h5>
+										</a>
+										<a href="#" class="text-reset">
+											<p class="text-danger">Read Insight →</p>
+										</a>
+									</div>
 								</div>
 							</div>
-						</div>
+						<?php } ?>
 					</div>
 
-					<div class="row">
-						<div class="col-lg-4 col-md-12 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-									<img src="frontend/images/Khela Samgoggri Bitoron.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5>
-													<span class="badge bg-success ms-2">CSR</span>
-												</h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Khela Samgoggri Bitoron</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-									<img src="frontend/images/Taka Bitoron.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">CSR</span></h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Charity Fund</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-									<img src="frontend/images/Seop-Expate- blanket-distribution-thumbnail.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5>
-													<span class="badge bg-success ms-2">CSR</span>
-												</h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Seop-Expate- blanket-distribution</h5>
-									</a>
-									<a href="#" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -1193,150 +802,46 @@ ob_start();
 			<div>
 				<div class=" container">
 					<div class="row">
-						<div class="col-lg-4 col-md-12 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ">
-									<img src="frontend/images/06.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">Event</span></h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Iftar Mahfil</h5>
-									</a>
-									<a href="#" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
+						<?php
 
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-									<img src="frontend/images/05.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">Event</span></h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Udbodhoni Onusthan</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
+						$blogQuery = "SELECT blogs.*, blog_categories.name as category_name
+				FROM blogs 
+				LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+				WHERE blog_category_id = 6
+				ORDER BY blogs.id DESC";
 
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-									<img src="frontend/images/04.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">Event</span></h5>
+						$blogs = $conn->query($blogQuery);
+						foreach ($blogs as $event) {
+
+							$imagePath = $event['image'];
+							$imageName = basename($imagePath);
+							$newImagePath = 'uploads/' . $imageName;
+						?>
+							<div class="col-lg-4 col-md-12 mb-4">
+								<div class="card" style="background: #00000091;">
+									<div class="bg-image hover-zoom ">
+										<img src="<?php echo $newImagePath ?>" class="w-100" />
+										<a href="#!">
+											<div class="mask">
+												<div class="d-flex justify-content-start align-items-end h-100">
+													<h5><span class="badge bg-success ms-2"><?php $event['category_name'] ?></span></h5>
+												</div>
 											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Smart Bangladesh</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
+										</a>
+									</div>
+									<div class="card-body">
+										<a href="" class="text-reset">
+											<h5 class="card-title mb-3 text-light"><?php $event['title'] ?></h5>
+										</a>
+										<a href="#" class="text-reset">
+											<p class="text-danger">Read Insight →</p>
+										</a>
+									</div>
 								</div>
 							</div>
-						</div>
+						<?php } ?>
 					</div>
 
-					<div class="row">
-						<div class="col-lg-4 col-md-12 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-									<img src="frontend/images/03.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5>
-													<span class="badge bg-success ms-2">Event</span>
-												</h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Songbordhona Onusthan</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-									<img src="frontend/images/02.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5><span class="badge bg-success ms-2">Event</span></h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Mot Binimoy Sova</h5>
-									</a>
-									<a href="" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-lg-4 col-md-6 mb-4">
-							<div class="card" style="background: #00000091;">
-								<div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-									<img src="frontend/images/01.jpg" class="w-100" />
-									<a href="#!">
-										<div class="mask">
-											<div class="d-flex justify-content-start align-items-end h-100">
-												<h5>
-													<span class="badge bg-success ms-2">Event</span>
-												</h5>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="card-body">
-									<a href="" class="text-reset">
-										<h5 class="card-title mb-3 text-light">Women Entrepreneurs</h5>
-									</a>
-									<a href="#" class="text-reset">
-										<p class="text-danger">Read Insight →</p>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -1868,8 +1373,8 @@ ob_start();
 </section>
 <!--================================Power_Technology section end here=======================-->
 
-
 <?php
+
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>

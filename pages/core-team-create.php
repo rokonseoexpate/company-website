@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label for="type">Type <span class="text-danger">*</span></label>
                         <select name="type" id="type" class="form-control">
                             <option value="">Select Type</option>
-                            <option value="core_team" <?php if ($type == 'core_type') echo 'selected'; ?>>Core Team</option>
+                            <option value="core_team" <?php if ($type == 'core_team') echo 'selected'; ?>>Core Team</option>
                             <option value="advisor" <?php if ($type == 'advisor') echo 'selected'; ?>>Advisor</option>
                         </select>
                         <div id="typeError" class="error text-danger"></div>

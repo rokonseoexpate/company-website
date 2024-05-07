@@ -42,9 +42,10 @@ if (isset($_GET['id'])) {
             <thead>
                 <tr class="text-center">
                     <th>#</th>
+                    <th>Blog Category</th>
                     <th>Name</th>
                     <th>Image</th>
-                    <th>Description</th>
+                    <!-- <th>Description</th> -->
                     <th class="text-right px-4">Action</th>
                 </tr>
             </thead>
@@ -71,7 +72,7 @@ if (isset($_GET['id'])) {
                                 <img class="w-50" style="height: 50px;" src="<?php echo $newImagePath; ?>" alt="">
                             </td>
 
-                            <td><?php echo substr($row['description'], 1, 50); ?></td>
+                            <!-- <td><?php echo substr($row['description'], 1, 50); ?></td> -->
 
                             <td class="text-right">
                                 <a href="blog-details.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-success"><i class="fa-solid fa-eye"></i></a>
