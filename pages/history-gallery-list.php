@@ -18,7 +18,9 @@ $conn = $db->get_connection();
             <thead>
             <tr class="text-center">
                 <th>#</th>
-                <th>Type</th>
+                <th>Title</th>
+                <th>Short Title</th>
+                <th>Image Type</th>
                 <th>Image</th>
                 <th class="text-right px-4">Action</th>
             </tr>
@@ -34,6 +36,8 @@ $conn = $db->get_connection();
                         ?>
                 <tr>
                     <td><?php echo $count++; ?></td>
+                    <td><?php echo $row['title']; ?></td>
+                    <td><?php echo $row['short_title']; ?></td>
 
                     <?php
                     // Define an associative array mapping option values to names
@@ -48,9 +52,9 @@ $conn = $db->get_connection();
                     $imageTypeValue = $row['image_type'];
                     $imageTypeName = isset($imageTypeOptions[$imageTypeValue]) ? $imageTypeOptions[$imageTypeValue] : 'Unknown';
                     ?>
-                    <td><?php echo $imageTypeName ?></td>
+                    <td><?php echo $imageTypeName; ?></td>
 
-                    <td>
+                    <td width="250px">
                         <?php if ($row['image'] && file_exists($row['image'])) : ?>
                             <img src="<?php echo $row['image']; ?>" class="img-fluid w-25" alt="">
                         <?php else : ?>

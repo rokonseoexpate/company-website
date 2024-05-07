@@ -6,7 +6,9 @@ $db = new DB_con();
 $conn = $db->get_connection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $title = $_POST['image_type'];
+    $image_type = $_POST['image_type'];
+    $title = $_POST['title'];
+    $short_title = $_POST['short_title'];
 
     // Sanitize and prepare image name
     $imageName = $_FILES["image"]["name"];
@@ -20,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Upload file to server
     if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath)) {
         // Insert notice into notices table
-        $insert_query = "INSERT INTO history_galleries (image_type, image) VALUES ('$title', '$targetFilePath')";
+        $insert_query = "INSERT INTO history_galleries (title, short_title, image_type, image) VALUES ('$title', '$short_title','$image_type', '$targetFilePath')";
         if (mysqli_query($conn, $insert_query)) {
             // Redirect or display success message as per your requirement
             $successMessage = "Upload Image Successfully";
@@ -45,6 +47,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" placeholder="Title" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="short_title">Short Title</label>
+                    <input type="text" name="short_title" placeholder="Short Title" class="form-control">
+                </div>
                 <div class="form-group col-md-12">
                     <label for="image_type">Image Type</label>
                     <select name="image_type" id="" class="form-control form-select">

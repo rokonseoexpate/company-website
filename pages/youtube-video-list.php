@@ -1,5 +1,5 @@
 <?php
-$title = "Branch list";
+$title = "Featured Youtube Links";
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -15,7 +15,7 @@ $conn = $db->get_connection();
                 <h1><?php echo $title; ?></h1>
             </div>
             <div>
-                <a href="branch-add.php" class="btn btn-primary">Create Branch</a>
+                <a href="youtube-video-add.php" class="btn btn-primary">Create Youtube Link</a>
             </div>
         </div>
 
@@ -24,33 +24,28 @@ $conn = $db->get_connection();
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>Name</th>
-                    <th>Map</th>
-                    <th>Image</th>
-                    <th>Address</th>
-                    <th>Video Link</th>
+                    <th>Title</th>
+                    <th>Link</th>
+                    <th>Sort By</th>
                     <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php
                 $i = 1;
-                $qry = "SELECT * FROM branches";
-                $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+                $qry = "SELECT * FROM featured_youtubes ORDER BY id DESC";
+                $result = mysqli_query($conn, $qry);
 
                 if ($result) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         ?>
                         <tr>
                             <td><?php echo $i++; ?></td>
-                            <td><?php echo $row['name']; ?></td>
-                            <td><?php echo $row['map']; ?></td>
-
-                            <td><img src="<?php echo $row['image']; ?>" alt="" class="img-fluid w-25"></td>
-                            <td><?php echo $row['address']; ?></td>
-                            <td><?php echo $row['video_link']; ?></td>
+                            <td><?php echo $row['title']; ?></td>
+                            <td><?php echo $row['link']; ?></td>
+                            <td><?php echo $row['sort_by']; ?></td>
                             <td class="text-right">
-                                <a href="branch-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
+                                <a href="youtube-video-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
                                 <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
                             </td>
                         </tr>
@@ -63,7 +58,7 @@ $conn = $db->get_connection();
                 // Delete functionality
                 if (isset($_GET['delete_id'])) {
                     $delete_id = $_GET['delete_id'];
-                    $sql_delete = "DELETE FROM branches WHERE id = $delete_id";
+                    $sql_delete = "DELETE FROM featured_youtubes WHERE id = $delete_id";
 
                     if (mysqli_query($conn, $sql_delete)) {
                         // Display success message

@@ -1,6 +1,10 @@
 <?php
     $title = "Home";
     ob_start();
+    require_once 'config/dbconnect.php';
+    $db = new DB_con();
+    $conn = $db->get_connection();
+
 ?>
 
 <!--================================top-body section start here=======================-->
@@ -595,56 +599,37 @@
             </div>
             <div class="slider pt-5">
                 <div class="owl-carousel">
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (1).jpg" alt="image">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (1).PNG" alt="image">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (2).jpg" alt="image">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (4).jpg" alt="image">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (5).jpg" alt="image">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (6).jpg" alt="image">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (7).jpg" alt="image">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (8).jpg" alt="image">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (3).jpg" alt="image">
-                        </div>
-                    </div>
+                    <?php
+                    $i = 1;
+                    $qry = "SELECT * FROM history_galleries WHERE image_type = 3 ORDER BY id DESC";
+                    $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+                    if ($result) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            ?>
+                            <div class="slider-card">
+                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                    <img src="<?php
+                                    $imagePath = $row['image'];
+                                    $imageName = basename($imagePath);
+                                    $newImagePath = 'uploads/' . $imageName;
+                                    echo $newImagePath; ?>" alt="image">
+                                </div>
+                            </div>
+                            <?php
+                        }
+                    } else {
+                        echo "Error: " . mysqli_error($conn);
+                    }
+                    ?>
+
                 </div>
+
             </div>
             <div class="bbb_main_container">
                 <div class="bbb_viewed_slider_container">
                     <div class="owl-carousel owl-theme bbb_viewed_slider">
+
                         <div class="owl-item">
                             <div
                                 class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
@@ -738,51 +723,29 @@
             </div>
             <div class="slider pt-5">
                 <div class="owl-carousel">
+                    <?php
+                    $i = 1;
+                    $qry = "SELECT * FROM featured_youtubes ORDER BY sort_by ASC";
+                    $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+
+                    if ($result) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            ?>
                     <div class="slider-card">
                         <div class="d-flex justify-content-center align-items-center mb-4">
                             <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/EIXp39hWU2w?si=Wa3a30NuN4rrhHOF"
+                                src="<?php echo $row['link']; ?>"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/bSYexSp8Ybs?si=RIss4wWbk_YONtYm"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/ha2rO-rjLNA?si=wonWf8QZWF1YQawf"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/Inx2v2z7G0Q?si=iiR08XJOOmD0-fQU"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315"
-                                src="https://www.youtube.com/embed/hItrynkfRiM?si=KpC_IxIBux5R6_6y"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
+                <?php
+                    }
+                } else {
+                    echo "Error: " . mysqli_error($conn);
+                }
+                ?>
                 </div>
             </div>
         </div>

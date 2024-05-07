@@ -126,6 +126,15 @@
                 </li>
 
                 <li class="nav-item">
+                    <a href="youtube-video-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'youtube-video-list.php' || basename($_SERVER['PHP_SELF']) == 'youtube-video-add.php'|| basename($_SERVER['PHP_SELF']) == 'youtube-video-edit.php' ) ? 'active' : ''; ?>">
+                        <i class="nav-icon fab fa-youtube"></i>
+                        <p>
+                            Featured Youtube
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a href="certificates.php" class="nav-link">
                         <i class="nav-icon fas fa-certificate"></i>
                         <p>
