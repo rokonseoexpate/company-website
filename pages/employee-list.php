@@ -37,13 +37,21 @@ if (isset($_GET['delete_id'])) {
 }
 
 // Fetch employee data from the database
-$query = "SELECT employees.*, branches.name AS branch_name FROM employees LEFT JOIN branches ON employees.branch_id = branches.id";
+// Fetch employee data from the database
+$query = "SELECT employees.*, branches.name AS branch_name, departments.name AS department_name 
+          FROM employees 
+          LEFT JOIN branches ON employees.branch_id = branches.id
+          LEFT JOIN departments ON employees.department_id = departments.id";
 $result = mysqli_query($conn, $query);
 
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
-
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
     <div class="card px-3">
         <div class="d-flex justify-content-between align-items-center">
             <h1>Employee List</h1>
@@ -53,9 +61,10 @@ $result = mysqli_query($conn, $query);
             <thead>
             <tr class="text-center">
                 <th>#</th>
-                <th>Branch</th>
                 <th>Name</th>
                 <th>Designation</th>
+                <th>Branch</th>
+                <th>Department</th>
                 <th>EIN No</th>
                 <th>Team No</th>
                 <th>Image</th>
@@ -69,12 +78,13 @@ $result = mysqli_query($conn, $query);
                 ?>
                 <tr>
                     <td><?php echo $count; ?></td>
-                    <td><?php echo $row['branch_name']; ?></td>
                     <td><?php echo $row['name']; ?></td>
                     <td><?php echo $row['designation']; ?></td>
+                    <td><?php echo $row['branch_name']; ?></td>
+                    <td><?php echo $row['department_name']; ?></td>
                     <td><?php echo $row['ein_no']; ?></td>
                     <td><?php echo $row['team_no']; ?></td>
-                    <td>
+                    <td width="200px">
                         <?php if ($row['image'] && file_exists($row['image'])) : ?>
                             <img src="<?php echo $row['image']; ?>" class="img-fluid w-25" alt="">
                         <?php else : ?>

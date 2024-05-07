@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="frontend/css/style.css">
 	<link rel="stylesheet" href="frontend/css/responsive.css">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" integrity="sha512-O03ntXoVqaGUTAeAmvQ2YSzkCvclZEcPQu1eqloPaHfJ5RuNGiS4l+3duaidD801P50J28EHyonCV06CUlTSag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
@@ -40,6 +41,31 @@
     <script src="frontend/js/bootstrap.bundle.min.js"></script>
     <script src="frontend/js/owl.carousel.js"></script>
     <script src="frontend/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+    <?php if (isset($successMessage)): ?>
+        <script>
+
+            iziToast.success({
+                title: 'Success',
+                position: 'topRight',
+                message: '<?php echo $successMessage; ?>',
+            });
+        </script>
+    <?php endif; ?>
+
+    <?php if (isset($errorMessage)): ?>
+        <script>
+            iziToast.error({
+                title: 'Error',
+                position:'topRight',
+                message: '<?php echo $errorMessage; ?>',
+            });
+        </script>
+    <?php endif; ?>
+
 
 </body>
 </html>
