@@ -18,6 +18,7 @@ if (isset($_GET['id'])) {
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
+    $orderBy = $_POST['orderBy'];
 
     if ($_FILES['image']['name'] != '') {
         $id = $_GET['id'];
@@ -45,7 +46,7 @@ if (isset($_POST['submit'])) {
     }
 
     // Update record in the database
-    $sql = "UPDATE trusted_bies SET name='$name',  image='$path' WHERE id=$id";
+    $sql = "UPDATE trusted_bies SET name='$name', orderBy='$orderBy' ,image='$path' WHERE id=$id";
 
     if ($conn->query($sql) === TRUE) {
         echo "Record updated successfully";
@@ -68,10 +69,18 @@ if (isset($_POST['submit'])) {
 
         <form action="<?php echo $_SERVER['PHP_SELF'] . '?id=' . $id; ?>" method="POST" enctype="multipart/form-data" id="submit">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name" value="<?php echo $row['name'] ?>" placeholder="name">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="orderBy">Priority</label>
+                        <input type="text" class="form-control" id="orderBy" name="orderBy" 
+                        value="<?php echo $row['orderBy'] ?>" placeholder="Priority">
                     </div>
                 </div>
 

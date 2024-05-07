@@ -30,8 +30,9 @@ if (isset($_POST['submit'])) {
         $imageName = basename($imagePath);
         $newImagePath = '../uploads/' . $imageName;
 
-        // Remove old image file
-        unlink($newImagePath);
+        if (file_exists($imagePath)) {
+            unlink($newImagePath);
+        }
 
         $photo = $_FILES['image']['name'];
         $extension = pathinfo($photo, PATHINFO_EXTENSION);
@@ -101,7 +102,7 @@ if (isset($_POST['submit'])) {
 </div>
 
 <?php
-    $content = ob_get_clean();
+$content = ob_get_clean();
 
-    include '../layouts/master.php';
+include '../layouts/master.php';
 ?>

@@ -47,7 +47,6 @@
                                 <p>Add New Page </p>
                             </a>
                         </li>
-
                     </ul>
                 </li>
 
@@ -115,6 +114,33 @@
                         <i class="nav-icon fas fa-award"></i>
                         <p>
                             Award
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="contact-message.php" class="nav-link">
+                        <i class="nav-icon fas fa-message"></i>
+                        <p>
+                            Contact Message
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="core-team.php" class="nav-link">
+                        <i class="nav-icon fas fa-people-group"></i>
+                        <p>
+                            Core Team
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="blog-category.php" class="nav-link">
+                        <i class="nav-icon fas fa-blog"></i>
+                        <p>
+                            Blog Category
                         </p>
                     </a>
                 </li>

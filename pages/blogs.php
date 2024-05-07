@@ -51,7 +51,12 @@ if (isset($_GET['id'])) {
             <tbody>
                 <?php
                 $i = 1;
-                $qry = "SELECT * FROM blogs order by id desc";
+                // $qry = "SELECT * FROM blogs order by id desc";
+                $qry = "SELECT blogs.*, blog_categories.name as category_name
+                        FROM blogs 
+                        LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+                        ORDER BY blogs.id DESC";
+
                 if ($result = $conn->query($qry)) {
                     while ($row = $result->fetch_assoc()) {
                         $imagePath = $row['image'];
@@ -60,6 +65,7 @@ if (isset($_GET['id'])) {
                 ?>
                         <tr>
                             <th><?php echo $i++ ?></th>
+                            <td><?php echo $row['category_name']; ?></td>
                             <td><?php echo $row['title']; ?></td>
                             <td>
                                 <img class="w-50" style="height: 50px;" src="<?php echo $newImagePath; ?>" alt="">
