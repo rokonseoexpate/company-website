@@ -214,40 +214,38 @@ $conn = $db->get_connection();
 					<p>With over 10 years of experience managing 700+ projects and working with global enterprises, like – UNICEF, UNDP, USAID, FAO, WHO, ATEC, BBC, Fhi360, Axiata, Murka, Safe-Guard, Swiss Marketing Systems, we are expertly steering our clients through their digital journey.</p>
 					<h6>Explore the best moments and achievements of SEO Expate throughout the last era.</h6>
 				</div>
-				<div class="overview_success_img pt-5">
-					<img src="frontend/images/success_img.jpg" alt="image">
-				</div>
-				<div class="col-md-6">
-					<div class="overview_success_img  pt-4">
-					    <img src="frontend/images/success-1.jpg" alt="image">
-				    </div>
-				</div>
-				<div class="col-md-6">
-					<div class="overview_success_img  pt-4">
-					    <img src="frontend/images/success-2.jpg" alt="image">
-				    </div>
-				</div>
-				<div class="col-md-6">
-					<div class="overview_success_img  pt-4">
-					    <img src="frontend/images/success-3.jpg" alt="image">
-				    </div>
-				</div>
-				<div class="col-md-6">
-					<div class="overview_success_img  pt-4">
-					    <img src="frontend/images/success-4.jpg" alt="image">
-				    </div>
-				</div>
-				<div class="col-md-6">
-					<div class="overview_success_img  pt-4">
-					    <img src="frontend/images/success-5.jpg" alt="image">
-				    </div>
-				</div>
-				<div class="col-md-6">
-					<div class="overview_success_img  pt-4">
-					    <img src="frontend/images/success-6.jpg" alt="image">
-				    </div>
-				</div>
-			</div>
+                <?php
+                $i = 1;
+                $qry = "SELECT * FROM history_galleries WHERE image_type = 1 ORDER BY id DESC";
+                $result = mysqli_query($conn, $qry);
+
+                if ($result) {
+                    // Display the first image separately
+                    if ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                        <div class="overview_success_img pt-5">
+                            <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+                        </div>
+                        <?php
+                    }
+
+                    // Display the rest of the images
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                        <div class="col-md-6">
+                            <div class="overview_success_img pt-4">
+                                <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+                            </div>
+                        </div>
+                        <?php
+                    }
+                } else {
+                    echo "Error: " . mysqli_error($conn);
+                }
+                ?>
+
+
+            </div>
 		</div>
 	</section>
 	<!--================================overview_success section end here=======================-->
@@ -261,78 +259,32 @@ $conn = $db->get_connection();
 					<h3>Our Great Start</h3>
 					<p>Successful Solutions Developed by SEO Expate in the Last Era. We have started our journey with the game Tap Tap Ants, which has millions of downloads in the App Store and received the top-ranking position worldwide. Explore more solutions developed by SEO Expate throughout its journey.</p>
 				</div>
-				<div class="col-md-6">
-					<div class="img">
-						<img src="frontend/images/25373f0b4622aae50be59d5f0aa27537.jpg" alt="image">
-					</div>
-					<div class="Our_Great_Start_img_txt pt-4">
-						<h5>Tap Tap Ants</h5>
-						<p>The first game developed by SEO Expate was Tap Tap Ants, one of the most popular tapping games with millions of downloads in the App Store.</p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="img">
-						<img src="frontend/images/maxresdefault.jpg" alt="image">
-					</div>
-					<div class="Our_Great_Start_img_txt pt-4">
-						<h5>Meena Game</h5>
-						<p>An adventure edutainment game developed by SEO Expate for UNICEF Bangladesh impact significantly in promoting child rights.</p>
-					</div>
-				</div>
-				<div class="col-md-6 pt-3">
-					<div class="img">
-						<img src="frontend/images/meena two.png" alt="image">
-					</div>
-					<div class="Our_Great_Start_img_txt pt-4">
-						<h5>Meena Game 2 3D</h5>
-						<p>The 3D version of Meena Game with a new story of caring for a mother and a newborn baby. Another big success for SEO Expate.</p>
-					</div>
-				</div>
-				<div class="col-md-6 pt-3">
-					<div class="img">
-						<img src="frontend/images/app.jpg" alt="image">
-					</div>
-					<div class="Our_Great_Start_img_txt pt-4">
-						<h5>1952 AR App</h5>
-						<p>SEO Expate developed the “1952” app, a history-based educational AR app on the Language Movement of 21st February 1952.</p>
-					</div>
-				</div>
-				<div class="col-md-6 pt-3">
-					<div class="img">
-						<img src="frontend/images/280492.jpg" alt="image">
-					</div>
-					<div class="Our_Great_Start_img_txt pt-4">
-						<h5>Fun Basket</h5>
-						<p>An edutainment game developed by SEO Expate for BBC Media Action greatly reduces gender-based violence and improves life skills.</p>
-					</div>
-				</div>
-				<div class="col-md-6 pt-3">
-					<div class="img">
-						<img src="frontend/images/observerbd.com_1583518813.jpg" alt="image">
-					</div>
-					<div class="Our_Great_Start_img_txt pt-4">
-						<h5>7th March Speech</h5>
-						<p>A VR experience based on the historic 7th March speech of Bangabandhu Sheikh Mujibur Rahman of 1971 at the Racecourse Ground.</p>
-					</div>
-				</div>
-				<div class="col-md-6 pt-3">
-					<div class="img">
-						<img src="frontend/images/fuzionfrenzy_r_image5.jpg" alt="image">
-					</div>
-					<div class="Our_Great_Start_img_txt pt-4">
-						<h5>Rooftop Frenzy</h5>
-						<p>Action and adventure game developed by SEO Expate! Rooftop Frenzy is a free action-based rooftop run game, not just for kids of all ages!</p>
-					</div>
-				</div>
-				<div class="col-md-6 pt-3">
-					<div class="img">
-						<img src="frontend/images/2c87e8e9f5d5373176b6772216da16a6.jpeg" alt="image">
-					</div>
-					<div class="Our_Great_Start_img_txt pt-4">
-						<h5>Treasure Wars</h5>
-						<p>Action and adventure game developed by SEO Expate! Rooftop Frenzy is a free action-based rooftop run game, not just for kids of all ages!</p>
-					</div>
-				</div>
+                <?php
+                $i = 1;
+                $qry = "SELECT * FROM history_projects ORDER BY id DESC";
+                $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+                if ($result) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        ?>
+
+                        <div class="col-md-6 pt-3">
+                            <div class="img">
+                                <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+                            </div>
+                            <div class="Our_Great_Start_img_txt pt-4">
+                                <h5><?php echo $row['title']?></h5>
+                                <p><?= $row['description']?></p>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                } else {
+                    echo "Error: " . mysqli_error($conn);
+                }
+                ?>
+
+
 			</div>
 		</div>
 	</section>
@@ -381,38 +333,57 @@ $conn = $db->get_connection();
 		    	<h3><span>Our </span> Reliable Customers and Associates</h3>
 		    	<p>SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers, corporations, government departments, and other organizations as a top information technology company.  
 				Here take a look at some of the top companies and institutions that SEO Expate Bangladesh Ltd. has already worked with.</p>
-		    	<div class="col-12 pt-5">
-					<div id="carouselExampleDark" class="carousel carousel-dark slide">
-					  <div class="carousel-indicators">
-					    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-					  </div>
-					  <div class="carousel-inner pb-5">
-					    <div class="carousel-item active" data-bs-interval="10000">
-					      <img src="frontend/images/slide1.png" class="d-block w-100" alt="img">
-					    </div>
-					    <div class="carousel-item" data-bs-interval="2000">
-					      <img src="frontend/images/slide2.png" class="d-block w-100" alt="img">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="frontend/images/slide3.png" class="d-block w-100" alt="img">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="frontend/images/slide4.png" class="d-block w-100" alt="img">
-					    </div>
-					  </div>
-					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					    <span class="visually-hidden">Previous</span>
-					  </button>
-					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					    <span class="visually-hidden">Next</span>
-					  </button>
-					 </div>
-				</div>	
+                <div class="col-12 pt-5">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <?php
+                            $qry = "SELECT * FROM history_galleries WHERE image_type = 2 ORDER BY id DESC";
+                            if ($result = $conn->query($qry)) {
+                                $active = true;
+                                $index = 0;
+                                while ($row = $result->fetch_assoc()) {
+                                    $imagePath = $row['image'];
+                                    $imageName = basename($imagePath);
+                                    $newImagePath = 'uploads/' . $imageName;
+                                    ?>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="<?php echo $index; ?>" <?php echo $active ? 'class="active"' : ''; ?> aria-label="Slide <?php echo $index; ?>"></button>
+                                    <?php
+                                    $active = false;
+                                    $index++;
+                                }
+                            }
+                            ?>
+                        </div>
+
+                        <div class="carousel-inner pb-5">
+                            <?php
+                            $result->data_seek(0);
+                            $active = true;
+                            while ($row = $result->fetch_assoc()) {
+                                $imagePath = $row['image'];
+                                $imageName = basename($imagePath);
+                                $newImagePath = 'uploads/' . $imageName;
+                                ?>
+                                <div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
+                                    <img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="img">
+                                </div>
+                                <?php
+                                $active = false;
+                            }
+                            ?>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
 			</div>
 		</div>				
 	</section>
@@ -538,34 +509,30 @@ $conn = $db->get_connection();
 				</div>
 				<div class="slider pt-5">
 		            <div class="owl-carousel">
-		               <div class="slider-card">
+<?php
+$i = 1;
+$qry = "SELECT * FROM history_galleries WHERE image_type = 4 ORDER BY id DESC";
+$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+if ($result) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        ?>
+                        <div class="slider-card">
 		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                        <img src="frontend/images/1.png" alt="image" >
+		                        <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image" >
 		                  	</div>
-		                  <h5 class="mb-0 text-center"><b>Winner</b></h5>
-		                  <p class="text-center p-4">Digital Bangladesh Award 2023 </p>
+		                  <h5 class="mb-0 text-center"><b><?php echo $row['short_title']?></b></h5>
+		                  <p class="text-center p-4"><?php echo $row['title']?> </p>
 		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                  		<img src="frontend/images/04.png" alt="image" >
-		              		</div>
-		                    <h5 class="mb-0 text-center"><b>Exhibitor </b></h5>
-		                    <p class="text-center p-4">Basis Soft Expo 2023   </p>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/06.png" alt="image" >
-		                  	</div>
-		                  	<h5 class="mb-0 text-center"><b>Science Fair </b></h5>
-		                  	<p class="text-center p-4"></p>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/07.png" alt="image" >
-		                  	</div>
-		                  	<h5 class="mb-0 text-center"><b> FBCCI </b></h5>
-		                  	<p class="text-center p-4">FBCCI Intro Smart Bangladesh</p>
-		                </div>			                	                    
+
+        <?php
+    }
+} else {
+    echo "Error: " . mysqli_error($conn);
+}
+?>
+
+
 		            </div>
 		        </div>
 			</div>
