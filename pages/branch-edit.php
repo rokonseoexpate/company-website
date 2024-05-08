@@ -18,6 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $name = $_POST['name'];
     $map = $_POST['map'];
+    $address = $_POST['address'];
+    $video_link = $_POST['video_link'];
 
     // Check if a new image is uploaded
     if ($_FILES["image"]["size"] > 0) {
@@ -34,17 +36,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize inputs to prevent SQL injection
     $sanitized_name = mysqli_real_escape_string($conn, $name);
     $sanitized_map = mysqli_real_escape_string($conn, $map);
+    $sanitized_address= mysqli_real_escape_string($conn, $address);
+    $sanitized_video_link= mysqli_real_escape_string($conn, $video_link);
 
     // Update query
     $id = $_GET['id'];
-    $sql = "UPDATE branches SET name = '$sanitized_name', map = '$sanitized_map', image = '$image_path' WHERE id = $id";
+    $sql = "UPDATE branches SET name = '$sanitized_name', map = '$sanitized_map', image = '$image_path', video_link = '$sanitized_video_link', address = '$sanitized_address' WHERE id = $id";
 
     // Execute query
     if (mysqli_query($conn, $sql)) {
         // Update successful, set success message
-        $successMessage = "Successfully Updated record!";
+       // $successMessage = "Successfully Updated record!";
         // Redirect to branch list page
-      //  header('Location: branch-list.php');
+        header('Location: branch-list.php');
        // exit();
     } else {
         // Update failed, display error message
@@ -63,27 +67,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <a href="branch-list.php" class="btn btn-sm btn-info">View List</a>
         </div>
         <form action="" method="POST" enctype="multipart/form-data">
-            <div class="form-group">
-                <label for="name">Branch</label>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label for="name">Branch</label>
 
-                <input type="text" class="form-control" id="name" name="name" placeholder="Branch" value="<?php echo $row['name']; ?>">
-            </div>
-            <div class="form-group">
-                <label for="map">Map</label>
-                <textarea type="text" class="form-control" name="map" placeholder="Map" cols="5" rows="5"><?php echo $row['map']; ?></textarea>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="image">Image</label>
-                        <input type="file" class="form-control-file dropify" id="image" name="image" placeholder="image">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="image">Existing Image</label>
-                        <br>
-                        <img src="<?php echo $row['image']; ?>" class="img-fluid" width="200px" alt="">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Branch" value="<?php echo $row['name']; ?>">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="image">Image</label>
+                    <input type="file" class="form-control-file dropify" id="image" name="image" placeholder="image">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="image">Existing Image</label>
+                    <br>
+                    <img src="<?php echo $row['image']; ?>" class="img-fluid" width="200px" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="map">Address</label>
+                        <textarea name="address" placeholder="address" class="form-control" id="" cols="5" rows="5" required><?php echo $row['address']; ?></textarea>
                     </div>
                 </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="map">Video Link</label>
+                        <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="5" required><?php echo $row['video_link']; ?></textarea>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="map">Map</label>
+                    <textarea type="text" class="form-control" name="map" placeholder="Map" cols="5" rows="5"><?php echo $row['map']; ?></textarea>
+                </div>
+
             </div>
             <button type="submit" class="btn btn-primary my-3">Update</button>
         </form>

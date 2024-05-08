@@ -7,13 +7,9 @@ $conn = $db->get_connection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
-    $employee_ids = $_POST['employee_id'];
-
-    // Encode the array of employee IDs into JSON format
-    $employee_ids_json = json_encode($employee_ids);
 
     // Insert department into departments table
-    $insert_query = "INSERT INTO departments (name, employee_id) VALUES ('$name', '$employee_ids_json')";
+    $insert_query = "INSERT INTO departments (name) VALUES ('$name')";
     if (mysqli_query($conn, $insert_query)) {
         // Redirect or display success message as per your requirement
         header("Location: department-list.php");
@@ -34,22 +30,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
-                <div class="form-group col-md-6">
+                <div class="form-group col-md-12">
                     <label for="name">Department Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                 </div>
-                <div class="form-group col-md-6">
-                    <label>Choose Employee (Multiple)</label>
-                    <select class="select2" name="employee_id[]" multiple="multiple" data-placeholder="Select Employees" style="width: 100%;">
-                        <?php
-                        $employee_query = "SELECT id, name FROM employees";
-                        $employee_result = mysqli_query($conn, $employee_query);
-                        while ($employee_row = mysqli_fetch_assoc($employee_result)) {
-                            echo "<option value='{$employee_row['id']}'>{$employee_row['name']}</option>";
-                        }
-                        ?>
-                    </select>
-                </div>
+
                 <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-primary my-3">Submit</button>
                 </div>

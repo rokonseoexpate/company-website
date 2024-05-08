@@ -19,13 +19,6 @@ class DB_con {
         return $this->conn;
     }
 
-    public function branches($name, $image, $map) {
-        $sql = "INSERT INTO branches (name, image, map) VALUES ('$name', '$image', '$map')";
-        $result = mysqli_query($this->conn, $sql);
-        return $result;
-    }
-
-    // Add other methods for database operations here
 }
 
 ?>

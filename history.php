@@ -1,6 +1,10 @@
 <?php
-    $title = "Home";
-    ob_start();
+$title = "Home";
+ob_start();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
 ?>
 	<!--================================Header section end here=======================-->
 	
@@ -63,69 +67,74 @@
                    <p>SEO Expate Bangladesh Ltd. started the journey in Game Development and after a successful journey, we have established as a next-generation globnal IT service and technology solutions provider company. Explore our journey of success since 2009.</p>                
                	</div>
                	<div class="explore_tabs">
-                   	<div class="container py-5">
-					  	<div class="row mb-5">
-						  	<div class="p-5 bg-white rounded shadow mb-5" style="border-left:5px solid var(--secondary-text-color); border-right:5px solid var(--secondary-text-color);">
-						    <!-- Rounded tabs -->
-						    <div class="row">
-						    <div class="col-md-2 border-end">
-						    <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column text-center border-0">
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" href="#home" role="tab" aria-controls="personal" aria-selected="true" class="nav-link border-0  font-weight-bold active "> 2023 </a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="employment-tab" data-bs-toggle="tab" data-bs-target="#employment" href="#employment" role="tab" aria-controls="employment" aria-selected="false" class="nav-link border-0  font-weight-bold">  2022</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Services-tab" data-bs-toggle="tab" data-bs-target="#Services" href="#Services" role="tab" aria-controls="Services" aria-selected="false" class="nav-link border-0  font-weight-bold">2021</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Servicess-tab" data-bs-toggle="tab" data-bs-target="#Servicess" href="#Servicess" role="tab" aria-controls="Servicess" aria-selected="false" class="nav-link border-0  font-weight-bold">2020</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Serrvices-tab" data-bs-toggle="tab" data-bs-target="#Serrvices" href="#Serrvices" role="tab" aria-controls="Serrvices" aria-selected="false" class="nav-link border-0  font-weight-bold">2019</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Serviices-tab" data-bs-toggle="tab" data-bs-target="#Serviices" href="#Serviices" role="tab" aria-controls="Serviices" aria-selected="false" class="nav-link border-0  font-weight-bold">2018</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Seervices-tab" data-bs-toggle="tab" data-bs-target="#Seervices" href="#Seervices" role="tab" aria-controls="Seervices" aria-selected="false" class="nav-link border-0  font-weight-bold">2017</a>
-						      </li>
-						    </ul>
-						    </div>
-						    <div class="col-md-10">
-						    <div class="tab-content" id="myTabContent">
-						      	<div id="personal" role="tabpanel" aria-labelledby="personal-tab" class="tab-pane fade px-4 py-5 show active">
-						        	<p class="text-muted mb-0">SEO Expate Bangladesh Ltd, a provider of technology solutions, offers advice on how to create solutions for your issues. We help businesses become more inventive and flexible by meeting customer needs and working together to develop ground-breaking goods and services. </p>						
-						      	</div>
-						      	<div id="employment" role="tabpanel" aria-labelledby="employment-tab" class="tab-pane fade px-4 py-5">
-						        	<p class="text-muted mb-0">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-						        	
-						      	</div>
-						      	<div id="Services" role="tabpanel" aria-labelledby="Services-tab" class="tab-pane fade px-4 py-5">
-						        	<p class="text-muted mb-0">SEO Expate Bangladesh Ltd, a provider of technology solutions, offers advice on how to create solutions for your issues. We help businesses become more inventive and flexible by meeting customer needs and working together to develop ground-breaking goods and services.</p>
-						      	</div>
-						      	<div id="Servicess" role="tabpanel" aria-labelledby="Servicess-tab" class="tab-pane fade px-4 py-5">
-						        	<p class="text-muted mb-0">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-						        	
-						      	</div>
-						      	<div id="Serrvices" role="tabpanel" aria-labelledby="Serrvices-tab" class="tab-pane fade px-4 py-5">
-						        	<p class="text-muted mb-0">SEO Expate Bangladesh Ltd, a provider of technology solutions, offers advice on how to create solutions for your issues. We help businesses become more inventive and flexible by meeting customer needs and working together to develop ground-breaking goods and services.</p>
-						      	</div>
-						      	<div id="Serviices" role="tabpanel" aria-labelledby="Serviices-tab" class="tab-pane fade px-4 py-5">
-						        	<p class="text-muted mb-0">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-						        	
-						      	</div>
-						      	<div id="Seervices" role="tabpanel" aria-labelledby="Seervices-tab" class="tab-pane fade px-4 py-5">
-						        	<p class="text-muted mb-0">SEO Expate Bangladesh Ltd, a provider of technology solutions, offers advice on how to create solutions for your issues. We help businesses become more inventive and flexible by meeting customer needs and working together to develop ground-breaking goods and services.</p>
-						      	</div>
-						    </div>
-						    </div>
-						    </div>					    
-					  	</div>
-					</div>
-               </div>                             
-           </div>
+                    <div class="container py-5">
+                        <div class="row mb-5">
+                            <div class="p-5 bg-white rounded shadow mb-5" style="border-left:5px solid var(--secondary-text-color); border-right:5px solid var(--secondary-text-color);">
+                                <!-- Rounded tabs -->
+                                <div class="row">
+                                    <div class="col-md-2 border-end">
+                                        <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column text-center border-0">
+                                            <?php
+                                            // Check database connection
+                                            if (!$conn) {
+                                                echo "Database connection failed: " . mysqli_connect_error();
+                                            } else {
+                                                $qry = "SELECT * FROM history_journeys ORDER BY id DESC";
+                                                $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+
+                                                if ($result && mysqli_num_rows($result) > 0) {
+                                                    $firstTab = true;
+                                                    while ($row = mysqli_fetch_assoc($result)) {
+                                                        ?>
+                                                        <li class="nav-item flex-sm-fill" role="presentation">
+                                                            <a id="journey-tab-<?php echo $row['id']; ?>" data-bs-toggle="tab" data-bs-target="#journey<?php echo $row['id']; ?>" type="button" href="#journey<?php echo $row['id']; ?>" role="tab" aria-controls="journey<?php echo $row['id']; ?>" aria-selected="<?php echo $firstTab ? 'true' : 'false'; ?>" class="nav-link border-0  font-weight-bold <?php echo $firstTab ? 'active' : ''; ?>">
+                                                                <?php echo htmlspecialchars($row['year']); ?>
+                                                            </a>
+                                                        </li>
+                                                        <?php
+                                                        $firstTab = false;
+                                                    }
+                                                } else {
+                                                    echo "No journeys found.";
+                                                }
+                                            }
+                                            ?>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="tab-content" id="myTabContent">
+                                            <?php
+                                            // Check database connection
+                                            if (!$conn) {
+                                                echo "Database connection failed: " . mysqli_connect_error();
+                                            } else {
+                                                $qry = "SELECT * FROM history_journeys ORDER BY id DESC";
+                                                $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+
+                                                if ($result && mysqli_num_rows($result) > 0) {
+                                                    $firstPane = true;
+                                                    while ($row = mysqli_fetch_assoc($result)) {
+                                                        ?>
+                                                        <div id="journey<?php echo $row['id']; ?>" role="tabpanel" aria-labelledby="journey-tab-<?php echo $row['id']; ?>" class="tab-pane fade px-4 py-5 <?php echo $firstPane ? 'show active' : ''; ?>">
+                                                            <p class="text-muted mb-0"><?php echo strip_tags($row['details']); ?></p>
+                                                        </div>
+                                                        <?php
+                                                        $firstPane = false;
+                                                    }
+                                                } else {
+                                                    echo "No journeys found.";
+                                                }
+                                            }
+                                            ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
        </div>
     </section>
 	<!--================================top_body_explore_tab section end here=======================-->
@@ -417,53 +426,32 @@
 					<p>In this category, SEO Expate Bangladesh Ltd. stands out as the most popular in the first place. Numerous local and international (offline and online) TV networks, newspapers, journals, TV channels, and other well-known platforms have highlighted our imaginative and inventive works! Also, we are one of the most followed companies on various social media platforms. Again, we are going like a bullet train in other media as well.</p>
 				</div>
 				<div class="slider pt-5">
-		            <div class="owl-carousel">
-		               <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                        <img src="frontend/images/News (1).jpg" alt="image" >
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                  		<img src="frontend/images/News (1).PNG" alt="image" >
-		              		</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/News (2).jpg" alt="image" >
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/News (4).jpg" alt="image" >
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/News (5).jpg" alt="image" >
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/News (6).jpg" alt="image" >
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/News (7).jpg" alt="image" >
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/News (8).jpg" alt="image" >
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/News (3).jpg" alt="image" >
-		                  	</div>
-		                </div>			                	                    
-		            </div>
+                    <div class="owl-carousel">
+                        <?php
+                        $i = 1;
+                        $qry = "SELECT * FROM history_galleries WHERE image_type = 3 ORDER BY id DESC";
+                        $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+                        if ($result) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                <div class="slider-card">
+                                    <div class="d-flex justify-content-center align-items-center mb-4">
+                                        <img src="<?php
+                                        $imagePath = $row['image'];
+                                        $imageName = basename($imagePath);
+                                        $newImagePath = 'uploads/' . $imageName;
+                                        echo $newImagePath; ?>" alt="image">
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                        } else {
+                            echo "Error: " . mysqli_error($conn);
+                        }
+                        ?>
+
+                    </div>
 		        </div>
 		               <div class="bbb_main_container">
 		                	<div class="bbb_viewed_slider_container">
@@ -602,7 +590,7 @@
 	<!--================================top_our_transform section end here=======================-->
 
 	<!--===========================footer part start===================================-->
-	<?php 
+<?php
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>

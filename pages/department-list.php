@@ -25,7 +25,6 @@ $conn = $db->get_connection();
                 <tr>
                     <th>#</th>
                     <th>Name</th>
-                    <th>Department Employee</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -41,21 +40,6 @@ $conn = $db->get_connection();
                         <tr>
                             <td><?php echo $i++; ?></td>
                             <td><?php echo $row['name']; ?></td>
-                            <td>
-                                <?php
-                                // Decode the JSON string and retrieve employee names
-                                $employee_ids = json_decode($row['employee_id']);
-                                foreach ($employee_ids as $employee_id) {
-                                    $employee_query = "SELECT name FROM employees WHERE id = $employee_id";
-                                    $employee_result = mysqli_query($conn, $employee_query);
-                                    $employee_row = mysqli_fetch_assoc($employee_result);
-                                    // Display employee names as badges
-                                    ?>
-                                    <span class="badge badge-primary"><?php echo $employee_row['name']; ?></span>
-                                    <?php
-                                }
-                                ?>
-                            </td>
                             <td class="text-right">
                                 <a href="department-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
                                 <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>

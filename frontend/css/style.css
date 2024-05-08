@@ -45,6 +45,10 @@ p{
     left: 0;
     padding: 0px 0;
  }
+ .header img{
+    width: 300px;
+    height: auto;
+ }
  .header .list-group a i{
     color:#0f9d58; 
     font-size:25px; 
@@ -220,6 +224,7 @@ background: red;
    line-height: 32px;
    padding-top: 10px;
    letter-spacing: 1px;
+   text-align: justify;
  }
 .top-body-button a{
    color: var(--button-text-color);
@@ -311,7 +316,7 @@ background: red;
 .top_body_text_slider{
     padding: 80px 0;
     background-image: url('images/slideimg.png');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position:  center bottom;
     color: #fff;
@@ -1079,6 +1084,10 @@ overflow: hidden;
  .footer_part .footer_bottom a:hover i{
     color: #0f9d58;
  }
+ .footer_part .navbar-brand img{
+    width: 100%;
+    height: auto;
+ }
 /**===========================footer_part part end===================================**/
 
 /*================================================CONTACT PAGE CSS==============================================================*/
@@ -1421,6 +1430,7 @@ overflow: hidden;
     font-weight: 400;
     padding-top: 20px;
     line-height: 30px;
+    text-align: justify;
  }
  .our_mission .top-body-button a{
    color: var(--button-text-color);
@@ -1540,6 +1550,7 @@ overflow: hidden;
     font-size: 68px;
     font-weight: 700;
     margin-bottom: -20px;
+    line-height: 75px;
 }
 .top_about_us::after{
     content: '';
@@ -1568,6 +1579,7 @@ overflow: hidden;
  .Providing_Solutions .Providing_Solutions_txt p{
     font-size: 18px;
     line-height: 30px;
+    text-align: justify;
  }
   .Providing_Solutions .Providing_Solutions_txt h3{
     font-size: 55px;
@@ -1698,6 +1710,7 @@ overflow: hidden;
 }
 .Our_Branches p{
     font-size: 16px;
+    text-align: justify;
 }
 .Our_Branches .card{
     border-style: solid;
@@ -1884,7 +1897,7 @@ overflow: hidden;
 
 /**===========================top-awards  start here===================================**/
  .top-awards{
-    padding: 450px;
+    padding: 450px 0;
     position: relative;
  }
  .top-awards::after{
@@ -2539,6 +2552,7 @@ overflow: hidden;
 }
 .Roadmap .row section p{
   margin: 10px 0 17px 0;
+  text-align: justify;
 }
 .Roadmap .row section .bottom a{
   text-decoration: none;
@@ -3209,4 +3223,234 @@ font-weight: 600 !important;
     -webkit-box-shadow: 4px 20px 54px rgba(0, 0, 0, .16);
     box-shadow: 4px 20px 54px rgba(0, 0, 0, .16);
 }
+.Cnotice{
+    padding: 60px 0;
+}
+.Cnotice a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+.Cnotice .card {
+    background-color: #f6f6f6;
+    min-height: 350px;
+    margin-bottom: 0.75rem;
+}
+.Cnotice .card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.Cnotice .card .card-body h2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-weight: normal;
+    height: 94px;
+    overflow: hidden;
+    color: var(--secondary-text-color);
+}
+.Cnotice img{
+    width: 100%;
+}
+
+.OpenPosition{
+    padding: 80px 0;
+}
+.Cnotice .notice-border {
+    padding-left: 0;
+    border-bottom: 1px solid gray;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.Cnotice .year {
+    transform: rotate(270deg);
+    position: absolute;
+    margin-top: -11px;
+    font-weight: bolder;
+    position: relative;
+    color: var(--secondary-text-color);
+}
+.Cnotice .recent_notice a{
+   color: #337ab7;  
+}
+.Cnotice h3{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.Cnotice .recentnotice {
+    background: -webkit-linear-gradient(#F0F0F0, #FFFFFF);
+    background: -o-linear-gradient(#F0F0F0, #FFFFFF);
+    background: -moz-linear-gradient(#F0F0F0, #FFFFFF);
+    background: linear-gradient(#F0F0F0, #FFFFFF);
+    border: 1px dotted #CCCCCC;
+    border-radius: 6px;
+}
+.Cnotice .recentno0tice{
+    border: 1px dotted #CCCCCC;
+    border-radius: 6px;
+    text-align: center;
+}
 /**===========================MobileApp end here===================================**/
+
+/**===========================department_team_members start here===================================**/
+.department_team_members.section-bg {
+    background-color: #f7f7f7;
+}
+
+.department_team_members.pt-5 {
+    padding-top: 3rem!important;
+}
+.department_team_members.py-5{
+    padding-top: 3rem!important;
+}
+.department_team_members .mt-5 {
+    margin-top: 3rem!important;
+}
+.department_team_members .my-5{
+    margin-top: 3rem!important;
+}
+/*section {
+    padding: 60px 0;
+    overflow: hidden;
+}*/
+.department_team_members .section-title h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.department_team_members .section-title h3 {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--secondary-text-color);
+}
+.department_team_members hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+.department_team_members .member {
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+.department_team_members .member .member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.department_team_members .member .member-info {
+    padding: 25px 15px;
+}
+.department_team_members .team-round {
+    border-radius: 50%;
+    width: 70%;
+    margin-top: 30px;
+    border: 7px solid white;
+    box-shadow: 0px 2px 15px 6px rgb(15 164 6);
+}
+
+.department_team_members .member .social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+}
+.department_team_members .member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #111;
+}
+.department_team_members .member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #847872;
+}
+/**===========================department_team_members end here===================================**/
+
+/**===========================branch_list start here===================================**/
+ .all_branches_list{
+    padding-top: 80px;
+    padding-bottom: 40px;
+ }
+
+ .allbranchlist img {
+    height: 150px;
+    width: 130px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 15px 2px rgb(15 164 6);
+    margin: auto;
+}
+
+.allbranchlist .card-body {
+    background: #fff;
+    transform: translateY(-5px); 
+    width: 100%; 
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: unset; 
+}
+
+.allbranchlist .card {
+    transition: 0.5s;
+    cursor: pointer;
+    background: transparent !important;
+    border: unset !important;
+    text-align: center;
+    margin: auto;
+    box-shadow: ;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.allbranchlist p{
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #847872;
+}
+.branchresp p{
+    text-align: left !important; 
+}
+.sptunset{
+    padding-top: unset !important;
+}
+.blog_det_img img{
+    width: 100%;
+}
+.we_certifid{
+    background: var(--global-bg-color);
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.we_certifid img{
+    width:40%;
+}
+.we_certifid .widthgrow img{
+    width: 70%;
+}
+.we_certifid hr{
+    color: #fff;
+    text-align: center;
+}
+/**===========================branch_list end here===================================**/

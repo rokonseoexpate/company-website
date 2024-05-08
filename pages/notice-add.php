@@ -20,19 +20,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Upload file to server
     if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath)) {
-        // Insert notice into notices table
-        $insert_query = "INSERT INTO notices (title, date, image) VALUES ('$title','$date', '$targetFilePath')";
-        if (mysqli_query($conn, $insert_query)) {
-            // Redirect or display success message as per your requirement
-            $successMessage = "Notice Created Successfully";
-            header("Location: notice-list.php");
-            exit();
+        // Handling PDF upload
+        $pdfName = $_FILES["pdf"]["name"];
+        $pdfName = preg_replace("/[^a-zA-Z0-9.]/", "-", $pdfName); // Remove special characters except for letters, numbers, and periods
+        $pdfName = str_replace(" ", "-", $pdfName); // Replace spaces with hyphens
+
+        $pdfTargetFilePath = $targetDir . $pdfName;
+
+        if (move_uploaded_file($_FILES["pdf"]["tmp_name"], $pdfTargetFilePath)) {
+            // Insert notice into notices table
+            $insert_query = "INSERT INTO notices (title, date, image, files) VALUES ('$title','$date', '$targetFilePath', '$pdfTargetFilePath')";
+            if (mysqli_query($conn, $insert_query)) {
+                // Redirect or display success message as per your requirement
+                $successMessage = "Notice Created Successfully";
+                header("Location: notice-list.php");
+                exit();
+            } else {
+                // Handle insert failure
+                $errorMessage = "Error creating notice: " . mysqli_error($conn);
+            }
         } else {
-            // Handle insert failure
-            $errorMessage = "Error creating notice: " . mysqli_error($conn);
+            $errorMessage = "Sorry, there was an error uploading your PDF file.";
         }
     } else {
-        $errorMessage = "Sorry, there was an error uploading your file.";
+        $errorMessage = "Sorry, there was an error uploading your image file.";
     }
 }
 ?>
@@ -55,9 +66,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <input type="date" class="form-control" id="date" name="date" placeholder="date">
                 </div>
 
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-6">
                     <label for="image">Image</label>
                     <input type="file" class="form-control-file dropify" accept="image/*" name="image" placeholder="Image">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="pdf">PDF</label>
+                    <input type="file" class="form-control-file" accept=".pdf" name="pdf" placeholder="PDF">
                 </div>
                 <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-primary my-3">Submit</button>

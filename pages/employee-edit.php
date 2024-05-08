@@ -9,6 +9,9 @@ $conn = $db->get_connection();
 $branch_query = "SELECT * FROM branches";
 $branch_result = mysqli_query($conn, $branch_query);
 
+$department_query = "SELECT * FROM departments";
+$department_result = mysqli_query($conn, $department_query);
+
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
@@ -17,6 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $branch_id = $_POST['branch'];
     $ein_no = $_POST['ein_no'];
     $team_no = $_POST['team_no'];
+    $department_id = $_POST['department_id'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
 
     // Check if a new image is uploaded
     $image_path = null;
@@ -36,9 +42,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_ein_no = mysqli_real_escape_string($conn, $ein_no);
     $sanitized_team_no = mysqli_real_escape_string($conn, $team_no);
 
+
     // Update query
     $id = $_GET['id'];
-    $sql = "UPDATE employees SET name = '$sanitized_name', designation = '$sanitized_designation', branch_id = $branch_id, ein_no = '$sanitized_ein_no', team_no = '$sanitized_team_no'";
+    $sql = "UPDATE employees SET name = '$sanitized_name', designation = '$sanitized_designation',email = '$email', phone = '$phone', branch_id = $branch_id, department_id = $department_id, ein_no = '$sanitized_ein_no', team_no = '$sanitized_team_no'";
     if ($image_path) {
         $sql .= ", image = '$image_path'";
     }
@@ -75,16 +82,16 @@ $row = mysqli_fetch_assoc($fetch_result);
 
                 <div class="form-group col-md-6">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<?php echo $row['name']; ?>">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<?php echo $row['name']; ?>" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="designation">Designation</label>
-                    <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation" value="<?php echo $row['designation']; ?>">
+                    <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation" value="<?php echo $row['designation']; ?>" required>
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="branch">Branch</label>
-                    <select id="branch_id" class="form-control" name="branch">
+                    <select id="branch_id" class="form-control" name="branch" required>
                         <option value="">Choose...</option>
                         <?php while ($branch_row = mysqli_fetch_assoc($branch_result)) : ?>
                             <option value="<?php echo $branch_row['id']; ?>" <?php echo ($branch_row['id'] == $row['branch_id']) ? 'selected' : ''; ?> > <?php echo $branch_row['name']; ?></option>
@@ -92,14 +99,35 @@ $row = mysqli_fetch_assoc($fetch_result);
                     </select>
                 </div>
 
-                <div class="form-group col-md-4">
+
+                <div class="form-group col-md-6">
+                    <label for="department_id"> Department </label>
+                    <select id="department_id" class="form-control" name="department_id" required>
+                        <option value="">Choose...</option>
+                        <?php while ($department_row = mysqli_fetch_assoc($department_result)) : ?>
+                            <option value="<?php echo $department_row['id']; ?>"  <?php echo ($department_row['id'] == $row['department_id']) ? 'selected' : ''; ?>><?php echo $department_row['name']; ?></option>
+                        <?php endwhile; ?>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-6">
                     <label for="ein">EIN No</label>
                     <input type="number" class="form-control" id="ein_no" name="ein_no" placeholder="Ein No" value="<?php echo $row['ein_no']; ?>">
                 </div>
 
-                <div class="form-group col-md-2">
+                <div class="form-group col-md-6">
                     <label for="team">Team No</label>
                     <input type="text" class="form-control" id="team_no" name="team_no" placeholder="Team No" value="<?php echo $row['team_no']; ?>">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="phone">Phone <small class="text-primary">(optional)</small></label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="phone" value="<?php echo $row['phone']; ?>">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="team">email <small class="text-primary">(optional)</small></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email" value="<?php echo $row['email']; ?>">
                 </div>
 
                 <div class="form-group col-md-6">
@@ -112,10 +140,8 @@ $row = mysqli_fetch_assoc($fetch_result);
                     <img src="<?php echo $row['image']; ?>" alt="" class="img-fluid w-25">
                 </div>
 
-                    <button type="submit" class="btn btn-primary my-3">Update</button>
-
             </div>
-
+            <button type="submit" class="btn btn-primary my-3">Update</button>
         </form>
     </div>
 
