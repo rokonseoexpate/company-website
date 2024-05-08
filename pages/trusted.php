@@ -53,7 +53,7 @@ if (isset($_GET['id'])) {
             <tbody>
                 <?php
                 $i = 1;
-                $qry = "SELECT * FROM trusted_bies order by id desc";
+                $qry = "SELECT * FROM trusted_bies order by orderBy ASC";
                 if ($result = $conn->query($qry)) {
                     while ($row = $result->fetch_assoc()) {
                         $imagePath = $row['image'];

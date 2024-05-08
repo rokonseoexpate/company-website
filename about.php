@@ -278,35 +278,35 @@ $conn = $db->get_connection();
 			<div class="Our_Branches_txt pb-5">
 				<h3>Our Branches</h3>
 			</div>
-            <?php
-            $i = 1;
-            $qry = "SELECT * FROM branches ORDER BY id DESC";
-            $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+			<?php
+			$i = 1;
+			$qry = "SELECT * FROM branches ORDER BY id DESC";
+			$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
 
-            if ($result) {
-                while ($row = mysqli_fetch_assoc($result)) {
-            ?>
-			<div class="col-md-3">
-				<div class="card" style="width: 18rem;">
-					<img src="<?php
-                    $imagePath = $row['image'];
-                    $imageName = basename($imagePath);
-                    $newImagePath = 'uploads/' . $imageName;
-                    echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['name']?>">
-					<div class="card-body">
-						<h5 class="card-title"><?php echo $row['name']?></h5>
-						<p class="card-text"><?php echo $row['address']?></p>
-						<div><a href="branch.php?id=<?php echo $row['id']?>" class="text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="branch.php?id=<?php echo $row['id']?>" class="text-success">See More →</a></div>
+			if ($result) {
+				while ($row = mysqli_fetch_assoc($result)) {
+			?>
+					<div class="col-md-3">
+						<div class="card" style="width: 18rem;">
+							<img src="<?php
+										$imagePath = $row['image'];
+										$imageName = basename($imagePath);
+										$newImagePath = 'uploads/' . $imageName;
+										echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['name'] ?>">
+							<div class="card-body">
+								<h5 class="card-title"><?php echo $row['name'] ?></h5>
+								<p class="card-text"><?php echo $row['address'] ?></p>
+								<div><a href="branch.php?id=<?php echo $row['id'] ?>" class="text-success">View Location Map →</a></div>
+								<div class="pt-2"><a href="branch.php?id=<?php echo $row['id'] ?>" class="text-success">See More →</a></div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-        <?php
-            }
-        } else {
-            echo "Error: " . mysqli_error($conn);
-        }
-        ?>
+			<?php
+				}
+			} else {
+				echo "Error: " . mysqli_error($conn);
+			}
+			?>
 
 
 		</div>
@@ -362,92 +362,22 @@ $conn = $db->get_connection();
 	<div class="container">
 		<div class="row">
 			<h3 class="pb-5 text-light">Our Departments</h3>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/illustration-financial-concept_53876-37658.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">finance department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/61465747-operations-management-chart-with-keywords-and-icons-sketch.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Operation Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/HR_main_2-1.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Human Resources (HR) Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/audit-image-1-540x238-1.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Audit Department</h5>
-			</div>
-		</div>
-		<div class="row pt-3">
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/tender-flow.png" alt="image"></a>
-				<h5 class="text-light pt-3">Govt Project and Tender submission Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/5fb10aac5da65965468139.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Customer Support Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/insights-2022-research-and-development-tax-credit-960x600-1.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Research and Development Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/VS-Team-working-collaboratively-on-a-graphic-Header.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Training Department</h5>
-			</div>
-		</div>
-		<div class="row pt-3">
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/images.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">IT Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/SEO-Digital-Marketing.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">SEO and Digital Marketing Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/Web-Development-Software.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Web and Software Development Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/1520156545851.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Content Writing Department</h5>
-			</div>
-		</div>
-		<div class="row pt-3">
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/11.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Graphics Design Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/55910139-direct-marketing-business-graphics-sign-concept-illustration-design-graphic.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Graphics ( Direct Marketing Department )</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/bentuk-direct-marketing-1.png" alt="image"></a>
-				<h5 class="text-light pt-3">Web ( Direct Marketing Department)</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/2b1ad69a63e6a81124e40cac3cd284c6.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">WordPress Design Depertment</h5>
-			</div>
-		</div>
-		<div class="row pt-3">
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/local-marketing-agency.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Local Marketing Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/event-management-strategy.png" alt="image"></a>
-				<h5 class="text-light pt-3">Event Management Department</h5>
-			</div>
-			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/images-1.jpg" alt="image"></a>
-				<h5 class="text-light pt-3">Office Maintenance Department</h5>
-			</div>
-			<div class="col-md-3">
-			</div>
+			<?php
+			$query = "SELECT * FROM departments ORDER BY id DESC";
+			$result = $conn->query($query);
+			foreach ($result as $department) {
+
+				$imagePath = $department['image'];
+				$imageName = basename($imagePath);
+				$newImagePath = 'uploads/' . $imageName;
+			?>
+				<div class="col-md-3">
+					<a href="#"><img src="<?php echo $newImagePath ?>" alt="image"></a>
+					<h5 class="text-light pt-3"><?php echo $department['name'] ?></h5>
+				</div>
+
+			<?php } ?>
+
 		</div>
 	</div>
 </section>
@@ -698,10 +628,10 @@ $conn = $db->get_connection();
 						<?php
 
 						$blogQuery = "SELECT blogs.*, blog_categories.name as category_name
-				FROM blogs 
-				LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
-				WHERE blog_category_id = 6
-				ORDER BY blogs.id DESC";
+							FROM blogs 
+							LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+							WHERE blog_category_id = 6
+							ORDER BY blogs.id DESC";
 
 						$blogs = $conn->query($blogQuery);
 						foreach ($blogs as $event) {
@@ -724,7 +654,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="card-body">
 										<a href="" class="text-reset">
-											<h5 class="card-title mb-3 text-light"><?php $event['title'] ?></h5>
+											<h5 class="card-title mb-3 text-light"><?php echo $event['title'] ?> </h5>
 										</a>
 										<a href="#" class="text-reset">
 											<p class="text-danger">Read Insight →</p>

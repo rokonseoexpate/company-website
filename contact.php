@@ -291,117 +291,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			</div>
 			<div class="col-md-6 pb-5">
 				<div class="contact_form_icons">
+
 					<h5>Trusted by</h5>
+
 					<div class="row">
-						<div class="col-md-4">
-							<img src="frontend/images/unicef-client-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/usaid-org-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/undp-org-logo.png" alt="">
-						</div>
+						<?php
+						$qry = "SELECT * FROM trusted_bies order by orderBy ASC";
+						if ($result = $conn->query($qry)) {
+							while ($row = $result->fetch_assoc()) {
+								$imagePath = $row['image'];
+								$imageName = basename($imagePath);
+								$newImagePath = 'uploads/' . $imageName;
+						?>
+								<div class="col-md-4">
+									<img src="<?php echo $newImagePath ?>" alt="">
+								</div>
+						<?php }
+						} ?>
 					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/unwomen-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/who-org-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/fao-company-logo.png" alt="">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/sands-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/murka-games-limited-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/safe-guard-company-logo.png" alt="">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/atec-global-client-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/bbc-action-media-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/sesame-workshop-bangladesh-company-logo.png" alt="">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/ifrc-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/crazylabs-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/voodoo-company-logo.png" alt="">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/swiss-marketing-systems-gmbh-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/princetech-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/fhi360-company-logo.png" alt="">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/financial-fondue-gmbh-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/playmania-israeli-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/pinklime-company-logo.png" alt="">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/mcafee-enterprises-inc-entertainment-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/kuato-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/plan-international-bangladesh-company-logo.png" alt="">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/cog-media-agency-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/frobolous-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/capital-numbers-company-logo.png" alt="">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/a2i-company-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/ict-division-govt-logo.png" alt="">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/robi-axiata-company-logo.png" alt="">
-						</div>
-					</div>
+
 				</div>
 			</div>
 			<div class="col-md-6 pb-5">
@@ -439,43 +347,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 													<label for="fullname" class="form-label">Your Name <span>*</span></label>
 													<input type="text" class="form-control" name="name" id="fullname" placeholder="Your Full Name" required>
 													<small> <span class="nameErr text-danger"></span> </small>
-													
+
 												</div>
 												<div class="col-md-6">
 													<label for="inputEmail4" class="form-label">Email <span>*</span></label>
 													<input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
 													<small> <span class="emailErr text-danger"></span> </small>
-													
+
 												</div>
 												<div class="col-md-6">
 													<label for="inputPassword4" class="form-label">Phone Number <span>*</span></label>
 													<input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
 													<small> <span class="phoneErr text-danger"></span> </small>
-													
+
 												</div>
 												<div class="col-md-6">
 													<label for="CompanyName" class="form-label">Company Name</label>
 													<input type="text" name="company_name" class="form-control" id="CompanyName" placeholder="Company Name">
 													<small> <span class="company_nameErr text-danger"></span> </small>
-													
+
 												</div>
 												<div class="col-md-6">
 													<label for="CompanyWebsite" class="form-label">Company Website</label>
 													<input type="text" name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website">
 													<small> <span class="company_websiteErr text-danger"></span> </small>
-													
+
 												</div>
 												<div class="col-12">
 													<label for="stuf" class="form-label">Number of Staff Required <span>*</span></label>
 													<input type="text" class="form-control" id="stuf" name="stuf" placeholder="Number of Staff Required" required>
 													<small> <span class="stufErr text-danger"></span> </small>
-													
+
 												</div>
 												<div class="col-12">
 													<label for="type" class="form-label">Briefly Describe Your Requirements <span>*</span></label>
 													<textarea type="text" name="description" class="form-control" id="summernote" placeholder="Start Typing Here..."></textarea>
 													<small> <span class="descriptionErr text-danger"></span> </small>
-													
+
 												</div>
 												<div class="col-12 text-center">
 													<button type="button" class="btn submitBtn">Submit & Schedule a Meeting</button>
@@ -635,15 +543,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (email === "") {
 				$(".emailErr").html("Please enter your email");
 				return;
-			}else {
+			} else {
 				$(".emailErr").html("");
 			}
-			
+
 			// Validation for phone
 			if (phone === "") {
 				$(".phoneErr").html("Please enter your phone number");
 				return;
-			}else {
+			} else {
 				$(".phoneErr").html("");
 			}
 
@@ -651,7 +559,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (company_name === "") {
 				$(".company_nameErr").html("Please enter your company name");
 				return;
-			}else {
+			} else {
 				$(".company_nameErr").html("");
 			}
 
@@ -659,7 +567,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (company_website === "") {
 				$(".company_websiteErr").html("Please enter your company name");
 				return;
-			}else {
+			} else {
 				$(".company_websiteErr").html("");
 			}
 
@@ -668,7 +576,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (stuf === "") {
 				$(".stufErr").html("Please enter number of staff required");
 				return;
-			}else {
+			} else {
 				$(".stufErr").html("");
 			}
 
@@ -676,7 +584,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (description === "") {
 				$(".descriptionErr").html("Please describe your requirements");
 				return;
-			}else {
+			} else {
 				$(".descriptionErr").html("");
 			}
 

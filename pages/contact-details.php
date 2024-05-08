@@ -60,6 +60,15 @@ if (isset($_GET['id'])) {
                     <th>Description</th>
                     <td><?php echo $row['description'] ?></td>
                 </tr>
+                <tr>
+                    <th>Created At</th>
+
+                    <?php
+                    $dt = new DateTime($row['created_at'], new DateTimezone('Asia/Dhaka'));
+
+                    ?>
+                    <td><?php echo $dt->format('j F Y, g:i a'); ?></td>
+                </tr>
             </tbody>
         </table>
 

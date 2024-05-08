@@ -28,7 +28,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'history.php' || basename($_SERVER['PHP_SELF']) == 'history-journey-list.php'|| basename($_SERVER['PHP_SELF']) == 'history-gallery-list.php'|| basename($_SERVER['PHP_SELF']) == 'history-projects-list.php') ? 'menu-open' : ''; ?>">
+                <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'history.php' || basename($_SERVER['PHP_SELF']) == 'history-journey-list.php' || basename($_SERVER['PHP_SELF']) == 'history-gallery-list.php' || basename($_SERVER['PHP_SELF']) == 'history-projects-list.php') ? 'menu-open' : ''; ?>">
                     <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history.php' || basename($_SERVER['PHP_SELF']) == 'history-journey-list.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-history"></i>
                         <p>
@@ -65,8 +65,8 @@
                     </ul>
                 </li>
 
-                <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php' ||basename($_SERVER['PHP_SELF']) == 'portfolio-projects-add.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php'|| basename($_SERVER['PHP_SELF']) == 'portfolio-projects-list.php') ? 'menu-open' : ''; ?>">
-                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php'|| basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php') ? 'active' : ''; ?>">
+                <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-projects-add.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-projects-list.php') ? 'menu-open' : ''; ?>">
+                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-code"></i>
                         <p>
                             Web Development
@@ -90,7 +90,6 @@
 
                     </ul>
                 </li>
-
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
@@ -125,7 +124,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="youtube-video-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'youtube-video-list.php' || basename($_SERVER['PHP_SELF']) == 'youtube-video-add.php'|| basename($_SERVER['PHP_SELF']) == 'youtube-video-edit.php' ) ? 'active' : ''; ?>">
+                    <a href="youtube-video-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'youtube-video-list.php' || basename($_SERVER['PHP_SELF']) == 'youtube-video-add.php' || basename($_SERVER['PHP_SELF']) == 'youtube-video-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fab fa-youtube"></i>
                         <p>
                             Featured Youtube
@@ -174,6 +173,24 @@
                         <i class="nav-icon fas fa-message"></i>
                         <p>
                             Contact Message
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="free-trails.php" class="nav-link">
+                        <i class="nav-icon fas fa-message"></i>
+                        <p>
+                            Free Trail
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="get-quote.php" class="nav-link">
+                        <i class="nav-icon fas fa-message"></i>
+                        <p>
+                            Get Quote
                         </p>
                     </a>
                 </li>

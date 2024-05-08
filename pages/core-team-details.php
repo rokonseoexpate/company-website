@@ -12,7 +12,9 @@ if (isset($_GET['id'])) {
     $qry = "SELECT * FROM certificates WHERE id=$id";
     $result = $conn->query($qry);
     $row = $result->fetch_assoc();
-
+}else{
+    $errorMessage = 'Select team member';
+    echo "<script> window.location.href='core-team.php' </script>";
 }
 
 ?>
