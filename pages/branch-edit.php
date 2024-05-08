@@ -91,12 +91,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="map">Video Link</label>
+                        <label for="map">Map <span class="text-warning">( width="100%" height="315" )</span></label>
                         <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="5" required><?php echo $row['video_link']; ?></textarea>
                     </div>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="map">Map</label>
+                    <label for="map">Map <span class="text-warning">( width="400" height="300" )</span></label>
                     <textarea type="text" class="form-control" name="map" placeholder="Map" cols="5" rows="5"><?php echo $row['map']; ?></textarea>
                 </div>
 
