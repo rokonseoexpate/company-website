@@ -25,6 +25,7 @@ $conn = $db->get_connection();
                 <tr>
                     <th>#</th>
                     <th>Name</th>
+                    <th>Image</th>
                     <th>Action</th>
                 </tr>
                 </thead>
@@ -40,6 +41,7 @@ $conn = $db->get_connection();
                         <tr>
                             <td><?php echo $i++; ?></td>
                             <td><?php echo $row['name']; ?></td>
+                            <td width="200px"><img src="<?php echo $row['image']; ?>" width="200px" alt=""></td>
                             <td class="text-right">
                                 <a href="department-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
                                 <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>

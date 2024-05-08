@@ -1,6 +1,10 @@
 <?php
-    $title = "Home";
-    ob_start();
+$title = "Web Development";
+ob_start();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
 ?>
 	<!--================================Header section end here=======================-->
 	
@@ -175,782 +179,106 @@
 	</div>
 	<!--================================we_following section end here=======================-->
 
-	<!--================================explore_portfolio_tab  section start here=======================-->
-	<section class="top_body_explore_tab explore_portfolio_tab">
-       <div class="container">
-           <div class="row">
-               	<div class="explore_txt">
-                   <h3>Explore Our Portfolio</h3>
-                   <p>Here, we have some previous working experience we would like to share. Visit your chosen category of website, it will give you a clear view of our services. Look through them and feel free to contact us for details.</p>                
-               	</div>
-               	<div class="explore_tabs">
-                   	<div class="container py-5">
-					  	<div class="row mb-5">
-						  	<div class="p-5 bg-white rounded shadow mb-5">
-						    <!-- Rounded tabs -->
-						    <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" href="#home" role="tab" aria-controls="personal" aria-selected="true" class="nav-link border-0  font-weight-bold active">Ecommerce Website</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="employment-tab" data-bs-toggle="tab" data-bs-target="#employment" href="#employment" role="tab" aria-controls="employment" aria-selected="false" class="nav-link border-0  font-weight-bold">Corporate Website</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Services-tab" data-bs-toggle="tab" data-bs-target="#Services" href="#Services" role="tab" aria-controls="Services" aria-selected="false" class="nav-link border-0  font-weight-bold">LMS Website</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Educational-tab" data-bs-toggle="tab" data-bs-target="#Educational" href="#Educational" role="tab" aria-controls="Educational" aria-selected="false" class="nav-link border-0  font-weight-bold">Educational Website</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="News-tab" data-bs-toggle="tab" data-bs-target="#News" href="#News" role="tab" aria-controls="News" aria-selected="false" class="nav-link border-0  font-weight-bold">News Portal Website</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Agency-tab" data-bs-toggle="tab" data-bs-target="#Agency" href="#Agency" role="tab" aria-controls="Agency" aria-selected="false" class="nav-link border-0  font-weight-bold">Travel Agency Website</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Real-tab" data-bs-toggle="tab" data-bs-target="#Real" href="#Real" role="tab" aria-controls="Real" aria-selected="false" class="nav-link border-0  font-weight-bold">Real Estate Website</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Job-tab" data-bs-toggle="tab" data-bs-target="#Job" href="#Job" role="tab" aria-controls="Job" aria-selected="false" class="nav-link border-0  font-weight-bold">Job Portal Website</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Online-tab" data-bs-toggle="tab" data-bs-target="#Online" href="#Online" role="tab" aria-controls="Online" aria-selected="false" class="nav-link border-0  font-weight-bold">Online Booking Website</a>
-						      </li>
-						      <li class="nav-item flex-sm-fill" role="presentation">
-						        <a id="Rental-tab" data-bs-toggle="tab" data-bs-target="#Rental" href="#Rental" role="tab" aria-controls="Rental" aria-selected="false" class="nav-link border-0  font-weight-bold">Rental Website</a>
-						      </li>
-						    </ul>
+
+    <!--================================explore_portfolio_tab  section start here=======================-->
+    <section class="top_body_explore_tab explore_portfolio_tab" id="web-portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="explore_txt">
+                    <h3>Explore Our Portfolio</h3>
+                    <p>Here, we have some previous working experience we would like to share. Visit your chosen category of website, it will give you a clear view of our services. Look through them and feel free to contact us for details.</p>
+                </div>
+                    <div class="explore_tabs">
+    <div class="container py-5">
+        <div class="row mb-5">
+            <div class="p-5 bg-white rounded shadow mb-5">
+                <!-- Rounded tabs -->
+                <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
+                    <?php
+                    // Check database connection
+                    if (!$conn) {
+                        echo "Database connection failed: " . mysqli_connect_error();
+                    } else {
+                        $qry = "SELECT * FROM web_portfolio_categories";
+                        $result = mysqli_query($conn, $qry); // Execute the query
+
+                        if ($result && mysqli_num_rows($result) > 0) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                <li class="nav-item flex-sm-fill" role="presentation">
+                                    <a id="<?php echo $row['id']; ?>-tab" data-bs-toggle="pill" href="#<?php echo $row['id']; ?>" role="tab" aria-controls="<?php echo $row['id']; ?>" aria-selected="false" class="nav-link border-0 font-weight-bold<?php if ($firstTab) echo ' show active'; ?>"><?php echo $row['name']; ?></a>
+                                </li>
+                                <?php
+                                $firstTab = false;
+                            }
+                        } else {
+                            echo "No categories found.";
+                        }
+                    }
+                    ?>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <?php
+                    $firstTab = true;
+                    // Check database connection
+                    if (!$conn) {
+                        echo "Database connection failed: " . mysqli_connect_error();
+                    } else {
+                        $qry = "SELECT * FROM web_portfolios";
+                        $result = mysqli_query($conn, $qry); // Execute the query
+
+                        if ($result && mysqli_num_rows($result) > 0) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                <div id="<?php echo $row['category_id']; ?>" role="tabpanel" aria-labelledby="<?php echo $row['category_id']; ?>-tab" class="tab-pane fade px-4 py-5<?php if ($firstTab) echo ' show active'; ?>">
+                                    <div class="row">
+                                        <?php
+                                        // Fetch and display each portfolio item
+                                        $qryItems = "SELECT * FROM web_portfolios WHERE category_id = {$row['category_id']}";
+                                        $resultItems = mysqli_query($conn, $qryItems);
+                                        if ($resultItems && mysqli_num_rows($resultItems) > 0) {
+                                            while ($item = mysqli_fetch_assoc($resultItems)) {
+                                                ?>
+                                                <div class="col-md-3 pt-5">
+                                                    <a href="<?php echo $item['link']; ?>">
+                                                        <div class="card" style="width: 18rem;">
+                                                            <img src="<?php echo 'uploads/' . basename($item['image']); ?>" class="card-img-top" alt="<?php echo $item['title']; ?>">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title pb-3"><?php echo $item['title']; ?></h5>
+                                                                <a href="<?php echo $item['link']; ?>" class="btn pt-2">Live Preview</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <?php
+                                            }
+                                        } else {
+                                            echo "No portfolio items found for this category.";
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                                <?php
+                                $firstTab = false;
+                            }
+                        } else {
+                            echo "No portfolios found.";
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
 
 
-						    <div class="tab-content" id="myTabContent">
-						      	<div id="personal" role="tabpanel" aria-labelledby="personal-tab" class="tab-pane fade px-4 py-5 show active">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						      	<div id="employment" role="tabpanel" aria-labelledby="employment-tab" class="tab-pane fade px-4 py-5">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						      	<div id="Services" role="tabpanel" aria-labelledby="Services-tab" class="tab-pane fade px-4 py-5">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						      	<div id="Educational" role="tabpanel" aria-labelledby="Educational-tab" class="tab-pane fade px-4 py-5">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						      	<div id="News" role="tabpanel" aria-labelledby="News-tab" class="tab-pane fade px-4 py-5">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						      	<div id="Agency" role="tabpanel" aria-labelledby="Agency-tab" class="tab-pane fade px-4 py-5">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						      	<div id="Real" role="tabpanel" aria-labelledby="Real-tab" class="tab-pane fade px-4 py-5">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						      	<div id="Job" role="tabpanel" aria-labelledby="Job-tab" class="tab-pane fade px-4 py-5">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						      	<div id="Online" role="tabpanel" aria-labelledby="Online-tab" class="tab-pane fade px-4 py-5">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						      	<div id="Rental" role="tabpanel" aria-labelledby="Rental-tab" class="tab-pane fade px-4 py-5">
-						      		<div class="row pt-2">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="card" style="width: 18rem;">
-										      	<img src="frontend/images/safbd.png" class="card-img-top" alt="Image">
-										      	<div class="card-body">
-										        	<h5 class="card-title pb-3">SAF BD</h5>
-													<a href="https://bn.nordfx.com/" class="btn pt-2">Live Preview</a>
-										      	</div>
-										    </div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/isp.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">ISP</h5>
-												        <a href="http://isp.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/amirrecruitingagencysrl.png" class="card-img-top" alt="Image">
-												      <div class="card-body">
-												        <h5 class="card-title pb-3">Amir Recruiting Agency S.R.L</h5>
-												        <a href="https://amirrecruitingagencysrl.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/construction.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">Construction</h5>
-												        <a href="https://constructions.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="row pt-5">
-										<div class="col-md-3">
-											<a href="#">
-												<div class="container">
-												    <div class="card" style="width: 18rem;">
-												      <img src="frontend/images/ngo.png" class="card-img-top" alt="Image">
-												      <div class="card-body ">
-												        <h5 class="card-title pb-3">NGO</h5>
-												        <a href="https://ngo.devseoebd.com/" class="btn pt-2">Live Preview</a>
-												      </div>
-												    </div>
-												</div>
-											</a>
-										</div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-										<div class="col-md-3"></div>
-									</div>
-						      	</div>
-						    </div>					    
-					  	</div>
-					</div>
-               </div>                             
-           </div>
-       </div>
-   </section>
-	<!--================================explore_portfolio_tab section end here=======================-->
+
+    </div>
+</div>
+            </div>
+    </section>
+    <!--================================explore_portfolio_tab section end here=======================-->
+
+
 
 	<!--================================what_you_need section start here=======================-->
 	<section class="what_you_need">
@@ -1067,7 +395,21 @@
 		  </div>
 	</section>
 	<!--================================accordion section end here=======================-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <script>
+        $(document).ready(function(){
+            // Hide all tab content except the first one
+            $(".tab-pane").not(":first").hide();
+
+            // Handle click event on tab links
+            $(".nav-link").click(function(){
+                var tabId = $(this).attr("aria-controls");
+                $(".tab-pane").hide();
+                $("#" + tabId).show();
+            });
+        });
+    </script>
 <?php 
 $main_content = ob_get_clean();
 include './layouts/app.php';
