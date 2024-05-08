@@ -41,7 +41,7 @@ if (isset($_GET['id'])) {
                 </tr>
                 <tr>
                     <th>Image</th>
-                    <td> <img class="w-100" src="<?php echo $newImagePath ?>" alt=""> </td>
+                    <td> <img style="width: 100%; height:500px" src="<?php echo $newImagePath ?>" alt=""> </td>
                 </tr>
             </tbody>
         </table>

@@ -90,7 +90,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <textarea name="description" placeholder="Description" class="form-control" id="description" cols="30" rows="10"><?php echo $row['description'] ?></textarea>
+                        <textarea name="description" placeholder="Description" class="form-control" id="summernote" cols="30" rows="10"><?php echo $row['description'] ?></textarea>
                     </div>
                 </div>
 

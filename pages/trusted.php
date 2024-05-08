@@ -46,6 +46,7 @@ if (isset($_GET['id'])) {
                     <th>#</th>
                     <th>Name</th>
                     <th>Image</th>
+                    <th>Order By</th>
                     <th class="text-right px-4">Action</th>
                 </tr>
             </thead>
@@ -65,6 +66,7 @@ if (isset($_GET['id'])) {
                             <td>
                                 <img class="w-50" style="height: 50px;" src="<?php echo $newImagePath; ?>" alt="">
                             </td>
+                            <td> <?php echo $row['orderBy'] ?> </td>
 
                             <td class="text-right">
                                 <a href="trusted-edit.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
