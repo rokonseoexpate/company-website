@@ -1,16 +1,16 @@
 <?php
-$title = "Home";
+
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
-
 // Fetch the branch details from the database based on the ID
 $id = $_GET['id']; // Assuming the ID is passed via URL parameter
 $sql = "SELECT * FROM branches WHERE id = $id";
 $result = mysqli_query($conn, $sql);
 $branch = mysqli_fetch_assoc($result);
+
+$title = $branch['name'] ;
 
 ?>
 
@@ -64,7 +64,7 @@ $branch = mysqli_fetch_assoc($result);
 				</div>
 				<div class="col-md-4">
 					<div class="branch-img">
-						<iframe width="100%" height="315" src=" <?php echo $branch['video_link']?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="border:1px solid #dee2e6; border-redius:10px;" allowfullscreen></iframe>
+                        <?php echo $branch['video_link']?>
 					</div>
 				</div>
 			</div>
@@ -81,101 +81,37 @@ $branch = mysqli_fetch_assoc($result);
 				</div>
 				<div class="Core_Team_members">
 					<div class="container mt-2">
-					  	<div class="row" >				      							    	
-					    	<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/Md. Nur Alam-Branch Manager-144.png" alt="Basudeb Acharjee" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">Md. Nur Alam</h5>
-					        			<p class="card-text fs-6">Branch Manager</p>
-					        		</div> 
-					  			</div>
-					    	</div>
-					    	<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/Md. Asaduzzaman-Supervisor-174.PNG" alt="Md.Azharul Islam Khan" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">Md. Asaduzzaman</h5>
-					        			<p class="card-text fs-6">Supervisor</p>
-					        		</div> 
-					  			</div>
-					    	</div>
-					    	<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/Md. Ahmed Ali-Supervisor-425.jpg" alt="Ragebul Ahsan Ripu" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">Md. Ahmed Ali</h5>
-					        			<p class="card-text fs-6">Supervisor</p> 
-					        		</div>
-					  			</div>
-					    	</div>  
-					    	<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/Mst. Humaira Khatun-Team Leader-335.png" alt="Ragebul Ahsan Ripu" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">Mst. Humaira Khatun</h5>
-					        			<p class="card-text fs-6">Team Leader</p> 
-					        		</div>
-					  			</div>
-					    	</div>
-					    	<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/Md. Shakil Hasan-Team Leader-538.png" alt="Ragebul Ahsan Ripu" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">Md. Shakil Hasan</h5>
-					        			<p class="card-text fs-6">Team Leader</p>
-					        		</div>
-					  			</div>
-					    	</div>
-					    	<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/Md. Robiul Hasan-Team Leader-557.png" alt="Ragebul Ahsan Ripu" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">Md. Robiul Hasan</h5>
-					        			<p class="card-text fs-6">Team Leader</p>
-					        		</div>
-					  			</div>
-					    	</div>
-					  	</div>
-					  	<div class="row pt-5">
-					  		<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/Mst. Istiya Khatun-Team Leader-559.png" alt="Basudeb Acharjee" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">Mst. Istiya Khatun</h5>
-					        			<p class="card-text fs-6">Team Leader</p>
-					        		</div> 
-					  			</div>
-					    	</div>
-					    	<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/Mst. Tanjila Khatun-Team Leader-386.jpg" alt="Basudeb Acharjee" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">Mst. Tanjila Khatun</h5>
-					        			<p class="card-text fs-6">Team Leader</p>
-					        		</div> 
-					  			</div>
-					    	</div>
-					    	<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/Md. Arafat Rahman-Team Leader-492.png" alt="Basudeb Acharjee" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">Md. Arafat Rahman</h5>
-					        			<p class="card-text fs-6">Team Leader</p>
-					        		</div> 
-					  			</div>
-					    	</div>
-					    	<div class="col-md-2 col-sm-6">
-					      		<div class="card card-block shadow">
-					    			<img src="frontend/images/A.M Rakibul Islam-Team Leader-561.png" alt="Basudeb Acharjee" class="img-thumbnail">
-					        		<div class="card-body">
-					        			<h5 class="card-title fs-6">A.M Rakibul Islam</h5>
-					        			<p class="card-text fs-6">Team Leader</p>
-					        		</div> 
-					  			</div>
-					    	</div>
-					  	</div> 
-					</div>
+                        <div class="row">
+                            <?php
+                            $qry = "SELECT * FROM employees WHERE branch_id = " . $branch['id'] . " ORDER BY id DESC";
+                            $result = mysqli_query($conn, $qry);
+
+                            if ($result) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    ?>
+                                    <div class="col-md-2 col-sm-6">
+                                        <div class="card card-block shadow">
+                                            <img src="<?php
+                                            $imagePath = $row['image'];
+                                            $imageName = basename($imagePath);
+                                            $newImagePath = 'uploads/' . $imageName;
+                                            echo $newImagePath; ?>" alt="<?php echo $row['name']; ?>" class="img-thumbnail">
+                                            <div class="card-body">
+                                                <h5 class="card-title fs-6"><?php echo $row['name']; ?></h5>
+                                                <p class="card-text fs-6"><?php echo $row['designation']; ?></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php
+                                }
+                            } else {
+                                echo "Error: " . mysqli_error($conn);
+                            }
+                            ?>
+                        </div>
+
+
+                    </div>
 				</div>
 			</div>
 		</div>

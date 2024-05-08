@@ -278,14 +278,14 @@ $conn = $db->get_connection();
 			<div class="Our_Branches_txt pb-5">
 				<h3>Our Branches</h3>
 			</div>
-<?php
-$i = 1;
-$qry = "SELECT * FROM branches ORDER BY id DESC";
-$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+            <?php
+            $i = 1;
+            $qry = "SELECT * FROM branches ORDER BY id DESC";
+            $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
 
-if ($result) {
-    while ($row = mysqli_fetch_assoc($result)) {
-        ?>
+            if ($result) {
+                while ($row = mysqli_fetch_assoc($result)) {
+            ?>
 			<div class="col-md-3">
 				<div class="card" style="width: 18rem;">
 					<img src="<?php
@@ -302,11 +302,11 @@ if ($result) {
 				</div>
 			</div>
         <?php
-    }
-} else {
-    echo "Error: " . mysqli_error($conn);
-}
-?>
+            }
+        } else {
+            echo "Error: " . mysqli_error($conn);
+        }
+        ?>
 
 
 		</div>
@@ -1253,7 +1253,7 @@ if ($result) {
 <!--================================Thrive_Globally section end here=======================-->
 
 <!--================================Power_Technology section start here=======================-->
-<section class="Power_Technology" style="background-image: url(images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat; background-position: center  center; background-size: cover;">
+<section class="Power_Technology" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat; background-position: center  center; background-size: cover;">
 	<div class="container">
 		<div class="row">
 			<div class="Power_Technology_txt" style="z-index:500;">

@@ -56,11 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_files_json = json_encode($files);
 
     $insert_query = "INSERT INTO get_quotes (name, company_name, company_website, phone, email, address, service_type, files, image_file_link, message) VALUES ('$sanitized_name', '$sanitized_companyName', '$sanitized_companyWebsite', '$sanitized_phone', '$sanitized_email', '$sanitized_address', '$sanitized_serviceTypes_json', '$sanitized_files_json', '$sanitized_imageFileLink', '$sanitized_message')";
-
-
-    // Insert data into database
-  //  $insert_query = "INSERT INTO get_quotes (name, company_name, company_website, phone, email, address, service_type, files, image_file_link, message) VALUES ('$sanitized_name', '$sanitized_companyName', '$sanitized_companyWebsite', '$sanitized_phone', '$sanitized_email', '$sanitized_address', '$sanitized_serviceTypes_json', '" . implode(',', $files) . "', '$sanitized_imageFileLink', '$sanitized_message')";
-
+    
     if (mysqli_query($conn, $insert_query)) {
         // Data inserted successfully
         $successMessage = "Form submitted successfully!";
