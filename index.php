@@ -86,6 +86,10 @@ $conn = $db->get_connection();
                 </div> -->
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
+
+
+
+                    
                         <?php
                         $qry = "SELECT * FROM history_galleries WHERE image_type = 2 ORDER BY id DESC";
                         if ($result = $conn->query($qry)) {
