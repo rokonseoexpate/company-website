@@ -315,50 +315,47 @@ $conn = $db->get_connection();
 </section>
 <!--================================Our_Branches section end here=======================-->
 
-<!--================================top_awards section start here=======================-->
-<section class="top_awards">
-	<div class="container">
-		<div class="row">
-			<div class="top_awards_txt">
-				<h3>Achievements and Recognitions</h3>
-				<p>SEO Expate Bangladesh Ltd. is certified by ISO 9001 & 27001 and we are a trusted provider of digital services. Besides, we are registered as a Joint Stock Company. In the year 2023, SEO Expate was awarded the ''Smart Bangladesh Award - 2023" by the government of Bangladesh for its significant role in the IT sector. Also, we are members of BASIS (Bangladesh Association of Software and Information Services), and BACCO (Bangladesh Association of Contact Center & Outsourcing). </p>
-			</div>
-			<div class="slider pt-5">
-				<div class="owl-carousel">
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/1.png" alt="image">
-						</div>
-						<h5 class="mb-0 text-center"><b>Winner</b></h5>
-						<p class="text-center p-4">Digital Bangladesh Award 2023 </p>
-					</div>
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/04.png" alt="image">
-						</div>
-						<h5 class="mb-0 text-center"><b>Exhibitor </b></h5>
-						<p class="text-center p-4">Basis Soft Expo 2023 </p>
-					</div>
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/06.png" alt="image">
-						</div>
-						<h5 class="mb-0 text-center"><b>Science Fair </b></h5>
-						<p class="text-center p-4"></p>
-					</div>
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/07.png" alt="image">
-						</div>
-						<h5 class="mb-0 text-center"><b> FBCCI </b></h5>
-						<p class="text-center p-4">FBCCI Intro Smart Bangladesh</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================top_awards section end here=======================-->
+    <!--================================top_awards section start here=======================-->
+    <section class="top_awards">
+        <div class="container">
+            <div class="row">
+                <div class="top_awards_txt">
+                    <h3>Achievements and Recognitions</h3>
+                    <p>For more than ten years, SEO Expate Bangladesh Ltd. has been at the forefront of the ICT industry, driving innovation and empowering businesses to thrive in the digital age. As we celebrate this milestone, we take a moment to reflect on our achievements and recognitions, which stand as testaments to our dedication to excellence.</p>
+                    <p>Explore a selection of our honors and accomplishments below.</p>
+                </div>
+                <div class="slider pt-5">
+                    <div class="owl-carousel">
+                        <?php
+                        $i = 1;
+                        $qry = "SELECT * FROM history_galleries WHERE image_type = 4 ORDER BY id DESC";
+                        $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+                        if ($result) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                <div class="slider-card">
+                                    <div class="d-flex justify-content-center align-items-center mb-4">
+                                        <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image" >
+                                    </div>
+                                    <h5 class="mb-0 text-center"><b><?php echo $row['short_title']?></b></h5>
+                                    <p class="text-center p-4"><?php echo $row['title']?> </p>
+                                </div>
+
+                                <?php
+                            }
+                        } else {
+                            echo "Error: " . mysqli_error($conn);
+                        }
+                        ?>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================top_awards section end here=======================-->
 
 <!--================================Our_Departments section start here=======================-->
 <section class="Our_Departments">
