@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="index">
+                        <a class="navbar-brand" href="index.php">
                             <img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="300" height="auto">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"

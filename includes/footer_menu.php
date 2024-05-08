@@ -3,7 +3,7 @@
 			<div class="row">
 				<div class="col-sm-3 contact_info">
 					<div class="">
-						<h5 class="mb-4"><a class="navbar-brand" href="index"><img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="" height="auto"></a></h5>		
+						<h5 class="mb-4"><a class="navbar-brand" href="index.php"><img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="" height="auto"></a></h5>
 					</div>
 					<div class="address d-flex gap-3">
 						<p>Diving Into Technology <br> ISO 9001 & 27001 Certified</p>
@@ -31,7 +31,7 @@
 							<p><a href="contact.php">Contact</a></p>
 						</div>
 						<div class="">
-							<p><a href="#">Notice</a></p>
+							<p><a href="notice.php">Notice</a></p>
 						</div>
 						<div class="">
 							<p><a href="#">FAQs</a></p>
