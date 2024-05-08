@@ -49,12 +49,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_serviceTypes = array_map(function($item) use ($conn) {
         return mysqli_real_escape_string($conn, $item);
     }, $serviceTypes);
+
     $sanitized_imageFileLink = mysqli_real_escape_string($conn, $imageFileLink);
     $sanitized_message = mysqli_real_escape_string($conn, $message);
+    $sanitized_serviceTypes_json = json_encode($sanitized_serviceTypes);
+    $sanitized_files_json = json_encode($files);
 
-    // Insert data into database
-    $insert_query = "INSERT INTO get_quotes (name, company_name, company_website, phone, email, address, service_type, files, image_file_link, message) VALUES ('$sanitized_name', '$sanitized_companyName', '$sanitized_companyWebsite', '$sanitized_phone', '$sanitized_email', '$sanitized_address', '" . implode(',', $sanitized_serviceTypes) . "', '" . implode(',', $files) . "', '$sanitized_imageFileLink', '$sanitized_message')";
-
+    $insert_query = "INSERT INTO get_quotes (name, company_name, company_website, phone, email, address, service_type, files, image_file_link, message) VALUES ('$sanitized_name', '$sanitized_companyName', '$sanitized_companyWebsite', '$sanitized_phone', '$sanitized_email', '$sanitized_address', '$sanitized_serviceTypes_json', '$sanitized_files_json', '$sanitized_imageFileLink', '$sanitized_message')";
+    
     if (mysqli_query($conn, $insert_query)) {
         // Data inserted successfully
         $successMessage = "Form submitted successfully!";
@@ -262,7 +264,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(assets/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
     <div class="container ">
         <div class="row">
             <div class="col-12" style="z-index:500;">
@@ -601,76 +603,76 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="row">
             <div class="PAY_IMG">
-                <img src="assets/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
+                <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
             </div>
         </div>
     </div>
 </section>
 <!--================================Thrive_Globally section end here=======================-->
 
-
-<script>
-    document.getElementById("freeTrialForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent form submission
-        // Validate form fields
-        if (validateForm()) {
-            this.submit(); // Submit the form if validation passes
-        }
-    });
-
-    function validateForm() {
-        // Reset error messages
-        document.querySelectorAll('.error').forEach(function(element) {
-            element.innerHTML = '';
-        });
-
-        // Get form inputs
-        var fullname = document.getElementById("fullname").value;
-        var phone = document.getElementById("inputPassword4").value;
-        var email = document.getElementById("inputEmail4").value;
-        var serviceType = document.getElementById("stuf").value;
-        var files = document.getElementById("file").value;
-        var message = document.getElementById("type").value;
-
-        // Perform validation
-        var isValid = true;
-        if (fullname.trim() === "") {
-            document.getElementById("fullnameError").innerHTML = "Please enter your full name.";
-            isValid = false;
-        }
-        if (phone.trim() === "") {
-            document.getElementById("phoneError").innerHTML = "Please enter your phone number.";
-            isValid = false;
-        }
-        if (email.trim() === "") {
-            document.getElementById("emailError").innerHTML = "Please enter your email address.";
-            isValid = false;
-        } else if (!isValidEmail(email)) {
-            document.getElementById("emailError").innerHTML = "Please enter a valid email address.";
-            isValid = false;
-        }
-        if (serviceType.trim() === "") {
-            document.getElementById("serviceTypeError").innerHTML = "Please select a service type.";
-            isValid = false;
-        }
-        if (files.trim() === "") {
-            document.getElementById("filesError").innerHTML = "Please select at least one file to upload.";
-            isValid = false;
-        }
-        if (message.trim() === "") {
-            document.getElementById("messageError").innerHTML = "Please enter a message.";
-            isValid = false;
-        }
-
-        return isValid; // Return true if all validations pass
-    }
-
-    function isValidEmail(email) {
-        // Regular expression for email validation
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-</script>
+<!---->
+<!--<script>-->
+<!--    document.getElementById("freeTrialForm").addEventListener("submit", function(event) {-->
+<!--        event.preventDefault(); // Prevent form submission-->
+<!--        // Validate form fields-->
+<!--        if (validateForm()) {-->
+<!--            this.submit(); // Submit the form if validation passes-->
+<!--        }-->
+<!--    });-->
+<!---->
+<!--    function validateForm() {-->
+<!--        // Reset error messages-->
+<!--        document.querySelectorAll('.error').forEach(function(element) {-->
+<!--            element.innerHTML = '';-->
+<!--        });-->
+<!---->
+<!--        // Get form inputs-->
+<!--        var fullname = document.getElementById("fullname").value;-->
+<!--        var phone = document.getElementById("inputPassword4").value;-->
+<!--        var email = document.getElementById("inputEmail4").value;-->
+<!--        var serviceType = document.getElementById("stuf").value;-->
+<!--        var files = document.getElementById("file").value;-->
+<!--        var message = document.getElementById("type").value;-->
+<!---->
+<!--        // Perform validation-->
+<!--        var isValid = true;-->
+<!--        if (fullname.trim() === "") {-->
+<!--            document.getElementById("fullnameError").innerHTML = "Please enter your full name.";-->
+<!--            isValid = false;-->
+<!--        }-->
+<!--        if (phone.trim() === "") {-->
+<!--            document.getElementById("phoneError").innerHTML = "Please enter your phone number.";-->
+<!--            isValid = false;-->
+<!--        }-->
+<!--        if (email.trim() === "") {-->
+<!--            document.getElementById("emailError").innerHTML = "Please enter your email address.";-->
+<!--            isValid = false;-->
+<!--        } else if (!isValidEmail(email)) {-->
+<!--            document.getElementById("emailError").innerHTML = "Please enter a valid email address.";-->
+<!--            isValid = false;-->
+<!--        }-->
+<!--        if (serviceType.trim() === "") {-->
+<!--            document.getElementById("serviceTypeError").innerHTML = "Please select a service type.";-->
+<!--            isValid = false;-->
+<!--        }-->
+<!--        if (files.trim() === "") {-->
+<!--            document.getElementById("filesError").innerHTML = "Please select at least one file to upload.";-->
+<!--            isValid = false;-->
+<!--        }-->
+<!--        if (message.trim() === "") {-->
+<!--            document.getElementById("messageError").innerHTML = "Please enter a message.";-->
+<!--            isValid = false;-->
+<!--        }-->
+<!---->
+<!--        return isValid; // Return true if all validations pass-->
+<!--    }-->
+<!---->
+<!--    function isValidEmail(email) {-->
+<!--        // Regular expression for email validation-->
+<!--        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;-->
+<!--        return emailRegex.test(email);-->
+<!--    }-->
+<!--</script>-->
 
 
 <?php

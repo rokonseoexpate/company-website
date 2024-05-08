@@ -10,9 +10,12 @@ if (isset($_GET['id'])) {
     $image_id = $_GET['id'];
 
     // Fetch image details from database
-    $select_query = "SELECT * FROM history_galleries WHERE id = $image_id";
-    $result = mysqli_query($conn, $select_query);
-    $row = mysqli_fetch_assoc($result);
+    $select_query = "SELECT * FROM history_galleries WHERE id = ?";
+    $stmt = $conn->prepare($select_query);
+    $stmt->bind_param("i", $image_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $row = $result->fetch_assoc();
 
     // Check if image exists
     if (!$row) {
@@ -22,47 +25,47 @@ if (isset($_GET['id'])) {
 
     // Process update form submission
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $title = $_POST['image_type'];
+        // Retrieve form data
+        $title = $_POST['title'];
+        $short_title = $_POST['short_title'];
+        $image_type = $_POST['image_type'];
 
-        // Check if a new image file is uploaded
-        if (!empty($_FILES["image"]["name"])) {
-            // Sanitize and prepare image name
-            $imageName = $_FILES["image"]["name"];
-            $imageName = preg_replace("/[^a-zA-Z0-9.]/", "-", $imageName); // Remove special characters except for letters, numbers, and periods
-            $imageName = str_replace(" ", "-", $imageName); // Replace spaces with hyphens
+        $image_path = $row['image']; // Default to the current image path
 
-            // Handling image upload
-            $targetDir = "../uploads/"; // Specify the directory where you want to store uploaded images
-            $targetFilePath = $targetDir . $imageName;
+        if ($_FILES["image"]["size"] > 0) {
+            // Upload new image file
+            $target_dir = "../uploads/";
+            $image_name = $_FILES["image"]["name"];
+            // Remove spaces from the image name
+            $image_name = str_replace(' ', '', $image_name);
+            $image_path = $target_dir . $image_name;
+            move_uploaded_file($_FILES["image"]["tmp_name"], $image_path);
+        }
 
-            // Upload file to server
-            if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath)) {
-                // Update image details in the database
-                $update_query = "UPDATE history_galleries SET image_type = '$title', image = '$targetFilePath' WHERE id = $image_id";
-                if (mysqli_query($conn, $update_query)) {
-                    // Redirect or display success message as per your requirement
-                    $successMessage = "Image Updated Successfully";
-                    header("Location: history-gallery-list.php");
-                    exit();
-                } else {
-                    // Handle update failure
-                    $errorMessage = "Error updating image: " . mysqli_error($conn);
-                }
-            } else {
-                $errorMessage = "Sorry, there was an error uploading your file.";
-            }
+        // Update query
+        $id = $_GET['id'];
+        $sql = "UPDATE history_galleries SET title = ?, short_title = ?, image_type = ?";
+        // Only add image column to the update query if a new image was uploaded
+        if ($_FILES["image"]["size"] > 0) {
+            $sql .= ", image = ?";
+        }
+        $sql .= " WHERE id = ?";
+
+        $stmt = $conn->prepare($sql);
+        if ($_FILES["image"]["size"] > 0) {
+            $stmt->bind_param("ssssi", $title, $short_title, $image_type, $image_path, $id);
         } else {
-            // If no new image file is uploaded, update only the image type
-            $update_query = "UPDATE history_galleries SET image_type = '$title' WHERE id = $image_id";
-            if (mysqli_query($conn, $update_query)) {
-                // Redirect or display success message as per your requirement
-                $successMessage = "Image Type Updated Successfully";
-                header("Location: history-gallery-list.php");
-                exit();
-            } else {
-                // Handle update failure
-                $errorMessage = "Error updating image type: " . mysqli_error($conn);
-            }
+            $stmt->bind_param("sssi", $title, $short_title, $image_type, $id);
+        }
+
+        // Execute query
+        if ($stmt->execute()) {
+            $successMessage = "Updated successfully!";
+            // Redirect to employee list page
+            header('Location: history-gallery-list.php');
+            exit();
+        } else {
+            $errorMessage = "Error updating employee: " . $stmt->error;
         }
     }
 } else {
@@ -80,6 +83,14 @@ if (isset($_GET['id'])) {
         </div>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" placeholder="Title" class="form-control" value="<?php echo $row['title']; ?>">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="short_title">Short Title</label>
+                    <input type="text" name="short_title" placeholder="Short Title" class="form-control" value="<?php echo $row['short_title']; ?>">
+                </div>
                 <div class="form-group col-md-12">
                     <label for="image_type">Image Type</label>
                     <select name="image_type" id="" class="form-control form-select">
@@ -97,7 +108,7 @@ if (isset($_GET['id'])) {
 
                 <div class="form-group col-md-6">
                     <label for="image">Image</label><br>
-                    <img src=" <?php echo $row['image']; ?>" alt="" width="250px">
+                    <img src="<?php echo $row['image']; ?>" alt="" width="250px">
                 </div>
                 <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-primary my-3">Update</button>

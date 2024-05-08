@@ -19,16 +19,16 @@
 				<div class="col-sm-3 contact_info">
 					<div class="about_info ">
 						<div class=" ">
-							<p><a href="about">About Us</a></p>
+							<p><a href="about.php">About Us</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="award">Awards</a></p>
+							<p><a href="award.php">Awards</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="history">History</a></p>
+							<p><a href="history.php">History</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="contact">Contact</a></p>
+							<p><a href="contact.php">Contact</a></p>
 						</div>
 						<div class="">
 							<p><a href="#">Notice</a></p>

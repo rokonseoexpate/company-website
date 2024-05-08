@@ -44,11 +44,11 @@ $conn = $db->get_connection();
                         <tr>
                             <td><?php echo $i++; ?></td>
                             <td><?php echo $row['name']; ?></td>
-                            <td><?php echo $row['map']; ?></td>
+                            <td width="150px"><?php echo $row['map']; ?></td>
 
-                            <td><img src="<?php echo $row['image']; ?>" alt="" class="img-fluid w-25"></td>
+                            <td width="150px"><img src="<?php echo $row['image']; ?>" alt="" class="img-fluid w-25"></td>
                             <td><?php echo $row['address']; ?></td>
-                            <td><?php echo $row['video_link']; ?></td>
+                            <td width="250px"><?php echo $row['video_link']; ?></td>
                             <td class="text-right">
                                 <a href="branch-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
                                 <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>

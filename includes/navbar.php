@@ -5,7 +5,7 @@
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="index">
-                            <img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="" height="auto">
+                            <img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="300" height="auto">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-content">
@@ -273,7 +273,7 @@
                                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
                                         data-bs-auto-close="outside">Company</a>
                                     <ul class="dropdown-menu shadow">
-                                        <li><a class="dropdown-item" href="about">About Us</a></li>
+                                        <li><a class="dropdown-item" href="about.php">About Us</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -289,11 +289,11 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="award">Awards</a></li>
+                                        <li><a class="dropdown-item" href="award.php">Awards</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="history">History</a></li>
+                                        <li><a class="dropdown-item" href="history.php">History</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -305,7 +305,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Notice</a></li>
+                                        <li><a class="dropdown-item" href="notice.php">Notice</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
