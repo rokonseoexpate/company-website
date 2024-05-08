@@ -1,15 +1,14 @@
 <?php
-    $title = "Home";
-    ob_start();
-    require_once 'config/dbconnect.php';
-    $db = new DB_con();
-    $conn = $db->get_connection();
+$title = "Home";
+ob_start();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 
 ?>
 
 <!--================================top-body section start here=======================-->
-<section class="top-body"
-    style="background-image: url(frontend/images/Advanced-technology.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
+<section class="top-body" style="background-image: url(frontend/images/Advanced-technology.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
     <div class="container ">
         <div class="row">
             <div class="col-md-7" style="z-index:500;">
@@ -52,36 +51,36 @@
             <div class="col-12 pt-5">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner pb-5">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="frontend/images/slide1.png" class="d-block w-100" alt="img">
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="frontend/images/slide2.png" class="d-block w-100" alt="img">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="frontend/images/slide3.png" class="d-block w-100" alt="img">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="frontend/images/slide4.png" class="d-block w-100" alt="img">
-                        </div>
+                        <?php
+                        $qry = "SELECT * FROM history_galleries WHERE image_type = 2 ORDER BY id DESC";
+                        if ($result = $conn->query($qry)) {
+                            $active = true; // Set active class for the first item
+                            while ($row = $result->fetch_assoc()) {
+                                $imagePath = $row['image'];
+                                $imageName = basename($imagePath);
+                                $newImagePath = 'uploads/' . $imageName;
+                        ?>
+                                <div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
+                                    <img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="img">
+                                </div>
+                        <?php
+                                $active = false; // Remove active class for subsequent items
+                            }
+                        }
+                        ?>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="prev">
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -105,8 +104,7 @@
             </div>
             <div class="tbt_slider">
                 <p>
-                    <span class="txt-rotate" data-period="2000"
-                        data-rotate='[ "Trustworthy technology, seamless results", "Empowering tomorrow, today", " Connecting people, businesses, and possibilities", "Highlight your unique value proposition", "Digitally transform your business, unlock unlimited potential." ]'>
+                    <span class="txt-rotate" data-period="2000" data-rotate='[ "Trustworthy technology, seamless results", "Empowering tomorrow, today", " Connecting people, businesses, and possibilities", "Highlight your unique value proposition", "Digitally transform your business, unlock unlimited potential." ]'>
                     </span>
                 </p>
             </div>
@@ -121,11 +119,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="top-seo-expate-video">
-                    <iframe width="100%" height="384" src="https://www.youtube.com/embed/ha2rO-rjLNA"
-                        title="ডিজিটাল বাংলাদেশ&#39; একটি প্রত্যয়, একটি স্বপ্ন। আর সেটাই বাস্তবায়ন করেছে SEO Expate Bangladesh Ltd."
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="384" src="https://www.youtube.com/embed/ha2rO-rjLNA" title="ডিজিটাল বাংলাদেশ&#39; একটি প্রত্যয়, একটি স্বপ্ন। আর সেটাই বাস্তবায়ন করেছে SEO Expate Bangladesh Ltd." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="col-md-6">
@@ -209,29 +203,21 @@
                     <div class="row mb-5">
                         <div class="p-5 bg-white rounded shadow mb-5">
                             <!-- Rounded tabs -->
-                            <ul id="myTab" role="tablist"
-                                class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
+                            <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button"
-                                        href="#home" role="tab" aria-controls="personal" aria-selected="true"
-                                        class="nav-link border-0  font-weight-bold active">Advising and Creating</a>
+                                    <a id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" href="#home" role="tab" aria-controls="personal" aria-selected="true" class="nav-link border-0  font-weight-bold active">Advising and Creating</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="employment-tab" data-bs-toggle="tab" data-bs-target="#employment"
-                                        href="#employment" role="tab" aria-controls="employment" aria-selected="false"
-                                        class="nav-link border-0  font-weight-bold">Design and Development</a>
+                                    <a id="employment-tab" data-bs-toggle="tab" data-bs-target="#employment" href="#employment" role="tab" aria-controls="employment" aria-selected="false" class="nav-link border-0  font-weight-bold">Design and Development</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="Services-tab" data-bs-toggle="tab" data-bs-target="#Services"
-                                        href="#Services" role="tab" aria-controls="Services" aria-selected="false"
-                                        class="nav-link border-0  font-weight-bold">Services</a>
+                                    <a id="Services-tab" data-bs-toggle="tab" data-bs-target="#Services" href="#Services" role="tab" aria-controls="Services" aria-selected="false" class="nav-link border-0  font-weight-bold">Services</a>
                                 </li>
                             </ul>
 
 
                             <div class="tab-content" id="myTabContent">
-                                <div id="personal" role="tabpanel" aria-labelledby="personal-tab"
-                                    class="tab-pane fade px-4 py-5 show active">
+                                <div id="personal" role="tabpanel" aria-labelledby="personal-tab" class="tab-pane fade px-4 py-5 show active">
                                     <p class="text-muted">Delivering full customized design and consulting services.</p>
                                     <p class="text-muted mb-0">SEO Expate Bangladesh Ltd, a provider of technology
                                         solutions, offers advice on how to create solutions for your issues. We help
@@ -240,20 +226,16 @@
                                     <div class="row pt-5">
                                         <div class="col-md-8">
                                             <h6>Principal Advantages of Our Design and Consultation Services:</h6>
-                                            <p class="text-muted mb-0 pt-2"><span><i
-                                                        class="fa-solid fa-circle"></i></span>Utilizing the newest
+                                            <p class="text-muted mb-0 pt-2"><span><i class="fa-solid fa-circle"></i></span>Utilizing the newest
                                                 technologies, update or upgrade current systems.</p>
-                                            <p class="text-muted mb-0 pt-2"> <span><i
-                                                        class="fa-solid fa-circle"></i></span>Specify digital
+                                            <p class="text-muted mb-0 pt-2"> <span><i class="fa-solid fa-circle"></i></span>Specify digital
                                                 transformation and intelligent automation strategies.</p>
-                                            <p class="text-muted mb-0 pt-2"><span><i
-                                                        class="fa-solid fa-circle"></i></span>User experiences should be
+                                            <p class="text-muted mb-0 pt-2"><span><i class="fa-solid fa-circle"></i></span>User experiences should be
                                                 redefined via design thinking.</p>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="explor_tab_img">
-                                                <img src="frontend/images/Advancing Your Business Technology.jpg"
-                                                    alt="image">
+                                                <img src="frontend/images/Advancing Your Business Technology.jpg" alt="image">
                                             </div>
                                         </div>
                                         <div class="top-body-button pt-3 text-center">
@@ -261,8 +243,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="employment" role="tabpanel" aria-labelledby="employment-tab"
-                                    class="tab-pane fade px-4 py-5">
+                                <div id="employment" role="tabpanel" aria-labelledby="employment-tab" class="tab-pane fade px-4 py-5">
                                     <p class="text-muted mb-0">SEO Expate Bangladesh Ltd, a provider of technology
                                         solutions, offers advice on how to create solutions for your issues. We help
                                         businesses become more inventive and flexible by meeting customer needs and
@@ -270,20 +251,16 @@
                                     <div class="row pt-5">
                                         <div class="col-md-8">
                                             <h6>Principal Advantages of Our Design and Consultation Services: </h6>
-                                            <p class="text-muted mb-0 pt-2"><span><i
-                                                        class="fa-solid fa-circle"></i></span>Describe your plans for
+                                            <p class="text-muted mb-0 pt-2"><span><i class="fa-solid fa-circle"></i></span>Describe your plans for
                                                 intelligent automation and digital transformation.</p>
-                                            <p class="text-muted mb-0 pt-2"> <span><i
-                                                        class="fa-solid fa-circle"></i></span>Utilizing the newest
+                                            <p class="text-muted mb-0 pt-2"> <span><i class="fa-solid fa-circle"></i></span>Utilizing the newest
                                                 technologies, update or modernize current systems</p>
-                                            <p class="text-muted mb-0 pt-2"><span><i
-                                                        class="fa-solid fa-circle"></i></span>Use design thinking to
+                                            <p class="text-muted mb-0 pt-2"><span><i class="fa-solid fa-circle"></i></span>Use design thinking to
                                                 redefine user experiences</p>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="explor_tab_img">
-                                                <img src="frontend/images/Manage Every Part of Your IT Operation.jpg"
-                                                    alt="image">
+                                                <img src="frontend/images/Manage Every Part of Your IT Operation.jpg" alt="image">
                                             </div>
                                         </div>
                                         <div class="top-body-button pt-3 text-center">
@@ -291,8 +268,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="Services" role="tabpanel" aria-labelledby="Services-tab"
-                                    class="tab-pane fade px-4 py-5">
+                                <div id="Services" role="tabpanel" aria-labelledby="Services-tab" class="tab-pane fade px-4 py-5">
                                     <p class="text-muted mb-0">SEO Expate Bangladesh Ltd, a provider of technology
                                         solutions, offers advice on how to create solutions for your issues. We help
                                         businesses become more inventive and flexible by meeting customer needs and
@@ -300,20 +276,16 @@
                                     <div class="row pt-5">
                                         <div class="col-md-8">
                                             <h6>Principal Advantages of Our Design and Services: </h6>
-                                            <p class="text-muted mb-0 pt-2"><span><i
-                                                        class="fa-solid fa-circle"></i></span>Describe your plans for
+                                            <p class="text-muted mb-0 pt-2"><span><i class="fa-solid fa-circle"></i></span>Describe your plans for
                                                 intelligent automation and digital transformation.</p>
-                                            <p class="text-muted mb-0 pt-2"> <span><i
-                                                        class="fa-solid fa-circle"></i></span>Utilizing the newest
+                                            <p class="text-muted mb-0 pt-2"> <span><i class="fa-solid fa-circle"></i></span>Utilizing the newest
                                                 technologies, update or modernize current systems</p>
-                                            <p class="text-muted mb-0 pt-2"><span><i
-                                                        class="fa-solid fa-circle"></i></span>Use design thinking to
+                                            <p class="text-muted mb-0 pt-2"><span><i class="fa-solid fa-circle"></i></span>Use design thinking to
                                                 redefine user experiences</p>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="explor_tab_img">
-                                                <img src="frontend/images/Having A Proactive and Proficient Team.jpg"
-                                                    alt="image">
+                                                <img src="frontend/images/Having A Proactive and Proficient Team.jpg" alt="image">
                                             </div>
                                         </div>
                                         <p class="text-muted pt-5">The business will benefit from an innovative and
@@ -353,87 +325,75 @@
                 <div class="bbb_viewed_slider_container">
                     <div class="owl-carousel owl-theme bbb_viewed_slider">
                         <div class="owl-item">
-                            <div
-                                class="card bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="card bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/11.png" alt="">
                                 </div>
                                 <div class="card-body bbb_viewed_content text-center">
                                     <h5 class="card-title">Success Story</h5>
                                     <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i
-                                                class="fa-solid fa-arrow-right-long"></i></span></a>
+                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class="card bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="card bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/10.png" alt="">
                                 </div>
                                 <div class="card-body bbb_viewed_content text-center">
                                     <h5 class="card-title">Success Story</h5>
                                     <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i
-                                                class="fa-solid fa-arrow-right-long"></i></span></a>
+                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                                 </div>
 
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class="card bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="card bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/09.png" alt="">
                                 </div>
                                 <div class="card-body bbb_viewed_content text-center">
                                     <h5 class="card-title">Success Story</h5>
                                     <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i
-                                                class="fa-solid fa-arrow-right-long"></i></span></a>
+                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class="card bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="card bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/08.png" alt="">
                                 </div>
                                 <div class="card-body bbb_viewed_content text-center">
                                     <h5 class="card-title">Success Story</h5>
                                     <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i
-                                                class="fa-solid fa-arrow-right-long"></i></span></a>
+                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class="card bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="card bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/07.png" alt="">
                                 </div>
                                 <div class="card-body bbb_viewed_content text-center">
                                     <h5 class="card-title">Success Story</h5>
                                     <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i
-                                                class="fa-solid fa-arrow-right-long"></i></span></a>
+                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class="card bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="card bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/06.png" alt="">
                                 </div>
                                 <div class="card-body bbb_viewed_content text-center">
                                     <h5 class="card-title">Success Story</h5>
                                     <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i
-                                                class="fa-solid fa-arrow-right-long"></i></span></a>
+                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -606,17 +566,17 @@
 
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
-                            ?>
+                    ?>
                             <div class="slider-card">
                                 <div class="d-flex justify-content-center align-items-center mb-4">
                                     <img src="<?php
-                                    $imagePath = $row['image'];
-                                    $imageName = basename($imagePath);
-                                    $newImagePath = 'uploads/' . $imageName;
-                                    echo $newImagePath; ?>" alt="image">
+                                                $imagePath = $row['image'];
+                                                $imageName = basename($imagePath);
+                                                $newImagePath = 'uploads/' . $imageName;
+                                                echo $newImagePath; ?>" alt="image">
                                 </div>
                             </div>
-                            <?php
+                    <?php
                         }
                     } else {
                         echo "Error: " . mysqli_error($conn);
@@ -631,72 +591,63 @@
                     <div class="owl-carousel owl-theme bbb_viewed_slider">
 
                         <div class="owl-item">
-                            <div
-                                class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/mukto-sokal.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/6578bb0f9469d.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/logo-fb.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/loggo.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/bogura.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class=" bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class=" bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/jaijaidin.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/satmatha.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/mukto-sokal.png" alt="">
                                 </div>
                             </div>
                         </div>
                         <div class="owl-item">
-                            <div
-                                class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                 <div class="bbb_viewed_image">
                                     <img src="frontend/images/daily-korotoya.png" alt="">
                                 </div>
@@ -730,22 +681,18 @@
 
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
-                            ?>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315"
-                                src="<?php echo $row['link']; ?>"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                <?php
+                    ?>
+                            <div class="slider-card">
+                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                    <iframe width="560" height="315" src="<?php echo $row['link']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                    <?php
+                        }
+                    } else {
+                        echo "Error: " . mysqli_error($conn);
                     }
-                } else {
-                    echo "Error: " . mysqli_error($conn);
-                }
-                ?>
+                    ?>
                 </div>
             </div>
         </div>
@@ -944,58 +891,38 @@
                     <div class="row mb-5">
                         <div class="p-5 bg-white rounded shadow mb-5">
                             <!-- Rounded tabs -->
-                            <ul id="myTab" role="tablist"
-                                class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
+                            <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="Mobile-tab" data-bs-toggle="tab" data-bs-target="#Mobile" type="button"
-                                        href="#Mobile" role="tab" aria-controls="Mobile" aria-selected="true"
-                                        class="nav-link border-0  font-weight-bold active"> Mobile </a>
+                                    <a id="Mobile-tab" data-bs-toggle="tab" data-bs-target="#Mobile" type="button" href="#Mobile" role="tab" aria-controls="Mobile" aria-selected="true" class="nav-link border-0  font-weight-bold active"> Mobile </a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="Front-tab" data-bs-toggle="tab" data-bs-target="#Front" href="#Front"
-                                        role="tab" aria-controls="Front" aria-selected="false"
-                                        class="nav-link border-0  font-weight-bold">Front-end </a>
+                                    <a id="Front-tab" data-bs-toggle="tab" data-bs-target="#Front" href="#Front" role="tab" aria-controls="Front" aria-selected="false" class="nav-link border-0  font-weight-bold">Front-end </a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="Back-tab" data-bs-toggle="tab" data-bs-target="#Back" href="#Back" role="tab"
-                                        aria-controls="Back" aria-selected="false"
-                                        class="nav-link border-0  font-weight-bold"> Back-end</a>
+                                    <a id="Back-tab" data-bs-toggle="tab" data-bs-target="#Back" href="#Back" role="tab" aria-controls="Back" aria-selected="false" class="nav-link border-0  font-weight-bold"> Back-end</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="Database-tab" data-bs-toggle="tab" data-bs-target="#Database"
-                                        href="#Database" role="tab" aria-controls="Database" aria-selected="false"
-                                        class="nav-link border-0  font-weight-bold"> Database</a>
+                                    <a id="Database-tab" data-bs-toggle="tab" data-bs-target="#Database" href="#Database" role="tab" aria-controls="Database" aria-selected="false" class="nav-link border-0  font-weight-bold"> Database</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="CMS-tab" data-bs-toggle="tab" data-bs-target="#CMS" href="#CMS" role="tab"
-                                        aria-controls="CMS" aria-selected="false"
-                                        class="nav-link border-0  font-weight-bold"> CMS</a>
+                                    <a id="CMS-tab" data-bs-toggle="tab" data-bs-target="#CMS" href="#CMS" role="tab" aria-controls="CMS" aria-selected="false" class="nav-link border-0  font-weight-bold"> CMS</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="Tools-tab" data-bs-toggle="tab" data-bs-target="#Tools" href="#Tools"
-                                        role="tab" aria-controls="Tools" aria-selected="false"
-                                        class="nav-link border-0  font-weight-bold"> Tools</a>
+                                    <a id="Tools-tab" data-bs-toggle="tab" data-bs-target="#Tools" href="#Tools" role="tab" aria-controls="Tools" aria-selected="false" class="nav-link border-0  font-weight-bold"> Tools</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="Integrations-tab" data-bs-toggle="tab" data-bs-target="#Integrations"
-                                        href="#Integrations" role="tab" aria-controls="Integrations"
-                                        aria-selected="false" class="nav-link border-0  font-weight-bold">
+                                    <a id="Integrations-tab" data-bs-toggle="tab" data-bs-target="#Integrations" href="#Integrations" role="tab" aria-controls="Integrations" aria-selected="false" class="nav-link border-0  font-weight-bold">
                                         Integrations</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="Cloud-tab" data-bs-toggle="tab" data-bs-target="#Cloud" href="#Cloud"
-                                        role="tab" aria-controls="Cloud" aria-selected="false"
-                                        class="nav-link border-0  font-weight-bold"> Cloud</a>
+                                    <a id="Cloud-tab" data-bs-toggle="tab" data-bs-target="#Cloud" href="#Cloud" role="tab" aria-controls="Cloud" aria-selected="false" class="nav-link border-0  font-weight-bold"> Cloud</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="DevOps-tab" data-bs-toggle="tab" data-bs-target="#DevOps" href="#DevOps"
-                                        role="tab" aria-controls="DevOps" aria-selected="false"
-                                        class="nav-link border-0  font-weight-bold"> DevOps</a>
+                                    <a id="DevOps-tab" data-bs-toggle="tab" data-bs-target="#DevOps" href="#DevOps" role="tab" aria-controls="DevOps" aria-selected="false" class="nav-link border-0  font-weight-bold"> DevOps</a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
-                                <div id="Mobile" role="tabpanel" aria-labelledby="Mobile-tab"
-                                    class="tab-pane fade px-4 py-5 show active">
+                                <div id="Mobile" role="tabpanel" aria-labelledby="Mobile-tab" class="tab-pane fade px-4 py-5 show active">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
                                             <img src="frontend/images/iOS.png" alt="">
@@ -1049,8 +976,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="Front" role="tabpanel" aria-labelledby="Front-tab"
-                                    class="tab-pane fade px-4 py-5">
+                                <div id="Front" role="tabpanel" aria-labelledby="Front-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
                                             <img src="frontend/images/AngularJs.png" alt="">
@@ -1102,8 +1028,7 @@
                                         <div class="col-md-1"></div>
                                     </div>
                                 </div>
-                                <div id="Back" role="tabpanel" aria-labelledby="Back-tab"
-                                    class="tab-pane fade px-4 py-5">
+                                <div id="Back" role="tabpanel" aria-labelledby="Back-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
                                             <img src="frontend/images/java-icon.png" alt="">
@@ -1155,8 +1080,7 @@
                                         <div class="col-md-1"></div>
                                     </div>
                                 </div>
-                                <div id="Database" role="tabpanel" aria-labelledby="Database-tab"
-                                    class="tab-pane fade px-4 py-5">
+                                <div id="Database" role="tabpanel" aria-labelledby="Database-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
                                             <img src="frontend/images/MySQL.png" alt="">
@@ -1222,8 +1146,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="Tools" role="tabpanel" aria-labelledby="Tools-tab"
-                                    class="tab-pane fade px-4 py-5">
+                                <div id="Tools" role="tabpanel" aria-labelledby="Tools-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
                                             <img src="frontend/images/3DS-Max.webp" alt="">
@@ -1251,8 +1174,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="Integrations" role="tabpanel" aria-labelledby="Integrations-tab"
-                                    class="tab-pane fade px-4 py-5">
+                                <div id="Integrations" role="tabpanel" aria-labelledby="Integrations-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
                                             <img src="frontend/images/Firebase (1).png" alt="">
@@ -1298,8 +1220,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div id="Cloud" role="tabpanel" aria-labelledby="Cloud-tab"
-                                    class="tab-pane fade px-4 py-5">
+                                <div id="Cloud" role="tabpanel" aria-labelledby="Cloud-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
                                         </div>
@@ -1316,8 +1237,7 @@
                                             <p>Amazon S3</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/amazon-route-53-technology-icon-75x75-1.webp"
-                                                alt="">
+                                            <img src="frontend/images/amazon-route-53-technology-icon-75x75-1.webp" alt="">
                                             <p>Amazon Route 53</p>
                                         </div>
                                         <div class="col-md-2">
@@ -1326,8 +1246,7 @@
                                     </div>
 
                                 </div>
-                                <div id="DevOps" role="tabpanel" aria-labelledby="DevOps-tab"
-                                    class="tab-pane fade px-4 py-5">
+                                <div id="DevOps" role="tabpanel" aria-labelledby="DevOps-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-4">
                                         </div>
@@ -1554,7 +1473,7 @@
 </section>
 <!--================================top_ready_start section end here=======================-->
 
-<?php 
+<?php
 
 $main_content = ob_get_clean();
 include './layouts/app.php';

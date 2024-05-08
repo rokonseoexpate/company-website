@@ -805,10 +805,10 @@ $conn = $db->get_connection();
 						<?php
 
 						$blogQuery = "SELECT blogs.*, blog_categories.name as category_name
-				FROM blogs 
-				LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
-				WHERE blog_category_id = 6
-				ORDER BY blogs.id DESC";
+							FROM blogs 
+							LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+							WHERE blog_category_id = 6
+							ORDER BY blogs.id DESC";
 
 						$blogs = $conn->query($blogQuery);
 						foreach ($blogs as $event) {
@@ -831,7 +831,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="card-body">
 										<a href="" class="text-reset">
-											<h5 class="card-title mb-3 text-light"><?php $event['title'] ?></h5>
+											<h5 class="card-title mb-3 text-light"><?php echo $event['title'] ?> </h5>
 										</a>
 										<a href="#" class="text-reset">
 											<p class="text-danger">Read Insight →</p>

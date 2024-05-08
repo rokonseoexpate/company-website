@@ -29,7 +29,7 @@ $conn = $db->get_connection();
             <?php
                 $count = 1;
                 $qry = "SELECT * FROM history_galleries ORDER BY id DESC";
-                $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+                $result = mysqli_query($conn, $qry);
 
                 if ($result) {
                     while ($row = mysqli_fetch_assoc($result)) {
