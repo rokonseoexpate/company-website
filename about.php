@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "About us";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -278,143 +278,39 @@ $conn = $db->get_connection();
 			<div class="Our_Branches_txt pb-5">
 				<h3>Our Branches</h3>
 			</div>
+<?php
+$i = 1;
+$qry = "SELECT * FROM branches ORDER BY id DESC";
+$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+if ($result) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        ?>
 			<div class="col-md-3">
 				<div class="card" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Head-Office.jpg" class="card-img-top" alt="Image">
+					<img src="<?php
+                    $imagePath = $row['image'];
+                    $imageName = basename($imagePath);
+                    $newImagePath = 'uploads/' . $imageName;
+                    echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['name']?>">
 					<div class="card-body">
-						<h5 class="card-title">Head Office (Bogura)</h5>
-						<p class="card-text">Floor 1, Kagjipara, SEO Expate Tower, Majhira, Shahajanpur, Bogura-5801, Bangladesh</p>
-						<div><a href="#" class="text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class="text-success">See More →</a></div>
+						<h5 class="card-title"><?php echo $row['name']?></h5>
+						<p class="card-text"><?php echo $row['address']?></p>
+						<div><a href="branch.php?id=<?php echo $row['id']?>" class="text-success">View Location Map →</a></div>
+						<div class="pt-2"><a href="branch.php?id=<?php echo $row['id']?>" class="text-success">See More →</a></div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
-				<div class="card hover-zoom" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Dhaka-Corporet-office.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Corporate Office (Dhaka)</h5>
-						<p class="card-text">House – 386, Level-2, Road-6, Baridhara DOHS, Dhaka – 1212, Bangladesh</p>
-						<div><a href="#" class=" text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class=" text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-2nd-Branch.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Second Branch (Bogura)</h5>
-						<p class="card-text">Floor 2, Mofazzal Tower, Majhira Bazar, Shahajanpur, Bogura-5801, Bangladesh</p>
-						<div><a href="#" class=" text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class=" text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-3rd-Branch-1.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Third Branch (Bogura)</h5>
-						<p class="card-text">Floor 4 & 5, Mofazzal Tower, Majhira Bazar, Shahajanpur, Bogura-5801, Bangladesh</p>
-						<div><a href="#" class=" text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class=" text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
+        <?php
+    }
+} else {
+    echo "Error: " . mysqli_error($conn);
+}
+?>
+
+
 		</div>
-		<div class="row pt-5">
-			<div class="col-md-3">
-				<div class="card" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Jalesharitola-Branch.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Jalesharitola Branch (Bogura)</h5>
-						<p class="card-text">Romena Afaz Complex, 2nd floor, Romena Afaz Road, Jalesharitola, Bogura -5800, Bangladesh</p>
-						<div><a href="#" class="text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class="text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card hover-zoom" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Sherpur-Branch-1.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Sherpur Branch (Bogura)</h5>
-						<p class="card-text">Sherpur Bus Stand, Sherpur Bazar, SEO Expate Tower, Sherpur, Bogura – 5840, Bangladesh</p>
-						<div><a href="#" class=" text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class=" text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Naogaon-Branch-1.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Naogaon Branch (Naogaon)</h5>
-						<p class="card-text">Mohadevpur Upazila Gate number 04, Hannan Tower 1st floor, Mohadevpur, Naogaon – 6530, Bangladesh</p>
-						<div><a href="#" class=" text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class=" text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Naogaon-Second-Branch.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Second Branch (Naogaon)</h5>
-						<p class="card-text">Mohadevpur Upazila Gate number 04, Hannan Tower 3rd floor, Mohadevpur, Naogaon – 6530, Bangladesh</p>
-						<div><a href="#" class=" text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class=" text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row pt-5">
-			<div class="col-md-3">
-				<div class="card" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Ullapara-Branch.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Ullapara Branch (Sirajganj)</h5>
-						<p class="card-text">Science College Road, Jhikira, Ullapara, Sirajganj – 6760, Bangladesh</p>
-						<div><a href="#" class="text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class="text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card hover-zoom" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Ullapara-2nd-Branch-1.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Ullapara Second Branch (Sirajganj)</h5>
-						<p class="card-text">Science College Road, Jhikira, Ullapara, Sirajganj – 6760, Bangladesh</p>
-						<div><a href="#" class=" text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class=" text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Palashbari-Branch-Gaibandha-Branch.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Palashbari Branch (Gaibandha)</h5>
-						<p class="card-text">Palashbari RDRS Bazar, SEO Expate Tower, Palashbari, Gaibandha – 5730, Bangladesh</p>
-						<div><a href="#" class=" text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class=" text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="card" style="width: 18rem;">
-					<img src="frontend/images/SEO-Expate-Pirganj-Branch.jpg" class="card-img-top" alt="Image">
-					<div class="card-body">
-						<h5 class="card-title">Pirganj Branch (Rangpur)</h5>
-						<p class="card-text">Upcoming Branch – 2024</p>
-						<div><a href="#" class=" text-success">View Location Map →</a></div>
-						<div class="pt-2"><a href="#" class=" text-success">See More →</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
+
 	</div>
 </section>
 <!--================================Our_Branches section end here=======================-->

@@ -77,7 +77,7 @@ if (isset($_POST['submit'])) {
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="map">Map</label>
+                        <label for="map">Map <span class="text-warning">( width="400" height="300" )</span></label>
                         <textarea name="map" placeholder="Map" class="form-control" id="" cols="5" rows="5" required></textarea>
                     </div>
                 </div>
@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="map">Video Link</label>
+                        <label for="map">Video Link <span class="text-warning">( width="100%" height="315" )</span></label>
                         <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="5" required></textarea>
                     </div>
                 </div>
