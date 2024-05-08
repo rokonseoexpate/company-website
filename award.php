@@ -1,6 +1,10 @@
 <?php
 $title = "Home";
 ob_start();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
 ?>
 
 <!--================================top-awards section start here=======================-->
@@ -38,172 +42,55 @@ ob_start();
                 <p>SEO Expate received many awards and recognitions throughout its journey by providing IT solutions to Governments, Non-profit Organizations, and many International companies to help them reimagine their business and navigate their digital transformation. Winning recognition in every step of our journey helped us gather strength for making a better and bold new future. Explore our awards and recognitions that we have earned by trust, commitment, and dedication.</p>
             </div>
             <hr>
-            <!-- <div class="col-md-6">
-                    <div class="Core_Values_txt">
-                        <h4>Digital Bangladesh Award 2023</h4>
-                        <p>The ICT DIvision of Bangladesh has awarded SEO Expate the Digital Bangladesh Award 2022 as the Best Software & Technology Company in the private institution category in recognition of its unique contribution to the ICT sector.</p>
-                        <p>Md. Mizanur Rahman, Founder  of SEO Expate, received the award from Sheikh Hasina, Honorable Prime Minister of the People’s Republic of Bangladesh at the award giving ceremony at Bangabandhu International Conference Centre (BICC) in Dhaka, Bangladesh on Monday, 12th December 2023.</p>
-                        <p>The ICT Division organized the event with the theme “Advanced Technology & Inclusive Development.”</p>
-                    </div>
-                    <div class="top-body-button pt-4">
-						<a type="button" href="#">Read More Details</a>
-					</div>
-                </div>
-                <div class="col-md-6">
-                    <div class="Core_Values_img pb-5 pt-3 ">
-                        <img src="frontend/images/trophy-of-digital-bangladesh-award-won-by-seoexpate.png" alt="image">
-                    </div>
-                </div> -->
-        </div>
-        <!-- <hr> -->
+        
 
         <?php
 
-        $qry = "SELECT * FROM certificates order by id desc";
-        if ($result = $conn->query($qry)) {
-            $row = $result->fetch_assoc();
-            foreach ($row as $key => $award) {
-                $imagePath = $row['image'];
-                $imageName = basename($imagePath);
-                $newImagePath = '../uploads/' . $imageName;
-
+$qry = "SELECT * FROM awards order by id desc";
+if ($result = $conn->query($qry)) {
+    $number = 1;
+    while ($row = $result->fetch_assoc()) {
+        $imagePath = $row['image'];
+        $imageName = basename($imagePath);
+        $newImagePath = 'uploads/' . $imageName;
         ?>
-                <div class="row pt-4 pb-2">
-
-                    <div class="col-md-6">
-                        <div class="Core_Values_img pb-5 pt-3">
-                            <img src="frontend/images/04.png" alt="image">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="Core_Values_txt">
-                            <h4>Basis Soft Expo 2023</h4>
-                            <p>SEO Expate became the champion and won the National Mobile Application Award 2014 in the ‘Entertainment & Lifestyle’ category from ICT Division of Bangladesh on 18th April, 2013.</p>
-                            <p>National Mobile Application Award was a unique program held for the first time in Bangladesh. 212 participants were in the same group for the competition across the country. SEO Expate won the competion and became the champion for developing innovative games.</p>
-                            <p>Winning the National Mobile Application Award SEO Expate showed the whole nation that they are capable of doing anything. It was a big achievement for SEO Expate which inspired its team to expand globally.</p>
-                        </div>
-                        <div class="top-body-button pt-4">
-                            <a type="button" href="#">Read More Details</a>
-                        </div>
+        <div class="row pt-4 pb-2">
+            <?php if ($number++ % 2 == 0) { ?>
+                <div class="col-md-6">
+                    <div class="Core_Values_img pb-5 pt-3 text-center">
+                        <img src="<?php echo $newImagePath; ?>" alt="image">
                     </div>
                 </div>
-                <hr>
+                <div class="col-md-6">
+                    <div class="Core_Values_txt">
+                        <h4><?php echo $row['title']; ?></h4>
+                        <p><?php echo $row['description']; ?></p>
+                    </div>
+                    <div class="top-body-button pt-4">
+                        <a type="button" href="#">Read More Details</a>
+                    </div>
+                </div>
+            <?php } else { ?>
+                <div class="col-md-6">
+                    <div class="Core_Values_txt">
+                        <h4><?php echo $row['title']; ?></h4>
+                        <p><?php echo $row['description']; ?></p>
+                    </div>
+                    <div class="top-body-button pt-4">
+                        <a type="button" href="#">Read More Details</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="Core_Values_img pb-5 pt-3 text-center">
+                        <img src="<?php echo $newImagePath; ?>" alt="image">
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+        <hr>
+    <?php }
+} ?>
 
-        <?php }
-        } ?>
-        <div class="row pt-4 pb-2">
-            <div class="col-md-6">
-                <div class="Core_Values_txt">
-                    <h4>Science Fair Award 2023</h4>
-                    <p>The Global Economics Award program identifies business enterprises that deliver best quality work and practice good culture towards their regional and global economies.</p>
-                    <p>The Global Economics Award program identifies business enterprises that deliver best quality work and practice good culture towards their regional and global economies.</p>
-                    <p>SEO Expate fulfill all the requirements and recognized as winner of the Global Economic Award 2022 in technology category. The award added a new dimension to enhance the growth of SEO Expate.</p>
-                </div>
-                <div class="top-body-button pt-4">
-                    <a type="button" href="#">Read More Details</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="Core_Values_img pb-5 pt-3">
-                    <img src="frontend/images/06.png" alt="image">
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row pt-4 pb-2">
-            <div class="col-md-6">
-                <div class="Core_Values_img pb-5 pt-3">
-                    <img src="frontend/images/07.png" alt="image">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="Core_Values_txt">
-                    <h4>FBCCI Intro Smart Bangladesh Award 2023</h4>
-                    <p>SEO Expate became the champion and won the National Mobile Application Award 2014 in the ‘Entertainment & Lifestyle’ category from ICT Division of Bangladesh on 18th April, 2013.</p>
-                    <p>National Mobile Application Award was a unique program held for the first time in Bangladesh. 212 participants were in the same group for the competition across the country. SEO Expate won the competion and became the champion for developing innovative games.</p>
-                    <p>Winning the National Mobile Application Award SEO Expate showed the whole nation that they are capable of doing anything. It was a big achievement for SEO Expate which inspired its team to expand globally.</p>
-                </div>
-                <div class="top-body-button pt-4">
-                    <a type="button" href="#">Read More Details</a>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row pt-4 pb-2">
-            <div class="col-md-6">
-                <div class="Core_Values_txt">
-                    <h4>Smart Bangladesh Award 2023</h4>
-                    <p>SEO Expate became the champion and won the National Mobile Application Award 2014 in the ‘Entertainment & Lifestyle’ category from ICT Division of Bangladesh on 18th April, 2013.</p>
-                    <p>National Mobile Application Award was a unique program held for the first time in Bangladesh. 212 participants were in the same group for the competition across the country. SEO Expate won the competion and became the champion for developing innovative games.</p>
-                    <p>Winning the National Mobile Application Award SEO Expate showed the whole nation that they are capable of doing anything. It was a big achievement for SEO Expate which inspired its team to expand globally.</p>
-                </div>
-                <div class="top-body-button pt-4">
-                    <a type="button" href="#">Read More Details</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="Core_Values_img pb-5 pt-3">
-                    <img src="frontend/images/08.png" alt="image">
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row pt-4 pb-2">
-            <div class="col-md-6">
-                <div class="Core_Values_img pb-5 pt-3">
-                    <img src="frontend/images/09.png" alt="image">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="Core_Values_txt">
-                    <h4>FBCCI Body Member Award 2023-2025</h4>
-                    <p>SEO Expate became the champion and won the National Mobile Application Award 2014 in the ‘Entertainment & Lifestyle’ category from ICT Division of Bangladesh on 18th April, 2013.</p>
-                    <p>National Mobile Application Award was a unique program held for the first time in Bangladesh. 212 participants were in the same group for the competition across the country. SEO Expate won the competion and became the champion for developing innovative games.</p>
-                    <p>Winning the National Mobile Application Award SEO Expate showed the whole nation that they are capable of doing anything. It was a big achievement for SEO Expate which inspired its team to expand globally.</p>
-                </div>
-                <div class="top-body-button pt-4">
-                    <a type="button" href="#">Read More Details</a>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row pt-4 pb-2">
-            <div class="col-md-6">
-                <div class="Core_Values_txt">
-                    <h4>Award 2023</h4>
-                    <p>SEO Expate became the champion and won the National Mobile Application Award 2014 in the ‘Entertainment & Lifestyle’ category from ICT Division of Bangladesh on 18th April, 2013.</p>
-                    <p>National Mobile Application Award was a unique program held for the first time in Bangladesh. 212 participants were in the same group for the competition across the country. SEO Expate won the competion and became the champion for developing innovative games.</p>
-                    <p>Winning the National Mobile Application Award SEO Expate showed the whole nation that they are capable of doing anything. It was a big achievement for SEO Expate which inspired its team to expand globally.</p>
-                </div>
-                <div class="top-body-button pt-4">
-                    <a type="button" href="#">Read More Details</a>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="Core_Values_img pb-5 pt-3">
-                    <img src="frontend/images/10.png" alt="image">
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="row pt-4 pb-2">
-            <div class="col-md-6">
-                <div class="Core_Values_img pb-5 pt-3">
-                    <img src="frontend/images/11.png" alt="image">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="Core_Values_txt">
-                    <h4> Award 2023</h4>
-                    <p>SEO Expate became the champion and won the National Mobile Application Award 2014 in the ‘Entertainment & Lifestyle’ category from ICT Division of Bangladesh on 18th April, 2013.</p>
-                    <p>National Mobile Application Award was a unique program held for the first time in Bangladesh. 212 participants were in the same group for the competition across the country. SEO Expate won the competion and became the champion for developing innovative games.</p>
-                    <p>Winning the National Mobile Application Award SEO Expate showed the whole nation that they are capable of doing anything. It was a big achievement for SEO Expate which inspired its team to expand globally.</p>
-                </div>
-                <div class="top-body-button pt-4">
-                    <a type="button" href="#">Read More Details</a>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 <!--================================Core_Values section end here=======================-->

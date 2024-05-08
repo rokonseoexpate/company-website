@@ -15,8 +15,8 @@ if (isset($_POST['submit'])) {
     if ($_FILES["image"]["size"] > 0) {
         // Sanitize the file name
         $image_name = $_FILES["image"]["name"];
-        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name); // Replace special characters with hyphens
-        $image_name = preg_replace("/\s+/", "-", $image_name); // Replace spaces with hyphens
+        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name); 
+        $image_name = preg_replace("/\s+/", "-", $image_name); 
 
         // Upload new image file
         $target_dir = "../uploads/";

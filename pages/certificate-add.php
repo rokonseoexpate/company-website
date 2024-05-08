@@ -35,8 +35,8 @@ $conn = $db->get_connection();
 
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="description">Description</label>
-                        <textarea name="description" placeholder="Description" class="form-control" id="summernote" cols="30" rows="10"></textarea>
+                        <label for="shortDescription">Description</label>
+                        <textarea id="certificate" name="description" placeholder="Description" class="form-control"  cols="30" rows="10"></textarea>
                     </div>
                 </div>
 
@@ -53,6 +53,8 @@ include '../layouts/master.php';
 ?>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="../assets/plugins/summernote/summernote-bs4.min.js"></script> -->
+
 <script>
     $(document).ready(function() {
         $('#submit').on('submit', function(event) {
