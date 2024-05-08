@@ -14,7 +14,6 @@ if (isset($_GET['id'])) {
 
     $errorMessage = '';
 
-
     // Fetch image path
     $sql_select_image = "SELECT image FROM teams WHERE id=$id ";
 

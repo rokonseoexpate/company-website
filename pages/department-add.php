@@ -8,16 +8,38 @@ $conn = $db->get_connection();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
 
-    // Insert department into departments table
-    $insert_query = "INSERT INTO departments (name) VALUES ('$name')";
-    if (mysqli_query($conn, $insert_query)) {
+    // Check if a new image is uploaded
+    if ($_FILES["image"]["size"] > 0) {
+        // Sanitize the file name
+        $image_name = $_FILES["image"]["name"];
+        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
+        $image_name = preg_replace("/\s+/", "-", $image_name);
+
+        // Upload new image file
+        $target_dir = "../uploads/";
+        $target_file = $target_dir . $image_name;
+        move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+        $image_path = $target_file;
+    } else {
+        $image_path = ''; // Set default image path if no image is uploaded
+    }
+
+    // Prepare and bind SQL statement
+    $insert_query = "INSERT INTO departments (name, image) VALUES (?, ?)";
+    $stmt = $conn->prepare($insert_query);
+    $stmt->bind_param("ss", $name, $image_path);
+
+    if ($stmt->execute()) {
         // Redirect or display success message as per your requirement
         header("Location: department-list.php");
         exit();
     } else {
         // Handle insert failure
-        $errorMessage = "Error creating department: " . mysqli_error($conn);
+        $errorMessage = "Error creating department: " . $stmt->error;
     }
+
+    // Close statement
+    $stmt->close();
 }
 ?>
 
@@ -30,9 +52,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-6">
                     <label for="name">Department Name</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="name">Department Image</label>
+                    <input type="file" class="form-control dropify" id="image" name="image" placeholder="Name">
                 </div>
 
                 <div class="form-group col-md-6">

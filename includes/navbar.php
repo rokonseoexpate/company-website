@@ -35,7 +35,6 @@
                                                                         ideas and transform them into reality.</p>
                                                                 </div>
                                                             </a>
-
                                                         </div>
                                                         <div class="list-group">
                                                             <a class="list-group-item d-flex"

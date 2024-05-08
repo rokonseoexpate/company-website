@@ -22,53 +22,59 @@ $conn = $db->get_connection();
         <div class="table-responsive">
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Action</th>
-                </tr>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Image</th>
+                        <th>Action</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <?php
-                $i = 1;
-                $qry = "SELECT * FROM departments ORDER BY id DESC";
-                $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+                    <?php
+                    $i = 1;
+                    $qry = "SELECT * FROM departments ORDER BY id DESC";
+                    $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
 
-                if ($result) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        ?>
-                        <tr>
-                            <td><?php echo $i++; ?></td>
-                            <td><?php echo $row['name']; ?></td>
-                            <td class="text-right">
-                                <a href="department-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
-                                <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
-                            </td>
-                        </tr>
-                        <?php
-                    }
-                } else {
-                    echo "Error: " . mysqli_error($conn); // Handle error if query execution fails
-                }
+                    if ($result) {
+                        while ($row = mysqli_fetch_assoc($result)) {
 
-                // Delete functionality
-                if (isset($_GET['delete_id'])) {
-                    $delete_id = $_GET['delete_id'];
-                    $sql_delete = "DELETE FROM departments WHERE id = $delete_id";
-
-                    if (mysqli_query($conn, $sql_delete)) {
-                        // Display success message
-                        $successMessage = "Departments deleted successfully!";
-                        echo $successMessage;
-
-                        // Refresh the page after deletion
-                        header("Location: $_SERVER[PHP_SELF]");
-                        exit(); // Exit after redirection
+                            $imagePath = $row['image'];
+                            $imageName = basename($imagePath);
+                            $newImagePath = '../uploads/' . $imageName;
+                    ?>
+                            <tr>
+                                <td><?php echo $i++; ?></td>
+                                <td><?php echo $row['name']; ?></td>
+                                <td class="text-center"><img style="width: 150px; height:100px" src="<?php echo  $newImagePath?>" alt="<?php echo $row['name']; ?>"></td>
+                                <td class="text-right">
+                                    <a href="department-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
+                                    <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
+                                </td>
+                            </tr>
+                    <?php
+                        }
                     } else {
-                        echo "Error deleting record: " . mysqli_error($conn);
+                        echo "Error: " . mysqli_error($conn); // Handle error if query execution fails
                     }
-                }
-                ?>
+
+                    // Delete functionality
+                    if (isset($_GET['delete_id'])) {
+                        $delete_id = $_GET['delete_id'];
+                        $sql_delete = "DELETE FROM departments WHERE id = $delete_id";
+
+                        if (mysqli_query($conn, $sql_delete)) {
+                            // Display success message
+                            $successMessage = "Departments deleted successfully!";
+                            echo $successMessage;
+
+                            // Refresh the page after deletion
+                            header("Location: $_SERVER[PHP_SELF]");
+                            exit(); // Exit after redirection
+                        } else {
+                            echo "Error deleting record: " . mysqli_error($conn);
+                        }
+                    }
+                    ?>
                 </tbody>
             </table>
         </div>

@@ -21,6 +21,10 @@ if (isset($_GET['id'])) {
     $imagePath = $row['image'];
     $imageName = basename($imagePath);
     $newImagePath = '../uploads/' . $imageName;
+} else {
+    $errorMessage = 'Select team member';
+    
+    echo "<script> window.location.href='core-team.php' </script>";
 }
 
 if (isset($_POST['submit'])) {
