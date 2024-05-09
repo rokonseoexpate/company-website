@@ -1,6 +1,10 @@
 <?php
-    $title = "Home";
-    ob_start();
+$title = "Home";
+ob_start();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
 ?>
 
 	<!--================================Header section end here=======================-->
@@ -507,232 +511,82 @@
 						    <div class="row">
 						    <div class="col-md-2 marginauto">
 							    <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column text-center border-0">
+                                    <?php
+                                    // Check database connection
+                                    if (!$conn) {
+                                        echo "Database connection failed: " . mysqli_connect_error();
+                                    } else {
+                                        $qry = "SELECT * FROM app_developments ORDER BY id DESC";
+                                        $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+
+                                        if ($result && mysqli_num_rows($result) > 0) {
+                                            $firstTab = true;
+                                            while ($row = mysqli_fetch_assoc($result)) {
+                                                ?>
+
 							      <li class="nav-item flex-sm-fill" role="presentation">
-							        <a id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" href="#home" role="tab" aria-controls="personal" aria-selected="true" class="nav-link border-0 font-weight-bold active "> Glowsy App </a>
+							        <a id="personal-tab-<?php echo $row['id']; ?>" data-bs-toggle="tab" data-bs-target="#personal<?php echo $row['id']; ?>" type="button" href="#home" role="tab"
+                                       aria-controls="personal<?php echo $row['id']; ?>" aria-selected="<?php echo $firstTab ? 'true' : 'false'; ?>"
+                                       class="nav-link border-0 font-weight-bold <?php echo $firstTab ? 'active' : ''; ?> ">  <?php echo $row['name']; ?> </a>
 							      </li>
-							      <li class="nav-item flex-sm-fill" role="presentation">
-							        <a id="employment-tab" data-bs-toggle="tab" data-bs-target="#employment" href="#employment" role="tab" aria-controls="employment" aria-selected="false" class="nav-link border-0 font-weight-bold">  Hailz App</a>
-							      </li>
-							      <li class="nav-item flex-sm-fill" role="presentation">
-							        <a id="Services-tab" data-bs-toggle="tab" data-bs-target="#Services" href="#Services" role="tab" aria-controls="Services" aria-selected="false" class="nav-link border-0 font-weight-bold">Partex App</a>
-							      </li>
-							      <li class="nav-item flex-sm-fill" role="presentation">
-							        <a id="Servicess-tab" data-bs-toggle="tab" data-bs-target="#Servicess" href="#Servicess" role="tab" aria-controls="Servicess" aria-selected="false" class="nav-link border-0 font-weight-bold">Artisan </a>
-							      </li>
-							      <li class="nav-item flex-sm-fill" role="presentation">
-							        <a id="Serrvices-tab" data-bs-toggle="tab" data-bs-target="#Serrvices" href="#Serrvices" role="tab" aria-controls="Serrvices" aria-selected="false" class="nav-link border-0 font-weight-bold">Doorstem</a>
-							      </li>
+
+                                    <?php
+                                                        $firstTab = false;
+                                                    }
+                                                } else {
+                                                    echo "No journeys found.";
+                                                }
+                                            }
+                                            ?>
+
+
 							    </ul>
 						    </div>
 						    <div class="col-md-10">
 						    <div class="tab-content" id="myTabContent">
-						      	<div id="personal" role="tabpanel" aria-labelledby="personal-tab" class="tab-pane fade show active">
+    <?php
+                                            // Check database connection
+                                            if (!$conn) {
+                                                echo "Database connection failed: " . mysqli_connect_error();
+                                            } else {
+                                                $qry = "SELECT * FROM app_developments ORDER BY id DESC";
+                                                $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+
+                                                if ($result && mysqli_num_rows($result) > 0) {
+                                                    $firstPane = true;
+                                                    while ($row = mysqli_fetch_assoc($result)) {
+                                                        ?>
+						      	<div id="personal<?php echo $row['id']; ?>" role="tabpanel" aria-labelledby="personal-tab-<?php echo $row['id']; ?>" class="tab-pane fade <?php echo $firstPane ? 'show active' : ''; ?>">
 						        	<div class="slider pt-5">
 							            <div class="owl-carousel">
+                                            <?php
+                                            $jsonString = $row['images'];
+                                            $data = json_decode($jsonString, true);
+                                              if ($data != null) {
+
+                                            ?>
+                                            <?php foreach ($data as $file) { ?>
 							               <div class="slider-card">
 							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                        <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-3-768x1559.png" alt="image" >
+							                        <img src="<?php echo 'uploads/' . basename($file); ?>" alt="image" >
 							                  	</div>
 							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                  		<img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-4-768x1559.png" alt="image" >
-							              		</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-2-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-5-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-6-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-7-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-8-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>			                	                    
+                                             <?php } ?>
+                                            <?php } ?>
+
 							            </div>
 							        </div>						
 						      	</div>
-						      	<div id="employment" role="tabpanel" aria-labelledby="employment-tab" class="tab-pane fade">
-						        	<div class="slider pt-5">
-							            <div class="owl-carousel">
-							            	<div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-5-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-6-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-7-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							               <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                        <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-3-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                  		<img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-4-768x1559.png" alt="image" >
-							              		</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-2-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>							                
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-8-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>			                	                    
-							            </div>
-							        </div>
-						        	
-						      	</div>
-						      	<div id="Services" role="tabpanel" aria-labelledby="Services-tab" class="tab-pane fade">
-						        	<div class="slider pt-5">
-							            <div class="owl-carousel">
-							            	<div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-6-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-7-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-8-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							               <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                        <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-3-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                  		<img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-4-768x1559.png" alt="image" >
-							              		</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-2-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-5-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>							                			                	                    
-							            </div>
-							        </div>
-						      	</div>
-						      	<div id="Servicess" role="tabpanel" aria-labelledby="Servicess-tab" class="tab-pane fade">
-						        	<div class="slider pt-5">
-							            <div class="owl-carousel">
-							            	<div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-2-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-5-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-6-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							               <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                        <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-3-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                  		<img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-4-768x1559.png" alt="image" >
-							              		</div>
-							                </div>							                
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-7-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-8-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>			                	                    
-							            </div>
-							        </div>
-						        	
-						      	</div>
-						      	<div id="Serrvices" role="tabpanel" aria-labelledby="Serrvices-tab" class="tab-pane fade">
-						        	<div class="slider pt-5">
-							            <div class="owl-carousel">
-							            	 <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-6-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-7-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							               <div class="slider-card">							               	
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                        <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-3-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                  		<img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-4-768x1559.png" alt="image" >
-							              		</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-2-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-5-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>							               
-							                <div class="slider-card">
-							                  	<div class="d-flex justify-content-center align-items-center mb-4">
-							                       <img src="frontend/images/Mobile-app-development-services-portfolio-glowsy-8-768x1559.png" alt="image" >
-							                  	</div>
-							                </div>			                	                    
-							            </div>
-							        </div>
-						      	</div>
+
+                                                        <?php
+                                                        $firstPane = false;
+                                                    }
+                                                } else {
+                                                    echo "No journeys found.";
+                                                }
+                                            }
+    ?>
+
 						    </div>
 						    </div>
 						    </div>					    

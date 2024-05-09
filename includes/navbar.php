@@ -103,7 +103,7 @@
                                                     <div class="col-lg-4 col-sm-6 py-4">
                                                         <div class="list-group">
                                                             <a class="list-group-item d-flex"
-                                                                href="app-development">
+                                                                href="app-development.php">
                                                                 <div><i class="fa-solid fa-mobile-screen"></i></div>
                                                                 <div>
                                                                     <h5>Mobile App Development</h5>
@@ -280,7 +280,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Department </a></li>
+                                        <li><a class="dropdown-item" href="department.php">Department </a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -300,7 +300,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Jobs</a></li>
+                                        <li><a class="dropdown-item" href="jobs.php">Jobs</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>

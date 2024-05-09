@@ -40,27 +40,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $highlighted_title = $_POST['highlighted_title'];
     $highlighted_details = $_POST['highlighted_details'];
 
-// Check if a new image file is uploaded
-    if ($_FILES['accelerating_image']['size'] > 0) {
-        // Sanitize the filename
-        $originalFileName = $_FILES['accelerating_image']['name'];
-        $sanitizedFileName = str_replace(' ', '-', $originalFileName); // Replace spaces with hyphens
-
-        // Move the uploaded file to the desired directory
+    // Check if a new image is uploaded
+    if ($_FILES["accelerating_image"]["size"] > 0) {
+        // Sanitize and upload the new image file
+        $image_name = $_FILES["accelerating_image"]["name"];
+        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
+        $image_name = preg_replace("/\s+/", "-", $image_name);
         $target_dir = "../uploads/";
-        $target_file = $target_dir . basename($sanitizedFileName);
-        if (move_uploaded_file($_FILES["accelerating_image"]["tmp_name"], $target_file)) {
-            // Image uploaded successfully, store the path in the database
-            $image_path = $target_file;
-        } else {
-            // Handle file upload error
-            echo "Sorry, there was an error uploading your file.";
-            exit();
-        }
+        $target_file = $target_dir . $image_name;
+        move_uploaded_file($_FILES["accelerating_image"]["tmp_name"], $target_file);
+        $image_path = $target_file;
     } else {
-        // Keep the previous image path if no new image is uploaded
-        $image_path = $row['image_path'];
+        // If no new image uploaded, retain the existing image path
+        $image_path = $row['accelerating_image'];
     }
+
 
     // SQL query to update the record
     $sql = "UPDATE histories SET 

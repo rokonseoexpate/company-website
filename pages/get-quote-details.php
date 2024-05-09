@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
     <div class="card px-3">
         <div class="d-flex  justify-content-between align-items-center">
             <h4> <strong> <?php echo $title  ?> </strong> </h4>
-            <a href="contact-message.php" class="btn btn-sm btn-info">View List</a>
+            <a href="get-quote.php" class="btn btn-sm btn-info">View List</a>
         </div>
         <table class="table table-striped table-bordered">
 
@@ -31,7 +31,13 @@ if (isset($_GET['id'])) {
                 </tr>
                 <tr>
                     <th>Service Type</th>
-                    <td><?php echo $row['service_type'] ?></td>
+                    <td><?php
+                        $service = $row['service_type'];
+                        $dd = json_decode($service, true); ?>
+                            <?php foreach ($dd as $file) { ?>
+                             <p><?php echo basename($file); ?>, </p>
+                            <?php } ?>
+                    </td>
                 </tr>
                 <tr>
                     <th>Email</th>
@@ -78,13 +84,9 @@ if (isset($_GET['id'])) {
                     </td>
                 </tr>
                 <tr>
-                    <th>Created At</th>
+                    <th>Date</th>
 
-                    <?php
-                    $dt = new DateTime($row['created_at'], new DateTimezone('Asia/Dhaka'));
-
-                    ?>
-                    <td><?php echo $dt->format('j F Y, g:i a'); ?></td>
+                    <td><?php echo date('d M Y', strtotime($row['created_at'])); ?></td>
                 </tr>
             </tbody>
         </table>

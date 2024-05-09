@@ -44,7 +44,7 @@
 							<p><a href="#">Hire </a></p>
 						</div>
 						<div class=" ">
-							<p><a href="services">Services </a></p>
+							<p><a href="services.php">Services </a></p>
 						</div>
 						<div class=" ">
 							<p><a href="#">Products </a></p>
