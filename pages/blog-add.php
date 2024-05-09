@@ -14,9 +14,10 @@ if (isset($_POST['submit'])) {
     $slug = trim($slug, '-') . random_int(11111, 99999);
 
     $blog_category_id = $_POST['blog_category_id'];
-    // $type = $_POST['type'];
     $short = $_POST['short'];
     $description = $_POST['description'];
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
 
     $image = '';
 
@@ -30,13 +31,12 @@ if (isset($_POST['submit'])) {
             move_uploaded_file($_FILES['image']['tmp_name'], $image);
         }
 
-        // Prepare and bind parameters for the query
-        $query = "INSERT INTO blogs (title, slug, blog_category_id, short_description, description, image) VALUES (?, ?, ?, ?, ?, ?)";
-        $stmt = $conn->prepare($query);
-        $stmt->bind_param("ssisss", $title, $slug, $blog_category_id, $short, $description, $image);
-        
+        $sql = "INSERT INTO `blogs`(`title`, `slug`,`blog_category_id`, `short_description`, `description`, `image`,`alt_tag`,`alt_description`) VALUES ('$title','$slug','$blog_category_id','$short','$description','$image','$alt_tag', '$alt_description')";
+
+        $result = $conn->query($sql);
+
         // Execute the statement
-        if ($stmt->execute()) {
+        if ($result == true) {
             header("Location: blogs.php");
             exit;
         } else {
@@ -104,6 +104,21 @@ $conn->close();
                     <div class="form-group">
                         <label for="description">Description</label>
                         <textarea name="description" class="form-control" id="summernote" cols="30" rows="10" placeholder="Description"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control" cols="30" rows="10"></textarea>
                     </div>
                 </div>
 

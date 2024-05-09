@@ -99,7 +99,6 @@ $row = mysqli_fetch_assoc($fetch_result);
                     </select>
                 </div>
 
-
                 <div class="form-group col-md-6">
                     <label for="department_id"> Department </label>
                     <select id="department_id" class="form-control" name="department_id" required>
@@ -138,6 +137,20 @@ $row = mysqli_fetch_assoc($fetch_result);
                     <label for="image">Existing Image</label>
                     <br>
                     <img src="<?php echo $row['image']; ?>" alt="" class="img-fluid w-25">
+                </div>
+
+                <div class="col-md-12 mt-4">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="<?php echo $row['alt_tag']?>" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control" cols="30" rows="10"><?php echo $row['alt_description']?></textarea>
+                    </div>
                 </div>
 
             </div>

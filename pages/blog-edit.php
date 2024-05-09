@@ -20,7 +20,9 @@ if (isset($_POST['submit'])) {
     $slug = trim($slug, '-') . random_int(11111, 99999);
     $short_description = $_POST['short_description'];
     $description = $_POST['description'];
-    $blogCategoryId = $_POST['blog_category_id']; // Corrected variable name
+    $blogCategoryId = $_POST['blog_category_id'];
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
 
     $imagePath = $row['image'];
     $path = $imagePath;
@@ -39,9 +41,9 @@ if (isset($_POST['submit'])) {
     }
 
     // Update record in the database using prepared statement
-    $sql = "UPDATE blogs SET blog_category_id=?, title=?, description=?, slug=?, short_description=?, image=? WHERE id=?";
+    $sql = "UPDATE blogs SET blog_category_id=?, title=?, description=?, slug=?, short_description=?, image=?, alt_tag=?, alt_description=? WHERE id=?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("isssssi", $blogCategoryId, $title, $description, $slug, $short_description, $path, $id);
+    $stmt->bind_param("isssssssi", $blogCategoryId, $title, $description, $slug, $short_description, $path, $alt_tag,$alt_description,$id);
 
     if ($stmt->execute()) {
         $successMessage = "Successfully updated record!";
@@ -121,6 +123,21 @@ $conn->close();
                     <div class="form-group" style="height:200px; width:200px; object-fit:cover">
                         <label for="image">Existing Image</label>
                         <img class="w-100 h-100" src="<?php echo $row['image']; ?>" alt="">
+                    </div>
+                </div>
+
+                
+                <div class="col-md-12 mt-4">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="<?php echo $row['alt_tag'] ?>" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="imageDes">Alt Description</label>
+                        <textarea id="imageDes" name="alt_description" placeholder="Description" class="form-control" cols="30" rows="10"><?php echo $row['alt_description'] ?></textarea>
                     </div>
                 </div>
 

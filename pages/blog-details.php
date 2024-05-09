@@ -49,6 +49,15 @@ if (isset($_GET['id'])) {
                     <th>Image</th>
                     <td> <img class="w-100" style="height: 500px" src="<?php echo $row['image'] ?>" alt=""> </td>
                 </tr>
+                <tr>
+                    <th>Alt Text</th>
+                    <td><?php echo $row['alt_tag'] ?></td>
+                </tr>
+                
+                <tr>
+                    <th>Alt Description</th>
+                    <td><?php echo $row['alt_description'] ?></td>
+                </tr>
             </tbody>
         </table>
 

@@ -36,10 +36,23 @@ $conn = $db->get_connection();
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="shortDescription">Description</label>
-                        <textarea id="certificate" name="description" placeholder="Description" class="form-control"  cols="30" rows="10"></textarea>
+                        <textarea id="summernote" name="description" placeholder="Description" class="form-control"  cols="30" rows="10"></textarea>
                     </div>
                 </div>
 
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control"  cols="30" rows="10"></textarea>
+                    </div>
+                </div>
                 <button type="submit" class="btn btn-primary my-3" name="submit">Create</button>
             </div>
         </form>
@@ -51,9 +64,6 @@ $content = ob_get_clean();
 
 include '../layouts/master.php';
 ?>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- <script src="../assets/plugins/summernote/summernote-bs4.min.js"></script> -->
 
 <script>
     $(document).ready(function() {

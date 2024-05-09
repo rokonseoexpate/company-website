@@ -17,8 +17,6 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-
                 <li class="nav-item">
                     <a href="dashboard.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'dashboard.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -92,7 +90,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link ">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Pages
@@ -105,7 +103,7 @@
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>All Pages </p>
                             </a>
-                            <a href="create-page.php" class="nav-link">
+                            <a href="create-page.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'create-page.php' ) ? 'active' : ''; ?>">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add New Page </p>
                             </a>
@@ -151,7 +149,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="trusted.php" class="nav-link">
+                    <a href="trusted.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'trusted.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Trusted By
@@ -160,7 +158,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="award.php" class="nav-link">
+                    <a href="award.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'award.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-award"></i>
                         <p>
                             Award
@@ -169,7 +167,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="contact-message.php" class="nav-link">
+                    <a href="contact-message.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'contact-message.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-message"></i>
                         <p>
                             Contact Message
@@ -178,7 +176,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="free-trails.php" class="nav-link">
+                    <a href="free-trails.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'free-trails.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-message"></i>
                         <p>
                             Free Trail
@@ -187,7 +185,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="get-quote.php" class="nav-link">
+                    <a href="get-quote.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'get-quote.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-message"></i>
                         <p>
                             Get Quote
@@ -196,7 +194,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="core-team.php" class="nav-link">
+                    <a href="core-team.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'core-team.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-people-group"></i>
                         <p>
                             Core Team
@@ -205,7 +203,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="blog-category.php" class="nav-link">
+                    <a href="blog-category.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'blog-category.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-blog"></i>
                         <p>
                             Blog Category
@@ -214,7 +212,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="blogs.php" class="nav-link">
+                    <a href="blogs.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'blogs.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-blog"></i>
                         <p>
                             Blog
@@ -256,7 +254,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="changePassword.php" class="nav-link">
+                    <a href="changePassword.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'changePassword.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-parking"></i>
                         <p>
                             Change Password
