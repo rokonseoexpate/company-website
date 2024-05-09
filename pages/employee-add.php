@@ -56,12 +56,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
             $image_name = preg_replace("/\s+/", "-", $image_name);
 
-            // Upload new image file
-            $target_dir = "../uploads/";
-            $target_file = $target_dir . $image_name;
-            move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-            $image_path = $target_file;
-        }
+    // Insert query
+    $insert_query = "INSERT INTO employees (name, designation, branch_id, department_id, phone, email, ein_no, team_no, image) VALUES
+                ('$sanitized_name','$sanitized_designation','$sanitized_branch_id','$sanitized_department_id','$phone',  '$email',  '$sanitized_ein_no', '$sanitized_team_no', '$sanitized_image_path')";
 
         // Sanitize inputs to prevent SQL injection
         $sanitized_name = mysqli_real_escape_string($conn, $name);

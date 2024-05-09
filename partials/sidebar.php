@@ -89,28 +89,27 @@
                     </ul>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link ">
-                        <i class="nav-icon fas fa-copy"></i>
+                <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'app-development-add.php' || basename($_SERVER['PHP_SELF']) == 'app-development-add.php' || basename($_SERVER['PHP_SELF']) == 'app-development-list.php') ? 'menu-open' : ''; ?>">
+                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php') ? 'active' : ''; ?>">
+                        <i class="nav-icon fas fa-code"></i>
                         <p>
-                            Pages
+                            App Development
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
+
                         <li class="nav-item">
-                            <a href="all-pages.php" class="nav-link">
+                            <a href="app-development-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'app-development-add.php' || basename($_SERVER['PHP_SELF']) == 'app-development-add.php' || basename($_SERVER['PHP_SELF']) == 'app-development-list.php') ? 'active' : ''; ?>">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>All Pages </p>
-                            </a>
-                            <a href="create-page.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'create-page.php' ) ? 'active' : ''; ?>">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Add New Page </p>
+                                <p>Portfolio </p>
                             </a>
                         </li>
 
                     </ul>
                 </li>
+
+                <li class="nav-header">EXAMPLES</li>
 
                 <li class="nav-item">
                     <a href="branch-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'branch-list.php') ? 'active' : ''; ?>">

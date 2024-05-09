@@ -32,6 +32,7 @@ $username = $_SESSION['username'];
     <link rel="stylesheet" href="../assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- JQVMap -->
     <link rel="stylesheet" href="../assets/plugins/jqvmap/jqvmap.min.css">
+    <link rel="shortcut icon" href="../frontend/images/favicon.ico" type="image/x-icon">
     <!-- Theme style -->
     <!-- Select2 -->
     <link rel="stylesheet" href="../assets/plugins/select2/css/select2.min.css">
