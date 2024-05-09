@@ -376,79 +376,32 @@ $conn = $db->get_connection();
                 </div>
                 <div class="bbb_viewed_slider_container">
                     <div class="owl-carousel owl-theme bbb_viewed_slider">
-                        <div class="owl-item">
-                            <div class="card bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-                                <div class="bbb_viewed_image">
-                                    <img src="frontend/images/11.png" alt="">
-                                </div>
-                                <div class="card-body bbb_viewed_content text-center">
-                                    <h5 class="card-title">Success Story</h5>
-                                    <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="card bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                <div class="bbb_viewed_image">
-                                    <img src="frontend/images/10.png" alt="">
-                                </div>
-                                <div class="card-body bbb_viewed_content text-center">
-                                    <h5 class="card-title">Success Story</h5>
-                                    <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                                </div>
+                        <?php
+                        $i = 1;
+                        $qry = "SELECT * FROM history_galleries WHERE image_type = 4 ORDER BY id DESC";
+                        $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
 
-                            </div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="card bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                <div class="bbb_viewed_image">
-                                    <img src="frontend/images/09.png" alt="">
+                        if ($result) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                <div class="owl-item">
+                                    <div class="card bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
+                                        <div class="bbb_viewed_image">
+                                            <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="">
+                                        </div>
+                                        <div class="card-body bbb_viewed_content text-center">
+                                            <h5 class="card-title"><?php echo $row['short_title']?></h5>
+                                            <p class=""><?php echo $row['title']?></p>
+                                            <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-body bbb_viewed_content text-center">
-                                    <h5 class="card-title">Success Story</h5>
-                                    <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="card bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-                                <div class="bbb_viewed_image">
-                                    <img src="frontend/images/08.png" alt="">
-                                </div>
-                                <div class="card-body bbb_viewed_content text-center">
-                                    <h5 class="card-title">Success Story</h5>
-                                    <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="card bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-                                <div class="bbb_viewed_image">
-                                    <img src="frontend/images/07.png" alt="">
-                                </div>
-                                <div class="card-body bbb_viewed_content text-center">
-                                    <h5 class="card-title">Success Story</h5>
-                                    <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="card bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-                                <div class="bbb_viewed_image">
-                                    <img src="frontend/images/06.png" alt="">
-                                </div>
-                                <div class="card-body bbb_viewed_content text-center">
-                                    <h5 class="card-title">Success Story</h5>
-                                    <p class="">Seo Expate Bangladesh Ltd.-Success Story</p>
-                                    <a href="#" class="">Read Insights <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
+                                <?php
+                            }
+                        } else {
+                            echo "Error: " . mysqli_error($conn);
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

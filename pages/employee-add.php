@@ -50,7 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_department_id = mysqli_real_escape_string($conn, $department_id);
 
     // Insert query
-    $insert_query = "INSERT INTO employees (name, designation, branch_id, department_id,phone,email, ein_no, team_no, image) VALUES ('$sanitized_name','$email','$phone', '$sanitized_designation', '$sanitized_branch_id','$sanitized_department_id', '$sanitized_ein_no', '$sanitized_team_no', '$sanitized_image_path')";
+    $insert_query = "INSERT INTO employees (name, designation, branch_id, department_id, phone, email, ein_no, team_no, image) VALUES
+                ('$sanitized_name','$sanitized_designation','$sanitized_branch_id','$sanitized_department_id','$phone',  '$email',  '$sanitized_ein_no', '$sanitized_team_no', '$sanitized_image_path')";
 
     // Execute query
     if (mysqli_query($conn, $insert_query)) {
