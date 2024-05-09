@@ -1,9 +1,13 @@
 <?php
-$title = "Home";
+$title = "History";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
+
+$sql = "SELECT * FROM histories WHERE id=1";
+$result = $conn->query($sql);
+$history = $result->fetch_assoc();
 
 ?>
 	<!--================================Header section end here=======================-->
@@ -14,14 +18,14 @@ $conn = $db->get_connection();
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
 		    		<div class="top_body_txt_part">
-						<h1>History</h1>	
-						<h2>of SEO Expate</h2>	
-						<h6>To the Endless Possibilities</h6>	
-						<p>The journey of SEO Expate started in 2013. Riseup Labs has provided technology solutions to global businesses for over 10 years. It has been established as a next-generation global IT service and technology solution provider company to help enterprises reimagine their business and navigate digital transformation. Let’s explore our long history of success!</p>
+						<h1><?= $history['title']; ?></h1>
+						<h2><?= $history['title_tagline']; ?></h2>
+						<h6><?= $history['title_tagline_after']; ?></h6>
+						<p><?= strip_tags($history['title_tagline_after_details']); ?></p>
 					</div>
 					<div class="top-body-button pt-3">
 						<div class="">
-							<a type="button" href="#">About SEO Expate</a>
+							<a type="button" target="_blank" href="<?= $history['hero_button_link']; ?>">About SEO Expate</a>
 						</div>
 					</div>	
 				</div>			
@@ -35,22 +39,23 @@ $conn = $db->get_connection();
 		<div class="container">
 			<div class="row">
 				<div class="accelerating_innovation_txt pb-5">
-					<h3>Accelerating Innovation</h3>
-					<h4>Since 2013</h4>
+					<h3><?= $history['accelerating_title']; ?></h3>
+					<h4><?= $history['accelerating_year']; ?></h4>
+
 				</div>
 				<div class="col-md-6">
 					<div class="accelerating_innovation_text">
-						<p>The year 2013. A great Information Technology platform was born with a team of genius minds. From the beginning of our journey, SEO Expate has championed in every step by supporting new and better ideas to reach the next level.</p>
-						<p class="pt-3">In the journey of SEO Expate, it has become a major technology solution provider for brands like UNICEF Bangladesh, Robi Axiata Limited, BBC Media Action, Ministry of Women and Children Affairs, ICT Division and many large corporations globally.</p>
+
+						<p class="pt-3"><?= strip_tags($history['accelerating_details']); ?></p>
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="accelerating_innovation_img">
-						<img src="frontend/images/awardd.png" alt="image">
+						<img src=" <?php echo 'uploads/' . basename($history['accelerating_image']); ?>" alt="<?= $history['accelerating_title']; ?>">
 					</div>
 				</div>
 				<div class="top-body-button pt-5 text-center">
-					<a type="button" href="#">Know More About Our Journey</a>
+					<a type="button" href="<?= $history['accelerating_button_link']; ?>">Know More About Our Journey</a>
 				</div>
 			</div>
 		</div>
@@ -62,9 +67,9 @@ $conn = $db->get_connection();
        <div class="container">
            <div class="row">
                	<div class="explore_txt">
-                   <h3>Timeline Of Our</h3>
-                   <h4 style="color:var(--secondary-text-color); font-weight: 700; font-size: 48px;">Successful Journey</h4>
-                   <p>SEO Expate Bangladesh Ltd. started the journey in Game Development and after a successful journey, we have established as a next-generation globnal IT service and technology solutions provider company. Explore our journey of success since 2009.</p>                
+                   <h3><?= $history['journey_title']?></h3>
+                   <h4 style="color:var(--secondary-text-color); font-weight: 700; font-size: 48px;"><?= $history['journey_title_tagline']?></h4>
+                   <p><?= $history['journey_title_details']?></p>
                	</div>
                	<div class="explore_tabs">
                     <div class="container py-5">
@@ -209,10 +214,9 @@ $conn = $db->get_connection();
 		<div class="container">
 			<div class="row">
 				<div class="overview_success_txt">
-					<h3>Overview of SEO Expate' Success</h3>
-					<p>SEO Expate is an ISO-certified leading technology solution and next-generation global IT services provider that helps enterprises reimagine their business and navigate digital transformation. SEO Expate won the Digital Bangladesh Award 2022 from the ICT Division of Bangladesh as the best technology company in the private sector for using emerging technologies and its unique contribution to the Information Technology Sector.</p>
-					<p>With over 10 years of experience managing 700+ projects and working with global enterprises, like – UNICEF, UNDP, USAID, FAO, WHO, ATEC, BBC, Fhi360, Axiata, Murka, Safe-Guard, Swiss Marketing Systems, we are expertly steering our clients through their digital journey.</p>
-					<h6>Explore the best moments and achievements of SEO Expate throughout the last era.</h6>
+					<h3><?= $history['overview_success']?></h3>
+					<h3></h3>
+					<p><?= strip_tags( $history['overview_success_details'])?></p>
 				</div>
                 <?php
                 $i = 1;
@@ -256,8 +260,8 @@ $conn = $db->get_connection();
 		<div class="container">
 			<div class="row">
 				<div class="Our_Great_Start_txt pb-5">
-					<h3>Our Great Start</h3>
-					<p>Successful Solutions Developed by SEO Expate in the Last Era. We have started our journey with the game Tap Tap Ants, which has millions of downloads in the App Store and received the top-ranking position worldwide. Explore more solutions developed by SEO Expate throughout its journey.</p>
+					<h3><?= $history['great_success']?></h3>
+					<p><?= $history['great_success_details']?></p>
 				</div>
                 <?php
                 $i = 1;
@@ -294,29 +298,29 @@ $conn = $db->get_connection();
 	    <div class="container">
 	        <div class="row">
 	            <div class="ptc_txt">
-	                <h3>A Short Introduction to Our Approach</h3>
-	                <h4>Delivering IT Solutions Globally</h4>
-	                <p class=" pt-4">In addition to creating a stress-free and sustainable IT environment, SEO Expate Bangladesh Ltd. produces outcomes that help our clients stay ahead of the competition. By utilizing the newest and most widely used technologies, our IT specialists continuously deliver user-centric IT solutions that are customized to the needs of the business. We have been assisting clients all over the world to boost engagement, sales, and conversions for more than ten years. Take a peek at the reliable numbers!</p>
+	                <h3><?= $history['introduction_title']?></h3>
+	                <h4><?= $history['introduction_title_tagline']?></h4>
+	                <p class=" pt-4"><?= $history['introduction_details']?></p>
 	            </div>
 	            <div class="ptc_countdown_wrp pt-5">
 	                <div class="ptc_countdown">
 	                    <div class="count_container">
-	                        <span class="num" data-val="10+">000</span>
+	                        <span class="num" data-val="<?= $history['introduction_year']?>+"><?= $history['introduction_year']?></span>
 	                        <span class="text">Years</span>
 	                    </div>
 
 	                    <div class="count_container">
-	                        <span class="num" data-val="25+">000</span>
+	                        <span class="num" data-val="<?= $history['introduction_country']?>+"><?= $history['introduction_country']?></span>
 	                        <span class="text">Countries</span>
 	                    </div>
 
 	                    <div class="count_container">
-	                        <span class="num" data-val="450+">000 </span>
+	                        <span class="num" data-val="<?= $history['introduction_projects']?>+"><?= $history['introduction_projects']?> </span>
 	                        <span class="text">Projects</span>
 	                    </div>
 
 	                    <div class="count_container">
-	                        <span class="num" data-val="150+">000</span>
+	                        <span class="num" data-val="<?= $history['introduction_clients']?>+"><?= $history['introduction_clients']?></span>
 	                        <span class="text">Clients</span>
 	                    </div>
 	                </div>
@@ -331,7 +335,7 @@ $conn = $db->get_connection();
 		<div class="container ">
 		    <div class="row">
 		    	<h3><span>Our </span> Reliable Customers and Associates</h3>
-		    	<p>SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers, corporations, government departments, and other organizations as a top information technology company.  
+		    	<p>SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers, corporations, government departments, and other organizations as a top information technology company.
 				Here take a look at some of the top companies and institutions that SEO Expate Bangladesh Ltd. has already worked with.</p>
                 <div class="col-12 pt-5">
                     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -393,8 +397,8 @@ $conn = $db->get_connection();
 		<div class="container">
 			<div class="row">
 				<div class="top_featured_txt">
-					<h3 class="pb-3">We're Highlighted On</h3>
-					<p>In this category, SEO Expate Bangladesh Ltd. stands out as the most popular in the first place. Numerous local and international (offline and online) TV networks, newspapers, journals, TV channels, and other well-known platforms have highlighted our imaginative and inventive works! Also, we are one of the most followed companies on various social media platforms. Again, we are going like a bullet train in other media as well.</p>
+					<h3 class="pb-3"><?= $history['highlighted_title']?></h3>
+					<p><?= $history['highlighted_details']?></p>
 				</div>
 				<div class="slider pt-5">
                     <div class="owl-carousel">

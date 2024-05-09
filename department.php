@@ -1,5 +1,6 @@
 <?php
-$title = "Jobs";
+$title = "All Departments
+";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
