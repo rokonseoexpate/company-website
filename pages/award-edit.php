@@ -19,6 +19,13 @@ if (isset($_GET['id'])) {
 if (isset($_POST['submit'])) {
     $title = $_POST['title'];
     $description = $_POST['description'];
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
+
+    $errorMessage = '';
+    if (empty($title)) {
+        $errorMessage = 'Title is required';
+    }
 
     if ($_FILES['image']['name'] != '') {
         $id = $_GET['id'];
@@ -36,24 +43,29 @@ if (isset($_POST['submit'])) {
 
         $photo = $_FILES['image']['name'];
         $extension = pathinfo($photo, PATHINFO_EXTENSION);
-        $path = '../uploads/' . strtolower(str_replace(' ', '-', $title)) .'-' . random_int(10000, 99999) . '.' . $extension;
+        $path = '../uploads/' . strtolower(str_replace(' ', '-', $title)) . '-' . random_int(10000, 99999) . '.' . $extension;
 
         move_uploaded_file($_FILES['image']['tmp_name'], $path);
     } else {
         $path = $imagePath;
     }
 
-    // Update record in the database
-    $sql = "UPDATE awards SET title='$title', description='$description', image='$path' WHERE id=$id";
-    if ($conn->query($sql) === TRUE) {
-        echo "Record updated successfully";
+    if (empty($errorMessage)) {
+        // Update record in the database
+        $sql = "UPDATE awards SET title='$title', description='$description', image='$path', alt_tag='$alt_tag', alt_description='$alt_description' WHERE id=$id";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Record updated successfully";
+        } else {
+            echo "Error updating record: " . $conn->error;
+        }
+
+        // Redirect to the list page after updating
+        header("Location: award.php");
+        exit();
     } else {
         echo "Error updating record: " . $conn->error;
     }
-
-    // Redirect to the list page after updating
-    header("Location: award.php");
-    exit();
 }
 
 ?>
@@ -69,7 +81,7 @@ if (isset($_POST['submit'])) {
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="title">Title</label>
+                        <label for="title">Title <span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="title" name="title" value="<?php echo $row['title'] ?>" placeholder="title">
                     </div>
                 </div>
@@ -93,6 +105,22 @@ if (isset($_POST['submit'])) {
                         <textarea name="description" placeholder="Description" class="form-control" id="summernote" cols="30" rows="10"><?php echo $row['description'] ?></textarea>
                     </div>
                 </div>
+
+                
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="<?php echo $row['alt_tag']?>" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control"  cols="30" rows="10"><?php echo $row['alt_description']?></textarea>
+                    </div>
+                </div>
+
 
                 <button type="submit" class="btn btn-primary my-3" name="submit">Update</button>
             </div>

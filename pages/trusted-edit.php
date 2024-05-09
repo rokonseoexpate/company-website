@@ -19,43 +19,57 @@ if (isset($_GET['id'])) {
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $orderBy = $_POST['orderBy'];
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
 
-    if ($_FILES['image']['name'] != '') {
-        $id = $_GET['id'];
-        $sql = "SELECT * FROM trusted_bies WHERE id=$id";
-        $result = $conn->query($sql);
-        $row = $result->fetch_assoc();
+    $errorMessage = '';
 
-        $imagePath = $row['image'];
-        $imageName = basename($imagePath);
-        $newImagePath = '../uploads/' . $imageName;
-
-        // Remove old image file
-        if (file_exists($newImagePath)) {
-            unlink($newImagePath);
-        }
-
-
-        $photo = $_FILES['image']['name'];
-        $extension = pathinfo($photo, PATHINFO_EXTENSION);
-        $path = '../uploads/' . str_replace(' ', '-', strtolower($name))  . '-' . random_int(10000, 99999) . '.' . $extension;
-
-        move_uploaded_file($_FILES['image']['tmp_name'], $path);
+    if (empty($name)) {
+        $errorMessage = 'Name field is required';
+    } elseif (empty($orderBy)) {
+        $errorMessage = 'OrderBy field is required';
     } else {
-        $path = $imagePath;
+        if ($_FILES['image']['name'] != '') {
+            $id = $_GET['id'];
+            $sql = "SELECT * FROM trusted_bies WHERE id=$id";
+            $result = $conn->query($sql);
+            $row = $result->fetch_assoc();
+
+            $imagePath = $row['image'];
+            $imageName = basename($imagePath);
+            $newImagePath = '../uploads/' . $imageName;
+
+            // Remove old image file
+            if (file_exists($newImagePath)) {
+                unlink($newImagePath);
+            }
+
+
+            $photo = $_FILES['image']['name'];
+            $extension = pathinfo($photo, PATHINFO_EXTENSION);
+            $path = '../uploads/' . str_replace(' ', '-', strtolower($name))  . '-' . random_int(10000, 99999) . '.' . $extension;
+
+            move_uploaded_file($_FILES['image']['tmp_name'], $path);
+        } else {
+            $path = $imagePath;
+        }
     }
 
-    // Update record in the database
-    $sql = "UPDATE trusted_bies SET name='$name', orderBy='$orderBy' ,image='$path' WHERE id=$id";
+    if (empty($errorMessage)) {
+        // Update record in the database
+        $sql = "UPDATE trusted_bies SET name='$name', orderBy='$orderBy' ,image='$path' , alt_tag='$alt_tag', alt_description='$alt_description' WHERE id=$id";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "Record updated successfully";
+        if ($conn->query($sql) === TRUE) {
+            echo "Record updated successfully";
+        } else {
+            echo "Error updating record: " . $conn->error;
+        }
+
+        header("Location: trusted.php");
+        exit();
     } else {
         echo "Error updating record: " . $conn->error;
     }
-
-    header("Location: trusted.php");
-    exit();
 }
 
 ?>
@@ -64,23 +78,22 @@ if (isset($_POST['submit'])) {
     <div class="card px-3">
         <div class="d-flex  justify-content-between align-items-center">
             <h1><?php echo $title; ?></h1>
-            <a href="certificates.php" class="btn btn-sm btn-info">View List</a>
+            <a href="trusted.php" class="btn btn-sm btn-info">View List</a>
         </div>
 
         <form action="<?php echo $_SERVER['PHP_SELF'] . '?id=' . $id; ?>" method="POST" enctype="multipart/form-data" id="submit">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="name">Name</label>
+                        <label for="name">Name <span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="name" name="name" value="<?php echo $row['name'] ?>" placeholder="name">
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="orderBy">Priority</label>
-                        <input type="text" class="form-control" id="orderBy" name="orderBy" 
-                        value="<?php echo $row['orderBy'] ?>" placeholder="Priority">
+                        <label for="orderBy">Priority <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="orderBy" name="orderBy" value="<?php echo $row['orderBy'] ?>" placeholder="Priority">
                     </div>
                 </div>
 
@@ -95,6 +108,20 @@ if (isset($_POST['submit'])) {
                         <label for="image">Exiting Image</label>
                         <img class="w-100" src="<?php echo $newImagePath ?>" alt="">
 
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="<?php echo $row['alt_tag']?>" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control"  cols="30" rows="10"><?php echo $row['alt_description']?></textarea>
                     </div>
                 </div>
 

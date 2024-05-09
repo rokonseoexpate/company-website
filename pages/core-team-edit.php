@@ -23,7 +23,7 @@ if (isset($_GET['id'])) {
     $newImagePath = '../uploads/' . $imageName;
 } else {
     $errorMessage = 'Select team member';
-    
+
     echo "<script> window.location.href='core-team.php' </script>";
 }
 
@@ -35,42 +35,57 @@ if (isset($_POST['submit'])) {
     $website = $_POST['website'];
     $facebook = $_POST['facebook'];
     $linkedin = $_POST['linkedin'];
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
 
-    $path = $imagePath; // By default, keep the old image path
+    $path = $imagePath;
 
-    if ($_FILES['image']['name'] != '') {
-        // If a new image is uploaded
-        $photo = $_FILES['image']['name'];
-        $extension = pathinfo($photo, PATHINFO_EXTENSION);
-        $path = '../uploads/' . random_int(10000, 99999) . '.' . $extension;
+    if (empty($name)) {
+        $errorMessage = "Name is required!";
+    } elseif (empty($orderBy)) {
+        $errorMessage = "Priority is required!";
+    } elseif (empty($type)) {
+        $errorMessage = "Type is required!";
+    } elseif (empty($designation)) {
+        $errorMessage = "Designation is required!";
+    } else {
+        if ($_FILES['image']['name'] != '') {
+            // If a new image is uploaded
+            $photo = $_FILES['image']['name'];
+            $extension = pathinfo($photo, PATHINFO_EXTENSION);
+            $path = '../uploads/' . random_int(10000, 99999) . '.' . $extension;
 
-        // Move the uploaded image to the new location
-        if (move_uploaded_file($_FILES['image']['tmp_name'], $path)) {
-            // If the move is successful, unlink the old image
-            if (file_exists($imagePath)) {
-                unlink($imagePath);
+            // Move the uploaded image to the new location
+            if (move_uploaded_file($_FILES['image']['tmp_name'], $path)) {
+                // If the move is successful, unlink the old image
+                if (file_exists($imagePath)) {
+                    unlink($imagePath);
+                }
+            } else {
+                echo "Failed to upload image!";
+                exit;
             }
-        } else {
-            echo "Failed to upload image!";
-            exit;
         }
     }
 
-    // Update record in the database
-    $sql = "UPDATE teams SET name='$name', order_by='$orderBy', type='$type', designation='$designation', website='$website', facebook='$facebook', linkedin='$linkedin', image='$path' WHERE id=$id";
-    if ($conn->query($sql) === TRUE) {
-        echo "Record updated successfully";
+    if (empty($errorMessage)) {
+        // Update record in the database
+        $sql = "UPDATE teams SET name='$name', order_by='$orderBy', type='$type', designation='$designation', website='$website', facebook='$facebook', linkedin='$linkedin', image='$path', alt_tag='$alt_tag', alt_description='$alt_description' WHERE id=$id";
+        if ($conn->query($sql) === TRUE) {
+            echo "Record updated successfully";
+        } else {
+            echo "Error updating record: " . $conn->error;
+        }
+
+        // Redirect to the list page after updating
+        header("Location: core-team.php");
+        exit();
     } else {
         echo "Error updating record: " . $conn->error;
     }
-
-    // Redirect to the list page after updating
-    header("Location: core-team.php");
-    exit();
 }
 
 ?>
-
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
     <div class="card px-3">
@@ -148,6 +163,21 @@ if (isset($_POST['submit'])) {
                 <div class="col-lg-4">
                     <img style="width:350px; height:250px; border: 1px solid black; border-radius: 3px;" src="<?php echo $newImagePath ?>" alt="">
                 </div>
+
+                <div class="col-md-12 mt-4">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="<?php echo $row['alt_tag'] ?>" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control" cols="30" rows="10"><?php echo $row['alt_description'] ?></textarea>
+                    </div>
+                </div>
+
                 <div class="col-lg-12">
                     <button type="submit" id="submit" name="submit" class="btn btn-primary my-3">Submit</button>
                 </div>

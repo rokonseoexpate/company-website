@@ -7,8 +7,11 @@ $conn = $db->get_connection();
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $sql = "SELECT * FROM certificates WHERE id=$id";
-    $result = $conn->query($sql);
+    $sql = "SELECT * FROM certificates WHERE id=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
     $row = $result->fetch_assoc();
 
     $imagePath = $row['image'];
@@ -20,10 +23,17 @@ if (isset($_POST['submit'])) {
     $title = $_POST['title'];
     $description = $_POST['description'];
 
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
+
+
     if ($_FILES['image']['name'] != '') {
         $id = $_GET['id'];
-        $sql = "SELECT * FROM certificates WHERE id=$id";
-        $result = $conn->query($sql);
+        $sql = "SELECT * FROM certificates WHERE id=?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("i", $id);
+        $stmt->execute();
+        $result = $stmt->get_result();
         $row = $result->fetch_assoc();
 
         $imagePath = $row['image'];
@@ -36,16 +46,18 @@ if (isset($_POST['submit'])) {
 
         $photo = $_FILES['image']['name'];
         $extension = pathinfo($photo, PATHINFO_EXTENSION);
-        $path = '../uploads/' . random_int(10000, 99999) . '.' . $extension;
-
+        // $path = '../uploads/' . random_int(10000, 99999) . '.' . $extension;
+        $path = '../uploads/' . str_replace(' ', '-',  strtolower($title)) .'-' . random_int(10000, 99999) . '.' . $extension;
         move_uploaded_file($_FILES['image']['tmp_name'], $path);
     } else {
         $path = $imagePath;
     }
 
     // Update record in the database
-    $sql = "UPDATE certificates SET title='$title', description='$description', image='$path' WHERE id=$id";
-    if ($conn->query($sql) === TRUE) {
+    $sql = "UPDATE certificates SET title=?, description=?, image=? , alt_tag=?, alt_description=? WHERE id=?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("sssssi", $title, $description, $path,$alt_tag, $alt_description,  $id);
+    if ($stmt->execute()) {
         echo "Record updated successfully";
     } else {
         echo "Error updating record: " . $conn->error;
@@ -55,7 +67,6 @@ if (isset($_POST['submit'])) {
     header("Location: certificates.php");
     exit();
 }
-
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
@@ -71,6 +82,7 @@ if (isset($_POST['submit'])) {
                     <div class="form-group">
                         <label for="title">Title</label>
                         <input type="text" class="form-control" id="title" name="title" value="<?php echo $row['title'] ?>" placeholder="title">
+                        <div id="titleError" class="error text-danger"></div>
                     </div>
                 </div>
 
@@ -91,9 +103,26 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="description">Description</label>
-                        <textarea name="description" placeholder="Description" class="form-control" id="description" cols="30" rows="10"><?php echo $row['description'] ?></textarea>
+                        <textarea name="description" placeholder="Description" class="form-control" id="summernote" cols="30" rows="10"><?php echo $row['description'] ?></textarea>
                     </div>
                 </div>
+
+                
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="<?php echo $row['alt_tag']?>" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control"  cols="30" rows="10"><?php echo $row['alt_description']?></textarea>
+                    </div>
+                </div>
+
+                
 
                 <button type="submit" class="btn btn-primary my-3" name="submit">Update</button>
             </div>
@@ -106,3 +135,27 @@ $content = ob_get_clean();
 
 include '../layouts/master.php';
 ?>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('#submit').on('submit', function(event) {
+            var title = $('#title').val().trim();
+
+            var isValid = true;
+
+            if (title === '') {
+                $('#titleError').html('Title is required!');
+                isValid = false;
+            } else {
+                $('#titleError').html('');
+            }
+
+
+            if (!isValid) {
+                event.preventDefault(); 
+            }
+        });
+    });
+</script>

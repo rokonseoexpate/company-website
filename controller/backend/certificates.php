@@ -7,22 +7,24 @@ $conn = $db->get_connection();
 if (isset($_POST['submit'])) {
     $title   = $_POST['title'];
     $description    = $_POST['description'];
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
     $image;
 
     if (isset($_FILES['image'])) {
         $photo = $_FILES['image']['name'];
         $extension = pathinfo($photo, PATHINFO_EXTENSION);
-        $image = '../../uploads/'. random_int(10000, 99999) . '.' . $extension;
-    
+        $image = '../../uploads/' . str_replace(' ', '-',  strtolower($title)) .'-' . random_int(10000, 99999) . '.' . $extension;
+
         if (!file_exists($directory)) {
             mkdir($directory, 0777, true);
         }
-    
+
         move_uploaded_file($_FILES['image']['tmp_name'], $image);
     }
 
 
-    $sql = "INSERT INTO `certificates`(`title`, `description`, `image`) VALUES ('$title','$description','$image')";
+    $sql = "INSERT INTO `certificates`(`title`, `description`, `image`, `alt_tag`, `alt_description` ) VALUES ('$title','$description','$image', '$alt_tag', '$alt_description')";
     $result = $conn->query($sql);
 
     if ($result === TRUE) {
@@ -34,9 +36,3 @@ if (isset($_POST['submit'])) {
 
     $conn->close();
 }
-
-
-
-
-
-

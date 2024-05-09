@@ -9,6 +9,10 @@ $conn = $db->get_connection();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $orderBy = $_POST['orderBy'];
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
+
+
     $errorMessage = '';
     if (empty($name) ) {
         $errorMessage = "Name is required!";
@@ -23,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $image = '../uploads/' . strtolower(str_replace(' ', '-', $name)) . '-' . random_int(10000, 99999) . '.' . $extension;
 
             if (move_uploaded_file($_FILES['image']['tmp_name'], $image)) {
-                $sql = "INSERT INTO `trusted_bies`(`name`, `orderBy`,`image`) VALUES ('$name','$orderBy','$image')";
+                $sql = "INSERT INTO `trusted_bies`(`name`, `orderBy`,`image`, `alt_tag`,`alt_description`) VALUES ('$name','$orderBy','$image', '$alt_tag', '$alt_description')";
                 $result = $conn->query($sql);
 
                 if ($result === TRUE) {
@@ -55,16 +59,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                        <label for="name">Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="name" name="name" value="<?php echo isset($name) ? htmlspecialchars($name) : ''; ?>" placeholder="Name">
                         <div id="nameError" class="error text-danger"></div>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="orderBy">Priority</label>
-                        <input type="text" class="form-control" id="orderBy" name="orderBy" placeholder="Priority">
+                        <label for="orderBy">Priority <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="orderBy" value="<?php echo isset($orderBy) ? htmlspecialchars($orderBy) : ''; ?>" name="orderBy" placeholder="Priority">
                         <div id="orderByError" class="error text-danger"></div>
                     </div>
                 </div>
@@ -74,6 +78,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label for="image">Image</label>
                         <input type="file" class="form-control dropify" id="image" name="image" placeholder="Image">
                         <div id="imageError" class="error text-danger"></div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="summernote" name="alt_description" placeholder="Description" class="form-control"  cols="30" rows="10"></textarea>
                     </div>
                 </div>
 
@@ -89,42 +108,3 @@ $content = ob_get_clean();
 
 include '../layouts/master.php';
 ?>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- <script>
-    $(document).ready(function() {
-        $('#submit').on('click', function() {
-            var name = $('#name').val().trim();
-            var orderBy = $('#orderBy').val().trim();
-            var image = $('#image').val().trim();
-
-            var isValid = true;
-
-            // Client-side validation
-            if (name === '') {
-                $('#nameError').html('Name is required!');
-                isValid = false;
-            } else {
-                $('#nameError').html('');
-            }
-
-            if (orderBy === '') {
-                $('#orderByError').html('Priority is required!');
-                isValid = false;
-            } else {
-                $('#orderByError').html('');
-            }
-
-            if (image === '') {
-                $('#imageError').html('Image is required!');
-                isValid = false;
-            } else {
-                $('#imageError').html('');
-            }
-
-            if (isValid) {
-                $('#submitFrom').submit();
-            }
-        });
-    });
-</script> -->

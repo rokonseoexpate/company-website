@@ -24,6 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $website = $_POST['website'];
     $facebook = $_POST['facebook'];
     $linkedin = $_POST['linkedin'];
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
 
     $errorMessage = '';
 
@@ -44,7 +46,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $image = '../uploads/' . strtolower(str_replace(' ', '-', $name)) . '-' . random_int(10000, 99999) . '.' . $extension;
 
             if (move_uploaded_file($_FILES['image']['tmp_name'], $image)) {
-                $sql = "INSERT INTO `teams`(`name`, `order_by`,`type`, `designation`, `website`, `facebook`, `linkedin`, `image`) VALUES ('$name','$orderBy','$type','$designation','$website','$facebook','$linkedin','$image')";
+                $sql = "INSERT INTO `teams`(`name`, `order_by`,`type`, `designation`, `website`, `facebook`, `linkedin`, `image`, `alt_tag`,`alt_description`) VALUES ('$name','$orderBy','$type','$designation','$website','$facebook','$linkedin','$image', '$alt_tag', '$alt_description')";
+                
                 $result = $conn->query($sql);
 
                 if ($result === TRUE) {
@@ -135,6 +138,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <label for="image">Image <span class="text-danger">*</span></label>
                         <input type="file" class="form-control dropify" id="image" name="image" placeholder="Image">
                         <div id="imageError" class="error text-danger"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control"  cols="30" rows="10"></textarea>
                     </div>
                 </div>
 
