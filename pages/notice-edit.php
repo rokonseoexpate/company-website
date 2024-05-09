@@ -113,16 +113,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <br>
                     <a href="<?php echo $notice['files']; ?>" download="<?php echo $notice['files']; ?>">Your Existing pdf file <?php echo $notice['files']; ?></a>
                 </div>
-
-
-
-
             </div>
             <button type="submit" class="btn btn-primary my-3">Update</button>
-
         </form>
     </div>
-
 </div>
 
 <?php

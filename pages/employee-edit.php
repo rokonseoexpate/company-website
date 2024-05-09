@@ -23,6 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $department_id = $_POST['department_id'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
+    $alt_tag = $_POST['alt_tag'];
+    $alt_description = $_POST['alt_description'];
 
     // Check if a new image is uploaded
     $image_path = null;
@@ -45,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Update query
     $id = $_GET['id'];
-    $sql = "UPDATE employees SET name = '$sanitized_name', designation = '$sanitized_designation',email = '$email', phone = '$phone', branch_id = $branch_id, department_id = $department_id, ein_no = '$sanitized_ein_no', team_no = '$sanitized_team_no'";
+    $sql = "UPDATE employees SET name = '$sanitized_name', designation = '$sanitized_designation',email = '$email', phone = '$phone', branch_id = $branch_id, department_id = $department_id, ein_no = '$sanitized_ein_no', team_no = '$sanitized_team_no', alt_description='$alt_description',  alt_tag='$alt_tag' ";
     if ($image_path) {
         $sql .= ", image = '$image_path'";
     }
