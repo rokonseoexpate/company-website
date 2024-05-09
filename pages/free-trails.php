@@ -24,6 +24,7 @@ $qry = "SELECT * FROM free_trials order by id desc";
                     <th>Email</th>
                     <th>Company Name</th>
                     <th>Service Type</th>
+                    <th>Date</th>
                     <th class="text-right px-4">Action</th>
                 </tr>
             </thead>
@@ -40,7 +41,7 @@ $qry = "SELECT * FROM free_trials order by id desc";
                             <td><?php echo $row['email']; ?></td>
                             <td ><?php echo $row['company_name']; ?></td>
                             <td><?php echo ucfirst( $row['service_type']); ?></td>
-
+                            <td><?php echo date('d M Y', strtotime($row['created_at'])); ?></td>
                             <td class="text-right">
                                 <a href="free-trail-details.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-info"><i class="fa-solid fa-eye"></i></a>
                             </td>
