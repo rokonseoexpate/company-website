@@ -37,11 +37,11 @@ if (isset($_GET['delete_id'])) {
 }
 
 // Fetch employee data from the database
-// Fetch employee data from the database
 $query = "SELECT employees.*, branches.name AS branch_name, departments.name AS department_name 
           FROM employees 
           LEFT JOIN branches ON employees.branch_id = branches.id
-          LEFT JOIN departments ON employees.department_id = departments.id";
+          LEFT JOIN departments ON employees.department_id = departments.id
+          ORDER BY employees.id DESC";
 $result = mysqli_query($conn, $query);
 
 ?>
