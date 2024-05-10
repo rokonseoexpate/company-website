@@ -55,10 +55,7 @@ if (isset($_POST['submit'])) {
         $errorMessage = "Error updating App Portfolio: " . mysqli_error($conn);
     }
 }
-
 ?>
-
-
 <div class="content-wrapper p-3" style="min-height: 485px;">
 
     <div class="card px-3">
