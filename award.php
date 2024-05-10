@@ -66,18 +66,12 @@ if ($result = $conn->query($qry)) {
                         <h4><?php echo $row['title']; ?></h4>
                         <p><?php echo $row['description']; ?></p>
                     </div>
-                    <div class="top-body-button pt-4">
-                        <a type="button" href="#">Read More Details</a>
-                    </div>
                 </div>
             <?php } else { ?>
                 <div class="col-md-6">
                     <div class="Core_Values_txt">
                         <h4><?php echo $row['title']; ?></h4>
                         <p><?php echo $row['description']; ?></p>
-                    </div>
-                    <div class="top-body-button pt-4">
-                        <a type="button" href="#">Read More Details</a>
                     </div>
                 </div>
                 <div class="col-md-6">
