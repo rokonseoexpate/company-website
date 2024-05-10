@@ -8,6 +8,8 @@ $conn = $db->get_connection();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $_POST['title'];
     $date = $_POST['date'];
+    $alt_tag = $_POST['alt_tag'];
+    $alt_description = $_POST['alt_description'];
 
     // Sanitize and prepare image name
     $imageName = $_FILES["image"]["name"];
@@ -29,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (move_uploaded_file($_FILES["pdf"]["tmp_name"], $pdfTargetFilePath)) {
             // Insert notice into notices table
-            $insert_query = "INSERT INTO notices (title, date, image, files) VALUES ('$title','$date', '$targetFilePath', '$pdfTargetFilePath')";
+            $insert_query = "INSERT INTO notices (title, date, image, files, alt_tag, alt_description) VALUES ('$title','$date', '$targetFilePath', '$pdfTargetFilePath', '$alt_tag', '$alt_description')";
             if (mysqli_query($conn, $insert_query)) {
                 // Redirect or display success message as per your requirement
                 $successMessage = "Notice Created Successfully";
@@ -74,6 +76,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="pdf">PDF</label>
                     <input type="file" class="form-control-file" accept=".pdf" name="pdf" placeholder="PDF">
                 </div>
+
+                <div class="col-md-12 mt-4">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
                 <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-primary my-3">Submit</button>
                 </div>

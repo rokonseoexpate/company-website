@@ -19,6 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $map = $_POST['map'];
     $address = $_POST['address'];
     $video_link = $_POST['video_link'];
+    $alt_tag = $_POST['alt_tag'];
+    $alt_description = $_POST['alt_description'];
 
     // Check if a new image is uploaded
     if ($_FILES["image"]["size"] > 0) {
@@ -35,22 +37,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize inputs to prevent SQL injection
     $sanitized_name = mysqli_real_escape_string($conn, $name);
     $sanitized_map = mysqli_real_escape_string($conn, $map);
-    $sanitized_address= mysqli_real_escape_string($conn, $address);
-    $sanitized_video_link= mysqli_real_escape_string($conn, $video_link);
+    $sanitized_address = mysqli_real_escape_string($conn, $address);
+    $sanitized_video_link = mysqli_real_escape_string($conn, $video_link);
 
     // Update query
     $id = $_GET['id'];
-    $sql = "UPDATE branches SET name = '$sanitized_name', map = '$sanitized_map', image = '$image_path', video_link = '$sanitized_video_link', address = '$sanitized_address' WHERE id = $id";
+    $sql = "UPDATE branches SET name = '$sanitized_name', map = '$sanitized_map', image = '$image_path', video_link = '$sanitized_video_link', address = '$sanitized_address', alt_tag='$alt_tag',  alt_description='$alt_description' WHERE id = $id";
 
     // Execute query
     if (mysqli_query($conn, $sql)) {
-        // Update successful, set success message
-       // $successMessage = "Successfully Updated record!";
-        // Redirect to branch list page
         header('Location: branch-list.php');
-       // exit();
     } else {
-        // Update failed, display error message
         echo "Error updating record: " . mysqli_error($conn);
     }
 }
@@ -99,6 +96,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="map">Map <span class="text-warning">( width="400" height="300" )</span></label>
                     <textarea type="text" class="form-control" name="map" placeholder="Map" cols="5" rows="5"><?php echo $row['map']; ?></textarea>
                 </div>
+
+                <div class="col-md-12 mt-4">
+                    <div class="form-group">
+                        <label for="alt_text">Alt Text</label>
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="<?php echo $row['alt_tag'] ?>" placeholder="alt Text">
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="shortDescription">Alt Description</label>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control" cols="30" rows="10"><?php echo $row['alt_description'] ?></textarea>
+                    </div>
+                </div>
+
 
             </div>
             <button type="submit" class="btn btn-primary my-3">Update</button>

@@ -20,6 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $accelerating_title = $_POST['accelerating_title'];
     $accelerating_year = $_POST['accelerating_year'];
     $accelerating_details = $_POST['accelerating_details'];
+    $accelerating_image_alt_text = $_POST['accelerating_image_alt_text'];
+    $accelerating_image_alt_description = $_POST['accelerating_image_alt_description'];
+    $accelerating_details = $_POST['accelerating_details'];
     $accelerating_button_link = $_POST['accelerating_button_link'];
     $journey_title = $_POST['journey_title'];
     $journey_title_tagline = $_POST['journey_title_tagline'];
@@ -55,7 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $image_path = $row['accelerating_image'];
     }
 
-
     // SQL query to update the record
     $sql = "UPDATE histories SET 
                 title='$title',
@@ -66,6 +68,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 accelerating_title='$accelerating_title',
                 accelerating_year='$accelerating_year',
                 accelerating_details='$accelerating_details',
+                accelerating_image_alt_text='$accelerating_image_alt_text',
+                accelerating_image_alt_description='$accelerating_image_alt_description',
                 accelerating_image='$image_path',
                 accelerating_button_link='$accelerating_button_link',
                 journey_title='$journey_title',
@@ -90,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Redirect to the same page to reload it
-        header("Location: ".$_SERVER['PHP_SELF']);
+        header("Location: " . $_SERVER['PHP_SELF']);
         exit();
     } else {
         echo "Error updating record: " . $conn->error;
@@ -108,9 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
 
         <form action="" method="post" enctype="multipart/form-data">
-
             <div class="row">
-
                 <div class="col-md-12">
                     <!-- general form elements -->
                     <div class="card card-primary">
@@ -128,7 +130,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="title_tagline">Title Tagline</label>
-                                    <input type="text" class="form-control" name="title_tagline" id="title_tagline" placeholder="Title Tagline"  value="<?php echo $row['title_tagline']; ?>">
+                                    <input type="text" class="form-control" name="title_tagline" id="title_tagline" placeholder="Title Tagline" value="<?php echo $row['title_tagline']; ?>">
                                 </div>
 
                                 <div class="form-group col-md-6">
@@ -144,9 +146,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <label for="hero_button_link">Button Link</label>
                                     <input type="text" name="hero_button_link" class="form-control" id="hero_button_link" value="<?php echo $row['hero_button_link']; ?>" placeholder="Button Link">
                                 </div>
-
                             </div>
-
                         </div>
                         <!-- /.card-body -->
 
@@ -181,7 +181,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="accelerating_image">Image</label>
-                                    <input type="file" name="accelerating_image" id="accelerating_image" accept="image/*" class="form-control"  placeholder="image">
+                                    <input type="file" name="accelerating_image" id="accelerating_image" accept="image/*" class="form-control" placeholder="image">
                                     <img src="<?php echo $row['accelerating_image']; ?>" alt="" width="250px">
                                 </div>
                                 <div class="form-group  col-md-12">
@@ -189,6 +189,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <input type="text" name="accelerating_button_link" class="form-control" id="accelerating_button_link" placeholder="Button Link" value="<?php echo $row['accelerating_button_link']; ?>">
                                 </div>
 
+                                <div class="col-md-12 mt-4">
+                                    <div class="form-group">
+                                        <label for="alt_text">Alt Text</label>
+                                        <input type="text" class="form-control" id="accelerating_image_alt_text" name="accelerating_image_alt_text" value="<?php echo $row['accelerating_image_alt_text']; ?>" placeholder="alt Text">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="shortDescription">Alt Description</label>
+                                        <textarea id="shortDescription" name="accelerating_image_alt_description" placeholder="Description" class="form-control" cols="30" rows="10">
+                                        value="<?php echo $row['accelerating_image_alt_description']; ?>"
+                                        </textarea>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
