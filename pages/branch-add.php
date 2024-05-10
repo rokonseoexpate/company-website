@@ -32,10 +32,8 @@ if (isset($_POST['submit'])) {
     $insert_query = "INSERT INTO branches (name, image, map, address, video_link,alt_tag, alt_description ) VALUES ('$name', '$image_path',' $map', '$address', '$video_link', '$alt_tag', '$alt_description')";
 
     // Execute query
-    if (mysqli_query($conn, $insert_query)) {
-        // Insert successful
+    if (mysqli_query($conn, $insert_query)) { 
         $successMessage = "Branch created successfully!";
-        // Redirect to employee list page or display success message as per your requirement
     } else {
         // Insert failed
         $errorMessage = "Error creating Branch: " . mysqli_error($conn);
