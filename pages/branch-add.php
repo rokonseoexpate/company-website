@@ -15,15 +15,15 @@ if (isset($_POST['submit'])) {
 
     // Check if a new image is uploaded
     if ($_FILES["image"]["size"] > 0) {
-        // Sanitize the file name
         $image_name = $_FILES["image"]["name"];
-        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name); 
-        $image_name = preg_replace("/\s+/", "-", $image_name);
-        // Upload new image file
+        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name ); 
+        $image_name = preg_replace("/\s+/", "-", $image_name );
         $target_dir = "../uploads/";
         $target_file = $target_dir . $image_name;
-        move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-        $image_path = $target_file;
+
+        // Upload new image file
+        move_uploaded_file($_FILES["image"]["tmp_name"], $image_name);
+        $image_path = $image_name;
     } else {
         $image_path = ''; // Set default image path if no image is uploaded
     }
@@ -34,6 +34,7 @@ if (isset($_POST['submit'])) {
     // Execute query
     if (mysqli_query($conn, $insert_query)) { 
         $successMessage = "Branch created successfully!";
+        header("Location: branch-list.php");
     } else {
         // Insert failed
         $errorMessage = "Error creating Branch: " . mysqli_error($conn);
@@ -54,35 +55,35 @@ if (isset($_POST['submit'])) {
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="name">Branch Name</label>
+                        <label for="name">Branch Name <span class="text-danger">* </span> </label>
                         <input type="text" class="form-control" id="name" name="name" placeholder="Branch" required>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="image">Image</label>
+                        <label for="image">Image <span class="text-danger">* </span></label>
                         <input type="file" class="form-control dropify" id="image" name="image" placeholder="image" required>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="map">Map <span class="text-warning">( width="400" height="300" )</span></label>
+                        <label for="map">Map <span class="text-danger">* </span> <span class="text-warning">( width="400" height="300" )</span></label>
                         <textarea name="map" placeholder="Map" class="form-control" id="" cols="5" rows="5" required></textarea>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="map">Address</label>
+                        <label for="map">Address <span class="text-danger">* </span></label>
                         <textarea name="address" placeholder="address" class="form-control" id="" cols="5" rows="5" required></textarea>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="map">Video Link <span class="text-warning">( width="100%" height="315" )</span></label>
+                        <label for="map">Video Link <span class="text-danger">* </span> <span class="text-warning">( width="100%" height="315" )</span></label>
                         <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="5" required></textarea>
                     </div>
                 </div>

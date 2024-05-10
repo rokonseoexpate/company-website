@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_description = $_POST['alt_description'];
 
     // Check for required fields
-    $errorMessage = '';
+    // $errorMessage = '';
     if (empty($name)) {
         $errorMessage .= 'Name field is required.<br>';
     }
@@ -40,6 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($department_id)) {
         $errorMessage .= 'Department field is required.<br>';
     }
+    
     // if (empty($ein_no)) {
     //     $errorMessage .= 'EIN no field is required.<br>';
     // }
@@ -47,40 +48,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //     $errorMessage .= 'Team no field is required.<br>';
     // }
 
-    // Check if a new image is uploaded
-    if ($_FILES["image"]["size"] > 0) {
-        // Sanitize the file name
-        $image_name = $_FILES["image"]["name"];
-        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
-        $image_name = preg_replace("/\s+/", "-", $image_name);
-
-        // Upload new image file
-        $target_dir = "../uploads/";
-        $target_file = $target_dir . $image_name;
-        move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-        $image_path = $target_file;
-    }
-
-    // Sanitize inputs to prevent SQL injection
-    $sanitized_name = mysqli_real_escape_string($conn, $name);
-    $sanitized_designation = mysqli_real_escape_string($conn, $designation);
-    $sanitized_branch_id = mysqli_real_escape_string($conn, $branch_id);
-    $sanitized_ein_no = mysqli_real_escape_string($conn, $ein_no);
-    $sanitized_team_no = mysqli_real_escape_string($conn, $team_no);
-    $sanitized_department_id = mysqli_real_escape_string($conn, $department_id);
-
     if (empty($errorMessage)) {
-        $insert_query = "INSERT INTO employees (name, designation, branch_id, department_id, phone, email, ein_no, team_no, alt_tag, alt_description, image) 
-                        VALUES ('$sanitized_name', '$sanitized_designation', '$sanitized_branch_id', '$sanitized_department_id', '$phone', '$email', '$sanitized_ein_no',
-                                '$sanitized_team_no', '$alt_tag', '$alt_description', '$image_path')";
-        if (mysqli_query($conn, $insert_query)) {
-            $successMessage = "Employee created successfully!";
-            header("Location: employee-list.php");
-        } else {
-            $errorMessage = "Error creating employee: " . mysqli_error($conn);
+        // Check if a new image is uploaded
+        // $image_path = '';
+        if ($_FILES["image"]["size"] > 0) {
+            // Sanitize the file name
+            $image_name = $_FILES["image"]["name"];
+            $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
+            $image_name = preg_replace("/\s+/", "-", $image_name);
+
+            // Sanitize inputs to prevent SQL injection
+            $sanitized_name = mysqli_real_escape_string($conn, $name);
+            $sanitized_designation = mysqli_real_escape_string($conn, $designation);
+            $sanitized_branch_id = mysqli_real_escape_string($conn, $branch_id);
+            $sanitized_ein_no = mysqli_real_escape_string($conn, $ein_no);
+            $sanitized_team_no = mysqli_real_escape_string($conn, $team_no);
+            $sanitized_image_path = mysqli_real_escape_string($conn, $image_path);
+            $sanitized_department_id = mysqli_real_escape_string($conn, $department_id);
+
+            // Insert query
+            $insert_query = "INSERT INTO employees (name, designation, branch_id, department_id, phone, email, ein_no, team_no, alt_tag, alt_description, image) 
+                        VALUES ('$sanitized_name', '$sanitized_designation', '$sanitized_branch_id', '$sanitized_department_id', '$phone', '$email', '$sanitized_ein_no', '$sanitized_team_no', '$alt_tag', '$alt_description', '$sanitized_image_path')";
+
+            // Execute query
+            if (mysqli_query($conn, $insert_query)) {
+                $successMessage = "Employee created successfully!";
+                header("Location: employee-list.php");
+            } else {
+                $errorMessage = "Error creating employee: " . mysqli_error($conn);
+            }
         }
     }
-
 }
 ?>
 

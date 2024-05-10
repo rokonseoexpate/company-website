@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
         if ($_FILES['image']) {
             $file = $_FILES['image']['name'];
             $extension =  pathinfo($file, PATHINFO_EXTENSION);
-            $image = '../uploads/' . strtolower(str_replace(' ', '-', $title)) . '-' . rand(11111, 99999) . $extension;
+            $image = '../uploads/' . strtolower(str_replace(' ', '-', $title)) . '-' . rand(11111, 99999) .'.' . $extension;
 
             move_uploaded_file($_FILES['image']['tmp_name'], $image);
         }

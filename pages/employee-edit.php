@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $target_dir = "../uploads/";
         $image_name = $_FILES["image"]["name"];
         // Remove spaces from the image name
-        $image_name = str_replace(' ', '', $image_name);
+        $image_name = str_replace(' ', '-', $image_name);
         $image_path = $target_dir . $image_name;
         move_uploaded_file($_FILES["image"]["tmp_name"], $image_path);
     }
