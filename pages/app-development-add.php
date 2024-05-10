@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Branch" required>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="App Name" required>
                         </div>
                     </div>
 

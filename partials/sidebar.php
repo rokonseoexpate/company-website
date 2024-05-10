@@ -58,7 +58,7 @@
                     <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history.php' || basename($_SERVER['PHP_SELF']) == 'history-journey-list.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-history"></i>
                         <p>
-                            History
+                            History Page
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -66,7 +66,7 @@
                         <li class="nav-item">
                             <a href="history.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history.php') ? 'active' : ''; ?>">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>History Page </p>
+                                <p>History Page Content</p>
                             </a>
                         </li>
 
