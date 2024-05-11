@@ -71,7 +71,7 @@ $conn = $db->get_connection();
                                     // Fetch employees and display them
                                     while ($emp = mysqli_fetch_assoc($resultemps)) {
                                         ?>
-                                        <div class="col-md-2 col-sm-6">
+                                        <div class="col-md-3 col-sm-6">
                                             <div class="card card-block shadow">
                                                 <img src="<?php echo 'uploads/' . basename($emp['image']); ?>" alt="<?php echo $emp['name']; ?>" class="img-thumbnail">
                                                 <div class="card-body">

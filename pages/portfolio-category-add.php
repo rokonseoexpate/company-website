@@ -6,22 +6,26 @@ $db = new DB_con();
 $conn = $db->get_connection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
     $name = $_POST['name'];
     $status = $_POST['status'];
 
+    $errorMessage = '';
 
-    // Prepare the insert query
-    $insert_query = "INSERT INTO web_portfolio_categories (name, status) VALUES ('$name', '$status')";
+    if (empty($name)) {
+        $errorMessage = "name is required";
+    }
 
-    // Execute the insert query
-    if (mysqli_query($conn, $insert_query)) {
-        // Insert successful
-        $successMessage = "Created Successfully!";
-        // Redirect to the page or display success message as per your requirement
-    } else {
-        // Insert failed
-        $errorMessage = "Error creating job: " . mysqli_error($conn);
+    
+    if (empty($errorMessage)) {
+        $insert_query = "INSERT INTO web_portfolio_categories (name, status) VALUES ('$name', '$status')";
+        if (mysqli_query($conn, $insert_query)) {
+            $successMessage = "Created Successfully!";
+            header("Location: portfolio-category-add.php");
+        } else {
+            $errorMessage = "Error creating job: " . mysqli_error($conn);
+        }
+    }else{
+
     }
 }
 ?>
@@ -36,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="Name">Name</label>
+                    <label for="Name">Name <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="Name" name="name" placeholder="Name">
                 </div>
                 <div class="form-group col-md-6">

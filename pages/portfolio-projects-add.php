@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="card px-3">
         <div class="d-flex justify-content-between align-items-center">
-            <h1>Add New Employee</h1>
+            <h1><?php echo $title?></h1>
             <a href="portfolio-projects-list.php" class="btn btn-info">View List</a>
         </div>
         <form action="" method="POST" enctype="multipart/form-data">

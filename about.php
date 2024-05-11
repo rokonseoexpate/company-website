@@ -286,12 +286,12 @@ $conn = $db->get_connection();
 			if ($result) {
 				while ($row = mysqli_fetch_assoc($result)) {
 			?>
-					<div class="col-md-3">
-						<div class="card" style="width: 18rem;">
+					<div class="col-md-4 pt-3">
+						<div class="card" >
 							<img src="<?php
 										$imagePath = $row['image'];
 										$imageName = basename($imagePath);
-										$newImagePath = 'uploads/' . $imageName;
+										$newImagePath = 'pages/' . $imageName;
 										echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['name'] ?>">
 							<div class="card-body">
 								<h5 class="card-title"><?php echo $row['name'] ?></h5>
@@ -363,7 +363,7 @@ $conn = $db->get_connection();
 		<div class="row">
 			<h3 class="pb-5 text-light">Our Departments</h3>
 			<?php
-			$query = "SELECT * FROM departments ORDER BY id DESC";
+			$query = "SELECT * FROM departments ORDER BY id ASC";
 			$result = $conn->query($query);
 			foreach ($result as $department) {
 

@@ -5,13 +5,13 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
-$errorMessage = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $alt_tag = $_POST['alt_tag'];
     $alt_description = $_POST['alt_description'];
 
+    $errorMessage = '';
     // Validation: Check if name is empty
     if (empty($name)) {
         $errorMessage = 'Name Field is required';
