@@ -182,7 +182,7 @@ $conn = $db->get_connection();
 					</ul>
 					<ul class="navbar-nav booknowbtn">
 						<li class="nav-item">
-							<a type="submit" class="nav-link btn" href="get_quote.html">Get Quote</a>
+							<a type="submit" class="nav-link btn" href="get-quote.php">Get Quote</a>
 						</li>
 					</ul>
 				</div>
@@ -203,7 +203,7 @@ $conn = $db->get_connection();
 					<p style="text-align:justify;">Besides, Banner Design is an essential element of marketing and advertising your products or services. Again, it plays a crucial role in attracting the attention of potential buyers. A well-designed banner can effectively communicate a message and promote a brand to your targeted audience. Most importantly, a well-designed banner can carry information and drive traffic to a website. It is an effective tool to generate money as well as promote the company. So, visit us soon, as SEO Expate Bangladesh LTD. provides a top-class banner design service.</p>
 				</div>
 				<div class="top-body-button pt-3">
-					<a type="button" href="free_trial.html">Free Trial</a>
+					<a type="button" href="free-trial.php">Free Trial</a>
 				</div>
 			</div>
 		</div>

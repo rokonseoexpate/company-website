@@ -281,12 +281,12 @@ $conn = $db->get_connection();
 				</a>
 			</div>
 			<div class="col-md-3 pt-5">
-				<a href="banner_design.php">
+				<a href="banner-design.php">
 					<div class="card">
 						<img src="frontend/images/Banner-design-image.jpg" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
 						<div class="card-body text-center">
 							<h5 class="card-title text-center pb-3 text-dark">Banner Design</h5>
-							<div class="button text-center pt-2"><a type="button" href="banner_design.php" class="text-light text-center"> Click Here</a></div>
+							<div class="button text-center pt-2"><a type="button" href="banner-design.php" class="text-light text-center"> Click Here</a></div>
 						</div>
 					</div>
 				</a>

@@ -492,7 +492,7 @@ $conn = $db->get_connection();
 			</div>
 		</div>
 		<div class="top-body-button pt-5">
-			<a type="button" href="#">Find Out More</a>
+			<a type="button" href="services.php">Find Out More</a>
 		</div>
 	</div>
 </section>
@@ -996,7 +996,7 @@ $conn = $db->get_connection();
 				</div>
 			</div>
 			<div class="top-body-button pt-5 text-center">
-				<a type="button" href="#">See How We Work</a>
+				<a type="button" href="services.php">See How We Work</a>
 			</div>
 		</div>
 	</div>
@@ -1172,7 +1172,7 @@ $conn = $db->get_connection();
 				<img src="frontend/images/global-presencer-1024x490.png" alt="image">
 			</div>
 			<div class="top-body-button pt-3">
-				<a type="button" href="contact.html">See Our Offices</a>
+				<a type="button" href="branches.php">See Our Offices</a>
 			</div>
 		</div>
 	</div>
@@ -1188,7 +1188,7 @@ $conn = $db->get_connection();
 				<h4 class="pt-2 pb-2">the Power of Technology</h4>
 				<p>SEO Expate is your guide to the ultimate technology solutions. Embark on your journey today and discover how we utilize updated tools to tackle your biggest challenges.</p>
 				<div class="top-body-button pt-3">
-					<a type="button" href="contact.html">Start Your Journey with Us</a>
+					<a href="/">Start Your Journey with Us</a>
 				</div>
 			</div>
 		</div>

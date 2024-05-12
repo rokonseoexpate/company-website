@@ -606,7 +606,7 @@ $conn = $db->get_connection();
 		<div class="container">
 			<div class="row">
 				<div class="col-md-5" >
-					<a class="text-light" href="#">Get in touch</a>
+					<a class="text-light" href="contact.php">Get in touch</a>
 					<h3 class="text-light pt-5">Together, let's craft something incredible!</h3>
 				</div>
 				<div class="col-md-7">
