@@ -74,17 +74,17 @@ include '../layouts/master.php';
             var isValid = true;
 
             if (title === '') {
-                $('#titleError').html('Title is required!');
+                $('#titleError').php('Title is required!');
                 isValid = false;
             } else {
-                $('#titleError').html('');
+                $('#titleError').php('');
             }
 
             if (image === '') {
-                $('#imageError').html('Image is required!');
+                $('#imageError').php('Image is required!');
                 isValid = false;
             } else {
-                $('#imageError').html('');
+                $('#imageError').php('');
             }
 
             if (!isValid) {

@@ -15,27 +15,27 @@
 				    </button>
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
-				        	<li class="nav-item"><a class="nav-link" href="traning.html"> Training</a></li>
+				        	<li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
 				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="regular_course.html" data-bs-toggle="dropdown">Regular Course / Training</a>
+				                <a class="nav-link  dropdown-toggle" href="regular_course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="php_course.html">PHP</a></li>
-				                  <li><a class="dropdown-item" href="laravel_course.html">Laravel</a></li>
-				                  <li><a class="dropdown-item" href="aspnet_course.html">ASP.NET</a></li>
-				                  <li><a class="dropdown-item" href="python_course.html">Python</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_course.html">WordPress</a></li>
-				                  <li><a class="dropdown-item" href="graphics_course.html">Graphics Design</a></li>
+				                  <li><a class="dropdown-item" href="php_course.php">PHP</a></li>
+				                  <li><a class="dropdown-item" href="laravel_course.php">Laravel</a></li>
+				                  <li><a class="dropdown-item" href="aspnet_course.php">ASP.NET</a></li>
+				                  <li><a class="dropdown-item" href="python_course.php">Python</a></li>
+				                  <li><a class="dropdown-item" href="wordpress_course.php">WordPress</a></li>
+				                  <li><a class="dropdown-item" href="graphics_course.php">Graphics Design</a></li>
 				                </ul>
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="it_traning.html" data-bs-toggle="dropdown">IT Training</a>
+				                <a class="nav-link  dropdown-toggle" href="it_traning.php" data-bs-toggle="dropdown">IT Training</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="microsoft_office_course.html"> Microsoft Office</a></li>
-				                  <li><a class="dropdown-item" href="software_development_course.html">Software Development Course</a></li>
-				                  <li><a class="dropdown-item" href="adobe_course.html">Adobe / Freelancing</a></li>
-				                  <li><a class="dropdown-item" href="server_administration_course.html">Network & Server Administration</a></li>
-				                  <li><a class="dropdown-item" href="it_security_course.html">IT Security, Service & Business Management</a></li>
-				                  <li><a class="dropdown-item" href="machine_learning_course.html">AI / Machine Learning / Robotics</a></li>
+				                  <li><a class="dropdown-item" href="microsoft_office_course.php"> Microsoft Office</a></li>
+				                  <li><a class="dropdown-item" href="software_development_course.php">Software Development Course</a></li>
+				                  <li><a class="dropdown-item" href="adobe_course.php">Adobe / Freelancing</a></li>
+				                  <li><a class="dropdown-item" href="server_administration_course.php">Network & Server Administration</a></li>
+				                  <li><a class="dropdown-item" href="it_security_course.php">IT Security, Service & Business Management</a></li>
+				                  <li><a class="dropdown-item" href="machine_learning_course.php">AI / Machine Learning / Robotics</a></li>
 				                </ul>
 				            </li>
 				        </ul>
@@ -56,7 +56,7 @@
 						<h2>Find out how our expert training courses can help with your professional development.</h2>						
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="contact.html">Contact Us</a>
+						<a type="button" href="contact.php">Contact Us</a>
 					</div>	
 				</div>			
 			</div>
@@ -70,7 +70,7 @@
 			<div class="row">
 				<div class="col-12" style="z-index:500;">
 					<div class="breadcumb_gph d-flex">
-						<a class="text-light" href="home.html" class="text-success"><p>Home</p></a>
+						<a class="text-light" href="home.php" class="text-success"><p>Home</p></a>
 						<p class="text-light px-3 ">»</p>
 						<p class="text-light">Our Training</p>
 					</div>				
@@ -115,7 +115,7 @@
 					<hr>
 				</div>
 				<div class="col-md-4">
-					<a href="blog_post.html">
+					<a href="blog_post.php">
 						<div class="card">
 				      		<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Image">
 				      		<div class="card-body">
@@ -126,7 +126,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="academic_post.html">
+					<a href="academic_post.php">
 						<div class="card hover-zoom">
 				      		<img src="frontend/images/corporate-website2.jpg" class="card-img-top" alt="Image">
 				      		<div class="card-body">
@@ -137,7 +137,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="copy_writing.html">
+					<a href="copy_writing.php">
 						<div class="card">
 				      		<img src="frontend/images/Bloging-website.jpg" class="card-img-top" alt="Image">
 				      		<div class="card-body">
@@ -150,7 +150,7 @@
 			</div>
 			<div class="row pt-5">
 				<div class="col-md-4">
-					<a href="static_web.html">
+					<a href="static_web.php">
 						<div class="card">
 				      		<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
 				      		<div class="card-body">
@@ -161,7 +161,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="product_description.html">
+					<a href="product_description.php">
 						<div class="card">
 				      	<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
 				      	<div class="card-body">
@@ -172,7 +172,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="press_release.html">
+					<a href="press_release.php">
 						<div class="card hover-zoom">
 				      	<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
 				      	<div class="card-body">
@@ -185,7 +185,7 @@
 			</div>
 			<div class="row pt-5">
 				<div class="col-md-4">
-					<a href="static_web.html">
+					<a href="static_web.php">
 						<div class="card">
 				      		<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
 				      		<div class="card-body">
@@ -196,7 +196,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="product_description.html">
+					<a href="product_description.php">
 						<div class="card">
 				      	<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
 				      	<div class="card-body">
@@ -207,7 +207,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="press_release.html">
+					<a href="press_release.php">
 						<div class="card hover-zoom">
 				      	<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
 				      	<div class="card-body">
@@ -220,7 +220,7 @@
 			</div>
 			<div class="row pt-5">
 				<div class="col-md-4">
-					<a href="static_web.html">
+					<a href="static_web.php">
 						<div class="card">
 				      		<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
 				      		<div class="card-body pb-5">
@@ -231,7 +231,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="product_description.html">
+					<a href="product_description.php">
 						<div class="card">
 				      	<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
 				      	<div class="card-body pb-4">
@@ -242,7 +242,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="press_release.html">
+					<a href="press_release.php">
 						<div class="card hover-zoom">
 				      	<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
 				      	<div class="card-body pb-5">
@@ -255,7 +255,7 @@
 			</div>
 			<div class="row pt-5">
 				<div class="col-md-4">
-					<a href="static_web.html">
+					<a href="static_web.php">
 						<div class="card">
 				      		<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
 				      		<div class="card-body">
@@ -266,7 +266,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="product_description.html">
+					<a href="product_description.php">
 						<div class="card">
 				      	<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
 				      	<div class="card-body pb-4">
@@ -277,7 +277,7 @@
 					</a>
 				</div>
 				<div class="col-md-4">
-					<a href="press_release.html">
+					<a href="press_release.php">
 						<div class="card hover-zoom">
 				      	<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
 				      	<div class="card-body pb-5">
@@ -302,7 +302,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">

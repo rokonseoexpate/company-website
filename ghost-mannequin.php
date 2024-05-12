@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Ghost Mannequin";
     ob_start();
 ?>
 

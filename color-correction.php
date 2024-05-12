@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Color Correction";
     ob_start();
 ?>
 

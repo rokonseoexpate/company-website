@@ -11,7 +11,7 @@
 		    	<div class="col-12" style="z-index:500;">
 		    		<div class="top_about_us_txt pt-5">
 			    		<div class="d-flex">						
-							<p><a href="home.html" class="text-light">Home</a></p>
+							<p><a href="home.php" class="text-light">Home</a></p>
 							<p><i class="fa-solid fa-angle-right"></i></p>
 							<p class="ml-2">Software Development</p>		
 						</div>	
@@ -23,7 +23,7 @@
 					</div>
 					<div class="top-body-button pt-3">
 						<div class="d-flex gap-3">
-							<a type="button" href="contact.html">Get a Proposal</a>
+							<a type="button" href="contact.php">Get a Proposal</a>
 							<a type="button" href="#">Hire Software Developers</a>
 						</div>
 					</div>	
@@ -278,14 +278,14 @@
 			        <h5 class="accordion-header collapsed" id="headingSix" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Q. Can you develop Mobile Software?
 			        </h5>
 			        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
-			          <div class="accordion-body">Yes, we can. You can work with SEO Expate Bangladesh Ltd. for any kind of mobile app development. Please visit our <a href="app_development.html" class="text-success">mobile app development services.</a></div>
+			          <div class="accordion-body">Yes, we can. You can work with SEO Expate Bangladesh Ltd. for any kind of mobile app development. Please visit our <a href="app_development.php" class="text-success">mobile app development services.</a></div>
 			        </div>
 			      </div>
 			      <div class="accordion-item">
 			        <h5 class="accordion-header collapsed" id="headingSeven" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Q. Can you develop Desktop Software?
 			        </h5>
 			        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
-			          <div class="accordion-body">Yes, we can. You can work with SEO Expate Bangladesh Ltd. for any kind of desktop software. Please visit our <a href="home.html" class="text-success">SEO Expate Bangladesh Ltd.</a> .  
+			          <div class="accordion-body">Yes, we can. You can work with SEO Expate Bangladesh Ltd. for any kind of desktop software. Please visit our <a href="home.php" class="text-success">SEO Expate Bangladesh Ltd.</a> .  
 			          </div>
 			        </div>
 			      </div>
@@ -316,7 +316,7 @@
 			        <h5 class="accordion-header collapsed" id="headingSevenn" data-bs-toggle="collapse" data-bs-target="#collapseSevenn" aria-expanded="false" aria-controls="collapseSevenn">Q. How do you guarantee product quality?
 			        </h5>
 			        <div id="collapseSevenn" class="accordion-collapse collapse" aria-labelledby="headingSevenn" data-bs-parent="#accordion">
-			          <div class="accordion-body">You will have unlimited support from our team. They will regularly test the work results, taking into account all customer preferences. As we work to gain our customer's satisfaction, we guarantee high-quality services. Meet the <a href="about.html" class="text-success">core team.</a>
+			          <div class="accordion-body">You will have unlimited support from our team. They will regularly test the work results, taking into account all customer preferences. As we work to gain our customer's satisfaction, we guarantee high-quality services. Meet the <a href="about.php" class="text-success">core team.</a>
 			          </div>
 			        </div>
 			      </div>
@@ -344,7 +344,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">

@@ -21,7 +21,7 @@ $title = "All Branches";
 			<div class="col-12" style="z-index:500; ">
 				<div class="top_body_txt_part">
 					<h1 class="" style="font-size: 45px; line-height: 55px;">All Branches</h1>
-					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
+					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
 				</div>
 			</div>
 		</div>
@@ -193,7 +193,7 @@ $title = "All Branches";
 					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
 				</div>
 				<div class="top-body-button pt-5">
-					<a type="button" href="contact.html">Get In Touch</a>
+					<a type="button" href="contact.php">Get In Touch</a>
 				</div>
 			</div>
 			<div class="col-md-6">

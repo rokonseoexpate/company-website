@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Shadow Masking";
     ob_start();
 ?>
 

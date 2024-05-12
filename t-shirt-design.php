@@ -16,12 +16,12 @@ $conn = $db->get_connection();
 				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 					<ul class="navbar-nav ">
 						<li class="nav-item dropdown has-megamenu ">
-							<a class="nav-link dropdown-toggle" href="photo_editor.html" data-bs-toggle="dropdown"> Photo Editing Services </a>
+							<a class="nav-link dropdown-toggle" href="photo_editor.php" data-bs-toggle="dropdown"> Photo Editing Services </a>
 							<div class="dropdown-menu megamenu" role="menu">
 								<div class="row g-3">
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="clipping_path.html" class="d-flex">
+											<a href="clipping_path.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Clipping Path</h6>
@@ -31,7 +31,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="background_remove.html" class="d-flex">
+											<a href="background_remove.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Photo Background Removing</h6>
@@ -41,7 +41,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="image_masking.html" class="d-flex">
+											<a href="image_masking.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Image Masking</h6>
@@ -51,7 +51,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="shadow_making.html" class="d-flex">
+											<a href="shadow_making.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Shadow Making</h6>
@@ -63,7 +63,7 @@ $conn = $db->get_connection();
 								<div class="row g-3">
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="ghost_mannequin.html" class="d-flex">
+											<a href="ghost_mannequin.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Ghost Mannequin Effect</h6>
@@ -73,7 +73,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="photo_retouching.html" class="d-flex">
+											<a href="photo_retouching.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Photo Retouching</h6>
@@ -83,7 +83,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="color_correction.html" class="d-flex">
+											<a href="color_correction.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Color Correction</h6>
@@ -93,7 +93,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="ecommerce_photo_edit.html" class="d-flex">
+											<a href="ecommerce_photo_edit.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">E-Commerce Photo Editing</h6>
@@ -105,7 +105,7 @@ $conn = $db->get_connection();
 								<div class="row g-3">
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="jewelry_retouching.html" class="d-flex">
+											<a href="jewelry_retouching.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Jewelry Retouching</h6>
@@ -115,7 +115,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="wedding_photo.html" class="d-flex">
+											<a href="wedding_photo.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Wedding Photo Editing</h6>
@@ -125,7 +125,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="photo_restoration.html" class="d-flex">
+											<a href="photo_restoration.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Photo Restoration</h6>
@@ -135,7 +135,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="real_estate_photo.html" class="d-flex">
+											<a href="real_estate_photo.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Real Estate Photo Editing</h6>
@@ -147,7 +147,7 @@ $conn = $db->get_connection();
 								<div class="row g-3">
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="image_manipulation.html" class="d-flex">
+											<a href="image_manipulation.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Image Manipulation</h6>
@@ -157,7 +157,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="raster_vector.html" class="d-flex">
+											<a href="raster_vector.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Raster to Vector Conversion</h6>
@@ -169,19 +169,19 @@ $conn = $db->get_connection();
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="graphic_design.html" data-bs-toggle="dropdown"> Graphic Design </a>
+							<a class="nav-link  dropdown-toggle" href="graphic_design.php" data-bs-toggle="dropdown"> Graphic Design </a>
 							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="t-shirt-design.html"> T-Shirt Design</a></li>
-								<li><a class="dropdown-item" href="logo_design.html">Logo Designs Service</a></li>
-								<li><a class="dropdown-item" href="banner_design.html">Banner Design</a></li>
+								<li><a class="dropdown-item" href="t-shirt-design.php"> T-Shirt Design</a></li>
+								<li><a class="dropdown-item" href="logo_design.php">Logo Designs Service</a></li>
+								<li><a class="dropdown-item" href="banner_design.php">Banner Design</a></li>
 							</ul>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="photo_editor_pricing.html"> Pricing </a></li>
-						<li class="nav-item"><a class="nav-link" href="photo_edit_portfolio.html"> Portfolio </a></li>
+						<li class="nav-item"><a class="nav-link" href="photo_editor_pricing.php"> Pricing </a></li>
+						<li class="nav-item"><a class="nav-link" href="photo_edit_portfolio.php"> Portfolio </a></li>
 					</ul>
 					<ul class="navbar-nav booknowbtn">
 						<li class="nav-item">
-							<a type="submit" class="nav-link btn" href="get_quote.html">Get Quote</a>
+							<a type="submit" class="nav-link btn" href="get_quote.php">Get Quote</a>
 						</li>
 					</ul>
 				</div>
@@ -199,10 +199,10 @@ $conn = $db->get_connection();
 				<div class="top_body_txt_part">
 					<h1>About T-Shirt Design</h1>
 					<p style="text-align:justify;">T-shirt design is an art form that allows people to express their creativity. Moreover, it involves creating unique graphics, patterns, and slogans printed on the fabric. Artists process those designs digitally, or they make their designs using hands, depending on the artist's selection. People use various materials, mostly cotton, to make T-shirts, and they represent items of clothing present in everybody's wardrobe. The T-shirt design industry has grown a lot in the past few years.</p>
-					<p style="text-align:justify;">Today, graphic designers use a wide range of colors, intense visual pictures, and creative themes to create T-shirts of all kinds. T-shirt design is all about knowing how to combine details from every culture or field into exclusive designs and following modern trends. Most importantly, T-shirt design plays a crucial role in the fashion industry. Besides, it allows brands to differentiate themselves from competitors. A well-designed t-shirt can attract customers and also increase business sales. So, we recommend you take this dynamic service from <a href="index.html" class="text-success">SEO Expate</a> Bangladesh LTD.</p>
+					<p style="text-align:justify;">Today, graphic designers use a wide range of colors, intense visual pictures, and creative themes to create T-shirts of all kinds. T-shirt design is all about knowing how to combine details from every culture or field into exclusive designs and following modern trends. Most importantly, T-shirt design plays a crucial role in the fashion industry. Besides, it allows brands to differentiate themselves from competitors. A well-designed t-shirt can attract customers and also increase business sales. So, we recommend you take this dynamic service from <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD.</p>
 				</div>
 				<div class="top-body-button pt-3">
-					<a type="button" href="free_trial.html">Free Trial</a>
+					<a type="button" href="free_trial.php">Free Trial</a>
 				</div>
 			</div>
 		</div>
@@ -218,8 +218,8 @@ $conn = $db->get_connection();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.html" class="text-dark">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo_editor.html" class="text-dark">Photo editor</a></li>
+							<li class="breadcrumb-item "><a href="index.php" class="text-dark">Home</a></li>
+							<li class="breadcrumb-item "><a href="photo_editor.php" class="text-dark">Photo editor</a></li>
 							<li class="breadcrumb-item active text-dark" aria-current="page">T-Shirt Design</li>
 						</ol>
 					</nav>
@@ -249,9 +249,9 @@ $conn = $db->get_connection();
 				<h5>Best T-Shirt Design Service</h5>
 			</div>
 			<div>
-				<p>Best T-Shirt Design Service can enhance your marketing tactics, and you can attract many potential customers with that. For this reason, <a href="index.html" class="text-success">SEO Expate</a> Bangladesh LTD. company will give you the best t-shirt design service ever. If you are looking for the most trusted company for your t-shirt design, then you are in the right place. Besides, if you have a specific design in mind for your t-shirt, please inform us so we can accommodate your preferences. Our t-shirt design services are top-notch and reasonably priced. This service is crucial for any online business, and we are here to provide it for you.</p>
-				<p>Moreover, our <a href="index.html" class="text-success">company</a> is reliable all over the world as we provide the best service to our customers. However, we consider ourselves as the best in this sector because of some several reasons. Firstly, we don't compromise our quality. The quality of the t-shirts and printing is important to create a good-looking customized t-shirt. Secondly, you can choose any design for your T-shirt, and we have the best designer who will design it per your choice. Moreover, our service will definitely fit your budget, and after placing your order, we will deliver it as soon as possible. </p>
-				<p>Furthermore, <a href="index.html" class="text-success">SEO Expate</a> Bangladesh LTD. company will offer various design options and customization features for you. Again, we guarantee that your T-shirts last for years because we use high-quality materials. Our professional designers understand the latest trends in t-shirt design and give you the best service. Therefore, a lot of customers show interest in purchasing our products.</p>
+				<p>Best T-Shirt Design Service can enhance your marketing tactics, and you can attract many potential customers with that. For this reason, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. company will give you the best t-shirt design service ever. If you are looking for the most trusted company for your t-shirt design, then you are in the right place. Besides, if you have a specific design in mind for your t-shirt, please inform us so we can accommodate your preferences. Our t-shirt design services are top-notch and reasonably priced. This service is crucial for any online business, and we are here to provide it for you.</p>
+				<p>Moreover, our <a href="index.php" class="text-success">company</a> is reliable all over the world as we provide the best service to our customers. However, we consider ourselves as the best in this sector because of some several reasons. Firstly, we don't compromise our quality. The quality of the t-shirts and printing is important to create a good-looking customized t-shirt. Secondly, you can choose any design for your T-shirt, and we have the best designer who will design it per your choice. Moreover, our service will definitely fit your budget, and after placing your order, we will deliver it as soon as possible. </p>
+				<p>Furthermore, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. company will offer various design options and customization features for you. Again, we guarantee that your T-shirts last for years because we use high-quality materials. Our professional designers understand the latest trends in t-shirt design and give you the best service. Therefore, a lot of customers show interest in purchasing our products.</p>
 			</div>
 		</div>
 	</div>
@@ -311,7 +311,7 @@ $conn = $db->get_connection();
 			</div>
 			<div>
 				<p>When it comes to getting a simple t-shirt design created, cost is always a consideration. Most importantly, we will give you the best services at an overall value. We determine the maximum price for our design services through discussions. Moreover, taking into account factors such as the amount of work, number of designs, and revisions needed. We also accept customized t-shirt design orders, with pricing being open to negotiation. Additionally, we provide a special flat discount to our clients for these orders.</p>
-				<p>However, the benefit of the design we are offering is the best and unique in this sector. T-shirt design services are highly beneficial for virtue work and they will help you in many ways. The Simple T-Shirt Design Service Cost is very affordable on our <a href="index.html" class="text-success">SEO Expate</a> Bangladesh LTD. website. Also, we assure you we will work on your demand basis and deliver the work how you have asked for. So, if you are looking to promote your brand in a creative way, then our custom-designed t-shirts are the perfect solution. </p>
+				<p>However, the benefit of the design we are offering is the best and unique in this sector. T-shirt design services are highly beneficial for virtue work and they will help you in many ways. The Simple T-Shirt Design Service Cost is very affordable on our <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. website. Also, we assure you we will work on your demand basis and deliver the work how you have asked for. So, if you are looking to promote your brand in a creative way, then our custom-designed t-shirts are the perfect solution. </p>
 			</div>
 		</div>
 	</div>
@@ -589,7 +589,7 @@ $conn = $db->get_connection();
 		<div class="row">
 			<div class="col-md-3">
 				<h4>Photoshop Services</h4>
-				<a href="clipping_path.html" class="d-flex pt-4">
+				<a href="clipping_path.php" class="d-flex pt-4">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -597,7 +597,7 @@ $conn = $db->get_connection();
 						<h6>Clipping Path Service</h6>
 					</div>
 				</a>
-				<a href="jewelry_retouching.html" class="d-flex pt-2">
+				<a href="jewelry_retouching.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -605,7 +605,7 @@ $conn = $db->get_connection();
 						<h6>Jewelry Retouching Service</h6>
 					</div>
 				</a>
-				<a href="ecommerce_photo_edit.html" class="d-flex pt-2">
+				<a href="ecommerce_photo_edit.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -613,7 +613,7 @@ $conn = $db->get_connection();
 						<h6>E-Commerce Photo Editing</h6>
 					</div>
 				</a>
-				<a href="image_masking.html" class="d-flex pt-2">
+				<a href="image_masking.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -621,7 +621,7 @@ $conn = $db->get_connection();
 						<h6>Image Masking Service</h6>
 					</div>
 				</a>
-				<a href="color_correction.html" class="d-flex pt-2">
+				<a href="color_correction.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -632,7 +632,7 @@ $conn = $db->get_connection();
 			</div>
 			<div class="col-md-3">
 				<h4>Photoshop Services</h4>
-				<a href="real_estate_photo.html" class="d-flex pt-4">
+				<a href="real_estate_photo.php" class="d-flex pt-4">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -640,7 +640,7 @@ $conn = $db->get_connection();
 						<h6>Real Estate Photo Editing</h6>
 					</div>
 				</a>
-				<a href="photo_retouching.html" class="d-flex pt-2">
+				<a href="photo_retouching.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -648,7 +648,7 @@ $conn = $db->get_connection();
 						<h6>Photo Retouching</h6>
 					</div>
 				</a>
-				<a href="background_remove.html" class="d-flex pt-2">
+				<a href="background_remove.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -656,7 +656,7 @@ $conn = $db->get_connection();
 						<h6>Remove Background Image</h6>
 					</div>
 				</a>
-				<a href="ghost_mannequin.html" class="d-flex pt-2">
+				<a href="ghost_mannequin.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -664,7 +664,7 @@ $conn = $db->get_connection();
 						<h6>Ghost Mannequin Effect</h6>
 					</div>
 				</a>
-				<a href="shadow_making.html" class="d-flex pt-2">
+				<a href="shadow_making.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -675,7 +675,7 @@ $conn = $db->get_connection();
 			</div>
 			<div class="col-md-3">
 				<h4>Photoshop Services</h4>
-				<a href="photo_restoration.html" class="d-flex pt-4">
+				<a href="photo_restoration.php" class="d-flex pt-4">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -683,7 +683,7 @@ $conn = $db->get_connection();
 						<h6>Photo Restoration</h6>
 					</div>
 				</a>
-				<a href="image_manipulation.html" class="d-flex pt-2">
+				<a href="image_manipulation.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -691,7 +691,7 @@ $conn = $db->get_connection();
 						<h6>Image Manipulation Service</h6>
 					</div>
 				</a>
-				<a href="wedding_photo.html" class="d-flex pt-2">
+				<a href="wedding_photo.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -699,7 +699,7 @@ $conn = $db->get_connection();
 						<h6>Wedding Photo Editing</h6>
 					</div>
 				</a>
-				<a href="raster_vector.html" class="d-flex pt-2">
+				<a href="raster_vector.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -707,7 +707,7 @@ $conn = $db->get_connection();
 						<h6>Raster to Vector Conversion</h6>
 					</div>
 				</a>
-				<a href="background_remove.html" class="d-flex pt-2">
+				<a href="background_remove.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -718,7 +718,7 @@ $conn = $db->get_connection();
 			</div>
 			<div class="col-md-3">
 				<h4>Graphics Design Services</h4>
-				<a href="t-shirt-design.html" class="d-flex pt-4">
+				<a href="t-shirt-design.php" class="d-flex pt-4">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -726,7 +726,7 @@ $conn = $db->get_connection();
 						<h6>T-Shirt Design</h6>
 					</div>
 				</a>
-				<a href="logo_design.html" class="d-flex pt-2">
+				<a href="logo_design.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
@@ -734,7 +734,7 @@ $conn = $db->get_connection();
 						<h6>Logo Designs Service</h6>
 					</div>
 				</a>
-				<a href="banner_design.html" class="d-flex pt-2">
+				<a href="banner_design.php" class="d-flex pt-2">
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>

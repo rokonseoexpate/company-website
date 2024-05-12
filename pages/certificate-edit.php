@@ -146,10 +146,10 @@ include '../layouts/master.php';
             var isValid = true;
 
             if (title === '') {
-                $('#titleError').html('Title is required!');
+                $('#titleError').php('Title is required!');
                 isValid = false;
             } else {
-                $('#titleError').html('');
+                $('#titleError').php('');
             }
 
 

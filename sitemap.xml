@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- 156 total pages-->
+  <!-- 129 total pages-->
   <!-- PHP-sitemap-generator by https://github.com/tristangoossens -->
   <url>
     <loc>http://company-website.test/</loc>
@@ -10,12 +10,6 @@
   </url>
   <url>
     <loc>http://company-website.test/index.php</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/index</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -57,12 +51,6 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/graphic_design</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
     <loc>http://company-website.test/content-writing</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
@@ -70,12 +58,6 @@
   </url>
   <url>
     <loc>http://company-website.test/app-development.php</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/app-development</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -105,19 +87,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/about</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
     <loc>http://company-website.test/branches.php</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branches</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -129,19 +99,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/department</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
     <loc>http://company-website.test/certificate.php</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/certificate</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -153,19 +111,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/award</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
     <loc>http://company-website.test/history.php</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/history</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -177,19 +123,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/contact</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
     <loc>http://company-website.test/jobs.php</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/jobs</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -201,25 +135,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/notice</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
     <loc>http://company-website.test/press_enquiry.php</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/press_enquiry</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/contact.html</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -231,535 +147,109 @@
     <priority>1</priority>
   </url>
   <url>
+    <loc>http://company-website.test/home.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/app-development</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
     <loc>http://company-website.test/photo-editor</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/photo_editor.html</loc>
+    <loc>http://company-website.test/photo_editor.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/clipping_path.html</loc>
+    <loc>http://company-website.test/clipping_path.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/background_remove.html</loc>
+    <loc>http://company-website.test/background_remove.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/image_masking.html</loc>
+    <loc>http://company-website.test/image_masking.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/shadow_making.html</loc>
+    <loc>http://company-website.test/shadow_making.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/ghost_mannequin.html</loc>
+    <loc>http://company-website.test/ghost_mannequin.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/photo_retouching.html</loc>
+    <loc>http://company-website.test/photo_retouching.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/color_correction.html</loc>
+    <loc>http://company-website.test/color_correction.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/ecommerce_photo_edit.html</loc>
+    <loc>http://company-website.test/ecommerce_photo_edit.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/jewelry_retouching.html</loc>
+    <loc>http://company-website.test/jewelry_retouching.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/wedding_photo.html</loc>
+    <loc>http://company-website.test/wedding_photo.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/photo_restoration.html</loc>
+    <loc>http://company-website.test/photo_restoration.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/real_estate_photo.html</loc>
+    <loc>http://company-website.test/real_estate_photo.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/image_manipulation.html</loc>
+    <loc>http://company-website.test/image_manipulation.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/raster_vector.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/graphic_design.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/t-shirt-design.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/logo_design.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/banner_design.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/photo_editor_pricing.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/photo_edit_portfolio.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/get_quote.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/free_trial.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/order_now.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/notice-details.php?id=14</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/notice-details?id=14</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/index.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/notice-details.php?id=10</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/notice-details?id=10</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/notice-details.php?id=9</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/notice-details?id=9</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/home.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/history.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=27</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=27</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=26</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=26</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=25</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=25</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=24</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=24</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=23</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=23</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=22</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=22</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=21</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=21</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=20</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=20</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=19</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=19</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=18</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=18</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=17</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=17</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch.php?id=16</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/branch?id=16</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/web_development.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/app_development.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/domain_hosting.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/software_development.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/seo_service.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/digital_marketing.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/traning.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/regular_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/php_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/laravel_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/aspnet_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/python_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/wordpress_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/graphics_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/it_traning.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/microsoft_office_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/software_development_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/adobe_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/server_administration_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/it_security_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/machine_learning_course.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/blog_post.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/academic_post.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/copy_writing.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/static_web.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/product_description.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/press_release.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/content_writing.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/content_pricing.html</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/logo_design.php</loc>
-    <lastmod>2024-05-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>http://company-website.test/logo_design</loc>
+    <loc>http://company-website.test/raster_vector.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -771,7 +261,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/t-shirt-design</loc>
+    <loc>http://company-website.test/logo_design.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -783,157 +273,505 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/banner_design</loc>
+    <loc>http://company-website.test/photo-editor.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/ecommerce_seo.html</loc>
+    <loc>http://company-website.test/photo_editor_pricing.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/amazon_seo.html</loc>
+    <loc>http://company-website.test/photo_edit_portfolio.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/b2b_seo.html</loc>
+    <loc>http://company-website.test/get_quote.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/shopify_seo.html</loc>
+    <loc>http://company-website.test/free_trial.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/wordpress_seo.html</loc>
+    <loc>http://company-website.test/order_now.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/woocommerce_seo.html</loc>
+    <loc>http://company-website.test/image-masking.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/lead_seo.html</loc>
+    <loc>http://company-website.test/shadow-making.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/nopcommerce_seo.html</loc>
+    <loc>http://company-website.test/ghost-mannequin.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/magento_seo.html</loc>
+    <loc>http://company-website.test/photo-retouching.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/volusion_seo.html</loc>
+    <loc>http://company-website.test/color-correction.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/bigcommerce_seo.html</loc>
+    <loc>http://company-website.test/ecommerce-photo-edit.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/consulting_seo.html</loc>
+    <loc>http://company-website.test/jewelry-retouching.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/ppc_paid.html</loc>
+    <loc>http://company-website.test/wedding-photo.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/amazon_ppc.html</loc>
+    <loc>http://company-website.test/photo-restoration.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/ecommerce_ppc.html</loc>
+    <loc>http://company-website.test/app_development.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/google_ads.html</loc>
+    <loc>http://company-website.test/web_development.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/management_ads.html</loc>
+    <loc>http://company-website.test/software_development.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/shoping_management.html</loc>
+    <loc>http://company-website.test/seo_service.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/ppc_consulting.html</loc>
+    <loc>http://company-website.test/digital_marketing.php</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/ppc_lead.html</loc>
+    <loc>http://company-website.test/notice-details.php?id=14</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/onpage_seo.html</loc>
+    <loc>http://company-website.test/notice-details.php?id=10</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/offpage_seo.html</loc>
+    <loc>http://company-website.test/notice-details.php?id=9</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/technical_seo.html</loc>
+    <loc>http://company-website.test/branch.php?id=27</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/package_price_seo.html</loc>
+    <loc>http://company-website.test/branch.php?id=26</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/about.html</loc>
+    <loc>http://company-website.test/branch.php?id=25</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/branch.php?id=24</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/branch.php?id=23</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/branch.php?id=22</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/branch.php?id=21</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/branch.php?id=20</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/branch.php?id=19</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/branch.php?id=18</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/branch.php?id=17</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/branch.php?id=16</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/domain_hosting.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/traning.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/regular_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/php_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/laravel_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/aspnet_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/python_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/wordpress_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/graphics_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/it_traning.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/microsoft_office_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/software_development_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/adobe_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/server_administration_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/it_security_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/machine_learning_course.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/blog_post.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/academic_post.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/copy_writing.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/static_web.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/product_description.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/press_release.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/content_writing.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/content_pricing.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/ecommerce_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/amazon_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/b2b_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/shopify_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/wordpress_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/woocommerce_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/lead_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/nopcommerce_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/magento_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/volusion_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/bigcommerce_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/consulting_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/ppc_paid.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/amazon_ppc.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/ecommerce_ppc.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/google_ads.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/management_ads.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/shoping_management.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/ppc_consulting.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/ppc_lead.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/onpage_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/offpage_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/technical_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/package_price_seo.php</loc>
+    <lastmod>2024-05-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://company-website.test/contact</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>

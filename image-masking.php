@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Image Masking";
     ob_start();
 ?>
 

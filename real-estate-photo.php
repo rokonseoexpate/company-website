@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Real Estate Photo";
     ob_start();
 ?>
 

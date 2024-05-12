@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Jewelry Retouching";
     ob_start();
 ?>
 
