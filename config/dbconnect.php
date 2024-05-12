@@ -21,4 +21,3 @@ class DB_con {
 
 }
 
-?>

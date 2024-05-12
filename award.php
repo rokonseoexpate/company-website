@@ -23,8 +23,8 @@ $conn = $db->get_connection();
                 <h3>Awards & Recognitions</h3>
                 <p>We are proud of being consistently recognized by national and international organizations and platforms as a trusted and reliable IT services provider, software & technology company and employer. It is our honor to be recognized for our hard work for our clients, employees, and communities globally. Explore some recent awards & recognitions received by SEO Expate and make decisions confidently.</p>
                 <div class="top-body-button pt-4 d-flex gap-3">
-                    <a type="button" href="#">About SEO Expate </a>
-                    <a type="button" href="#">History of SEO Expate </a>
+                    <a type="button" href="about.php">About SEO Expate </a>
+                    <a type="button" href="history.php">History of SEO Expate </a>
                 </div>
             </div>
         </div>

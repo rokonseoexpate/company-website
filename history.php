@@ -23,7 +23,7 @@ $history = $result->fetch_assoc();
 				</div>
 				<div class="top-body-button pt-3">
 					<div class="">
-						<a type="button" target="_blank" href="<?= $history['hero_button_link']; ?>">About SEO Expate</a>
+						<a type="button" target="_blank" href="about.php">About SEO Expate</a>
 					</div>
 				</div>
 			</div>

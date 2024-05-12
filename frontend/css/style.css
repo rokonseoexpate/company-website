@@ -3453,4 +3453,8 @@ font-weight: 600 !important;
     color: #fff;
     text-align: center;
 }
+
+.perfect-image{
+    object-fit: cover;
+}
 /**===========================branch_list end here===================================**/

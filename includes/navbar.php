@@ -16,14 +16,14 @@
                                     <a class="nav-link " href="#">Hire</a>
                                 </li>
                                 <li class="nav-item dropdown dropdown-mega position-static">
-                                    <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Services</a>
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Services</a>
                                     <div class="dropdown-menu shadow">
                                         <div class="mega-content px-md-4">
                                             <div class="container-fluid">
                                                 <div class="row">
                                                     <div class="col-lg-4 col-sm-6 py-4">
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="domain-hosting">
+                                                            <a class="list-group-item d-flex" href="domain-hosting.php">
                                                                 <div><i class="fa-solid fa-earth-americas"></i></div>
                                                                 <div>
                                                                     <h5>Domain & Hosting</h5>
@@ -34,7 +34,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="software-development">
+                                                            <a class="list-group-item d-flex" href="web-development.php">
                                                                 <div><i class="fa-brands fa-buffer"></i></div>
                                                                 <div>
                                                                     <h5>Software Development</h5>
@@ -45,7 +45,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="seo-service">
+                                                            <a class="list-group-item d-flex" href="seo-service.php">
                                                                 <div><i class="fa-solid fa-chart-line"></i></div>
                                                                 <div>
                                                                     <h5>SEO</h5>
@@ -58,7 +58,7 @@
                                                     </div>
                                                     <div class="col-lg-4 col-sm-6 py-4">
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="web-development">
+                                                            <a class="list-group-item d-flex" href="web-development.php">
                                                                 <div><i class="fa-brands fa-webflow"></i></div>
                                                                 <div>
                                                                     <h5>Web Development</h5>
@@ -82,7 +82,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="content-writing">
+                                                            <a class="list-group-item d-flex" href="content-writing.php">
                                                                 <div><i class="fa-solid fa-book-open"></i></div>
                                                                 <div>
                                                                     <h5>Content Writing</h5>
@@ -107,7 +107,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="digital-marketing">
+                                                            <a class="list-group-item d-flex" href="digital-marketing.php">
                                                                 <div><i class="fa-solid fa-chart-pie"></i></div>
                                                                 <div>
                                                                     <h5>Digital Marketing</h5>
@@ -118,7 +118,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="traning">
+                                                            <a class="list-group-item d-flex" href="traning.php">
                                                                 <div><i class="fa-solid fa-money-check-dollar"></i>
                                                                 </div>
                                                                 <div>

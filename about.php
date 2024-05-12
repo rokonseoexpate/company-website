@@ -52,7 +52,7 @@ $conn = $db->get_connection();
 				<h3><span> Who</span> We Are</h3>
 				<p style="text-align: justify;">We are SEO Expate Bangladesh Ltd. a multinational IT service and technology solution provider company. We've been designing, developing, and marketing websites with a results-oriented focus since 2013. SEO Expate is an ISO-certified global service provider and we are successfully exploring various branches of the IT sector. Additionally, we specialize in making complex IT outsourcing projects run smoothly and efficiently. Our operational excellence, technical assistance, and other supporting staff are the artificers of the whole work. Moreover, our team of experts handles everything from technical tasks to daily operations sincerely. Therefore, SEO-EBL is your ideal companion in every department. </p>
 				<div class="top-body-button pt-3">
-					<a type="button" href="history.html">See our history → </a>
+					<a type="button" href="history.php">See our history → </a>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -68,13 +68,13 @@ $conn = $db->get_connection();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="frontend/images/18.jpg" alt="image">
+				<img src="frontend/images/18.jpg" class="perfect-image" alt="image">
 			</div>
 			<div class="col-md-6">
 				<h3><span> What </span> We Do</h3>
 				<p style="text-align: justify;">SEO Expate is passionate about empowering businesses with the power of technology. Our team of passionate experts in an IT company is dedicated to using modern technology to solve modern-day problems. Since 2013, we've been helping businesses of all sizes across various industries achieve their goals. We provide Digital marketing, SEO, Web development, Mobile app development, Software development, Graphics design, Content Writing, and many more services. Also, we have a training program where we work to employ young people through freelancing.Our team holds the industry's leading certifications, ensuring you receive the best quality service and support. Whether you're a startup or a large enterprise, we offer flexible and customized solutions that will help your business. Additionally, we offer expert guidance on how to utilize technology properly to maximize your business potential.</p>
 				<div class="top-body-button pt-2">
-					<a type="button" href="contact.html">Know More About Us</a>
+					<a type="button" href="about.php">Know More About Us</a>
 				</div>
 			</div>
 		</div>
@@ -446,7 +446,7 @@ $conn = $db->get_connection();
 			</div>
 		</div>
 		<div class="top-body-button pt-5">
-			<a type="button" href="#">See More Services</a>
+			<a type="button" href="services.php">See More Services</a>
 		</div>
 	</div>
 </section>

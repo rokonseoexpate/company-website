@@ -56,29 +56,29 @@
 							<p><a href="#">Expertise</a></p>
 						</div>
 						<div class="">
-							<p><a href="domain-hosting">Domain & Hosting</a></p>
+							<p><a href="domain-hosting.php">Domain & Hosting</a></p>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-3 ">
 					<div class="about_info ">
 						<div class=" ">
-							<p><a href="#">Branches </a></p>
+							<p><a href="branches.php">Branches </a></p>
 						</div>
 						<div class=" ">
-							<p><a href="#">Department </a></p>
+							<p><a href="department.php">Department </a></p>
 						</div>
 						<div class=" ">
-							<p><a href="#">Certificate </a></p>
+							<p><a href="certificate.php">Certificate </a></p>
 						</div>
 						<div class=" ">
-							<p><a href="#">Jobs</a></p>
+							<p><a href="jobs.php">Jobs</a></p>
 						</div>
 						<div class="">
 							<p><a href="#">Blog</a></p>
 						</div>
 						<div class="">
-							<p><a href="#">Press Enquiry</a></p>
+							<p><a href="press_enquiry.php">Press Enquiry</a></p>
 						</div>
 					</div>
 				</div>
@@ -112,22 +112,22 @@
 							<p><a href="app-development">Mobile App Development</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="web-development">Web Development</a></p>
+							<p><a href="web-development.php">Web Development</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="software-development">Software Development</a></p>
+							<p><a href="software-development.php">Software Development</a></p>
 						</div>
 						<div class=" ">
-							<p><a href="digital-marketing">Digital Marketing</a></p>
+							<p><a href="digital-marketing.php">Digital Marketing</a></p>
 						</div>
 						<div class="">
-							<p><a href="seo-service">SEO</a></p>
+							<p><a href="seo-service.php">SEO</a></p>
 						</div>
 						<div class="">
-							<p><a href="photo-editor">Graphic Design</a></p>
+							<p><a href="photo-editor.php">Graphic Design</a></p>
 						</div>
 						<div class="">
-							<p><a href="content-writing">Content Writing</a></p>
+							<p><a href="content-writing.php">Content Writing</a></p>
 						</div>
 						<div class="">
 							<p><a href="traning">Professional Training</a></p>
@@ -170,19 +170,19 @@
 							<p><a href="app-development">Mobile App </a></p>
 						</div>
 						<div class=" ">
-							<p><a href="#">Front-end </a></p>
+							<p><a href="app-development.php">Front-end </a></p>
 						</div>
 						<div class=" ">
-							<p><a href="#">Back-end </a></p>
+							<p><a href="app-development.php">Back-end </a></p>
 						</div>
 						<div class=" ">
-							<p><a href="#">Database</a></p>
+							<p><a href="app-development.php">Database</a></p>
 						</div>
 						<div class="">
-							<p><a href="#">CMS</a></p>
+							<p><a href="app-development.php">CMS</a></p>
 						</div>
 						<div class="">
-							<p><a href="#">Tools</a></p>
+							<p><a href="app-development.php">Tools</a></p>
 						</div>
 					</div>
 				</div>
