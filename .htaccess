@@ -2,12 +2,8 @@ RewriteEngine On
 Options -Indexes
 RewriteBase /
 
-# # Remove .php extension
+# Remove .php extension
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC,L]
-
-# # Redirect requests to remove .php extension
-RewriteCond %{THE_REQUEST} \.php
-RewriteRule ^(.+)\.php$ /$1 [R=301,L]
 

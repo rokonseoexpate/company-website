@@ -5,23 +5,20 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
-$titleErr = "";
+$pageError = "";
+$titleError = "";
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-    $sql = "SELECT * FROM blogs WHERE id=$id";
+    $sql = "SELECT * FROM banners WHERE id=$id";
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
 }
 
 if (isset($_POST['submit'])) {
+    $page = $_POST['page'];
     $title = $_POST['title'];
-    $slug = preg_replace('/[^A-Za-z0-9\-]/', '', str_replace(' ', '-', strtolower($title)));
-    $slug = trim($slug, '-') . random_int(11111, 99999);
-    $short_description = $_POST['short_description'];
     $description = $_POST['description'];
-    $blogCategoryId = $_POST['blog_category_id']; // Corrected variable name
-
     $imagePath = $row['image'];
     $path = $imagePath;
 
@@ -39,9 +36,10 @@ if (isset($_POST['submit'])) {
     }
 
     // Update record in the database using prepared statement
-    $sql = "UPDATE blogs SET blog_category_id=?, title=?, description=?, slug=?, short_description=?, image=? WHERE id=?";
+    $sql = "UPDATE banners SET page=?, title=?, description=?, image=? WHERE id=?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("isssssi", $blogCategoryId, $title, $description, $slug, $short_description, $path, $id);
+    $stmt->bind_param("ssssi", $page, $title, $description, $path, $id);
+
 
     if ($stmt->execute()) {
         $successMessage = "Successfully updated record!";
@@ -52,14 +50,9 @@ if (isset($_POST['submit'])) {
     $stmt->close();
 
     // Redirect to the list page after updating
-    header("Location: blogs.php");
+    header("Location: banner.php");
     exit();
 }
-
-
-// Fetch blog categories
-$blogCategoryQuery = "SELECT * FROM blog_categories";
-$categories = $conn->query($blogCategoryQuery);
 
 $conn->close();
 ?>
@@ -68,23 +61,19 @@ $conn->close();
     <div class="card px-3">
         <div class="d-flex justify-content-between align-items-center py-2">
             <h5><strong><?php echo $title; ?></strong></h5>
-            <a href="blogs.php" class="btn btn-sm btn-info">View List</a>
+            <a href="banner.php" class="btn btn-sm btn-info">View List</a>
         </div>
 
         <form action="<?php echo $_SERVER['PHP_SELF'] . '?id=' . $id; ?>" method="POST" enctype="multipart/form-data" id="submit">
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="blog_category_id">Blog Category</label>
-                        <select name="blog_category_id" id="blog_category_id" class="form-control" required>
+                        <label for="page">Page</label>
+                        <select name="page" id="page" class="form-control" required>
                             <option value="">Select Category</option>
-                            <?php while ($value = $categories->fetch_assoc()) { ?>
-                                <option value="<?php echo $value['id']; ?>" <?php echo $value['id'] == $row['blog_category_id'] ? 'selected' : ''; ?>>
-                                    <?php echo $value['name']; ?>
-                                </option>
-                            <?php } ?>
+                            <option value="certificate" <?php echo ($row['page'] == "certificate") ? 'selected' : ''; ?> >Certificate</option>
                         </select>
-                        <span class="text-danger"><?php echo $titleErr; ?></span>
+                        <span class="text-danger"><?php echo $pageError; ?></span>
                     </div>
                 </div>
 
@@ -92,16 +81,10 @@ $conn->close();
                     <div class="form-group">
                         <label for="title">Title</label>
                         <input type="text" class="form-control" id="title" name="title" value="<?php echo $row['title']; ?>" placeholder="Title">
-                        <span class="text-danger"><?php echo $titleErr; ?></span>
+                        <span class="text-danger"><?php echo $titleError; ?></span>
                     </div>
                 </div>
 
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="short_description">Short Description</label>
-                        <textarea name="short_description" placeholder="Short Description" class="form-control" id="shortDescription" cols="30" rows="10"><?php echo $row['short_description']; ?></textarea>
-                    </div>
-                </div>
 
                 <div class="col-md-12">
                     <div class="form-group">
