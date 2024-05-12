@@ -68,15 +68,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="orderBy">Priority <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="orderBy" value="<?php echo isset($orderBy) ? htmlspecialchars($orderBy) : ''; ?>" name="orderBy" placeholder="Priority">
+                        <input type="text" class="form-control" id="orderBy" value="<?php echo isset($orderBy) ? htmlspecialchars($orderBy) : ''; ?>" name="orderBy" placeholder="Priority" min="1">
                         <div id="orderByError" class="error text-danger"></div>
                     </div>
                 </div>
 
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="image">Image</label>
-                        <input type="file" class="form-control dropify" id="image" name="image" placeholder="Image">
+                        <label for="image">Image <span class="text-danger">*</span></label>
+                        <input type="file" class="form-control dropify" id="image" name="image" placeholder="Image" required>
                         <div id="imageError" class="error text-danger"></div>
                     </div>
                 </div>

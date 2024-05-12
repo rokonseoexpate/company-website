@@ -45,6 +45,11 @@ if (isset($_GET['id'])) {
                 </tr>
                 
                 <tr>
+                    <th>Created At</th>
+                    <td> <?php echo date('d M Y', strtotime($row['created_at'])) ?> </td>
+                </tr>
+                
+                <tr>
                     <th>Alt Text</th>
                     <td><?php echo $row['alt_tag'] ?></td>
                 </tr>

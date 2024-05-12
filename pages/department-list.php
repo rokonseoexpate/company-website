@@ -45,10 +45,17 @@ $conn = $db->get_connection();
                             <tr>
                                 <td><?php echo $i++; ?></td>
                                 <td><?php echo $row['name']; ?></td>
-                                <td class="text-center"><img style="width: 150px; height:100px" src="<?php echo  $newImagePath?>" alt="<?php echo $row['name']; ?>"></td>
-                                <td class="text-right">
-                                    <a href="department-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
-                                    <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
+                                <td class="text-center"><img style="width: 150px; height:100px" src="<?php echo  $newImagePath ?>" alt="<?php echo $row['name']; ?>"></td>
+                                <td class="align-middle text-center">
+                                    <div class="d-inline-flex">
+                                        <a href="department-edit.php?id=<?php echo $row['id']; ?>">
+                                            <button class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-pen-to-square"></i></button>
+                                        </a>
+                                        <a href="?delete_id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this record?')">
+                                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                        </a>
+                                    </div>
+
                                 </td>
                             </tr>
                     <?php

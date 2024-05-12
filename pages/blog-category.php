@@ -13,6 +13,7 @@ if (isset($_GET['id'])) {
 
     if ($conn->query($deleteQuery) === TRUE) {
         $errorMessage = "Successfully deleted record!";
+        header("Location: blog-category.php");
     } else {
         echo "<script>alert('Error deleting record: " . $conn->error . "');</script>";
     }

@@ -6,21 +6,17 @@ $db = new DB_con();
 $conn = $db->get_connection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data and escape them
     $journey_id = mysqli_real_escape_string($conn, $_POST['journey_id']);
     $year = mysqli_real_escape_string($conn, $_POST['year']);
     $details = mysqli_real_escape_string($conn, $_POST['details']);
 
-    // Prepare the update query
+    // if()
     $update_query = "UPDATE history_journeys SET year='$year', details='$details' WHERE id='$journey_id'";
 
-    // Execute the update query
     if (mysqli_query($conn, $update_query)) {
-        // Update successful
         $successMessage = "History Journey updated successfully!";
         header("Location: history-journey-list.php");
     } else {
-        // Update failed
         $errorMessage = "Error updating History Journey: " . mysqli_error($conn);
     }
 }
@@ -28,6 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Check if journey ID is provided in the URL
 if(isset($_GET['id'])) {
     $journey_id = $_GET['id'];
+
+    if(empty($journey_id)) {
+    header("Location: history-journey-list.php");
+    }
 
     // Fetch existing journey details from the database
     $fetch_query = "SELECT * FROM history_journeys WHERE id='$journey_id'";
@@ -47,13 +47,13 @@ if(isset($_GET['id'])) {
             <input type="hidden" name="journey_id" value="<?php echo $journey['id']; ?>">
             <div class="row">
                 <div class="form-group col-md-12">
-                    <label for="title">Year</label>
-                    <input type="text" class="form-control" id="title" name="year" value="<?php echo $journey['year']; ?>" placeholder="Title">
+                    <label for="title">Year  <span class="text-danger">*</span>  </label>
+                    <input type="text" class="form-control" id="title" name="year" value="<?php echo $journey['year']; ?>" placeholder="Title" required>
                 </div>
 
                 <div class="form-group col-md-12">
-                    <label for="job_details">Details</label>
-                    <textarea id="summernote" name="details" class="form-control" cols="30" rows="10"><?php echo $journey['details']; ?></textarea>
+                    <label for="job_details">Details  <span class="text-danger">*</span></label>
+                    <textarea id="summernote" name="details" class="form-control" cols="30" rows="10" required><?php echo $journey['details']; ?></textarea>
                 </div>
                 <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-primary my-3">Update</button>

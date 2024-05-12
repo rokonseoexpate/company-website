@@ -48,12 +48,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
 
                 <div class="form-group col-md-12">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" name="title" placeholder="Title">
+                    <label for="title">Title  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="title" placeholder="Title" required>
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="description">Description</label>
-                    <textarea name="description"  id="summernote" cols="30" rows="10" class="form-control"></textarea>
+                    <label for="description">Description <span class="text-danger">*</span></label>
+                    <textarea name="description"  id="summernote" cols="30" rows="10" class="form-control" required></textarea>
                 </div>
                 <div class="form-group col-md-12">
                     <label for="image">Image</label>
@@ -66,7 +66,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </form>
     </div>
-
 </div>
 
 <?php

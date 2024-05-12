@@ -19,16 +19,16 @@ $conn = $db->get_connection();
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                        <label for="title">Title <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
                         <div id="titleError" class="error text-danger"></div>
                     </div>
                 </div>
 
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="image">Image</label>
-                        <input type="file" class="form-control dropify" id="image" name="image" placeholder="Image">
+                        <label for="image">Image <span class="text-danger">*</span></label>
+                        <input type="file" class="form-control dropify" id="image" name="image" placeholder="Image" required>
                         <div id="imageError" class="error text-danger"></div>
                     </div>
                 </div>

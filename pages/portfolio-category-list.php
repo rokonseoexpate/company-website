@@ -22,60 +22,66 @@ $conn = $db->get_connection();
         <div class="table-responsive">
             <table id="example1" class="table table-bordered table-striped">
                 <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
                 </thead>
                 <tbody>
-                <?php
-                $i = 1;
-                $qry = "SELECT * FROM web_portfolio_categories ORDER BY id DESC";
-                $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+                    <?php
+                    $i = 1;
+                    $qry = "SELECT * FROM web_portfolio_categories ORDER BY id DESC";
+                    $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
 
-                if ($result) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        ?>
-                        <tr>
-                            <td><?php echo $i++; ?></td>
-                            <td><?php echo $row['name']; ?></td>
-                            <td><?php
-                                if ($row['status'] == 1){
-                                    echo "Active";
-                                }else{
-                                    echo "Inactive";
-                                }
-                            ?></td>
-                            <td class="text-right">
-                                <a href="portfolio-category-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
-                                <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a>
-                            </td>
-                        </tr>
-                        <?php
-                    }
-                } else {
-                    echo "Error: " . mysqli_error($conn); // Handle error if query execution fails
-                }
-
-                // Delete functionality
-                if (isset($_GET['delete_id'])) {
-                    $delete_id = $_GET['delete_id'];
-                    $sql_delete = "DELETE FROM web_portfolio_categories WHERE id = $delete_id";
-
-                    if (mysqli_query($conn, $sql_delete)) {
-                        // Display success message
-                        $successMessage = "Record deleted successfully!";
-
-                        // Refresh the page after deletion
-                        header("Location: $_SERVER[PHP_SELF]");
-                        exit(); // Exit after redirection
+                    if ($result) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                            <tr>
+                                <td><?php echo $i++; ?></td>
+                                <td><?php echo $row['name']; ?></td>
+                                <td><?php
+                                    if ($row['status'] == 1) {
+                                        echo "Active";
+                                    } else {
+                                        echo "Inactive";
+                                    }
+                                    ?></td>
+                                <td class="align-middle text-center">
+                                    <div class="d-inline-flex justify-content-center">
+                                        <a href="portfolio-category-edit.php?id=<?php echo $row['id']; ?>">
+                                            <button class="btn btn-sm btn-info mr-2"> <i class="fa-solid fa-pen-to-square"></i></button>
+                                        </a>
+                                        <a href="?delete_id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this record?')">
+                                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                    <?php
+                        }
                     } else {
-                        echo "Error deleting record: " . mysqli_error($conn);
+                        echo "Error: " . mysqli_error($conn); // Handle error if query execution fails
                     }
-                }
-                ?>
+
+                    // Delete functionality
+                    if (isset($_GET['delete_id'])) {
+                        $delete_id = $_GET['delete_id'];
+                        $sql_delete = "DELETE FROM web_portfolio_categories WHERE id = $delete_id";
+
+                        if (mysqli_query($conn, $sql_delete)) {
+                            // Display success message
+                            $successMessage = "Record deleted successfully!";
+
+                            // Refresh the page after deletion
+                            header("Location: $_SERVER[PHP_SELF]");
+                            exit(); // Exit after redirection
+                        } else {
+                            echo "Error deleting record: " . mysqli_error($conn);
+                        }
+                    }
+                    ?>
                 </tbody>
             </table>
         </div>
