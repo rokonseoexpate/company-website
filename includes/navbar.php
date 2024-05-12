@@ -7,8 +7,7 @@
                         <a class="navbar-brand" href="index.php">
                             <img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="300" height="auto">
                         </a>
-                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbar-content">
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
                             <i class="fas fa-stream text-white"></i>
                         </button>
                         <div class="collapse navbar-collapse" id="navbar-content">
@@ -17,16 +16,14 @@
                                     <a class="nav-link " href="#">Hire</a>
                                 </li>
                                 <li class="nav-item dropdown dropdown-mega position-static">
-                                    <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside">Services</a>
+                                    <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">Services</a>
                                     <div class="dropdown-menu shadow">
                                         <div class="mega-content px-md-4">
                                             <div class="container-fluid">
                                                 <div class="row">
                                                     <div class="col-lg-4 col-sm-6 py-4">
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex"
-                                                                href="domain-hosting">
+                                                            <a class="list-group-item d-flex" href="domain-hosting">
                                                                 <div><i class="fa-solid fa-earth-americas"></i></div>
                                                                 <div>
                                                                     <h5>Domain & Hosting</h5>
@@ -37,8 +34,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex"
-                                                                href="software-development">
+                                                            <a class="list-group-item d-flex" href="software-development">
                                                                 <div><i class="fa-brands fa-buffer"></i></div>
                                                                 <div>
                                                                     <h5>Software Development</h5>
@@ -62,8 +58,7 @@
                                                     </div>
                                                     <div class="col-lg-4 col-sm-6 py-4">
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex"
-                                                                href="web-development">
+                                                            <a class="list-group-item d-flex" href="web-development">
                                                                 <div><i class="fa-brands fa-webflow"></i></div>
                                                                 <div>
                                                                     <h5>Web Development</h5>
@@ -75,7 +70,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="photo-editor">
+                                                            <a class="list-group-item d-flex" href="graphic_design.php">
                                                                 <div><i class="fa-solid fa-paintbrush"></i></div>
                                                                 <div>
                                                                     <h5>Graphic Design</h5>
@@ -87,8 +82,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex"
-                                                                href="content-writing">
+                                                            <a class="list-group-item d-flex" href="content-writing">
                                                                 <div><i class="fa-solid fa-book-open"></i></div>
                                                                 <div>
                                                                     <h5>Content Writing</h5>
@@ -102,8 +96,7 @@
                                                     </div>
                                                     <div class="col-lg-4 col-sm-6 py-4">
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex"
-                                                                href="app-development.php">
+                                                            <a class="list-group-item d-flex" href="app-development.php">
                                                                 <div><i class="fa-solid fa-mobile-screen"></i></div>
                                                                 <div>
                                                                     <h5>Mobile App Development</h5>
@@ -114,8 +107,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex"
-                                                                href="digital-marketing">
+                                                            <a class="list-group-item d-flex" href="digital-marketing">
                                                                 <div><i class="fa-solid fa-chart-pie"></i></div>
                                                                 <div>
                                                                     <h5>Digital Marketing</h5>
@@ -149,8 +141,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown dropdown-mega position-static">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside">Products</a>
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
                                     <div class="dropdown-menu shadow">
                                         <div class="mega-content px-md-4">
                                             <div class="container-fluid">
@@ -269,14 +260,13 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown nev_submenu">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                        data-bs-auto-close="outside">Company</a>
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Company</a>
                                     <ul class="dropdown-menu shadow">
                                         <li><a class="dropdown-item" href="about.php">About Us</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Branches</a></li>
+                                        <li><a class="dropdown-item" href="branches.php">Branches</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -284,7 +274,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Certificate </a></li>
+                                        <li><a class="dropdown-item" href="certificate.php">Certificate </a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -296,7 +286,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href=" ">Contact</a></li>
+                                        <li><a class="dropdown-item" href="contact.php">Contact</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -308,7 +298,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Press Enquiry</a></li>
+                                        <li><a class="dropdown-item" href="press_enquiry.php">Press Enquiry</a></li>
                                     </ul>
                                 </li>
                             </ul>

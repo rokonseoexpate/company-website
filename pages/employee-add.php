@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_description = $_POST['alt_description'];
 
     // Check for required fields
-     $errorMessage = '';
+    $errorMessage = '';
     if (empty($name)) {
         $errorMessage .= 'Name field is required.<br>';
     }
@@ -47,20 +47,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errorMessage .= 'Team no field is required.<br>';
     }
 
-    if (empty($errorMessage)) {
-        // Check if a new image is uploaded
-        if ($_FILES["image"]["size"] > 0) {
-            // Sanitize the file name
-            $image_name = $_FILES["image"]["name"];
-            $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
-            $image_name = preg_replace("/\s+/", "-", $image_name);
+    // Check if a new image is uploaded
+    if ($_FILES["image"]["size"] > 0) {
+        // Sanitize the file name
+        $image_name = $_FILES["image"]["name"];
+        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
+        $image_name = preg_replace("/\s+/", "-", $image_name);
 
-            // Upload new image file
-            $target_dir = "../uploads/";
-            $target_file = $target_dir . $image_name;
-            move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-            $image_path = $target_file;
-        }
+        // Upload new image file
+        $target_dir = "../uploads/";
+        $target_file = $target_dir . $image_name;
+        move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+        $image_path = $target_file;
     }
 
     // Sanitize inputs to prevent SQL injection
@@ -71,17 +69,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_team_no = mysqli_real_escape_string($conn, $team_no);
     $sanitized_department_id = mysqli_real_escape_string($conn, $department_id);
 
-    // Insert query
-    $insert_query = "INSERT INTO employees (name, designation, branch_id, department_id, phone, email, ein_no, team_no, alt_tag, alt_description, image) 
+    if (empty($errorMessage)) {
+        $insert_query = "INSERT INTO employees (name, designation, branch_id, department_id, phone, email, ein_no, team_no, alt_tag, alt_description, image) 
                         VALUES ('$sanitized_name', '$sanitized_designation', '$sanitized_branch_id', '$sanitized_department_id', '$phone', '$email', '$sanitized_ein_no',
                                 '$sanitized_team_no', '$alt_tag', '$alt_description', '$image_path')";
-
-    // Execute query
-    if (mysqli_query($conn, $insert_query)) {
-        $successMessage = "Employee created successfully!";
-        header("Location: employee-list.php");
-    } else {
-        $errorMessage = "Error creating employee: " . mysqli_error($conn);
+        if (mysqli_query($conn, $insert_query)) {
+            $successMessage = "Employee created successfully!";
+            header("Location: employee-list.php");
+        } else {
+            $errorMessage = "Error creating employee: " . mysqli_error($conn);
+        }
     }
 }
 ?>
@@ -98,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
 
                 <div class="form-group col-md-6">
-                    <label for="name">Name</label>
+                    <label for="name">Name <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                 </div>
                 <div class="form-group col-md-6">

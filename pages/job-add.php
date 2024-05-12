@@ -6,6 +6,7 @@ $db = new DB_con();
 $conn = $db->get_connection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $errorMessage = '';
     // Retrieve form data
     $title = $_POST['title'];
     $job_type = $_POST['job_type'];
@@ -14,17 +15,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $apply_link = $_POST['apply_link'];
     $job_details = $_POST['job_details'];
 
-    // Prepare the insert query
-    $insert_query = "INSERT INTO jobs (title, job_type, vacancies, deadline, apply_link, job_details) VALUES ('$title', '$job_type', '$vacancies', '$deadline', '$apply_link', '$job_details')";
+    if (empty($title)) {
+        $errorMessage .= "Name field is required. ";
+    }
 
-    // Execute the insert query
-    if (mysqli_query($conn, $insert_query)) {
-        // Insert successful
-        $successMessage = "Job created successfully!";
-        // Redirect to the page or display success message as per your requirement
-    } else {
-        // Insert failed
-        $errorMessage = "Error creating job: " . mysqli_error($conn);
+    if (empty($job_type)) {
+        $errorMessage .= "Job type field is required. ";
+    }
+
+    if (empty($vacancies)) {
+        $errorMessage .= "Vacancies field is required. ";
+    }
+
+    if (empty($deadline)) {
+        $errorMessage .= "Deadline field is required. ";
+    }
+
+    if (empty($apply_link)) {
+        $errorMessage .= "Apply link field is required. ";
+    }
+
+    if (empty($errorMessage)) {
+        // Prepare the insert query
+        $insert_query = "INSERT INTO jobs (title, job_type, vacancies, deadline, apply_link, job_details) VALUES ('$title', '$job_type', '$vacancies', '$deadline', '$apply_link', '$job_details')";
+
+        // Execute the insert query
+        if (mysqli_query($conn, $insert_query)) {
+            // Insert successful
+            $successMessage = "Job created successfully!";
+            // Redirect to the page or display success message as per your requirement
+        } else {
+            // Insert failed
+            $errorMessage = "Error creating job: " . mysqli_error($conn);
+        }
     }
 }
 ?>
@@ -39,24 +62,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                    <label for="title">Title <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="job_type">Job Type</label>
-                    <input type="text" class="form-control" id="job_type" name="job_type" placeholder="Job Type">
+                    <label for="job_type">Job Type <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="job_type" name="job_type" placeholder="Job Type" aria-required="">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="vacancies">Vacancies</label>
-                    <input type="text" class="form-control" id="vacancies" name="vacancies" placeholder="Vacancies">
+                    <label for="vacancies">Vacancies  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="vacancies" name="vacancies" placeholder="Vacancies" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="deadline">Deadline</label>
-                    <input type="date" class="form-control" id="deadline" name="deadline" placeholder="Deadline">
+                    <label for="deadline">Deadline  <span class="text-danger">*</span></label>
+                    <input type="date" class="form-control" id="deadline" name="deadline" placeholder="Deadline" required>
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="apply_link">Apply Link</label>
-                    <input type="text" class="form-control" id="apply_link" name="apply_link" placeholder="Apply Link">
+                    <label for="apply_link">Apply Link  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="apply_link" name="apply_link" placeholder="Apply Link" required>
                 </div>
                 <div class="form-group col-md-12">
                     <label for="job_details">Job Details</label>

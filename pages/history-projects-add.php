@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="form-group col-md-12">
                     <label for="description">Description</label>
-                    <textarea name="description"  id="description" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="description"  id="summernote" cols="30" rows="10" class="form-control"></textarea>
                 </div>
                 <div class="form-group col-md-12">
                     <label for="image">Image</label>

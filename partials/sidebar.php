@@ -73,7 +73,8 @@
                         <li class="nav-item">
                             <a href="history-journey-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history-journey-list.php') ? 'active' : ''; ?>">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>History Journey </p>
+                                <!-- <p>History Journey </p> -->
+                                <p>Successful Journey </p>
                             </a>
                         </li>
                         <li class="nav-item">

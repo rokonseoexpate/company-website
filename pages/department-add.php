@@ -5,13 +5,13 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
-$errorMessage = '';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $alt_tag = $_POST['alt_tag'];
     $alt_description = $_POST['alt_description'];
 
+    $errorMessage = '';
     // Validation: Check if name is empty
     if (empty($name)) {
         $errorMessage = 'Name Field is required';
@@ -67,8 +67,8 @@ if (isset($stmt)) {
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="name">Department Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                    <label for="name">Department Name  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="name">Department Image</label>

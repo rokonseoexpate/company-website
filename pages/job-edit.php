@@ -60,24 +60,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="<?php echo $job_data['title']; ?>">
+                    <label for="title">Title  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="<?php echo $job_data['title']; ?>" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="job_type">Job Type</label>
-                    <input type="text" class="form-control" id="job_type" name="job_type" placeholder="Job Type" value="<?php echo $job_data['job_type']; ?>">
+                    <label for="job_type">Job Type  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="job_type" name="job_type" placeholder="Job Type" value="<?php echo $job_data['job_type']; ?>" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="vacancies">Vacancies</label>
-                    <input type="text" class="form-control" id="vacancies" name="vacancies" placeholder="Vacancies" value="<?php echo $job_data['vacancies']; ?>">
+                    <label for="vacancies">Vacancies  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="vacancies" name="vacancies" placeholder="Vacancies" value="<?php echo $job_data['vacancies']; ?>" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="deadline">Deadline</label>
-                    <input type="date" class="form-control" id="deadline" name="deadline" placeholder="Deadline" value="<?php echo $job_data['deadline']; ?>">
+                    <label for="deadline">Deadline  <span class="text-danger">*</span></label>
+                    <input type="date" class="form-control" id="deadline" name="deadline" placeholder="Deadline" value="<?php echo $job_data['deadline']; ?>" required>
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="apply_link">Apply Link</label>
-                    <input type="text" class="form-control" id="apply_link" name="apply_link" placeholder="Apply Link" value="<?php echo $job_data['apply_link']; ?>">
+                    <label for="apply_link">Apply Link  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="apply_link" name="apply_link" placeholder="Apply Link" value="<?php echo $job_data['apply_link']; ?>" required>
                 </div>
                 <div class="form-group col-md-12">
                     <label for="job_details">Job Details</label>
