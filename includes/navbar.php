@@ -266,7 +266,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Branches</a></li>
+                                        <li><a class="dropdown-item" href="branches.php">Branches</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -274,7 +274,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Certificate </a></li>
+                                        <li><a class="dropdown-item" href="certificate.php">Certificate </a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -286,7 +286,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href=" ">Contact</a></li>
+                                        <li><a class="dropdown-item" href="contact.php">Contact</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -298,7 +298,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Press Enquiry</a></li>
+                                        <li><a class="dropdown-item" href="press_enquiry.php">Press Enquiry</a></li>
                                     </ul>
                                 </li>
                             </ul>

@@ -40,12 +40,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($department_id)) {
         $errorMessage .= 'Department field is required.<br>';
     }
-    // if (empty($ein_no)) {
-    //     $errorMessage .= 'EIN no field is required.<br>';
-    // }
-    // if (empty($team_no)) {
-    //     $errorMessage .= 'Team no field is required.<br>';
-    // }
+    if (empty($ein_no)) {
+        $errorMessage .= 'EIN no field is required.<br>';
+    }
+    if (empty($team_no)) {
+        $errorMessage .= 'Team no field is required.<br>';
+    }
 
     // Check if a new image is uploaded
     if ($_FILES["image"]["size"] > 0) {
@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
 
                 <div class="form-group col-md-6">
-                    <label for="name">Name</label>
+                    <label for="name">Name <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                 </div>
                 <div class="form-group col-md-6">

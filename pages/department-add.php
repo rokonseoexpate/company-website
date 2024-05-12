@@ -67,8 +67,8 @@ if (isset($stmt)) {
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="name">Department Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                    <label for="name">Department Name  <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="name">Department Image</label>
