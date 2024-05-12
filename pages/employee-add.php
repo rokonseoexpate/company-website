@@ -80,7 +80,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $errorMessage = "Error creating employee: " . mysqli_error($conn);
         }
     }
-
 }
 ?>
 
