@@ -11,41 +11,54 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_tag = $_POST['alt_tag'];
     $alt_description = $_POST['alt_description'];
 
-    // Sanitize and prepare image name
-    $imageName = $_FILES["image"]["name"];
-    $imageName = preg_replace("/[^a-zA-Z0-9.]/", "-", $imageName); // Remove special characters except for letters, numbers, and periods
-    $imageName = str_replace(" ", "-", $imageName); // Replace spaces with hyphens
+    $errorMessage = '' ;
+    if (empty($title)) {
+        $errorMessage = "Title is required.";
+    }
 
-    // Handling image upload
-    $targetDir = "../uploads/"; // Specify the directory where you want to store uploaded images
-    $targetFilePath = $targetDir . $imageName;
+    if (empty($date)) {
+        $errorMessage = "Date field is required.";
+    }
 
-    // Upload file to server
-    if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath)) {
-        // Handling PDF upload
-        $pdfName = $_FILES["pdf"]["name"];
-        $pdfName = preg_replace("/[^a-zA-Z0-9.]/", "-", $pdfName); // Remove special characters except for letters, numbers, and periods
-        $pdfName = str_replace(" ", "-", $pdfName); // Replace spaces with hyphens
+    if (empty($errorMessage)) {
 
-        $pdfTargetFilePath = $targetDir . $pdfName;
 
-        if (move_uploaded_file($_FILES["pdf"]["tmp_name"], $pdfTargetFilePath)) {
-            // Insert notice into notices table
-            $insert_query = "INSERT INTO notices (title, date, image, files, alt_tag, alt_description) VALUES ('$title','$date', '$targetFilePath', '$pdfTargetFilePath', '$alt_tag', '$alt_description')";
-            if (mysqli_query($conn, $insert_query)) {
-                // Redirect or display success message as per your requirement
-                $successMessage = "Notice Created Successfully";
-                header("Location: notice-list.php");
-                exit();
+        // Sanitize and prepare image name
+        $imageName = $_FILES["image"]["name"];
+        $imageName = preg_replace("/[^a-zA-Z0-9.]/", "-", $imageName); // Remove special characters except for letters, numbers, and periods
+        $imageName = str_replace(" ", "-", $imageName); // Replace spaces with hyphens
+
+        // Handling image upload
+        $targetDir = "../uploads/"; // Specify the directory where you want to store uploaded images
+        $targetFilePath = $targetDir . $imageName;
+
+        // Upload file to server
+        if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath)) {
+            // Handling PDF upload
+            $pdfName = $_FILES["pdf"]["name"];
+            $pdfName = preg_replace("/[^a-zA-Z0-9.]/", "-", $pdfName); // Remove special characters except for letters, numbers, and periods
+            $pdfName = str_replace(" ", "-", $pdfName); // Replace spaces with hyphens
+
+            $pdfTargetFilePath = $targetDir . $pdfName;
+
+            if (move_uploaded_file($_FILES["pdf"]["tmp_name"], $pdfTargetFilePath)) {
+                // Insert notice into notices table
+                $insert_query = "INSERT INTO notices (title, date, image, files, alt_tag, alt_description) VALUES ('$title','$date', '$targetFilePath', '$pdfTargetFilePath', '$alt_tag', '$alt_description')";
+                if (mysqli_query($conn, $insert_query)) {
+                    // Redirect or display success message as per your requirement
+                    $successMessage = "Notice Created Successfully";
+                    header("Location: notice-list.php");
+                    exit();
+                } else {
+                    // Handle insert failure
+                    $errorMessage = "Error creating notice: " . mysqli_error($conn);
+                }
             } else {
-                // Handle insert failure
-                $errorMessage = "Error creating notice: " . mysqli_error($conn);
+                $errorMessage = "Sorry, there was an error uploading your PDF file.";
             }
         } else {
-            $errorMessage = "Sorry, there was an error uploading your PDF file.";
+            $errorMessage = "Sorry, there was an error uploading your image file.";
         }
-    } else {
-        $errorMessage = "Sorry, there was an error uploading your image file.";
     }
 }
 ?>
@@ -60,12 +73,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                    <label for="title">Title <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="date">Date</label>
-                    <input type="date" class="form-control" id="date" name="date" placeholder="date">
+                    <label for="date">Date <span class="text-danger">*</span></label>
+                    <input type="date" class="form-control" id="date" name="date" placeholder="date" required>
                 </div>
 
                 <div class="form-group col-md-6">

@@ -68,10 +68,13 @@ if (isset($_GET['id'])) {
 
                             <td><?php echo substr($row['description'], 1, 50); ?></td>
 
-                            <td class="text-right">
-                                <a href="certificate-details.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-success"><i class="fa-solid fa-eye"></i></a>
-                                <a href="certificate-edit.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <td class="align-middle">
+                                <div class="d-inline-flex justify-content-center">
+                                        <a href="certificate-details.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-success mr-2"><i class="fa-solid fa-eye"></i></a>
+                                <a href="certificate-edit.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-pen-to-square"></i></a>
                                 <a href="?id=<?php echo  $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')"><i class="fa-solid fa-trash"></i></a>
+                                </div>
+                            
                             </td>
                         </tr>
                 <?php

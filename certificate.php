@@ -52,7 +52,7 @@ $conn = $db->get_connection();
 								<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
 							</div>
 							<!-- <div class="top-body-button pt-4">
-						<a type="button" href="contact.html">Read More Details</a>
+						<a type="button" href="contact.php">Read More Details</a>
 					</div> -->
 						</div>
 						<div class="col-md-6">

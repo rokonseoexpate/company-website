@@ -20,7 +20,7 @@ $row = mysqli_fetch_assoc($result);
 			<div class="row">
 				<div class="col-12" style="z-index:500;">
 					<div class="breadcumb_gph d-flex">
-						<a class="text-light" href="index.html" class="text-success"><p>Home</p></a>
+						<a class="text-light" href="index.php" class="text-success"><p>Home</p></a>
 						<p class="text-light px-3 ">»</p>
 						<a class="text-light" href="notice.php" class="text-success"><p>Notice</p></a>
 						<p class="text-light px-3 ">»</p>
@@ -107,7 +107,7 @@ $row = mysqli_fetch_assoc($result);
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">

@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<div class="row">
 			<div class="col-md-6">
 				<div class="top_ready_start_txt">
-					<p><span><a href="home.html">Home</a></span> » Contact</p>
+					<p><span><a href="home.php">Home</a></span> » Contact</p>
 					<h3>We’re just a</h3>
 					<h4>Conversation away!</h4>
 					<p>We combine international outlook with the knowledge from across the industries and technologies, into creating a digital masterpiece that delivers result.</p>
@@ -533,59 +533,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 			// Validation for name
 			if (name === "") {
-				$(".nameErr").html("Please enter your name");
+				$(".nameErr").php("Please enter your name");
 				return;
 			} else {
-				$(".nameErr").html("");
+				$(".nameErr").php("");
 			}
 
 			// Validation for email
 			if (email === "") {
-				$(".emailErr").html("Please enter your email");
+				$(".emailErr").php("Please enter your email");
 				return;
 			} else {
-				$(".emailErr").html("");
+				$(".emailErr").php("");
 			}
 
 			// Validation for phone
 			if (phone === "") {
-				$(".phoneErr").html("Please enter your phone number");
+				$(".phoneErr").php("Please enter your phone number");
 				return;
 			} else {
-				$(".phoneErr").html("");
+				$(".phoneErr").php("");
 			}
 
 			// Validation for Company name
 			if (company_name === "") {
-				$(".company_nameErr").html("Please enter your company name");
+				$(".company_nameErr").php("Please enter your company name");
 				return;
 			} else {
-				$(".company_nameErr").html("");
+				$(".company_nameErr").php("");
 			}
 
 			// Validation for Company Website
 			if (company_website === "") {
-				$(".company_websiteErr").html("Please enter your company name");
+				$(".company_websiteErr").php("Please enter your company name");
 				return;
 			} else {
-				$(".company_websiteErr").html("");
+				$(".company_websiteErr").php("");
 			}
 
 
 			// Validation for stuf
 			if (stuf === "") {
-				$(".stufErr").html("Please enter number of staff required");
+				$(".stufErr").php("Please enter number of staff required");
 				return;
 			} else {
-				$(".stufErr").html("");
+				$(".stufErr").php("");
 			}
 
 			// Validation for description
 			if (description === "") {
-				$(".descriptionErr").html("Please describe your requirements");
+				$(".descriptionErr").php("Please describe your requirements");
 				return;
 			} else {
-				$(".descriptionErr").html("");
+				$(".descriptionErr").php("");
 			}
 
 			// If all validations pass, submit the form

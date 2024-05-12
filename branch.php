@@ -10,147 +10,149 @@ $sql = "SELECT * FROM branches WHERE id = $id";
 $result = mysqli_query($conn, $sql);
 $branch = mysqli_fetch_assoc($result);
 
-$title = $branch['name'] ;
+$title = $branch['name'];
 
 ?>
 
 <!--================================top-body section start here=======================-->
-	<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">		
-		<div class="container ">
-		    <div class="row">
-		    	<div class="col-12" style="z-index:500; ">
-		    		<div class="top_body_txt_part">
-						<h1 class="" style="font-size: 45px; line-height: 55px;"><?php echo $branch['name']?></h1>
-						<p style="margin-top: -35px; text-align: justify;">Stay connected with SEO Expate Bangladesh Ltd. </p>											
-					</div>	
-				</div>		
-			</div>
-		</div>				
-	</section>
-	<!--================================top-body section end here=======================-->
-
-	<!--================================cliping_service section start here=======================-->
-	<section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="col-12" style="z-index:500;">
-					<div class="breadcumb_gph d-flex">
-						<a class="text-light" href="index.php" ><p>Home</p></a>
-						<p class="text-light px-3 ">»</p>
-						<p class="text-light">All Branch</p>  
-					</div>				
+<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">
+	<div class="container ">
+		<div class="row">
+			<div class="col-12" style="z-index:500; ">
+				<div class="top_body_txt_part">
+					<h1 class="" style="font-size: 45px; line-height: 55px;"><?php echo $branch['name'] ?></h1>
+					<p style="margin-top: -35px; text-align: justify;">Stay connected with SEO Expate Bangladesh Ltd. </p>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================================cliping_service section end here=======================-->
+	</div>
+</section>
+<!--================================top-body section end here=======================-->
 
-	<!--================================all_branches_list section start here=======================-->
-	<section class="all_branches_list">
-		<div class="container">
-			<div class="row">
-				<h2 class="fs-1 fw-bold text-center pb-5"><?php echo $branch['name']?></h2>
-				<div class="col-md-4">
-					<div class="branch-address">
-                        <?php echo $branch['map']?>
-					</div>
+<!--================================cliping_service section start here=======================-->
+<section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="col-12" style="z-index:500;">
+				<div class="breadcumb_gph d-flex">
+					<a class="text-light" href="index.php">
+						<p>Home</p>
+					</a>
+					<p class="text-light px-3 ">»</p>
+					<p class="text-light">All Branch</p>
+					<p class="text-light px-3 ">»</p>
+					<p class="text-light"><?php echo $branch['name'] ?></p>					
 				</div>
-				<div class="col-md-4">
-					<div class="branch-img">
-						<img src="frontend/images/branch1.png" alt="" class="img-thumbnail">
-					</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================================cliping_service section end here=======================-->
+
+<!--================================all_branches_list section start here=======================-->
+<section class="all_branches_list">
+	<div class="container">
+		<div class="row">
+			<h2 class="fs-1 fw-bold text-center pb-5"><?php echo $branch['name'] ?></h2>
+			<div class="col-md-4">
+				<div class="branch-address">
+					<?php echo $branch['map'] ?>
 				</div>
-				<div class="col-md-4">
-					<div class="branch-img">
-                        <?php echo $branch['video_link']?>
+			</div>
+			<div class="col-md-4">
+				<div class="branch-img">
+					<img src="frontend/images/branch1.png" alt="" class="img-thumbnail">
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="branch-img">
+					<?php echo $branch['video_link'] ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================================all_branches_list section end here=======================-->
+<!--================================Core_Team section start here=======================-->
+<section class="Core_Team allbranchlist" style="background: unset; padding-top: unset;">
+	<div class="container">
+		<div class="row">
+			<div class="Core_Team_txt pb-2">
+				<h3 class="fs-2 pb-3">Branch <span>all Employees</span></h3>
+				<hr>
+			</div>
+			<div class="Core_Team_members">
+				<div class="container mt-2">
+					<div class="row">
+						<?php
+						$qry = "SELECT * FROM employees WHERE branch_id = " . $branch['id'] . " ORDER BY id DESC";
+						$result = mysqli_query($conn, $qry);
+
+						if ($result) {
+							while ($row = mysqli_fetch_assoc($result)) {
+						?>
+								<div class="col-md-2 col-sm-6">
+									<div class="card card-block shadow">
+										<img src="<?php
+													$imagePath = $row['image'];
+													$imageName = basename($imagePath);
+													$newImagePath = 'uploads/' . $imageName;
+													echo $newImagePath; ?>" alt="<?php echo $row['name']; ?>" class="img-thumbnail">
+										<div class="card-body">
+											<h5 class="card-title fs-6"><?php echo $row['name']; ?></h5>
+											<p class="card-text fs-6"><?php echo $row['designation']; ?></p>
+										</div>
+									</div>
+								</div>
+						<?php
+							}
+						} else {
+							echo "Error: " . mysqli_error($conn);
+						}
+						?>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================================all_branches_list section end here=======================-->
-	<!--================================Core_Team section start here=======================-->
-	<section class="Core_Team allbranchlist" style="background: unset; padding-top: unset;">
-		<div class="container">
-			<div class="row">
-				<div class="Core_Team_txt pb-2">
-					<h3 class="fs-2 pb-3">Branch <span>all Employees</span></h3>
-					<hr>
+	</div>
+</section>
+<!--================================Core_Team section end here=======================-->
+
+<!--================================top_ready_start section start here=======================-->
+<section class="top_ready_start">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="top_ready_start_txt">
+					<h3>We can build your story</h3>
+					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
 				</div>
-				<div class="Core_Team_members">
-					<div class="container mt-2">
-                        <div class="row">
-                            <?php
-                            $qry = "SELECT * FROM employees WHERE branch_id = " . $branch['id'] . " ORDER BY id DESC";
-                            $result = mysqli_query($conn, $qry);
-
-                            if ($result) {
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                    ?>
-                                    <div class="col-md-2 col-sm-6">
-                                        <div class="card card-block shadow">
-                                            <img src="<?php
-                                            $imagePath = $row['image'];
-                                            $imageName = basename($imagePath);
-                                            $newImagePath = 'uploads/' . $imageName;
-                                            echo $newImagePath; ?>" alt="<?php echo $row['name']; ?>" class="img-thumbnail">
-                                            <div class="card-body">
-                                                <h5 class="card-title fs-6"><?php echo $row['name']; ?></h5>
-                                                <p class="card-text fs-6"><?php echo $row['designation']; ?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <?php
-                                }
-                            } else {
-                                echo "Error: " . mysqli_error($conn);
-                            }
-                            ?>
-                        </div>
-
-
-                    </div>
+				<div class="top-body-button pt-5">
+					<a type="button" href="contact.html">Get In Touch</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="top_ready_start_img text-left">
+					<img src="frontend/images/95991_prev_ui.png" alt="image">
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================================Core_Team section end here=======================-->
-    
-	<!--================================top_ready_start section start here=======================-->
-	<section class="top_ready_start" >
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="top_ready_start_txt">
-                        <h3>We can build your story</h3>
-                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-                    </div>
-                    <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
-					</div>
-                </div>
-                <div class="col-md-6">
-                    <div class="top_ready_start_img text-left">
-                        <img src="frontend/images/95991_prev_ui.png" alt="image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
-	<!--================================top_ready_start section end here=======================-->
+	</div>
+</section>
+<!--================================top_ready_start section end here=======================-->
 
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                 	<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-	<!--================================Thrive_Globally section end here=======================-->
+<!--================================Thrive_Globally section start here=======================-->
+<section class="PAY_MENT" style="padding: 20px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="PAY_IMG">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
+			</div>
+		</div>
+	</div>
+</section>
+<!--================================Thrive_Globally section end here=======================-->
 
 <?php
 

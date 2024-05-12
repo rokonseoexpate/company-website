@@ -29,7 +29,7 @@ if (isset($_SESSION['username'])) {
                     unset($_SESSION['login_error']); // Clear the error message
                 }
             ?>
-            <form action="post_login.php" method="POST">
+            <form action="post_login.php" method="post">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username:</label>
                     <input type="text" id="username" name="username" class="form-control">

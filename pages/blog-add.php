@@ -22,8 +22,13 @@ if (isset($_POST['submit'])) {
     $image = '';
 
     if (empty($title)) {
-        $titleErr = "Title is required";
-    } else {
+        $errorMessage = "Title is required";
+    }
+    if (empty( $blog_category_id)) {
+        $errorMessage = "Blog Category is required";
+    }
+
+    if (empty($errorMessage)) {
         if (isset($_FILES['image']['name']) && !empty($_FILES['image']['name'])) {
             $file = $_FILES['image']['name'];
             $extension = pathinfo($file, PATHINFO_EXTENSION);

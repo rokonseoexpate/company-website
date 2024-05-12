@@ -5,12 +5,18 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
+// Update query
+$id = $_GET['id'];
 // Fetch branch data for the dropdown
 $branch_query = "SELECT * FROM branches";
 $branch_result = mysqli_query($conn, $branch_query);
 
 $department_query = "SELECT * FROM departments";
 $department_result = mysqli_query($conn, $department_query);
+
+$fetch_image_query = "SELECT image FROM employees WHERE id = $id";
+$fetch_image_result = mysqli_query($conn, $fetch_image_query);
+$row = mysqli_fetch_assoc($fetch_image_result);
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -26,12 +32,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_tag = $_POST['alt_tag'];
     $alt_description = $_POST['alt_description'];
 
+
+    
+    // Check for required fields
+    $errorMessage = '';
+    if (empty($name)) {
+        $errorMessage .= 'Name field is required.<br>';
+    }
+    if (empty($designation)) {
+        $errorMessage .= 'Designation field is required.<br>';
+    }
+    if (empty($branch_id)) {
+        $errorMessage .= 'Branch field is required.<br>';
+    }
+    if (empty($department_id)) {
+        $errorMessage .= 'Department field is required.<br>';
+    }
+    if (empty($ein_no)) {
+        $errorMessage .= 'EIN no field is required.<br>';
+    }
+    if (empty($team_no)) {
+        $errorMessage .= 'Team no field is required.<br>';
+    }
+
     // Check if a new image is uploaded
     $image_path = null;
     if ($_FILES["image"]["size"] > 0) {
+        if ($row['image']) {
+            unlink($row['image']); // Delete old image file
+        }
+
         // Upload new image file
         $target_dir = "../uploads/";
         $image_name = $_FILES["image"]["name"];
+
         // Remove spaces from the image name
         $image_name = str_replace(' ', '-', $image_name);
         $image_path = $target_dir . $image_name;
@@ -45,8 +79,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_team_no = mysqli_real_escape_string($conn, $team_no);
 
 
-    // Update query
-    $id = $_GET['id'];
     $sql = "UPDATE employees SET name = '$sanitized_name', designation = '$sanitized_designation',email = '$email', phone = '$phone', branch_id = $branch_id, department_id = $department_id, ein_no = '$sanitized_ein_no', team_no = '$sanitized_team_no', alt_description='$alt_description',  alt_tag='$alt_tag' ";
     if ($image_path) {
         $sql .= ", image = '$image_path'";
@@ -96,7 +128,7 @@ $row = mysqli_fetch_assoc($fetch_result);
                     <select id="branch_id" class="form-control" name="branch" required>
                         <option value="">Choose...</option>
                         <?php while ($branch_row = mysqli_fetch_assoc($branch_result)) : ?>
-                            <option value="<?php echo $branch_row['id']; ?>" <?php echo ($branch_row['id'] == $row['branch_id']) ? 'selected' : ''; ?> > <?php echo $branch_row['name']; ?></option>
+                            <option value="<?php echo $branch_row['id']; ?>" <?php echo ($branch_row['id'] == $row['branch_id']) ? 'selected' : ''; ?>> <?php echo $branch_row['name']; ?></option>
                         <?php endwhile; ?>
                     </select>
                 </div>
@@ -106,7 +138,7 @@ $row = mysqli_fetch_assoc($fetch_result);
                     <select id="department_id" class="form-control" name="department_id" required>
                         <option value="">Choose...</option>
                         <?php while ($department_row = mysqli_fetch_assoc($department_result)) : ?>
-                            <option value="<?php echo $department_row['id']; ?>"  <?php echo ($department_row['id'] == $row['department_id']) ? 'selected' : ''; ?>><?php echo $department_row['name']; ?></option>
+                            <option value="<?php echo $department_row['id']; ?>" <?php echo ($department_row['id'] == $row['department_id']) ? 'selected' : ''; ?>><?php echo $department_row['name']; ?></option>
                         <?php endwhile; ?>
                     </select>
                 </div>
@@ -144,14 +176,14 @@ $row = mysqli_fetch_assoc($fetch_result);
                 <div class="col-md-12 mt-4">
                     <div class="form-group">
                         <label for="alt_text">Alt Text</label>
-                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="<?php echo $row['alt_tag']?>" placeholder="alt Text">
+                        <input type="text" class="form-control" id="alt_text" name="alt_tag" value="<?php echo $row['alt_tag'] ?>" placeholder="alt Text">
                     </div>
                 </div>
 
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="shortDescription">Alt Description</label>
-                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control" cols="30" rows="10"><?php echo $row['alt_description']?></textarea>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control" cols="30" rows="10"><?php echo $row['alt_description'] ?></textarea>
                     </div>
                 </div>
 

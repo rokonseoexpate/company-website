@@ -96,16 +96,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="form-group col-md-6">
                     <label for="name">Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="designation">Designation</label>
-                    <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation">
+                    <label for="designation">Designation <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation" required>
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="branch">Branch</label>
-                    <select id="branch_id" class="form-control" name="branch">
+                    <label for="branch">Branch <span class="text-danger">*</span></label>
+                    <select id="branch_id" class="form-control" name="branch" required>
                         <option value="">Choose...</option>
                         <?php while ($branch_row = mysqli_fetch_assoc($branch_result)) : ?>
                             <option value="<?php echo $branch_row['id']; ?>"><?php echo $branch_row['name']; ?></option>
@@ -113,22 +113,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="department_id"> Department </label>
-                    <select id="department_id" class="form-control" name="department_id">
+                    <label for="department_id"> Department <span class="text-danger">*</span></label>
+                    <select id="department_id" class="form-control" name="department_id" required>
                         <option value="">Choose...</option>
                         <?php while ($department_row = mysqli_fetch_assoc($department_result)) : ?>
                             <option value="<?php echo $department_row['id']; ?>"><?php echo $department_row['name']; ?></option>
                         <?php endwhile; ?>
                     </select>
                 </div>
+                
                 <div class="form-group col-md-6">
-                    <label for="ein">EIN No</label>
-                    <input type="number" class="form-control" id="ein_no" name="ein_no" placeholder="Ein No">
+                    <label for="ein">EIN No <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="ein_no" name="ein_no" placeholder="Ein No" required>
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="team">Team No</label>
-                    <input type="text" class="form-control" id="team_no" name="team_no" placeholder="Team No">
+                    <label for="team">Team No <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="team_no" name="team_no" placeholder="Team No" required>
                 </div>
 
                 <div class="form-group col-md-6">
