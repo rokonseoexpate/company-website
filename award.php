@@ -99,7 +99,7 @@ if ($result = $conn->query($qry)) {
                     entrepreneurs all over the world.</p>
             </div>
             <div class="top-body-button pt-3 pt-4">
-                <a type="button" href="#">Get In Touch</a>
+                <a type="button" href="contact.php">Get In Touch</a>
             </div>
         </div>
     </div>
