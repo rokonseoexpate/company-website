@@ -1,0 +1,839 @@
+<?php
+$title = "Home";
+ob_start();
+?>
+
+
+    <!--================================photo editor sub Header section end here=======================-->
+    <div class="photo_edipth">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  dropdown-toggle" href="content-writing.php" data-bs-toggle="dropdown">Content Writing</a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="blog-post.php">Blog Post Writing</a></li>
+                                    <li><a class="dropdown-item" href="academic-post.php">Academic Writing</a></li>
+                                    <li><a class="dropdown-item" href="copy-writing.php">Copywriting</a></li>
+                                    <li><a class="dropdown-item" href="static-web.php">Static Web Pages</a></li>
+                                    <li><a class="dropdown-item" href="product-description.php">Product Description Writing</a></li>
+                                    <li><a class="dropdown-item" href="press-release.php">Press Release Writing</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="content-pricing.php"> Pricing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--================================photo editor sub Header section end here=======================-->
+
+    <!--================================top-body section start here=======================-->
+    <section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+        <div class="container ">
+            <div class="row">
+                <div class="col-12" style="z-index:500; ">
+                    <div class="top_body_txt_part">
+                        <h1 class="" style="font-size: 45px; line-height: 55px;">Content Writing Pricing Package</h1>
+                    </div>
+                    <div class="top-body-button pt-3">
+                        <a type="button" href="contact.php">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================top-body section end here=======================-->
+
+    <!--================================cliping_service section start here=======================-->
+    <section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="z-index:500;">
+                    <div class="top_about_us_txt" style="z-index:500;">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcumb_gph">
+                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="content-writing.php" class="text-light">Content Writing</a></li>
+                                <li class="breadcrumb-item active text-light" aria-current="page">Content Writing Pricing</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================cliping_service section end here=======================-->
+
+    <!--================================seopackages section start here=======================-->
+    <div class="seopackages contentpricing">
+        <div class="container">
+            <h6 class="fs-1 fw-bold pt-5 pb-5 text-center ptunset">Blog Post Writing Price</h6>
+            <div class="pricing-table table-responsive">
+                <table class="table border shadow ">
+                    <!-- Heading -->
+                    <thead>
+                    <tr>
+                        <th class="border-end border-0 border-white border-3">
+
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">01 Blog Post / Month</p>
+                            <p class="fs-5 fw-bold">TK. 6000 / $85</p>
+                            <p class="fs-5 ">1 Blog Post / Month</p>
+                        </th>
+                        <th class="highlight border-end border-0 border-white border-3">
+                            <p class="fs-5">02 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 11500 / $165</p>
+                            <p class="fs-5">1 Blog Post / Biweekly</p>
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">03 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 17250 / $249</p>
+                            <p class="fs-5">1 Blog Post / 10 Days</p>
+                        </th>
+                        <th>
+                            <p class="fs-5">04 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 23000 / $299</p>
+                            <p class="fs-5">1 Blog Post / Week</p>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="border-top border-0 border-white border-bottom border-3">
+                    <tr>
+                        <td class="border-end border-0 border-success border-bottom border-1 border-left"><span class="ptable-title"><p>Article Length</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0  border-success border-bottom border-1">1200 Words/Article</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Blog Image Include</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Well Researched Article</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1"> Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Grammar Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Punctuation Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>100% Plagiarism-Free</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>SEO Optimized Writing</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Industry Expert Writer</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Proofreading</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Revision</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0  border-success border-bottom border-1">1 Time</td>
+                    </tr>
+                    <!-- Buttons -->
+                    <tr>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1"><a class="btn text-light" href="order-now.php">Order Now</a></td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--================================seopackages section end here=======================-->
+
+    <!--================================seopackages section start here=======================-->
+    <div class="seopackages contentpricing">
+        <div class="container">
+            <h6 class="fs-1 fw-bold pt-5 pb-5 text-center ptunset">Academic Writing Price</h6>
+            <div class="pricing-table table-responsive">
+                <table class="table border shadow ">
+                    <!-- Heading -->
+                    <thead>
+                    <tr>
+                        <th class="border-end border-0 border-white border-3">
+
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">01 Blog Post / Month</p>
+                            <p class="fs-5 fw-bold">TK. 6000 / $85</p>
+                            <p class="fs-5 ">1 Blog Post / Month</p>
+                        </th>
+                        <th class="highlight border-end border-0 border-white border-3">
+                            <p class="fs-5">02 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 11500 / $165</p>
+                            <p class="fs-5">1 Blog Post / Biweekly</p>
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">03 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 17250 / $249</p>
+                            <p class="fs-5">1 Blog Post / 10 Days</p>
+                        </th>
+                        <th>
+                            <p class="fs-5">04 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 23000 / $299</p>
+                            <p class="fs-5">1 Blog Post / Week</p>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="border-top border-0 border-white border-bottom border-3">
+                    <tr>
+                        <td class="border-end border-0 border-success border-bottom border-1 border-left"><span class="ptable-title"><p>Article Length</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0  border-success border-bottom border-1">1200 Words/Article</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Blog Image Include</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Well Researched Article</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1"> Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Grammar Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Punctuation Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>100% Plagiarism-Free</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>SEO Optimized Writing</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Industry Expert Writer</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Proofreading</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Revision</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0  border-success border-bottom border-1">1 Time</td>
+                    </tr>
+                    <!-- Buttons -->
+                    <tr>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1"><a class="btn text-light" href="order-now.php">Order Now</a></td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--================================seopackages section end here=======================-->
+
+    <!--================================seopackages section start here=======================-->
+    <div class="seopackages contentpricing">
+        <div class="container">
+            <h6 class="fs-1 fw-bold pt-5 pb-5 text-center ptunset">Copywriting Price</h6>
+            <div class="pricing-table table-responsive">
+                <table class="table border shadow ">
+                    <!-- Heading -->
+                    <thead>
+                    <tr>
+                        <th class="border-end border-0 border-white border-3">
+
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">01 Blog Post / Month</p>
+                            <p class="fs-5 fw-bold">TK. 6000 / $85</p>
+                            <p class="fs-5 ">1 Blog Post / Month</p>
+                        </th>
+                        <th class="highlight border-end border-0 border-white border-3">
+                            <p class="fs-5">02 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 11500 / $165</p>
+                            <p class="fs-5">1 Blog Post / Biweekly</p>
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">03 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 17250 / $249</p>
+                            <p class="fs-5">1 Blog Post / 10 Days</p>
+                        </th>
+                        <th>
+                            <p class="fs-5">04 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 23000 / $299</p>
+                            <p class="fs-5">1 Blog Post / Week</p>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="border-top border-0 border-white border-bottom border-3">
+                    <tr>
+                        <td class="border-end border-0 border-success border-bottom border-1 border-left"><span class="ptable-title"><p>Article Length</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0  border-success border-bottom border-1">1200 Words/Article</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Blog Image Include</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Well Researched Article</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1"> Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Grammar Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Punctuation Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>100% Plagiarism-Free</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>SEO Optimized Writing</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Industry Expert Writer</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Proofreading</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Revision</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0  border-success border-bottom border-1">1 Time</td>
+                    </tr>
+                    <!-- Buttons -->
+                    <tr>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1"><a class="btn text-light" href="order-now.php">Order Now</a></td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--================================seopackages section end here=======================-->
+
+    <!--================================seopackages section start here=======================-->
+    <div class="seopackages contentpricing">
+        <div class="container">
+            <h6 class="fs-1 fw-bold pt-5 pb-5 text-center ptunset">Static Web Pages Price</h6>
+            <div class="pricing-table table-responsive">
+                <table class="table border shadow ">
+                    <!-- Heading -->
+                    <thead>
+                    <tr>
+                        <th class="border-end border-0 border-white border-3">
+
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">01 Blog Post / Month</p>
+                            <p class="fs-5 fw-bold">TK. 6000 / $85</p>
+                            <p class="fs-5 ">1 Blog Post / Month</p>
+                        </th>
+                        <th class="highlight border-end border-0 border-white border-3">
+                            <p class="fs-5">02 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 11500 / $165</p>
+                            <p class="fs-5">1 Blog Post / Biweekly</p>
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">03 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 17250 / $249</p>
+                            <p class="fs-5">1 Blog Post / 10 Days</p>
+                        </th>
+                        <th>
+                            <p class="fs-5">04 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 23000 / $299</p>
+                            <p class="fs-5">1 Blog Post / Week</p>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="border-top border-0 border-white border-bottom border-3">
+                    <tr>
+                        <td class="border-end border-0 border-success border-bottom border-1 border-left"><span class="ptable-title"><p>Article Length</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0  border-success border-bottom border-1">1200 Words/Article</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Blog Image Include</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Well Researched Article</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1"> Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Grammar Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Punctuation Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>100% Plagiarism-Free</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>SEO Optimized Writing</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Industry Expert Writer</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Proofreading</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Revision</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0  border-success border-bottom border-1">1 Time</td>
+                    </tr>
+                    <!-- Buttons -->
+                    <tr>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1"><a class="btn text-light" href="order-now.php">Order Now</a></td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--================================seopackages section end here=======================-->
+
+    <!--================================seopackages section start here=======================-->
+    <div class="seopackages contentpricing ">
+        <div class="container">
+            <h6 class="fs-1 fw-bold pt-5 pb-5 text-center ptunset">Product Description Writing Price</h6>
+            <div class="pricing-table table-responsive">
+                <table class="table border shadow ">
+                    <!-- Heading -->
+                    <thead>
+                    <tr>
+                        <th class="border-end border-0 border-white border-3">
+
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">01 Blog Post / Month</p>
+                            <p class="fs-5 fw-bold">TK. 6000 / $85</p>
+                            <p class="fs-5 ">1 Blog Post / Month</p>
+                        </th>
+                        <th class="highlight border-end border-0 border-white border-3">
+                            <p class="fs-5">02 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 11500 / $165</p>
+                            <p class="fs-5">1 Blog Post / Biweekly</p>
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">03 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 17250 / $249</p>
+                            <p class="fs-5">1 Blog Post / 10 Days</p>
+                        </th>
+                        <th>
+                            <p class="fs-5">04 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 23000 / $299</p>
+                            <p class="fs-5">1 Blog Post / Week</p>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="border-top border-0 border-white border-bottom border-3">
+                    <tr>
+                        <td class="border-end border-0 border-success border-bottom border-1 border-left"><span class="ptable-title"><p>Article Length</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0  border-success border-bottom border-1">1200 Words/Article</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Blog Image Include</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Well Researched Article</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1"> Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Grammar Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Punctuation Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>100% Plagiarism-Free</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>SEO Optimized Writing</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Industry Expert Writer</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Proofreading</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Revision</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0  border-success border-bottom border-1">1 Time</td>
+                    </tr>
+                    <!-- Buttons -->
+                    <tr>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1"><a class="btn text-light" href="order-now.php">Order Now</a></td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--================================seopackages section end here=======================-->
+
+    <!--================================seopackages section start here=======================-->
+    <div class="seopackages contentpricing">
+        <div class="container">
+            <h6 class="fs-1 fw-bold pt-5 pb-5 text-center ptunset">Press Release Writing Price</h6>
+            <div class="pricing-table table-responsive">
+                <table class="table border shadow ">
+                    <!-- Heading -->
+                    <thead>
+                    <tr>
+                        <th class="border-end border-0 border-white border-3">
+
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">01 Blog Post / Month</p>
+                            <p class="fs-5 fw-bold">TK. 6000 / $85</p>
+                            <p class="fs-5 ">1 Blog Post / Month</p>
+                        </th>
+                        <th class="highlight border-end border-0 border-white border-3">
+                            <p class="fs-5">02 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 11500 / $165</p>
+                            <p class="fs-5">1 Blog Post / Biweekly</p>
+                        </th>
+                        <th class="border-end border-0 border-white border-3">
+                            <p class="fs-5">03 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 17250 / $249</p>
+                            <p class="fs-5">1 Blog Post / 10 Days</p>
+                        </th>
+                        <th>
+                            <p class="fs-5">04 Blog Posts / Month</p>
+                            <p class="fs-5 fw-bold">TK. 23000 / $299</p>
+                            <p class="fs-5">1 Blog Post / Week</p>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody class="border-top border-0 border-white border-bottom border-3">
+                    <tr>
+                        <td class="border-end border-0 border-success border-bottom border-1 border-left"><span class="ptable-title"><p>Article Length</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1200 Words/Article</td>
+                        <td class=" border-0  border-success border-bottom border-1">1200 Words/Article</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Blog Image Include</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Well Researched Article</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1"> Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Grammar Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Punctuation Error Check</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>100% Plagiarism-Free</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>SEO Optimized Writing</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Industry Expert Writer</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Proofreading</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">Yes</td>
+                        <td class=" border-0  border-success border-bottom border-1">Yes</td>
+                    </tr>
+                    <tr>
+                        <td class=" border-0 border-end border-success border-bottom border-1"><span class="ptable-title"><p>Revision</p></span></td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0 border-end border-success border-bottom border-1">1 Time</td>
+                        <td class=" border-0  border-success border-bottom border-1">1 Time</td>
+                    </tr>
+                    <!-- Buttons -->
+                    <tr>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1"><a class="btn text-light" href="order-now.php">Order Now</a></td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                        <td class=" border-0 border-success border-bottom border-1">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!--================================seopackages section end here=======================-->
+
+    <!--================================top_ready_start section start here=======================-->
+    <section class="top_ready_start ptunset">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="top_ready_start_txt">
+                        <h3>We can build your story</h3>
+                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
+                    </div>
+                    <div class="top-body-button pt-5">
+                        <a type="button" href="contact.php">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top_ready_start_img text-left">
+                        <img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================top_ready_start section end here=======================-->
+
+    <!--================================Thrive_Globally section start here=======================-->
+    <section class="PAY_MENT" style="padding: 20px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="PAY_IMG">
+                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================Thrive_Globally section end here=======================-->
+
+
+<?php
+$main_content = ob_get_clean();
+include './layouts/app.php';
+?>
