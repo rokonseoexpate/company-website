@@ -21,7 +21,7 @@
                 </div>
                 <div class="top-body-button pt-3">
                     <div class="d-flex gap-3">
-                        <a type="button" href="contact.html">Services</a>
+                        <a type="button" href="contact.php">Services</a>
                         <a type="button" href="#">Portfolio</a>
                     </div>
                 </div>
@@ -1578,7 +1578,7 @@
                     <h6>How can we help you?</h6>
                 </div>
                 <div class="top-body-button pt-5">
-                    <a type="button" href="contact.html">Get In Touch</a>
+                    <a type="button" href="contact.php">Get In Touch</a>
                 </div>
             </div>
             <div class="col-md-6">

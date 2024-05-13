@@ -10,7 +10,7 @@
 		    <div class="row">
 		    	<div class="top_about_us_txt pt-5">
 		    		<div class="d-flex">						
-						<p><a href="home.html" class="text-light">Home</a></p>
+						<p><a href="home.php" class="text-light">Home</a></p>
 						<p><i class="fa-solid fa-angle-right"></i></p>
 						<p class="ml-2">Digital Marketing</p>		
 					</div>	
@@ -22,7 +22,7 @@
 						<p>People are becoming more and more attracted to e-commerce. This digital era controls the online-focused market, and we help you develop your strategies on this platform. Our company, SEO Expate Bangladesh Ltd, offers you the best solutions along with the entire maintenance procedure. Therefore, experience the most unexpected collaborating with us. </p>	
 					</div>
 					<div class="button pt-5">
-						<a href="contact.html" class="text-light">Contact Us</a>
+						<a href="contact.php" class="text-light">Contact Us</a>
 					</div>	
 				</div>
 				<div class="col-md-6">

@@ -1418,7 +1418,7 @@ $conn = $db->get_connection();
                     <h6>How can we help you?</h6>
                 </div>
                 <div class="top-body-button pt-5">
-                    <a type="button" href="contact.html">Get In Touch</a>
+                    <a type="button" href="contact.php">Get In Touch</a>
                 </div>
             </div>
             <div class="col-md-6">

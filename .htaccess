@@ -1,17 +1,9 @@
-# RewriteEngine On
-# Options -Indexes
-# RewriteBase /
+RewriteEngine On
+Options -Indexes
+RewriteBase /
 
-# # Remove .php extension
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteCond %{REQUEST_FILENAME}.php -f
-# RewriteRule ^([^\.]+)$ $1.php [NC,L]
+# Remove .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-# # Redirect requests to remove .php extension
-# RewriteCond %{THE_REQUEST} \.php
-# RewriteRule ^(.+)\.php$ /$1 [R=301,L]
-
-# # Rewrite SEO-friendly URLs
-# RewriteCond %{REQUEST_FILENAME} !-d
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteRule ^([^/]+)/?$ index.php?page=$1 [L]

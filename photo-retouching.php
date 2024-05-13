@@ -1,15 +1,16 @@
 <?php
-$title = "Home";
-ob_start();
+    $title = "Photo Retouching";
+    ob_start();
 ?>
 
-<div class="py-5">
-	<div class="container">
-		<h4>Data Not Found</h4>
-	</div>
-</div>
-
-<?php
+<section class="top_our_transform">
+    <div class="container">
+        <div class="row">
+            <h1>No data found </h1>
+        </div>
+    </div>
+</section>
+<?php 
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>

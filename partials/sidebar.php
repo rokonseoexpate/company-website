@@ -138,12 +138,13 @@
                         <p>Image Gallery </p>
                     </a>
                 </li>
-
-                <li class="nav-header">EXAMPLES</li>
-
-
-
-
+                
+                <li class="nav-item">
+                    <a href="banner.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'banner.php') ? 'active' : ''; ?>">
+                        <i class="far fa-images nav-icon"></i>
+                        <p>Banners</p>
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a href="youtube-video-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'youtube-video-list.php' || basename($_SERVER['PHP_SELF']) == 'youtube-video-add.php' || basename($_SERVER['PHP_SELF']) == 'youtube-video-edit.php') ? 'active' : ''; ?>">
@@ -236,8 +237,6 @@
                         </p>
                     </a>
                 </li>
-
-                <li class="nav-header">Form Submission</li>
                 <li class="nav-item">
                     <a href="contact-message.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'contact-message.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-message"></i>
