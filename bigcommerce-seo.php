@@ -3,271 +3,210 @@ $title = "Big Commerce Seo";
 ob_start();
 ?>
 
-<!--================================photo editor sub Header section end here=======================-->
-<div class="photo_edipth">
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-dark ">
-			<div class="container-fluid ">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-				</button>
-				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-					<ul class="navbar-nav ">
-						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="seo_service.html" data-bs-toggle="dropdown">SEO Services</a>
-							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="ecommerce_seo.html"> eCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="amazon_seo.html">Amazon SEO</a></li>
-								<li><a class="dropdown-item" href="b2b_seo.html">B2B SEO</a></li>
-								<li><a class="dropdown-item" href="shopify_seo.html">Shopify SEO</a></li>
-								<li><a class="dropdown-item" href="wordpress_seo.html">WordPress SEO</a></li>
-								<li><a class="dropdown-item" href="woocommerce_seo.html">WooCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="lead_seo.html">Lead Generation SEO</a></li>
-								<li><a class="dropdown-item" href="nopcommerce_seo.html">NopCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="magento_seo.html">Magento SEO</a></li>
-								<li><a class="dropdown-item" href="volusion_seo.html">Volusion SEO</a></li>
-								<li><a class="dropdown-item" href="bigcommerce_seo.html">BigCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="consulting_seo.html">SEO Consulting</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="ppc_paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
-							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="amazon_ppc.html"> Amazon PPC Management</a></li>
-								<li><a class="dropdown-item" href="ecommerce_ppc.html">eCommerce PPC Management</a></li>
-								<li><a class="dropdown-item" href="google_ads.html">Google Ads Consulting</a></li>
-								<li><a class="dropdown-item" href="management_ads.html">Google Ads Management</a></li>
-								<li><a class="dropdown-item" href="shoping_management.html">Google Shopping Management</a></li>
-								<li><a class="dropdown-item" href="ppc_consulting.html">PPC Consulting</a></li>
-								<li><a class="dropdown-item" href="ppc_lead.html">Lead Gen PPC Management</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="onpage_seo.html"> On-page SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="offpage_seo.html"> Off-page SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="technical_seo.html"> Technical SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="package_price_seo.html"> SEO Packages & Pricing </a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</div>
-</div>
-<!--================================photo editor sub Header section end here=======================-->
+    <!--================================photo editor sub Header section end here=======================-->
+<?php include 'includes/big-ecommerce-nav.php' ?>
+    <!--================================photo editor sub Header section end here=======================-->
 
-<!--================================top-body section start here=======================-->
-<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
-	<div class="container ">
-		<div class="row">
-			<div class="col-md-7 ecomresp" style="z-index:500;">
-				<div class="top_body_txt_part">
-					<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">BigCommerce SEO Services & </h1>
-					<h2 class="margintop" style="margin-top: -15px;" class="fs-1">Search Marketing</h2>
-					<p style="text-align:justify;">OuterBox is a search engine marketing agency that specializes in BigCommerce SEO services. Businesses come to us looking to make the most of their BigCommerce store. We will work to move your main keywords to the top of Google and improve your conversion rate. Let OuterBox increase online sales on your BigCommerce website.</p>
-				</div>
-				<div class="row">
-					<div class="col-md-7 pt-2">
-						<div class=" border-bottom border-3 border-success pb-3"><a href="contact.html" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your BigCommerce SEO Proposal</a></div>
-					</div>
-					<div class="col-md-2 ecomrespons">
-						<img src="frontend/images/google-seo-proposal-audit.png.webp" alt=" BigCommerce SEO Services" description=" BigCommerce SEO Services" class="img-fluid">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-5 m-auto ecomrespp" style="z-index:500;">
-				<img src="frontend/images/Untitled-1 (1).webp" alt=" BigCommerce SEO Services" description=" BigCommerce SEO Services" class="img-thumbnail">
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================top-body section end here=======================-->
+    <!--================================top-body section start here=======================-->
+    <section class="top-body app_development" style="background-image: url('frontend/images/1692873456499.jpg'); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-7 ecomresp" style="z-index:500;">
+                    <div class="top_body_txt_part">
+                        <h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">BigCommerce SEO Services & </h1>
+                        <h2 class="margintop fs-1" style="margin-top: -15px;">Search Marketing</h2>
+                        <p style="text-align:justify;">OuterBox is a search engine marketing agency that specializes in BigCommerce SEO services. Businesses come to us looking to make the most of their BigCommerce store. We will work to move your main keywords to the top of Google and improve your conversion rate. Let OuterBox increase online sales on your BigCommerce website.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 pt-2">
+                            <div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your BigCommerce SEO Proposal</a></div>
+                        </div>
+                        <div class="col-md-2 ecomrespons">
+                            <img src="frontend/images/google-seo-proposal-audit.png.webp" alt=" BigCommerce SEO Services" description=" BigCommerce SEO Services" class="img-fluid" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 m-auto ecomrespp" style="z-index:500;" >
+                    <img src="frontend/images/Untitled-1 (1).webp" alt=" BigCommerce SEO Services" description=" BigCommerce SEO Services" class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================top-body section end here=======================-->
 
-<!--================================cliping_service section start here=======================-->
-<section class="cliping_service eCommerceSEO" style="background: var(--button-bg-hover-color); padding: 15px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="col-12" style="z-index:500;">
-				<div class="top_about_us_txt" style="z-index:500;">
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="seo_service.html" class="text-light">SEO</a></li>
-							<li class="breadcrumb-item active text-light" aria-current="page">BigCommerce SEO</li>
-						</ol>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================cliping_service section end here=======================-->
+    <!--================================cliping_service section start here=======================-->
+    <section class="cliping_service eCommerceSEO" style="background: var(--button-bg-hover-color); padding: 15px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" style="z-index:500;">
+                    <div class="top_about_us_txt" style="z-index:500;">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb breadcumb_gph">
+                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
+                                <li class="breadcrumb-item active text-light" aria-current="page">BigCommerce SEO</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================cliping_service section end here=======================-->
 
-<!--================================cliping_service section start here=======================-->
-<section class="cliping_service" style="background: unset;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6" style="z-index:500;">
-				<div class="cliping_service_txt pb-2">
-					<h6>BigCommerce SEO services agency. </h6>
-				</div>
-				<p class="pt-3">An SEO company is a professional service provider that helps businesses improve their online presence and performance through search engine optimization. An SEO company (or SEO agency) can help you achieve higher rankings, more traffic, and more conversions from organic search results.</p>
-			</div>
-			<div class="col-md-6" style="margin: auto;">
-				<div class="clip_img">
-					<img src="frontend/images/seo-strategy.jpg" alt=" BigCommerce SEO services agency" description="BigCommerce SEO services agency" class="img-thumbnail">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================cliping_service section end here=======================-->
+    <!--================================cliping_service section start here=======================-->
+    <section class="cliping_service" style="background: unset;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="z-index:500;">
+                    <div class="cliping_service_txt pb-2"><h6>BigCommerce SEO services agency. </h6></div>
+                    <p class="pt-3" >An SEO company is a professional service provider that helps businesses improve their online presence and performance through search engine optimization. An SEO company (or SEO agency) can help you achieve higher rankings, more traffic, and more conversions from organic search results.</p>
+                </div>
+                <div class="col-md-6" style="margin: auto;">
+                    <div class="clip_img">
+                        <img src="frontend/images/seo-strategy.jpg" alt=" BigCommerce SEO services agency" description="BigCommerce SEO services agency" class="img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================cliping_service section end here=======================-->
 
-<!--================================editor_texts section start here=======================-->
-<section class=" graphicdesigns_content" style=" background: var(--bg-secondary-color);">
-	<div class="container shadow py-5 px-5 " style="border-left:15px solid #F4B400;">
-		<div class="row ">
-			<div class="col-12">
-				<h6 class="fw-bold fs-5 pb-3">How To Choose a BigCommerce SEO Agency </h6>
-				<div>
-					<p>When choosing a BigCommerce SEO company, it can be quite difficult to evaluate and compare the many different agencies available. </p>
-				</div>
-				<div>
-					<h6 class="fw-bold fs-6 pb-3">Here are some steps to choose an SEO that knows BigCommerce inside-and-out:</h6>
-				</div>
-				<div>
-					<p>1. Research and identify potential SEOs that specialize in BigCommerce, like we do here at OuterBox. You can use search engines and SEO industry directories to find agencies.</p>
-				</div>
-				<div>
-					<p>2. Review the SEOs’ websites and portfolios to assess their expertise and experience with BigCommerce. Check if they have any case studies or testimonials from clients who have used their services on a BigCommerce platform. An OuterBox sales representative will be happy to walk you through BigCommerce successes and case studies.</p>
-				</div>
-				<div>
-					<p>3. Talk with specific team members to understand their knowledge and experience with BigCommerce. Ask specific questions about their approach, strategies, and tools they use to optimize websites on the BigCommerce platform as it can be unique.</p>
-				</div>
-				<div>
-					<p>4. You can also pay for several potential BigCommerce SEO companies to perform an SEO audit of your BigCommerce store and compare the results, seeing which one you like working with.</p>
-				</div>
-				<div>
-					<p>5. Schedule a consultation with the SEOs to discuss your website and business goals. This will give you an opportunity to assess their communication skills and understanding of your business. We can also provide you with a free detailed SEO blueprint and estimate.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================editor_texts section end here=======================-->
+    <!--================================editor_texts section start here=======================-->
+    <section class=" graphicdesigns_content" style=" background: var(--bg-secondary-color);">
+        <div class="container shadow py-5 px-5 " style="border-left:15px solid #F4B400;">
+            <div class="row ">
+                <div class="col-12">
+                    <h6 class="fw-bold fs-5 pb-3">How To Choose a BigCommerce SEO Agency </h6>
+                    <div><p>When choosing a BigCommerce SEO company, it can be quite difficult to evaluate and compare the many different agencies available. </p></div>
+                    <div><h6 class="fw-bold fs-6 pb-3">Here are some steps to choose an SEO that knows BigCommerce inside-and-out:</h6></div>
+                    <div><p>1. Research and identify potential SEOs that specialize in BigCommerce, like we do here at OuterBox. You can use search engines and SEO industry directories to find agencies.</p></div>
+                    <div><p>2. Review the SEOs’ websites and portfolios to assess their expertise and experience with BigCommerce. Check if they have any case studies or testimonials from clients who have used their services on a BigCommerce platform. An OuterBox sales representative will be happy to walk you through BigCommerce successes and case studies.</p></div>
+                    <div><p>3. Talk with specific team members to understand their knowledge and experience with BigCommerce. Ask specific questions about their approach, strategies, and tools they use to optimize websites on the BigCommerce platform as it can be unique.</p></div>
+                    <div><p>4. You can also pay for several potential BigCommerce SEO companies to perform an SEO audit of your BigCommerce store and compare the results, seeing which one you like working with.</p></div>
+                    <div><p>5. Schedule a consultation with the SEOs to discuss your website and business goals. This will give you an opportunity to assess their communication skills and understanding of your business. We can also provide you with a free detailed SEO blueprint and estimate.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================editor_texts section end here=======================-->
 
-<!--================================editor_texts section start here=======================-->
-<section class=" graphicdesigns_content">
-	<div class="container shadow py-5 px-5 " style="border-left:15px solid var(--secondary-text-color); background: var(--bg-secondary-color);">
-		<div class="row ">
-			<div class="col-12">
-				<h6 class="fw-bold fs-5 pb-3">Our Most Important BigCommerce SEO Services Include:</h6>
-				<h6 class="fw-bold fs-6 pb-3">1. BigCommerce theme optimization</h6>
-				<h6 class="fw-bold fs-6 pb-3">2. BigCommerce app installation and configuration </h6>
-				<h6 class="fw-bold fs-6 pb-3">3. Header tag optimization</h6>
-				<h6 class="fw-bold fs-6 pb-3">4. Optimization of title tags</h6>
-				<h6 class="fw-bold fs-6 pb-3">5. Keyword research </h6>
-				<h6 class="fw-bold fs-6 pb-3">6. New content creation </h6>
-				<h6 class="fw-bold fs-6 pb-3">7. Current content modifications </h6>
-				<h6 class="fw-bold fs-6 pb-3">8. Link profile management </h6>
-				<h6 class="fw-bold fs-6 pb-3">9. Detailed SEO reporting </h6>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================editor_texts section end here=======================-->
+    <!--================================editor_texts section start here=======================-->
+    <section class=" graphicdesigns_content">
+        <div class="container shadow py-5 px-5 " style="border-left:15px solid var(--secondary-text-color); background: var(--bg-secondary-color);">
+            <div class="row ">
+                <div class="col-12">
+                    <h6 class="fw-bold fs-5 pb-3">Our Most Important BigCommerce SEO Services Include:</h6>
+                    <h6 class="fw-bold fs-6 pb-3">1. BigCommerce theme optimization</h6>
+                    <h6 class="fw-bold fs-6 pb-3">2. BigCommerce app installation and configuration </h6>
+                    <h6 class="fw-bold fs-6 pb-3">3. Header tag optimization</h6>
+                    <h6 class="fw-bold fs-6 pb-3">4. Optimization of title tags</h6>
+                    <h6 class="fw-bold fs-6 pb-3">5. Keyword research </h6>
+                    <h6 class="fw-bold fs-6 pb-3">6. New content creation </h6>
+                    <h6 class="fw-bold fs-6 pb-3">7. Current content modifications </h6>
+                    <h6 class="fw-bold fs-6 pb-3">8. Link profile management </h6>
+                    <h6 class="fw-bold fs-6 pb-3">9. Detailed SEO reporting </h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================editor_texts section end here=======================-->
 
-<!--================================accordion section start here=======================-->
-<section class="accordion_service">
-	<div class="container">
-		<div class="row">
-			<h4 class="text-center pb-5 fs-2">BigCommerce SEO FAQs</h4>
-			<div id="accordion">
-				<div class="accordion-item">
-					<h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. How much do BigCommerce SEO services cost?</h5>
-					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
-						<div class="accordion-body">BigCommerce SEO services will typically cost the same as standard eCommerce SEO services. At OuterBox, our typical campaigns range from $1500/month to $10,000+ per month, depending on your goals and the competitiveness of your keywords. View our SEO pricing and costs guide for more information on standard SEO pricing models and associated fees.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Q. How do you do SEO on BigCommerce websites?
-					</h5>
-					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-						<div class="accordion-body">SEO strategies for BigCommerce websites will not vary significantly from traditional SEO. However, implementation of those strategies will be different than on other platforms. Working with an agency that understands BigCommerce’s SEO issues and common problems and has experience with eCommerce SEO is crucial for setting your company up for a successful BigCommerce SEO campaign.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Q. What keywords should be chosen for BigCommerce sites?
-					</h5>
-					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
-						<div class="accordion-body">If you’re selling a product or service on BigCommerce, you need to identify keywords that indicate searchers would be likely to complete your desired goals once they arrive on your website. OuterBox includes in-depth and ongoing keyword research as part of our BigCommerce SEO campaigns to identify the best keywords to target for your business.
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Q. How do I find a reputable BigCommerce SEO company?
-					</h5>
-					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
-						<div class="accordion-body">Ask potential SEO companies what experience they have with BigCommerce as well as your specific industry. OuterBox has been at the cutting edge of eCommerce SEO for nearly two decades and has worked on many BigCommerce websites. When choosing an SEO company, ask for case studies and testimonials from other BigCommerce store owners.
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h5 class="accordion-header collapsed" id="headingFourr" data-bs-toggle="collapse" data-bs-target="#collapseFourr" aria-expanded="false" aria-controls="collapseFourr">Q. How do I know if SEO is working for our BigCommerce store?
-						</h5>
-						<div id="collapseFourr" class="accordion-collapse collapse" aria-labelledby="headingFourr" data-bs-parent="#accordion">
-							<div class="accordion-body">Reputable SEO agencies will provide detailed reporting on the work done and the results they are seeing. If your monthly SEO reports are leaving you scratching your head, your current SEO efforts might not be effective. Discuss your project with our BigCommerce SEO experts today to determine the effectiveness of your BigCommerce SEO campaign.
-							</div>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h5 class="accordion-header collapsed" id="headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Q. Why should I choose an SEO agency that focuses on eCommerce?
-						</h5>
-						<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
-							<div class="accordion-body">As one of the original eCommerce SEO agencies, OuterBox has gained priceless skills and experience with both eCommerce and SEO. We understand how to build successful SEO strategies and have a proven track record of delivering a positive ROI for eCommerce business owners. We’ll take all of our SEO knowledge and apply it to your website.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-</section>
-<!--================================accordion section end here=======================-->
+    <!--================================accordion section start here=======================-->
+    <section class="accordion_service">
+        <div class="container">
+            <div class="row">
+                <h4 class="text-center pb-5 fs-2">BigCommerce SEO FAQs</h4>
+                <div id="accordion">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. How much do BigCommerce SEO services cost?</h5>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                            <div class="accordion-body">BigCommerce SEO services will typically cost the same as standard eCommerce SEO services. At OuterBox, our typical campaigns range from $1500/month to $10,000+ per month, depending on your goals and the competitiveness of your keywords. View our SEO pricing and costs guide for more information on standard SEO pricing models and associated fees.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h5 class="accordion-header collapsed" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Q. How do you do SEO on BigCommerce websites?
+                        </h5>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                            <div class="accordion-body">SEO strategies for BigCommerce websites will not vary significantly from traditional SEO. However, implementation of those strategies will be different than on other platforms. Working with an agency that understands BigCommerce’s SEO issues and common problems and has experience with eCommerce SEO is crucial for setting your company up for a successful BigCommerce SEO campaign.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h5 class="accordion-header collapsed" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Q. What keywords should be chosen for BigCommerce sites?
+                        </h5>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                            <div class="accordion-body">If you’re selling a product or service on BigCommerce, you need to identify keywords that indicate searchers would be likely to complete your desired goals once they arrive on your website. OuterBox includes in-depth and ongoing keyword research as part of our BigCommerce SEO campaigns to identify the best keywords to target for your business.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h5 class="accordion-header collapsed" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Q. How do I find a reputable BigCommerce SEO company?
+                        </h5>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                            <div class="accordion-body">Ask potential SEO companies what experience they have with BigCommerce as well as your specific industry. OuterBox has been at the cutting edge of eCommerce SEO for nearly two decades and has worked on many BigCommerce websites. When choosing an SEO company, ask for case studies and testimonials from other BigCommerce store owners.
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header collapsed" id="headingFourr" data-bs-toggle="collapse" data-bs-target="#collapseFourr" aria-expanded="false" aria-controls="collapseFourr">Q. How do I know if SEO is working for our BigCommerce store?
+                            </h5>
+                            <div id="collapseFourr" class="accordion-collapse collapse" aria-labelledby="headingFourr" data-bs-parent="#accordion">
+                                <div class="accordion-body">Reputable SEO agencies will provide detailed reporting on the work done and the results they are seeing. If your monthly SEO reports are leaving you scratching your head, your current SEO efforts might not be effective.  Discuss your project with our BigCommerce SEO experts today to determine the effectiveness of your BigCommerce SEO campaign.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h5 class="accordion-header collapsed" id="headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Q. Why should I choose an SEO agency that focuses on eCommerce?
+                            </h5>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                                <div class="accordion-body">As one of the original eCommerce SEO agencies, OuterBox has gained priceless skills and experience with both eCommerce and SEO. We understand how to build successful SEO strategies and have a proven track record of delivering a positive ROI for eCommerce business owners. We’ll take all of our SEO knowledge and apply it to your website.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--================================accordion section end here=======================-->
 
-<!--================================top_ready_start section start here=======================-->
-<section class="top_ready_start">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="top_ready_start_txt">
-					<h3>We can build your story</h3>
-					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-				</div>
-				<div class="top-body-button pt-5">
-					<a type="button" href="contact.html">Get In Touch</a>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="top_ready_start_img text-left">
-					<img src="frontend/images/95991_prev_ui.png" alt=" We can build your story" description=" We can build your story">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================top_ready_start section end here=======================-->
+    <!--================================top_ready_start section start here=======================-->
+    <section class="top_ready_start">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="top_ready_start_txt">
+                        <h3>We can build your story</h3>
+                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
+                    </div>
+                    <div class="top-body-button pt-5">
+                        <a type="button" href="contact.php">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top_ready_start_img text-left">
+                        <img src="frontend/images/95991_prev_ui.png" alt=" We can build your story" description=" We can build your story">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================top_ready_start section end here=======================-->
 
-<!--================================Thrive_Globally section start here=======================-->
-<section class="PAY_MENT" style="padding: 20px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="PAY_IMG">
-				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================Thrive_Globally section end here=======================-->
-<?php
+    <!--================================Thrive_Globally section start here=======================-->
+    <section class="PAY_MENT" style="padding: 20px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="PAY_IMG">
+                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================Thrive_Globally section end here=======================-->
+
+
+<?php 
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>
