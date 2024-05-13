@@ -1,5 +1,5 @@
 <?php
-    $title = "Software Development";
+    $title = "Nopcommerce Seo";
     ob_start();
 ?>
 

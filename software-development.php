@@ -278,7 +278,7 @@
 			        <h5 class="accordion-header collapsed" id="headingSix" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Q. Can you develop Mobile Software?
 			        </h5>
 			        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
-			          <div class="accordion-body">Yes, we can. You can work with SEO Expate Bangladesh Ltd. for any kind of mobile app development. Please visit our <a href="app_development.php" class="text-success">mobile app development services.</a></div>
+			          <div class="accordion-body">Yes, we can. You can work with SEO Expate Bangladesh Ltd. for any kind of mobile app development. Please visit our <a href="app-development.php" class="text-success">mobile app development services.</a></div>
 			        </div>
 			      </div>
 			      <div class="accordion-item">
