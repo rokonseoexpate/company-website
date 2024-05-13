@@ -85,8 +85,6 @@ $conn = $db->get_connection();
                 </tbody>
             </table>
         </div>
-
-
     </div>
 </div>
 
