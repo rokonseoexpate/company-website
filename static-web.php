@@ -1,6 +1,6 @@
 <?php
-$title = "Home";
-ob_start();
+    $title = "Static-web";
+    ob_start();
 ?>
 
     <!--================================photo editor sub Header section end here=======================-->

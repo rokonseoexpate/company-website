@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Amazon Seo";
     ob_start();
 ?>
 
