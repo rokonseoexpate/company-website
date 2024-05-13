@@ -13,38 +13,38 @@
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
 				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="seo_service.html" data-bs-toggle="dropdown">SEO Services</a>
+				                <a class="nav-link  dropdown-toggle" href="seo-service.php" data-bs-toggle="dropdown">SEO Services</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="ecommerce_seo.html"> eCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="amazon_seo.html">Amazon SEO</a></li>
-				                  <li><a class="dropdown-item" href="b2b_seo.html">B2B SEO</a></li>
-				                  <li><a class="dropdown-item" href="shopify_seo.html">Shopify SEO</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_seo.html">WordPress SEO</a></li>
-				                  <li><a class="dropdown-item" href="woocommerce_seo.html">WooCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="lead_seo.html">Lead Generation SEO</a></li>
-				                  <li><a class="dropdown-item" href="nopcommerce_seo.html">NopCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="magento_seo.html">Magento SEO</a></li>
-				                  <li><a class="dropdown-item" href="volusion_seo.html">Volusion SEO</a></li>
-				                  <li><a class="dropdown-item" href="bigcommerce_seo.html">BigCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="consulting_seo.html">SEO Consulting</a></li>
+				                  <li><a class="dropdown-item" href="ecommerce-seo.php"> eCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="amazon-seo.php">Amazon SEO</a></li>
+				                  <li><a class="dropdown-item" href="b2b-seo.php">B2B SEO</a></li>
+				                  <li><a class="dropdown-item" href="shopify-seo.php">Shopify SEO</a></li>
+				                  <li><a class="dropdown-item" href="wordpress-seo.php">WordPress SEO</a></li>
+				                  <li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
+				                  <li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="magento-seo.php">Magento SEO</a></li>
+				                  <li><a class="dropdown-item" href="volusion-seo.php">Volusion SEO</a></li>
+				                  <li><a class="dropdown-item" href="bigcommerce-seo.php">BigCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="consulting-seo.php">SEO Consulting</a></li>
 				                </ul>
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="ppc_paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
+				                <a class="nav-link  dropdown-toggle" href="ppc-paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="amazon_ppc.html"> Amazon PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="ecommerce_ppc.html">eCommerce PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="google_ads.html">Google Ads Consulting</a></li>
-				                  <li><a class="dropdown-item" href="management_ads.html">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping_management.html">Google Shopping Management</a></li>
-				                  <li><a class="dropdown-item" href="ppc_consulting.html">PPC Consulting</a></li>
-				                  <li><a class="dropdown-item" href="ppc_lead.html">Lead Gen PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="amazon-ppc.php"> Amazon PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
+				                  <li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
+				                  <li><a class="dropdown-item" href="shoping-management.php">Google Shopping Management</a></li>
+				                  <li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
+				                  <li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
 				                </ul>
 				            </li>
-				            <li class="nav-item"><a class="nav-link" href="onpage_seo.html"> On-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="offpage_seo.html"> Off-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="technical_seo.html"> Technical SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="package_price_seo.html"> SEO Packages & Pricing </a></li>
+				            <li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="package-price_seo.php"> SEO Packages & Pricing </a></li>
 				        </ul>
 				    </div>
 				</div> 
@@ -61,11 +61,11 @@
 		    		<div class="top_body_txt_part">
 						<h1 class="marginbottom" style="font-size: 45px;">Search Engine Marketing </h1>
 						<h2 class="margintop" style="margin-top: -15px;">for Websites with WordPress SEO Services</h2>		
-						<p style="text-align:justify;"> <a href="index.html" class="text-success">SEO Expate</a> BD Ltd. is one of the most nourished Search Engine companies all across the world. With the help of our organization, many business and companies have achieved their dream and they are now one of the most reliable companies to their consumers. If you are here then you will also get the opportunity the be one of them. Because here we are not only providing services but also genuine techniques that can support you in your business. </p>											
+						<p style="text-align:justify;"> <a href="index.php" class="text-success">SEO Expate</a> BD Ltd. is one of the most nourished Search Engine companies all across the world. With the help of our organization, many business and companies have achieved their dream and they are now one of the most reliable companies to their consumers. If you are here then you will also get the opportunity the be one of them. Because here we are not only providing services but also genuine techniques that can support you in your business. </p>											
 					</div>
 					<div class="row">
 						<div class="col-md-7 pt-2">
-							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.html" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your WordPress SEO Proposal</a></div>
+							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your WordPress SEO Proposal</a></div>
 						</div>
 						<div class="col-md-2 ecomrespons">
 							<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="Search Engine Marketing" description="Search Engine Marketing" class="img-fluid" >
@@ -88,13 +88,13 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item "><a href="seo_service.html" class="text-light">SEO</a></li>
+						    <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">WordPress SEO</li>
 						  </ol>
 						</nav>
 					</div>
-					<p class="pt-2 text-light" >Our in-house WordPress development and <a href="seo_service.html" class="text-success">SEO</a> teams are fully functional. That’s why you can say we are one of the leaders in this industry.WordPress SEO services are search engine optimization (SEO) oriented services that aid in enhancing a website created on the WordPress platform. Keyword research, on-page optimization, technical SEO / code optimization, off-site optimization, and much more could be included in these services. The objective is to raise the WordPress website's exposure and search engine ranking in order to increase traffic and lead generation for the company.</p>				
+					<p class="pt-2 text-light" >Our in-house WordPress development and <a href="seo-service.php" class="text-success">SEO</a> teams are fully functional. That’s why you can say we are one of the leaders in this industry.WordPress SEO services are search engine optimization (SEO) oriented services that aid in enhancing a website created on the WordPress platform. Keyword research, on-page optimization, technical SEO / code optimization, off-site optimization, and much more could be included in these services. The objective is to raise the WordPress website's exposure and search engine ranking in order to increase traffic and lead generation for the company.</p>				
 				</div>
 			</div>
 		</div>
@@ -108,7 +108,7 @@
             	<div class="col-12 pb-5">
                 	<h4 class="text-center">WordPress SEO Service </h4>
 	                <div class="border-bottom border-3 border-success">
-	                    <p class="text-center">We at <a href="index.html" class="text-success">SEO Expate</a> have tried-and-true <a href="seo_service.html" class="text-success">SEO</a> techniques to enhance your WordPress website. <br> We'll apply what we've learned from working with previous WordPress clients to you.</p>
+	                    <p class="text-center">We at <a href="index.php" class="text-success">SEO Expate</a> have tried-and-true <a href="seo-service.php" class="text-success">SEO</a> techniques to enhance your WordPress website. <br> We'll apply what we've learned from working with previous WordPress clients to you.</p>
 	                </div>
                 </div>
                 <div class="col-md-6 newudcode">
@@ -161,7 +161,7 @@
                 	<h6 class="fw-bold fs-5 pb-3">Establish a Unique WordPress SEO Plan</h6>
 	                <div><p>You'll be informed each month about the services rendered by our SEO team, the tasks completed, and the SEO Expate staff members who contributed. Even years after completion, completed work is documented for future reference.</p></div>
 	                <h6 class="fw-bold fs-5 pb-3">Updates on Technology and On-Site Optimization</h6>
-	                <div><p>You'll be informed each month about the services rendered by our <a href="seo_service.html" class="text-success">SEO</a> team, the tasks completed, and our team members who contributed. Even years after completion, completed work is documented for future reference.</p></div>	                
+	                <div><p>You'll be informed each month about the services rendered by our <a href="seo-service.php" class="text-success">SEO</a> team, the tasks completed, and our team members who contributed. Even years after completion, completed work is documented for future reference.</p></div>	                
                 </div>
             </div>
         </div>
@@ -179,7 +179,7 @@
 				</div>
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2 margintop"><h6>WordPress SEO for WooCommerce Stores </h6></div>
-					<p class="pt-3" >You have different SEO objectives if you manage a WordPress-powered WooCommerce website. As the top eCommerce SEO firm in the world, SEO Expate offers tested <a href="seo_service.html" class="text-success">SEO</a> techniques to increase the online sales of your WordPress website. As specialists in  <a href="ecommerce_seo.html" class="text-success">eCommerce SEO</a>, we create plans to enhance thousands of products over hundreds of categories, and we have hands-on expertise running an <a href="seo_service.html" class="text-success">SEO</a> campaign for a sizable database-driven website. Our team is prepared to position your WordPress website at the top of Google's search results, whether you require a full-service SEO package or a knowledgeable SEO consultant.</p>												
+					<p class="pt-3" >You have different SEO objectives if you manage a WordPress-powered WooCommerce website. As the top eCommerce SEO firm in the world, SEO Expate offers tested <a href="seo-service.php" class="text-success">SEO</a> techniques to increase the online sales of your WordPress website. As specialists in  <a href="ecommerce_seo.php" class="text-success">eCommerce SEO</a>, we create plans to enhance thousands of products over hundreds of categories, and we have hands-on expertise running an <a href="seo-service.php" class="text-success">SEO</a> campaign for a sizable database-driven website. Our team is prepared to position your WordPress website at the top of Google's search results, whether you require a full-service SEO package or a knowledgeable SEO consultant.</p>												
 				</div>				
 			</div>
 		</div>
@@ -192,7 +192,7 @@
             <div class="row ">
             	<div class="col-12">
                 	<h6 class="fw-bold fs-5 pb-3">Cost of WordPress SEO </h6>
-	                <div><p>A few variables may affect the price of <a href="index.html" class="text-success">SEO Expate's</a> WordPress SEO services. We'll list the primary factors we look at while deciding on the price below:</p></div>
+	                <div><p>A few variables may affect the price of <a href="index.php" class="text-success">SEO Expate's</a> WordPress SEO services. We'll list the primary factors we look at while deciding on the price below:</p></div>
 	                <h6 class="fw-bold fs-5 pb-3">1. Important Keywords</h6>
 	                <h6 class="fw-bold fs-5 pb-3">2. Current Ranking Position</h6>
 	                <h6 class="fw-bold fs-5 pb-3">3. Lead generation against eCommerce </h6>
@@ -207,7 +207,7 @@
 	<section class="accordion_service">
 		<div class="container">
 			<div class="row">
-				<h6 class="text-center pb-5 fs-2">FAQ’s for WordPress SEO</h6>
+				<h6 class="text-center pb-5 fs-2">FAQ's for WordPress SEO</h6>
 			    <div id="accordion">
 			      <div class="accordion-item">
 			        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. What are some basic SEO practices for WordPress websites?</h5>
@@ -306,7 +306,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">
