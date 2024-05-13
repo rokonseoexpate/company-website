@@ -93,7 +93,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="orderBy">Priority <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="orderBy" name="orderBy" value="<?php echo $row['orderBy'] ?>" placeholder="Priority">
+                        <input type="text" min="1" class="form-control" id="orderBy" name="orderBy" value="<?php echo $row['orderBy'] ?>" placeholder="Priority">
                     </div>
                 </div>
 
@@ -107,7 +107,6 @@ if (isset($_POST['submit'])) {
                     <div class="form-group">
                         <label for="image">Exiting Image</label>
                         <img class="w-100" src="<?php echo $newImagePath ?>" alt="">
-
                     </div>
                 </div>
                 

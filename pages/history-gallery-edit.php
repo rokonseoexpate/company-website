@@ -29,43 +29,52 @@ if (isset($_GET['id'])) {
         $title = $_POST['title'];
         $short_title = $_POST['short_title'];
         $image_type = $_POST['image_type'];
+        $alt_tag = $_POST['alt_tag'];
+        $alt_description = $_POST['alt_description'];
 
-        $image_path = $row['image']; // Default to the current image path
-
-        if ($_FILES["image"]["size"] > 0) {
-            // Upload new image file
-            $target_dir = "../uploads/";
-            $image_name = $_FILES["image"]["name"];
-            // Remove spaces from the image name
-            $image_name = str_replace(' ', '', $image_name);
-            $image_path = $target_dir . $image_name;
-            move_uploaded_file($_FILES["image"]["tmp_name"], $image_path);
+        $errorMessage = '';
+        
+        if (empty($title)) {
+            $errorMessage = 'Title is required.';
         }
 
-        // Update query
-        $id = $_GET['id'];
-        $sql = "UPDATE history_galleries SET title = ?, short_title = ?, image_type = ?";
-        // Only add image column to the update query if a new image was uploaded
-        if ($_FILES["image"]["size"] > 0) {
-            $sql .= ", image = ?";
-        }
-        $sql .= " WHERE id = ?";
-
-        $stmt = $conn->prepare($sql);
-        if ($_FILES["image"]["size"] > 0) {
-            $stmt->bind_param("ssssi", $title, $short_title, $image_type, $image_path, $id);
-        } else {
-            $stmt->bind_param("sssi", $title, $short_title, $image_type, $id);
+        if (empty($image_type)) {
+            $errorMessage = 'Image type is required.';
         }
 
-        // Execute query
-        if ($stmt->execute()) {
-            $successMessage = "Updated successfully!";
-            // Redirect to employee list page
-            header('Location: history-gallery-list.php');
-            exit();
-        } else {
-            $errorMessage = "Error updating employee: " . $stmt->error;
+        if (empty($errorMessage)) {
+            // Check if a new image file is uploaded
+            if ($_FILES["image"]["size"] > 0) {
+                // Delete old image file
+                if (file_exists($row['image'])) {
+                    unlink($row['image']);
+                }
+
+                // Upload new image file
+                $target_dir = "../uploads/";
+                $image_name = $_FILES["image"]["name"];
+                // Remove spaces from the image name
+                $image_name = str_replace(' ', '-', $image_name);
+                $image_path = $target_dir . $image_name;
+                move_uploaded_file($_FILES["image"]["tmp_name"], $image_path);
+            } else {
+                $image_path = $row['image'];
+            }
+
+            // Update query
+            $sql = "UPDATE history_galleries SET title = ?, short_title = ?, image_type = ?, alt_tag = ?, alt_description = ?, image = ? WHERE id = ?";
+            $stmt = $conn->prepare($sql);
+            $stmt->bind_param("ssssssi", $title, $short_title, $image_type, $alt_tag, $alt_description, $image_path, $image_id);
+
+            // Execute query
+            if ($stmt->execute()) {
+                $successMessage = "Updated successfully!";
+                // Redirect to image list page
+                header('Location: history-gallery-list.php');
+                exit();
+            } else {
+                $errorMessage = "Error updating image: " . $stmt->error;
+            }
         }
     }
 } else {
@@ -73,6 +82,7 @@ if (isset($_GET['id'])) {
     exit();
 }
 ?>
+
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
 
@@ -84,16 +94,16 @@ if (isset($_GET['id'])) {
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="title">Title</label>
-                    <input type="text" name="title" placeholder="Title" class="form-control" value="<?php echo $row['title']; ?>">
+                    <label for="title">Title  <span class="text-danger">*</span></label>
+                    <input type="text" name="title" placeholder="Title" class="form-control" value="<?php echo $row['title']; ?>" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="short_title">Short Title</label>
                     <input type="text" name="short_title" placeholder="Short Title" class="form-control" value="<?php echo $row['short_title']; ?>">
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="image_type">Image Type</label>
-                    <select name="image_type" id="" class="form-control form-select">
+                    <label for="image_type">Image Type <span class="text-danger">*</span></label>
+                    <select name="image_type" id="" class="form-control form-select" required>
                         <option value="1" <?php if ($row['image_type'] == 1) echo "selected"; ?>>overview_success</option>
                         <option value="2" <?php if ($row['image_type'] == 2) echo "selected"; ?>>customers_associates</option>
                         <option value="3" <?php if ($row['image_type'] == 3) echo "selected"; ?>>Highlighted</option>
@@ -110,6 +120,18 @@ if (isset($_GET['id'])) {
                     <label for="image">Image</label><br>
                     <img src="<?php echo $row['image']; ?>" alt="" width="250px">
                 </div>
+
+
+                <div class="form-group col-md-12">
+                    <label for="alt_tag">Alt Tag</label>
+                    <input type="text" class="form-control" value="<?php echo $row['alt_tag']; ?>" name="alt_tag" placeholder="alt tag">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="image">Alt Description</label>
+                    <textarea name="alt_description" id="" class="form-control" cols="10" rows="5"><?php echo $row['alt_description']; ?></textarea>
+                </div>
+
                 <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-primary my-3">Update</button>
                 </div>

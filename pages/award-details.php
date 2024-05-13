@@ -39,7 +39,7 @@ if (isset($_GET['id'])) {
                 </tr>
                 <tr>
                     <th>Image</th>
-                    <td> <img class="w-100" src="<?php echo $newImagePath ?>" alt=""> </td>
+                    <td> <img style="width: 579px; height:400px" src="<?php echo $newImagePath ?>" alt=""> </td>
                 </tr>
                 <tr>
                     <th>Alt Text</th>
@@ -48,6 +48,10 @@ if (isset($_GET['id'])) {
                 <tr>
                     <th>Alt Description</th>
                     <td> <?php echo $row['alt_description'] ?></td>
+                </tr>
+                <tr>
+                    <th>Created At</th>
+                    <td><?php echo date('d M Y', strtotime($row['created_at'])) ?> </td>
                 </tr>
             </tbody>
         </table>
