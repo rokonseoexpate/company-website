@@ -18,7 +18,7 @@ ob_start();
                         <p style=" margin-top: -15px;">Have you ever thought about how your customers will decide to buy your products? Well, to sell your products, the first thing you have to do is convince your customers. And to satisfy your customers, you need a catchy product description that will attract your customers and tell them about your products at the same time. Customers will decide after reading your product description.</p>
                     </div>
                     <div class="top-body-button pt-3">
-                        <a type="button" href="contact.html">Contact Us</a>
+                        <a type="button" href="contact.php">Contact Us</a>
                     </div>
                 </div>
                 <div class="col-md-5 m-auto ecomrespp" style="z-index:500;" >
@@ -37,8 +37,8 @@ ob_start();
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-                                <li class="breadcrumb-item "><a href="content-writing.html" class="text-light">Content Writing</a></li>
+                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="content-writing.php" class="text-light">Content Writing</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">Product Description Writing</li>
                             </ol>
                         </nav>
@@ -54,10 +54,10 @@ ob_start();
         <div class="container shadow px-5 py-5 border-top border-5 border-success">
             <div class="row ">
                 <div class="col-12 ">
-                    <p>Your website must have a well-written product description of your products. It will be very tough for you to maintain all this hassle. This is where <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd. comes forward to help you out. We are a professional product description writing agency. We provide creative product descriptions that will portray your business very positively to your customers.</p>
+                    <p>Your website must have a well-written product description of your products. It will be very tough for you to maintain all this hassle. This is where <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. comes forward to help you out. We are a professional product description writing agency. We provide creative product descriptions that will portray your business very positively to your customers.</p>
                 </div>
                 <div class="col-12">
-                    <p>We have some industry’s best content writers in our firm. These people are bright and talented. They are very passionate about their work. We have access to all the latest technology that is required for better results. So, if you are looking for a professional product description writing service, <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd. is your best call.</p>
+                    <p>We have some industry’s best content writers in our firm. These people are bright and talented. They are very passionate about their work. We have access to all the latest technology that is required for better results. So, if you are looking for a professional product description writing service, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. is your best call.</p>
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@ ob_start();
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-                        <a type="button" href="contact.html">Get In Touch</a>
+                        <a type="button" href="contact.php">Get In Touch</a>
                     </div>
                 </div>
                 <div class="col-md-6">

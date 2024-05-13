@@ -15,17 +15,17 @@ ob_start();
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
 				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="content_writing.html" data-bs-toggle="dropdown">Content Writing</a>
+				                <a class="nav-link  dropdown-toggle" href="content-writing.php" data-bs-toggle="dropdown">Content Writing</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="blog_post.html">Blog Post Writing</a></li>
-				                  <li><a class="dropdown-item" href="academic_post.html">Academic Writing</a></li>
-				                  <li><a class="dropdown-item" href="copy_writing.html">Copywriting</a></li>
-				                  <li><a class="dropdown-item" href="static_web.html">Static Web Pages</a></li>
-				                  <li><a class="dropdown-item" href="product_description.html">Product Description Writing</a></li>
-				                  <li><a class="dropdown-item" href="press_release.html">Press Release Writing</a></li>
+				                  <li><a class="dropdown-item" href="blog-post.php">Blog Post Writing</a></li>
+				                  <li><a class="dropdown-item" href="academic-post.php">Academic Writing</a></li>
+				                  <li><a class="dropdown-item" href="copy-writing.php">Copywriting</a></li>
+				                  <li><a class="dropdown-item" href="static-web.php">Static Web Pages</a></li>
+				                  <li><a class="dropdown-item" href="product-description.php">Product Description Writing</a></li>
+				                  <li><a class="dropdown-item" href="press-release.php">Press Release Writing</a></li>
 				                </ul>
 				            </li>
-				            <li class="nav-item"><a class="nav-link" href="content_pricing.html"> Pricing</a></li>
+				            <li class="nav-item"><a class="nav-link" href="content_pricing.php"> Pricing</a></li>
 				        </ul>
 				    </div>
 				</div> 
@@ -44,7 +44,7 @@ ob_start();
 						<p style=" margin-top: -15px;">What do you think is the best way to announce something about your product and service in a short period? Well, the answer is issuing a press release. You can easily transmit any announcement about your business using press releases. When you introduce a new product in the market, enter into a new market, or when you offer the sale of your products, press releases can be a speedy way to let your customers know about it. A press release is a news item for businesses to let their customers know what new products or services they are offering. It is a fantastic way to gain higher visibility of products and services of any business.</p>									
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="contact.html">Contact Us</a>
+						<a type="button" href="contact.php">Contact Us</a>
 					</div>	
 				</div>
 				<div class="col-md-5 m-auto ecomrespp" style="z-index:500;" >
@@ -63,8 +63,8 @@ ob_start();
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="content_writing.html" class="text-light">Content Writing</a></li>
+							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="content-writing.php" class="text-light">Content Writing</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Press Release Writing</li>
 						</ol>
 						</nav>
@@ -83,7 +83,7 @@ ob_start();
                 	<p>All the small and big businesses know the impact of a well-crafted press release. It will promote your business for an indefinite time if you can manage it properly. All the entrepreneurs nowadays use a press release to advertise their upcoming products or services. If you are offering products for a niche market, a press release can be your way to address the right customer base. Press releases are written and distributed on PR websites that many customers and businesses follow.</p>
                 </div>
                 <div class="col-12">
-                	<p>At <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd., we offer press release writing services for businesses across different industries. We have several in-house creative writers, and some of them are based on a journalism background. They can write a durable and attractive press release for your business. They have industry-specific knowledge, and they are very hard-working bright people. They can work closely with clients and make them satisfied. So, if you are looking for press release writers for hire, <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd. is your best shot. WE are the best because we are result-oriented, client-friendly and we have an outstanding track record for serving customers with satisfaction.</p>
+                	<p>At <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd., we offer press release writing services for businesses across different industries. We have several in-house creative writers, and some of them are based on a journalism background. They can write a durable and attractive press release for your business. They have industry-specific knowledge, and they are very hard-working bright people. They can work closely with clients and make them satisfied. So, if you are looking for press release writers for hire, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. is your best shot. WE are the best because we are result-oriented, client-friendly and we have an outstanding track record for serving customers with satisfaction.</p>
                 </div>
             </div>
         </div>
@@ -205,7 +205,7 @@ ob_start();
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">

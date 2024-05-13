@@ -14,38 +14,38 @@
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
 				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="seo_service.html" data-bs-toggle="dropdown">SEO Services</a>
+				                <a class="nav-link  dropdown-toggle" href="seo-service.html" data-bs-toggle="dropdown">SEO Services</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="ecommerce_seo.html"> eCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="amazon_seo.html">Amazon SEO</a></li>
-				                  <li><a class="dropdown-item" href="b2b_seo.html">B2B SEO</a></li>
-				                  <li><a class="dropdown-item" href="shopify_seo.html">Shopify SEO</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_seo.html">WordPress SEO</a></li>
-				                  <li><a class="dropdown-item" href="woocommerce_seo.html">WooCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="lead_seo.html">Lead Generation SEO</a></li>
-				                  <li><a class="dropdown-item" href="nopcommerce_seo.html">NopCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="magento_seo.html">Magento SEO</a></li>
-				                  <li><a class="dropdown-item" href="volusion_seo.html">Volusion SEO</a></li>
-				                  <li><a class="dropdown-item" href="bigcommerce_seo.html">BigCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="consulting_seo.html">SEO Consulting</a></li>
+				                  <li><a class="dropdown-item" href="ecommerce-seo.html"> eCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="amazon-seo.html">Amazon SEO</a></li>
+				                  <li><a class="dropdown-item" href="b2b-seo.html">B2B SEO</a></li>
+				                  <li><a class="dropdown-item" href="shopify-seo.html">Shopify SEO</a></li>
+				                  <li><a class="dropdown-item" href="wordpress-seo.html">WordPress SEO</a></li>
+				                  <li><a class="dropdown-item" href="woocommerce-seo.html">WooCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="lead-seo.html">Lead Generation SEO</a></li>
+				                  <li><a class="dropdown-item" href="nopcommerce-seo.html">NopCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="magento-seo.html">Magento SEO</a></li>
+				                  <li><a class="dropdown-item" href="volusion-seo.html">Volusion SEO</a></li>
+				                  <li><a class="dropdown-item" href="bigcommerce-seo.html">BigCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="consulting-seo.html">SEO Consulting</a></li>
 				                </ul>
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="ppc_paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
+				                <a class="nav-link  dropdown-toggle" href="ppc-paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="amazon_ppc.html"> Amazon PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="ecommerce_ppc.html">eCommerce PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="google_ads.html">Google Ads Consulting</a></li>
-				                  <li><a class="dropdown-item" href="management_ads.html">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping_management.html">Google Shopping Management</a></li>
-				                  <li><a class="dropdown-item" href="ppc_consulting.html">PPC Consulting</a></li>
-				                  <li><a class="dropdown-item" href="ppc_lead.html">Lead Gen PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="amazon-ppc.html"> Amazon PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="ecommerce-ppc.html">eCommerce PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="google-ads.html">Google Ads Consulting</a></li>
+				                  <li><a class="dropdown-item" href="management-ads.html">Google Ads Management</a></li>
+				                  <li><a class="dropdown-item" href="shoping-management.html">Google Shopping Management</a></li>
+				                  <li><a class="dropdown-item" href="ppc-consulting.html">PPC Consulting</a></li>
+				                  <li><a class="dropdown-item" href="ppc-lead.html">Lead Gen PPC Management</a></li>
 				                </ul>
 				            </li>
-				            <li class="nav-item"><a class="nav-link" href="onpage_seo.html"> On-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="offpage_seo.html"> Off-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="technical_seo.html"> Technical SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="package_price_seo.html"> SEO Packages & Pricing </a></li>
+				            <li class="nav-item"><a class="nav-link" href="onpage-seo.html"> On-page SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="offpage-seo.html"> Off-page SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="technical-seo.html"> Technical SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="package-price-seo.html"> SEO Packages & Pricing </a></li>
 				        </ul>
 				    </div>
 				</div> 
@@ -91,7 +91,7 @@
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
 							<li class="breadcrumb-item "><a href="index.html" class=" text-light">Home</a></li>
-							<li class="breadcrumb-item "><a href="seo_service.html" class="text-light">SEO</a></li>
+							<li class="breadcrumb-item "><a href="seo-service.html" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Shopify SEO</li>
 						</ol>
 						</nav>
