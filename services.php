@@ -47,7 +47,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality. We offer cutting-edge research, HCD UI & UX design, and development for the mobile application to match unique project requirements.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="app_development.php">See more</a>
+						<a type="button" href="app-development.php">See more</a>
 					</div>	
 				</div>
 				<div class="col-md-6">
@@ -120,7 +120,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">SEO Expate Bangladesh Ltd ensures your vision for a perfect business website with a user-friendly design and appearance. Here, the developers are fluent in large-scale distributed systems, micro-service architecture, real-time big data processing, cloud-native application development and are always striving to catch emerging technologies and trends. Work with the best web development company.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="web_development.php">See more</a>
+						<a type="button" href="web-development.php">See more</a>
 					</div>	
 				</div>
 			</div>
@@ -137,7 +137,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">We are here to turn your creative ideas into software by bringing the best quality and cost-effective solution. We utilize the latest software technologies to develop different software with amazing graphics.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="software_development.php">See more</a>
+						<a type="button" href="software-development.php">See more</a>
 					</div>	
 				</div>
 				<div class="col-md-6">
@@ -210,7 +210,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">Our Internet of Things Services and solution strategy is focused on key areas of the asset value chain, allowing businesses to shorten time to market and save money. We enable connected consumers, connected goods, connected infrastructure, and connected operations by providing the following Internet of Things services.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="app_development.php">See more</a>
+						<a type="button" href="app-development.php">See more</a>
 					</div>	
 				</div>
 			</div>
@@ -227,7 +227,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">Our blockchain development services provide enterprises with the most reliable and advanced blockchain solutions to ensure that their clients are at the forefront. We have a team of experienced developers who specialize in building enterprise blockchain solutions for different industries. See Core Blockchain Development Services and Solutions.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="software_development.php">See more</a>
+						<a type="button" href="software-development.php">See more</a>
 					</div>	
 				</div>
 				<div class="col-md-6">
@@ -300,7 +300,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">We are here to turn your creative ideas into games by bringing the best quality and cost-effective solution. We utilize the latest gaming technologies to develop 2D and 3D games with amazing graphics-framework and focus on developing potential gameplay with exceptional mechanisms.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="software_development.php">See more</a>
+						<a type="button" href="software-development.php">See more</a>
 					</div>	
 				</div>
 			</div>
@@ -317,7 +317,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">Our XR service drives you to imagine, create, and deliver innovative experiences at an enterprise scale. Our finest Augmented Reality (AR), Virtual Reality (VR), Mixed Reality (MR) application developers team ensures to follow the latest market trends to build customized XR solutions, which cater to the requirements of the users.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="app_development.php">See more</a>
+						<a type="button" href="app-development.php">See more</a>
 					</div>	
 				</div>
 				<div class="col-md-6">
@@ -390,7 +390,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">We help companies and enterprises digitally transform their businesses by providing software quality engineering, quality assurance, and testing. Test your software, apps, games and more with SEO Expate Bangladesh Ltd.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="app_development.php">See more</a>
+						<a type="button" href="app-development.php">See more</a>
 					</div>	
 				</div>
 			</div>
@@ -407,7 +407,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">SEO Expate Bangladesh Ltd, a well-recognized quality assurance company, for QA testing services. As a top QA Company, we'll customize each deployment or update to your business objectives and modernize your platform for a speedier, more secure, and more pleasant user and customer experience.  Take advantage of the greatest quality assurance services available from the most dependable and promising QA service provider company!</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="software_development.php">See more</a>
+						<a type="button" href="software-development.php">See more</a>
 					</div>	
 				</div>
 				<div class="col-md-6">
@@ -480,7 +480,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">SEO Expate Bangladesh Ltd. offers R&D centers and engineers with a track record of providing research and development services. They are highly equiped with R&D tools to produce innovative solutions for your business objectives. Besides, we hold R&D experts who from various technology backgrounds and can assist you at any stage of the development process. Explore our R&D services to build an R&D Team. </p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="software_development.php">See more</a>
+						<a type="button" href="software-development.php">See more</a>
 					</div>	
 				</div>
 			</div>
@@ -497,7 +497,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">SEO Expate Bangladesh Ltd offers Business Process Outsourcing (BPO) services to help companies provide end-to-end supports for their consumers. Our BPO teams have a deep understanding of your customer needs that can help you easily manage your business operations. Let's explore our BPO services and expertise to get all-in-one BPO solutions at a reasonable cost.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="web_development.php">See more</a>
+						<a type="button" href="web-development.php">See more</a>
 					</div>	
 				</div>
 				<div class="col-md-6">
@@ -570,7 +570,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">SEO Expate Bangladesh Ltd is a leading IT Outsourcing company from Bangladesh since 2013, providing high-quality, user-centric technology solutions to businesses. We have worked and served with many technology platforms and collaborated with many clients over these years. Our development center is based in Bangladesh, and costs are typically less than 30% of similar service costs in others. We have highly experienced and qualified team members who can execute your project correctly and meet your deadline perfectly.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="software_development.php">See more</a>
+						<a type="button" href="software-development.php">See more</a>
 					</div>	
 				</div>
 			</div>
@@ -587,7 +587,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">We are always here to uplift your business and expand your brands by communicating your thoughts in a better way with your clients or customers. Our professional artists and animators can make your content presentation easily understandable for any user.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="seo_service.php">See more</a>
+						<a type="button" href="seo-service.php">See more</a>
 					</div>	
 				</div>
 				<div class="col-md-6">
@@ -660,7 +660,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">Increase Revenue With SEO Expate Bangladesh Ltd  Digital Marketing Services. More Traffic. More Leads. More Conversion. More Sales. More revenue. More Business. It is the beauty of SEO Expate Bangladesh Ltd  Digital Marketing Services. We are helping our clients worldwide engage unlimited traffic for their business and convert them into revenue.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="digital_marketing.php">See more</a>
+						<a type="button" href="digital-marketing.php">See more</a>
 					</div>	
 				</div>
 			</div>
@@ -677,7 +677,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">We bring the best analytics with AI and industry expertise so that your initiatives are exploited, embraced, and scaled for the maximum ROI. We work holistically across people, processes, and business functions to help you decide how to apply it, which technologies to use and how to make sure it's embraced across your business.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="software_development.php">See more</a>
+						<a type="button" href="software-development.php">See more</a>
 					</div>	
 				</div>
 				<div class="col-md-6">
@@ -746,7 +746,7 @@
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">We are creating a meaningful difference among the youth by enhancing their capacity in game and app development and animation creation to become future leaders of this industry. We offer both long-term and short-term training on 2D and 3D game development, animation creation, and application development with Bangladesh Computer Council (BCC) as a knowledge partner.</p>
 					<div class="top-body-button pt-3">
-						<a type="button" href="app_development.php">See more</a>
+						<a type="button" href="app-development.php">See more</a>
 					</div>	
 				</div>
 			</div>

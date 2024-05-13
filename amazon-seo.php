@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Amazon Seo";
     ob_start();
 ?>
 
@@ -10,7 +10,6 @@
         </div>
     </div>
 </section>
-
 <?php 
 $main_content = ob_get_clean();
 include './layouts/app.php';
