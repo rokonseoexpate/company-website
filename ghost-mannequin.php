@@ -14,12 +14,12 @@
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
 				            <li class="nav-item dropdown has-megamenu ">
-				                <a class="nav-link dropdown-toggle" href="photo_editor.html" data-bs-toggle="dropdown"> Photo Editing Services </a>
+				                <a class="nav-link dropdown-toggle" href="photo-editor.html" data-bs-toggle="dropdown"> Photo Editing Services </a>
 				                <div class="dropdown-menu megamenu" role="menu">
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="clipping_path.html" class="d-flex">
+				                                <a href="clipping-path.html" class="d-flex">
 				                                   <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Clipping Path</h6>
@@ -29,7 +29,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="background_remove.html" class="d-flex">
+				                                <a href="background-remove.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Photo Background Removing</h6>
@@ -39,7 +39,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="image_masking.html" class="d-flex">
+				                                <a href="image-masking.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Image Masking</h6>
@@ -49,7 +49,7 @@
 				                        </div>    
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="shadow_making.html" class="d-flex">
+				                                <a href="shadow-making.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Shadow Making</h6>
@@ -61,7 +61,7 @@
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="ghost_mannequin.html" class="d-flex">
+				                                <a href="ghost-mannequin.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Ghost Mannequin Effect</h6>
@@ -71,7 +71,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="photo_retouching.html" class="d-flex">
+				                                <a href="photo-retouching.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Photo Retouching</h6>
@@ -81,7 +81,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="color_correction.html" class="d-flex">
+				                                <a href="color-correction.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Color Correction</h6>
@@ -91,7 +91,7 @@
 				                        </div>    
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="ecommerce_photo_edit.html" class="d-flex">
+				                                <a href="ecommerce-photo_edit.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">E-Commerce Photo Editing</h6>
@@ -103,7 +103,7 @@
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="jewelry_retouching.html" class="d-flex">
+				                                <a href="jewelry-retouching.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Jewelry Retouching</h6>
@@ -113,7 +113,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="wedding_photo.html" class="d-flex">
+				                                <a href="wedding-photo.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Wedding Photo Editing</h6>
@@ -123,7 +123,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="photo_restoration.html" class="d-flex">
+				                                <a href="photo-restoration.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Photo Restoration</h6>
@@ -133,7 +133,7 @@
 				                        </div>    
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="real_estate_photo.html" class="d-flex">
+				                                <a href="real-estate-photo.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Real Estate Photo Editing</h6>
@@ -145,7 +145,7 @@
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="image_manipulation.html" class="d-flex">
+				                                <a href="image-manipulation.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Image Manipulation</h6>
@@ -155,7 +155,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="raster_vector.html" class="d-flex">
+				                                <a href="raster-vector.html" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Raster to Vector Conversion</h6>
@@ -167,19 +167,19 @@
 				                </div> 
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="graphic_design.html" data-bs-toggle="dropdown"> Graphic Design </a>
+				                <a class="nav-link  dropdown-toggle" href="graphic-design.html" data-bs-toggle="dropdown"> Graphic Design </a>
 				                <ul class="dropdown-menu dropdown-menu-end">
 				                  <li><a class="dropdown-item" href="t-shirt-design.html"> T-Shirt Design</a></li>
-				                  <li><a class="dropdown-item" href="logo_design.html">Logo Designs Service</a></li>
-				                  <li><a class="dropdown-item" href="banner_design.html">Banner Design</a></li>
+				                  <li><a class="dropdown-item" href="logo-design.html">Logo Designs Service</a></li>
+				                  <li><a class="dropdown-item" href="banner-design.html">Banner Design</a></li>
 				                </ul>
 				            </li>
-				            <li class="nav-item"><a class="nav-link" href="photo_editor_pricing.html"> Pricing </a></li>
-				            <li class="nav-item"><a class="nav-link" href="photo_edit_portfolio.html"> Portfolio </a></li>
+				            <li class="nav-item"><a class="nav-link" href="photo-editor-pricing.html"> Pricing </a></li>
+				            <li class="nav-item"><a class="nav-link" href="photo-edit-portfolio.html"> Portfolio </a></li>
 				        </ul>
 				        <ul class="navbar-nav booknowbtn">
 						    <li class="nav-item">
-						        <a type="submit" class="nav-link btn" href="get_quote.html">Get Quote</a>
+						        <a type="submit" class="nav-link btn" href="get-quote.html">Get Quote</a>
 						    </li>
 						</ul>
 				    </div>
@@ -199,7 +199,7 @@
 						<p style="text-align:justify;">The Ghost Mannequin Effect is a photo editing service. However, clothing companies use this service to make their clothes look like invisible people is wearing it. This technique helps customers see how the clothes fit and look without distractions. Clothing companies use this service to make their products look more appealing and professional in photos. This service will help clothing companies show off their clothes creatively and interestingly.</p>						
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="free_trial.html">Free Trial</a>
+						<a type="button" href="free-trial.html">Free Trial</a>
 					</div>	
 				</div>			
 			</div>
@@ -216,7 +216,7 @@
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
 							<li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo_editor.html" class="text-light">Photo editor</a></li>
+							<li class="breadcrumb-item "><a href="photo-editor.html" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Ghost Mannequin Effect</li>
 						</ol>
 						</nav>
