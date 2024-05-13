@@ -1,0 +1,3 @@
+
+update query 12-05-2024
+ALTER TABLE `history_galleries` ADD `alt_tag` VARCHAR(255) NULL AFTER `short_title`, ADD `alt_description` LONGTEXT NULL AFTER `alt_tag`;

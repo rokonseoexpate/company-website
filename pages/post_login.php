@@ -1,11 +1,6 @@
 <?php
+
 session_start();
-
-// Include the file where DB_con class is defined
-require_once('../config/dbconnect.php');
-
-// Instantiate the DB_con class
-$db = new DB_con();
 
 // Path to the file
 $file_path = '../config/dbconnect.php';
@@ -17,10 +12,12 @@ if (file_exists($file_path)) {
     echo "Error: The file '$file_path' does not exist.";
 }
 
+$db = new DB_con();
+// Get database connection
+$conn = $db->get_connection();
+
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get database connection
-    $conn = $db->get_connection();
 
     // Get username and password from the form
     $username = $_POST['username'];

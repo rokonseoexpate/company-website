@@ -12,10 +12,10 @@ if (isset($_GET['id'])) {
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
 }
-$titleErr = "";
 
 if (isset($_POST['submit'])) {
 
+    $titleErr = "";
     $name = $_POST['name'];
     $slug = preg_replace('/[^A-Za-z0-9\-]/', '', str_replace(' ', '-', strtolower($name)));
     $slug = trim($slug, '-') . random_int(11111, 99999);

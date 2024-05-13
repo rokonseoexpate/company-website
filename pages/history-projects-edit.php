@@ -20,10 +20,15 @@ if (isset($_GET['id'])) {
         exit();
     }
 
+
+    $imageQuery = "SELECT image FROM history_projects WHERE id = $image_id";
+    $imageResult = mysqli_query($conn, $imageQuery);
+    $imageRow = mysqli_fetch_assoc($imageResult);
+
     // Process update form submission
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $title = $_POST['title'];
-        $description= $_POST['description'];
+        $description = $_POST['description'];
 
         // Check if a new image file is uploaded
         if (!empty($_FILES["image"]["name"])) {
@@ -36,6 +41,10 @@ if (isset($_GET['id'])) {
             $targetDir = "../uploads/"; // Specify the directory where you want to store uploaded images
             $targetFilePath = $targetDir . $imageName;
 
+            if (file_exists($imageRow['image'])) {
+                unlink($imageRow['image']);
+            }
+            
             // Upload file to server
             if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath)) {
                 // Update image details in the database
@@ -84,11 +93,11 @@ if (isset($_GET['id'])) {
 
                 <div class="form-group col-md-12">
                     <label for="title">Title</label>
-                    <input type="text" class="form-control" name="title" placeholder="Title"  value="<?php echo $row['title']; ?>">
+                    <input type="text" class="form-control" name="title" placeholder="Title" value="<?php echo $row['title']; ?>">
                 </div>
                 <div class="form-group col-md-12">
                     <label for="description">Description</label>
-                    <textarea name="description"  id="description" cols="30" rows="10" class="form-control"><?php echo $row['description']; ?></textarea>
+                    <textarea name="description" id="description" cols="30" rows="10" class="form-control"><?php echo $row['description']; ?></textarea>
                 </div>
 
                 <div class="form-group col-md-6">

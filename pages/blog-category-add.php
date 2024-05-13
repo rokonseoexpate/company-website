@@ -6,18 +6,18 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
-$titleErr = "";
-
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
-    $slug = preg_replace('/[^A-Za-z0-9\-]/', '', str_replace(' ', '-', strtolower($title)));
-    $slug = trim($slug, '-') . random_int(11111, 99999);
+    $slug = preg_replace('/[^A-Za-z0-9\-]/', '', str_replace(' ', '-', strtolower($name)));
+    $slug = trim($slug, '-') . '-' . random_int(11111, 99999); // Corrected the concatenation here
 
+    $errorMessage = "";
 
-    if (empty($title)) {
-        $titleErr = "Title is required";
-    } else {
+    if (empty($name)) {
+        $errorMessage = "Name is required"; // Corrected the field name here
+    }
 
+    if (empty($errorMessage)) {
         $query = "INSERT INTO `blog_categories`(`name`, `slug`) VALUES('$name', '$slug')";
         $result = $conn->query($query);
 
@@ -45,9 +45,8 @@ $conn->close();
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="title">Name</label>
+                        <label for="title">Name <span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="title" name="name" placeholder="name">
-                        <span id="titleErr" class="text-danger"><?php echo $titleErr; ?></span>
                     </div>
                 </div>
 

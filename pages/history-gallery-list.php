@@ -16,79 +16,95 @@ $conn = $db->get_connection();
         </div>
         <table id="example1" class="table table-striped table-bordered">
             <thead>
-            <tr class="text-center">
-                <th>#</th>
-                <th>Title</th>
-                <th>Short Title</th>
-                <th>Image Type</th>
-                <th>Image</th>
-                <th class="text-right px-4">Action</th>
-            </tr>
+                <tr class="text-center">
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Short Title</th>
+                    <th>Image Type</th>
+                    <th>Image</th>
+                    <th class="text-right px-4">Action</th>
+                </tr>
             </thead>
             <tbody>
-            <?php
+                <?php
                 $count = 1;
                 $qry = "SELECT * FROM history_galleries ORDER BY id DESC";
                 $result = mysqli_query($conn, $qry);
 
                 if ($result) {
                     while ($row = mysqli_fetch_assoc($result)) {
-                        ?>
-                <tr>
-                    <td><?php echo $count++; ?></td>
-                    <td><?php echo $row['title']; ?></td>
-                    <td><?php echo $row['short_title']; ?></td>
+                ?>
+                        <tr>
+                            <td><?php echo $count++; ?></td>
+                            <td><?php echo $row['title']; ?></td>
+                            <td><?php echo $row['short_title']; ?></td>
 
-                    <?php
-                    // Define an associative array mapping option values to names
-                    $imageTypeOptions = array(
-                        1 => 'overview_success',
-                        2 => 'customers_associates',
-                        3 => 'Highlighted',
-                        4 => 'Achievements'
-                    );
+                            <?php
+                            // Define an associative array mapping option values to names
+                            $imageTypeOptions = array(
+                                1 => 'overview_success',
+                                2 => 'customers_associates',
+                                3 => 'Highlighted',
+                                4 => 'Achievements'
+                            );
 
-                    // Display the option name based on the stored value
-                    $imageTypeValue = $row['image_type'];
-                    $imageTypeName = isset($imageTypeOptions[$imageTypeValue]) ? $imageTypeOptions[$imageTypeValue] : 'Unknown';
-                    ?>
-                    <td><?php echo $imageTypeName; ?></td>
+                            // Display the option name based on the stored value
+                            $imageTypeValue = $row['image_type'];
+                            $imageTypeName = isset($imageTypeOptions[$imageTypeValue]) ? $imageTypeOptions[$imageTypeValue] : 'Unknown';
+                            ?>
+                            <td><?php echo $imageTypeName; ?></td>
 
-                    <td width="250px">
-                        <?php if ($row['image'] && file_exists($row['image'])) : ?>
-                            <img src="<?php echo $row['image']; ?>" class="img-fluid w-25" alt="">
-                        <?php else : ?>
-                            <span>No Image</span>
-                        <?php endif; ?>
-                    </td>
-                    <td class="text-right">
-                        <a href="history-gallery-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
-                        <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this employee?')">Delete</a>
-                    </td>
-                </tr>
-                        <?php
+                            <td width="250px">
+                                <?php if ($row['image'] && file_exists($row['image'])) : ?>
+                                    <img src="<?php echo $row['image']; ?>" class="img-fluid w-25" alt="">
+                                <?php else : ?>
+                                    <span>No Image</span>
+                                <?php endif; ?>
+                            </td>
+                            <td class="align-middle">
+                                <div class="d-inline-flex justify-content-center">
+                                    <a href="history-gallery-edit.php?id=<?php echo $row['id']; ?>">
+                                        <button class="btn btn-sm btn-info mr-2"> <i class="fa-solid fa-pen-to-square"></i></button>
+                                    </a>
+                                    <a href="?delete_id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this employee?')">
+                                        <button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                    </a>
+                                </div>
+
+                            </td>
+                        </tr>
+                <?php
                     }
                 } else {
                     echo "Error: " . mysqli_error($conn); // Handle error if query execution fails
                 }
 
-            // Delete functionality
-            if (isset($_GET['delete_id'])) {
-                $delete_id = $_GET['delete_id'];
-                $sql_delete = "DELETE FROM history_galleries WHERE id = $delete_id";
+                // Delete functionality
+                if (isset($_GET['delete_id'])) {
 
-                if (mysqli_query($conn, $sql_delete)) {
-                    // Display success message
-                    $successMessage = "Record deleted successfully!";
+                    $delete_id = $_GET['delete_id'];
+                    $imageDelete = "SELECT image FROM history_galleries WHERE id = $delete_id";
+                    $imageQuery = mysqli_query($conn, $imageDelete);
+                    $result = mysqli_fetch_assoc($imageQuery);
 
-                    // Refresh the page after deletion
-                    header("Location: $_SERVER[PHP_SELF]");
-                    exit(); // Exit after redirection
-                } else {
-                    echo "Error deleting record: " . mysqli_error($conn);
+                    if (file_exists($result['image'])) {
+                        unlink($result['image']);
+                    }
+
+                    $sql_delete = "DELETE FROM history_galleries WHERE id = $delete_id";
+
+                    if (mysqli_query($conn, $sql_delete)) {
+                        // Display success message
+                        $successMessage = "Record deleted successfully!";
+
+                        // Refresh the page after deletion
+                        header("Location: $_SERVER[PHP_SELF]");
+                        exit(); // Exit after redirection
+                    } else {
+                        echo "Error deleting record: " . mysqli_error($conn);
+                    }
                 }
-            }
-            ?>
+                ?>
             </tbody>
         </table>
     </div>

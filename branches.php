@@ -21,7 +21,7 @@ $title = "All Branches";
 			<div class="col-12" style="z-index:500; ">
 				<div class="top_body_txt_part">
 					<h1 class="" style="font-size: 45px; line-height: 55px;">All Branches</h1>
-					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
+					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
 				</div>
 			</div>
 		</div>
@@ -51,29 +51,48 @@ $title = "All Branches";
 <!--================================all_branches_list section start here=======================-->
 <section class="all_branches_list">
 	<div class="container">
-		<div class="row">
-			<h2 class="fs-1 fw-bold text-center pb-5">Head Office (Bogura, Bangladesh)</h2>
-			<div class="col-md-4">
-				<div class="branch-address">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57962.67298025358!2d89.3634807926041!3d24.772602012127884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc5380c9b5d9d3%3A0x6b91dc7c9e5fc33b!2sSEO%20Expate%20Bangladesh%20Ltd!5e0!3m2!1sen!2sbd!4v1714296221553!5m2!1sen!2sbd" width="100%" height="325" style="border:1px solid #dee2e6; border-redius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
+	<div class="row">
+			<div class="Our_Branches_txt pb-5">
+				<h3>Our Branches</h3>
 			</div>
-			<div class="col-md-4">
-				<div class="branch-img">
-					<img src="frontend/images/branch1.png" alt=" Head Office (Bogura, Bangladesh)" description=" Head Office (Bogura, Bangladesh)" class="img-thumbnail">
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="branch-img">
-					<iframe width="100%" height="315" src="https://www.youtube.com/embed/5Ahe4uz3BrE?si=WUjc2lQPFMGXyRDS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="border:1px solid #dee2e6; border-redius:10px;" allowfullscreen></iframe>
-				</div>
-			</div>
+			<?php
+			$i = 1;
+			$qry = "SELECT * FROM branches ORDER BY id DESC";
+			$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+			if ($result) {
+				while ($row = mysqli_fetch_assoc($result)) {
+			?>
+					<div class="col-md-4 pt-3">
+						<div class="card" >
+							<img src="<?php
+										$imagePath = $row['image'];
+										$imageName = basename($imagePath);
+										$newImagePath = 'pages/' . $imageName;
+										echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['name'] ?>">
+							<div class="card-body">
+								<h5 class="card-title"><?php echo $row['name'] ?></h5>
+								<p class="card-text"><?php echo $row['address'] ?></p>
+								<div><a href="branch.php?id=<?php echo $row['id'] ?>" class="text-success">View Location Map →</a></div>
+								<div class="pt-2"><a href="branch.php?id=<?php echo $row['id'] ?>" class="text-success">See More →</a></div>
+							</div>
+						</div>
+					</div>
+			<?php
+				}
+			} else {
+				echo "Error: " . mysqli_error($conn);
+			}
+			?>
+
+
 		</div>
 	</div>
 </section>
-<!--================================all_branches_list section end here=======================-->
-<!--================================Core_Team section start here=======================-->
-<section class="Core_Team allbranchlist" style="background: unset; padding-top: unset;">
+
+
+
+<!-- <section class="Core_Team allbranchlist" style="background: unset; padding-top: unset;">
 	<div class="container">
 		<div class="row">
 			<div class="Core_Team_txt pb-2">
@@ -180,8 +199,8 @@ $title = "All Branches";
 			</div>
 		</div>
 	</div>
-</section>
-<!--================================Core_Team section end here=======================-->
+</section> -->
+
 
 <!--================================top_ready_start section start here=======================-->
 <section class="top_ready_start">
@@ -193,12 +212,12 @@ $title = "All Branches";
 					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
 				</div>
 				<div class="top-body-button pt-5">
-					<a type="button" href="contact.html">Get In Touch</a>
+					<a type="button" href="contact.php">Get In Touch</a>
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="top_ready_start_img text-left">
-					<img src="images/95991_prev_ui.png" alt=" We can build your story" description=" We can build your story">
+					<img src="frontend/images/95991_prev_ui.png" alt=" We can build your story" description=" We can build your story">
 				</div>
 			</div>
 		</div>
@@ -212,7 +231,7 @@ $title = "All Branches";
 	<div class="container">
 		<div class="row">
 			<div class="PAY_IMG">
-				<img src="images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
 			</div>
 		</div>
 	</div>

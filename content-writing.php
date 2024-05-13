@@ -16,17 +16,17 @@ ob_start();
 				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 					<ul class="navbar-nav ">
 						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="content_writing.html" data-bs-toggle="dropdown">Content Writing</a>
+							<a class="nav-link  dropdown-toggle" href="content_writing.php" data-bs-toggle="dropdown">Content Writing</a>
 							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="blog_post.html">Blog Post Writing</a></li>
-								<li><a class="dropdown-item" href="academic_post.html">Academic Writing</a></li>
-								<li><a class="dropdown-item" href="copy_writing.html">Copywriting</a></li>
-								<li><a class="dropdown-item" href="static_web.html">Static Web Pages</a></li>
-								<li><a class="dropdown-item" href="product_description.html">Product Description Writing</a></li>
-								<li><a class="dropdown-item" href="press_release.html">Press Release Writing</a></li>
+								<li><a class="dropdown-item" href="blog_post.php">Blog Post Writing</a></li>
+								<li><a class="dropdown-item" href="academic_post.php">Academic Writing</a></li>
+								<li><a class="dropdown-item" href="copy_writing.php">Copywriting</a></li>
+								<li><a class="dropdown-item" href="static_web.php">Static Web Pages</a></li>
+								<li><a class="dropdown-item" href="product_description.php">Product Description Writing</a></li>
+								<li><a class="dropdown-item" href="press_release.php">Press Release Writing</a></li>
 							</ul>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="content_pricing.html"> Pricing</a></li>
+						<li class="nav-item"><a class="nav-link" href="content_pricing.php"> Pricing</a></li>
 					</ul>
 				</div>
 			</div>
@@ -45,7 +45,7 @@ ob_start();
 					<p style="text-align:justify; margin-top: -30px;">Content Writing Service is a vital factor for a website to catch the visitor's attention and rank on search engines. The goal of content writing is to inform and educate readers about particular topics. In addition, content can increase your web traffic, and give you huge brand awareness. SEO Expate Bangladesh Ltd has a dedicated team of content writers who have vast experience. Here, we will ensure you 100% unique, research-based SEO content that will add great value to your site. </p>
 				</div>
 				<div class="top-body-button pt-3">
-					<a type="button" href="contact.html">Contact Us</a>
+					<a type="button" href="contact.php">Contact Us</a>
 				</div>
 			</div>
 			<div class="col-md-5 m-auto" style="z-index:500;">
@@ -62,7 +62,7 @@ ob_start();
 		<div class="row">
 			<div class="col-12" style="z-index:500;">
 				<div class="breadcumb_gph d-flex">
-					<a class="text-light" href="home.html" class="text-success">
+					<a class="text-light" href="home.php" class="text-success">
 						<p>Home</p>
 					</a>
 					<p class="text-light px-3 ">»</p>
@@ -105,7 +105,7 @@ ob_start();
 				<hr>
 			</div>
 			<div class="col-md-4">
-				<a href="blog_post.html">
+				<a href="blog_post.php">
 					<div class="card">
 						<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Image">
 						<div class="card-body">
@@ -124,7 +124,7 @@ ob_start();
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="academic_post.html">
+				<a href="academic_post.php">
 					<div class="card hover-zoom">
 						<img src="frontend/images/corporate-website2.jpg" class="card-img-top" alt="Image">
 						<div class="card-body pb-5">
@@ -141,7 +141,7 @@ ob_start();
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="copy_writing.html">
+				<a href="copy_writing.php">
 					<div class="card">
 						<img src="frontend/images/Bloging-website.jpg" class="card-img-top" alt="Image">
 						<div class="card-body pb-5">
@@ -160,7 +160,7 @@ ob_start();
 		</div>
 		<div class="row pt-5">
 			<div class="col-md-4">
-				<a href="static_web.html">
+				<a href="static_web.php">
 					<div class="card">
 						<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
 						<div class="card-body">
@@ -174,7 +174,7 @@ ob_start();
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="product_description.html">
+				<a href="product_description.php">
 					<div class="card">
 						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
 						<div class="card-body pb-4">
@@ -189,7 +189,7 @@ ob_start();
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="press_release.html">
+				<a href="press_release.php">
 					<div class="card hover-zoom">
 						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
 						<div class="card-body pb-5">
@@ -245,7 +245,7 @@ ob_start();
 					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
 				</div>
 				<div class="top-body-button pt-5">
-					<a type="button" href="contact.html">Get In Touch</a>
+					<a type="button" href="contact.php">Get In Touch</a>
 				</div>
 			</div>
 			<div class="col-md-6">

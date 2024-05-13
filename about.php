@@ -74,7 +74,7 @@ $conn = $db->get_connection();
 				<h3><span> What </span> We Do</h3>
 				<p style="text-align: justify;">SEO Expate is passionate about empowering businesses with the power of technology. Our team of passionate experts in an IT company is dedicated to using modern technology to solve modern-day problems. Since 2013, we've been helping businesses of all sizes across various industries achieve their goals. We provide Digital marketing, SEO, Web development, Mobile app development, Software development, Graphics design, Content Writing, and many more services. Also, we have a training program where we work to employ young people through freelancing.Our team holds the industry's leading certifications, ensuring you receive the best quality service and support. Whether you're a startup or a large enterprise, we offer flexible and customized solutions that will help your business. Additionally, we offer expert guidance on how to utilize technology properly to maximize your business potential.</p>
 				<div class="top-body-button pt-2">
-					<a type="button" href="about.php">Know More About Us</a>
+					<a type="button" href="contact.php">Know More About Us</a>
 				</div>
 			</div>
 		</div>
@@ -411,7 +411,7 @@ $conn = $db->get_connection();
 			<h3 class="pb-3 text-light">Core Service Areas</h3>
 			<p class="text-light pb-4" style="text-align: left;">SEO Expate delivers IT services and tech solutions and provides higher value to clients. Our service areas are Software Development, Mobile App Development, Digital Marketing, Graphics Design, Content Writing, and many more. Also, we have a freelancing training program that helps thousands of youth to build their career.</p>
 			<div class="col-md-3">
-				<a href="web_development.html"><img src="frontend/images/core-servicr.png" alt="image"></a>
+				<a href="web_development.php"><img src="frontend/images/core-servicr.png" alt="image"></a>
 				<h5 class="text-light pt-3">Web Development</h5>
 			</div>
 			<div class="col-md-3">
@@ -419,17 +419,17 @@ $conn = $db->get_connection();
 				<h5 class="text-light pt-3">Software Development</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="app_development.html"><img src="frontend/images/core-service-areaer.png" alt="image"></a>
+				<a href="app_development.php"><img src="frontend/images/core-service-areaer.png" alt="image"></a>
 				<h5 class="text-light pt-3">Mobile App Development</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="domain_hosting.html"><img src="frontend/images/core-servicer.png" alt="image"></a>
+				<a href="domain_hosting.php"><img src="frontend/images/core-servicer.png" alt="image"></a>
 				<h5 class="text-light pt-3">Domain & Hosting</h5>
 			</div>
 		</div>
 		<div class="row pt-3">
 			<div class="col-md-3">
-				<a href="photo_editor.html"><img src="frontend/images/iot-expertiser.png" alt="image"></a>
+				<a href="photo_editor.php"><img src="frontend/images/iot-expertiser.png" alt="image"></a>
 				<h5 class="text-light pt-3">Graphic Design</h5>
 			</div>
 			<div class="col-md-3">
@@ -1172,7 +1172,7 @@ $conn = $db->get_connection();
 				<img src="frontend/images/global-presencer-1024x490.png" alt="image">
 			</div>
 			<div class="top-body-button pt-3">
-				<a type="button" href="contact.html">See Our Offices</a>
+				<a type="button" href="contact.php">See Our Offices</a>
 			</div>
 		</div>
 	</div>
@@ -1188,7 +1188,7 @@ $conn = $db->get_connection();
 				<h4 class="pt-2 pb-2">the Power of Technology</h4>
 				<p>SEO Expate is your guide to the ultimate technology solutions. Embark on your journey today and discover how we utilize updated tools to tackle your biggest challenges.</p>
 				<div class="top-body-button pt-3">
-					<a type="button" href="contact.html">Start Your Journey with Us</a>
+					<a type="button" href="contact.php">Start Your Journey with Us</a>
 				</div>
 			</div>
 		</div>
