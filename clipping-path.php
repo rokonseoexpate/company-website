@@ -829,10 +829,6 @@
         </div>
     </section>
     <!--================================Thrive_Globally section end here=======================-->
-
-
-
-
 <?php
 
 $main_content = ob_get_clean();
