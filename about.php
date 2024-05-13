@@ -68,7 +68,7 @@ $conn = $db->get_connection();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="frontend/images/18.jpg" alt="image">
+				<img src="frontend/images/18.jpg" class="perfect-image" alt="image">
 			</div>
 			<div class="col-md-6">
 				<h3><span> What </span> We Do</h3>
@@ -446,7 +446,7 @@ $conn = $db->get_connection();
 			</div>
 		</div>
 		<div class="top-body-button pt-5">
-			<a type="button" href="#">See More Services</a>
+			<a type="button" href="services.php">See More Services</a>
 		</div>
 	</div>
 </section>
