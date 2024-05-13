@@ -16,17 +16,17 @@ ob_start();
 				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 					<ul class="navbar-nav ">
 						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="content_writing.php" data-bs-toggle="dropdown">Content Writing</a>
+							<a class="nav-link  dropdown-toggle" href="content-writing.php" data-bs-toggle="dropdown">Content Writing</a>
 							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="blog_post.php">Blog Post Writing</a></li>
-								<li><a class="dropdown-item" href="academic_post.php">Academic Writing</a></li>
-								<li><a class="dropdown-item" href="copy_writing.php">Copywriting</a></li>
-								<li><a class="dropdown-item" href="static_web.php">Static Web Pages</a></li>
-								<li><a class="dropdown-item" href="product_description.php">Product Description Writing</a></li>
-								<li><a class="dropdown-item" href="press_release.php">Press Release Writing</a></li>
+								<li><a class="dropdown-item" href="blog-post.php">Blog Post Writing</a></li>
+								<li><a class="dropdown-item" href="academic-post.php">Academic Writing</a></li>
+								<li><a class="dropdown-item" href="copy-writing.php">Copywriting</a></li>
+								<li><a class="dropdown-item" href="static-web.php">Static Web Pages</a></li>
+								<li><a class="dropdown-item" href="product-description.php">Product Description Writing</a></li>
+								<li><a class="dropdown-item" href="press-release.php">Press Release Writing</a></li>
 							</ul>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="content_pricing.php"> Pricing</a></li>
+						<li class="nav-item"><a class="nav-link" href="content-pricing.php"> Pricing</a></li>
 					</ul>
 				</div>
 			</div>
@@ -105,7 +105,7 @@ ob_start();
 				<hr>
 			</div>
 			<div class="col-md-4">
-				<a href="blog_post.php">
+				<a href="blog-post.php">
 					<div class="card">
 						<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Image">
 						<div class="card-body">
@@ -124,7 +124,7 @@ ob_start();
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="academic_post.php">
+				<a href="academic-post.php">
 					<div class="card hover-zoom">
 						<img src="frontend/images/corporate-website2.jpg" class="card-img-top" alt="Image">
 						<div class="card-body pb-5">
@@ -141,7 +141,7 @@ ob_start();
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="copy_writing.php">
+				<a href="copy-writing.php">
 					<div class="card">
 						<img src="frontend/images/Bloging-website.jpg" class="card-img-top" alt="Image">
 						<div class="card-body pb-5">
@@ -160,7 +160,7 @@ ob_start();
 		</div>
 		<div class="row pt-5">
 			<div class="col-md-4">
-				<a href="static_web.php">
+				<a href="static-web.php">
 					<div class="card">
 						<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
 						<div class="card-body">
@@ -174,7 +174,7 @@ ob_start();
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="product_description.php">
+				<a href="product-description.php">
 					<div class="card">
 						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
 						<div class="card-body pb-4">
@@ -189,7 +189,7 @@ ob_start();
 				</a>
 			</div>
 			<div class="col-md-4">
-				<a href="press_release.php">
+				<a href="press-release.php">
 					<div class="card hover-zoom">
 						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
 						<div class="card-body pb-5">
