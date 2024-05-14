@@ -1,6 +1,6 @@
 <?php
-    $title = "Home";
-    ob_start();
+$title = "Home";
+ob_start();
 ?>
 
 	<!--================================photo editor sub Header section end here=======================-->
@@ -208,41 +208,109 @@
 	</section>
 	<!--================================top-body section end here=======================-->
 
-	<!--================================cliping_service section start here=======================-->
-	<section class="cliping_service photo_edit_all_service graphicdesigns" style="background: unset; background-image: url(images/Graphic-Design-banner.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6" style="z-index:500;">
-					<div class="top_about_us_txt" style="z-index:500;">
-						<nav aria-label="breadcrumb">
+<!--================================cliping_service section start here=======================-->
+<section class="cliping_service photo_edit_all_service graphicdesigns" style="background: unset; background-image: url(images/Graphic-Design-banner.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6" style="z-index:500;">
+				<div class="top_about_us_txt" style="z-index:500;">
+					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
 							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Graphic Design</li>
 						</ol>
-						</nav>
-					</div>
-					<div class="cliping_service_txt pb-2 pt-2"><h6 class="text-light">Graphic Design Services</h6></div>
-					<p class="pt-3 text-light" >Graphic Designs Service acts like visual content to build up a communication. In fact, when the world was not developing properly people used pictures to communicate with each other. But now in the modern development period, people love to see graphics work in a normal image. For that reason, the Philippines Photo Editor brings golden options for the customers. Above all, we are offering every single consumer graphic design work at a wholesale price. Therefore, we develop the images and photos as per customer requirements. For instance, we use Adobe Photoshop, illustrator, gimp, affinity pro, and much more software. But maximum work we try to do better. Finally, when we deliver to our consumers they accept our design from the heart.</p>
+					</nav>
 				</div>
-				<div class="col-md-6" style="z-index:500;">
-					<div class="clip_img">
-						<img src="frontend/images/Graphic-Design-service-image-1024x768.jpg" alt=" Graphic Design Services" description=" Graphic Design Services">
-					</div>
+				<div class="cliping_service_txt pb-2 pt-2">
+					<h6 class="text-light">Graphic Design Services</h6>
+				</div>
+				<p class="pt-3 text-light">Graphic Designs Service acts like visual content to build up a communication. In fact, when the world was not developing properly people used pictures to communicate with each other. But now in the modern development period, people love to see graphics work in a normal image. For that reason, the Philippines Photo Editor brings golden options for the customers. Above all, we are offering every single consumer graphic design work at a wholesale price. Therefore, we develop the images and photos as per customer requirements. For instance, we use Adobe Photoshop, illustrator, gimp, affinity pro, and much more software. But maximum work we try to do better. Finally, when we deliver to our consumers they accept our design from the heart.</p>
+			</div>
+			<div class="col-md-6" style="z-index:500;">
+				<div class="clip_img">
+					<img src="frontend/images/Graphic-Design-service-image-1024x768.jpg" alt=" Graphic Design Services" description=" Graphic Design Services">
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================================cliping_service section end here=======================-->
+	</div>
+</section>
+<!--================================cliping_service section end here=======================-->
 
-	<!--================================editor_texts section start here=======================-->
-    <section class=" graphicdesigns_content" style="background: var(--bg-secondary-color) !important;">
-        <div class="container">
-            <div class="row">
-                <p>To summarize, Graphic Designs Service is not hard to realize. In fact, if you take service from the Philippines Photo Editor or other companies. After that, they will introduce you to their graphics experts. Therefore, you can discuss your requirements with them and get extra benefits. To clarify, for consumers’ satisfaction our designer support is active 24/7. Because any time in the world we can get knocked for it we have to prepare ourselves. Finally, we love to suggest you before taking any decision feel free to communicate with us.</p>                
-            </div>
-        </div>
-    </section>
-	<!--================================editor_texts section end here=======================-->
+<!--================================editor_texts section start here=======================-->
+<section class=" graphicdesigns_content" style="background: var(--bg-secondary-color) !important;">
+	<div class="container">
+		<div class="row">
+			<p>To summarize, Graphic Designs Service is not hard to realize. In fact, if you take service from the Philippines Photo Editor or other companies. After that, they will introduce you to their graphics experts. Therefore, you can discuss your requirements with them and get extra benefits. To clarify, for consumers’ satisfaction our designer support is active 24/7. Because any time in the world we can get knocked for it we have to prepare ourselves. Finally, we love to suggest you before taking any decision feel free to communicate with us.</p>
+		</div>
+	</div>
+</section>
+<!--================================editor_texts section end here=======================-->
+
+<!--================================Our_Branches section start here=======================-->
+<section class="Our_Branches type_of graphic_link graphicdesigns_content" style="background: unset; ">
+	<div class="container">
+		<div class="row">
+			<div class="seasonthree season_three pb-5">
+				<p class="text__three"> Illustrator </p>
+			</div>
+			<h4 class="pt-2">Graphic Design </h4>
+			<p class="">In conclusion, the Philippines Photo Editor website aid in better campaigns and faster conversions with your target customer if you purchase from us any service. This upper included whole service gets you the most crucial factor which would be the benefits of your increased business profit. Then again, we give the design services which will be must so perfect than others. We also keep on ready our service with you 24 hours daily for providing these services.</p>
+			<div class="col-md-3 pt-5">
+				<a href="logo_design.html">
+					<div class="card">
+						<img src="frontend/images/Logo-Design-Banner.webp" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
+						<div class="card-body text-center">
+							<h5 class="card-title text-dark text-center pb-3">Logo Design</h5>
+							<div class="button text-center pt-2"><a type="button" href="logo_design.html" class="text-light text-center"> Click Here</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-3 pt-5">
+				<a href="t-shirt-design.html">
+					<div class="card hover-zoom">
+						<img src="frontend/images/T-Shirt-Design-Banner.jpg" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
+						<div class="card-body text-center">
+							<h5 class="card-title text-dark text-center pb-3">T-Shirt Design</h5>
+							<div class="button text-center pt-2"><a type="button" href="t-shirt-design.html" class="text-light text-center"> Click Here</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-3 pt-5">
+				<a href="banner_design.html">
+					<div class="card">
+						<img src="frontend/images/Banner-design-image.jpg" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
+						<div class="card-body text-center">
+							<h5 class="card-title text-center pb-3 text-dark">Banner Design</h5>
+							<div class="button text-center pt-2"><a type="button" href="banner_design.html" class="text-light text-center"> Click Here</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-3 pt-5">
+				<a href="#">
+					<div class="card">
+						<img src="frontend/images/Illustrator-Art-Work-banner.jpg" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
+						<div class="card-body text-center">
+							<h5 class="card-title text-dark text-center pb-3">Illustrator Art Work</h5>
+							<div class="button text-center pt-2"><a type="button" href="#" class="text-light text-center"> Click Here</a></div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================================Our_Branches section end here=======================-->
+
+<!--================================editor_texts section start here=======================-->
+<section class=" graphicdesigns_content" style="background: var(--bg-secondary-color) !important;">
+	<div class="container">
+		<div class="row">
+			<div class="newudcode pb-3">
+				<h5>Henceforth, the Philippines Photo Editor website designers provide many multitudes of graphics designs such are:</h5>
+			</div>
 
 	<!--================================Our_Branches section start here=======================-->
 	<section class="Our_Branches type_of graphic_link graphicdesigns_content"  style="background: unset; " >
@@ -299,8 +367,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================================Our_Branches section end here=======================-->
+	</div>
+</section>
+<!--================================editor_texts section end here=======================-->
 
 	<!--================================editor_texts section start here=======================-->
 	<section class=" graphicdesigns_content" style="background: var(--bg-secondary-color) !important;">
@@ -479,21 +548,22 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<!--================================editor_all_services section end here=======================-->
+	</div>
+</section>
+<!--================================editor_all_services section end here=======================-->
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                 	<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-	<!--================================Thrive_Globally section end here=======================-->
-<?php 
+<!--================================Thrive_Globally section start here=======================-->
+<section class="PAY_MENT" style="padding: 20px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="PAY_IMG">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+			</div>
+		</div>
+	</div>
+</section>
+<!--================================Thrive_Globally section end here=======================-->
+<?php
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>
