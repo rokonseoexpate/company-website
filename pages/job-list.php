@@ -5,10 +5,28 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
+// Delete functionality
+if (isset($_GET['delete_id'])) {
+    $delete_id = $_GET['delete_id'];
+    $sql_delete = "DELETE FROM jobs WHERE id = ?";
+    $stmt = $conn->prepare($sql_delete);
+    $stmt->bind_param("i", $delete_id);
+    
+    if ($stmt->execute()) {
+        // Display success message
+        $successMessage = "Record deleted successfully!";
+        
+        // Refresh the page after deletion
+        header("Location: $_SERVER[PHP_SELF]");
+        exit(); // Exit after redirection
+    } else {
+        echo "Error deleting record: " . $stmt->error;
+    }
+}
+
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
-
     <div class="card px-3">
         <div class="d-flex justify-content-between align-items-center">
             <div class="card-header">
@@ -28,18 +46,17 @@ $conn = $db->get_connection();
                         <th>Job Type</th>
                         <th>Vacancies</th>
                         <th>Deadline</th>
-                        <!-- <th>Apply Link</th> -->
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    $i = 1;
                     $qry = "SELECT * FROM jobs ORDER BY id DESC";
-                    $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
-
+                    $result = $conn->query($qry);
+                    
                     if ($result) {
-                        while ($row = mysqli_fetch_assoc($result)) {
+                        $i = 1;
+                        while ($row = $result->fetch_assoc()) {
                     ?>
                             <tr>
                                 <td><?php echo $i++; ?></td>
@@ -47,7 +64,6 @@ $conn = $db->get_connection();
                                 <td><?php echo $row['job_type']; ?></td>
                                 <td><?php echo $row['vacancies']; ?></td>
                                 <td><?php echo $row['deadline']; ?></td>
-                                <!-- <td><?php echo $row['apply_link']; ?></td> -->
                                 <td class="align-middle">
                                     <div class="d-inline-flex justify-content-center">
                                         <a href="job-edit.php?id=<?php echo $row['id']; ?>">
@@ -60,31 +76,12 @@ $conn = $db->get_connection();
                     <?php
                         }
                     } else {
-                        echo "Error: " . mysqli_error($conn); // Handle error if query execution fails
-                    }
-
-                    // Delete functionality
-                    if (isset($_GET['delete_id'])) {
-                        $delete_id = $_GET['delete_id'];
-                        $sql_delete = "DELETE FROM jobs WHERE id = $delete_id";
-
-                        if (mysqli_query($conn, $sql_delete)) {
-                            // Display success message
-                            $successMessage = "Record deleted successfully!";
-
-                            // Refresh the page after deletion
-                            header("Location: $_SERVER[PHP_SELF]");
-                            exit(); // Exit after redirection
-                        } else {
-                            echo "Error deleting record: " . mysqli_error($conn);
-                        }
+                        echo "Error: " . $conn->error;
                     }
                     ?>
                 </tbody>
             </table>
         </div>
-
-
     </div>
 </div>
 

@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="title">Title <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="title" name="title" placeholder="title">
+                        <input type="text" class="form-control" id="title" name="title" placeholder="title" required>
                     </div>
                 </div>
 

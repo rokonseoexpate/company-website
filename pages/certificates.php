@@ -66,7 +66,7 @@ if (isset($_GET['id'])) {
                                 <img class="w-50" style="height: 50px;" src="<?php echo $newImagePath; ?>" alt="">
                             </td>
 
-                            <td><?php echo substr($row['description'], 1, 50); ?></td>
+                            <td><?php echo strip_tags($row['description']); ?></td>
 
                             <td class="align-middle">
                                 <div class="d-inline-flex justify-content-center">

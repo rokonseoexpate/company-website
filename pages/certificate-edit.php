@@ -118,7 +118,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="shortDescription">Alt Description</label>
-                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control"  cols="30" rows="10"><?php echo $row['alt_description']?></textarea>
+                        <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control"  cols="30" rows="10"><?php echo strip_tags($row['alt_description']) ?></textarea>
                     </div>
                 </div>
 
