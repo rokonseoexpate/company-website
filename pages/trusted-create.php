@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="name">Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="name" name="name" value="<?php echo isset($name) ? htmlspecialchars($name) : ''; ?>" placeholder="Name">
+                        <input type="text" class="form-control" id="name" name="name" required value="<?php echo isset($name) ? htmlspecialchars($name) : ''; ?>" placeholder="Name">
                         <div id="nameError" class="error text-danger"></div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="orderBy">Priority <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="orderBy" value="<?php echo isset($orderBy) ? htmlspecialchars($orderBy) : ''; ?>" name="orderBy" placeholder="Priority" min="1">
+                        <input type="number" class="form-control" id="orderBy" required value="<?php echo isset($orderBy) ? htmlspecialchars($orderBy) : ''; ?>" name="orderBy" placeholder="Priority" min="1">
                         <div id="orderByError" class="error text-danger"></div>
                     </div>
                 </div>

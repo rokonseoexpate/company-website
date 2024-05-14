@@ -52,7 +52,7 @@ if (isset($_POST['submit'])) {
                     <div class="form-group">
                         <label for="title">Name</label>
                         <input type="text" class="form-control" id="title" name="name" value="<?php echo $row['name'] ?>" placeholder="title">
-                        <span id="titleErr" class="text-danger"><?php echo $titleErr; ?></span>
+                        <span id="titleErr" class="text-danger"><?php echo $titleErr ?? ""; ?></span>
                     </div>
                 </div>
 

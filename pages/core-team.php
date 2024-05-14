@@ -5,39 +5,47 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
-//show team information
-$qry = "SELECT * FROM teams order by id desc";
+// Show team information
+$qry = "SELECT * FROM teams ORDER BY id DESC";
 $result = $conn->query($qry);
+
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    $errorMessage = '';
-
     // Fetch image path
-    $sql_select_image = "SELECT image FROM teams WHERE id=$id ";
-
+    $sql_select_image = "SELECT image FROM teams WHERE id=$id";
     $result_select_image = $conn->query($sql_select_image);
-    if ($result_select_image->num_rows > 0) {
-        $row = $result_select_image->fetch_assoc();
-        $imagePath = $row['image'];
 
-        // Delete image file
-        if (file_exists($imagePath)) {
-            unlink($imagePath);
-        }
+    if ($result_select_image) {
+        if ($result_select_image->num_rows > 0) {
+            $row = $result_select_image->fetch_assoc();
+            $imagePath = $row['image'];
 
-        $sql = "DELETE FROM teams WHERE id=$id";
+            // Delete image file
+            if (file_exists($imagePath)) {
+                if (!unlink($imagePath)) {
+                    $errorMessage = "Error deleting image file!";
+                }
+            } else {
+                $errorMessage = "Image file not found!";
+            }
 
-        if ($conn->query($sql) === TRUE) {
-            $errorMessage = "Successfully deleted record!";
+            // Delete record from database
+            $sql = "DELETE FROM teams WHERE id=$id";
+            if ($conn->query($sql) === TRUE) {
+                $successMessage = "Successfully deleted record!";
+            } else {
+                $errorMessage = "Error deleting record from database: " . $conn->error;
+            }
         } else {
-            $errorMessage = "Successfully deleted record!";
+            $errorMessage = "Record with ID=$id not found!";
         }
-    }
+    } 
 }
-
 ?>
+
+
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
     <div class="card px-3">

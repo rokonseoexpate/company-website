@@ -54,16 +54,16 @@ if (isset($_GET['id'])) {
             <div class="row">
                 <div class="form-group col-md-6">
                     <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="<?php echo isset($title) ? $title : ''; ?>">
+                    <input type="text" class="form-control" id="title" name="title" required placeholder="Title" value="<?php echo isset($title) ? $title : ''; ?>">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="sort_by">Priority</label>
-                    <input type="number" class="form-control" id="sort_by" name="sort_by" placeholder="Priority" value="<?php echo isset($sort_by) ? $sort_by : ''; ?>">
+                    <input type="number" class="form-control" id="sort_by" name="sort_by" required placeholder="Priority" value="<?php echo isset($sort_by) ? $sort_by : ''; ?>">
                 </div>
 
                 <div class="form-group col-md-12">
                     <label for="link">Link</label>
-                    <input type="text" class="form-control" id="link" name="link" placeholder="Youtube Link" value="<?php echo isset($link) ? $link : ''; ?>">
+                    <input type="text" class="form-control" id="link" name="link" required placeholder="Youtube Link" value="<?php echo isset($link) ? $link : ''; ?>">
                 </div>
 
                 <div class="form-group col-md-6">
