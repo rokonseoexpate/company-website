@@ -102,7 +102,6 @@ ob_start();
 			</div>
 		</div>
 	</div>
-	</div>
 </section>
 <!--================================cliping_service section end here=======================-->
 
