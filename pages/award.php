@@ -66,7 +66,7 @@ if (isset($_GET['id'])) {
                                 <img class="w-50" style="height: 50px;" src="<?php echo $newImagePath; ?>" alt="">
                             </td>
 
-                            <td><?php echo substr($row['description'], 1, 50); ?></td>
+                            <td><?php echo strip_tags($row['description']); ?></td>
 
                             <td class="text-right">
                                 <a href="award-details.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-success"><i class="fa-solid fa-eye"></i></a>

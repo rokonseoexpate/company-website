@@ -86,14 +86,14 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="name">Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="name" name="name" value="<?php echo $row['name'] ?>" placeholder="name">
+                        <input type="text" class="form-control" id="name" name="name" required value="<?php echo $row['name'] ?>" placeholder="name">
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="orderBy">Priority <span class="text-danger">*</span></label>
-                        <input type="text" min="1" class="form-control" id="orderBy" name="orderBy" value="<?php echo $row['orderBy'] ?>" placeholder="Priority">
+                        <input type="number" min="1" class="form-control" required id="orderBy" name="orderBy" value="<?php echo $row['orderBy'] ?>" placeholder="Priority">
                     </div>
                 </div>
 

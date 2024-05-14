@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="name">Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<?php echo htmlspecialchars($name); ?>">
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Name" value="<?php echo htmlspecialchars($name); ?>">
                         <div id="nameError" class="error text-danger"></div>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="orderBy">Priority <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="orderBy" name="orderBy" placeholder="Priority" value="<?php echo htmlspecialchars($orderBy); ?>">
+                        <input type="number" class="form-control" id="orderBy" name="orderBy" required placeholder="Priority" value="<?php echo htmlspecialchars($orderBy); ?>">
                         <div id="orderByError" class="error text-danger"></div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="type">Type <span class="text-danger">*</span></label>
-                        <select name="type" id="type" class="form-control">
+                        <select name="type" id="type" class="form-control" required>
                             <option value="">Select Type</option>
                             <option value="core_team" <?php if ($type == 'core_team') echo 'selected'; ?>>Core Team</option>
                             <option value="advisor" <?php if ($type == 'advisor') echo 'selected'; ?>>Advisor</option>
@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="designation">Designation <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="designation" name="designation" placeholder="Designation" value="<?php echo htmlspecialchars($designation); ?>">
+                        <input type="text" class="form-control" id="designation" required name="designation" placeholder="Designation" value="<?php echo htmlspecialchars($designation); ?>">
                         <div id="designationError" class="error text-danger"></div>
                     </div>
                 </div>

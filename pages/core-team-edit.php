@@ -107,7 +107,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="orderBy">Priority <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="orderBy" name="orderBy" placeholder="Priority" value="<?php echo $orderBy ?>">
+                        <input type="number" class="form-control" id="orderBy" name="orderBy" placeholder="Priority" value="<?php echo $orderBy ?>">
                         <div id="orderByError" class="error text-danger"></div>
                     </div>
                 </div>
