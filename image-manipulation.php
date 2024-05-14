@@ -168,7 +168,7 @@
 				                </div> 
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="graphic_design.php" data-bs-toggle="dropdown"> Graphic Design </a>
+				                <a class="nav-link  dropdown-toggle" href="graphic-design.php" data-bs-toggle="dropdown"> Graphic Design </a>
 				                <ul class="dropdown-menu dropdown-menu-end">
 				                  <li><a class="dropdown-item" href="t-shirt-design.php"> T-Shirt Design</a></li>
 				                  <li><a class="dropdown-item" href="logo_design.php">Logo Designs Service</a></li>

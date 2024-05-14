@@ -4,47 +4,7 @@
 ?>
 
 	<!--================================photo editor sub Header section end here=======================-->
-	<div class="photo_edipth">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-dark ">
-				<div class="container-fluid ">
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-				        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-				    </button>
-				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-				        <ul class="navbar-nav ">
-				        	<li class="nav-item"><a class="nav-link" href="traning.html"> Training</a></li>
-				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="regular-course.html" data-bs-toggle="dropdown">Regular Course / Training</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="website-course.html">Website</a></li>
-				                  <li><a class="dropdown-item" href="php-course.html">PHP</a></li>
-				                  <li><a class="dropdown-item" href="laravel-course.html">Laravel</a></li>
-				                  <li><a class="dropdown-item" href="aspnet-course.html">ASP.NET</a></li>
-				                  <li><a class="dropdown-item" href="python-course.html">Python</a></li>
-				                  <li><a class="dropdown-item" href="wordpress-course.html">WordPress</a></li>
-				                  <li><a class="dropdown-item" href="graphics-course.html">Graphics Design</a></li>
-				                  <li><a class="dropdown-item" href="digital-marketing-course.html">Digital Marketing</a></li>
-				                </ul>
-				            </li>
-				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="it-traning.html" data-bs-toggle="dropdown">IT Training</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="microsoft-office-course.html"> Microsoft Office</a></li>
-				                  <li><a class="dropdown-item" href="software-development-course.html">Software Development Course</a></li>
-				                  <li><a class="dropdown-item" href="app-development-course.html">App Development Course</a></li>
-				                  <li><a class="dropdown-item" href="adobe-course.html">Adobe / Freelancing</a></li>
-				                  <li><a class="dropdown-item" href="server-administration-course.html">Network & Server Administration</a></li>
-				                  <li><a class="dropdown-item" href="it-security-course.html">IT Security, Service & Business Management</a></li>
-				                  <li><a class="dropdown-item" href="machine-learning-course.html">AI / Machine Learning / Robotics</a></li>
-				                </ul>
-				            </li>
-				        </ul>
-				    </div>
-				</div> 
-			</nav>      
-		</div>
-	</div>
+	<?php include 'includes/course-nav.php'?>
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
@@ -93,8 +53,8 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item "><a href="traning.html" class="text-light">Our Training</a></li>
+						    <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Software Development</li>
 						  </ol>
 						</nav>
@@ -634,7 +594,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">
