@@ -3,54 +3,7 @@
     ob_start();
 ?>
 	<!--================================photo editor sub Header section end here=======================-->
-	<div class="photo_edipth">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-dark ">
-				<div class="container-fluid ">
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-				        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-				    </button>
-				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-				        <ul class="navbar-nav ">
-				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="seo_service.html" data-bs-toggle="dropdown">SEO Services</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="ecommerce_seo.html"> eCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="amazon_seo.html">Amazon SEO</a></li>
-				                  <li><a class="dropdown-item" href="b2b_seo.html">B2B SEO</a></li>
-				                  <li><a class="dropdown-item" href="shopify_seo.html">Shopify SEO</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_seo.html">WordPress SEO</a></li>
-				                  <li><a class="dropdown-item" href="woocommerce_seo.html">WooCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="lead_seo.html">Lead Generation SEO</a></li>
-				                  <li><a class="dropdown-item" href="nopcommerce_seo.html">NopCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="magento_seo.html">Magento SEO</a></li>
-				                  <li><a class="dropdown-item" href="volusion_seo.html">Volusion SEO</a></li>
-				                  <li><a class="dropdown-item" href="bigcommerce_seo.html">BigCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="consulting_seo.html">SEO Consulting</a></li>
-				                </ul>
-				            </li>
-				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="ppc_paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="amazon_ppc.html"> Amazon PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="ecommerce_ppc.html">eCommerce PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="google_ads.html">Google Ads Consulting</a></li>
-				                  <li><a class="dropdown-item" href="management_ads.html">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping_management.html">Google Shopping Management</a></li>
-				                  <li><a class="dropdown-item" href="ppc_consulting.html">PPC Consulting</a></li>
-				                  <li><a class="dropdown-item" href="ppc_lead.html">Lead Gen PPC Management</a></li>
-				                </ul>
-				            </li>
-				            <li class="nav-item"><a class="nav-link" href="onpage_seo.html"> On-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="offpage_seo.html"> Off-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="technical_seo.html"> Technical SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="package_price_seo.html"> SEO Packages & Pricing </a></li>
-				        </ul>
-				    </div>
-				</div> 
-			</nav>      
-		</div>
-	</div>
+<?php include 'includes/big-ecommerce-nav.php' ?>
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
@@ -70,7 +23,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-7 pt-2">
-							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.html" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your Google Ads Consultant Proposal</a></div>
+							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your Google Ads Consultant Proposal</a></div>
 						</div>
 						<div class="col-md-2 ecomrespons">
 							<img src="frontend/images/google-seo-proposal-audit.png.webp" alt=" Consulting Services" description=" Consulting Services" class="img-fluid" >
@@ -93,8 +46,8 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="seo_service.html" class="text-light">SEO</a></li>
+							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Google Ads Consultant</li>
 						</ol>
 						</nav>
@@ -115,7 +68,7 @@
 	                </div>
                 </div>
                 <div class="col-md-6">
-                	<p><a href="index.html" class="text-success">SEO Expate</a> Ltd has been assisting numerous businesses in effectively utilizing paid traffic channels to optimize their advertising budget. Therefore, our specialized services will help you pinpoint your target audience and attract new customers. Also, generate relevant, qualified traffic to your website, store, or business. This service has the ability to craft intelligently structured ad campaigns that prioritize your budget while delivering optimal results. </p>
+                	<p><a ="index.php" class="text-success">SEO Expate</a> Ltd has been assisting numerous businesses in effectively utilizing paid traffic channels to optimize their advertising budget. Therefore, our specialized services will help you pinpoint your target audience and attract new customers. Also, generate relevant, qualified traffic to your website, store, or business. This service has the ability to craft intelligently structured ad campaigns that prioritize your budget while delivering optimal results. </p>
                 </div>
                 <div class="col-md-6">
                 	<div class="clip_img">
@@ -377,7 +330,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">
