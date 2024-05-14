@@ -5,8 +5,6 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
-$errorMessage = ""; // Initialize error message variable
-
 $id = $_GET['id'];
 // Fetch notice details from database
 $fetch_query = "SELECT * FROM notices WHERE id = '$id'";
@@ -62,6 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute the update query
     if (mysqli_query($conn, $update_query)) {
+        $successMessage = "Record deleted successfully!";
         // Redirect or display success message as per your requirement
         header("Location: notice-list.php");
         exit();

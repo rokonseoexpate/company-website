@@ -6,7 +6,6 @@ $db = new DB_con();
 $conn = $db->get_connection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $errorMessage = '';
     // Retrieve form data
     $title = $_POST['title'];
     $job_type = $_POST['job_type'];

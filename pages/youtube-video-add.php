@@ -37,16 +37,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
                 <div class="form-group col-md-6">
                     <label for="title">Title</label>
-                    <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="priority">Priority</label>
-                    <input type="number" class="form-control" id="sort_by" name="sort_by" placeholder="Priority">
+                    <input type="number" class="form-control" id="sort_by" name="sort_by" placeholder="Priority" required>
                 </div>
 
                 <div class="form-group col-md-12">
                     <label for="link">Link</label>
-                    <input type="text" class="form-control" id="link" name="link" placeholder="youtube Link">
+                    <input type="text" class="form-control" id="link" name="link" placeholder="youtube Link" required>
                 </div>
 
                 <div class="form-group col-md-6">
