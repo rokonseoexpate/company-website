@@ -184,6 +184,9 @@
 						<div class="">
 							<p><a href="app-development.php">Tools</a></p>
 						</div>
+						<div class="">
+							<p><a href="sitemap.php">Sitemap</a></p>
+						</div>
 					</div>
 				</div>
 			</div>

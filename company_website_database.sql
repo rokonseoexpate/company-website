@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 12, 2024 at 07:08 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Host: localhost:3306
+-- Generation Time: May 14, 2024 at 10:12 AM
+-- Server version: 8.0.30
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,12 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `app_developments` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `images` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL CHECK (json_valid(`images`)),
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `images` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ;
 
 --
 -- Dumping data for table `app_developments`
@@ -41,7 +41,8 @@ CREATE TABLE `app_developments` (
 
 INSERT INTO `app_developments` (`id`, `name`, `images`, `created_at`, `updated_at`) VALUES
 (2, 'Facebook 2', '[\"../uploads/1715237437-istockphoto-1072652414-612x612.jpg\", \"../uploads/1715237437-istockphoto-1190909215-612x612.jpg\", \"../uploads/1715237437-istockphoto-910633906-612x612.jpg\", \"../uploads/1715237437-istockphoto-511991248-612x612.jpg\", \"../uploads/1715237437-istockphoto-1301455711-612x612.jpg\"]', '2024-05-09 06:00:47', '2024-05-09 06:00:47'),
-(3, 'Amal Torres', '[\"../uploads/1715234477-three-39116_1280.webp\", \"../uploads/1715234477-8068017.png\", \"../uploads/1715234477-png-clipart-number-2-image-file-formats-text-thumbnail.png\"]', '2024-05-09 06:01:17', '2024-05-09 06:01:17');
+(3, 'Amal Torres', '[\"../uploads/1715234477-three-39116_1280.webp\", \"../uploads/1715234477-8068017.png\", \"../uploads/1715234477-png-clipart-number-2-image-file-formats-text-thumbnail.png\"]', '2024-05-09 06:01:17', '2024-05-09 06:01:17'),
+(4, 'Travel Booking', '[\"../uploads/1715659721-S0b4a3b80140f4a16907ce801eeecbb791.jpg_188x188.jpg_.webp\",\"../uploads/1715659721-seo_multivendor_ecommerce.test-EcommerceProductDetails.png\",\"../uploads/1715659737-10018.webp\",\"../uploads/1715659737-10028.webp\",\"../uploads/1715659737-10039.webp\",\"../uploads/1715659737-10049.webp\"]', '2024-05-14 04:08:41', '2024-05-14 04:08:41');
 
 -- --------------------------------------------------------
 
@@ -50,14 +51,14 @@ INSERT INTO `app_developments` (`id`, `name`, `images`, `created_at`, `updated_a
 --
 
 CREATE TABLE `awards` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  `description` longtext DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
-  `alt_tag` varchar(255) DEFAULT NULL,
-  `alt_description` longtext DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` longtext COLLATE utf8mb4_unicode_ci,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -77,22 +78,47 @@ INSERT INTO `awards` (`id`, `title`, `description`, `image`, `alt_tag`, `alt_des
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `banners`
+--
+
+CREATE TABLE `banners` (
+  `id` bigint UNSIGNED NOT NULL,
+  `page` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_tag` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `banners`
+--
+
+INSERT INTO `banners` (`id`, `page`, `title`, `description`, `image`, `alt_tag`, `alt_description`, `created_at`, `updated_at`) VALUES
+(30, 'certificate', 'this  is certificate page banner', '<p>this is des sdfs</p>', '../uploads/this--is-certificate-page-banner-12521.webp', NULL, NULL, '2024-05-14 04:12:53', '2024-05-14 04:13:04');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `blogs`
 --
 
 CREATE TABLE `blogs` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `blog_category_id` bigint(20) DEFAULT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  `slug` varchar(255) DEFAULT NULL,
-  `type` varchar(255) DEFAULT NULL,
-  `short_description` text DEFAULT NULL,
-  `description` longtext DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
-  `alt_tag` varchar(255) DEFAULT NULL,
-  `alt_description` longtext DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `blog_category_id` bigint DEFAULT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `short_description` text COLLATE utf8mb4_unicode_ci,
+  `description` longtext COLLATE utf8mb4_unicode_ci,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -119,11 +145,11 @@ INSERT INTO `blogs` (`id`, `blog_category_id`, `title`, `slug`, `type`, `short_d
 --
 
 CREATE TABLE `blog_categories` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `slug` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `slug` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -142,16 +168,16 @@ INSERT INTO `blog_categories` (`id`, `name`, `slug`, `created_at`, `updated_at`)
 --
 
 CREATE TABLE `branches` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `image` text DEFAULT NULL,
-  `alt_tag` varchar(255) DEFAULT NULL,
-  `alt_description` longtext DEFAULT NULL,
-  `map` longtext DEFAULT NULL,
-  `video_link` longtext DEFAULT NULL,
-  `address` text DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` text COLLATE utf8mb4_unicode_ci,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `map` longtext COLLATE utf8mb4_unicode_ci,
+  `video_link` longtext COLLATE utf8mb4_unicode_ci,
+  `address` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -179,14 +205,14 @@ INSERT INTO `branches` (`id`, `name`, `image`, `alt_tag`, `alt_description`, `ma
 --
 
 CREATE TABLE `certificates` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` varchar(255) DEFAULT NULL,
-  `description` longtext DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
-  `alt_tag` varchar(255) DEFAULT NULL,
-  `alt_description` longtext DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` longtext COLLATE utf8mb4_unicode_ci,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -208,17 +234,17 @@ INSERT INTO `certificates` (`id`, `title`, `description`, `image`, `alt_tag`, `a
 --
 
 CREATE TABLE `contacts` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `type` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `phone` varchar(255) DEFAULT NULL,
-  `stuf` varchar(255) DEFAULT NULL,
-  `company_name` varchar(255) DEFAULT NULL,
-  `company_website` varchar(255) DEFAULT NULL,
-  `description` longtext DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `stuf` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_website` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -242,13 +268,13 @@ INSERT INTO `contacts` (`id`, `name`, `type`, `email`, `phone`, `stuf`, `company
 --
 
 CREATE TABLE `departments` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `image` varchar(255) DEFAULT NULL,
-  `alt_tag` varchar(255) DEFAULT NULL,
-  `alt_description` longtext DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -283,20 +309,20 @@ INSERT INTO `departments` (`id`, `name`, `image`, `alt_tag`, `alt_description`, 
 --
 
 CREATE TABLE `employees` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `designation` varchar(255) DEFAULT NULL,
-  `branch_id` varchar(255) DEFAULT NULL,
-  `department_id` varchar(255) DEFAULT NULL,
-  `ein_no` varchar(255) DEFAULT NULL,
-  `team_no` varchar(255) DEFAULT NULL,
-  `phone` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `image` text DEFAULT NULL,
-  `alt_tag` varchar(255) DEFAULT NULL,
-  `alt_description` longtext DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `designation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `branch_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `department_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `ein_no` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `team_no` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` text COLLATE utf8mb4_unicode_ci,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -357,7 +383,7 @@ INSERT INTO `employees` (`id`, `name`, `designation`, `branch_id`, `department_i
 (87, 'Durjay Ghosh', 'Web Developer', '11', '22', '', '', '', '', '../uploads/Durjay-Ghosh-Web-Developer-474.jpg', '', '', '2024-05-11 05:17:32', '2024-05-11 05:17:32'),
 (88, 'Maksuda Akter', 'Web Developer', '11', '22', '', '', '', '', '../uploads/Maksuda-Akter-Web-Developer-471.png', '', '', '2024-05-11 05:17:51', '2024-05-11 05:17:51'),
 (89, 'Nahin Fardous Badhon', 'WordPress Developer', '11', '22', '', '', '', '', '../uploads/Nahin-Fardous-Badhon-WordPress-Developer-398.png', '', '', '2024-05-11 05:18:08', '2024-05-11 05:18:08'),
-(90, 'Md. Tusar Molla', 'Flutter Developer', '11', '22', '', '', '', '', '../uploads/Md.-Tusar-Molla-Flutter-Developer-666--1-.png', '', '', '2024-05-11 05:18:29', '2024-05-11 05:18:29'),
+(90, 'Md. Tusar Molla', 'Flutter Developer', '25', '22', '', '', '', '', '../uploads/Md.-Tusar-Molla-Flutter-Developer-666--1-.png', '', '', '2024-05-11 05:18:29', '2024-05-11 05:18:29'),
 (91, 'Afrin Sultana', 'Junior Web Developer', '11', '22', '', '', '', '', '../uploads/Afrin-Sultana-Junior-Web-Developer-667.jpg', '', '', '2024-05-11 05:20:26', '2024-05-11 05:20:26'),
 (92, 'Eftakhar Mahmud Shikat', 'Junior Web Developer', '11', '22', '', '', '', '', '../uploads/Eftakhar-Mahmud-Shikat-Junior-Web-Developer-668.jpg', '', '', '2024-05-11 05:20:48', '2024-05-11 05:20:48'),
 (93, 'Md. Ali Hasan', 'Junior Web Developer', '11', '22', '', '', '', '', '../uploads/Md.-Ali-Hasan-Junior-Web-Developer-669.png', '', '', '2024-05-11 05:21:12', '2024-05-11 05:21:12'),
@@ -374,12 +400,12 @@ INSERT INTO `employees` (`id`, `name`, `designation`, `branch_id`, `department_i
 --
 
 CREATE TABLE `featured_youtubes` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` text DEFAULT NULL,
-  `link` text DEFAULT NULL,
-  `sort_by` text DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `title` text COLLATE utf8mb4_unicode_ci,
+  `link` text COLLATE utf8mb4_unicode_ci,
+  `sort_by` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -399,20 +425,20 @@ INSERT INTO `featured_youtubes` (`id`, `title`, `link`, `sort_by`, `created_at`,
 --
 
 CREATE TABLE `free_trials` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `company_name` varchar(255) DEFAULT NULL,
-  `company_website` varchar(255) DEFAULT NULL,
-  `phone` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `service_type` varchar(255) NOT NULL,
-  `files` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL CHECK (json_valid(`files`)),
-  `image_file_link` varchar(255) DEFAULT NULL,
-  `message` text NOT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `company_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_website` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `service_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `files` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `image_file_link` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `message` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+) ;
 
 --
 -- Dumping data for table `free_trials`
@@ -433,20 +459,20 @@ INSERT INTO `free_trials` (`id`, `name`, `company_name`, `company_website`, `pho
 --
 
 CREATE TABLE `get_quotes` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `company_name` varchar(255) DEFAULT NULL,
-  `company_website` varchar(255) DEFAULT NULL,
-  `phone` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  `service_type` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL CHECK (json_valid(`service_type`)),
-  `files` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL CHECK (json_valid(`files`)),
-  `image_file_link` varchar(255) DEFAULT NULL,
-  `message` text NOT NULL,
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `company_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `company_website` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `service_type` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `files` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL,
+  `image_file_link` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `message` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ;
 
 -- --------------------------------------------------------
 
@@ -455,37 +481,37 @@ CREATE TABLE `get_quotes` (
 --
 
 CREATE TABLE `histories` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` longtext DEFAULT NULL,
-  `title_tagline` longtext DEFAULT NULL,
-  `title_tagline_after` longtext DEFAULT NULL,
-  `title_tagline_after_details` longtext DEFAULT NULL,
-  `hero_button_link` longtext DEFAULT NULL,
-  `accelerating_title` longtext DEFAULT NULL,
-  `accelerating_year` longtext DEFAULT NULL,
-  `accelerating_details` longtext DEFAULT NULL,
-  `accelerating_image` longtext DEFAULT NULL,
-  `accelerating_image_alt_text` varchar(255) DEFAULT NULL,
-  `accelerating_image_alt_description` longtext DEFAULT NULL,
-  `accelerating_button_link` longtext DEFAULT NULL,
-  `journey_title` longtext DEFAULT NULL,
-  `journey_title_tagline` longtext DEFAULT NULL,
-  `journey_title_details` longtext DEFAULT NULL,
-  `overview_success` longtext DEFAULT NULL,
-  `overview_success_details` longtext DEFAULT NULL,
-  `great_success` longtext DEFAULT NULL,
-  `great_success_details` longtext DEFAULT NULL,
-  `introduction_title` longtext DEFAULT NULL,
-  `introduction_title_tagline` longtext DEFAULT NULL,
-  `introduction_details` longtext DEFAULT NULL,
-  `introduction_year` longtext DEFAULT NULL,
-  `introduction_country` longtext DEFAULT NULL,
-  `introduction_projects` longtext DEFAULT NULL,
-  `introduction_clients` longtext DEFAULT NULL,
-  `customers_title` longtext DEFAULT NULL,
-  `customers_details` longtext DEFAULT NULL,
-  `highlighted_title` longtext DEFAULT NULL,
-  `highlighted_details` longtext DEFAULT NULL,
+  `id` bigint UNSIGNED NOT NULL,
+  `title` longtext COLLATE utf8mb4_unicode_ci,
+  `title_tagline` longtext COLLATE utf8mb4_unicode_ci,
+  `title_tagline_after` longtext COLLATE utf8mb4_unicode_ci,
+  `title_tagline_after_details` longtext COLLATE utf8mb4_unicode_ci,
+  `hero_button_link` longtext COLLATE utf8mb4_unicode_ci,
+  `accelerating_title` longtext COLLATE utf8mb4_unicode_ci,
+  `accelerating_year` longtext COLLATE utf8mb4_unicode_ci,
+  `accelerating_details` longtext COLLATE utf8mb4_unicode_ci,
+  `accelerating_image` longtext COLLATE utf8mb4_unicode_ci,
+  `accelerating_image_alt_text` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `accelerating_image_alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `accelerating_button_link` longtext COLLATE utf8mb4_unicode_ci,
+  `journey_title` longtext COLLATE utf8mb4_unicode_ci,
+  `journey_title_tagline` longtext COLLATE utf8mb4_unicode_ci,
+  `journey_title_details` longtext COLLATE utf8mb4_unicode_ci,
+  `overview_success` longtext COLLATE utf8mb4_unicode_ci,
+  `overview_success_details` longtext COLLATE utf8mb4_unicode_ci,
+  `great_success` longtext COLLATE utf8mb4_unicode_ci,
+  `great_success_details` longtext COLLATE utf8mb4_unicode_ci,
+  `introduction_title` longtext COLLATE utf8mb4_unicode_ci,
+  `introduction_title_tagline` longtext COLLATE utf8mb4_unicode_ci,
+  `introduction_details` longtext COLLATE utf8mb4_unicode_ci,
+  `introduction_year` longtext COLLATE utf8mb4_unicode_ci,
+  `introduction_country` longtext COLLATE utf8mb4_unicode_ci,
+  `introduction_projects` longtext COLLATE utf8mb4_unicode_ci,
+  `introduction_clients` longtext COLLATE utf8mb4_unicode_ci,
+  `customers_title` longtext COLLATE utf8mb4_unicode_ci,
+  `customers_details` longtext COLLATE utf8mb4_unicode_ci,
+  `highlighted_title` longtext COLLATE utf8mb4_unicode_ci,
+  `highlighted_details` longtext COLLATE utf8mb4_unicode_ci,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -495,7 +521,7 @@ CREATE TABLE `histories` (
 --
 
 INSERT INTO `histories` (`id`, `title`, `title_tagline`, `title_tagline_after`, `title_tagline_after_details`, `hero_button_link`, `accelerating_title`, `accelerating_year`, `accelerating_details`, `accelerating_image`, `accelerating_image_alt_text`, `accelerating_image_alt_description`, `accelerating_button_link`, `journey_title`, `journey_title_tagline`, `journey_title_details`, `overview_success`, `overview_success_details`, `great_success`, `great_success_details`, `introduction_title`, `introduction_title_tagline`, `introduction_details`, `introduction_year`, `introduction_country`, `introduction_projects`, `introduction_clients`, `customers_title`, `customers_details`, `highlighted_title`, `highlighted_details`, `created_at`, `updated_at`) VALUES
-(1, 'History', 'of SEO Expate', 'To the Endless Possibilities', 'The journey of SEO Expate started in 2013. Riseup Labs has provided technology solutions to global businesses for over 10 years. It has been established as a next-generation global IT service and technology solution provider company to help enterprises reimagine their business and navigate digital transformation. Let’s explore our long history of success!', 'https://seoexpate.com/', 'Accelerating Innovation', 'Since 2013', 'The year 2013. A great Information Technology platform was born with a team of genius minds. From the beginning of our journey, SEO Expate has championed in every step by supporting new and better ideas to reach the next level.\r\n\r\nIn the journey of SEO Expate, it has become a major technology solution provider for brands like UNICEF Bangladesh, Robi Axiata Limited, BBC Media Action, Ministry of Women and Children Affairs, ICT Division and many large corporations globally.', '../uploads/awardd.png', ' fdgdf gdf', '<p>df gdf dfg fdg df g</p>', 'https://seoexpate.com/', 'Timeline Of Our', 'Successful Journey', 'SEO Expate Bangladesh Ltd. started the journey in Game Development and after a successful journey, we have established as a next-generation globnal IT service and technology solutions provider company. Explore our journey of success since 2009.', 'Overview of SEO Expate Success', 'SEO Expate is an ISO-certified leading technology solution and next-generation global IT services provider that helps enterprises reimagine their business and navigate digital transformation. SEO Expate won the Digital Bangladesh Award 2022 from the ICT Division of Bangladesh as the best technology company in the private sector for using emerging technologies and its unique contribution to the Information Technology Sector.\r\n<br>\r\nWith over 10 years of experience managing 700+ projects and working with global enterprises, like – UNICEF, UNDP, USAID, FAO, WHO, ATEC, BBC, Fhi360, Axiata, Murka, Safe-Guard, Swiss Marketing Systems, we are expertly steering our clients through their digital journey.\r\n<br>\r\nExplore the best moments and achievements of SEO Expate throughout the last era.', 'Our Great Start', 'Successful Solutions Developed by SEO Expate in the Last Era. We have started our journey with the game Tap Tap Ants, which has millions of downloads in the App Store and received the top-ranking position worldwide. Explore more solutions developed by SEO Expate throughout its journey.', 'A Short Introduction to Our Approach', 'Delivering IT Solutions Globally', 'In addition to creating a stress-free and sustainable IT environment, SEO Expate Bangladesh Ltd. produces outcomes that help our clients stay ahead of the competition. By utilizing the newest and most widely used technologies, our IT specialists continuously deliver user-centric IT solutions that are customized to the needs of the business. We have been assisting clients all over the world to boost engagement, sales, and conversions for more than ten years. Take a peek at the reliable numbers!', '10', '25', '150', '75', 'Our Reliable Customers and Associates', 'SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers, corporations, government departments, and other organizations as a top information technology company. Here take a look at some of the top companies and institutions that SEO Expate Bangladesh Ltd. has already worked with.', 'We are Highlighted On', 'In this category, SEO Expate Bangladesh Ltd. stands out as the most popular in the first place. Numerous local and international (offline and online) TV networks, newspapers, journals, TV channels, and other well-known platforms have highlighted our imaginative and inventive works! Also, we are one of the most followed companies on various social media platforms. Again, we are going like a bullet train in other media as well.', '2024-05-06 05:40:38', '2024-05-05 18:00:00');
+(1, 'History', 'of SEO Expate', 'To the Endless Possibilities', 'The journey of SEO Expate started in 2013. Riseup Labs has provided technology solutions to global businesses for over 10 years. It has been established as a next-generation global IT service and technology solution provider company to help enterprises reimagine their business and navigate digital transformation. Let’s explore our long history of success!', 'https://seoexpate.com/', 'Accelerating Innovation', 'Since 2013', 'The year 2013. A great Information Technology platform was born with a team of genius minds. From the beginning of our journey, SEO Expate has championed in every step by supporting new and better ideas to reach the next level.\r\n\r\nIn the journey of SEO Expate, it has become a major technology solution provider for brands like UNICEF Bangladesh, Robi Axiata Limited, BBC Media Action, Ministry of Women and Children Affairs, ICT Division and many large corporations globally.', '../uploads/awardd.png', ' fdgdf gdf', '                                        value=\"<p>df gdf dfg fdg df g</p>\"\r\n                                        ', 'https://seoexpate.com/', 'Timeline Of Our', 'Successful Journey', 'SEO Expate Bangladesh Ltd. started the journey in Game Development and after a successful journey, we have established as a next-generation globnal IT service and technology solutions provider company. Explore our journey of success since 2009.', 'Overview of SEO Expate Success', 'SEO Expate is an ISO-certified leading technology solution and next-generation global IT services provider that helps enterprises reimagine their business and navigate digital transformation. SEO Expate won the Digital Bangladesh Award 2022 from the ICT Division of Bangladesh as the best technology company in the private sector for using emerging technologies and its unique contribution to the Information Technology Sector.\r\n<br>\r\nWith over 10 years of experience managing 700+ projects and working with global enterprises, like – UNICEF, UNDP, USAID, FAO, WHO, ATEC, BBC, Fhi360, Axiata, Murka, Safe-Guard, Swiss Marketing Systems, we are expertly steering our clients through their digital journey.\r\n<br>\r\nExplore the best moments and achievements of SEO Expate throughout the last era.', 'Our Great Start', 'Successful Solutions Developed by SEO Expate in the Last Era. We have started our journey with the game Tap Tap Ants, which has millions of downloads in the App Store and received the top-ranking position worldwide. Explore more solutions developed by SEO Expate throughout its journey.', 'A Short Introduction to Our Approach', 'Delivering IT Solutions Globally', 'In addition to creating a stress-free and sustainable IT environment, SEO Expate Bangladesh Ltd. produces outcomes that help our clients stay ahead of the competition. By utilizing the newest and most widely used technologies, our IT specialists continuously deliver user-centric IT solutions that are customized to the needs of the business. We have been assisting clients all over the world to boost engagement, sales, and conversions for more than ten years. Take a peek at the reliable numbers!', '10', '25', '150', '75', 'Our Reliable Customers and Associates', 'SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers, corporations, government departments, and other organizations as a top information technology company. Here take a look at some of the top companies and institutions that SEO Expate Bangladesh Ltd. has already worked with.', 'We are Highlighted On', 'In this category, SEO Expate Bangladesh Ltd. stands out as the most popular in the first place. Numerous local and international (offline and online) TV networks, newspapers, journals, TV channels, and other well-known platforms have highlighted our imaginative and inventive works! Also, we are one of the most followed companies on various social media platforms. Again, we are going like a bullet train in other media as well.', '2024-05-06 05:40:38', '2024-05-05 18:00:00');
 
 -- --------------------------------------------------------
 
@@ -504,39 +530,41 @@ INSERT INTO `histories` (`id`, `title`, `title_tagline`, `title_tagline_after`, 
 --
 
 CREATE TABLE `history_galleries` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `image_type` varchar(255) NOT NULL COMMENT '1=overview_success, 2=customers_associates, 3=Highlighted, 4=Achievements',
-  `image` text DEFAULT NULL,
-  `title` text DEFAULT NULL,
-  `short_title` text DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `image_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '1=overview_success, 2=customers_associates, 3=Highlighted, 4=Achievements',
+  `image` text COLLATE utf8mb4_unicode_ci,
+  `title` text COLLATE utf8mb4_unicode_ci,
+  `short_title` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` text COLLATE utf8mb4_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `history_galleries`
 --
 
-INSERT INTO `history_galleries` (`id`, `image_type`, `image`, `title`, `short_title`, `created_at`, `updated_at`) VALUES
-(3, '3', '../uploads/News--1-.jpg', 'Mukto Sokal', 'optional', '2024-05-07 09:21:16', '2024-05-07 09:21:16'),
-(4, '3', '../uploads/News--1-.PNG', 'korotoa', 'kortoa', '2024-05-07 09:21:59', '2024-05-07 09:21:59'),
-(5, '3', '../uploads/News--2-.jpg', 'daily Bangladesh', 'daily Bangladesh', '2024-05-07 09:22:29', '2024-05-07 09:22:29'),
-(6, '3', '../uploads/News--4-.jpg', 'Chandni Bazar', 'Chandni Bazar', '2024-05-07 09:23:06', '2024-05-07 09:23:06'),
-(7, '4', '../uploads/04.png', 'Basis Soft Expo 2023', 'Exhibitor', '2024-05-07 11:11:22', '2024-05-07 11:11:22'),
-(8, '4', '../uploads/03.png', 'Science Fair 20XX', 'Science Fair', '2024-05-07 11:13:30', '2024-05-07 11:13:30'),
-(9, '4', '../uploads/1.png', 'Digital Smart Bangladesh Award 2023', 'Winner', '2024-05-07 11:14:19', '2024-05-07 11:14:19'),
-(10, '4', '../uploads/07.png', ' FBCCI Intro Smart Bangladesh', 'FBCCI ', '2024-05-07 11:15:05', '2024-05-07 11:15:05'),
-(12, '2', '../uploads/slide2.png', 'Customers and Associates slider 2', 'Customers and Associates', '2024-05-08 07:25:23', '2024-05-08 07:25:23'),
-(13, '2', '../uploads/slide3.png', 'Customers and Associates slider 2', 'Customers and Associates', '2024-05-08 07:25:42', '2024-05-08 07:25:42'),
-(14, '2', '../uploads/slide3.png', 'Customers and Associates slider 3', 'Customers and Associates ', '2024-05-08 07:26:01', '2024-05-08 07:26:01'),
-(15, '2', '../uploads/slide4.png', 'Customers and Associates slider 4', 'Customers and Associates', '2024-05-08 07:27:23', '2024-05-08 07:27:23'),
-(23, '1', '../uploads/success-6.jpg', 'success-6 ', '', '2024-05-11 05:35:43', '2024-05-11 05:35:43'),
-(24, '1', '../uploads/success-5.jpg', 'success-5', '', '2024-05-11 05:36:01', '2024-05-11 05:36:01'),
-(25, '1', '../uploads/success-4.jpg', 'success-4', '', '2024-05-11 05:36:13', '2024-05-11 05:36:13'),
-(26, '1', '../uploads/success-3.jpg', 'success-3', '', '2024-05-11 05:36:36', '2024-05-11 05:36:36'),
-(27, '1', '../uploads/success-2.jpg', 'success-2', '', '2024-05-11 05:36:49', '2024-05-11 05:36:49'),
-(28, '1', '../uploads/success-1.jpg', 'success-1', '', '2024-05-11 05:37:00', '2024-05-11 05:37:00'),
-(29, '1', '../uploads/success-img.jpg', 'success', '', '2024-05-11 05:37:09', '2024-05-11 05:37:09');
+INSERT INTO `history_galleries` (`id`, `image_type`, `image`, `title`, `short_title`, `created_at`, `updated_at`, `alt_tag`, `alt_description`) VALUES
+(3, '3', '../uploads/News--1-.jpg', 'Mukto Sokal', 'optional', '2024-05-07 09:21:16', '2024-05-07 09:21:16', NULL, NULL),
+(4, '3', '../uploads/News--1-.PNG', 'korotoa', 'kortoa', '2024-05-07 09:21:59', '2024-05-07 09:21:59', NULL, NULL),
+(5, '3', '../uploads/News--2-.jpg', 'daily Bangladesh', 'daily Bangladesh', '2024-05-07 09:22:29', '2024-05-07 09:22:29', NULL, NULL),
+(6, '3', '../uploads/News--4-.jpg', 'Chandni Bazar', 'Chandni Bazar', '2024-05-07 09:23:06', '2024-05-07 09:23:06', NULL, NULL),
+(7, '4', '../uploads/04.png', 'Basis Soft Expo 2023', 'Exhibitor', '2024-05-07 11:11:22', '2024-05-07 11:11:22', NULL, NULL),
+(8, '4', '../uploads/03.png', 'Science Fair 20XX', 'Science Fair', '2024-05-07 11:13:30', '2024-05-07 11:13:30', NULL, NULL),
+(9, '4', '../uploads/1.png', 'Digital Smart Bangladesh Award 2023', 'Winner', '2024-05-07 11:14:19', '2024-05-07 11:14:19', NULL, NULL),
+(10, '4', '../uploads/07.png', ' FBCCI Intro Smart Bangladesh', 'FBCCI ', '2024-05-07 11:15:05', '2024-05-07 11:15:05', NULL, NULL),
+(12, '2', '../uploads/slide2.png', 'Customers and Associates slider 2', 'Customers and Associates', '2024-05-08 07:25:23', '2024-05-08 07:25:23', NULL, NULL),
+(13, '2', '../uploads/slide3.png', 'Customers and Associates slider 2', 'Customers and Associates', '2024-05-08 07:25:42', '2024-05-08 07:25:42', NULL, NULL),
+(14, '2', '../uploads/slide3.png', 'Customers and Associates slider 3', 'Customers and Associates ', '2024-05-08 07:26:01', '2024-05-08 07:26:01', NULL, NULL),
+(15, '2', '../uploads/slide4.png', 'Customers and Associates slider 4', 'Customers and Associates', '2024-05-08 07:27:23', '2024-05-08 07:27:23', NULL, NULL),
+(23, '1', '../uploads/success-6.jpg', 'success-6 ', '', '2024-05-11 05:35:43', '2024-05-11 05:35:43', NULL, NULL),
+(24, '1', '../uploads/success-5.jpg', 'success-5', '', '2024-05-11 05:36:01', '2024-05-11 05:36:01', NULL, NULL),
+(25, '1', '../uploads/success-4.jpg', 'success-4', '', '2024-05-11 05:36:13', '2024-05-11 05:36:13', NULL, NULL),
+(26, '1', '../uploads/success-3.jpg', 'success-3', '', '2024-05-11 05:36:36', '2024-05-11 05:36:36', NULL, NULL),
+(27, '1', '../uploads/success-2.jpg', 'success-2', '', '2024-05-11 05:36:49', '2024-05-11 05:36:49', NULL, NULL),
+(28, '1', '../uploads/success-1.jpg', 'success-1', '', '2024-05-11 05:37:00', '2024-05-11 05:37:00', NULL, NULL),
+(29, '1', '../uploads/success-img.jpg', 'success', '', '2024-05-11 05:37:09', '2024-05-11 05:37:09', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -545,11 +573,11 @@ INSERT INTO `history_galleries` (`id`, `image_type`, `image`, `title`, `short_ti
 --
 
 CREATE TABLE `history_journeys` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `year` varchar(255) NOT NULL,
-  `details` longtext NOT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `year` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `details` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -567,10 +595,10 @@ INSERT INTO `history_journeys` (`id`, `year`, `details`, `created_at`, `updated_
 --
 
 CREATE TABLE `history_projects` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `image` text DEFAULT NULL,
-  `description` longtext DEFAULT NULL,
+  `id` bigint UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` text COLLATE utf8mb4_unicode_ci,
+  `description` longtext COLLATE utf8mb4_unicode_ci,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -596,15 +624,15 @@ INSERT INTO `history_projects` (`id`, `title`, `image`, `description`, `created_
 --
 
 CREATE TABLE `jobs` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `job_type` varchar(255) DEFAULT NULL,
-  `vacancies` varchar(255) DEFAULT NULL,
-  `deadline` varchar(255) DEFAULT NULL,
-  `apply_link` text DEFAULT NULL,
-  `job_details` longtext DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `job_type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `vacancies` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `deadline` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `apply_link` text COLLATE utf8mb4_unicode_ci,
+  `job_details` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -613,8 +641,7 @@ CREATE TABLE `jobs` (
 
 INSERT INTO `jobs` (`id`, `title`, `job_type`, `vacancies`, `deadline`, `apply_link`, `job_details`, `created_at`, `updated_at`) VALUES
 (6, 'Senior Laravel Developer', 'Full time', '4', '2024-06-25', 'https://jobs.bdjobs.com/jobdetails.asp?id=1251667&fcatId=8&ln=1&JobKeyword=laravel%20developer', '<div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Requirements</h4></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Experience</h5><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">8 to 16 years</li><li style=\"line-height: 24px; padding-bottom: 5px;\">The applicants should have experience in the following business area(s):<br>Developer</li></ul></div><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Additional Requirements</h5><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"></ul><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">This FULL-TIME ROLE will only suit someone who also meets the following requirements:</p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Has a passion for excelling in all they do, and this is evidenced with excellent references</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Can be analytical, strategic, and creative when the role requires it</li><li style=\"line-height: 24px; padding-bottom: 5px;\">At least 8-10 years of experience with PHP development, and is specifically experienced in the Laravel framework</li><li style=\"line-height: 24px; padding-bottom: 5px;\">PostgreSQL, Gulp, Composer, npm, Pug, Blade, JavaScript, CSS, JQuery, HTML</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Git/Github (repos, commits, branching, pull requests, merging etc)</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Hands on experience with SQL schema design, SOLID principles and REST API design</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Software testing experience using tools like PHPUnit.</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Experience managing multiple versions, deployments and customisations of PHP software and API’s simultaneously.</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Extensive experience designing, initialising and deploying dev, staging and production servers for the team’s code to run on.</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Proven ability to plan and manage schedules, technical documentation and code repositories</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Has excellent spoken &amp; written English</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Have their own tech and office set up conducive to fast, focused and productive remote work (e.g. high spec computers, monitors, internet over 50Mbps, back up solutions, etc.)</li></ul><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"job_resp\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Responsibilities &amp; Context</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">COMPANY:</span>&nbsp;SMILE (smile.com.au)</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">REPORTS TO:</span>&nbsp;Head of IT</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">DIVISIONS:</span>&nbsp;Retail Dental Cover + Corporate Dental Cover</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">LOCATION:</span>&nbsp;100% Remote, Work from home</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">COMMITMENT:</span>&nbsp;40hrs/wk. Mon-Fri, At least 4hr worked b/w 8 am-5 pm GMT+10 (Brisbane, Australia)</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">ROLE OBJECTIVES</span></p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">The Senior PHP Developer plays a pivotal role in leading the technical aspects of software development projects.</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">ABOUT SMILE</span></p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Smile is a national digital health company, comprising 5 divisions including the National Dental Network, Health Fund Partnerships, Projects &amp; Investments plus more recently, Retail Dental Cover and Corporate Dental Cover. Smile is committed to revolutionising quality healthcare accessibility and affordability for the people of Australia. Smile is the top-rated dental cover in the country, offering Retail Dental Cover to the public and Corporate Dental Cover to companies and their teams across Australia. Smile has had a globally distributed team for 7+ years &amp; maintained a 5-star rating on Upwork.</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">KEY RESPONSIBILITIES:</span></p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Develop new features, fix bugs, and manage hosting infrastructure for our member and partner portals</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Write clean, efficient code with high test coverage using the PHP Laravel framework</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Comprehensively document/comment on code for readability and future modification</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Manage git repositories, flows, and code releases in collaboration with other team members and external vendors</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Manage PostgreSQL databases to create and run data queries and reports</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Create, update, document, and manage a REST API for use in other applications and integrations with high availability</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Collaborate on both front-end and back-end development to optimize software for Google SEO, CRO, PPC, and pass or exceed Google Core Web Vitals assessments</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Identify new technologies, platforms, and tools that can increase the efficiency of development and team management</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Participate in long-term planning activities such as product roadmaps, backlog estimation, prioritisation, and strategy.</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Coordinate with third-party system managers to coordinate integrations where relevant</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Develop and execute secure and effective data procedures</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Ensure data is handled in line with security best practices and Smile privacy expectations</li></ul><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">KEY PERFORMANCE INDICATORS</span></p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Code Quality:</p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Measure code quality metrics such as code reviews, code coverage, and static code analysis results.</li></ul><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Delivery Time:</p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Track the time to deliver features or bug fixes from initial implementation to deployment.</li></ul><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Customer Satisfaction:</p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Monitoring of customer feedback related to the quality and performance of software products.</li></ul><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">API Performance:</p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Measure the performance and reliability of the REST API, including response times and error rates.</li></ul><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">System Uptime:</p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Track the uptime of hosting infrastructure and systems, ensuring they meet uptime targets.</li></ul><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Innovation Impact:</p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Evaluate the impact of adopting innovative technologies on development efficiency and team productivity.</li></ul><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Compliance Adherence:</p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Ensure adherence to legal norms and regulations related to data security and privacy throughout all project executions.</li></ul><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Workplace</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Work from home</p></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Employment Status</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Full Time</p></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Job Location</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Anywhere in Bangladesh</p></div>', '2024-05-12 04:07:14', '2024-05-12 04:07:14'),
-(7, 'Senior App Developer', 'Full time', '2', '2024-06-28', 'https://jobs.bdjobs.com/jobdetails.asp?id=1250290&fcatId=8&ln=1&JobKeyword=App%20Developer', '<div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Requirements</h4></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Education</h5><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Bachelor of Science (BSc)</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Diploma in Computer</li></ul><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"></ul></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Experience</h5><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">2 to 3 years</li><li style=\"line-height: 24px; padding-bottom: 5px;\">The applicants should have experience in the following business area(s):<br>Software Company</li></ul></div><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Additional Requirements</h5><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Age 20 to 35 years</li></ul><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Strong proficiency in Dart programming language.</p></li></ul><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Experience with third-party libraries and APIs.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Familiarity with cloud message APIs and push notifications.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Solid understanding of the full mobile development lifecycle of both IOS and Android.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Excellent problem-solving skills and attention to detail.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Ability to work in a fast-paced environment and adapt to changing priorities.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Familiarity with version control systems (e.g., Git).</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"></p></li></ul><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"job_resp\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Responsibilities &amp; Context</h4><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Proven experience as a Flutter Developer or similar role.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Solid understanding of Dart programming language and Flutter framework. Familiarity with integrating third-party SDKs into mobile applications.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Strong knowledge of RESTful APIs and their integration.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Experience in building and deploying mobile applications for both Android and iOS platforms.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Proficient in version control systems such as Git.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Ability to collaborate effectively with cross-functional teams.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Strong problem-solving skills and attention to detail.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Excellent communication and interpersonal skills.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Experience with integrating router device SDKs into mobile applications.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Familiarity with e-commerce platforms and REST APIs.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Knowledge of state management solutions such as Provider or BLoC.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Understanding of agile development methodologies.</span></p></li></ul><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"skill_exp\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Skills &amp; Expertise</h4><div class=\"skills\" style=\"display: flex; align-items: center; flex-wrap: wrap; gap: 10px;\"><button class=\"skill\" style=\"font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 12px; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; color: rgb(51, 51, 51); border-radius: 100px; border-width: 0.5px; border-style: solid; border-color: rgb(221, 221, 221); background: rgb(244, 244, 244); padding: 7px 10px !important;\">Mobile App Development</button><button class=\"skill\" style=\"font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 12px; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; color: rgb(51, 51, 51); border-radius: 100px; border-width: 0.5px; border-style: solid; border-color: rgb(221, 221, 221); background: rgb(244, 244, 244); padding: 7px 10px !important;\">Software Development</button></div><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"benefits\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Compensation &amp; Other Benefits</h4><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Performance bonus, Profit share</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Salary Review: Yearly</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Festival Bonus: 2</li></ul><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Service Benefits, EL Encasement</p></li></ul></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Workplace</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Work at office</p></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Employment Status</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Full Time</p></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Job Location</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Dhaka (Banasree)</p></div>', '2024-05-12 04:11:17', '2024-05-12 04:11:17'),
-(10, 'Website developer (WordPress & Magento E-commerce )', 'Full time', '2', '2024-06-16', 'https://jobs.bdjobs.com/jobdetails.asp?id=1251602&fcatId=8&ln=1&JobKeyword=Senior%20WordPress%20Developer', '<div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, \" noto=\"\" sans=\"\" bengali=\"\" ui\",=\"\" ui-icon,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;\"=\"\"><h4 class=\"sectxt\" id=\"req\" style=\"box-sizing: border-box; font-family: inherit; font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-top: 0px !important; margin-bottom: 10px; font-size: 16px !important; margin-right: 0px; margin-left: 0px;\">Requirements</h4><h4 class=\"sectxt\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\"><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, \"Noto Sans Bengali UI\", ui-icon, sans-serif; font-size: 14px; font-weight: 400;\"></div></h4><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Experience</h5><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\"><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, \"Noto Sans Bengali UI\", ui-icon, sans-serif; font-size: 14px; font-weight: 400;\"><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">3 to 5 years</li></ul></div></h4><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Additional Requirements</h5><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\"><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, \"Noto Sans Bengali UI\", ui-icon, sans-serif; font-size: 14px; font-weight: 400;\"><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"></ul><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Ability to work collaboratively with other developers, designers and QA.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Minimum of 3-5 years of experience in Full Stack Developer, with Laravel+React, PHP .</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Proficient in programming languages such as Python / PHP.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Experience with front-end framework working with Laravel such as Laravel+React.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Proven experience as a Full Stack Developer with expertise in Laravel, React, and PHP.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Ability to work independently and collaboratively in a team environment.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Excellent problem-solving and communication skills and ability to work in a fast-paced, dynamic environment.</p></li></ul><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div></h4><h4 class=\"sectxt\" id=\"job_resp\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Responsibilities & Context</h4><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\"><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, \"Noto Sans Bengali UI\", ui-icon, sans-serif; font-size: 14px; font-weight: 400;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Ether Technologies Ltd is a software development and IT solutions company specializing in Content Management Systems (CMS) and Software as a Service (SAAS) products. While our core expertise lies in CMS and product management solutions, we also excel in developing a wide range of software and IT solutions tailored to solve real-world problems. Our mission is to leverage cutting-edge technologies to create compelling SAAS products and deliver innovative IT solutions to meet the diverse needs of the global marketplace.</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">We are seeking a highly skilled and experienced Full Stack developer to join our dynamic team. The ideal candidate will have a strong background in Laravel + React, PHP Developing.</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"font-weight: 700;\">Responsibilities:</span></p><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Develop and maintain applications using Full Stack Laravel PHP and related technologies.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Design, code, and maintain database objects, stored procedures, and other application components.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Work with the product and design teams to develop user interfaces and other client-side logic.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Collaborate with other developers to create solutions that meet the business and technical requirements.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Utilize best practices and coding standards to ensure high-quality code.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Troubleshoot and debug existing applications and identify areas for improvement.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Perform unit testing of developed code to ensure it meets the requirements.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Ensure that applications adhere to security and performance standards.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Monitor and maintain system health and performance.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Develop and document technical specifications for projects.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Develop, test, and deploy robust web applications using Laravel, React, and PHP.</p></li></ul><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div></h4><h4 class=\"sectxt\" id=\"skill_exp\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Skills & Expertise</h4><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\"><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, \"Noto Sans Bengali UI\", ui-icon, sans-serif; font-size: 14px; font-weight: 400;\"><div class=\"skills\" style=\"display: flex; align-items: center; flex-wrap: wrap; gap: 10px;\"><button class=\"skill\" style=\"font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 12px; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; color: rgb(51, 51, 51); border-radius: 100px; border-width: 0.5px; border-style: solid; border-color: rgb(221, 221, 221); background: rgb(244, 244, 244); padding: 7px 10px !important;\">Laravel</button><button class=\"skill\" style=\"font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 12px; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; color: rgb(51, 51, 51); border-radius: 100px; border-width: 0.5px; border-style: solid; border-color: rgb(221, 221, 221); background: rgb(244, 244, 244); padding: 7px 10px !important;\">PHP Programming</button><button class=\"skill\" style=\"font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 12px; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; color: rgb(51, 51, 51); border-radius: 100px; border-width: 0.5px; border-style: solid; border-color: rgb(221, 221, 221); background: rgb(244, 244, 244); padding: 7px 10px !important;\">Programming languages: Python</button><button class=\"skill\" style=\"font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 12px; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; color: rgb(51, 51, 51); border-radius: 100px; border-width: 0.5px; border-style: solid; border-color: rgb(221, 221, 221); background: rgb(244, 244, 244); padding: 7px 10px !important;\">react</button></div><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div></h4><h4 class=\"sectxt\" id=\"benefits\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Compensation & Other Benefits</h4><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\"><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, \"Noto Sans Bengali UI\", ui-icon, sans-serif; font-size: 14px; font-weight: 400;\"><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"></ul><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">20 Days Paid Leave</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Festival Bonus</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Performance Bonus</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Health Insurance</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Company Retreat</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">An opportunity to work on groundbreaking projects with a talented team.</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">A culture of innovation and continuous learning.</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Flexible work hours and remote work options.</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Timing: Flexible but limited hours need to be provided on Friday which will be adjusted against weekday hours.</p></div></h4><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Employment Status</h4><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\"><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, \"Noto Sans Bengali UI\", ui-icon, sans-serif; font-size: 14px; font-weight: 400;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Full Time</p></div></h4><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Job Location</h4><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\"><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, \"Noto Sans Bengali UI\", ui-icon, sans-serif; font-size: 14px; font-weight: 400;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Dhaka (GULSHAN 1)</p></div></h4></div>', '2024-05-12 04:27:14', '2024-05-12 04:27:14');
+(7, 'Senior App Developer', 'Full time', '2', '2024-06-28', 'https://jobs.bdjobs.com/jobdetails.asp?id=1250290&fcatId=8&ln=1&JobKeyword=App%20Developer', '<div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Requirements</h4></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Education</h5><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Bachelor of Science (BSc)</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Diploma in Computer</li></ul><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"></ul></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Experience</h5><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">2 to 3 years</li><li style=\"line-height: 24px; padding-bottom: 5px;\">The applicants should have experience in the following business area(s):<br>Software Company</li></ul></div><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h5 class=\"subheading\" id=\"req\" style=\"font-weight: 600; line-height: 1.1; color: rgb(51, 51, 51); margin-bottom: 6px; font-size: 14px; margin-right: 0px; margin-left: 0px;\">Additional Requirements</h5><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Age 20 to 35 years</li></ul><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Strong proficiency in Dart programming language.</p></li></ul><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Experience with third-party libraries and APIs.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Familiarity with cloud message APIs and push notifications.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Solid understanding of the full mobile development lifecycle of both IOS and Android.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Excellent problem-solving skills and attention to detail.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Ability to work in a fast-paced environment and adapt to changing priorities.</p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Familiarity with version control systems (e.g., Git).</p><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"></p></li></ul><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"job_resp\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Responsibilities &amp; Context</h4><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Proven experience as a Flutter Developer or similar role.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Solid understanding of Dart programming language and Flutter framework. Familiarity with integrating third-party SDKs into mobile applications.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Strong knowledge of RESTful APIs and their integration.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Experience in building and deploying mobile applications for both Android and iOS platforms.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Proficient in version control systems such as Git.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Ability to collaborate effectively with cross-functional teams.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Strong problem-solving skills and attention to detail.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Excellent communication and interpersonal skills.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Experience with integrating router device SDKs into mobile applications.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Familiarity with e-commerce platforms and REST APIs.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Knowledge of state management solutions such as Provider or BLoC.</span></p></li><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\"><span style=\"color: rgb(0, 0, 0);\">Understanding of agile development methodologies.</span></p></li></ul><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div><div class=\"col-sm-12\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"skill_exp\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Skills &amp; Expertise</h4><div class=\"skills\" style=\"display: flex; align-items: center; flex-wrap: wrap; gap: 10px;\"><button class=\"skill\" style=\"font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 12px; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; color: rgb(51, 51, 51); border-radius: 100px; border-width: 0.5px; border-style: solid; border-color: rgb(221, 221, 221); background: rgb(244, 244, 244); padding: 7px 10px !important;\">Mobile App Development</button><button class=\"skill\" style=\"font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 12px; font-optical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; color: rgb(51, 51, 51); border-radius: 100px; border-width: 0.5px; border-style: solid; border-color: rgb(221, 221, 221); background: rgb(244, 244, 244); padding: 7px 10px !important;\">Software Development</button></div><hr style=\"border-top-color: rgb(238, 238, 238); margin-top: 10px !important; margin-bottom: 10px !important;\"></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" id=\"benefits\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Compensation &amp; Other Benefits</h4><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\">Performance bonus, Profit share</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Salary Review: Yearly</li><li style=\"line-height: 24px; padding-bottom: 5px;\">Festival Bonus: 2</li></ul><ul style=\"padding: 0px; margin-right: 0px !important; margin-bottom: 0px !important; margin-left: 24px !important;\"><li style=\"line-height: 24px; padding-bottom: 5px;\"><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Service Benefits, EL Encasement</p></li></ul></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Workplace</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Work at office</p></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Employment Status</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Full Time</p></div><div class=\"col-sm-12 mb-3\" style=\"min-height: 1px; padding-right: 15px; padding-left: 15px; float: left; width: 886px; color: rgb(51, 51, 51); font-family: Inter, &quot;Noto Sans Bengali UI&quot;, ui-icon, sans-serif; font-size: 14px;\"><h4 class=\"sectxt\" style=\"font-weight: 600; line-height: 1.1; color: rgb(179, 45, 125); margin-bottom: 10px; margin-right: 0px; margin-left: 0px; font-size: 16px !important;\">Job Location</h4><p style=\"margin-right: 0px; margin-bottom: 10px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; line-height: 24px; padding-left: 0px !important;\">Dhaka (Banasree)</p></div>', '2024-05-12 04:11:17', '2024-05-12 04:11:17');
 
 -- --------------------------------------------------------
 
@@ -623,9 +650,9 @@ INSERT INTO `jobs` (`id`, `title`, `job_type`, `vacancies`, `deadline`, `apply_l
 --
 
 CREATE TABLE `migrations` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `migration` varchar(255) NOT NULL,
-  `batch` int(11) NOT NULL
+  `id` int UNSIGNED NOT NULL,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -659,15 +686,15 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 --
 
 CREATE TABLE `notices` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `image` text DEFAULT NULL,
-  `alt_tag` varchar(255) DEFAULT NULL,
-  `alt_description` longtext DEFAULT NULL,
-  `files` text DEFAULT NULL,
-  `date` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` text COLLATE utf8mb4_unicode_ci,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `files` text COLLATE utf8mb4_unicode_ci,
+  `date` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -677,7 +704,8 @@ CREATE TABLE `notices` (
 INSERT INTO `notices` (`id`, `title`, `image`, `alt_tag`, `alt_description`, `files`, `date`, `created_at`, `updated_at`) VALUES
 (9, 'test apppp', '../uploads/01699100224.png', NULL, NULL, '../uploads/Branch-list.pdf', '2024-05-08', NULL, NULL),
 (10, 'Odit qui consequat ', '../uploads/8068017.png', NULL, NULL, 'Freelancer Verification.pdf', '1995-05-20', NULL, NULL),
-(14, 'Eiusmod cupidatat al', '../uploads/Screenshot-27.png', 'Mollit error sunt i dfsdf', 'Non non corporis sit.sdfsdf ds fs', '../uploads/durjoy.pdf', '1978-01-22', '2024-05-09 10:56:28', '2024-05-09 10:56:28');
+(14, 'Eiusmod cupidatat al', '../uploads/Screenshot-27.png', 'Mollit error sunt i dfsdf', 'Non non corporis sit.sdfsdf ds fs', '../uploads/durjoy.pdf', '1978-01-22', '2024-05-09 10:56:28', '2024-05-09 10:56:28'),
+(15, 'Pariatur Eos labore', '../uploads/imageedit-1-7267037658.jpg', 'Consequatur repudia', '', '../uploads/Preston-Salas.pdf', '1981-08-13', '2024-05-14 04:59:08', '2024-05-14 04:59:08');
 
 -- --------------------------------------------------------
 
@@ -686,13 +714,13 @@ INSERT INTO `notices` (`id`, `title`, `image`, `alt_tag`, `alt_description`, `fi
 --
 
 CREATE TABLE `our_offices` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL,
   `name` varchar(255) DEFAULT NULL,
-  `address` text DEFAULT NULL,
-  `location` text DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+  `address` text,
+  `location` text,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 --
 -- Dumping data for table `our_offices`
@@ -708,19 +736,19 @@ INSERT INTO `our_offices` (`id`, `name`, `address`, `location`, `created_at`, `u
 --
 
 CREATE TABLE `teams` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `type` varchar(255) DEFAULT NULL,
-  `order_by` int(11) DEFAULT NULL,
-  `designation` varchar(255) DEFAULT NULL,
-  `website` varchar(255) DEFAULT NULL,
-  `facebook` varchar(255) DEFAULT NULL,
-  `linkedin` varchar(255) DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
-  `alt_tag` varchar(255) DEFAULT NULL,
-  `alt_description` longtext DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `order_by` int DEFAULT NULL,
+  `designation` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `website` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `facebook` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `linkedin` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -736,7 +764,7 @@ INSERT INTO `teams` (`id`, `name`, `type`, `order_by`, `designation`, `website`,
 (7, 'Atiqur Rahman', 'core_team', 6, 'Project Director', '', '', '', '../uploads/atiqur-rahman-67776.jpg', NULL, NULL, '2024-05-07 10:12:24', '2024-05-07 10:12:24'),
 (8, 'Basudeb Acharjee', 'advisor', 1, 'Advisor', '', '', '', '../uploads/basudeb-acharjee-93886.jpg', NULL, NULL, '2024-05-07 10:13:07', '2024-05-07 10:13:07'),
 (9, 'Md.Azharul Islam Khan', 'advisor', 2, 'Advisor', '', '', '', '../uploads/md.azharul-islam-khan-40761.jpg', NULL, NULL, '2024-05-07 10:13:30', '2024-05-07 10:13:30'),
-(10, 'Ragebul Ahsan Ripu', 'advisor', 3, 'Advisor', '', '', '', '../uploads/ragebul-ahsan-ripu-29315.jpg', NULL, NULL, '2024-05-07 10:13:48', '2024-05-07 10:13:48');
+(10, 'Ragebul Ahsan Ripu', 'advisor', 3, 'Advisor', '', '', '', '../uploads/ragebul-ahsan-ripu-29315.jpg', 'img text', '<p>img description</p>', '2024-05-07 10:13:48', '2024-05-14 04:39:16');
 
 -- --------------------------------------------------------
 
@@ -745,15 +773,15 @@ INSERT INTO `teams` (`id`, `name`, `type`, `order_by`, `designation`, `website`,
 --
 
 CREATE TABLE `trusted_bies` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `status` tinyint(4) DEFAULT NULL,
-  `orderBy` int(11) DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL,
-  `alt_tag` varchar(255) DEFAULT NULL,
-  `alt_description` longtext DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  `orderBy` int DEFAULT NULL,
+  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_tag` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `alt_description` longtext COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -790,9 +818,9 @@ INSERT INTO `trusted_bies` (`id`, `name`, `status`, `orderBy`, `image`, `alt_tag
 --
 
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` varchar(255) NOT NULL
+  `id` int NOT NULL,
+  `username` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -810,13 +838,13 @@ INSERT INTO `users` (`id`, `username`, `password`) VALUES
 --
 
 CREATE TABLE `web_portfolios` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `category_id` varchar(255) DEFAULT NULL,
-  `link` text DEFAULT NULL,
-  `image` text DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `category_id` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `link` text COLLATE utf8mb4_unicode_ci,
+  `image` text COLLATE utf8mb4_unicode_ci,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -842,11 +870,11 @@ INSERT INTO `web_portfolios` (`id`, `title`, `category_id`, `link`, `image`, `cr
 --
 
 CREATE TABLE `web_portfolio_categories` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `status` varchar(255) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT current_timestamp(),
-  `updated_at` timestamp NULL DEFAULT current_timestamp()
+  `id` bigint UNSIGNED NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -879,6 +907,12 @@ ALTER TABLE `app_developments`
 -- Indexes for table `awards`
 --
 ALTER TABLE `awards`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `banners`
+--
+ALTER TABLE `banners`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1021,145 +1055,151 @@ ALTER TABLE `web_portfolio_categories`
 -- AUTO_INCREMENT for table `app_developments`
 --
 ALTER TABLE `app_developments`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `awards`
 --
 ALTER TABLE `awards`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `banners`
+--
+ALTER TABLE `banners`
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `blog_categories`
 --
 ALTER TABLE `blog_categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `branches`
 --
 ALTER TABLE `branches`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `certificates`
 --
 ALTER TABLE `certificates`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `departments`
 --
 ALTER TABLE `departments`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=99;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT for table `featured_youtubes`
 --
 ALTER TABLE `featured_youtubes`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `free_trials`
 --
 ALTER TABLE `free_trials`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `get_quotes`
 --
 ALTER TABLE `get_quotes`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `histories`
 --
 ALTER TABLE `histories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `history_galleries`
 --
 ALTER TABLE `history_galleries`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `history_journeys`
 --
 ALTER TABLE `history_journeys`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `history_projects`
 --
 ALTER TABLE `history_projects`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `jobs`
 --
 ALTER TABLE `jobs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `notices`
 --
 ALTER TABLE `notices`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `our_offices`
 --
 ALTER TABLE `our_offices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `trusted_bies`
 --
 ALTER TABLE `trusted_bies`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `web_portfolios`
 --
 ALTER TABLE `web_portfolios`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `web_portfolio_categories`
 --
 ALTER TABLE `web_portfolio_categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -66,7 +66,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error: " . mysqli_error($conn);
     }
 
-
     // Close database connection
     mysqli_close($conn);
 } else {
