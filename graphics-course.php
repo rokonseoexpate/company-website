@@ -15,28 +15,28 @@ ob_start();
 				        <ul class="navbar-nav ">
 				        	<li class="nav-item"><a class="nav-link" href="traning.html"> Training</a></li>
 				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="regular_course.html" data-bs-toggle="dropdown">Regular Course / Training</a>
+				                <a class="nav-link  dropdown-toggle" href="regular-course.html" data-bs-toggle="dropdown">Regular Course / Training</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="website_course.html">Website</a></li>
-				                  <li><a class="dropdown-item" href="php_course.html">PHP</a></li>
-				                  <li><a class="dropdown-item" href="laravel_course.html">Laravel</a></li>
-				                  <li><a class="dropdown-item" href="aspnet_course.html">ASP.NET</a></li>
-				                  <li><a class="dropdown-item" href="python_course.html">Python</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_course.html">WordPress</a></li>
-				                  <li><a class="dropdown-item" href="graphics_course.html">Graphics Design</a></li>
-				                  <li><a class="dropdown-item" href="digital_marketing_course.html">Digital Marketing</a></li>
+				                  <li><a class="dropdown-item" href="website-course.html">Website</a></li>
+				                  <li><a class="dropdown-item" href="php-course.html">PHP</a></li>
+				                  <li><a class="dropdown-item" href="laravel-course.html">Laravel</a></li>
+				                  <li><a class="dropdown-item" href="aspnet-course.html">ASP.NET</a></li>
+				                  <li><a class="dropdown-item" href="python-course.html">Python</a></li>
+				                  <li><a class="dropdown-item" href="wordpress-course.html">WordPress</a></li>
+				                  <li><a class="dropdown-item" href="graphics-course.html">Graphics Design</a></li>
+				                  <li><a class="dropdown-item" href="digital-marketing-course.html">Digital Marketing</a></li>
 				                </ul>
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="it_traning.html" data-bs-toggle="dropdown">IT Training</a>
+				                <a class="nav-link  dropdown-toggle" href="it-traning.html" data-bs-toggle="dropdown">IT Training</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="microsoft_office_course.html"> Microsoft Office</a></li>
-				                  <li><a class="dropdown-item" href="software_development_course.html">Software Development Course</a></li>
-				                  <li><a class="dropdown-item" href="app_development_course.html">App Development Course</a></li>
-				                  <li><a class="dropdown-item" href="adobe_course.html">Adobe / Freelancing</a></li>
-				                  <li><a class="dropdown-item" href="server_administration_course.html">Network & Server Administration</a></li>
-				                  <li><a class="dropdown-item" href="it_security_course.html">IT Security, Service & Business Management</a></li>
-				                  <li><a class="dropdown-item" href="machine_learning_course.html">AI / Machine Learning / Robotics</a></li>
+				                  <li><a class="dropdown-item" href="microsoft-office-course.html"> Microsoft Office</a></li>
+				                  <li><a class="dropdown-item" href="software-development-course.html">Software Development Course</a></li>
+				                  <li><a class="dropdown-item" href="app-development-course.html">App Development Course</a></li>
+				                  <li><a class="dropdown-item" href="adobe-course.html">Adobe / Freelancing</a></li>
+				                  <li><a class="dropdown-item" href="server-administration-course.html">Network & Server Administration</a></li>
+				                  <li><a class="dropdown-item" href="it-security-course.html">IT Security, Service & Business Management</a></li>
+				                  <li><a class="dropdown-item" href="machine-learning-course.html">AI / Machine Learning / Robotics</a></li>
 				                </ul>
 				            </li>
 				        </ul>

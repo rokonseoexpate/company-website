@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Clipping Path";
     ob_start();
 ?>
 

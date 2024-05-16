@@ -48,7 +48,7 @@ ob_start();
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development phpdevelopment" style="background-image: url(images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-7 ecomresp" style="z-index:500; ">
@@ -309,8 +309,8 @@ ob_start();
 				<p>6. Life time course free facility is available.</p>
 				<p>7. Office can do free time lab practice.</p>
 				<p>8. Classes can be done online and offline.</p>
-				<p>9. Arrangement of <a href="jobs.html" class="text-success">job</a> placement and internship.</p>
-				<p>10. Interview and <a href="jobs.html" class="text-success">job</a> preparation is done.</p>
+				<p>9. Arrangement of <a href="jobs.php" class="text-success">job</a> placement and internship.</p>
+				<p>10. Interview and <a href="jobs.php" class="text-success">job</a> preparation is done.</p>
 			</div>
 		</div>
 	</div>
@@ -328,7 +328,7 @@ ob_start();
 			</div>
 			<div class="col-12">
 				<p>1. We have our own hostel for boys and girls.</p>
-				<p>2. We have good facilities for online and offline <a href="traning.html" class="text-success">courses</a>.</p>
+				<p>2. We have good facilities for online and offline <a href="traning.php" class="text-success">courses</a>.</p>
 				<p>3. There are arrangements for job placement and internship.</p>
 				<p>4. Confirm your discount offer by registering today.</p>
 			</div>
@@ -347,7 +347,7 @@ ob_start();
 					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
 				</div>
 				<div class="top-body-button pt-5">
-					<a type="button" href="contact.html">Get In Touch</a>
+					<a type="button" href="contact.php">Get In Touch</a>
 				</div>
 			</div>
 			<div class="col-md-6">

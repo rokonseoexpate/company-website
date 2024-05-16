@@ -147,7 +147,7 @@ $conn = $db->get_connection();
                         solutions that deliver high return on investment (ROI).</p>
                 </div>
                 <div class="top-body-button pt-3">
-                    <a type="button" href="#">Explore More</a>
+                    <a type="button" href="about.php">Explore More</a>
                 </div>
             </div>
         </div>

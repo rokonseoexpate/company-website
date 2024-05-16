@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Raster to Vector Conversion";
 ob_start();
 ?>
 

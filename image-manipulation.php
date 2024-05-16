@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Image Manipulation";
     ob_start();
 ?>
 
