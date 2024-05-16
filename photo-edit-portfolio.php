@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Portfolio";
     ob_start();
 ?>
 
@@ -190,7 +190,7 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
@@ -201,7 +201,7 @@
 						<p style="text-align:justify;">In conclusion, you can get our dynamic services at reasonable prices, which can be very beneficial for you. We have been providing these services for a long time and are the best in this sector. So, we recommend you use our service, and we will help you stand out in a competitive job market.</p>
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="free_trial.php">Free Trial</a>
+						<a type="button" href="free-trial.php">Free Trial</a>
 					</div>	
 				</div>			
 			</div>

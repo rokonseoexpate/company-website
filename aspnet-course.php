@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "ASP.NET Course";
 ob_start();
 ?>
 

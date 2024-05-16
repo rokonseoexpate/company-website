@@ -1,5 +1,5 @@
 <?php
-$title = "SEO Services for eCommerce";
+$title = "Digital Marketing Course";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
