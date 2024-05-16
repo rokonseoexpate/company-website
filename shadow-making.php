@@ -15,12 +15,12 @@
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
 				            <li class="nav-item dropdown has-megamenu ">
-				                <a class="nav-link dropdown-toggle" href="photo_editor.html" data-bs-toggle="dropdown"> Photo Editing Services </a>
+				                <a class="nav-link dropdown-toggle" href="photo-editor.php" data-bs-toggle="dropdown"> Photo Editing Services </a>
 				                <div class="dropdown-menu megamenu" role="menu">
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="clipping_path.html" class="d-flex">
+				                                <a href="clipping-path.php" class="d-flex">
 				                                   <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Clipping Path</h6>
@@ -30,7 +30,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="background_remove.html" class="d-flex">
+				                                <a href="background-remove.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Photo Background Removing</h6>
@@ -40,7 +40,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="image_masking.html" class="d-flex">
+				                                <a href="image-masking.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Image Masking</h6>
@@ -50,7 +50,7 @@
 				                        </div>    
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="shadow-making.html" class="d-flex">
+				                                <a href="shadow-making.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Shadow Making</h6>
@@ -62,7 +62,7 @@
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="ghost-mannequin.html" class="d-flex">
+				                                <a href="ghost-mannequin.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Ghost Mannequin Effect</h6>
@@ -72,7 +72,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="photo-retouching.html" class="d-flex">
+				                                <a href="photo-retouching.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Photo Retouching</h6>
@@ -82,7 +82,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="color-correction.html" class="d-flex">
+				                                <a href="color-correction.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Color Correction</h6>
@@ -92,7 +92,7 @@
 				                        </div>    
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="ecommerce-photo-edit.html" class="d-flex">
+				                                <a href="ecommerce-photo-edit.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">E-Commerce Photo Editing</h6>
@@ -104,7 +104,7 @@
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="jewelry-retouching.html" class="d-flex">
+				                                <a href="jewelry-retouching.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Jewelry Retouching</h6>
@@ -114,7 +114,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="wedding-photo.html" class="d-flex">
+				                                <a href="wedding-photo.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Wedding Photo Editing</h6>
@@ -124,7 +124,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="photo-restoration.html" class="d-flex">
+				                                <a href="photo-restoration.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Photo Restoration</h6>
@@ -134,7 +134,7 @@
 				                        </div>    
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="real-estate-photo.html" class="d-flex">
+				                                <a href="real-estate-photo.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Real Estate Photo Editing</h6>
@@ -146,7 +146,7 @@
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="image-manipulation.html" class="d-flex">
+				                                <a href="image-manipulation.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Image Manipulation</h6>
@@ -156,7 +156,7 @@
 				                        </div>
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="raster-vector.html" class="d-flex">
+				                                <a href="raster-vector.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">Raster to Vector Conversion</h6>
@@ -168,19 +168,19 @@
 				                </div> 
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="graphic_design.html" data-bs-toggle="dropdown"> Graphic Design </a>
+				                <a class="nav-link  dropdown-toggle" href="graphic-design.php" data-bs-toggle="dropdown"> Graphic Design </a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="t-shirt-design.html"> T-Shirt Design</a></li>
-				                  <li><a class="dropdown-item" href="logo-design.html">Logo Designs Service</a></li>
-				                  <li><a class="dropdown-item" href="banner-design.html">Banner Design</a></li>
+				                  <li><a class="dropdown-item" href="t-shirt-design.php"> T-Shirt Design</a></li>
+				                  <li><a class="dropdown-item" href="logo-design.php">Logo Designs Service</a></li>
+				                  <li><a class="dropdown-item" href="banner-design.php">Banner Design</a></li>
 				                </ul>
 				            </li>
-				            <li class="nav-item"><a class="nav-link" href="photo-editor-pricing.html"> Pricing </a></li>
-				            <li class="nav-item"><a class="nav-link" href="photo-edit-portfolio.html"> Portfolio </a></li>
+				            <li class="nav-item"><a class="nav-link" href="photo-editor-pricing.php"> Pricing </a></li>
+				            <li class="nav-item"><a class="nav-link" href="photo-edit-portfolio.php"> Portfolio </a></li>
 				        </ul>
 				        <ul class="navbar-nav booknowbtn">
 						    <li class="nav-item">
-						        <a type="submit" class="nav-link btn" href="get-quote.html">Get Quote</a>
+						        <a type="submit" class="nav-link btn" href="get-quote.php">Get Quote</a>
 						    </li>
 						</ul>
 				    </div>
@@ -191,17 +191,17 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
 		    		<div class="top_body_txt_part">
 						<h1>Shadow Making</h1>		
 						<p style="text-align:justify;">Shadow-making is a photo editing technique of creating shadows of objects on an image. This is a crucial aspect of photo editing that adds deepness and realistic fill to images. Therefore, by properly manipulating light and shadows, professional editors can transform ordinary photos into amazing works of art. So, the right techniques for making shadows can create a sense of three-dimensional looks of any object. Thus, it gives a natural look to the image and makes the object real.</p>
-						<p style="text-align:justify;">Shadows play a vital role in creating visual effects and dramatic looks. Also, it will help you to highlight certain elements, create contrast, and evolve the emotions. Our skilled photo editors use various tools and software to create shadows to ensure a good image composition. <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd will make you happy with the best quality graphic design services. </p>						
+						<p style="text-align:justify;">Shadows play a vital role in creating visual effects and dramatic looks. Also, it will help you to highlight certain elements, create contrast, and evolve the emotions. Our skilled photo editors use various tools and software to create shadows to ensure a good image composition. <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd will make you happy with the best quality graphic design services. </p>						
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="free-trial.html">Free Trial</a>
+						<a type="button" href="free-trial.php">Free Trial</a>
 					</div>	
 				</div>			
 			</div>
@@ -217,15 +217,15 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.html" class=" text-light">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo-editor.html" class="text-light">Photo editor</a></li>
+							<li class="breadcrumb-item "><a href="index.php" class=" text-light">Home</a></li>
+							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Shadow Making</li>
 						</ol>
 						</nav>
 					</div>
 					<div class="pb-2 pt-2 text-light"><h4 class="fs-1 fw-bold">Shadow Making Service</h4></div>
 					<p class="pt-2 text-light" >Shadow-making services can make a huge impact on your images by enhancing their quality. Here, we edit light and shadows with a professional touch and make the photos lovely and smooth. If you're a photographer, designer, or business owner looking to enhance your product photos, this service will give you the desired result. In addition, we use the most updated software and technologies to make our services the best in the market. </p>	
-					<p class="pt-2 text-light" >A shadow-making service is a valuable resource for anyone looking to improve their image quality. Here, <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd has a large team of experts with vast knowledge and skills. Thus, we can upgrade your pictures to new heights, making them stand out and leave a lasting impression on viewers. </p>					
+					<p class="pt-2 text-light" >A shadow-making service is a valuable resource for anyone looking to improve their image quality. Here, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd has a large team of experts with vast knowledge and skills. Thus, we can upgrade your pictures to new heights, making them stand out and leave a lasting impression on viewers. </p>					
 				</div>
 			</div>
 		</div>
@@ -302,7 +302,7 @@
             <div class="row">
                 <h4>Shadow Making Service of SEOEBL </h4>
                 <div class="pb-5 border-bottom border-success border-2" >
-                    <p>Shadow-making service is a professional technique that adds depth and dimension to images. In this competitive market, businesses understand the importance of visually appealing photos. In addition, shadow-making service offers a cost-effective solution to enrich product images, making them appealing to people. Here, <a href="index.html" class="text-success">SEO Expate</a> offers you the most affordable photo editing service you can get in the market. We have a huge team of graphic designers who have vast experience in this sector. Additionally, we are always updated with all the modern technologies and methods. So, we can assure you that our service will never let you down.</p>                   
+                    <p>Shadow-making service is a professional technique that adds depth and dimension to images. In this competitive market, businesses understand the importance of visually appealing photos. In addition, shadow-making service offers a cost-effective solution to enrich product images, making them appealing to people. Here, <a href="index.php" class="text-success">SEO Expate</a> offers you the most affordable photo editing service you can get in the market. We have a huge team of graphic designers who have vast experience in this sector. Additionally, we are always updated with all the modern technologies and methods. So, we can assure you that our service will never let you down.</p>                   
                 </div>
             </div>
         </div>
@@ -694,7 +694,7 @@
 			<div class="row">
 				<div class="col-md-3">
 					<h4>Photoshop Services</h4>
-					<a href="clipping-path.html" class="d-flex pt-4">
+					<a href="clipping-path.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -702,7 +702,7 @@
 							<h6>Clipping Path Service</h6>
 						</div>
 					</a>
-					<a href="jewelry-retouching.html" class="d-flex pt-2">
+					<a href="jewelry-retouching.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -710,7 +710,7 @@
 							<h6>Jewelry Retouching Service</h6>
 						</div>
 					</a>
-					<a href="ecommerce-photo_edit.html" class="d-flex pt-2">
+					<a href="ecommerce-photo-edit.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -718,7 +718,7 @@
 							<h6>E-Commerce Photo Editing</h6>
 						</div>
 					</a>
-					<a href="image-masking.html" class="d-flex pt-2">
+					<a href="image-masking.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -726,7 +726,7 @@
 							<h6>Image Masking Service</h6>
 						</div>
 					</a>
-					<a href="color-correction.html" class="d-flex pt-2">
+					<a href="color-correction.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -737,7 +737,7 @@
 				</div>
 				<div class="col-md-3">
 					<h4>Photoshop Services</h4>
-					<a href="real-estate-photo.html" class="d-flex pt-4">
+					<a href="real-estate-photo.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -745,7 +745,7 @@
 							<h6>Real Estate Photo Editing</h6>
 						</div>
 					</a>
-					<a href="photo-retouching.html" class="d-flex pt-2">
+					<a href="photo-retouching.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -753,7 +753,7 @@
 							<h6>Photo Retouching</h6>
 						</div>
 					</a>
-					<a href="background-remove.html" class="d-flex pt-2">
+					<a href="background-remove.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -761,7 +761,7 @@
 							<h6>Remove Background Image</h6>
 						</div>
 					</a>
-					<a href="ghost-mannequin.html" class="d-flex pt-2">
+					<a href="ghost-mannequin.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -769,7 +769,7 @@
 							<h6>Ghost Mannequin Effect</h6>
 						</div>
 					</a>
-					<a href="shadow-making.html" class="d-flex pt-2">
+					<a href="shadow-making.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -780,7 +780,7 @@
 				</div>
 				<div class="col-md-3">
 					<h4>Photoshop Services</h4>
-					<a href="photo-restoration.html" class="d-flex pt-4">
+					<a href="photo-restoration.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -788,7 +788,7 @@
 							<h6>Photo Restoration</h6>
 						</div>
 					</a>
-					<a href="image-manipulation.html" class="d-flex pt-2">
+					<a href="image-manipulation.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -796,7 +796,7 @@
 							<h6>Image Manipulation Service</h6>
 						</div>
 					</a>
-					<a href="wedding-photo.html" class="d-flex pt-2">
+					<a href="wedding-photo.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -804,7 +804,7 @@
 							<h6>Wedding Photo Editing</h6>
 						</div>
 					</a>
-					<a href="raster-vector.html" class="d-flex pt-2">
+					<a href="raster-vector.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -812,7 +812,7 @@
 							<h6>Raster to Vector Conversion</h6>
 						</div>
 					</a>
-					<a href="background-remove.html" class="d-flex pt-2">
+					<a href="background-remove.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -823,7 +823,7 @@
 				</div>
 				<div class="col-md-3">
 					<h4>Graphics Design Services</h4>
-					<a href="t-shirt-design.html" class="d-flex pt-4">
+					<a href="t-shirt-design.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -831,7 +831,7 @@
 							<h6>T-Shirt Design</h6>
 						</div>
 					</a>
-					<a href="logo-design.html" class="d-flex pt-2">
+					<a href="logo-design.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -839,7 +839,7 @@
 							<h6>Logo Designs Service</h6>
 						</div>
 					</a>
-					<a href="banner-design.html" class="d-flex pt-2">
+					<a href="banner-design.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>

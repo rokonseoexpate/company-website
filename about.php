@@ -411,7 +411,7 @@ $conn = $db->get_connection();
 			<h3 class="pb-3 text-light">Core Service Areas</h3>
 			<p class="text-light pb-4" style="text-align: left;">SEO Expate delivers IT services and tech solutions and provides higher value to clients. Our service areas are Software Development, Mobile App Development, Digital Marketing, Graphics Design, Content Writing, and many more. Also, we have a freelancing training program that helps thousands of youth to build their career.</p>
 			<div class="col-md-3">
-				<a href="web_development.html"><img src="frontend/images/core-servicr.png" alt="image"></a>
+				<a href="web-development.php"><img src="frontend/images/core-servicr.png" alt="image"></a>
 				<h5 class="text-light pt-3">Web Development</h5>
 			</div>
 			<div class="col-md-3">
@@ -419,29 +419,29 @@ $conn = $db->get_connection();
 				<h5 class="text-light pt-3">Software Development</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="app_development.html"><img src="frontend/images/core-service-areaer.png" alt="image"></a>
+				<a href="app-development.php"><img src="frontend/images/core-service-areaer.png" alt="image"></a>
 				<h5 class="text-light pt-3">Mobile App Development</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="domain_hosting.html"><img src="frontend/images/core-servicer.png" alt="image"></a>
+				<a href="domain-hosting.php"><img src="frontend/images/core-servicer.png" alt="image"></a>
 				<h5 class="text-light pt-3">Domain & Hosting</h5>
 			</div>
 		</div>
 		<div class="row pt-3">
 			<div class="col-md-3">
-				<a href="photo_editor.html"><img src="frontend/images/iot-expertiser.png" alt="image"></a>
+				<a href="photo-editor.php"><img src="frontend/images/iot-expertiser.png" alt="image"></a>
 				<h5 class="text-light pt-3">Graphic Design</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/core-service.png" alt="image"></a>
+				<a href="digital-marketing.php"><img src="frontend/images/core-service.png" alt="image"></a>
 				<h5 class="text-light pt-3">Digital Marketing</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/core-service-areater.png" alt="image"></a>
+				<a href="seo-service.php"><img src="frontend/images/core-service-areater.png" alt="image"></a>
 				<h5 class="text-light pt-3">SEO</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/core-service-arear.png" alt="image"></a>
+				<a href="content-writing.php"><img src="frontend/images/core-service-arear.png" alt="image"></a>
 				<h5 class="text-light pt-3">Content Writing</h5>
 			</div>
 		</div>

@@ -13,38 +13,38 @@
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
 				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="seo_service.html" data-bs-toggle="dropdown">SEO Services</a>
+				                <a class="nav-link  dropdown-toggle" href="seo-service.php" data-bs-toggle="dropdown">SEO Services</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="ecommerce_seo.html"> eCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="amazon_seo.html">Amazon SEO</a></li>
-				                  <li><a class="dropdown-item" href="b2b_seo.html">B2B SEO</a></li>
-				                  <li><a class="dropdown-item" href="shopify_seo.html">Shopify SEO</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_seo.html">WordPress SEO</a></li>
-				                  <li><a class="dropdown-item" href="woocommerce_seo.html">WooCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="lead_seo.html">Lead Generation SEO</a></li>
-				                  <li><a class="dropdown-item" href="nopcommerce_seo.html">NopCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="magento_seo.html">Magento SEO</a></li>
-				                  <li><a class="dropdown-item" href="volusion_seo.html">Volusion SEO</a></li>
-				                  <li><a class="dropdown-item" href="bigcommerce_seo.html">BigCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="consulting_seo.html">SEO Consulting</a></li>
+				                  <li><a class="dropdown-item" href="ecommerce-seo.php"> eCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="amazon-seo.php">Amazon SEO</a></li>
+				                  <li><a class="dropdown-item" href="b2b-seo.php">B2B SEO</a></li>
+				                  <li><a class="dropdown-item" href="shopify-seo.php">Shopify SEO</a></li>
+				                  <li><a class="dropdown-item" href="wordpress-seo.php">WordPress SEO</a></li>
+				                  <li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
+				                  <li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="magento-seo.php">Magento SEO</a></li>
+				                  <li><a class="dropdown-item" href="volusion-seo.php">Volusion SEO</a></li>
+				                  <li><a class="dropdown-item" href="bigcommerce-seo.php">BigCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="consulting-seo.php">SEO Consulting</a></li>
 				                </ul>
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="ppc_paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
+				                <a class="nav-link  dropdown-toggle" href="ppc-paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="amazon_ppc.html"> Amazon PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="ecommerce_ppc.html">eCommerce PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="google_ads.html">Google Ads Consulting</a></li>
-				                  <li><a class="dropdown-item" href="management_ads.html">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping_management.html">Google Shopping Management</a></li>
-				                  <li><a class="dropdown-item" href="ppc_consulting.html">PPC Consulting</a></li>
-				                  <li><a class="dropdown-item" href="ppc_lead.html">Lead Gen PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="amazon-ppc.php"> Amazon PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
+				                  <li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
+				                  <li><a class="dropdown-item" href="shoping-management.php">Google Shopping Management</a></li>
+				                  <li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
+				                  <li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
 				                </ul>
 				            </li>
-				            <li class="nav-item"><a class="nav-link" href="onpage_seo.html"> On-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="offpage_seo.html"> Off-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="technical_seo.html"> Technical SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="package_price_seo.html"> SEO Packages & Pricing </a></li>
+				            <li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="package-price-seo.php"> SEO Packages & Pricing </a></li>
 				        </ul>
 				    </div>
 				</div> 
@@ -69,7 +69,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6 pt-2">
-							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.html" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your Amazon PPC Proposal</a></div>
+							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your Amazon PPC Proposal</a></div>
 						</div>
 						<div class="col-md-2 ecomrespons">
 							<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="Amazon PPC Management Services" description="Amazon PPC Management Services" class="img-fluid" >
@@ -92,8 +92,8 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item "><a href="seo_service.html" class="text-light">SEO</a></li>
+						    <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Amazon PPC</li>
 						  </ol>
 						</nav>
@@ -148,7 +148,7 @@
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2"><h6>Amazon Marketing Services Company </h6></div>
-					<p class="pt-3" >Utilize our 15+ years of expertise in digital marketing, <a href="seo_service.html" class="text-success">SEO</a> proficiency, and PPC management to upgrade your Amazon store. So, you can trust us, we will please you with the results.</p>												
+					<p class="pt-3" >Utilize our 15+ years of expertise in digital marketing, <a href="seo-service.php" class="text-success">SEO</a> proficiency, and PPC management to upgrade your Amazon store. So, you can trust us, we will please you with the results.</p>												
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
@@ -201,7 +201,7 @@
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2"><h6>Extensive Keyword Research and Planning</h6></div>
-					<p class="pt-3" >Keyword research and planning are vital factors for a successful PPC lead generation campaign. Besides, it needs huge research to identify the most relevant and high-converting keywords to get proper results from PPC campaigns. Also, this ensures that your ads are shown to the right audience, increasing the chances of generating high-quality leads. So, try the expert service of <a href="index.html" class="text-success">SEO Expate</a> and generate valuable leads through PPC advertising.</p>												
+					<p class="pt-3" >Keyword research and planning are vital factors for a successful PPC lead generation campaign. Besides, it needs huge research to identify the most relevant and high-converting keywords to get proper results from PPC campaigns. Also, this ensures that your ads are shown to the right audience, increasing the chances of generating high-quality leads. So, try the expert service of <a href="index.php" class="text-success">SEO Expate</a> and generate valuable leads through PPC advertising.</p>												
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
@@ -224,7 +224,7 @@
 				</div>
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2 margintop"><h6>Paid Traffic Landing Page Design</h6></div>
-					<p class="pt-3" >A proper strategic landing page design will help you to boost your PPC lead generation. In addition, an optimized landing page attracts visitors toward conversion with intuitive navigation and clear calls to action. Additionally, the landing pages should have mobile responsiveness and fast loading times with a user-friendly interface. Moreover, SEO Expate has an expert team of developers and <a href="index.html" class="text-success">SEO experts</a> who are proficient in creating optimized landing pages. </p>												
+					<p class="pt-3" >A proper strategic landing page design will help you to boost your PPC lead generation. In addition, an optimized landing page attracts visitors toward conversion with intuitive navigation and clear calls to action. Additionally, the landing pages should have mobile responsiveness and fast loading times with a user-friendly interface. Moreover, SEO Expate has an expert team of developers and <a href="index.php" class="text-success">SEO experts</a> who are proficient in creating optimized landing pages. </p>												
 				</div>				
 			</div>
 		</div>
@@ -255,13 +255,13 @@
             <div class="row ">
             	<div class="col-12">
                 	<h6 class="fw-bold fs-5 pb-3">How does PPC advertising work on Amazon? </h6>
-	                <div><p>Amazon PPC advertising operates by allowing sellers to bid on keywords. PPC advertising works by allowing advertisers to bid on keywords that they want their ads to appear in search results. Hence, when a user searches with keywords or phrases, the advertiser's ad will appear among the top results. Here, sellers pay when users or visitors click on their ads and visit the page <a href="index.html" class="text-success">SEO Expate</a>. </p></div>
+	                <div><p>Amazon PPC advertising operates by allowing sellers to bid on keywords. PPC advertising works by allowing advertisers to bid on keywords that they want their ads to appear in search results. Hence, when a user searches with keywords or phrases, the advertiser's ad will appear among the top results. Here, sellers pay when users or visitors click on their ads and visit the page <a href="index.php" class="text-success">SEO Expate</a>. </p></div>
 	                <h6 class="fw-bold fs-6 pb-3">There are two types of PPC advertising on Amazon:</h6>
 	                <h6 class="fw-bold fs-5 pb-3">Manual bidding</h6>
 	                <div><p>Manual bidding allows advertisers to have complete control over their targeting. This means they can manually create product-targeting expressions by adding specific keywords. Therefore, experts prefer manual bidding because it gives them the freedom to use their expertise properly. </p></div>
 	                <h6 class="fw-bold fs-5 pb-3">Automatic bidding</h6>
 	                <div><p>Amazon bidding works like an auction of advertisers who bid to place ads on search results. Here, sellers bid on keywords to display their ads to people who might buy the products. In addition, amazon automatically optimizes bids for new placements to improve conversion. Automatic targeting allows Amazon to choose where and when a product ad will show. This ad targeting focuses on keywords that Amazon's algorithm sees as important on a product listing, like the title and description. </p></div>
-	                <div><p>Amazon PPC advertising is a great way to <a href="about.html" class="text-success">get more</a> visitors to a seller’s product pages on Amazon. Therefore, it can increase sales and make products more visible to shoppers.</p></div>
+	                <div><p>Amazon PPC advertising is a great way to <a href="about.php" class="text-success">get more</a> visitors to a seller’s product pages on Amazon. Therefore, it can increase sales and make products more visible to shoppers.</p></div>
                 </div>
             </div>
         </div>
@@ -300,7 +300,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">

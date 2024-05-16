@@ -256,34 +256,34 @@ ob_start();
 			<h4 class="pt-2">Graphic Design </h4>
 			<p class="">In conclusion, the Philippines Photo Editor website aid in better campaigns and faster conversions with your target customer if you purchase from us any service. This upper included whole service gets you the most crucial factor which would be the benefits of your increased business profit. Then again, we give the design services which will be must so perfect than others. We also keep on ready our service with you 24 hours daily for providing these services.</p>
 			<div class="col-md-3 pt-5">
-				<a href="logo_design.html">
+				<a href="logo-design.php">
 					<div class="card">
 						<img src="frontend/images/Logo-Design-Banner.webp" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
 						<div class="card-body text-center">
 							<h5 class="card-title text-dark text-center pb-3">Logo Design</h5>
-							<div class="button text-center pt-2"><a type="button" href="logo_design.html" class="text-light text-center"> Click Here</a></div>
+							<div class="button text-center pt-2"><a type="button" href="logo-design.php" class="text-light text-center"> Click Here</a></div>
 						</div>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-3 pt-5">
-				<a href="t-shirt-design.html">
+				<a href="t-shirt-design.php">
 					<div class="card hover-zoom">
 						<img src="frontend/images/T-Shirt-Design-Banner.jpg" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
 						<div class="card-body text-center">
 							<h5 class="card-title text-dark text-center pb-3">T-Shirt Design</h5>
-							<div class="button text-center pt-2"><a type="button" href="t-shirt-design.html" class="text-light text-center"> Click Here</a></div>
+							<div class="button text-center pt-2"><a type="button" href="t-shirt-design.php" class="text-light text-center"> Click Here</a></div>
 						</div>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-3 pt-5">
-				<a href="banner_design.html">
+				<a href="banner-design.php">
 					<div class="card">
 						<img src="frontend/images/Banner-design-image.jpg" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
 						<div class="card-body text-center">
 							<h5 class="card-title text-center pb-3 text-dark">Banner Design</h5>
-							<div class="button text-center pt-2"><a type="button" href="banner_design.html" class="text-light text-center"> Click Here</a></div>
+							<div class="button text-center pt-2"><a type="button" href="banner-design.php" class="text-light text-center"> Click Here</a></div>
 						</div>
 					</div>
 				</a>

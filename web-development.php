@@ -14,7 +14,7 @@ $conn = $db->get_connection();
 		<div class="row">
 			<div class="top_about_us_txt pt-5">
 				<div class="d-flex">
-					<p><a href="home.php" class="text-light">Home</a></p>
+					<p><a href="index.php" class="text-light">Home</a></p>
 					<p><i class="fa-solid fa-angle-right"></i></p>
 					<p class="ml-2">Web Development</p>
 				</div>

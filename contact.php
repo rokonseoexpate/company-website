@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Contact";
 ob_start();
 
 require_once 'config/dbconnect.php';

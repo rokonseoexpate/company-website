@@ -54,7 +54,7 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">		
+	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-md-7 ecomresp" style="z-index:500;">
@@ -67,12 +67,12 @@
 							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Talk with our Technical SEO Consultancy experts </a></div>
 						</div>
 						<div class="col-md-2 ecomrespons">
-							<img src="images/google-seo-proposal-audit.png.webp" alt="Technical SEO Consultancy " description="Technical SEO Consultancy" class="img-fluid" >
+							<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="Technical SEO Consultancy " description="Technical SEO Consultancy" class="img-fluid" >
 						</div>
 					</div>	
 				</div>
 				<div class="col-md-5 m-auto ecomrespp" style="z-index:500;" >
-					<img src="images/whatsapp-image-2023-08-21-at-1-25-24-pm.jpeg" alt="Technical SEO Consultancy " description="Technical SEO Consultancy" class="img-thumbnail">
+					<img src="frontend/images/whatsapp-image-2023-08-21-at-1-25-24-pm.jpeg" alt="Technical SEO Consultancy " description="Technical SEO Consultancy" class="img-thumbnail">
 				</div>		
 			</div>
 		</div>				
@@ -114,7 +114,7 @@
                 </div>
                 <div class="col-md-6">
                 	<div class="clip_img">
-						<img src="images/unnamed.jpg" alt="technical SEO " description="technical SEO" class="img-thumbnail">
+						<img src="frontend/images/unnamed.jpg" alt="technical SEO " description="technical SEO" class="img-thumbnail">
 					</div>
                 </div>
                 <div class="col-12">
@@ -122,7 +122,7 @@
                 </div>
                 <div class="col-md-6 pt-5">
                 	<div class="clip_img">
-						<img src="images/Why-Should-We-Invest-in-Technical-SEO.jpg" alt="technical SEO " description="technical SEO" class="img-thumbnail">
+						<img src="frontend/images/Why-Should-We-Invest-in-Technical-SEO.jpg" alt="technical SEO " description="technical SEO" class="img-thumbnail">
 					</div>
                 </div>
                 <div class="col-md-6 pt-5">
@@ -166,11 +166,11 @@
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2"><h6>Our SEO Consultants can help with any CMS</h6></div>
-					<p class="pt-3" ><a href="consulting_seo.php" class="text-success">SEO consultants</a> utilize their expertise to optimize websites on any CMS platform. Besides, they understand the technical factors of different content management systems and can make their strategies. Whether it's WordPress, Shopify, Joomla, or any other CMS, SEO consultants can provide valuable insights and recommendations to improve website performance. Moreover, consultants offer customized solutions to address specific technical challenges on different CMS platforms. They can optimize website structures, fix indexing issues, improve site speed, and enhance mobile responsiveness to boost search engine rankings.</p>												
+					<p class="pt-3" ><a href="consulting-seo.php" class="text-success">SEO consultants</a> utilize their expertise to optimize websites on any CMS platform. Besides, they understand the technical factors of different content management systems and can make their strategies. Whether it's WordPress, Shopify, Joomla, or any other CMS, SEO consultants can provide valuable insights and recommendations to improve website performance. Moreover, consultants offer customized solutions to address specific technical challenges on different CMS platforms. They can optimize website structures, fix indexing issues, improve site speed, and enhance mobile responsiveness to boost search engine rankings.</p>
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
-						<img src="images/SEO-Optimization-Illustration.jpg" alt="SEO Consultants " description="SEO Consultants" class="img-thumbnail">
+						<img src="frontend/images/SEO-Optimization-Illustration.jpg" alt="SEO Consultants " description="SEO Consultants" class="img-thumbnail">
 					</div>
 				</div>
 			</div>
@@ -215,7 +215,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="top_ready_start_img text-left">
-                        <img src="images/95991_prev_ui.png" alt="We can build your story " description="We can build your story">
+                        <img src="frontend/images/95991_prev_ui.png" alt="We can build your story " description="We can build your story">
                     </div>
                 </div>
             </div>
@@ -228,7 +228,7 @@
         <div class="container">
             <div class="row">
                 <div class="PAY_IMG">
-                 	<img src="images/Payment-method-banner-image-1024x73.webp" alt="payment" description="payment" width="100%">
+                 	<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description="payment" width="100%">
                 </div>
             </div>
         </div>

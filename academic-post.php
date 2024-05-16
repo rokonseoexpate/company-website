@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Academic Writing";
 ob_start();
 ?>
 
