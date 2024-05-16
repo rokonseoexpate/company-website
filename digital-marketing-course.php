@@ -230,8 +230,6 @@ $conn = $db->get_connection();
 
 
 
-
-
 <?php
 $main_content = ob_get_clean();
 include './layouts/app.php';
