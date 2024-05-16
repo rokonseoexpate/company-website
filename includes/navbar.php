@@ -4,7 +4,7 @@
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="index.php">
+                        <a class="navbar-brand" href="/">
                             <img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo" width="300" height="auto">
                         </a>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
@@ -70,7 +70,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="graphic_design.php">
+                                                            <a class="list-group-item d-flex" href="graphic-design.php">
                                                                 <div><i class="fa-solid fa-paintbrush"></i></div>
                                                                 <div>
                                                                     <h5>Graphic Design</h5>
