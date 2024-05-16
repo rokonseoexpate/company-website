@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Notice";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();

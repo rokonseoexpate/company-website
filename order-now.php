@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Order Now";
 ob_start();
 ?>
 

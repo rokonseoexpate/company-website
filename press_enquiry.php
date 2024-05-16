@@ -8,7 +8,7 @@ $title = 'Press Enquiry';
 ?>
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development phpdevelopment" style="background-image: url(images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">
+<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-7" style="z-index:500; ">
@@ -90,7 +90,7 @@ $title = 'Press Enquiry';
 	<div class="container">
 		<div class="row">
 			<div class="PAY_IMG">
-				<img src="images/Payment-method-banner-image-1024x73.webp" alt=" PR Resources" description=" PR Resources" width="100%">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" PR Resources" description=" PR Resources" width="100%">
 			</div>
 		</div>
 	</div>

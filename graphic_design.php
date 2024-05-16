@@ -1,5 +1,5 @@
 <?php
-$title = "Web Development";
+$title = "Graphic Design";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
