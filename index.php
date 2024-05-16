@@ -24,7 +24,7 @@ $conn = $db->get_connection();
                 </div>
                 <div class="top-body-button pt-3">
                     <div class="d-flex gap-3">
-                        <a type="button" href="contact">Services</a>
+                        <a type="button" href="services.php">Services</a>
                         <a type="button" href="#">Portfolio</a>
                     </div>
                 </div>
@@ -251,7 +251,7 @@ $conn = $db->get_connection();
                                             </div>
                                         </div>
                                         <div class="top-body-button pt-3 text-center">
-                                            <a type="button" href="#">Advising Services</a>
+                                            <a type="button" href="services.php">Advising Services</a>
                                         </div>
                                     </div>
                                 </div>
@@ -276,7 +276,7 @@ $conn = $db->get_connection();
                                             </div>
                                         </div>
                                         <div class="top-body-button pt-3 text-center">
-                                            <a type="button" href="#">Development Services</a>
+                                            <a type="button" href="web-development.php">Development Services</a>
                                         </div>
                                     </div>
                                 </div>
@@ -304,7 +304,7 @@ $conn = $db->get_connection();
                                             holistic IT investment that reduces risk and boosts ROI from our proactive
                                             and comprehensive design and consulting services.</p>
                                         <div class="top-body-button pt-3 text-center">
-                                            <a type="button" href="#"> Services</a>
+                                            <a type="button" href="services.php"> Services</a>
                                         </div>
                                     </div>
                                 </div>
@@ -454,7 +454,7 @@ $conn = $db->get_connection();
                 </div>
             </div>
             <div class="top-body-button pt-3 text-center">
-                <a type="button" href="#">Let's Work Together</a>
+                <a type="button" href="contact.php">Let's Work Together</a>
             </div>
         </div>
     </div>
@@ -671,7 +671,7 @@ $conn = $db->get_connection();
                 <p>We want to use technology to propel innovation on a global scale. To grow internationally, change,
                     transform, innovate, and scale your company with SEO Expate Bangladesh Ltd.</p>
                 <div class="top-body-button pt-3 pt-2">
-                    <a type="button" href="#">Work with SEO Expate Bangladesh Ltd</a>
+                    <a type="button" href="contact.php">Work with SEO Expate Bangladesh Ltd</a>
                 </div>
             </div>
         </div>
@@ -1367,7 +1367,7 @@ $conn = $db->get_connection();
                 </div>
             </div>
             <div class="top-body-button pt-5 text-center">
-                <a type="button" href="#">See How We Work</a>
+                <a type="button" href="history.php">See How We Work</a>
             </div>
         </div>
     </div>
@@ -1401,7 +1401,7 @@ $conn = $db->get_connection();
                     future.</p>
             </div>
             <div class="top-body-button pt-5 text-center">
-                <a type="button" href="#">Read Our History</a>
+                <a type="button" href="history.php">Read Our History</a>
             </div>
         </div>
     </div>
