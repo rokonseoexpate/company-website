@@ -63,7 +63,7 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="content-writing.php" class="text-light">Content Writing</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Press Release Writing</li>
 						</ol>
@@ -83,7 +83,7 @@ ob_start();
 				<p>All the small and big businesses know the impact of a well-crafted press release. It will promote your business for an indefinite time if you can manage it properly. All the entrepreneurs nowadays use a press release to advertise their upcoming products or services. If you are offering products for a niche market, a press release can be your way to address the right customer base. Press releases are written and distributed on PR websites that many customers and businesses follow.</p>
 			</div>
 			<div class="col-12">
-				<p>At <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd., we offer press release writing services for businesses across different industries. We have several in-house creative writers, and some of them are based on a journalism background. They can write a durable and attractive press release for your business. They have industry-specific knowledge, and they are very hard-working bright people. They can work closely with clients and make them satisfied. So, if you are looking for press release writers for hire, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. is your best shot. WE are the best because we are result-oriented, client-friendly and we have an outstanding track record for serving customers with satisfaction.</p>
+				<p>At <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd., we offer press release writing services for businesses across different industries. We have several in-house creative writers, and some of them are based on a journalism background. They can write a durable and attractive press release for your business. They have industry-specific knowledge, and they are very hard-working bright people. They can work closely with clients and make them satisfied. So, if you are looking for press release writers for hire, <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. is your best shot. WE are the best because we are result-oriented, client-friendly and we have an outstanding track record for serving customers with satisfaction.</p>
 			</div>
 		</div>
 	</div>

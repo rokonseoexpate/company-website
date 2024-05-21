@@ -62,7 +62,7 @@
 		    		<div class="top_body_txt_part">
 						<h1 class="fs-1 marginbottom" style="line-height: 55px;">Experts in Search Marketing & </h1>
 						<h2 style="margin-top: -15px;">Shopify SEO Services</h2>		
-						<p style="text-align:justify; "><a href="index.php" class="text-success">SEO Expate</a> has been providing Shopify SEO services that increase rankings, traffic, and sales. Our commitment to search engine optimization for eCommerce enables us to apply tried-and-true methods and SEO approaches that significantly improve your Shopify store. </p>	
+						<p style="text-align:justify; "><a href="/" class="text-success">SEO Expate</a> has been providing Shopify SEO services that increase rankings, traffic, and sales. Our commitment to search engine optimization for eCommerce enables us to apply tried-and-true methods and SEO approaches that significantly improve your Shopify store. </p>	
 						<p style="text-align:justify; margin-top: -15px;">We are the best Shopify SEO experts in the business for a reason—we have an entire in-house team of SEOs, designers, and developers. Do you want SEO for your Shopify website that will change the game? With years of experience, we have overseen hundreds of eCommerce SEO campaigns, increasing monthly online sales.</p>						
 					</div>
 					<div class="row">
@@ -90,7 +90,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class=" text-light">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class=" text-light">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Shopify SEO</li>
 						</ol>

@@ -117,7 +117,7 @@ $conn = $db->get_connection();
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
 											<a href="wedding-photo.php" class="d-flex">
-												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+												<div><i class="fa-regular fa-compass" alt="Wedding Photo Editing" description="Wedding Photo Editing"></i></div>
 												<div>
 													<h6 class="title">Wedding Photo Editing</h6>
 												</div>
@@ -127,7 +127,7 @@ $conn = $db->get_connection();
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
 											<a href="photo-restoration.php" class="d-flex">
-												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+												<div><i class="fa-regular fa-compass" alt="Photo Restoration" description="Photo Restoration"></i></div>
 												<div>
 													<h6 class="title">Photo Restoration</h6>
 												</div>
@@ -219,7 +219,7 @@ $conn = $db->get_connection();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class=" text-dark">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class=" text-dark">Home</a></li>
 							<li class="breadcrumb-item "><a href="photo_editor.php" class="text-dark">Photo editor</a></li>
 							<li class="breadcrumb-item active " aria-current="page">Banner Design</li>
 						</ol>

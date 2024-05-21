@@ -47,9 +47,8 @@ $conn = $db->get_connection();
 					<?php if ($number++ % 2 == 0) { ?>
 						<div class="col-md-6">
 							<div class="Core_Values_txt">
-								<h4>Lorem ipsum dolor sit amet.</h4>
-								<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
-								<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+								<h4><?php echo $row['title']?></h4>
+								<p><?php echo $row['description']?></p>
 							</div>
 							<!-- <div class="top-body-button pt-4">
 						<a type="button" href="contact.php">Read More Details</a>
@@ -57,13 +56,13 @@ $conn = $db->get_connection();
 						</div>
 						<div class="col-md-6">
 							<div class="Core_Values_img pb-5 pt-3 text-center">
-							<img src="<?php echo $newImagePath ?>" alt="image">
+							<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag']; ?>" description=" alt="<?php echo $row['alt_description']; ?>">
 							</div>
 						</div>
 					<?php } else { ?>
 						<div class="col-md-6">
 							<div class="Core_Values_img pb-5 pt-3 text-center">
-								<img src="<?php echo $newImagePath ?>" alt="image">
+								<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag']; ?>" description=" alt="<?php echo $row['alt_description']; ?>" >
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -110,7 +109,7 @@ $conn = $db->get_connection();
 	<div class="container">
 		<div class="row">
 			<div class="PAY_IMG">
-				<img src="images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
 			</div>
 		</div>
 	</div>

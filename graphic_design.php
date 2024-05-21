@@ -199,8 +199,8 @@ $conn = $db->get_connection();
 			<div class="col-12" style="z-index:500;">
 				<div class="top_body_txt_part">
 					<h1>About Graphic Design</h1>
-					<p style="text-align:justify;"><a href="index.php" class="text-success">SEO Expate</a> photo editor provided you all type of image editing service. If you like to edit your photo then you can see our service. <a href="index.php" class="text-success">SEO Expate</a> photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service, Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin, Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic, Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
-					<p style="text-align:justify;">In the conclusion <a href="index.php" class="text-success">SEO Expate</a> photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then <a href="index.php" class="text-success">SEO Expate</a> photo editor company will help you to provide you one suitable and experienced editor person.</p>
+					<p style="text-align:justify;"><a href="/" class="text-success">SEO Expate</a> photo editor provided you all type of image editing service. If you like to edit your photo then you can see our service. <a href="/" class="text-success">SEO Expate</a> photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service, Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin, Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic, Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
+					<p style="text-align:justify;">In the conclusion <a href="/" class="text-success">SEO Expate</a> photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then <a href="/" class="text-success">SEO Expate</a> photo editor company will help you to provide you one suitable and experienced editor person.</p>
 				</div>
 				<div class="top-body-button pt-3">
 					<a type="button" href="free-trial.php">Free Trial</a>
@@ -219,7 +219,7 @@ $conn = $db->get_connection();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Graphic Design</li>
 						</ol>
 					</nav>

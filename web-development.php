@@ -8,34 +8,37 @@ $conn = $db->get_connection();
 ?>
 <!--================================Header section end here=======================-->
 
-<!--================================web_service section start here=======================-->
-<section class="web_service text-light">
-	<div class="container ">
-		<div class="row">
-			<div class="top_about_us_txt pt-5">
-				<div class="d-flex">
-					<p><a href="index.php" class="text-light">Home</a></p>
-					<p><i class="fa-solid fa-angle-right"></i></p>
-					<p class="ml-2">Web Development</p>
+	<!--================================web_service section start here=======================-->
+	<section class="web_service text-light">
+		<div class="container ">
+			<div class="row">
+				<div class="top_about_us_txt pt-5">
+					<div class="top_about_us_txt" style="z-index:500;">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb breadcumb_gph">
+								<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+								<li class="breadcrumb-item active text-light" aria-current="page">Web Development</li>
+							</ol>
+						</nav>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-6" style="z-index:500;">
-				<div class="top_body_txt_part">
-					<h4>We have Premium Website Development Services Empowering Business Growth With Professionalism</h4>
+				<div class="col-md-6" style="z-index:500;">
+					<div class="top_body_txt_part">
+						<h4>We have Premium Website Development Services Empowering Business Growth With Professionalism</h4>
+					</div>
+					<div class="button pt-5">
+						<a href="contact.php" class="text-light">Contact Us</a>
+					</div>
 				</div>
-				<div class="button pt-5">
-					<a href="contact.php" class="text-light">Contact Us</a>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="web_service_img">
-					<img src="frontend/images/iPhone-App-Screen-Mockups_prev_ui.png" alt="image">
+				<div class="col-md-6">
+					<div class="web_service_img">
+						<img src="frontend/images/iPhone-App-Screen-Mockups_prev_ui.png" alt="Web Development " description="Web Development">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================web_service section end here=======================-->
+	</section>
+	<!--================================web_service section end here=======================-->
 
 <!--================================our_promise section start here=======================-->
 <div class="our_mission our_promise" style="background-image: url(frontend/images/Web_Development_BG.jpg); background-repeat: no-repeat; background-size: cover;">
@@ -193,83 +196,6 @@ $conn = $db->get_connection();
 					<div class="row mb-5">
 						<div class="p-5 bg-white rounded shadow mb-5">
 							<!-- Rounded tabs -->
-							<!-- <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
-								<?php
-								// Check database connection
-								// if (!$conn) {
-								// 	echo "Database connection failed: " . mysqli_connect_error();
-								// } else {
-								// 	$qry = "SELECT * FROM web_portfolio_categories";
-								// 	$result = mysqli_query($conn, $qry); // Execute the query
-
-								// 	if ($result && mysqli_num_rows($result) > 0) {
-								// 		while ($row = mysqli_fetch_assoc($result)) {
-								// 
-								?>
-											<li class="nav-item flex-sm-fill" role="presentation">
-												<a id="<?php echo $row['id']; ?>-tab" data-bs-toggle="pill" href="#<?php echo $row['id']; ?>" role="tab" aria-controls="<?php echo $row['id']; ?>" aria-selected="false" class="nav-link border-0 font-weight-bold<?php if ($firstTab) echo ' show active'; ?>"><?php echo $row['name']; ?></a>
-											</li>
-								<?php
-								// 			$firstTab = false;
-								// 		}
-								// 	} else {
-								// 		echo "No categories found.";
-								// 	}
-								// }
-								// 
-								?>
-							</ul>
-							<div class="tab-content" id="myTabContent">
-								<?php
-								$firstTab = true;
-								// Check database connection
-								// if (!$conn) {
-								// 	echo "Database connection failed: " . mysqli_connect_error();
-								// } else {
-								// 	$qry = "SELECT * FROM web_portfolios";
-								// 	$result = mysqli_query($conn, $qry);
-
-								// 	if ($result && mysqli_num_rows($result) > 0) {
-								// 		while ($row = mysqli_fetch_assoc($result)) {
-								// ?>
-											<div id="<?php echo $row['category_id']; ?>" role="tabpanel" aria-labelledby="<?php echo $row['category_id']; ?>-tab" class="tab-pane fade px-4 py-5<?php if ($firstTab) echo ' show active'; ?>">
-												<div class="row">
-													<?php
-													// $qryItems = "SELECT * FROM web_portfolios WHERE category_id = {$row['category_id']}";
-													// $resultItems = mysqli_query($conn, $qryItems);
-
-													// if ($resultItems && mysqli_num_rows($resultItems) > 0) {
-													// 	while ($item = mysqli_fetch_assoc($resultItems)) {
-													// ?>
-															<div class="col-md-3 pt-5">
-																<a href="<?php echo $item['link']; ?>">
-																	<div class="card" style="width: 18rem;">
-																		<img src="<?php echo 'uploads/' . basename($item['image']); ?>" class="card-img-top" alt="<?php echo $item['title']; ?>">
-																		<div class="card-body">
-																			<h5 class="card-title pb-3"><?php echo $item['title']; ?></h5>
-																			<a href="<?php echo $item['link']; ?>" class="btn pt-2">Live Preview</a>
-																		</div>
-																	</div>
-																</a>
-															</div>
-													<?php
-													// 	}
-													// } else {
-													// 	echo "No portfolio items found for this category.";
-													// }
-													// ?>
-												</div>
-											</div>
-								<?php
-								// 			$firstTab = false;
-								// 		}
-								// 	} else {
-								// 		echo "No portfolios found.";
-								// 	}
-								// }
-								// ?>
-							</div> -->
-
 
 							<ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
 								<?php
@@ -322,7 +248,7 @@ $conn = $db->get_connection();
 																<div class="col-md-3 pt-5">
 																	<a href="<?php echo $item['link']; ?>">
 																		<div class="card" >
-																			<img src="<?php echo 'uploads/' . basename($item['image']); ?>" class="card-img-top" alt="<?php echo $item['title']; ?>">
+																			<img src="<?php echo 'uploads/' . basename($item['image']); ?>" class="card-img-top" alt="<?php echo $item['title']; ?>" description="<?php echo $item['link']; ?>">
 																			<div class="card-body">
 																				<h5 class="card-title pb-3"><?php echo $item['title']; ?></h5>
 																				<a href="<?php echo $item['link']; ?>" class="btn pt-2">Live Preview</a>

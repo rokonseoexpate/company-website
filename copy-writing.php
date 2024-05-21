@@ -14,7 +14,7 @@ ob_start();
                 <div class="col-md-7 ecomresp" style="z-index:500;">
                     <div class="top_body_txt_part">
                         <h1 class="marginbottom" style="font-size: 45px;">Content Writing Service  </h1>
-                        <p style="text-align:justify; margin-top: -15px;">Content Writing Service is a vital factor for a website to catch the visitor's attention and rank on search engines. The goal of content writing is to inform and educate readers about particular topics. In addition, content can increase your web traffic, and give you huge brand awareness. <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd has a dedicated team of content writers who have vast experience. Here, we will ensure you 100% unique, research-based SEO content that will add great value to your site. </p>
+                        <p style="text-align:justify; margin-top: -15px;">Content Writing Service is a vital factor for a website to catch the visitor's attention and rank on search engines. The goal of content writing is to inform and educate readers about particular topics. In addition, content can increase your web traffic, and give you huge brand awareness. <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd has a dedicated team of content writers who have vast experience. Here, we will ensure you 100% unique, research-based SEO content that will add great value to your site. </p>
                     </div>
                     <div class="top-body-button pt-3">
                         <a type="button" href="contact.php">Contact Us</a>
@@ -36,7 +36,7 @@ ob_start();
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">Content Writing Service</li>
                             </ol>
                         </nav>

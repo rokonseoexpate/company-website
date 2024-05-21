@@ -197,7 +197,7 @@ ob_start();
 				<div class="top_body_txt_part">
 					<h1>Photo Retouching </h1>
 					<p style="text-align:justify;">Photo retouching is a transformative process. It enhances the visual appeal of images by correcting imperfections, adjusting colors, and refining details. Using advanced software like Adobe Photoshop, retouchers meticulously edit photographs to achieve desired results. Common techniques include removing blemishes, wrinkles, or stray hairs, whitening teeth, and smoothing skin for portrait photography. Additionally, retouching can involve modifying lighting and contrast to improve overall composition and mood. Color correction is another crucial aspect, ensuring accuracy and vibrancy in hues. Whether it's for professional photography, advertising, or personal use, retouching can elevate the quality of images. It makes them more visually striking and engaging. </p>
-					<p style="text-align:justify;">However, it's essential to strike a balance between enhancement and realism. It avoids over-editing that may distort the original subject or scene. Skilled retouchers possess a keen eye for detail and an understanding of aesthetics. It enables them to finesse images while preserving their authenticity. Finally, <a href="index.php" class="text-success">SEO Expate</a> BD Ltd is the right place to buy this unique service. </p>
+					<p style="text-align:justify;">However, it's essential to strike a balance between enhancement and realism. It avoids over-editing that may distort the original subject or scene. Skilled retouchers possess a keen eye for detail and an understanding of aesthetics. It enables them to finesse images while preserving their authenticity. Finally, <a href="/" class="text-success">SEO Expate</a> BD Ltd is the right place to buy this unique service. </p>
 				</div>
 				<div class="top-body-button pt-3">
 					<a type="button" href="free-trial.php">Free Trial</a>
@@ -216,7 +216,7 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Photo Retouching</li>
 						</ol>
@@ -306,7 +306,7 @@ ob_start();
 				<h5>Photo Retouching Service in the SEO Expate BD Ltd.</h5>
 			</div>
 			<div class="pb-5">
-				<p>In <a href="index.php" class="text-success">SEO Expate</a> BD Ltd., our photo retouching service is dedicated to enhancing the visual appeal of your images. We utilize advanced software and skilled professionals to correct imperfections, adjust colors, and refine details. In short, we ensure your photos look their best. Whether it's for e-commerce, advertising, or personal use, our team is committed to delivering high-quality results that meet your needs. We understand the importance of image quality in attracting and engaging audiences. Therefore, we pay attention to every detail during the retouching process. With our expertise in our <a href="index.php" class="text-success">company</a>, you can trust us to elevate your images to the next level. </p>
+				<p>In <a href="/" class="text-success">SEO Expate</a> BD Ltd., our photo retouching service is dedicated to enhancing the visual appeal of your images. We utilize advanced software and skilled professionals to correct imperfections, adjust colors, and refine details. In short, we ensure your photos look their best. Whether it's for e-commerce, advertising, or personal use, our team is committed to delivering high-quality results that meet your needs. We understand the importance of image quality in attracting and engaging audiences. Therefore, we pay attention to every detail during the retouching process. With our expertise in our <a href="/" class="text-success">company</a>, you can trust us to elevate your images to the next level. </p>
 			</div>
 		</div>
 		<div class="row shadow px-5 py-3">

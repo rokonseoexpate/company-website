@@ -94,7 +94,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">PPC consultants</li>
 						</ol>
@@ -170,7 +170,7 @@
 			      <div class="accordion-item">
 			        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. What is the role of a PPC consultant?</h5>
 			        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
-			          <div class="accordion-body"><a href="index.php" class="text-success">SEO Expate</a> Ltd is an acclaimed agency with years of experience. As a result, we maintain an extensive in-house team without outsourcing. Our SEO strategies consistently lead to increased traffic and leads for our clients. Additionally, we specialize in driving million-dollar online sales and securing top Google rankings for competitive keywords. Get in touch with us for a complimentary estimate and a strategy discussion tailored to your website's success.
+			          <div class="accordion-body"><a href="/" class="text-success">SEO Expate</a> Ltd is an acclaimed agency with years of experience. As a result, we maintain an extensive in-house team without outsourcing. Our SEO strategies consistently lead to increased traffic and leads for our clients. Additionally, we specialize in driving million-dollar online sales and securing top Google rankings for competitive keywords. Get in touch with us for a complimentary estimate and a strategy discussion tailored to your website's success.
 			          </div>
 			        </div>
 			      </div>
@@ -178,7 +178,7 @@
 			        <h5 class="accordion-header collapsed" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Q. What is the standard fee for PPC consulting?
 			        </h5>
 			        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-			          <div class="accordion-body"><a href="index.php" class="text-success">SEO Expate</a> Ltd offers SEO packages from basic to enterprise level. The crucial variance lies in our team's monthly hours devoted to your campaign. Therefore, when our team has more time, they can work on time-consuming tasks. For example, content creation, link development, press release creation, and conversion optimization are some of them. However, it is not impossible in a smaller package, but we have a limited amount of time to focus on these areas. Additionally, we recommend basic SEO packages for smaller, locally-focused companies. And, advanced campaigns for national companies who are starting their business. So, enterprise SEO campaigns for businesses looking to lead their industry.
+			          <div class="accordion-body"><a href="/" class="text-success">SEO Expate</a> Ltd offers SEO packages from basic to enterprise level. The crucial variance lies in our team's monthly hours devoted to your campaign. Therefore, when our team has more time, they can work on time-consuming tasks. For example, content creation, link development, press release creation, and conversion optimization are some of them. However, it is not impossible in a smaller package, but we have a limited amount of time to focus on these areas. Additionally, we recommend basic SEO packages for smaller, locally-focused companies. And, advanced campaigns for national companies who are starting their business. So, enterprise SEO campaigns for businesses looking to lead their industry.
 			          </div>
 			        </div>
 			      </div>

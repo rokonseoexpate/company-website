@@ -12,7 +12,7 @@ $conn = $db->get_connection();
             <div class="row">
                 <div class="col-12" style="z-index:500;">
                     <div class="breadcumb_gph d-flex">
-                        <a class="text-light" href="index.php" class="text-success"><p>Home</p></a>
+                        <a class="text-light" href="/" class="text-success"><p>Home</p></a>
                         <p class="text-light px-3 ">»</p>
                         <p class="text-light">Notice</p>
                     </div>
@@ -56,7 +56,7 @@ $conn = $db->get_connection();
                                 $imagePath = $row['image'];
                                 $imageName = basename($imagePath);
                                 $newImagePath = 'uploads/' . $imageName;
-                                echo $newImagePath; ?>" alt=" image " class="card-img-top lazy">
+                                echo $newImagePath; ?>" alt=" <?php echo $row['alt_tag']?> " description="<?php echo $row['alt_description']?>" class="card-img-top lazy">
                                 <div class="card-body">
                                     <h2 class="card-title">
                                         <span><?php echo $row['title']?></span>

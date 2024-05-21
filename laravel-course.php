@@ -14,7 +14,7 @@ ob_start();
 				</button>
 				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 					<ul class="navbar-nav ">
-						<li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="training.php"> Training</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link  dropdown-toggle" href="regular-course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
 							<ul class="dropdown-menu dropdown-menu-end">
@@ -95,8 +95,8 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="training.php" class="text-light">Our Training</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Laravel</li>
 						</ol>
 					</nav>

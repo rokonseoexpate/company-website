@@ -22,7 +22,7 @@ $title = $row['title'];
 			<div class="row">
 				<div class="col-12" style="z-index:500;">
 					<div class="breadcumb_gph d-flex">
-						<a class="text-light" href="index.php" class="text-success"><p>Home</p></a>
+						<a class="text-light" href="/" class="text-success"><p>Home</p></a>
 						<p class="text-light px-3 ">»</p>
 						<a class="text-light" href="notice.php" class="text-success"><p>Notice</p></a>
 						<p class="text-light px-3 ">»</p>

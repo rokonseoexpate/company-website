@@ -217,7 +217,7 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="photo-ditor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Raster to Vector Conversion</li>
 						</ol>
@@ -307,7 +307,7 @@ ob_start();
 				<h5>Raster to Vector Conversion Service in the SEO Expate Bangladesh Ltd.</h5>
 			</div>
 			<div class="pb-5 border-bottom border-success border-2">
-				<p>Our <a href="index.php" class="text-success">company</a> specializes in a unique raster to vector conversion service. It caters to a wide range of clients seeking clear and precise graphics for their projects. Whether you're a designer, architect, or engineer, our service transforms raster images into scalable vector graphics effortlessly. We use advanced technology and expert techniques for this service. We ensure that every detail from the original image is accurately preserved in the vector format. This means clearer lines, smoother curves, and better overall quality for your designs.</p>
+				<p>Our <a href="/" class="text-success">company</a> specializes in a unique raster to vector conversion service. It caters to a wide range of clients seeking clear and precise graphics for their projects. Whether you're a designer, architect, or engineer, our service transforms raster images into scalable vector graphics effortlessly. We use advanced technology and expert techniques for this service. We ensure that every detail from the original image is accurately preserved in the vector format. This means clearer lines, smoother curves, and better overall quality for your designs.</p>
 				<p>Our service is easy to use and delivers quick results, saving you time and effort in your projects. With our help, you can enhance the clarity and flexibility of your graphics. We make them suitable for a variety of applications. From logo design to architectural drawings, our raster to vector conversion service is your solution for high-quality, easy-to-edit graphics. Therefore, it is high time for you to buy this unique service from SEO Expate Bangladesh Ltd quickly.</p>
 			</div>
 		</div>

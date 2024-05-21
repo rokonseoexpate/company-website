@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		<div class="row">
 			<div class="col-md-6">
 				<div class="top_ready_start_txt">
-					<p><span><a href="index.php">Home</a></span> » Contact</p>
+					<p><span><a href="/">Home</a></span> » Contact</p>
 					<h3>We’re just a</h3>
 					<h4>Conversation away!</h4>
 					<p>We combine international outlook with the knowledge from across the industries and technologies, into creating a digital masterpiece that delivers result.</p>
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			</div>
 			<div class="col-md-6">
 				<div class="top_ready_start_img">
-					<img src="frontend/images/95991_prev_ui.png" alt="image">
+					<img src="frontend/images/95991_prev_ui.png" alt="seo expate">
 				</div>
 			</div>
 		</div>
