@@ -459,7 +459,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/contact.html</loc>
+    <loc>http://company-website.test/contact.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -1689,7 +1689,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/domain_hosting.html</loc>
+    <loc>http://company-website.test/domain-hosting.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
