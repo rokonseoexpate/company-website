@@ -61,7 +61,7 @@ $title = $branch['name'];
 			</div>
 			<div class="col-md-4">
 				<div class="branch-img">
-					<img src="    <?php echo 'uploads/' . basename($branch['image']); ?>" alt="" class="img-thumbnail">
+					<img src="    <?php echo 'uploads/' . basename($branch['image']); ?>" alt="<?php echo $branch['name'] ?>" class="img-thumbnail">
 				</div>
 			</div>
 			<div class="col-md-4">
@@ -133,7 +133,7 @@ $title = $branch['name'];
 			</div>
 			<div class="col-md-6">
 				<div class="top_ready_start_img text-left">
-					<img src="frontend/images/95991_prev_ui.png" alt="image">
+					<img src="frontend/images/95991_prev_ui.png" alt="SEO Expate Bangladesh LTD">
 				</div>
 			</div>
 		</div>
@@ -147,7 +147,7 @@ $title = $branch['name'];
 	<div class="container">
 		<div class="row">
 			<div class="PAY_IMG">
-				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="SEO Expate Bangladesh LTD" width="100%">
 			</div>
 		</div>
 	</div>
