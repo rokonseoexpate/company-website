@@ -193,7 +193,7 @@ $conn = $db->get_connection();
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 	<div class="container ">
 		<div class="row">
 			<div class="col-12" style="z-index:500;">
@@ -219,7 +219,7 @@ $conn = $db->get_connection();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-dark ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-dark ">Home</a></li>
 							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-dark">» Photo editor</a></li>
 							<li class="breadcrumb-item active text" aria-current="page">» Logo Designs Service</li>
 						</ol>
@@ -228,7 +228,7 @@ $conn = $db->get_connection();
 				<div class="cliping_service_txt pb-2 pt-2">
 					<h6>Logo Designs Service </h6>
 				</div>
-				<p class="pt-3">Logo Designs Service can help in creating a strong visual presentation of a business. This can lead to increased brand recognition and can also help establish a sense of professionalism. Moreover, a well-designed logo can communicate a company's values and message effectively. Again, it can help create a connection with customers and lead to increased brand loyalty. However, the logo design service provided by <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. is exceptional in this regard.</p>
+				<p class="pt-3">Logo Designs Service can help in creating a strong visual presentation of a business. This can lead to increased brand recognition and can also help establish a sense of professionalism. Moreover, a well-designed logo can communicate a company's values and message effectively. Again, it can help create a connection with customers and lead to increased brand loyalty. However, the logo design service provided by <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD. is exceptional in this regard.</p>
 				<p>Besides, the process of logo design services typically involves brainstorming and concept development. We have a lot of professional graphic designers who do graphic design services for you. Besides, if you need to create a logo for your business, our expert designer will do the work. Logo design services are vital in shaping a company's brand identity. A well-designed logo can help create a strong visual representation of the business in any sector. That's why you must take our service because we are the best in this field.</p>
 			</div>
 			<div class="col-md-6" style="margin: auto;">
@@ -247,9 +247,9 @@ $conn = $db->get_connection();
 		<div class="row">
 			<h4>Best Logo Designs Service</h4>
 			<div>
-				<p>Best Logo Designs Service offers a range of benefits for businesses of all sizes. <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. is able to design any logo for your company. When it comes to creating a solid brand identity, having a professional logo is essential. A well-designed logo can help your business stand out from the competition and build customer trust and credibility. Most importantly, we specialize in logo design in every sector. We create designs, and we will help you increase your business, too. As we all know, a logo carries the identity of a company, so it has to be unique in every way. </p>
+				<p>Best Logo Designs Service offers a range of benefits for businesses of all sizes. <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD. is able to design any logo for your company. When it comes to creating a solid brand identity, having a professional logo is essential. A well-designed logo can help your business stand out from the competition and build customer trust and credibility. Most importantly, we specialize in logo design in every sector. We create designs, and we will help you increase your business, too. As we all know, a logo carries the identity of a company, so it has to be unique in every way. </p>
 				<p>Moreover, we also work on logos, business cards, letterhead, banners, leaflets, and other design sectors to help you in raising your company. We put the proper color and contrast combination in a logo and pick the perfect text that suits your business. However, our designers strategically choose colors, fonts, and elements to evoke emotions while conveying your company's personality. Having an accurate logo design is essential to build a dependable visual identity. </p>
-				<p>So, if you are looking for the best logo design service, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. company is always there for you. We offer a range of services to meet your specific needs at an affordable price. A perfect logo can attract many customers to your business. Also, it will give more traffic to your site, and more traffic means more earnings. So, grab our logo design service now and give your company a brand-looking image.</p>
+				<p>So, if you are looking for the best logo design service, <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD. company is always there for you. We offer a range of services to meet your specific needs at an affordable price. A perfect logo can attract many customers to your business. Also, it will give more traffic to your site, and more traffic means more earnings. So, grab our logo design service now and give your company a brand-looking image.</p>
 			</div>
 		</div>
 	</div>
@@ -304,7 +304,7 @@ $conn = $db->get_connection();
 			</div>
 			<div>
 				<p>A simple logo design can make a big impact on your business. In today's competitive market, having a strong brand identity is crucial, and that's why we are here for you. Furthermore, it is important to understand the cost associated with this service. The difficulty of the design plays a significant role in this sector. Complex logos require more time and skill, therefore increasing the cost. On the other hand, simple logos are more affordable. For this reason, we can give you a simple logo at a low cost.</p>
-				<p>In addition, our <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. will give you the best Simple Logo Design Service ever. Also, our company is a well-known service provider all over the world, and you will get top-class services from us. We promise to give you the best value for your money, and we will deliver top-notch work that you'll like. Most importantly, our hired experts work passionately and put their best effort into the logo design. </p>
+				<p>In addition, our <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD. will give you the best Simple Logo Design Service ever. Also, our company is a well-known service provider all over the world, and you will get top-class services from us. We promise to give you the best value for your money, and we will deliver top-notch work that you'll like. Most importantly, our hired experts work passionately and put their best effort into the logo design. </p>
 				<p>Again, creating a Logo has two main factors. First, it can give your business a new identity. Second, the logo describes your audience about your company's services. Now, you can decide what type of logo you want to make for your business based on your needs. Besides, we assure you that we can help you with every format of this logo design service. That's why we suggest you visit us and explore the services that we have got for you. </p>
 			</div>
 		</div>

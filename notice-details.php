@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -10,6 +10,8 @@ $id = $_GET['id']; // Assuming the ID is passed via URL parameter
 $sql = "SELECT * FROM notices WHERE id = $id";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
+
+$title = $row['title'];
 
 
 ?>

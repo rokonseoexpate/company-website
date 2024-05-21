@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Content Writing Pricing Package";
 ob_start();
 ?>
 
@@ -8,7 +8,7 @@ ob_start();
     <!--================================photo editor sub Header section end here=======================-->
 
     <!--================================top-body section start here=======================-->
-    <section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+    <section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
         <div class="container ">
             <div class="row">
                 <div class="col-12" style="z-index:500; ">

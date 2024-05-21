@@ -11,7 +11,7 @@ ob_start();
 			<div class="col-12" style="z-index:500;">
 				<div class="top_about_us_txt pt-5">
 					<div class="d-flex">
-						<p><a href="home.php" class="text-light">Home</a></p>
+						<p><a href="index.php" class="text-light">Home</a></p>
 						<p><i class="fa-solid fa-angle-right"></i></p>
 						<p class="ml-2">Software Development</p>
 					</div>

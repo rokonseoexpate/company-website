@@ -1,5 +1,5 @@
 <?php
-$title = "Magento Seo";
+$title = "Magento SEO & Search Marketing Services ";
 ob_start();
 ?>
 

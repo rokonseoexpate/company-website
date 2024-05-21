@@ -372,7 +372,7 @@ $conn = $db->get_connection();
 				$newImagePath = 'uploads/' . $imageName;
 			?>
 				<div class="col-md-3">
-					<a href="#"><img src="<?php echo $newImagePath ?>" alt="image"></a>
+					<a href="#"><img src="<?php echo $newImagePath ?>" alt="<?php echo $department['name'] ?>"></a>
 					<h5 class="text-light pt-3"><?php echo $department['name'] ?></h5>
 				</div>
 
@@ -411,7 +411,7 @@ $conn = $db->get_connection();
 			<h3 class="pb-3 text-light">Core Service Areas</h3>
 			<p class="text-light pb-4" style="text-align: left;">SEO Expate delivers IT services and tech solutions and provides higher value to clients. Our service areas are Software Development, Mobile App Development, Digital Marketing, Graphics Design, Content Writing, and many more. Also, we have a freelancing training program that helps thousands of youth to build their career.</p>
 			<div class="col-md-3">
-				<a href="web_development.html"><img src="frontend/images/core-servicr.png" alt="image"></a>
+				<a href="web-development.php"><img src="frontend/images/core-servicr.png" alt="image"></a>
 				<h5 class="text-light pt-3">Web Development</h5>
 			</div>
 			<div class="col-md-3">
@@ -419,29 +419,29 @@ $conn = $db->get_connection();
 				<h5 class="text-light pt-3">Software Development</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="app_development.html"><img src="frontend/images/core-service-areaer.png" alt="image"></a>
+				<a href="app-development.php"><img src="frontend/images/core-service-areaer.png" alt="image"></a>
 				<h5 class="text-light pt-3">Mobile App Development</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="domain_hosting.html"><img src="frontend/images/core-servicer.png" alt="image"></a>
+				<a href="domain-hosting.php"><img src="frontend/images/core-servicer.png" alt="image"></a>
 				<h5 class="text-light pt-3">Domain & Hosting</h5>
 			</div>
 		</div>
 		<div class="row pt-3">
 			<div class="col-md-3">
-				<a href="photo_editor.html"><img src="frontend/images/iot-expertiser.png" alt="image"></a>
+				<a href="photo-editor.php"><img src="frontend/images/iot-expertiser.png" alt="image"></a>
 				<h5 class="text-light pt-3">Graphic Design</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/core-service.png" alt="image"></a>
+				<a href="digital-marketing.php"><img src="frontend/images/core-service.png" alt="image"></a>
 				<h5 class="text-light pt-3">Digital Marketing</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/core-service-areater.png" alt="image"></a>
+				<a href="seo-service.php"><img src="frontend/images/core-service-areater.png" alt="image"></a>
 				<h5 class="text-light pt-3">SEO</h5>
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src="frontend/images/core-service-arear.png" alt="image"></a>
+				<a href="content-writing.php"><img src="frontend/images/core-service-arear.png" alt="image"></a>
 				<h5 class="text-light pt-3">Content Writing</h5>
 			</div>
 		</div>
@@ -804,49 +804,70 @@ $conn = $db->get_connection();
 </section>
 <!--================================top_featured section end here=======================-->
 
-<!--================================top-slider-part section start here=======================-->
-<section class="top-slider-part">
-	<div class="container ">
-		<div class="row">
-			<h3><span>Our </span> Reliable Customers and Associates</h3>
-			<p>SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers, corporations, government departments, and other organizations as a top information technology company.
-				Here take a look at some of the top companies and institutions that SEO Expate Bangladesh Ltd. has already worked with.</p>
-			<div class="col-12 pt-5">
-				<div id="carouselExampleDark" class="carousel carousel-dark slide">
-					<div class="carousel-indicators">
-						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-						<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+	<!--================================top-slider-part section start here=======================-->
+	<section class="top-slider-part">
+		<div class="container ">
+			<div class="row">
+				<h3><span>Our </span> Reliable Customers and Associates</h3>
+				<p>SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers,
+					corporations, government departments, and other organizations as a top information technology company.
+					Here take a look at some of the top companies and institutions that SEO Expate Bangladesh Ltd. has
+					already worked with.</p>
+				<div class="col-12 pt-5">
+					<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<?php
+							$qry = "SELECT * FROM history_galleries WHERE image_type = 2 ORDER BY id DESC";
+							if ($result = $conn->query($qry)) {
+								$active = true;
+								$index = 0;
+								while ($row = $result->fetch_assoc()) {
+									$imagePath = $row['image'];
+									$imageName = basename($imagePath);
+									$newImagePath = 'uploads/' . $imageName;
+									?>
+									<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="<?php echo $index; ?>" <?php echo $active ? 'class="active"' : ''; ?> aria-label="Slide <?php echo $index; ?>"></button>
+									<?php
+									$active = false;
+									$index++;
+								}
+							}
+							?>
+						</div>
+
+						<div class="carousel-inner pb-5">
+							<?php
+							$result->data_seek(0);
+							$active = true;
+							while ($row = $result->fetch_assoc()) {
+								$imagePath = $row['image'];
+								$imageName = basename($imagePath);
+								$newImagePath = 'uploads/' . $imageName;
+								?>
+								<div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
+									<img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="<?php echo $row['image']; ?>">
+								</div>
+								<?php
+								$active = false;
+							}
+							?>
+						</div>
+
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
 					</div>
-					<div class="carousel-inner pb-5">
-						<div class="carousel-item active" data-bs-interval="10000">
-							<img src="frontend/images/slide1.png" class="d-block w-100" alt="img">
-						</div>
-						<div class="carousel-item" data-bs-interval="2000">
-							<img src="frontend/images/slide2.png" class="d-block w-100" alt="img">
-						</div>
-						<div class="carousel-item">
-							<img src="frontend/images/slide3.png" class="d-block w-100" alt="img">
-						</div>
-						<div class="carousel-item">
-							<img src="frontend/images/slide4.png" class="d-block w-100" alt="img">
-						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
+
+
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-<!--================================top-slider-part section end here=======================-->
+	</section>
+	<!--================================top-slider-part section end here=======================-->
 
 <!--================================Core_Values section start here=======================-->
 <section class="Core_Values">

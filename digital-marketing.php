@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Digital Marketing";
 ob_start();
 ?>
 <!--================================Header section end here=======================-->

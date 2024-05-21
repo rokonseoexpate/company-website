@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Domain & Hosting";
 ob_start();
 ?>
 

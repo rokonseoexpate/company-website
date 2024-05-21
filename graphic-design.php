@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Graphic Design";
 ob_start();
 ?>
 
@@ -190,7 +190,7 @@ ob_start();
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
@@ -209,7 +209,7 @@ ob_start();
 	<!--================================top-body section end here=======================-->
 
 <!--================================cliping_service section start here=======================-->
-<section class="cliping_service photo_edit_all_service graphicdesigns" style="background: unset; background-image: url(images/Graphic-Design-banner.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+<section class="cliping_service photo_edit_all_service graphicdesigns" style="background: unset; background-image: url(frontend/images/Graphic-Design-banner.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6" style="z-index:500;">
@@ -256,34 +256,34 @@ ob_start();
 			<h4 class="pt-2">Graphic Design </h4>
 			<p class="">In conclusion, the Philippines Photo Editor website aid in better campaigns and faster conversions with your target customer if you purchase from us any service. This upper included whole service gets you the most crucial factor which would be the benefits of your increased business profit. Then again, we give the design services which will be must so perfect than others. We also keep on ready our service with you 24 hours daily for providing these services.</p>
 			<div class="col-md-3 pt-5">
-				<a href="logo_design.html">
+				<a href="logo-design.php">
 					<div class="card">
 						<img src="frontend/images/Logo-Design-Banner.webp" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
 						<div class="card-body text-center">
 							<h5 class="card-title text-dark text-center pb-3">Logo Design</h5>
-							<div class="button text-center pt-2"><a type="button" href="logo_design.html" class="text-light text-center"> Click Here</a></div>
+							<div class="button text-center pt-2"><a type="button" href="logo-design.php" class="text-light text-center"> Click Here</a></div>
 						</div>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-3 pt-5">
-				<a href="t-shirt-design.html">
+				<a href="t-shirt-design.php">
 					<div class="card hover-zoom">
 						<img src="frontend/images/T-Shirt-Design-Banner.jpg" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
 						<div class="card-body text-center">
 							<h5 class="card-title text-dark text-center pb-3">T-Shirt Design</h5>
-							<div class="button text-center pt-2"><a type="button" href="t-shirt-design.html" class="text-light text-center"> Click Here</a></div>
+							<div class="button text-center pt-2"><a type="button" href="t-shirt-design.php" class="text-light text-center"> Click Here</a></div>
 						</div>
 					</div>
 				</a>
 			</div>
 			<div class="col-md-3 pt-5">
-				<a href="banner_design.html">
+				<a href="banner-design.php">
 					<div class="card">
 						<img src="frontend/images/Banner-design-image.jpg" class="card-img-top" alt=" Graphic Design" description=" Graphic Design">
 						<div class="card-body text-center">
 							<h5 class="card-title text-center pb-3 text-dark">Banner Design</h5>
-							<div class="button text-center pt-2"><a type="button" href="banner_design.html" class="text-light text-center"> Click Here</a></div>
+							<div class="button text-center pt-2"><a type="button" href="banner-design.php" class="text-light text-center"> Click Here</a></div>
 						</div>
 					</div>
 				</a>
@@ -392,7 +392,7 @@ ob_start();
 			<div class="row">
 				<div class="col-md-3">
 					<h4>Photoshop Services</h4>
-					<a href="clipping_path.php" class="d-flex pt-4">
+					<a href="clipping-path.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -400,7 +400,7 @@ ob_start();
 							<h6>Clipping Path Service</h6>
 						</div>
 					</a>
-					<a href="jewelry_retouching.php" class="d-flex pt-2">
+					<a href="jewelry-retouching.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -408,7 +408,7 @@ ob_start();
 							<h6>Jewelry Retouching Service</h6>
 						</div>
 					</a>
-					<a href="ecommerce_photo_edit.php" class="d-flex pt-2">
+					<a href="ecommerce-photo-edit.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -416,7 +416,7 @@ ob_start();
 							<h6>E-Commerce Photo Editing</h6>
 						</div>
 					</a>
-					<a href="image_masking.php" class="d-flex pt-2">
+					<a href="image-masking.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -424,7 +424,7 @@ ob_start();
 							<h6>Image Masking Service</h6>
 						</div>
 					</a>
-					<a href="color_correction.php" class="d-flex pt-2">
+					<a href="color-correction.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -435,7 +435,7 @@ ob_start();
 				</div>
 				<div class="col-md-3">
 					<h4>Photoshop Services</h4>
-					<a href="real_estate_photo.php" class="d-flex pt-4">
+					<a href="real-estate-photo.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -443,7 +443,7 @@ ob_start();
 							<h6>Real Estate Photo Editing</h6>
 						</div>
 					</a>
-					<a href="photo_retouching.php" class="d-flex pt-2">
+					<a href="photo-retouching.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -451,7 +451,7 @@ ob_start();
 							<h6>Photo Retouching</h6>
 						</div>
 					</a>
-					<a href="background_remove.php" class="d-flex pt-2">
+					<a href="background-remove.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -459,7 +459,7 @@ ob_start();
 							<h6>Remove Background Image</h6>
 						</div>
 					</a>
-					<a href="ghost_mannequin.php" class="d-flex pt-2">
+					<a href="ghost-mannequin.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -467,7 +467,7 @@ ob_start();
 							<h6>Ghost Mannequin Effect</h6>
 						</div>
 					</a>
-					<a href="shadow_making.php" class="d-flex pt-2">
+					<a href="shadow-making.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -478,7 +478,7 @@ ob_start();
 				</div>
 				<div class="col-md-3">
 					<h4>Photoshop Services</h4>
-					<a href="photo_restoration.php" class="d-flex pt-4">
+					<a href="photo-restoration.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -486,7 +486,7 @@ ob_start();
 							<h6>Photo Restoration</h6>
 						</div>
 					</a>
-					<a href="image_manipulation.php" class="d-flex pt-2">
+					<a href="image-manipulation.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -494,7 +494,7 @@ ob_start();
 							<h6>Image Manipulation Service</h6>
 						</div>
 					</a>
-					<a href="wedding_photo.php" class="d-flex pt-2">
+					<a href="wedding-photo.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -502,7 +502,7 @@ ob_start();
 							<h6>Wedding Photo Editing</h6>
 						</div>
 					</a>
-					<a href="raster_vector.php" class="d-flex pt-2">
+					<a href="raster-vector.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -510,7 +510,7 @@ ob_start();
 							<h6>Raster to Vector Conversion</h6>
 						</div>
 					</a>
-					<a href="background_remove.php" class="d-flex pt-2">
+					<a href="background-remove.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -529,7 +529,7 @@ ob_start();
 							<h6>T-Shirt Design</h6>
 						</div>
 					</a>
-					<a href="logo_design.php" class="d-flex pt-2">
+					<a href="logo-design.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -537,7 +537,7 @@ ob_start();
 							<h6>Logo Designs Service</h6>
 						</div>
 					</a>
-					<a href="banner_design.php" class="d-flex pt-2">
+					<a href="banner-design.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>

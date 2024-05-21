@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Microsoft Office Specialist (MOS)";
 ob_start();
 ?>
 
@@ -49,7 +49,7 @@ ob_start();
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development phpdevelopment" style="background-image: url(images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-7 ecomresp" style="z-index:500; ">
@@ -94,7 +94,7 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Microsoft Office</li>
 						</ol>

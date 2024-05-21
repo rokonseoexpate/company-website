@@ -62,7 +62,7 @@ ob_start();
                                     <div class="col-md-3 col-6">
                                         <div class="col-megamenu pb-2">
                                             <a href="ghost-mannequin.php" class="d-flex">
-                                                <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+                                                <div><i class="fa-regular fa-compass" alt="Ghost Mannequin Effect" description="Ghost Mannequin Effect"></i></div>
                                                 <div>
                                                     <h6 class="title">Ghost Mannequin Effect</h6>
                                                 </div>
@@ -72,7 +72,7 @@ ob_start();
                                     <div class="col-md-3 col-6">
                                         <div class="col-megamenu pb-2">
                                             <a href="photo-retouching.php" class="d-flex">
-                                                <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+                                                <div><i class="fa-regular fa-compass" alt="Photo Retouching" description="Photo Retouching"></i></div>
                                                 <div>
                                                     <h6 class="title">Photo Retouching</h6>
                                                 </div>
@@ -190,7 +190,7 @@ ob_start();
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
     <div class="container ">
         <div class="row">
             <div class="col-12" style="z-index:500;">

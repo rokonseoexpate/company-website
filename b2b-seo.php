@@ -15,38 +15,38 @@ ob_start();
 				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 					<ul class="navbar-nav ">
 						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="seo_service.html" data-bs-toggle="dropdown">SEO Services</a>
+							<a class="nav-link  dropdown-toggle" href="seo-service.php" data-bs-toggle="dropdown">SEO Services</a>
 							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="ecommerce_seo.html"> eCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="amazon_seo.html">Amazon SEO</a></li>
-								<li><a class="dropdown-item" href="b2b_seo.html">B2B SEO</a></li>
-								<li><a class="dropdown-item" href="shopify_seo.html">Shopify SEO</a></li>
-								<li><a class="dropdown-item" href="wordpress_seo.html">WordPress SEO</a></li>
-								<li><a class="dropdown-item" href="woocommerce_seo.html">WooCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="lead_seo.html">Lead Generation SEO</a></li>
-								<li><a class="dropdown-item" href="nopcommerce_seo.html">NopCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="magento_seo.html">Magento SEO</a></li>
-								<li><a class="dropdown-item" href="volusion_seo.html">Volusion SEO</a></li>
-								<li><a class="dropdown-item" href="bigcommerce_seo.html">BigCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="consulting_seo.html">SEO Consulting</a></li>
+								<li><a class="dropdown-item" href="ecommerce-seo.php"> eCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="amazon-seo.php">Amazon SEO</a></li>
+								<li><a class="dropdown-item" href="b2b-seo.php">B2B SEO</a></li>
+								<li><a class="dropdown-item" href="shopify-seo.php">Shopify SEO</a></li>
+								<li><a class="dropdown-item" href="wordpress-seo.php">WordPress SEO</a></li>
+								<li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
+								<li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="magento_seo.php">Magento SEO</a></li>
+								<li><a class="dropdown-item" href="volusion_seo.php">Volusion SEO</a></li>
+								<li><a class="dropdown-item" href="bigcommerce_seo.php">BigCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="consulting_seo.php">SEO Consulting</a></li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="ppc_paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
+							<a class="nav-link  dropdown-toggle" href="ppc_paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
 							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="amazon_ppc.html"> Amazon PPC Management</a></li>
-								<li><a class="dropdown-item" href="ecommerce_ppc.html">eCommerce PPC Management</a></li>
-								<li><a class="dropdown-item" href="google_ads.html">Google Ads Consulting</a></li>
-								<li><a class="dropdown-item" href="management_ads.html">Google Ads Management</a></li>
-								<li><a class="dropdown-item" href="shoping_management.html">Google Shopping Management</a></li>
-								<li><a class="dropdown-item" href="ppc_consulting.html">PPC Consulting</a></li>
-								<li><a class="dropdown-item" href="ppc_lead.html">Lead Gen PPC Management</a></li>
+								<li><a class="dropdown-item" href="amazon_ppc.php"> Amazon PPC Management</a></li>
+								<li><a class="dropdown-item" href="ecommerce_ppc.php">eCommerce PPC Management</a></li>
+								<li><a class="dropdown-item" href="google_ads.php">Google Ads Consulting</a></li>
+								<li><a class="dropdown-item" href="management_ads.php">Google Ads Management</a></li>
+								<li><a class="dropdown-item" href="shoping_management.php">Google Shopping Management</a></li>
+								<li><a class="dropdown-item" href="ppc_consulting.php">PPC Consulting</a></li>
+								<li><a class="dropdown-item" href="ppc_lead.php">Lead Gen PPC Management</a></li>
 							</ul>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="onpage_seo.html"> On-page SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="offpage_seo.html"> Off-page SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="technical_seo.html"> Technical SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="package_price_seo.html"> SEO Packages & Pricing </a></li>
+						<li class="nav-item"><a class="nav-link" href="onpage_seo.php"> On-page SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="offpage_seo.php"> Off-page SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="technical_seo.php"> Technical SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="package_price_seo.php"> SEO Packages & Pricing </a></li>
 					</ul>
 				</div>
 			</div>
@@ -56,7 +56,7 @@ ob_start();
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-7 ecomresp" style="z-index:500;">
@@ -67,7 +67,7 @@ ob_start();
 				</div>
 				<div class="row">
 					<div class="col-md-6 pt-2">
-						<div class=" border-bottom border-3 border-success pb-3"><a href="contact.html" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your B2B SEO Proposal</a></div>
+						<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your B2B SEO Proposal</a></div>
 					</div>
 					<div class="col-md-2 ecomrespons">
 						<img src="frontend/images/google-seo-proposal-audit.png.webp" alt=" B2B SEO Services" description=" B2B SEO Services" class="img-fluid">
@@ -90,8 +90,8 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="seo_service.html" class="text-light">SEO</a></li>
+							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">B2B SEO</li>
 						</ol>
 					</nav>
@@ -108,7 +108,7 @@ ob_start();
 		<div class="row">
 			<div class="col-md-6" style="z-index:500;">
 				<div class="cliping_service_txt pb-2">
-					<h6>Advantages of Working with A Reputable B2B SEO <a href="index.html" class="text-success">Company</a></h6>
+					<h6>Advantages of Working with A Reputable B2B SEO <a href="index.php" class="text-success">Company</a></h6>
 				</div>
 				<p class="pt-3">Obviously, an expert B2B SEO team at your disposal is a huge benefit. But it’s even better when that team is in-house, never outsourced, and ideally not located in a foreign country. We’re located in the USA and our team members work in our office on a daily basis. We’ll be your partner in success, knowing your success is ours.</p>
 				<p class="">When you’re selling to other businesses the rules of your website are often different. Many times pricing structures are prorated at the customer level, or certain sections of your website may require a customer to be logged in to view the content. It’s important to work with an SEO company that understands these challenges and has experience in operating successful B2B search engine marketing campaigns. We’ve worked with retailers selling over 75,00 unique SKU’s, down to major manufacturers who sell only a few items to large retailers. No matter your situation, talk over your search marketing needs with our team and we’ll see if it’s a fit for us to work together.</p>
@@ -160,7 +160,7 @@ ob_start();
 				<div class="cliping_service_txt pb-2 margintop">
 					<h6>Collaborate with B2B eCommerce Experts</h6>
 				</div>
-				<p class="pt-3">We don’t just market B2B websites, we build B2B eCommerce websites every single day. We understand every aspect of what it takes for a B2B website to become an effective channel for inbound leads and sales. With B2B experts in every area from project management, design, front and back end development, <a href="seo_service.html" class="text-success">SEO</a>, & PPC management, operating under one roof, OuterBox delivers unrivaled value, expertise, and results.</p>
+				<p class="pt-3">We don’t just market B2B websites, we build B2B eCommerce websites every single day. We understand every aspect of what it takes for a B2B website to become an effective channel for inbound leads and sales. With B2B experts in every area from project management, design, front and back end development, <a href="seo-service.php" class="text-success">SEO</a>, & PPC management, operating under one roof, OuterBox delivers unrivaled value, expertise, and results.</p>
 			</div>
 		</div>
 	</div>
@@ -197,7 +197,7 @@ ob_start();
 					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
 				</div>
 				<div class="top-body-button pt-5">
-					<a type="button" href="contact.html">Get In Touch</a>
+					<a type="button" href="contact.php">Get In Touch</a>
 				</div>
 			</div>
 			<div class="col-md-6">

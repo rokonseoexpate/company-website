@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Machine Learning Specialist";
 ob_start();
 ?>
 
@@ -48,7 +48,7 @@ ob_start();
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development phpdevelopment" style="background-image: url(images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
   <div class="container ">
     <div class="row">
       <div class="col-md-7 ecomresp" style="z-index:500; ">
