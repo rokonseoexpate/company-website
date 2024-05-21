@@ -129,7 +129,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/press_enquiry.php</loc>
+    <loc>http://company-website.test/press-enquiry.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>

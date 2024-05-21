@@ -7,36 +7,33 @@ $conn = $db->get_connection();
 
 ?>
 
-<!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(frontend/images/Advanced-technology.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
-    <div class="container ">
-        <div class="row">
-            <div class="col-md-7" style="z-index:500;">
-                <div class="top_body_txt_part">
-                    <h1>SEO Expate Bangladesh Ltd.</h1>
-                    <h2>SEO Services, IT Services, Solutions & Development</h2>
-                    <h6>Getting Started With the Latest Technologies</h6>
-                    <p>SEO Expate BD Ltd. helps you unlock innovation and navigate the digital future. We empower
-                        enterprises to reimagine their business and dominate digital transformation. Certified for
-                        quality and security (ISO 9001 & 27001), we offer cutting-edge IT services and technology
-                        solutions. Again, we are proud members of FBCCI, BASIS, BACCO and have all the registered
-                        licenses.</p>
+    <!--================================top-body section start here=======================-->
+    <section class="top-body" style="background-image: url(frontend/images/Advanced-technology.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-7" style="z-index:500;">
+                    <div class="top_body_txt_part">
+                        <h1>SEO Expate Bangladesh Ltd.</h1>
+                        <h2>SEO Services, IT Services, Solutions & Development</h2>
+                        <h6>Getting Started With the Latest Technologies</h6>
+                        <p><a href="/" class="text-success">SEO Expate</a> BD Ltd. helps you unlock innovation and navigate the digital future. We empower enterprises to reimagine their business and dominate digital transformation. <a href="certificate.html" class="text-success">Certified</a> for quality and security (ISO 9001 & 27001), we offer cutting-edge IT services and technology solutions. Again, we are proud members of FBCCI, BASIS, BACCO and have all the registered licenses.</p>
+                    </div>
+                    <div class="top-body-button pt-3">
+                        <div class="d-flex gap-3">
+                            <a type="button" href="services.php">Services</a>
+                            <a type="button" href="contact.php">Contact Us</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="top-body-button pt-3">
-                    <div class="d-flex gap-3">
-                        <a type="button" href="services.php">Services</a>
-                        <a type="button" href="#">Portfolio</a>
+                <div class="col-md-5 col-md-offset-1" style="z-index:500;">
+                    <div class="top_body_awards">
+                        <img src="frontend/images/trophy-of-digital-bangladesh-award-won-by-seoexpate.png" alt="SEO Expate Bangladesh Ltd" description=" SEO Expate Bangladesh Ltd">
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 col-md-offset-1" style="z-index:500;">
-                <div class="top_body_awards">
-                    <img src="frontend/images/trophy-of-digital-bangladesh-award-won-by-seoexpate.png" alt="image">
-                </div>
-            </div>
         </div>
-</section>
-<!--================================top-body section end here=======================-->
+    </section>
+    <!--================================top-body section end here=======================-->
 
 <!--================================top-slider-part section start here=======================-->
 <section class="top-slider-part">

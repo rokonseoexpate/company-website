@@ -85,7 +85,7 @@ $title = $branch['name'];
 				<div class="container mt-2">
 					<div class="row">
 						<?php
-						$qry = "SELECT * FROM employees WHERE branch_id = " . $branch['id'] . " ORDER BY id DESC";
+						$qry = "SELECT * FROM employees WHERE branch_id = " . $branch['id'] . " ORDER BY priority ASC";
 						$result = mysqli_query($conn, $qry);
 
 						if ($result) {

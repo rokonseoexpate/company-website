@@ -65,7 +65,7 @@ $conn = $db->get_connection();
                                     <?php
                                     $depId = $row['id'];
                                     // Complete the SQL query to select employees based on department ID
-                                    $emps =  "SELECT * FROM employees WHERE department_id = '$depId'";
+                                    $emps =  "SELECT * FROM employees WHERE department_id = '$depId' ORDER BY dep_priority ASC";
                                     $resultemps = mysqli_query($conn, $emps);
 
                                     // Fetch employees and display them
