@@ -147,7 +147,7 @@ $history = $result->fetch_assoc();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="frontend/images/1707203640310.jpg" alt="image">
+				<img src="frontend/images/1707203640310.jpg" alt="our mission">
 			</div>
 			<div class="col-md-6">
 				<h3>Our <span>One Mission</span></h3>
@@ -174,7 +174,7 @@ $history = $result->fetch_assoc();
 				</div>
 			</div>
 			<div class="col-md-6">
-				<img src="frontend/images/Our-Promise.jpg" alt="image">
+				<img src="frontend/images/Our-Promise.jpg" alt="our promise">
 			</div>
 		</div>
 	</div>
@@ -201,7 +201,7 @@ $history = $result->fetch_assoc();
 <div class="world_impact">
 	<div class="container">
 		<div class="row">
-			<img src="frontend/images/web-store_prev_ui.png" alt="">
+			<img src="frontend/images/web-store_prev_ui.png" alt="world impact">
 		</div>
 	</div>
 </div>
@@ -213,7 +213,6 @@ $history = $result->fetch_assoc();
 		<div class="row">
 			<div class="overview_success_txt">
 				<h3><?= $history['overview_success'] ?></h3>
-				<h3></h3>
 				<p><?= strip_tags($history['overview_success_details']) ?></p>
 			</div>
 			<?php
@@ -226,7 +225,7 @@ $history = $result->fetch_assoc();
 				if ($row = mysqli_fetch_assoc($result)) {
 			?>
 					<div class="overview_success_img pt-5">
-						<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+						<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag']; ?>">
 					</div>
 				<?php
 				}
@@ -236,7 +235,7 @@ $history = $result->fetch_assoc();
 				?>
 					<div class="col-md-6">
 						<div class="overview_success_img pt-4">
-							<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+							<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag']; ?>">
 						</div>
 					</div>
 			<?php
@@ -272,7 +271,7 @@ $history = $result->fetch_assoc();
 
 					<div class="col-md-6 pt-3">
 						<div class="img">
-							<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+							<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['title']; ?>">
 						</div>
 						<div class="Our_Great_Start_img_txt pt-4">
 							<h5><?php echo $row['title'] ?></h5>
@@ -367,7 +366,7 @@ $history = $result->fetch_assoc();
 							$newImagePath = 'uploads/' . $imageName;
 						?>
 							<div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
-								<img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="img">
+								<img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="<?php echo $imageName; ?>">
 							</div>
 						<?php
 							$active = false;
@@ -414,7 +413,7 @@ $history = $result->fetch_assoc();
 												$imagePath = $row['image'];
 												$imageName = basename($imagePath);
 												$newImagePath = 'uploads/' . $imageName;
-												echo $newImagePath; ?>" alt="image">
+												echo $newImagePath; ?>" alt="<?php echo $imageName; ?>">
 								</div>
 							</div>
 					<?php
@@ -432,63 +431,63 @@ $history = $result->fetch_assoc();
 						<div class="owl-item">
 							<div class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
 								<div class="bbb_viewed_image">
-									<img src="frontend/images/mukto-sokal.png" alt="">
+									<img src="frontend/images/mukto-sokal.png" alt="Seo Expate Bangladesh LTD">
 								</div>
 							</div>
 						</div>
 						<div class="owl-item">
 							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
 								<div class="bbb_viewed_image">
-									<img src="frontend/images/6578bb0f9469d.png" alt="">
+									<img src="frontend/images/6578bb0f9469d.png" alt="Seo Expate Bangladesh LTD">
 								</div>
 							</div>
 						</div>
 						<div class="owl-item">
 							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
 								<div class="bbb_viewed_image">
-									<img src="frontend/images/logo-fb.png" alt="">
+									<img src="frontend/images/logo-fb.png" alt="Seo Expate Bangladesh LTD">
 								</div>
 							</div>
 						</div>
 						<div class="owl-item">
 							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
 								<div class="bbb_viewed_image">
-									<img src="frontend/images/loggo.png" alt="">
+									<img src="frontend/images/loggo.png" alt="Seo Expate Bangladesh LTD">
 								</div>
 							</div>
 						</div>
 						<div class="owl-item">
 							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
 								<div class="bbb_viewed_image">
-									<img src="frontend/images/bogura.png" alt="">
+									<img src="frontend/images/bogura.png" alt="Seo Expate Bangladesh LTD">
 								</div>
 							</div>
 						</div>
 						<div class="owl-item">
 							<div class=" bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
 								<div class="bbb_viewed_image">
-									<img src="frontend/images/jaijaidin.png" alt="">
+									<img src="frontend/images/jaijaidin.png" alt="Seo Expate Bangladesh LTD">
 								</div>
 							</div>
 						</div>
 						<div class="owl-item">
 							<div class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
 								<div class="bbb_viewed_image">
-									<img src="frontend/images/satmatha.png" alt="">
+									<img src="frontend/images/satmatha.png" alt="Seo Expate Bangladesh LTD">
 								</div>
 							</div>
 						</div>
 						<div class="owl-item">
 							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
 								<div class="bbb_viewed_image">
-									<img src="frontend/images/mukto-sokal.png" alt="">
+									<img src="frontend/images/mukto-sokal.png" alt="Seo Expate Bangladesh LTD">
 								</div>
 							</div>
 						</div>
 						<div class="owl-item">
 							<div class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
 								<div class="bbb_viewed_image">
-									<img src="frontend/images/daily-korotoya.png" alt="">
+									<img src="frontend/images/daily-korotoya.png" alt="Seo Expate Bangladesh LTD">
 								</div>
 							</div>
 						</div>
@@ -521,7 +520,7 @@ $history = $result->fetch_assoc();
 					?>
 							<div class="slider-card">
 								<div class="d-flex justify-content-center align-items-center mb-4">
-									<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+									<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['title'] ?>">
 								</div>
 								<h5 class="mb-0 text-center"><b><?php echo $row['short_title'] ?></b></h5>
 								<p class="text-center p-4"><?php echo $row['title'] ?> </p>
