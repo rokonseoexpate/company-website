@@ -6,27 +6,28 @@ $db = new DB_con();
 $conn = $db->get_connection();
 
 ?>
-<!--================================top-body section start here=======================-->
-<section class="top-body top_about_us" style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
-	<div class="container ">
-		<div class="row">
-			<div class="top_about_us_txt pb-5" style="z-index:500;">
-				<div class="d-flex">
-					<h6>Home</h6>
-					<p><i class="fa-solid fa-angle-right"></i></p>
-					<p>About Us</p>
+	<!--================================top-body section start here=======================-->
+	<section class="top-body top_about_us" style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
+		<div class="container ">
+			<div class="row">
+				<div class="top_about_us_txt pb-5" style="z-index:500;">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item "><a href="index.html" class="text-light fw-bold">Home</a></li>
+							<li class="breadcrumb-item active text-light fw-bold" aria-current="page">About Us</li>
+						</ol>
+					</nav>
 				</div>
-			</div>
-			<div class="col-12" style="z-index:500;">
-				<div class="top_body_txt_part">
-					<h2>Expert Solutions </h2>
-					<h1>for Your Digital Needs</h1>
+				<div class="col-12" style="z-index:500;">
+					<div class="top_body_txt_part">
+						<h2>Expert Solutions </h2>
+						<h1>for Your Digital Needs</h1>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================top-body section end here=======================-->
+	</section>
+	<!--================================top-body section end here=======================-->
 
 <!--================================Providing_Solutions section start here=======================-->
 <section class="Providing_Solutions">

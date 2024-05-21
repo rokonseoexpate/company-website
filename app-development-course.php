@@ -17,7 +17,7 @@ $conn = $db->get_connection();
                 </button>
                 <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
                     <ul class="navbar-nav ">
-                        <li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
+                        <li class="nav-item"><a class="nav-link" href="training.php"> Training</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle" href="regular-course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -96,8 +96,8 @@ $conn = $db->get_connection();
                 <div class="top_about_us_txt" style="z-index:500;">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb breadcumb_gph">
-                            <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
-                            <li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
+                            <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+                            <li class="breadcrumb-item "><a href="training.php" class="text-light">Our Training</a></li>
                             <li class="breadcrumb-item active text-light" aria-current="page">ANDROID & IOS APP DEVELOPMENT</li>
                         </ol>
                     </nav>
@@ -120,7 +120,7 @@ $conn = $db->get_connection();
             <div class="col-md-6 margintop" style="z-index:500;">
                 <div class="cliping_service_txt pb-2 pt-2"><h6>Android App Development with Java:</h6></div>
                 <p class="pt-3" >This course will teach the students how to program core features and classes from the Java programming language that are used in Android, which is the dominant platform for developing and deploying mobile device apps.</p>
-                <p class="" >In particular, this course will cover key Java programming language features that control the flow of execution through an app (such as Java’s various looping constructs and conditional statements), enable access to structured data (such as Java's built-in arrays and common classes in the Java Collections Framework, such as ArrayList and HashMap), group related operations and data into classes and interfaces (such as Java's primitive and user-defined types, fields, methods, generic parameters,and exceptions), customizing the behavior of existing classes through inheritance and polymorphism (such as subclassing and overriding virtual methods). Learners of this  <a href="traning.php" class="text-success">course</a> will apply these Java features in the context of core Android components (such as Activities and basic UI elements) by applying common tools (such as Android Studio) needed to develop Java programs and useful Android apps.</p>
+                <p class="" >In particular, this course will cover key Java programming language features that control the flow of execution through an app (such as Java’s various looping constructs and conditional statements), enable access to structured data (such as Java's built-in arrays and common classes in the Java Collections Framework, such as ArrayList and HashMap), group related operations and data into classes and interfaces (such as Java's primitive and user-defined types, fields, methods, generic parameters,and exceptions), customizing the behavior of existing classes through inheritance and polymorphism (such as subclassing and overriding virtual methods). Learners of this  <a href="training.php" class="text-success">course</a> will apply these Java features in the context of core Android components (such as Activities and basic UI elements) by applying common tools (such as Android Studio) needed to develop Java programs and useful Android apps.</p>
             </div>
         </div>
     </div>

@@ -47,7 +47,7 @@
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                                 <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">SEO Consulting</li>
                             </ol>
@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="col-md-6" style="z-index:500;">
                     <div class="cliping_service_txt pb-2"><h6>SEO Consulting for eCommerce Websites</h6></div>
-                    <p class="pt-3" >At OuterBox, we’re the <a href="ecommerce-seo.php" class="text-success">eCommerce SEO</a> pros. We’ve been optimizing eCommerce websites for 20+ years and have more experience than any other <a href="index.php" class="text-success">SEO company</a> in the industry. eCommerce SEO consulting is a valuable service as we can drive strategy and work with your internal digital marketing team to push them in the right direction. We’ll consult with your developers, content writers, designers, and more to be sure every action you’re taking is the right one. We’ll help your company make the most of the time and effort that’s being put into your online marketing every day, becoming an extension of your search advertising team.</p>
+                    <p class="pt-3" >At OuterBox, we’re the <a href="ecommerce-seo.php" class="text-success">eCommerce SEO</a> pros. We’ve been optimizing eCommerce websites for 20+ years and have more experience than any other <a href="/" class="text-success">SEO company</a> in the industry. eCommerce SEO consulting is a valuable service as we can drive strategy and work with your internal digital marketing team to push them in the right direction. We’ll consult with your developers, content writers, designers, and more to be sure every action you’re taking is the right one. We’ll help your company make the most of the time and effort that’s being put into your online marketing every day, becoming an extension of your search advertising team.</p>
                     <p class="" >eCommerce websites present unique challenges that we’re well equipped to handle. From the optimization of thousands of products to indexing 100,000+ pages, we’ll share the secrets of dynamic optimization, on-site optimization, link building, and more.</p>
                 </div>
                 <div class="col-md-6" style="margin: auto;">

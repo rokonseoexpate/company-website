@@ -61,7 +61,7 @@ ob_start();
 				<div class="top_body_txt_part">
 					<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">SEO Packages: </h1>
 					<h2 class="fs-1" style=" margin-top: -15px;">Drive Organic Search Traffic & Online Sales</h2>
-					<p style="text-align:justify;">Looking to partner with an outcome-oriented SEO team? At <a href="index.php" class="text-success">SEO Expate</a>, we've been delivering verified SEO packages and search engine optimization campaigns since 2012. Additionally, we specialize in achieving landing page rankings, boosting organic traffic, and enhancing conversions. </p>
+					<p style="text-align:justify;">Looking to partner with an outcome-oriented SEO team? At <a href="/" class="text-success">SEO Expate</a>, we've been delivering verified SEO packages and search engine optimization campaigns since 2012. Additionally, we specialize in achieving landing page rankings, boosting organic traffic, and enhancing conversions. </p>
 
 					<div class="app_list">
 						<p class="text-light p-0 m-0"><span><i class="fa-solid fa-check-double" alt="SEO Packages" description=" SEO Packages"></i></span>In-house SEO experts</p>
@@ -97,7 +97,7 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-dark ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-dark ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-dark">» SEO</a></li>
 							<li class="breadcrumb-item active text-dark" aria-current="page">» SEO Packages</li>
 						</ol>
@@ -158,7 +158,7 @@ ob_start();
 					<h5 class="">Customized SEO bundles crafted to secure top positions on Google's first page</h5>
 				</div>
 				<div class="border-bottom border-3 border-success">
-					<p class="" style="text-align: justify;"><a href="index.php" class="text-success">SEO Expate</a> Ltd stands at the forefront of the industry, offering SEO packages that drive outcomes for your business. We have an experienced SEO team to bring you organic leads that convert into quality sales and revenue growth. Through our proven methodologies, you'll witness your website skyrocket its ranking. Also, attracting a surge of organic traffic and boosting overall visibility. Indeed, every business is unique; our SEO packages meticulously fulfil your specific requirements. We create your SEO strategy each month based on your website's needs. Our team focuses on ranking elements considered by search engines, ensuring your website stands out in search results. Most importantly, you can purchase this service worldwide with a secure payment process. It has the best value for your money, so consider getting it today.</p>
+					<p class="" style="text-align: justify;"><a href="/" class="text-success">SEO Expate</a> Ltd stands at the forefront of the industry, offering SEO packages that drive outcomes for your business. We have an experienced SEO team to bring you organic leads that convert into quality sales and revenue growth. Through our proven methodologies, you'll witness your website skyrocket its ranking. Also, attracting a surge of organic traffic and boosting overall visibility. Indeed, every business is unique; our SEO packages meticulously fulfil your specific requirements. We create your SEO strategy each month based on your website's needs. Our team focuses on ranking elements considered by search engines, ensuring your website stands out in search results. Most importantly, you can purchase this service worldwide with a secure payment process. It has the best value for your money, so consider getting it today.</p>
 					<p class="" style="text-align: justify;">Most importantly, if you want to attract customers or expand globally, our service can help you achieve your goals. Therefore, these packages are designed to attract customers in your area. Also, our National SEO package is ideal for reaching a wider audience and capturing enterprise or <a href="b2b-seo.php" class="text-success">B2B</a> leads. In addition, for e-commerce businesses, our service will boost your products to the top. Also, it will increase your growth rate and online sales. This service includes optimizing website code, creating content, developing landing pages, consulting on SEO campaigns, optimizing tags, and more. Your success is our priority, and we're committed to guiding you every step of the way. To conclude, collaborate with us and achieve your basic SEO success. <a href="contact.php" class="text-success">Contact us</a> now to discover how our <a href="services.php" class="text-success">service</a> can transform your business.</p>
 				</div>
 			</div>
@@ -853,7 +853,7 @@ ob_start();
 	<div class="container shadow py-5 px-5 " style="border-left:15px solid #F4B400;">
 		<div class="row ">
 			<div class="col-12">
-				<h6 class="fw-bold fs-5 pb-3">Why Use SEO Package from <a href="index.php" class="text-success">SEO Expate</a> Ltd.</h6>
+				<h6 class="fw-bold fs-5 pb-3">Why Use SEO Package from <a href="/" class="text-success">SEO Expate</a> Ltd.</h6>
 				<div>
 					<p>1. With a history dating back to 2012, we hold 12 years of SEO data to create our strategies. </p>
 				</div>
@@ -914,7 +914,7 @@ ob_start();
 				</div>
 			</div>
 			<div class="col-12">
-				<p>Moreover, we have a reputation for being the top <a href="index.php" class="text-success">company</a> in the World. In addition, we harness a wealth of SEO data to identify effective strategies, tactics, and methods. Upon partnering with us, we thoroughly analyses your website and pinpoint weaknesses in your current approach. Also, enhance your site by implementing proven techniques developed by our in-house creative personnel. To conclude, we ensure that your most critical keywords land on the first page of search results. </p>
+				<p>Moreover, we have a reputation for being the top <a href="/" class="text-success">company</a> in the World. In addition, we harness a wealth of SEO data to identify effective strategies, tactics, and methods. Upon partnering with us, we thoroughly analyses your website and pinpoint weaknesses in your current approach. Also, enhance your site by implementing proven techniques developed by our in-house creative personnel. To conclude, we ensure that your most critical keywords land on the first page of search results. </p>
 			</div>
 		</div>
 	</div>

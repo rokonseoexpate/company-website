@@ -58,7 +58,7 @@ if ($result = $conn->query($qry)) {
             <?php if ($number++ % 2 == 0) { ?>
                 <div class="col-md-6">
                     <div class="Core_Values_img pb-5 pt-3 text-center">
-                        <img src="<?php echo $newImagePath; ?>" alt="image">
+                        <img src="<?php echo $newImagePath; ?>" alt="<?php echo $row['alt_title']; ?>" description="<?php echo strip_tags($row['alt_description']) ?>" >
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -76,7 +76,7 @@ if ($result = $conn->query($qry)) {
                 </div>
                 <div class="col-md-6">
                     <div class="Core_Values_img pb-5 pt-3 text-center">
-                        <img src="<?php echo $newImagePath; ?>" alt="image">
+                        <img src="<?php echo $newImagePath; ?>"  alt="<?php echo $row['alt_title']; ?>" description="<?php echo strip_tags($row['alt_description']) ?>"  >
                     </div>
                 </div>
             <?php } ?>

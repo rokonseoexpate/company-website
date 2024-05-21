@@ -15,7 +15,7 @@ ob_start();
 				</button>
 				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 					<ul class="navbar-nav ">
-						<li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="training.php"> Training</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link  dropdown-toggle" href="regular-course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
 							<ul class="dropdown-menu dropdown-menu-end">
@@ -70,7 +70,7 @@ ob_start();
 		<div class="row">
 			<div class="col-12" style="z-index:500;">
 				<div class="breadcumb_gph d-flex">
-					<a class="text-light" href="index.php" class="text-success">
+					<a class="text-light" href="/" class="text-success">
 						<p>Home</p>
 					</a>
 					<p class="text-light px-3 ">»</p>

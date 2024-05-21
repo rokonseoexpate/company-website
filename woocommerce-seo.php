@@ -88,7 +88,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 						    <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">WooCommerce SEO</li>
 						  </ol>
@@ -145,7 +145,7 @@
 			      <div class="accordion-item">
 			        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. How much do WooCommerce SEO services cost?</h5>
 			        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
-			          <div class="accordion-body">WooCommerce SEO services will be priced about the same as traditional SEO services. Depending on the <a href="seo-service.php" class="text-success">SEO</a> <a href="index.php" class="text-success">company</a> you choose, hourly rates vary from $150/hour to $500/hour and beyond. View our SEO pricing and costs for more information on standard SEO pricing models and associated fees.
+			          <div class="accordion-body">WooCommerce SEO services will be priced about the same as traditional SEO services. Depending on the <a href="seo-service.php" class="text-success">SEO</a> <a href="/" class="text-success">company</a> you choose, hourly rates vary from $150/hour to $500/hour and beyond. View our SEO pricing and costs for more information on standard SEO pricing models and associated fees.
 			          </div>
 			        </div>
 			      </div>

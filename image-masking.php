@@ -216,7 +216,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Image Masking</li>
 						</ol>
@@ -300,7 +300,7 @@
             <div class="row">
                 <div class="newudcode pb-3"><h5>Image Masking Service with SEO Expate Bangladesh Ltd</h5></div>
                 <div class="pb-5">
-                    <p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd offers top-notch image masking services to help businesses enhance their visual content. However, this technique removes the background from an image and creates a clean, professional look. Therefore, with this service, you can trust that your images will be perfect. It will achieve a clean and professional look for your images. Also, it will help you stand out from your competitors with high-quality images. Most importantly, it will Increase customer engagement and conversion rates. In conclusion, we are your go-to source for professional image masking services. Do not settle for mediocre visuals, choose our service for all your image masking needs.</p>                   
+                    <p><a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd offers top-notch image masking services to help businesses enhance their visual content. However, this technique removes the background from an image and creates a clean, professional look. Therefore, with this service, you can trust that your images will be perfect. It will achieve a clean and professional look for your images. Also, it will help you stand out from your competitors with high-quality images. Most importantly, it will Increase customer engagement and conversion rates. In conclusion, we are your go-to source for professional image masking services. Do not settle for mediocre visuals, choose our service for all your image masking needs.</p>                   
                 </div>
             </div>
             <div class="row shadow px-5 py-3">
@@ -590,7 +590,7 @@
             	<div class="col-12">
 					<div class="newudcode pb-3"><h5 class="text-light">Simple Image Masking Service Cost ($01.99 each image)</h5></div>
 	                <div>
-	                    <p class="text-light">Our <a href="index.php" class="text-success">company</a> offers an affordable image masking service. It can enhance the quality of your images. Our service can cater to your needs in every aspect. In addition, our skilled professionals use advanced techniques to ensure precise image editing. Also, by outsourcing your image masking needs to us, you can focus on other aspects of your business. This affordable service makes it reachable for businesses of all sizes. Finally, if you are looking for an affordable service that delivers exceptional results, look no further than our company.</p>
+	                    <p class="text-light">Our <a href="/" class="text-success">company</a> offers an affordable image masking service. It can enhance the quality of your images. Our service can cater to your needs in every aspect. In addition, our skilled professionals use advanced techniques to ensure precise image editing. Also, by outsourcing your image masking needs to us, you can focus on other aspects of your business. This affordable service makes it reachable for businesses of all sizes. Finally, if you are looking for an affordable service that delivers exceptional results, look no further than our company.</p>
 	                </div>
                 </div>
             </div>

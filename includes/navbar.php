@@ -103,7 +103,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="traning.php">
+                                                            <a class="list-group-item d-flex" href="training.php">
                                                                 <div><i class="fa-solid fa-money-check-dollar" alt=" seo expate" description=" seo expate"></i></div>
                                                                 <div>
                                                                     <h5>Training</h5>

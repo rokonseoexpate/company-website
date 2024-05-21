@@ -1,5 +1,5 @@
 <?php
-$title = "B2B";
+$title = "B2B Seo";
 ob_start();
 ?>
 
@@ -90,7 +90,7 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">B2B SEO</li>
 						</ol>
@@ -108,7 +108,7 @@ ob_start();
 		<div class="row">
 			<div class="col-md-6" style="z-index:500;">
 				<div class="cliping_service_txt pb-2">
-					<h6>Advantages of Working with A Reputable B2B SEO <a href="index.php" class="text-success">Company</a></h6>
+					<h6>Advantages of Working with A Reputable B2B SEO <a href="/" class="text-success">Company</a></h6>
 				</div>
 				<p class="pt-3">Obviously, an expert B2B SEO team at your disposal is a huge benefit. But it’s even better when that team is in-house, never outsourced, and ideally not located in a foreign country. We’re located in the USA and our team members work in our office on a daily basis. We’ll be your partner in success, knowing your success is ours.</p>
 				<p class="">When you’re selling to other businesses the rules of your website are often different. Many times pricing structures are prorated at the customer level, or certain sections of your website may require a customer to be logged in to view the content. It’s important to work with an SEO company that understands these challenges and has experience in operating successful B2B search engine marketing campaigns. We’ve worked with retailers selling over 75,00 unique SKU’s, down to major manufacturers who sell only a few items to large retailers. No matter your situation, talk over your search marketing needs with our team and we’ll see if it’s a fit for us to work together.</p>
