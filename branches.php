@@ -1,246 +1,770 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Title" content="This is the my site">
+	<meta name="description" content="This is the my site">
+    <meta name="keywords" content="seoebl, seoexpate">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Branches</title>
+	<meta property="og:title" content="Home - IT Services, Technology Solutions">
+		
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-ob_start();
-require_once 'config/dbconnect.php';
-$db = new DB_con();
-$conn = $db->get_connection();
-// // Fetch the branch details from the database based on the ID
-// $id = $_GET['id']; // Assuming the ID is passed via URL parameter
-// $sql = "SELECT * FROM branches WHERE id = $id";
-// $result = mysqli_query($conn, $sql);
-// $branch = mysqli_fetch_assoc($result);
+	<div class="gtranslate_wrapper"></div>
+	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
+	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
-$title = "All Branches";
+</head>
 
-?>
+<body>
 
-<!--================================top-body section start here=======================-->
-<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">
-	<div class="container ">
-		<div class="row">
-			<div class="col-12" style="z-index:500; ">
-				<div class="top_body_txt_part">
-					<h1 class="" style="font-size: 45px; line-height: 55px;">All Branches</h1>
-					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
-				</div>
+	<!--================================Header section start here=======================-->
+	<header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg">
+		                <div class="container-fluid">
+		                    <a class="navbar-brand" href="index.html">
+		                    	<img src="images/SEO-Expate-Bangladesh-Ltd.png" alt="logo seo expate" description="logo seo expate" width="300" height="auto">
+		                    </a>
+		                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+		                        data-bs-target="#navbar-content">
+		                        <i class="fas fa-stream text-white" alt=" seo expate" description=" seo expate"></i>
+		                    </button>
+		                    <div class="collapse navbar-collapse" id="navbar-content">
+		                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+		                            <li class="nav-item">
+		                                <a class="nav-link " href="hire.html">Hire</a>
+		                            </li>
+		                            <li class="nav-item dropdown dropdown-mega position-static">
+		                                <a class="nav-link dropdown-toggle" href="services.html" data-bs-toggle="dropdown"
+		                                    data-bs-auto-close="outside">Services</a>
+		                                <div class="dropdown-menu shadow">
+		                                    <div class="mega-content px-md-4">
+		                                        <div class="container-fluid">
+		                                            <div class="row">
+		                                                <div class="col-lg-4 col-sm-6 py-4">
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="domain_hosting.html">
+		                                                        	<div><i class="fa-solid fa-earth-americas" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        	<h5>Domain & Hosting</h5>
+		                                                        	<p>We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality.</p>
+		                                                        	</div>
+		                                                        </a>
+		                                                        
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="software_development.html">
+		                                                        	<div><i class="fa-brands fa-buffer" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Software Development</h5>
+		                                                        		<p>We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality.</p>
+		                                                        	</div>
+		                                                        </a>
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="seo_service.html">
+		                                                        	<div><i class="fa-solid fa-chart-line" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>SEO</h5>
+		                                                        		<p>We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality.</p>
+		                                                        	</div>
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                </div>
+		                                                <div class="col-lg-4 col-sm-6 py-4">
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="web_development.html">
+		                                                        	<div><i class="fa-brands fa-webflow" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Web Development</h5>
+		                                                        		<p>We ensure your vision for a perfect business website with a user-friendly design and appearance to catch emerging technologies and trends.</p>
+		                                                        	</div>		                                                        
+		                                                        </a>
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="photo_editor.html">
+		                                                        	<div><i class="fa-solid fa-paintbrush" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Graphic Design</h5>
+		                                                        		<p>We ensure your vision for a perfect business website with a user-friendly design and appearance to catch emerging technologies and trends.</p>
+		                                                        	</div>
+		                                                        </a>
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="content_writing.html">
+		                                                        	<div><i class="fa-solid fa-book-open" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Content Writing</h5>
+		                                                        		<p>We ensure your vision for a perfect business website with a user-friendly design and appearance to catch emerging technologies and trends.</p>
+		                                                        	</div>
+		                                                        </a>
+		                                              		</div>
+		                                                </div>
+		                                                <div class="col-lg-4 col-sm-6 py-4">
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="app_development.html">
+		                                                        	<div><i class="fa-solid fa-mobile-screen" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Mobile App Development</h5>
+		                                                        		<p>We utilize the latest software technologies to develop different custom software with amazing graphics.</p>
+		                                                        	</div>
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="digital_marketing.html">
+		                                                        	<div><i class="fa-solid fa-chart-pie" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Digital Marketing</h5>
+		                                                        		<p>We utilize the latest software technologies to develop different custom software with amazing graphics.</p>
+		                                                        	</div>
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="traning.html">
+		                                                        	<div><i class="fa-solid fa-money-check-dollar" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Training</h5>
+		                                                        		<p>We give total instructional classes intended to give a total outline of a specific theme.</p>
+		                                                        	</div>
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                </div>
+		                                                <div class="booknowbtn text-center mb-4">
+		                                                    <div class="">
+		                                                        <a type="submit" class=" btn" href="services.html">More Services</a>
+		                                                    </div>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </li>
+		                            <li class="nav-item dropdown dropdown-mega position-static">
+		                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+		                                    data-bs-auto-close="outside">Products</a>
+		                                <div class="dropdown-menu shadow">
+		                                    <div class="mega-content px-md-4">
+		                                        <div class="container-fluid">
+		                                            <div class="row">
+		                                                <div class="col-lg-4 col-sm-6 py-4">
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="#">
+		                                                        	<div><i class="fa-solid fa-school" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>School Management Software</h5>
+		                                                        		<p>We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality.</p>
+		                                                        	</div>		                                                        
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="#">
+		                                                        	<div><i class="fa-solid fa-code-branch" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>POS Software</h5>
+		                                                        		<p>We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality.</p>
+		                                                        	</div>
+		                                                        </a>
+		                                                    </div>		                                                        		     
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="#">
+		                                                        	<div><i class="fa-solid fa-users" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Job Portal</h5>
+		                                                        		<p>We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality.</p>
+		                                                        	</div>
+		                                                        </a>
+		                                                    </div>
+		                                                </div>
+		                                                <div class="col-lg-4 col-sm-6 py-4 ">
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="#">
+		                                                        	<div><i class="fa-solid fa-cart-shopping" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Ecommerce Solution</h5>
+		                                                        		<p>We ensure your vision for a perfect business website with a user-friendly design and appearance to catch emerging technologies and trends.</p>
+		                                                        	</div>
+		                                                        </a>
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="#">
+		                                                        	<div><i class="fa-solid fa-person-biking" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Ride Sharing Mobile App</h5>
+		                                                        		<p>We ensure your vision for a perfect business website with a user-friendly design and appearance to catch emerging technologies and trends.</p>
+		                                                        	</div>
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="#">
+		                                                        	<div><i class="fa-solid fa-globe" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Website Template Create</h5>
+		                                                        		<p>We ensure your vision for a perfect business website with a user-friendly design and appearance to catch emerging technologies and trends.</p>
+		                                                        	</div>
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                </div>
+		                                                <div class="col-lg-4 col-sm-6 py-4">
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="#">
+		                                                        	<div><i class="fa-solid fa-user-graduate" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>eLearning Platform</h5>
+		                                                        		<p>We utilize the latest software technologies to develop different custom software with amazing graphics.</p>
+		                                                        	</div>
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="#">
+		                                                        	<div><i class="fa-solid fa-user-lock" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Child Marriage Controlling System</h5>
+		                                                        		<p>We utilize the latest software technologies to develop different custom software with amazing graphics.</p>
+		                                                        	</div>		                                                        
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                    <div class="list-group">
+		                                                        <a class="list-group-item d-flex" href="#">
+		                                                        	<div><i class="fa-solid fa-layer-group" alt=" seo expate" description=" seo expate"></i></div>
+		                                                        	<div>
+		                                                        		<h5>Online Booking/Rental Solution</h5>
+		                                                        		<p>We utilize the latest software technologies to develop different custom software with amazing graphics.</p>
+		                                                        	</div>
+		                                                        </a>		                                                        
+		                                                    </div>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </li>
+		                            <li class="nav-item dropdown nev_submenu">
+		                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+		                                    data-bs-auto-close="outside">Company</a>
+		                                <ul class="dropdown-menu shadow">
+		                                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+		                                    <li><hr class="dropdown-divider"></li>
+		                                    <li><a class="dropdown-item" href="branches.html">Branches</a></li>
+		                                    <li><hr class="dropdown-divider"></li>
+		                                    <li><a class="dropdown-item" href="department.html">Department </a></li>
+		                                    <li><hr class="dropdown-divider"></li>
+		                                    <li><a class="dropdown-item" href="certificate.html">Certificate </a></li>
+		                                    <li><hr class="dropdown-divider"></li>
+		                                    <li><a class="dropdown-item" href="award.html">Awards</a></li>
+		                                    <li><hr class="dropdown-divider"></li>
+		                                    <li><a class="dropdown-item" href="history.html">History</a></li>
+		                                    <li><hr class="dropdown-divider"></li>
+		                                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+		                                    <li><hr class="dropdown-divider"></li>
+		                                    <li><a class="dropdown-item" href="jobs.html">Jobs</a></li>
+		                                    <li><hr class="dropdown-divider"></li>
+		                                    <li><a class="dropdown-item" href="notice.html">Notice</a></li>
+		                                    <li><hr class="dropdown-divider"></li>
+		                                    <li><a class="dropdown-item" href="press_enquiry.html">Press Enquiry</a></li>                                    
+		                                </ul>
+		                            </li>
+		                        </ul>
+		                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 booknowbtn">
+		                            <li class="nav-item">
+		                                <a type="submit" class="nav-link btn" href="contact.html">Let's Talk</a>
+		                            </li>
+		                        </ul>
+		                        <div class="header_search">
+							        <div class="header_icon"></div>
+							        <div class="header_search_form">
+							            <form action="">
+							                <input type="text" name="" placeholder="Type of Seo Expate ">
+							            </form>
+							        </div>
+							    </div>
+		                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 hidemenu">
+		                            <li class="nav-item">
+		                                <a class="nav-link" href="#">Menu</a>
+		                                <i class="fas fa-stream text-white" alt=" seo expate" description=" seo expate"></i>
+		                            </li>
+		                        </ul>
+		                    </div>
+		                </div>
+		            </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+	<!--================================Header section end here=======================-->
+	
+	<!--================================top-body section start here=======================-->
+	<section class="top-body app_development phpdevelopment" style="background-image: url(images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">		
+		<div class="container ">
+		    <div class="row">
+		    	<div class="col-12" style="z-index:500; ">
+		    		<div class="top_body_txt_part">
+						<h1 class="" style="font-size: 45px; line-height: 55px;">All Branches</h1>	 
+						<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>											
+					</div>	
+				</div>		
 			</div>
-		</div>
-	</div>
-</section>
-<!--================================top-body section end here=======================-->
+		</div>				
+	</section>
+	<!--================================top-body section end here=======================-->
 
-<!--================================cliping_service section start here=======================-->
-<section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="col-12" style="z-index:500;">
-				<div class="top_about_us_txt" style="z-index:500;">
-					<nav aria-label="breadcrumb">
+	<!--================================cliping_service section start here=======================-->
+	<section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12" style="z-index:500;">
+					<div class="top_about_us_txt" style="z-index:500;">
+						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">All Branch</li>
 						</ol>
-					</nav>
+						</nav>
+					</div>			
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================cliping_service section end here=======================-->
+	</section>
+	<!--================================cliping_service section end here=======================-->
 
-<!--================================all_branches_list section start here=======================-->
-<section class="all_branches_list">
-	<div class="container">
-	<div class="row">
-			<div class="Our_Branches_txt pb-5">
-				<h3>Our Branches</h3>
-			</div>
-			<?php
-			$i = 1;
-			$qry = "SELECT * FROM branches ORDER BY id DESC";
-			$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
-
-			if ($result) {
-				while ($row = mysqli_fetch_assoc($result)) {
-			?>
-					<div class="col-md-4 pt-3">
-						<div class="card" >
-							<img src="<?php
-										$imagePath = $row['image'];
-										$imageName = basename($imagePath);
-										$newImagePath = 'pages/' . $imageName;
-										echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['name'] ?>">
-							<div class="card-body">
-								<h5 class="card-title"><?php echo $row['name'] ?></h5>
-								<p class="card-text"><?php echo $row['address'] ?></p>
-								<div><a href="branch.php?id=<?php echo $row['id'] ?>" class="text-success">View Location Map →</a></div>
-								<div class="pt-2"><a href="branch.php?id=<?php echo $row['id'] ?>" class="text-success">See More →</a></div>
-							</div>
-						</div>
+	<!--================================all_branches_list section start here=======================-->
+	<section class="all_branches_list">
+		<div class="container">
+			<div class="row">
+				<h2 class="fs-1 fw-bold text-center pb-5">Head Office (Bogura, Bangladesh)</h2>
+				<div class="col-md-4">
+					<div class="branch-address">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57962.67298025358!2d89.3634807926041!3d24.772602012127884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc5380c9b5d9d3%3A0x6b91dc7c9e5fc33b!2sSEO%20Expate%20Bangladesh%20Ltd!5e0!3m2!1sen!2sbd!4v1714296221553!5m2!1sen!2sbd" width="100%" height="325" style="border:1px solid #dee2e6; border-redius:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
-			<?php
-				}
-			} else {
-				echo "Error: " . mysqli_error($conn);
-			}
-			?>
-
-
-		</div>
-	</div>
-</section>
-
-
-
-<!-- <section class="Core_Team allbranchlist" style="background: unset; padding-top: unset;">
-	<div class="container">
-		<div class="row">
-			<div class="Core_Team_txt pb-2">
-				<h6 class="fs-2 pb-3">Branch <span class="text-success">all Employees</span></h6>
-				<hr>
-			</div>
-			<div class="Core_Team_members">
-				<div class="container mt-2">
-					<div class="row">
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Nur Alam-Branch Manager-144.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Nur Alam</h5>
-									<p class="card-text fs-6">Branch Manager</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Asaduzzaman-Supervisor-174.PNG" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Asaduzzaman</h5>
-									<p class="card-text fs-6">Supervisor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Ahmed Ali-Supervisor-425.jpg" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Ahmed Ali</h5>
-									<p class="card-text fs-6">Supervisor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Mst. Humaira Khatun-Team Leader-335.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Mst. Humaira Khatun</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Shakil Hasan-Team Leader-538.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Shakil Hasan</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Robiul Hasan-Team Leader-557.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Robiul Hasan</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
+				</div>
+				<div class="col-md-4">
+					<div class="branch-img">
+						<img src="images/branch1.png" alt=" Head Office (Bogura, Bangladesh)" description=" Head Office (Bogura, Bangladesh)" class="img-thumbnail">
 					</div>
-					<div class="row pt-5">
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Mst. Istiya Khatun-Team Leader-559.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Mst. Istiya Khatun</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Mst. Tanjila Khatun-Team Leader-386.jpg" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Mst. Tanjila Khatun</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Arafat Rahman-Team Leader-492.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Arafat Rahman</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/A.M Rakibul Islam-Team Leader-561.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">A.M Rakibul Islam</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
+				</div>
+				<div class="col-md-4">
+					<div class="branch-img">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/5Ahe4uz3BrE?si=WUjc2lQPFMGXyRDS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" style="border:1px solid #dee2e6; border-redius:10px;" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section> -->
-
-
-<!--================================top_ready_start section start here=======================-->
-<section class="top_ready_start">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="top_ready_start_txt">
-					<h3>We can build your story</h3>
-					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
+	</section>
+	<!--================================all_branches_list section end here=======================-->
+	<!--================================Core_Team section start here=======================-->
+	<section class="Core_Team allbranchlist" style="background: unset; padding-top: unset;">
+		<div class="container">
+			<div class="row">
+				<div class="Core_Team_txt pb-2">
+					<h6 class="fs-2 pb-3">Branch <span class="text-success">all Employees</span></h6>
+					<hr>
 				</div>
-				<div class="top-body-button pt-5">
-					<a type="button" href="contact.php">Get In Touch</a>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="top_ready_start_img text-left">
-					<img src="frontend/images/95991_prev_ui.png" alt=" We can build your story" description=" We can build your story">
+				<div class="Core_Team_members">
+					<div class="container mt-2">
+					  	<div class="row" >				      							    	
+					    	<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/Md. Nur Alam-Branch Manager-144.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">Md. Nur Alam</h5>
+					        			<p class="card-text fs-6">Branch Manager</p>
+					        		</div> 
+					  			</div>
+					    	</div>
+					    	<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/Md. Asaduzzaman-Supervisor-174.PNG" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">Md. Asaduzzaman</h5>
+					        			<p class="card-text fs-6">Supervisor</p>
+					        		</div> 
+					  			</div>
+					    	</div>
+					    	<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/Md. Ahmed Ali-Supervisor-425.jpg" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">Md. Ahmed Ali</h5>
+					        			<p class="card-text fs-6">Supervisor</p> 
+					        		</div>
+					  			</div>
+					    	</div>  
+					    	<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/Mst. Humaira Khatun-Team Leader-335.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">Mst. Humaira Khatun</h5>
+					        			<p class="card-text fs-6">Team Leader</p> 
+					        		</div>
+					  			</div>
+					    	</div>
+					    	<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/Md. Shakil Hasan-Team Leader-538.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">Md. Shakil Hasan</h5>
+					        			<p class="card-text fs-6">Team Leader</p>
+					        		</div>
+					  			</div>
+					    	</div>
+					    	<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/Md. Robiul Hasan-Team Leader-557.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">Md. Robiul Hasan</h5>
+					        			<p class="card-text fs-6">Team Leader</p>
+					        		</div>
+					  			</div>
+					    	</div>
+					  	</div>
+					  	<div class="row pt-5">
+					  		<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/Mst. Istiya Khatun-Team Leader-559.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">Mst. Istiya Khatun</h5>
+					        			<p class="card-text fs-6">Team Leader</p>
+					        		</div> 
+					  			</div>
+					    	</div>
+					    	<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/Mst. Tanjila Khatun-Team Leader-386.jpg" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">Mst. Tanjila Khatun</h5>
+					        			<p class="card-text fs-6">Team Leader</p>
+					        		</div> 
+					  			</div>
+					    	</div>
+					    	<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/Md. Arafat Rahman-Team Leader-492.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">Md. Arafat Rahman</h5>
+					        			<p class="card-text fs-6">Team Leader</p>
+					        		</div> 
+					  			</div>
+					    	</div>
+					    	<div class="col-md-2 col-sm-6">
+					      		<div class="card card-block shadow">
+					    			<img src="images/A.M Rakibul Islam-Team Leader-561.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
+					        		<div class="card-body">
+					        			<h5 class="card-title fs-6">A.M Rakibul Islam</h5>
+					        			<p class="card-text fs-6">Team Leader</p>
+					        		</div> 
+					  			</div>
+					    	</div>
+					  	</div> 
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================top_ready_start section end here=======================-->
+	</section>
+	<!--================================Core_Team section end here=======================-->
+    
+	<!--================================top_ready_start section start here=======================-->
+	<section class="top_ready_start" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="top_ready_start_txt">
+                        <h3>We can build your story</h3>
+                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
+                    </div>
+                    <div class="top-body-button pt-5">
+						<a type="button" href="contact.html">Get In Touch</a>
+					</div>
+                </div>
+                <div class="col-md-6">
+                    <div class="top_ready_start_img text-left">
+                        <img src="images/95991_prev_ui.png" alt=" We can build your story" description=" We can build your story">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+	<!--================================top_ready_start section end here=======================-->
 
 
-<!--================================Thrive_Globally section start here=======================-->
-<section class="PAY_MENT" style="padding: 20px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="PAY_IMG">
-				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+	<!--================================Thrive_Globally section start here=======================-->
+	<section class="PAY_MENT" style="padding: 20px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="PAY_IMG">
+                 	<img src="images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--================================Thrive_Globally section end here=======================-->
+
+	<!--===========================footer part start===================================-->
+	<footer class="footer_part pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 contact_info">
+					<div class="">
+						<h5 class="mb-4"><a class="navbar-brand" href="index.html">
+							<img src="images/SEO-Expate-Bangladesh-Ltd.png" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd" width="" height="auto"></a>
+						</h5>		
+					</div>
+					<div class="address d-flex gap-3">
+						<p>Diving Into Technology <br> ISO 9001 & 27001 Certified</p>
+					</div>
+					<div class="subscribe">
+						<p>Subscribe for Updates</p>
+						<div class="input-group mb-3 mt-4">
+                            <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-success border-rad" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 contact_info">
+					<div class="about_info ">
+						<div class=" ">
+							<p><a href="about.html">About Us</a></p>
+						</div>
+						<div class=" ">
+							<p><a href="award.html">Awards</a></p>
+						</div>
+						<div class=" ">
+							<p><a href="history.html">History</a></p>
+						</div>
+						<div class=" ">
+							<p><a href="contact.html">Contact</a></p>
+						</div>
+						<div class="">
+							<p><a href="notice.html">Notice</a></p>
+						</div>
+						<div class="">
+							<p><a href="#">FAQs</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 contact_info">
+					<div class="about_info ">
+						<div class=" ">
+							<p><a href="hire.html ">Hire </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="services.html">Services </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="#">Products </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="#">Portfolio </a></p>
+						</div>
+						<div class="">
+							<p><a href="#">Expertise</a></p>
+						</div>
+						<div class="">
+							<p><a href="domain_hosting.html">Domain & Hosting</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 ">
+					<div class="about_info ">
+						<div class=" ">
+							<p><a href="branches.html">Branches </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="department.html">Department </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="certificate.html">Certificate </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="jobs.html ">Jobs</a></p>
+						</div>
+						<div class="">
+							<p><a href="blog_details.html">Blog</a></p>
+						</div>
+						<div class="">
+							<p><a href="press_enquiry.html">Press Enquiry</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row pt-5">
+				<div class="col-md-3 col-sm-6 contact_info">
+					<div class="">
+						<h5 class="">Email</h5>	
+						<p>info@seoexpate.com</p> 	
+					</div>
+					<div class="">
+						<h5>Service Related Contact:</h5>
+						<p><span><img src="images/bd-flag.svg" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></span> +8801409957451</p>
+					</div>
+					<div class="">
+						<h5>Other Contact :</h5>
+						<p><span><img src="images/bd-flag.svg" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></span> +8801409957452</p>
+					</div>
+					<div class="footer_top_social_icons">
+						<div class="d-flex gap-1">
+							<a href="#"><img src="images/skype.svg" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></a>
+							<a href="#"><img src="images/messenger.svg" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></a>
+							<a href="#"><img src="images/whatsapp.svg" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 contact_info">
+					<div class="about_info ">
+						<h5>Services</h5>
+						<div class="pt-2 ">
+							<p><a href="app_development.html">Mobile App Development</a></p>
+						</div>
+						<div class=" ">
+							<p><a href="web_development.html">Web Development</a></p>
+						</div>
+						<div class=" ">
+							<p><a href="software_development.html">Software Development</a></p>
+						</div>
+						<div class=" ">
+							<p><a href="digital_marketing.html">Digital Marketing</a></p>
+						</div>
+						<div class="">
+							<p><a href="seo_service.html">SEO</a></p>
+						</div>
+						<div class="">
+							<p><a href="photo_editor.html">Graphic Design</a></p>
+						</div>
+						<div class="">
+							<p><a href="content_writing.html">Content Writing</a></p>
+						</div>
+						<div class="">
+							<p><a href="traning.html">Professional Training</a></p>
+						</div>
+						<div class="">
+							<p><a href="#">Outsourcing</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 contact_info">
+					<div class="about_info ">
+						<h5>Products</h5>
+						<div class="pt-2 ">
+							<p><a href="#">School Management Software </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="#">E-commerce POS </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="#">Ride Sharing Mobile App </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="#">SAU Directory </a></p>
+						</div>
+						<div class="">
+							<p><a href="#">Kabikha</a></p>
+						</div>
+						<div class="">
+							<p><a href="#">Child Marriage Controlling System</a></p>
+						</div>
+						<div class="">
+							<p><a href="#">Job Portal</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 ">
+					<div class="about_info ">
+						<h5>Technologies</h5>
+						<div class=" pt-2">
+							<p><a href="app_development.html">Mobile App </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="#">Front-end </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="#">Back-end </a></p>
+						</div>
+						<div class=" ">
+							<p><a href="#">Database</a></p>
+						</div>
+						<div class="">
+							<p><a href="#">CMS</a></p>
+						</div>
+						<div class="">
+							<p><a href="#">Tools</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center pt-5 footer-logos">
+				<div class="col-md-4"></div>
+				<div class="col-md-1">
+					<img src="images/Logo_Certificate_of_Incorporation_w_11zon-1024x1024.png" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd">
+				</div>
+				<div class="col-md-1">
+					<img src="images/9001-iso.png" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd">
+				</div>
+				<div class="col-md-1">
+					<img src="images/Untitled-2-01-1024x1024.png" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd">
+				</div>
+				<div class="col-md-2">
+					<img src="images/basis_logo_1.png" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd">
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+			<div class="row text-center pt-5 footer-logos">
+				<div class="col-md-1"></div>
+				<div class="col-md-2 first_btm_logo">
+					<img src="images/CMMI Logo PNG Vector (EPS) Free Download.jpg" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd">
+				</div>
+				<div class="col-md-2">
+					<img src="images/230625112346-2103logo.png" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd">
+				</div>
+				<div class="col-md-2 ">
+					<img src="images/534868.png" alt="img">
+				</div>
+				<div class="col-md-2 ">
+					<img src="images/logo-landscape-272x97.png" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd">
+				</div>
+				<div class="col-md-3 ">
+					<img src="images/freelancer-bangladesh-logo.png" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd">
+				</div>
+			</div>
+			<div class="row text-center pt-3 mt-5 footer_bottom">
+				<div class="col-md-6">
+					<p>© 2024 – SEO Expate Bangladesh Ltd. | All Rights Reserved | Serving clients since 2015 <br> Terms of Service Privacy Policy</p>
+				</div>
+				<div class="col-md-6 text-right">
+					<div class="d-flex gap-2">
+						<p>Official Activities : </p>
+						<a href="https://www.facebook.com/seoexpatebdltd"><i class="fa-brands fa-facebook-f" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></i></a>
+						<!--<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+						<a href="https://www.linkedin.com/company/seoexpatebangladeshltd"><i class="fa-brands fa-linkedin-in" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></i></a>
+						<!-- <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>-->
+ 						<a href="https://www.youtube.com/@seoexpatebangladeshltd"><i class="fa-brands fa-youtube" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></i></a>
+						<p>|</p>
+						<p>Service Activities : </p>
+						<a href="https://www.facebook.com/seoexpatebdltdscervice"><i class="fa-brands fa-facebook-f" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></i></a>
+						<a href="https://www.linkedin.com/company/seo-expate-bangladesh-ltd-services/"><i class="fa-brands fa-linkedin-in" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd"></i></a>
+						<!-- <a href="#"><i class="fa-brands fa-behance"></i></a>
+						<a href="#"><i class="fa-brands fa-dribbble"></i></a>
+						<a href="#"><i class="fa-solid fa-u"></i></a>
+						<a href="#"><i class="fa-brands fa-google-drive"></i></a> -->
+					</div>
+					
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================Thrive_Globally section end here=======================-->
+	</footer>
+	<!--===========================footer part end===================================-->
 
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/main.js"></script>
 
-<?php
-
-$main_content = ob_get_clean();
-include './layouts/app.php';
-?>
+</body>
+</html>
