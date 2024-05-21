@@ -46,7 +46,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Google Ads Consultant</li>
 						</ol>
@@ -68,7 +68,7 @@
 	                </div>
                 </div>
                 <div class="col-md-6">
-                	<p><a ="index.php" class="text-success">SEO Expate</a> Ltd has been assisting numerous businesses in effectively utilizing paid traffic channels to optimize their advertising budget. Therefore, our specialized services will help you pinpoint your target audience and attract new customers. Also, generate relevant, qualified traffic to your website, store, or business. This service has the ability to craft intelligently structured ad campaigns that prioritize your budget while delivering optimal results. </p>
+                	<p><a ="/" class="text-success">SEO Expate</a> Ltd has been assisting numerous businesses in effectively utilizing paid traffic channels to optimize their advertising budget. Therefore, our specialized services will help you pinpoint your target audience and attract new customers. Also, generate relevant, qualified traffic to your website, store, or business. This service has the ability to craft intelligently structured ad campaigns that prioritize your budget while delivering optimal results. </p>
                 </div>
                 <div class="col-md-6">
                 	<div class="clip_img">

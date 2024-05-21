@@ -133,7 +133,7 @@
 						<p><a href="content-writing.php">Content Writing</a></p>
 					</div>
 					<div class="">
-						<p><a href="traning.php">Professional Training</a></p>
+						<p><a href="training.php">Professional Training</a></p>
 					</div>
 					<div class="">
 						<p><a href="#">Outsourcing</a></p>

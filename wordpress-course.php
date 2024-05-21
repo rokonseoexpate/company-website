@@ -13,7 +13,7 @@ ob_start();
 				</button>
 				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 					<ul class="navbar-nav ">
-						<li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
+						<li class="nav-item"><a class="nav-link" href="training.php"> Training</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link  dropdown-toggle" href="regular_course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
 							<ul class="dropdown-menu dropdown-menu-end">
@@ -93,8 +93,8 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="training.php" class="text-light">Our Training</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Wordpress</li>
 						</ol>
 					</nav>
@@ -123,7 +123,7 @@ ob_start();
 				<p>6. Websites (Portfolio, Blog, News, Corporate, E-Commerce )</p>
 				<p>7. Domain, Hosing, Cpanel </p>
 				<p>8. Marketplace Related Classes </p>
-				<p>9. And much more project you will create throughout this <a href="traning.php" class="text-success">course</a> </p>
+				<p>9. And much more project you will create throughout this <a href="training.php" class="text-success">course</a> </p>
 			</div>
 			<div class="col-12">
 				<p>In this course we will create real world projects, which will make you confident and will help you build complex web applications, while also helping you maintain your confidence on the <a href="jobs.php" class="text-success">job</a>.</p>
@@ -229,7 +229,7 @@ ob_start();
 			</div>
 			<div class="col-12">
 				<p>1. We have our own hostel for boys and girls.</p>
-				<p>2. We have good facilities for online and offline <a href="traning.php" class="text-success">courses</a>.</p>
+				<p>2. We have good facilities for online and offline <a href="training.php" class="text-success">courses</a>.</p>
 				<p>3. There are arrangements for job placement and internship.</p>
 				<p>4. Confirm your discount offer by registering today.</p>
 			</div>
@@ -328,7 +328,7 @@ ob_start();
 			</div>
 			<div class="col-12">
 				<p>1. We have our own hostel for boys and girls.</p>
-				<p>2. We have good facilities for online and offline <a href="traning.php" class="text-success">courses</a>.</p>
+				<p>2. We have good facilities for online and offline <a href="training.php" class="text-success">courses</a>.</p>
 				<p>3. There are arrangements for job placement and internship.</p>
 				<p>4. Confirm your discount offer by registering today.</p>
 			</div>

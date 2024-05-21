@@ -216,7 +216,7 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Jewelry Retouching</li>
 						</ol>
@@ -306,7 +306,7 @@ ob_start();
 				<h5>Jewelry Retouching Service in the SEO Expate BD Ltd</h5>
 			</div>
 			<div class="pb-5 border-bottom border-success border-2">
-				<p>At <a href="index.php" class="text-success">SEO Expate</a> BD Ltd, Jewelry Retouching is like a magic workshop. Here, every piece of jewelry gets a sparkling makeover. Our retouchers, work on each photo, carefully removing any tiny scratches or marks that shouldn't be there. We also make sure the colors of the gems look bright and true. Besides, we add just the right amount of shine so that every detail stands out. We use software to bring out the best in every piece. This process is super important for online shopping. By making each piece of jewelry look its best, we help customers fall in love with what they see.</p>
+				<p>At <a href="/" class="text-success">SEO Expate</a> BD Ltd, Jewelry Retouching is like a magic workshop. Here, every piece of jewelry gets a sparkling makeover. Our retouchers, work on each photo, carefully removing any tiny scratches or marks that shouldn't be there. We also make sure the colors of the gems look bright and true. Besides, we add just the right amount of shine so that every detail stands out. We use software to bring out the best in every piece. This process is super important for online shopping. By making each piece of jewelry look its best, we help customers fall in love with what they see.</p>
 			</div>
 		</div>
 		<div class="row shadow px-5 py-3">

@@ -216,7 +216,7 @@
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                                 <li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">Clipping Path</li>
                             </ol>
@@ -300,7 +300,7 @@
             <div class="row">
                 <h4>Clipping Path Service with SEO Expate Ltd</h4>
                 <div class="pb-5">
-                    <p>Clipping Path Service with <a href="index.php" class="text-success">SEO Expate</a> Ltd is a specialized image editing service. It utilizes a technique known as the clipping path to edit images. Essentially, it involves creating an outline around a specific part of an image. Consequently, this isolates the part from the rest of the image. Professionals provide the service with extensive experience and expertise. As a result, the quality of work is exceptional. Clipping Path Service with us is a remarkable image editing service. It offers precision, customization, and expertise. Moreover, it can significantly enhance the visual appeal of images, thus boosting business prospects. To conclude, it is a service worth considering.</p>
+                    <p>Clipping Path Service with <a href="/" class="text-success">SEO Expate</a> Ltd is a specialized image editing service. It utilizes a technique known as the clipping path to edit images. Essentially, it involves creating an outline around a specific part of an image. Consequently, this isolates the part from the rest of the image. Professionals provide the service with extensive experience and expertise. As a result, the quality of work is exceptional. Clipping Path Service with us is a remarkable image editing service. It offers precision, customization, and expertise. Moreover, it can significantly enhance the visual appeal of images, thus boosting business prospects. To conclude, it is a service worth considering.</p>
                 </div>
             </div>
             <div class="row shadow px-5 py-3">

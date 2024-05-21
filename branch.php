@@ -35,7 +35,7 @@ $title = $branch['name'];
 		<div class="row">
 			<div class="col-12" style="z-index:500;">
 				<div class="breadcumb_gph d-flex">
-					<a class="text-light" href="index.php">
+					<a class="text-light" href="/">
 						<p>Home</p>
 					</a>
 					<p class="text-light px-3 ">»</p>

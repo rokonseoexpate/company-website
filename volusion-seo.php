@@ -62,7 +62,7 @@
 		    		<div class="top_body_txt_part">
 						<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">Volusion SEO & Volusion  </h1>	
 						<h2 style="margin-top: -15px;" class="fs-1">Website Search Marketing</h2>	
-						<p style="text-align:justify;">At OuterBox we're an eCommerce-focused agency with Volusion <a href="index.php" class="text-success">SEO Expates</a> on staff. Over the last 10 years, we’ve worked on many Volusion SEO campaigns and know eCommerce search engine marketing inside and out. We’ll develop a custom plan to take your traffic and online sales to the next level.</p>						
+						<p style="text-align:justify;">At OuterBox we're an eCommerce-focused agency with Volusion <a href="/" class="text-success">SEO Expates</a> on staff. Over the last 10 years, we’ve worked on many Volusion SEO campaigns and know eCommerce search engine marketing inside and out. We’ll develop a custom plan to take your traffic and online sales to the next level.</p>						
 					</div>
 					<div class="row">
 						<div class="col-md-7 pt-2">
@@ -89,7 +89,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 						    <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Volusion SEO</li>
 						  </ol>

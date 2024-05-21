@@ -31,7 +31,7 @@ $conn = $db->get_connection();
             <div class="row">
                 <div class="col-12" style="z-index:500;">
                     <div class="breadcumb_gph d-flex">
-                        <a class="text-light" href="index.php" class="text-success"><p>Home</p></a>
+                        <a class="text-light" href="/" class="text-success"><p>Home</p></a>
                         <p class="text-light px-3 ">»</p>
                         <p class="text-light">Departments</p>
                     </div>
@@ -73,7 +73,7 @@ $conn = $db->get_connection();
                                         ?>
                                         <div class="col-md-3 col-sm-6">
                                             <div class="card card-block shadow">
-                                                <img src="<?php echo 'uploads/' . basename($emp['image']); ?>" alt="<?php echo $emp['name']; ?>" class="img-thumbnail">
+                                                <img src="<?php echo 'uploads/' . basename($emp['image']); ?>" alt="<?php echo $emp['name']; ?>" description="<?php echo $emp['address']?>" class="img-thumbnail">
                                                 <div class="card-body">
                                                     <h5 class="card-title fs-6"><?php echo $emp['name']; ?></h5>
                                                     <p class="card-text fs-6"><?php echo $emp['designation']; ?></p>

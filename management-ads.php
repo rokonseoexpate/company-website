@@ -94,7 +94,7 @@ ob_start();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Google Ads management</li>
 						</ol>
@@ -113,7 +113,7 @@ ob_start();
 			<div class="col-12 pb-5">
 				<h4 class="text-center">With our Google Ads Management Professionals, your Paid Search Marketing Campaign is Bound to Succeed.</h4>
 				<div class="border-bottom border-3 border-success">
-					<p><a href="index.php" class="text-success">SEO Expate</a> Ltd specializes in managing your Google Ads account. Therefore, by targeting keywords that attracts potential buyers to your site. Most importantly, our comprehensive keyword research ensures a focused approach to acquiring customers while optimizing costs. We develop tailored paid search campaigns to meet your desired cost per acquisition, utilizing advanced tools and industry knowledge. In addition use this service at an affordable cost worldwide. However, by investing in this service, you connect with buyers who may not find your site through traditional SEO methods. With our dedicated Ads management team, we are the go-to Google ads <a href="index.php" class="text-success">company</a> for driving campaign performance.</p>
+					<p><a href="/" class="text-success">SEO Expate</a> Ltd specializes in managing your Google Ads account. Therefore, by targeting keywords that attracts potential buyers to your site. Most importantly, our comprehensive keyword research ensures a focused approach to acquiring customers while optimizing costs. We develop tailored paid search campaigns to meet your desired cost per acquisition, utilizing advanced tools and industry knowledge. In addition use this service at an affordable cost worldwide. However, by investing in this service, you connect with buyers who may not find your site through traditional SEO methods. With our dedicated Ads management team, we are the go-to Google ads <a href="/" class="text-success">company</a> for driving campaign performance.</p>
 				</div>
 				<h6 class="fs-6 fw-bold pt-5">1. Researching Keywords and Analyzing Competitor Ads</h6>
 				<p>It involves thoroughly investigating the keywords relevant to your business or industry. Therefore, we develop paid search campaigns to meet your desired cost per acquisition.</p>
@@ -177,7 +177,7 @@ ob_start();
 				<div class="cliping_service_txt pb-2 margintop">
 					<h6>Google Ads Oversight for Ecommerce Sites</h6>
 				</div>
-				<p class="pt-3"><a href="index.php" class="text-success">SEO Expate</a> Ltd specializes in ensuring that your website appears when a customer is ready to make a purchase. However, as you have control over your advertising budget, you also have control over which searches trigger your ads. Therefore, his level of control is invaluable for ecommerce Google Ads clients. Furthermore, it allows us to focus our efforts on keywords that signify clear purchase intent. In addition, to strategic keyword targeting, we also assist clients in leveraging the power of Google Shopping ads. Through these ads, potential customers can not only see your product. Moreover, they can compare and contrast your offering with that of your competitors. </p>
+				<p class="pt-3"><a href="/" class="text-success">SEO Expate</a> Ltd specializes in ensuring that your website appears when a customer is ready to make a purchase. However, as you have control over your advertising budget, you also have control over which searches trigger your ads. Therefore, his level of control is invaluable for ecommerce Google Ads clients. Furthermore, it allows us to focus our efforts on keywords that signify clear purchase intent. In addition, to strategic keyword targeting, we also assist clients in leveraging the power of Google Shopping ads. Through these ads, potential customers can not only see your product. Moreover, they can compare and contrast your offering with that of your competitors. </p>
 			</div>
 		</div>
 	</div>

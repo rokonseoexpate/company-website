@@ -113,7 +113,7 @@ $conn = $db->get_connection();
 				<div class="card">
 					<div class="row g-0">
 						<div class="col-md-3">
-							<img src="frontend/images/Healthcare-app-development-company.png" class="img-fluid rounded-start" alt="image">
+							<img src="frontend/images/Healthcare-app-development-company.png" class="img-fluid rounded-start" alt="Healthcare Industries">
 						</div>
 						<div class="col-md-9">
 							<div class="card-body">

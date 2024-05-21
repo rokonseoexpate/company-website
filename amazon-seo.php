@@ -90,7 +90,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 						    <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Amazon SEO</li>
 						  </ol>
@@ -112,7 +112,7 @@
 	                    <p class="text-start">Having a good online presence on Amazon.com is almost a need these days if you want to show your products to the proper customers. This is particularly valid if a sizable audience is required. It goes without saying that Amazon controls a large portion of online eCommerce sales; some estimates have its market share at over 50%.</p>
 	                    <p>eCommerce merchants typically adopt a "fight or flight" mentality in response to what is known as the Amazon conundrum. Most naturally attempt to either resist or ignore the Amazonian elephant in the room, believing that if they work hard enough, they will succeed and stop losing business to Amazon.</p>
 	                    <p>Why not figure out a strategy to leverage Amazon instead of ignoring it or trying to outcompete it? Why not manage both your Amazon product listing and your eCommerce website? For eCommerce businesses, this is typically the best line of action. This is particularly valid if you are marketing goods that are currently offered on Amazon. </p>
-	                    <p><a href="index.php" class="text-success">SEO Expate Bangladesh Ltd.</a> has been a top supplier of web development, digital marketing, and eCommerce website design services since 2010. Having led the way in <a href="ecommerce-seo.php" class="text-success">eCommerce SEO</a>  for almost 10 years, we are adept at utilizing our expertise to optimize Amazon's in-house search engines.</p>
+	                    <p><a href="/" class="text-success">SEO Expate Bangladesh Ltd.</a> has been a top supplier of web development, digital marketing, and eCommerce website design services since 2010. Having led the way in <a href="ecommerce-seo.php" class="text-success">eCommerce SEO</a>  for almost 10 years, we are adept at utilizing our expertise to optimize Amazon's in-house search engines.</p>
 	                </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
-					<div class="cliping_service_txt pb-2"><h6>Why <a href="index.php" class="text-success">SEO Expate</a> for Your Amazon SEO?</h6></div>
+					<div class="cliping_service_txt pb-2"><h6>Why <a href="/" class="text-success">SEO Expate</a> for Your Amazon SEO?</h6></div>
 					<p class="pt-3" >Working with SEO Expate for SEO on Amazon.com has many advantages, such as:</p>							
 					<div class="app_list">
 						<p class=""><span><i class="fa-solid fa-check-double"></i></span>Product descriptions that are more effectively optimized to rank and convert. </p>
@@ -296,7 +296,7 @@
 			        <h5 class="accordion-header collapsed" id="headingSeven" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Q. How Much a Month Do Amazon SEO Services Cost?
 			        </h5>
 			        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
-			          <div class="accordion-body">We tailor our SEO services and packages to each client's specific requirements. While some clients may require more technical optimization and code improvements, others may require more content development or marketing. After reviewing your <a href="index.php" class="text-success">website</a>, our knowledgeable staff will send you a comprehensive SEO proposal that details the strategies your <a href="index.php" class="text-success">company</a> needs to be successful.
+			          <div class="accordion-body">We tailor our SEO services and packages to each client's specific requirements. While some clients may require more technical optimization and code improvements, others may require more content development or marketing. After reviewing your <a href="/" class="text-success">website</a>, our knowledgeable staff will send you a comprehensive SEO proposal that details the strategies your <a href="/" class="text-success">company</a> needs to be successful.
 			          </div>
 			        </div>
 			      </div>

@@ -93,7 +93,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class=" text-light">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class=" text-light">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Google Shopping Management</li>
 						</ol>
@@ -112,7 +112,7 @@
             	<div class="col-12 pb-5">
                 	<h4 class="text-center">Elevate Your E-commerce Sales with Professional Google Shopping Management Services</h4>
 	                <div class="border-bottom border-3 border-success">
-	                	<p>As a top-tier Google Ads management firm, we provide expert Google Shopping management services. In addition, our offerings encompass feed management, bid optimization, strategy refinement, and campaign optimization. Therefore, you’re Google shopping endeavors are in capable hands with our experienced ecommerce marketers. <a href="index.php" class="text-success">SEO Expate</a> campaigns excel in efficient sales generation, optimizing your advertising spends for maximum return on investment (ROI). With 18 years of industry-leading marketing, we possess the skills to optimize your Google Shopping campaign and boost returns. On the other hand, our service contains 24/7 customer support to assist you with all your related problems. To conclude, purchase this service without any hesitation and get the best result out of your project.</p>
+	                	<p>As a top-tier Google Ads management firm, we provide expert Google Shopping management services. In addition, our offerings encompass feed management, bid optimization, strategy refinement, and campaign optimization. Therefore, you’re Google shopping endeavors are in capable hands with our experienced ecommerce marketers. <a href="/" class="text-success">SEO Expate</a> campaigns excel in efficient sales generation, optimizing your advertising spends for maximum return on investment (ROI). With 18 years of industry-leading marketing, we possess the skills to optimize your Google Shopping campaign and boost returns. On the other hand, our service contains 24/7 customer support to assist you with all your related problems. To conclude, purchase this service without any hesitation and get the best result out of your project.</p>
 	                </div>
 	                <h6 class="fs-6 fw-bold pt-5">1. Enhancing Data/Product Feed Performance</h6>
 	                <p>Unlock the potential of your WooCommerce site with tested <a href="ecommerce_seo.php" class="text-success">e-commerce SEO</a> strategies. Our experts are here to support you around the clock with great dedication.</p>
