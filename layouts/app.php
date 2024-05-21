@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="This is the my site">
-    <meta name="keywords" content="seoebl, seoexpate">
+	<meta name="Title" content="Seo Expate Bangladesh LTD.">
+	<meta name="description" content="Seo Expate Bangladesh LTD.">
+	<meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo $title;  ?></title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
