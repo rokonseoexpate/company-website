@@ -16,7 +16,7 @@ $conn = $db->get_connection();
                         <h1>SEO Expate Bangladesh Ltd.</h1>
                         <h2>SEO Services, IT Services, Solutions & Development</h2>
                         <h6>Getting Started With the Latest Technologies</h6>
-                        <p><a href="/" class="text-success">SEO Expate</a> BD Ltd. helps you unlock innovation and navigate the digital future. We empower enterprises to reimagine their business and dominate digital transformation. <a href="certificate.html" class="text-success">Certified</a> for quality and security (ISO 9001 & 27001), we offer cutting-edge IT services and technology solutions. Again, we are proud members of FBCCI, BASIS, BACCO and have all the registered licenses.</p>
+                        <p><a href="/" class="text-success">SEO Expate</a> BD Ltd. helps you unlock innovation and navigate the digital future. We empower enterprises to reimagine their business and dominate digital transformation. <a href="certificate.php" class="text-success">Certified</a> for quality and security (ISO 9001 & 27001), we offer cutting-edge IT services and technology solutions. Again, we are proud members of FBCCI, BASIS, BACCO and have all the registered licenses.</p>
                     </div>
                     <div class="top-body-button pt-3">
                         <div class="d-flex gap-3">
