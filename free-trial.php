@@ -292,6 +292,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class=" pt-2 text-light">
                     <h4 class="fs-1 fw-bold text-center">Free Trial</h4>
                 </div>
+                <div class=" pt-2 text-light"><h4 class="fs-1 fw-bold text-center">Free Trial</h4></div>
             </div>
         </div>
     </div>

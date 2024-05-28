@@ -2,6 +2,9 @@
 $title = "Graphic Design";
 ob_start();
 ?>
+<!--================================photo editor sub Header section end here=======================-->
+<?php include 'includes/photo-editing-nav.php'?>
+<!--================================photo editor sub Header section end here=======================-->
 
 	<!--================================photo editor sub Header section end here=======================-->
 	<div class="photo_edipth">

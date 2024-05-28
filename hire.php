@@ -786,7 +786,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                                     </div>
                                                 </form>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -833,7 +832,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </section>
     <!--================================Thrive_Globally section end here=======================-->
-
 
 <?php
 $main_content = ob_get_clean();

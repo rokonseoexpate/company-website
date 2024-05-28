@@ -751,6 +751,284 @@ ob_start();
 </section>
 <!--================================Thrive_Globally section end here=======================-->
 
+    <!--================================domai_pricing_table section start here=======================-->
+    <section class="domai_pricing_table t-shirt-price" style="background: var(--bg-secondary-color) !important;" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Basic Logo Designs</h6>
+                            <p>We will do basic Logo Designs with this package</p>
+                            <span class="value">$25</span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>1 Logo Design</li>
+                                <li> Each Logo Edit $25</li>
+                                <li> Delivery in 1 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Medium Logo Designs</h6>
+                            <p>Medium type Logo Designs</p>
+                            <span class="value">
+		                        $50
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>1 Logo Design</li>
+                                <li>  Each Logo Edit $50</li>
+                                <li> Delivery in 1 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Complex Logo Designs</h6>
+                            <p>Complex Logo Designs service</p>
+                            <span class="value">
+		                        $100
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>1 Logo Design</li>
+                                <li>  Each Logo Edit $100</li>
+                                <li> Delivery in 1 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Basic Logo Designs</h6>
+                            <p>We will do basic Logo Designs with this package</p>
+                            <span class="value">
+		                        $125
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>5 Logo Design</li>
+                                <li>  Each Logo Edit $25</li>
+                                <li> Delivery in 1 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Medium Logo Designs</h6>
+                            <p>Medium type Logo Designs</p>
+                            <span class="value">
+		                        $250
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>5 Logo Design</li>
+                                <li>  Each Logo Edit $50</li>
+                                <li> Delivery in 1 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Complex Logo Designs</h6>
+                            <p>Complex Logo Designs service</p>
+                            <span class="value">
+		                        $500
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>5 Logo Design</li>
+                                <li>  Each Logo Edit $100</li>
+                                <li> Delivery in 1 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Basic Logo Designs</h6>
+                            <p>We will do basic Logo Designs with this package</p>
+                            <span class="value">
+		                        $250
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>10 Logo Design</li>
+                                <li> Each Logo Edit $25</li>
+                                <li> Delivery in 1 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Medium Logo Designs</h6>
+                            <p>Medium type Logo Designs</p>
+                            <span class="value">
+		                        $500
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>10 Logo Design</li>
+                                <li> Each Logo Edit $50</li>
+                                <li> Delivery in 1 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Complex Logo Designs</h6>
+                            <p>Complex Logo Designs service</p>
+                            <span class="value">
+		                        $1000
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>10 Logo Design</li>
+                                <li>Each Logo Edit $100</li>
+                                <li> Delivery in 1 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Basic Logo Designs</h6>
+                            <p>We will do basic Logo Designs with this package</p>
+                            <span class="value">
+		                        $500
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>20 Logo Design</li>
+                                <li>Each Logo Edit $25</li>
+                                <li>  Delivery in 2 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Medium Logo Designs</h6>
+                            <p>Medium type Logo Designs</p>
+                            <span class="value">
+		                        $1000
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>20 Logo Design</li>
+                                <li>Each Logo Edit $50</li>
+                                <li> Delivery in 2 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable">
+                        <div class="pricing_heading">
+                            <h6 class="title">Complex Logo Designs</h6>
+                            <p>Complex Logo Designs service</p>
+                            <span class="value">
+		                        $2000
+		                    </span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>20 Logo Design</li>
+                                <li>Each Logo Edit $100</li>
+                                <li> Delivery in 2 day</li>
+                            </ul>
+                            <div class="link">
+                                <a href="#">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================domai_pricing_table section end here=======================-->
+
+   <?php include 'includes/footer-services.php'?>
+
+    <!--================================Thrive_Globally section start here=======================-->
+    <section class="PAY_MENT" style="padding: 20px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="PAY_IMG">
+                    <img src="images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================Thrive_Globally section end here=======================-->
 <?php
 $main_content = ob_get_clean();
 include './layouts/app.php';
