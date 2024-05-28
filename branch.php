@@ -61,7 +61,7 @@ $title = $branch['name'];
 			</div>
 			<div class="col-md-4">
 				<div class="branch-img">
-					<img src="    <?php echo 'uploads/' . basename($branch['image']); ?>" alt="" class="img-thumbnail">
+					<img src="<?php echo 'pages/' . basename($branch['image']); ?>" alt="<?php echo $branch['name'] ?>" class="img-thumbnail">
 				</div>
 			</div>
 			<div class="col-md-4">

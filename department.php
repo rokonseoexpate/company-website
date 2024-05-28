@@ -73,7 +73,7 @@ $conn = $db->get_connection();
                                         ?>
                                         <div class="col-md-3 col-sm-6">
                                             <div class="card card-block shadow">
-                                                <img src="<?php echo 'uploads/' . basename($emp['image']); ?>" alt="<?php echo $emp['name']; ?>" description="<?php echo $emp['address']?>" class="img-thumbnail">
+                                                <img src="<?php echo 'uploads/' . basename($emp['image']); ?>" alt="<?php echo $emp['alt_tag']; ?>" description="<?php echo $emp['alt_description']?>" class="img-thumbnail">
                                                 <div class="card-body">
                                                     <h5 class="card-title fs-6"><?php echo $emp['name']; ?></h5>
                                                     <p class="card-text fs-6"><?php echo $emp['designation']; ?></p>
