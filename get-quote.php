@@ -74,6 +74,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
+<?php include 'includes/photo-editing-nav.php' ?>
+
+
 
 <!--================================photo editor sub Header section end here=======================-->
 <div class="photo_edipth">
@@ -608,6 +611,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </section>
 <!--================================Thrive_Globally section end here=======================-->
+
+
+
 
 <!---->
 <!--<script>-->

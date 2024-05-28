@@ -774,8 +774,138 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	</section>
 	<!--================================contact_form section end here=======================-->
 
-	<!--================================top_ready_start section start here=======================-->
-	<section class="top_ready_start" >
+                                        <div class="tab-content" id="myTabContent">
+                                            <div id="Hire" role="tabpanel" aria-labelledby="Hire-tab" class="tab-pane fade px-4 py-5 show active">
+                                                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="row g-3" id="hireForm">
+                                                    <div class="col-12">
+                                                        <input type="hidden" name="type" value="hire" id="">
+                                                        <label for="fullname" class="form-label">Your Name <span>*</span></label>
+                                                        <input type="text" class="form-control" name="name" id="fullname" placeholder="Your Full Name" required>
+                                                        <small> <span class="nameErr text-danger"></span> </small>
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">Email <span>*</span></label>
+                                                        <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
+                                                        <small> <span class="emailErr text-danger"></span> </small>
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4" class="form-label">Phone Number <span>*</span></label>
+                                                        <input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
+                                                        <small> <span class="phoneErr text-danger"></span> </small>
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="CompanyName" class="form-label">Company Name</label>
+                                                        <input type="text" name="company_name" class="form-control" id="CompanyName" placeholder="Company Name">
+                                                        <small> <span class="company_nameErr text-danger"></span> </small>
+
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="CompanyWebsite" class="form-label">Company Website</label>
+                                                        <input type="text" name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website">
+                                                        <small> <span class="company_websiteErr text-danger"></span> </small>
+
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="stuf" class="form-label">Number of Staff Required <span>*</span></label>
+                                                        <input type="text" class="form-control" id="stuf" name="stuf" placeholder="Number of Staff Required" required>
+                                                        <small> <span class="stufErr text-danger"></span> </small>
+
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="type" class="form-label">Briefly Describe Your Requirements <span>*</span></label>
+                                                        <textarea type="text" name="description" class="form-control" id="summernote" placeholder="Start Typing Here..."></textarea>
+                                                        <small> <span class="descriptionErr text-danger"></span> </small>
+
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button type="button" class="btn submitBtn">Submit & Schedule a Meeting</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div id="Project" role="tabpanel" aria-labelledby="Project-tab" class="tab-pane fade px-4 py-5">
+                                                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="row g-3">
+                                                    <div class="col-12">
+                                                        <input type="hidden" name="type" value="project" id="">
+                                                        <label for="fullname" class="form-label">Your Name <span>*</span></label>
+                                                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">Email <span>*</span></label>
+                                                        <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4" class="form-label">Phone Number <span>*</span></label>
+                                                        <input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="CompanyName" class="form-label">Company Name <span>*</span></label>
+                                                        <input type="text" name="company_name" class="form-control" id="CompanyName" placeholder="Company Name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="CompanyWebsite" class="form-label">Company Website <span>*</span></label>
+                                                        <input type="text" name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="type" class="form-label">Briefly Describe Your Requirements <span>*</span></label>
+                                                        <textarea type="text" name="description" class="form-control" id="summernote" placeholder="Start Typing Here..."></textarea>
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" class="btn">Submit & Schedule a Meeting</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                            <div id="Partnership" role="tabpanel" aria-labelledby="Partnership-tab" class="tab-pane fade px-4 py-5">
+                                                <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="row g-3">
+                                                    <div class="col-12">
+                                                        <input type="hidden" name="type" value="partnership" id="">
+                                                        <label for="fullname" class="form-label">Your Name <span>*</span></label>
+                                                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">Email <span>*</span></label>
+                                                        <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4" class="form-label">Phone Number <span>*</span></label>
+                                                        <input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="CompanyName" class="form-label">Company Name</label>
+                                                        <input type="text" name="company_name" class="form-control" id="CompanyName" placeholder="Company Name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="CompanyWebsite" class="form-label">Company Website</label>
+                                                        <input type="text" name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="type" class="form-label">Briefly Describe Your Requirements <span>*</span></label>
+                                                        <textarea type="text" name="description" class="form-control" id="summernote" placeholder="Start Typing Here..."></textarea>
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" class="btn">Submit & Schedule a Meeting</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================contact_form section end here=======================-->
+
+    <!--================================top_ready_start section start here=======================-->
+    <section class="top_ready_start" >
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -807,7 +937,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </section>
-	<!--================================Thrive_Globally section end here=======================-->
+    <!--================================Thrive_Globally section end here=======================-->
+
+
 <?php
 $main_content = ob_get_clean();
 include './layouts/app.php';
