@@ -36,20 +36,20 @@ ob_start();
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 	<div class="container ">
 		<div class="row">
-			<div class="col-md-7" style="z-index:500;">
+			<div class="col-md-7 ecomresp" style="z-index:500;">
 				<div class="top_body_txt_part">
-					<h1 class="" style="font-size: 45px;">Content Writing Service </h1>
-					<p style="text-align:justify; margin-top: -30px;">Content Writing Service is a vital factor for a website to catch the visitor's attention and rank on search engines. The goal of content writing is to inform and educate readers about particular topics. In addition, content can increase your web traffic, and give you huge brand awareness. SEO Expate Bangladesh Ltd has a dedicated team of content writers who have vast experience. Here, we will ensure you 100% unique, research-based SEO content that will add great value to your site. </p>
+					<h1 class="marginbottom" style="font-size: 45px;">Content Writing Service </h1>
+					<p style="text-align:justify; margin-top: -15px;">Content Writing Service is a vital factor for a website to catch the visitor's attention and rank on search engines. The goal of content writing is to inform and educate readers about particular topics. In addition, content can increase your web traffic, and give you huge brand awareness. <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd has a dedicated team of content writers who have vast experience. Here, we will ensure you 100% unique, research-based SEO content that will add great value to your site. </p>
 				</div>
 				<div class="top-body-button pt-3">
 					<a type="button" href="contact.php">Contact Us</a>
 				</div>
 			</div>
-			<div class="col-md-5 m-auto" style="z-index:500;">
-				<img src="frontend/images/content-writing-2-1024x683.png" alt="img" class="img-thumbnail">
+			<div class="col-md-5 m-auto ecomrespp" style="z-index:500;">
+				<img src="frontend/images/content-writing-2-1024x683.png" alt="Content Writing Service " description="Content Writing Service " class="img-thumbnail">
 			</div>
 		</div>
 	</div>
@@ -61,12 +61,13 @@ ob_start();
 	<div class="container">
 		<div class="row">
 			<div class="col-12" style="z-index:500;">
-				<div class="breadcumb_gph d-flex">
-					<a class="text-light" href="home.php" class="text-success">
-						<p>Home</p>
-					</a>
-					<p class="text-light px-3 ">»</p>
-					<p class="text-light">Content Writing Service</p>
+				<div class="top_about_us_txt" style="z-index:500;">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb breadcumb_gph">
+							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item active text-light" aria-current="page">Content Writing Service</li>
+						</ol>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -88,7 +89,7 @@ ob_start();
 			</div>
 			<div class="col-md-6">
 				<div class="clip_img">
-					<img src="frontend/images/best-payment-gateway-for-eCommerce-website-Top-payment-gateway-for-eCommerce-website-1200x450-1024x384.png" alt="image" class="img-thumbnail">
+					<img src="frontend/images/best-payment-gateway-for-eCommerce-website-Top-payment-gateway-for-eCommerce-website-1200x450-1024x384.png" alt="Features of Content Writing" description=" Features of Content Writing" class="img-thumbnail">
 				</div>
 			</div>
 		</div>
@@ -100,11 +101,11 @@ ob_start();
 <section class="Our_Branches type_of">
 	<div class="container">
 		<div class="row">
-			<div class="Our_Branches_txt pb-5">
-				<h3>Types of Content Writing Services</h3>
+			<div class="Our_Branches_txt newudcode">
+				<h5 class="text-start">Types of Content Writing Services</h5>
 				<hr>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-5">
 				<a href="blog-post.php">
 					<div class="card">
 						<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Image">
@@ -123,7 +124,7 @@ ob_start();
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-5">
 				<a href="academic-post.php">
 					<div class="card hover-zoom">
 						<img src="frontend/images/corporate-website2.jpg" class="card-img-top" alt="Image">
@@ -140,7 +141,7 @@ ob_start();
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-5">
 				<a href="copy-writing.php">
 					<div class="card">
 						<img src="frontend/images/Bloging-website.jpg" class="card-img-top" alt="Image">
@@ -158,8 +159,8 @@ ob_start();
 				</a>
 			</div>
 		</div>
-		<div class="row pt-5">
-			<div class="col-md-4">
+		<div class="row ">
+			<div class="col-md-4 pt-5">
 				<a href="static-web.php">
 					<div class="card">
 						<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
@@ -173,7 +174,7 @@ ob_start();
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-5">
 				<a href="product-description.php">
 					<div class="card">
 						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
@@ -188,7 +189,7 @@ ob_start();
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-5">
 				<a href="press-release.php">
 					<div class="card hover-zoom">
 						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
@@ -250,13 +251,25 @@ ob_start();
 			</div>
 			<div class="col-md-6">
 				<div class="top_ready_start_img text-left">
-					<img src="frontend/images/95991_prev_ui.png" alt="image">
+					<img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 <!--================================top_ready_start section end here=======================-->
+
+<!--================================Thrive_Globally section start here=======================-->
+<section class="PAY_MENT" style="padding: 20px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="PAY_IMG">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+			</div>
+		</div>
+	</div>
+</section>
+<!--================================Thrive_Globally section end here=======================-->
 
 <!--===========================footer part start===================================-->
 <?php

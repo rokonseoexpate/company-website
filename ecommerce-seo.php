@@ -12,7 +12,7 @@ $conn = $db->get_connection();
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" alt=" seo expate" description=" seo expate"></i></span>
                 </button>
                 <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
@@ -58,14 +58,15 @@ $conn = $db->get_connection();
 </div>
 <!--================================photo editor sub Header section end here=======================-->
 
+
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
     <div class="container ">
         <div class="row">
             <div class="col-md-7 ecomresp" style="z-index:500;">
                 <div class="top_body_txt_part">
                     <h1 class="marginbottom" style="font-size: 45px;">SEO Services for eCommerce </h1>
-                    <p  style="text-align:justify; margin-top: -15px;">If your keywords aren't ranking on page one, let our eCommerce SEO services increase your organic traffic. At SEO Expate Bangladesh Ltd., we've been an eCommerce SEO company for more than 10 years, increasing online sales, traffic, and rankings. </p>
+                    <p style="text-align:justify; margin-top: -15px;">If your keywords aren't ranking on page one, let our eCommerce SEO services increase your organic traffic. At SEO Expate Bangladesh Ltd., we've been an eCommerce SEO company for more than 10 years, increasing online sales, traffic, and rankings. </p>
                     <h2 class="fs-2">Here we are:</h2>
                     <div class="app_list">
                         <p class="text-light"><span><i class="fa-solid fa-check-double"></i></span>Proven SEO tactics for eCommerce that increase sales</p>
@@ -74,18 +75,18 @@ $conn = $db->get_connection();
                     </div>
                 </div>
                 <!-- <div class="top-body-button pt-3">
-                    <a type="button" href="contact.php">Contact Us</a>
-                </div> -->
+						<a type="button" href="contact.php">Contact Us</a>
+					</div> -->
                 <div class="row">
                     <div class="col-md-4 pt-2">
                         <div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your eCommerce SEO Proposal</a></div>
                     </div>
                     <div class="col-md-2 ecomrespons">
-                        <img src="frontend/images/google-seo-proposal-audit.png.webp" alt=" SEO Services for eCommerce" description=" SEO Services for eCommerce" class="img-fluid" >
+                        <img src="frontend/images/google-seo-proposal-audit.png.webp" alt=" SEO Services for eCommerce" description=" SEO Services for eCommerce" class="img-fluid">
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 m-auto ecomrespp" style="z-index:500;" >
+            <div class="col-md-5 m-auto ecomrespp" style="z-index:500;">
                 <img src="frontend/images/ecommerce-mcommerce-featured-image-5fd09a3a5ff2a.png" alt=" SEO Services for eCommerce" description=" SEO Services for eCommerce" class="img-thumbnail">
             </div>
         </div>
@@ -101,13 +102,13 @@ $conn = $db->get_connection();
                 <div class="top_about_us_txt" style="z-index:500;">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb breadcumb_gph">
-                            <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+                            <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
                             <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
                             <li class="breadcrumb-item active text-light" aria-current="page">eCommerce SEO</li>
                         </ol>
                     </nav>
                 </div>
-                <p class="pt-2 text-light" >Search engine optimization, or SEO, is just as vital for marketing your eCommerce website as it is for its overall design and functionality. When done properly, SEO significantly increases online sales and visibility in organic searches. Having said that, it's critical to select a seasoned SEO company that is knowledgeable about search engine algorithms and has a track record of delivering noticeable outcomes.</p>
+                <p class="pt-2 text-light">Search engine optimization, or SEO, is just as vital for marketing your eCommerce website as it is for its overall design and functionality. When done properly, SEO significantly increases online sales and visibility in organic searches. Having said that, it's critical to select a seasoned SEO company that is knowledgeable about search engine algorithms and has a track record of delivering noticeable outcomes.</p>
             </div>
         </div>
     </div>
@@ -152,8 +153,10 @@ $conn = $db->get_connection();
     <div class="container">
         <div class="row">
             <div class="col-md-6" style="z-index:500;">
-                <div class="cliping_service_txt pb-2"><h6>After SEO Expate Bangladesh Ltd. You Won't Need Another eCommerce SEO Agency </h6></div>
-                <p class="pt-3" >Your company will be able to view interactive monthly SEO reports that showcase data, tasks that have been done, and scheduled tasks that are still to come through our SEO reporting platform. You will also be able to see which SEO Expate staff members, content writers, SEO strategists, and consultants worked on each task. You won't have to worry about what's going on with your SEO campaign or what the future plans are anymore.</p>
+                <div class="cliping_service_txt pb-2">
+                    <h6>After SEO Expate Bangladesh Ltd. You Won't Need Another eCommerce SEO Agency </h6>
+                </div>
+                <p class="pt-3">Your company will be able to view interactive monthly SEO reports that showcase data, tasks that have been done, and scheduled tasks that are still to come through our SEO reporting platform. You will also be able to see which SEO Expate staff members, content writers, SEO strategists, and consultants worked on each task. You won't have to worry about what's going on with your SEO campaign or what the future plans are anymore.</p>
             </div>
             <div class="col-md-6" style="margin: auto;">
                 <div class="clip_img">
@@ -171,13 +174,21 @@ $conn = $db->get_connection();
         <div class="row ">
             <div class="col-12">
                 <h6 class="fw-bold fs-5 pb-3">Lead generation and eCommerce SEO reports that are simple to understand </h6>
-                <div><p>Take advantage of password-protected access to monthly reports created specifically for you, highlighting important KPI data like organic traffic, visitor behavior, and conversions. Comprehensive assessments of organic revenue and other KPIs specific to eCommerce are provided to our eCommerce clients. Our staff can further tailor reports to meet your particular analytical requirements. </p></div>
+                <div>
+                    <p>Take advantage of password-protected access to monthly reports created specifically for you, highlighting important KPI data like organic traffic, visitor behavior, and conversions. Comprehensive assessments of organic revenue and other KPIs specific to eCommerce are provided to our eCommerce clients. Our staff can further tailor reports to meet your particular analytical requirements. </p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Comprehensive reporting on SEO tasks</h6>
-                <div><p>You'll be informed each month about the services rendered by our SEO team, the tasks completed, and the SEO Expate staff members who contributed. Even years after completion, completed work is documented for future reference.</p></div>
+                <div>
+                    <p>You'll be informed each month about the services rendered by our SEO team, the tasks completed, and the SEO Expate staff members who contributed. Even years after completion, completed work is documented for future reference.</p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Our search engine optimization staff is always in contact.</h6>
-                <div><p>Consider our SEO staff as an extension of your business, whether you're a major corporation seeking to increase lead generation or a busy eCommerce store. Your SEO staff is available for rapid phone calls or emails if you have any questions. We plan ahead for calls at least once a month to discuss our progress and ensure you are aware of all the events that have transpired since our last correspondence.</p></div>
+                <div>
+                    <p>Consider our SEO staff as an extension of your business, whether you're a major corporation seeking to increase lead generation or a busy eCommerce store. Your SEO staff is available for rapid phone calls or emails if you have any questions. We plan ahead for calls at least once a month to discuss our progress and ensure you are aware of all the events that have transpired since our last correspondence.</p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Organizing the search marketing tactics for next month</h6>
-                <div><p>With your company's objectives and everyday operations in mind, we offer targeted SEO services. Strategies differ greatly between websites since lead generation SEO services and eCommerce SEO services are not the same. We go over the strategic plan for the following month at the end of each month. Our success depends on our ability to stay in constant communication with our clients.</p></div>
+                <div>
+                    <p>With your company's objectives and everyday operations in mind, we offer targeted SEO services. Strategies differ greatly between websites since lead generation SEO services and eCommerce SEO services are not the same. We go over the strategic plan for the following month at the end of each month. Our success depends on our ability to stay in constant communication with our clients.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -194,8 +205,10 @@ $conn = $db->get_connection();
                 </div>
             </div>
             <div class="col-md-6" style="z-index:500;">
-                <div class="cliping_service_txt pb-2 margintop"><h6>SEO Services for Shopify eCommerce</h6></div>
-                <p class="pt-3" >With over 3,600,000 active websites, Shopify is the most widely used eCommerce platform, powering online retailers all over the world. Being a top eCommerce SEO company, we regularly collaborate with Shopify and are an authority on Shopify SEO. Our SEO strategists are experts in Shopify and can handle anything from code updates and template optimizations to producing content that converts. Since we design Shopify websites in-house, we are able to finish installations in addition to making advice. For Shopify websites, SEO Expate offers tested and reliable SEO tactics.</p>
+                <div class="cliping_service_txt pb-2 margintop">
+                    <h6>SEO Services for Shopify eCommerce</h6>
+                </div>
+                <p class="pt-3">With over 3,600,000 active websites, Shopify is the most widely used eCommerce platform, powering online retailers all over the world. Being a top eCommerce SEO company, we regularly collaborate with Shopify and are an authority on Shopify SEO. Our SEO strategists are experts in Shopify and can handle anything from code updates and template optimizations to producing content that converts. Since we design Shopify websites in-house, we are able to finish installations in addition to making advice. For Shopify websites, SEO Expate offers tested and reliable SEO tactics.</p>
             </div>
         </div>
     </div>
@@ -207,8 +220,10 @@ $conn = $db->get_connection();
     <div class="container">
         <div class="row">
             <div class="col-md-6" style="z-index:500;">
-                <div class="cliping_service_txt pb-2"><h6>WooCommerce Websites with eCommerce SEO</h6></div>
-                <p class="pt-3" >One of the most popular WordPress plug-ins, WooCommerce, transforms a WordPress website into a comprehensive eCommerce platform. If you are familiar with WordPress and would like to continue using their platform, WooCommerce is ideal for eCommerce websites with a limited product inventory. Our aim as WooCommerce and WordPress SEO specialists is to leverage our knowledge of eCommerce SEO to elevate your website and make it appear on page one of search engine results.</p>
+                <div class="cliping_service_txt pb-2">
+                    <h6>WooCommerce Websites with eCommerce SEO</h6>
+                </div>
+                <p class="pt-3">One of the most popular WordPress plug-ins, WooCommerce, transforms a WordPress website into a comprehensive eCommerce platform. If you are familiar with WordPress and would like to continue using their platform, WooCommerce is ideal for eCommerce websites with a limited product inventory. Our aim as WooCommerce and WordPress SEO specialists is to leverage our knowledge of eCommerce SEO to elevate your website and make it appear on page one of search engine results.</p>
             </div>
             <div class="col-md-6" style="margin: auto;">
                 <div class="clip_img">
@@ -230,8 +245,10 @@ $conn = $db->get_connection();
                 </div>
             </div>
             <div class="col-md-6" style="z-index:500;">
-                <div class="cliping_service_txt pb-2 margintop"><h6>Magento SEO Experts </h6></div>
-                <p class="pt-3" >With over 180,000 active websites, Magento is one of the most popular open-source PHP-based eCommerce platforms. Having stated that, we have been offering Magento SEO services ever since our firm was founded. We have PHP developers on staff, so we can help your Magento development team with development consultation or technical improvements. Additionally, we are proficient in Magento administration, which enables us to add new content, edit existing content, and add tags like titles, H1s, and Metas with ease.</p>
+                <div class="cliping_service_txt pb-2 margintop">
+                    <h6>Magento SEO Experts </h6>
+                </div>
+                <p class="pt-3">With over 180,000 active websites, Magento is one of the most popular open-source PHP-based eCommerce platforms. Having stated that, we have been offering Magento SEO services ever since our firm was founded. We have PHP developers on staff, so we can help your Magento development team with development consultation or technical improvements. Additionally, we are proficient in Magento administration, which enables us to add new content, edit existing content, and add tags like titles, H1s, and Metas with ease.</p>
             </div>
         </div>
     </div>
@@ -243,8 +260,10 @@ $conn = $db->get_connection();
     <div class="container">
         <div class="row">
             <div class="col-md-6" style="z-index:500;">
-                <div class="cliping_service_txt pb-2"><h6>What Does eCommerce SEO Services Include? </h6></div>
-                <p class="pt-3" >Regardless matter the platform for your online business, SEO Expate creates extremely effective eCommerce SEO strategies. Being an agency that specializes in eCommerce, our clients gain from our in-house staff's extensive experience ranking eCommerce websites for highly competitive keywords at the top of Google and other major search engines. </p>
+                <div class="cliping_service_txt pb-2">
+                    <h6>What Does eCommerce SEO Services Include? </h6>
+                </div>
+                <p class="pt-3">Regardless matter the platform for your online business, SEO Expate creates extremely effective eCommerce SEO strategies. Being an agency that specializes in eCommerce, our clients gain from our in-house staff's extensive experience ranking eCommerce websites for highly competitive keywords at the top of Google and other major search engines. </p>
             </div>
             <div class="col-md-6" style="margin: auto;">
                 <div class="clip_img">
@@ -262,15 +281,25 @@ $conn = $db->get_connection();
         <div class="row ">
             <div class="col-12">
                 <h6 class="fw-bold fs-5 pb-3">Personalized eCommerce Search Engine Optimization </h6>
-                <div><p>Make a list of the most popular keywords to target in your SEO campaign based on search volume. Our extensive keyword tools and SEO industry expertise are used to generate our keyword lists. </p></div>
+                <div>
+                    <p>Make a list of the most popular keywords to target in your SEO campaign based on search volume. Our extensive keyword tools and SEO industry expertise are used to generate our keyword lists. </p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Technical Evaluation of Websites </h6>
-                <div><p>We'll thoroughly examine the code and website for your eCommerce business, searching for technical on-page SEO aspects like 404 errors, missing ALT tags, duplicate titles, and other issues.</p></div>
+                <div>
+                    <p>We'll thoroughly examine the code and website for your eCommerce business, searching for technical on-page SEO aspects like 404 errors, missing ALT tags, duplicate titles, and other issues.</p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Research on eCommerce Keywords</h6>
-                <div><p>Using our extensive keyword tools and SEO industry knowledge, create a list of highly-searched keywords based on search volume to target.</p></div>
+                <div>
+                    <p>Using our extensive keyword tools and SEO industry knowledge, create a list of highly-searched keywords based on search volume to target.</p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Acceleration of eCommerce Websites</h6>
-                <div><p>A crucial component of your SEO approach is eCommerce website speed optimization. We'll see to it that your website has a great user experience and achieves high Core Web Vital rankings in Google Search Console.</p></div>
+                <div>
+                    <p>A crucial component of your SEO approach is eCommerce website speed optimization. We'll see to it that your website has a great user experience and achieves high Core Web Vital rankings in Google Search Console.</p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Full SEO Audit for eCommerce</h6>
-                <div><p>There will be a thorough examination of the entire website, including the backlink profile, content, and more.</p></div>
+                <div>
+                    <p>There will be a thorough examination of the entire website, including the backlink profile, content, and more.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -283,17 +312,29 @@ $conn = $db->get_connection();
         <div class="row ">
             <div class="col-12">
                 <h6 class="fw-bold fs-5 pb-3">Strategy for eCommerce Content</h6>
-                <div><p>Our group will plan the continuous creation of fresh, pertinent material while optimizing the already-existing content. We'll align your team with ours by doing research to develop an ongoing content calendar.</p></div>
+                <div>
+                    <p>Our group will plan the continuous creation of fresh, pertinent material while optimizing the already-existing content. We'll align your team with ours by doing research to develop an ongoing content calendar.</p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Building Internal Links</h6>
-                <div><p>It's crucial to properly link material on your website from one page to another. We'll create high-quality content that people on the internet will want to connect to in order to execute a successful link-building strategy that generates backlinks organically. Cross-linking between items, blog entries, categories, and more is a part of this.</p></div>
+                <div>
+                    <p>It's crucial to properly link material on your website from one page to another. We'll create high-quality content that people on the internet will want to connect to in order to execute a successful link-building strategy that generates backlinks organically. Cross-linking between items, blog entries, categories, and more is a part of this.</p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Classification Streamlining</h6>
-                <div><p>For eCommerce websites, category pages are typically the main sources of organic traffic. We'll set up your categories for natural success using tried-and-true category page SEO techniques.</p></div>
+                <div>
+                    <p>For eCommerce websites, category pages are typically the main sources of organic traffic. We'll set up your categories for natural success using tried-and-true category page SEO techniques.</p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Optimization of Product Pages</h6>
-                <div><p>It's crucial to be found when shoppers are looking for a specific product. Although search volumes for particular product terms are lower, their conversion rates are significantly greater.</p></div>
+                <div>
+                    <p>It's crucial to be found when shoppers are looking for a specific product. Although search volumes for particular product terms are lower, their conversion rates are significantly greater.</p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Conversion Optimization (CRO)</h6>
-                <div><p>To increase your eCommerce conversion rate and general website usability, we'll make changes to the website. Several platforms and programs for conversion optimization are used in advanced AB. </p></div>
+                <div>
+                    <p>To increase your eCommerce conversion rate and general website usability, we'll make changes to the website. Several platforms and programs for conversion optimization are used in advanced AB. </p>
+                </div>
                 <h6 class="fw-bold fs-5 pb-3">Building External Links </h6>
-                <div><p>With the aid of our content strategist, you can create excellent material that other websites will want to link to.  </p></div>
+                <div>
+                    <p>With the aid of our content strategist, you can create excellent material that other websites will want to link to. </p>
+                </div>
             </div>
         </div>
     </div>
@@ -310,8 +351,10 @@ $conn = $db->get_connection();
                 </div>
             </div>
             <div class="col-md-6" style="z-index:500;">
-                <div class="cliping_service_txt pb-2 margintop"><h6>SEO Reporting & Stats With An eCommerce Focus</h6></div>
-                <p class="pt-3" >You will receive a comprehensive monthly report every month that includes eCommerce SEO stats and a list of all jobs done.</p>
+                <div class="cliping_service_txt pb-2 margintop">
+                    <h6>SEO Reporting & Stats With An eCommerce Focus</h6>
+                </div>
+                <p class="pt-3">You will receive a comprehensive monthly report every month that includes eCommerce SEO stats and a list of all jobs done.</p>
             </div>
         </div>
     </div>
@@ -423,6 +466,9 @@ $conn = $db->get_connection();
     </div>
 </section>
 <!--================================top_ready_start section end here=======================-->
+
+
+
 
 <!--================================Thrive_Globally section start here=======================-->
 <section class="PAY_MENT" style="padding: 20px 0;">

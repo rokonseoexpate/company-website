@@ -93,7 +93,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="ecommerce-photo_edit.php" class="d-flex">
+											<a href="ecommerce-photo-edit.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">E-Commerce Photo Editing</h6>
@@ -192,14 +192,14 @@ $conn = $db->get_connection();
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 	<div class="container ">
 		<div class="row">
 			<div class="col-12" style="z-index:500;">
 				<div class="top_body_txt_part">
 					<h1>About T-Shirt Design</h1>
 					<p style="text-align:justify;">T-shirt design is an art form that allows people to express their creativity. Moreover, it involves creating unique graphics, patterns, and slogans printed on the fabric. Artists process those designs digitally, or they make their designs using hands, depending on the artist's selection. People use various materials, mostly cotton, to make T-shirts, and they represent items of clothing present in everybody's wardrobe. The T-shirt design industry has grown a lot in the past few years.</p>
-					<p style="text-align:justify;">Today, graphic designers use a wide range of colors, intense visual pictures, and creative themes to create T-shirts of all kinds. T-shirt design is all about knowing how to combine details from every culture or field into exclusive designs and following modern trends. Most importantly, T-shirt design plays a crucial role in the fashion industry. Besides, it allows brands to differentiate themselves from competitors. A well-designed t-shirt can attract customers and also increase business sales. So, we recommend you take this dynamic service from <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD.</p>
+					<p style="text-align:justify;">Today, graphic designers use a wide range of colors, intense visual pictures, and creative themes to create T-shirts of all kinds. T-shirt design is all about knowing how to combine details from every culture or field into exclusive designs and following modern trends. Most importantly, T-shirt design plays a crucial role in the fashion industry. Besides, it allows brands to differentiate themselves from competitors. A well-designed t-shirt can attract customers and also increase business sales. So, we recommend you take this dynamic service from <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD.</p>
 				</div>
 				<div class="top-body-button pt-3">
 					<a type="button" href="free-trial.php">Free Trial</a>
@@ -218,9 +218,9 @@ $conn = $db->get_connection();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="/" class="text-dark">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-dark">Photo editor</a></li>
-							<li class="breadcrumb-item active text-dark" aria-current="page">T-Shirt Design</li>
+							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
+							<li class="breadcrumb-item active text-light" aria-current="page">T-Shirt Design</li>
 						</ol>
 					</nav>
 				</div>
@@ -228,10 +228,9 @@ $conn = $db->get_connection();
 					<h6>T-Shirt Design Service</h6>
 				</div>
 				<p class="pt-3">T-Shirt Design Service specializes in designing and producing custom t-shirts. The companies that deliver this service must have these criteria. Besides, we can offer you many options to help you create a design that is unique to your business needs as we provide this service. Again, you can choose the fabric and color of your t-shirt to design the graphic or message that will print on it. So, our T-Shirt Design Service will give you complete control over the look and feel of your custom t-shirts.</p>
-
 				<p>In fact, our T-shirt design service can be the best service for your company. It is one of the most beautiful processes to represent and describe occasional figures. Furthermore, males and females both can use it. Again, T-shirt design services make high-quality customs with their own design. This is why these design services are very demandable all around the country. We have professional designers and unique designs customized for customers. Lastly, we can provide the best service at a great value to satisfy the clients.</p>
 			</div>
-			<div class="col-md-6 m-auto">
+			<div class="col-md-6" style="margin: auto;">
 				<div class="clip_img">
 					<img src="frontend/images/baby-t-shirt-01-1024x614.jpg" alt="T-Shirt Design Service " description="T-Shirt Design Service">
 				</div>
@@ -249,9 +248,9 @@ $conn = $db->get_connection();
 				<h5>Best T-Shirt Design Service</h5>
 			</div>
 			<div>
-				<p>Best T-Shirt Design Service can enhance your marketing tactics, and you can attract many potential customers with that. For this reason, <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD. company will give you the best t-shirt design service ever. If you are looking for the most trusted company for your t-shirt design, then you are in the right place. Besides, if you have a specific design in mind for your t-shirt, please inform us so we can accommodate your preferences. Our t-shirt design services are top-notch and reasonably priced. This service is crucial for any online business, and we are here to provide it for you.</p>
-				<p>Moreover, our <a href="/" class="text-success">company</a> is reliable all over the world as we provide the best service to our customers. However, we consider ourselves as the best in this sector because of some several reasons. Firstly, we don't compromise our quality. The quality of the t-shirts and printing is important to create a good-looking customized t-shirt. Secondly, you can choose any design for your T-shirt, and we have the best designer who will design it per your choice. Moreover, our service will definitely fit your budget, and after placing your order, we will deliver it as soon as possible. </p>
-				<p>Furthermore, <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD. company will offer various design options and customization features for you. Again, we guarantee that your T-shirts last for years because we use high-quality materials. Our professional designers understand the latest trends in t-shirt design and give you the best service. Therefore, a lot of customers show interest in purchasing our products.</p>
+				<p>Best T-Shirt Design Service can enhance your marketing tactics, and you can attract many potential customers with that. For this reason, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. company will give you the best t-shirt design service ever. If you are looking for the most trusted company for your t-shirt design, then you are in the right place. Besides, if you have a specific design in mind for your t-shirt, please inform us so we can accommodate your preferences. Our t-shirt design services are top-notch and reasonably priced. This service is crucial for any online business, and we are here to provide it for you.</p>
+				<p>Moreover, our <a href="index.php" class="text-success">company</a> is reliable all over the world as we provide the best service to our customers. However, we consider ourselves as the best in this sector because of some several reasons. Firstly, we don't compromise our quality. The quality of the t-shirts and printing is important to create a good-looking customized t-shirt. Secondly, you can choose any design for your T-shirt, and we have the best designer who will design it per your choice. Moreover, our service will definitely fit your budget, and after placing your order, we will deliver it as soon as possible. </p>
+				<p>Furthermore, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. company will offer various design options and customization features for you. Again, we guarantee that your T-shirts last for years because we use high-quality materials. Our professional designers understand the latest trends in t-shirt design and give you the best service. Therefore, a lot of customers show interest in purchasing our products.</p>
 			</div>
 		</div>
 	</div>
@@ -311,7 +310,7 @@ $conn = $db->get_connection();
 			</div>
 			<div>
 				<p>When it comes to getting a simple t-shirt design created, cost is always a consideration. Most importantly, we will give you the best services at an overall value. We determine the maximum price for our design services through discussions. Moreover, taking into account factors such as the amount of work, number of designs, and revisions needed. We also accept customized t-shirt design orders, with pricing being open to negotiation. Additionally, we provide a special flat discount to our clients for these orders.</p>
-				<p>However, the benefit of the design we are offering is the best and unique in this sector. T-shirt design services are highly beneficial for virtue work and they will help you in many ways. The Simple T-Shirt Design Service Cost is very affordable on our <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD. website. Also, we assure you we will work on your demand basis and deliver the work how you have asked for. So, if you are looking to promote your brand in a creative way, then our custom-designed t-shirts are the perfect solution. </p>
+				<p>However, the benefit of the design we are offering is the best and unique in this sector. T-shirt design services are highly beneficial for virtue work and they will help you in many ways. The Simple T-Shirt Design Service Cost is very affordable on our <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. website. Also, we assure you we will work on your demand basis and deliver the work how you have asked for. So, if you are looking to promote your brand in a creative way, then our custom-designed t-shirts are the perfect solution. </p>
 			</div>
 		</div>
 	</div>
