@@ -91,7 +91,7 @@
 				                        </div>    
 				                        <div class="col-md-3 col-6">
 				                            <div class="col-megamenu pb-2">
-				                                <a href="ecommerce-photo_edit.php" class="d-flex">
+				                                <a href="ecommerce-photo-edit.php" class="d-flex">
 				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 				                                    <div>
 				                                        <h6 class="title">E-Commerce Photo Editing</h6>

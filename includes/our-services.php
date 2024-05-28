@@ -20,7 +20,7 @@
                         <h6>Jewelry Retouching Service</h6>
                     </div>
                 </a>
-                <a href="ecommerce-photo_edit.php" class="d-flex pt-2">
+                <a href="ecommerce-photo-edit.php" class="d-flex pt-2">
                     <div>
                         <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>

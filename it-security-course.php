@@ -3,7 +3,6 @@ $title = "IT Service & Business management Specialist";
 ob_start();
 ?>
 
-
 <!--================================photo editor sub Header section end here=======================-->
 <div class="photo_edipth">
   <div class="container">
