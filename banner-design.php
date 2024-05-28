@@ -605,7 +605,7 @@ $conn = $db->get_connection();
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
-					<div class="what-make-txt">
+					<div class="what_make-txt">
 						<h6>Clipping Path Service</h6>
 					</div>
 				</a>
@@ -613,7 +613,7 @@ $conn = $db->get_connection();
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
-					<div class="what-make-txt">
+					<div class="what_make-txt">
 						<h6>Jewelry Retouching Service</h6>
 					</div>
 				</a>
@@ -621,7 +621,7 @@ $conn = $db->get_connection();
 					<div>
 						<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 					</div>
-					<div class="what-make-txt">
+					<div class="what_make-txt">
 						<h6>E-Commerce Photo Editing</h6>
 					</div>
 				</a>

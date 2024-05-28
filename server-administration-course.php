@@ -61,7 +61,8 @@
 								<p class="text-dark text-center">Course Duration</p>
 								<p class="text-success text-center" style="margin-top: -20px;"><strong>3 months (3 days a week)</strong></p>
 							</div>
-						</div>			
+						</div>
+
 						<div class="col-md-3 pt-2" style="z-index:500; ">
 							<div class="courses p-2  rounded shadow bg-white border-0 border-top border-warning border-5">
 								<p class="text-dark text-center">Total Class</p>

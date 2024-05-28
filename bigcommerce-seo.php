@@ -14,7 +14,7 @@ ob_start();
                 <div class="col-md-7 ecomresp" style="z-index:500;">
                     <div class="top_body_txt_part">
                         <h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">BigCommerce SEO Services & </h1>
-                        <h2 class="margintop fs-1" style="margin-top: -15px;">Search Marketing</h2>
+                        <h2 class="margintop" style="margin-top: -15px;">Search Marketing</h2>
                         <p style="text-align:justify;">OuterBox is a search engine marketing agency that specializes in BigCommerce SEO services. Businesses come to us looking to make the most of their BigCommerce store. We will work to move your main keywords to the top of Google and improve your conversion rate. Let OuterBox increase online sales on your BigCommerce website.</p>
                     </div>
                     <div class="row">

@@ -85,7 +85,6 @@ $title = "All Branches";
 			}
 			?>
 
-
 		</div>
 	</div>
 </section>
