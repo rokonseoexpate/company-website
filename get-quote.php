@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_phone = mysqli_real_escape_string($conn, $phone);
     $sanitized_email = mysqli_real_escape_string($conn, $email);
     $sanitized_address = mysqli_real_escape_string($conn, $address);
-    $sanitized_serviceTypes = array_map(function($item) use ($conn) {
+    $sanitized_serviceTypes = array_map(function ($item) use ($conn) {
         return mysqli_real_escape_string($conn, $item);
     }, $serviceTypes);
 
@@ -56,11 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_files_json = json_encode($files);
 
     $insert_query = "INSERT INTO get_quotes (name, company_name, company_website, phone, email, address, service_type, files, image_file_link, message) VALUES ('$sanitized_name', '$sanitized_companyName', '$sanitized_companyWebsite', '$sanitized_phone', '$sanitized_email', '$sanitized_address', '$sanitized_serviceTypes_json', '$sanitized_files_json', '$sanitized_imageFileLink', '$sanitized_message')";
-    
+
     if (mysqli_query($conn, $insert_query)) {
         // Data inserted successfully
         $successMessage = "Form submitted successfully!";
-
     } else {
         // Error occurred while inserting data
         echo "Error: " . mysqli_error($conn);
@@ -70,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_close($conn);
 } else {
     // Redirect back to the form page if accessed directly without form submission
-  //  $successMessage = "Form submitted successfully!";
+    //  $successMessage = "Form submitted successfully!";
 
 }
 ?>
@@ -81,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
@@ -263,14 +262,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
     <div class="container ">
         <div class="row">
             <div class="col-12" style="z-index:500;">
                 <div class="top_body_txt_part">
                     <h1>Get Quote</h1>
-                    <p style="text-align:justify;">SEO Expate photo editor provided you all type of image editing service.  If you like to edit your photo then you can see our service. SEO Expate photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service,  Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin,  Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic,  Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
-                    <p style="text-align:justify;">In the conclusion SEO Expate photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then SEO Expate photo editor company will help you to provide you one suitable and experienced editor person.</p>
+                    <p style="text-align:justify;"><a href="index.php" class="text-success">SEO Expate</a> photo editor provided you all type of image editing service. If you like to edit your photo then you can see our service. SEO Expate photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service, Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin, Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic, Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
+                    <p style="text-align:justify;">In the conclusion <a href="index.php" class="text-success">SEO Expate</a> photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then SEO Expate photo editor company will help you to provide you one suitable and experienced editor person.</p>
                 </div>
                 <div class="top-body-button pt-3">
                     <a type="button" href="free-trial.php">Free Trial</a>
@@ -286,12 +285,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="row">
             <div class="col-12" style="z-index:500;">
-                <div class="breadcumb_gph d-flex">
-                    <a href="photo-editor.php" class="text-light"><p>Photo editor</p></a>
-                    <p class="px-3 text-light">»</p>
-                    <p class="text-light">Get Quote</p>
+                <div class="top_about_us_txt" style="z-index:500;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcumb_gph">
+                            <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                            <li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
+                            <li class="breadcrumb-item active text-light" aria-current="page">Get Quote</li>
+                        </ol>
+                    </nav>
                 </div>
-                <div class=" pt-2 text-light"><h4 class="fs-1 fw-bold text-center">Get Quote</h4></div>
+                <div class=" pt-2 text-light">
+                    <h4 class="fs-1 fw-bold text-center">Get Quote</h4>
+                </div>
                 <p class="fs-6 pt-2 fw-bold text-center text-light">Start Your Free Quote With SEO Expate Photo Editor</p>
             </div>
         </div>
@@ -303,124 +308,119 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <section class="free_trail">
     <div class="container">
         <div class="row">
-            <p>Complete Form &  Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
+            <p>Complete Form & Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
             <div class="col-12">
-                <form class="row g-3" id="freeTrialForm" method="POST" action="get-quote.php" enctype="multipart/form-data">
+                <form class="row g-3 py-5 px-5">
                     <div class="col-12">
                         <label for="fullname" class="form-label">First Name & Last Name <span>*</span></label>
-                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name">
-                        <span id="fullnameError" class="error text-danger"></span>
+                        <input type="text" class="form-control" id="fullname" placeholder="Your Full Name" required>
                     </div>
                     <div class="col-12">
-                        <label for="CompanyName" class="form-label">Company Name <span>*</span></label>
-                        <input type="text" name="company_name" class="form-control" id="CompanyName" placeholder="Company Name">
+                        <label for="CompanyName" class="form-label">Company Name</label>
+                        <input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
                     </div>
                     <div class="col-12">
                         <label for="inputPassword4" class="form-label">Phone / Whatsapp Number <span>*</span></label>
-                        <input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451">
-                        <span id="phoneError" class="error text-danger"></span>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
                     </div>
                     <div class="col-12">
                         <label for="inputEmail4" class="form-label">Email <span>*</span></label>
-                        <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com">
-                        <span id="emailError" class="error text-danger"></span>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
                     </div>
                     <div class="col-12">
                         <label for="CompanyWebsite" class="form-label">Company Website</label>
-                        <input type="text"  name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" >
+                        <input type="text" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
                     </div>
                     <div class="col-12">
                         <label for="Addresses" class="form-label">Addresses </label>
-                        <input type="text" name="address" class="form-control" id="Addresses" placeholder="Addresses..." >
+                        <input type="text" class="form-control" id="Addresses" placeholder="Addresses..." required>
                     </div>
                     <div class="col-12">
                         <label for="stuf" class="form-label">Service Type <span>*</span></label> <br>
                         <div class="pt-2">
-                            <input type="checkbox" id="Clipping" name="service_type[]" value="Clipping Path">
+                            <input type="checkbox" id="Clipping" name="Clipping" value="Clipping">
                             <label for="Clipping"> Clipping Path</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Color" name="service_type[]" value="Color Correction">
+                            <input type="checkbox" id="Color" name="Color" value="Color">
                             <label for="Color"> Color Correction</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Commerce" name="service_type[]" value="E-Commerce Photo Editing">
+                            <input type="checkbox" id="Commerce" name="Commerce" value="Commerce">
                             <label for="Commerce"> E-Commerce Photo Editing</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Ghost" name="service_type[]" value="Ghost Mannequin Effect">
+                            <input type="checkbox" id="Ghost" name="Ghost" value="Ghost">
                             <label for="Ghost"> Ghost Mannequin Effect</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Manipulation" name="service_type[]" value="Image Manipulation">
+                            <input type="checkbox" id="Manipulation" name="Manipulation" value="Manipulation">
                             <label for="Manipulation"> Image Manipulation</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Masking" name="service_type[]" value="Image Masking">
+                            <input type="checkbox" id="Masking" name="Masking" value="Masking">
                             <label for="Masking">Image Masking</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Jewelry" name="service_type[]" value="Jewelry Retouching">
+                            <input type="checkbox" id="Jewelry" name="Jewelry" value="Jewelry">
                             <label for="Jewelry"> Jewelry Retouching</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Background" name="service_type[]" value="Photo Background Removing">
+                            <input type="checkbox" id="Background" name="Background" value="Background">
                             <label for="Background"> Photo Background Removing</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Restoration" name="service_type[]" value="Photo Restoration">
+                            <input type="checkbox" id="Restoration" name="Restoration" value="Restoration">
                             <label for="Restoration"> Photo Restoration</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Retouching" name="service_type[]" value="Photo Retouching">
+                            <input type="checkbox" id="Retouching" name="Retouching" value="Retouching">
                             <label for="Retouching"> Photo Retouching</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Vector" name="service_type[]" value="Raster to Vector Conversion">
+                            <input type="checkbox" id="Vector" name="Vector" value="Vector">
                             <label for="Vector"> Raster to Vector Conversion</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Estate" name="service_type[]" value="Real Estate Photo Editing">
+                            <input type="checkbox" id="Estate" name="Estate" value="Estate">
                             <label for="Estate">Real Estate Photo Editing</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Shadow" name="service_type[]" value="Shadow Making">
+                            <input type="checkbox" id="Shadow" name="Shadow" value="Shadow">
                             <label for="Shadow"> Shadow Making</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Wedding" name="service_type[]" value="Wedding Photo Editing">
+                            <input type="checkbox" id="Wedding" name="Wedding" value="Wedding">
                             <label for="Wedding"> Wedding Photo Editing</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Design" name="service_type[]" value="T-Shirt Design">
+                            <input type="checkbox" id="Design" name="Design" value="Design">
                             <label for="Design"> T-Shirt Design</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Logo" name="service_type[]" value="Logo Design">
+                            <input type="checkbox" id="Logo" name="Logo" value="Logo">
                             <label for="Logo"> Logo Design</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Banner" name="service_type[]" value="Banner Design">
+                            <input type="checkbox" id="Banner" name="Banner" value="Banner">
                             <label for="Banner"> Banner Design</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Work" name="service_type[]" value="Illustrator Art Work">
+                            <input type="checkbox" id="Work" name="Work" value="Work">
                             <label for="Work">Illustrator Art Work</label><br><br>
                         </div>
                     </div>
-                    <div class="col-12 ">
+                    <div class="col-12">
                         <label for="file" class="form-label">File Upload (Limit - 1024MB/image, 100 files only) <span>*</span></label>
-                        <input type="file" name="files[]" class="form-control" id="file" placeholder="Choose a file" multiple>
-                        <span id="filesError" class="error text-danger"></span>
+                        <input type="file" class="form-control" id="file" placeholder="Choose a file">
                     </div>
-                    <div class="col-12 ">
+                    <div class="col-12">
                         <label for="Image" class="form-label">Image File Link</label>
-                        <input type="text" name="image_file_link" class="form-control" id="Image" placeholder="Image Link" >
+                        <input type="text" class="form-control" id="Image" placeholder="Image Link" required>
                     </div>
-                    <div class="col-12 ">
+                    <div class="col-12">
                         <label for="type" class="form-label">Message <span>*</span></label>
-                        <textarea type="text" name="message" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
-                        <span id="messageError" class="error text-danger"></span>
+                        <textarea type="text" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
                     </div>
                     <div class="col-12 text-center">
                         <button type="submit" class="btn">Submit</button>
@@ -433,14 +433,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!--================================free_trail services section end here=======================-->
 
 <!--================================editor_all_services section end here=======================-->
-<section class="WHAT_MAKES footer_btm_all_services "  style="background: unset" >
+<section class="WHAT_MAKES footer_btm_all_services" style="background: unset">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 margintop">
+            <div class="col-md-3">
                 <h4>Photoshop Services</h4>
                 <a href="clipping-path.php" class="d-flex pt-4">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Clipping Path Service</h6>
@@ -448,7 +448,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="jewelry-retouching.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Jewelry Retouching Service</h6>
@@ -456,7 +456,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="ecommerce-photo-edit.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>E-Commerce Photo Editing</h6>
@@ -464,7 +464,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="image-masking.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Image Masking Service</h6>
@@ -472,18 +472,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="color-correction.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Color Correction Service</h6>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 margintop">
+            <div class="col-md-3">
                 <h4>Photoshop Services</h4>
                 <a href="real-estate-photo.php" class="d-flex pt-4">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Real Estate Photo Editing</h6>
@@ -491,7 +491,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="photo-retouching.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Photo Retouching</h6>
@@ -499,7 +499,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="background-remove.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Remove Background Image</h6>
@@ -507,7 +507,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="ghost-mannequin.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Ghost Mannequin Effect</h6>
@@ -515,18 +515,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="shadow-making.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Shadow Making Service</h6>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 margintop">
+            <div class="col-md-3">
                 <h4>Photoshop Services</h4>
                 <a href="photo-restoration.php" class="d-flex pt-4">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Photo Restoration</h6>
@@ -534,7 +534,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="image-manipulation.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Image Manipulation Service</h6>
@@ -542,7 +542,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="wedding-photo.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Wedding Photo Editing</h6>
@@ -550,7 +550,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="raster-vector.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Raster to Vector Conversion</h6>
@@ -558,18 +558,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="background-remove.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Photo Background Removing</h6>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 margintop">
+            <div class="col-md-3">
                 <h4>Graphics Design Services</h4>
                 <a href="t-shirt-design.php" class="d-flex pt-4">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>T-Shirt Design</h6>
@@ -577,7 +577,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="logo-design.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Logo Designs Service</h6>
@@ -585,7 +585,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
                 <a href="banner-design.php" class="d-flex pt-2">
                     <div>
-                        <i class="fa-regular fa-square-check"></i>
+                        <i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
                     </div>
                     <div class="what_make-txt">
                         <h6>Banner Design</h6>
@@ -602,7 +602,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="row">
             <div class="PAY_IMG">
-                <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
+                <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
             </div>
         </div>
     </div>
@@ -678,4 +678,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>
-
