@@ -10,6 +10,7 @@
         </div>
     </div>
 </section>
+
 <?php 
 $main_content = ob_get_clean();
 include './layouts/app.php';

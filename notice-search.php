@@ -21,6 +21,7 @@ $qry .= " ORDER BY id DESC";
 $result = mysqli_query($conn, $qry); // Executing the query
 
 ?>
+
 <!--================================cliping_service section start here=======================-->
 <section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0; margin-top: 60px;">
     <div class="container">

@@ -1,7 +1,8 @@
 <?php
-    $title = "Amazon Seo";
+    $title = "Woocommerce Seo";
     ob_start();
 ?>
+
 	<!--================================photo editor sub Header section end here=======================-->
 	<div class="photo_edipth">
 		<div class="container">
@@ -54,7 +55,7 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+	<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">		
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-md-7 ecomresp" style="z-index:500;">
@@ -68,12 +69,12 @@
 							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your WooCommerce SEO Proposal</a></div>
 						</div>
 						<div class="col-md-2 ecomrespons">
-							<img src="frontend/images//google-seo-proposal-audit.png.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-fluid" >
+							<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-fluid" >
 						</div>
 					</div>	
 				</div>
 				<div class="col-md-5 m-auto ecomrespp" style="z-index:500;" >
-					<img src="frontend/images//63c91ff4dd02fa5ad8af6729_woocommerce seo thumb.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-thumbnail">
+					<img src="frontend/images/63c91ff4dd02fa5ad8af6729_woocommerce seo thumb.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-thumbnail">
 				</div>			
 			</div>
 		</div>				
@@ -106,11 +107,11 @@
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2"><h6>About WooCommerce SEO Service. </h6></div>
-					<p class="pt-3" ><a href="ecommerce-seo.php" class="text-success">Ecommerce</a> search engine optimization (SEO) is the practice of fine-tuning your website to meet search engine best practices, and updating your content to reflect what your customers are searching for. Benefits of <a href="seo-service.php" class="text-success">SEO</a> for store owners include increased visitors, brand awareness, and sales.</p>																								
+					<p class="pt-3" ><a href="ecommerce_seo.php" class="text-success">Ecommerce</a> search engine optimization (SEO) is the practice of fine-tuning your website to meet search engine best practices, and updating your content to reflect what your customers are searching for. Benefits of <a href="seo-service.php" class="text-success">SEO</a> for store owners include increased visitors, brand awareness, and sales.</p>																								
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
-						<img src="frontend/images//5-ecommerce-seo-tips-to-improve-organic-performance-5eac105b2cf2b.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-thumbnail">
+						<img src="frontend/images/5-ecommerce-seo-tips-to-improve-organic-performance-5eac105b2cf2b.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-thumbnail">
 					</div>
 				</div>
 			</div>
@@ -134,7 +135,7 @@
             </div>
         </div>
     </section>
-	<!--================================editor_texts section end here=======================-->
+	<!--================================editor-texts section end here=======================-->
 
 	<!--================================accordion section start here=======================-->
 	<section class="accordion_service">
@@ -209,7 +210,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="top_ready_start_img text-left">
-                        <img src="frontend/images//95991_prev_ui.png" alt="We can build your story" description="We can build your story">
+                        <img src="frontend/images/95991_prev_ui.png" alt="We can build your story" description="We can build your story">
                     </div>
                 </div>
             </div>
@@ -228,6 +229,7 @@
         </div>
     </section>
 	<!--================================Thrive_Globally section end here=======================-->
+
 <?php 
 $main_content = ob_get_clean();
 include './layouts/app.php';
