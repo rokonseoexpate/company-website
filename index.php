@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "SEO Expate Bangladesh Ltd.";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -284,9 +284,6 @@ $conn = $db->get_connection();
                                                 <p class="text-muted mb-0 pt-2"> <span><i class="fa-solid fa-circle"></i></span>Specify digital transformation and intelligent automation strategies.</p>
                                                 <p class="text-muted mb-0 pt-2"><span><i class="fa-solid fa-circle"></i></span>User experiences should be redefined via design thinking.</p>
                                             </div>
-                                        </div>
-                                        <div class="top-body-button pt-3 text-center">
-                                            <a type="button" href="services.php">Advising Services</a>
                                         </div>
                                     </div>
                                     <div id="employment" role="tabpanel" aria-labelledby="employment-tab" class="tab-pane fade px-4 py-5">
@@ -611,7 +608,7 @@ $conn = $db->get_connection();
             <div class="row">
                 <div class="top_awards_txt">
                     <div class="updatecode pb-2"><h6 class="" style="padding-bottom: unset;">Achievements and Recognitions</h6></div>
-                    <p>For more than ten years, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. has been at the forefront of the ICT industry, driving innovation and empowering businesses to thrive in the digital age. As we celebrate this milestone, we take a moment to reflect on our achievements and recognitions, which stand as testaments to our dedication to excellence.</p>
+                    <p>For more than ten years, <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. has been at the forefront of the ICT industry, driving innovation and empowering businesses to thrive in the digital age. As we celebrate this milestone, we take a moment to reflect on our achievements and recognitions, which stand as testaments to our dedication to excellence.</p>
                     <p>Explore a selection of our honors and accomplishments below.</p>
                 </div>
                 <div class="slider pt-5">
