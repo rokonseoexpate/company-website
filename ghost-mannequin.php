@@ -20,7 +20,9 @@ ob_start();
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
 											<a href="clipping-path.php" class="d-flex">
-												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+												<div>
+													<i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i>
+												</div>
 												<div>
 													<h6 class="title">Clipping Path</h6>
 												</div>
