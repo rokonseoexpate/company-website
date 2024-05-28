@@ -71,512 +71,166 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<!--================================photo editor sub Header section end here=======================-->
-    <div class="photo_edipth">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <div class="container-fluid ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="main_nav">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item dropdown has-megamenu ">
-                                <a class="nav-link dropdown-toggle" href="photo-editor.php" data-bs-toggle="dropdown"> Photo Editing Services </a>
-                                <div class="dropdown-menu megamenu" role="menu">
-                                    <div class="row g-3">
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="clipping-path.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Clipping Path</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="background-remove.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Photo Background Removing</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="image-masking.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Image Masking</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="shadow-making.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Shadow Making</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-3">
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="ghost-mannequin.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Ghost Mannequin Effect</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="photo-retouching.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Photo Retouching</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="color-correction.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Color Correction</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="ecommerce-photo-edit.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">E-Commerce Photo Editing</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-3">
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="jewelry-retouching.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Jewelry Retouching</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="wedding-photo.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Wedding Photo Editing</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="photo-restoration.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Photo Restoration</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="real-estate-photo.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Real Estate Photo Editing</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row g-3">
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="image-manipulation.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Image Manipulation</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-6">
-                                            <div class="col-megamenu pb-2">
-                                                <a href="raster-vector.php" class="d-flex">
-                                                    <div><i class="fa-regular fa-compass"></i></div>
-                                                    <div>
-                                                        <h6 class="title">Raster to Vector Conversion</h6>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="graphic-design.php" data-bs-toggle="dropdown"> Graphic Design </a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="t-shirt-design.php"> T-Shirt Design</a></li>
-                                    <li><a class="dropdown-item" href="logo-design.php">Logo Designs Service</a></li>
-                                    <li><a class="dropdown-item" href="banner-design.php">Banner Design</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="photo-editor-pricing.php"> Pricing </a></li>
-                            <li class="nav-item"><a class="nav-link" href="photo-edit-portfolio.php"> Portfolio </a></li>
-                        </ul>
-                        <ul class="navbar-nav booknowbtn">
-                            <li class="nav-item">
-                                <a type="submit" class="nav-link btn" href="get-quote.php">Get Quote</a>
-                            </li>
-                        </ul>
-                    </div>
+
+<?php include 'includes/photo-editing-nav.php' ?>
+
+
+<!--================================top-body section start here=======================-->
+<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+    <div class="container ">
+        <div class="row">
+            <div class="col-12" style="z-index:500;">
+                <div class="top_body_txt_part">
+                    <h1>Free Trial</h1>
+                    <p style="text-align:justify;">SEO Expate photo editor provided you all type of image editing service.  If you like to edit your photo then you can see our service. SEO Expate photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service,  Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin,  Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic,  Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
+                    <p style="text-align:justify;">In the conclusion SEO Expate photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then SEO Expate photo editor company will help you to provide you one suitable and experienced editor person.</p>
                 </div>
-            </nav>
+                <div class="top-body-button pt-3">
+                    <a type="button" href="free-trial.php">Free Trial</a>
+                </div>
+            </div>
         </div>
     </div>
-    <!--================================photo editor sub Header section end here=======================-->
+</section>
+<!--================================top-body section end here=======================-->
 
-    <!--================================top-body section start here=======================-->
-    <section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
-        <div class="container ">
-            <div class="row">
-                <div class="col-12" style="z-index:500;">
-                    <div class="top_body_txt_part">
-                        <h1>Free Trial</h1>
-                        <p style="text-align:justify;">SEO Expate photo editor provided you all type of image editing service.  If you like to edit your photo then you can see our service. SEO Expate photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service,  Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin,  Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic,  Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
-                        <p style="text-align:justify;">In the conclusion SEO Expate photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then SEO Expate photo editor company will help you to provide you one suitable and experienced editor person.</p>
-                    </div>
-                    <div class="top-body-button pt-3">
-                        <a type="button" href="free-trial.php">Free Trial</a>
-                    </div>
+<!--================================cliping_service section start here=======================-->
+<section class="cliping_service photo_edit_all_service tshirtdesign" style="background: var(--button-bg-hover-color);">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="z-index:500;">
+                <div class="top_about_us_txt" style="z-index:500;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcumb_gph">
+                            <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                            <li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
+                            <li class="breadcrumb-item active text-light" aria-current="page">Free Trial</li>
+                        </ol>
+                    </nav>
                 </div>
+                <div class=" pt-2 text-light"><h4 class="fs-1 fw-bold text-center">Free Trial</h4></div>
             </div>
         </div>
-    </section>
-    <!--================================top-body section end here=======================-->
+    </div>
+</section>
+<!--================================cliping_service section end here=======================-->
 
-    <!--================================cliping_service section start here=======================-->
-    <section class="cliping_service photo_edit_all_service tshirtdesign" style="background: var(--button-bg-hover-color);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12" style="z-index:500;">
-                    <div class="breadcumb_gph d-flex">
-                        <a href="photo-editor.php" class="text-light"><p>Photo editor</p></a>
-                        <p class="px-3 text-light">»</p>
-                        <p class="text-light">Free Trial</p>
+<!--================================free_trail services section start here=======================-->
+<section class="free_trail">
+    <div class="container">
+        <div class="row">
+            <h4>SEO Expate Photo Editor Provide Creative Photo Editing Service</h4>
+            <p>Complete Form &  Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
+            <div class="col-md-6">
+                <form class="row g-3">
+                    <div class="col-12">
+                        <label for="fullname" class="form-label">First Name & Last Name  <span>*</span></label>
+                        <input type="text" class="form-control" id="fullname" placeholder="Your Full Name" required>
                     </div>
-                    <div class=" pt-2 text-light"><h4 class="fs-1 fw-bold text-center">Free Trial</h4></div>
-                </div>
+                    <div class="col-12">
+                        <label for="CompanyName" class="form-label">Company Name</label>
+                        <input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputPassword4" class="form-label">Phone / Whatsapp Number  <span>*</span></label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputEmail4" class="form-label">Email <span>*</span></label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="CompanyWebsite" class="form-label">Company Website</label>
+                        <input type="text" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="Addresses" class="form-label">Addresses </label>
+                        <input type="text" class="form-control" id="Addresses" placeholder="Addresses..." required>
+                    </div>
+                    <div class="col-12">
+                        <label for="stuf" class="form-label">Select Service Type <span>*</span></label>
+                        <select name="" id="stuf" style="width: 100%;" class="form-control">
+                            <option value="">Clipping Path</option>
+                            <option value="">Color Correction</option>
+                            <option value="">E-Commerce Photo Editing</option>
+                            <option value="">Ghost Mannequin Effect</option>
+                            <option value="">Image Manipulation</option>
+                            <option value="">Image Masking</option>
+                            <option value="">Jewelry Retouching</option>
+                            <option value="">Photo Background Removing</option>
+                            <option value="">Photo Restoration</option>
+                            <option value="">Photo Retouching</option>
+                            <option value="">Raster to Vector Conversion</option>
+                            <option value="">Real Estate Photo Editing</option>
+                            <option value="">Shadow Making</option>
+                            <option value="">Wedding Photo Editing</option>
+                            <option value="">T-Shirt Design</option>
+                            <option value="">Logo Design</option>
+                            <option value="">Banner Design</option>
+                            <option value="">Illustrator Art Work</option>
+                        </select>
+                    </div>
+                    <div class="col-12 ">
+                        <label for="file" class="form-label">File Upload (Limit - 1024MB/image, 100 files only) <span>*</span></label>
+                        <input type="file" class="form-control" id="file" placeholder="Choose a file">
+                    </div>
+                    <div class="col-12 ">
+                        <label for="Image" class="form-label">Image File Link</label>
+                        <input type="text" class="form-control" id="Image" placeholder="Image Link" required>
+                    </div>
+                    <div class="col-12 ">
+                        <label for="type" class="form-label">Message <span>*</span></label>
+                        <textarea type="text" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
             </div>
-        </div>
-    </section>
-    <!--================================cliping_service section end here=======================-->
-
-    <!--================================free_trail services section start here=======================-->
-    <section class="free_trail">
-        <div class="container">
-            <div class="row">
-                <h4>SEO Expate Photo Editor Provide Creative Photo Editing Service</h4>
-                <p>Complete Form &  Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
-                <div class="col-md-6">
-                    <form class="row g-3" id="freeTrialForm" method="POST" action="free-trial.php" enctype="multipart/form-data">
-
-                        <div class="col-12">
-                            <label for="fullname" class="form-label">First Name & Last Name <span>*</span></label>
-                            <input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name">
-                            <span id="fullnameError" class="error text-danger"></span>
-                        </div>
-                        <div class="col-12">
-                            <label for="CompanyName" class="form-label">Company Name <span>*</span></label>
-                            <input type="text" name="company_name" class="form-control" id="CompanyName" placeholder="Company Name">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputPassword4" class="form-label">Phone / Whatsapp Number <span>*</span></label>
-                            <input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451">
-                            <span id="phoneError" class="error text-danger"></span>
-                        </div>
-                        <div class="col-12">
-                            <label for="inputEmail4" class="form-label">Email <span>*</span></label>
-                            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com">
-                            <span id="emailError" class="error text-danger"></span>
-                        </div>
-                        <div class="col-12">
-                            <label for="CompanyWebsite" class="form-label">Company Website</label>
-                            <input type="text"  name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" >
-                        </div>
-                        <div class="col-12">
-                            <label for="Addresses" class="form-label">Addresses </label>
-                            <input type="text" name="address" class="form-control" id="Addresses" placeholder="Addresses..." >
-                        </div>
-                        <div class="col-12">
-                            <label for="stuf" class="form-label">Select Service Type <span>*</span></label>
-                            <select name="service_type" id="stuf" style="width: 100%;" class="form-control">
-                                <option value="">Select Service</option>
-                                <option value="Clipping Path">Clipping Path</option>
-                                <option value="Color Correction">Color Correction</option>
-                                <option value="E-Commerce Photo Editing">E-Commerce Photo Editing</option>
-                                <option value="Ghost Mannequin Effect">Ghost Mannequin Effect</option>
-                                <option value="Image Manipulation">Image Manipulation</option>
-                                <option value="Image Masking">Image Masking</option>
-                                <option value="Jewelry Retouching">Jewelry Retouching</option>
-                                <option value="Photo Background Removing">Photo Background Removing</option>
-                                <option value="Photo Restoration">Photo Restoration</option>
-                                <option value="Photo Retouching">Photo Retouching</option>
-                                <option value="Raster to Vector Conversion">Raster to Vector Conversion</option>
-                                <option value="Real Estate Photo Editing">Real Estate Photo Editing</option>
-                                <option value="Shadow Making">Shadow Making</option>
-                                <option value="Wedding Photo Editing">Wedding Photo Editing</option>
-                                <option value="T-Shirt Design">T-Shirt Design</option>
-                                <option value="Logo Design">Logo Design</option>
-                                <option value="Banner Design">Banner Design</option>
-                                <option value="Illustrator Art Work">Illustrator Art Work</option>
-                            </select>
-                            <span id="serviceTypeError" class="error text-danger"></span>
-                        </div>
-                        <div class="col-12 ">
-                            <label for="file" class="form-label">File Upload (Limit - 1024MB/image, 100 files only) <span>*</span></label>
-                            <input type="file" name="files[]" class="form-control" id="file" placeholder="Choose a file" multiple>
-                            <span id="filesError" class="error text-danger"></span>
-                        </div>
-                        <div class="col-12 ">
-                            <label for="Image" class="form-label">Image File Link</label>
-                            <input type="text" name="image_file_link" class="form-control" id="Image" placeholder="Image Link" >
-                        </div>
-                        <div class="col-12 ">
-                            <label for="type" class="form-label">Message <span>*</span></label>
-                            <textarea type="text" name="message" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
-                            <span id="messageError" class="error text-danger"></span>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button type="submit" class="btn">Submit</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="upload_files">
-                        <div class="row">
-                            <div class="col-md-6 pt-5">
-                                <div class="text-center pb-3"><i class="fa-solid fa-quote-left"></i></div>
-                                <h6>WeTransfer</h6>
-                                <div class="top-body-button pt-3 text-center">
-                                    <a type="button" href="https://wetransfer.com/">File Uplod Here</a>
-                                </div>
+            <div class="col-md-6 ">
+                <div class="upload_files">
+                    <div class="row">
+                        <div class="col-md-6 pt-5">
+                            <div class="text-center pb-3"><i class="fa-solid fa-quote-left"></i></div>
+                            <h6>WeTransfer</h6>
+                            <div class="top-body-button pt-3 text-center">
+                                <a type="button" href="https://wetransfer.com/">File Uplod Here</a>
                             </div>
-                            <div class="col-md-6 pt-5">
-                                <div class="text-center pb-3"><i class="fa-brands fa-dropbox"></i></div>
-                                <h6>DropBox</h6>
-                                <div class="top-body-button pt-3 text-center">
-                                    <a type="button" href="https://www.dropbox.com/request/1GcUVWYgFRAPeqzbbDfa">File Uplod Here</a>
-                                </div>
-                            </div>
-                            <h3 class="text-center text-success pt-5 pb-3">Upload</h3>
-                            <h4>You can send any trail image or photo via WeTransfer or DropBox.</h4>
-                            <p>info@seoexpate.com</p>
                         </div>
+                        <div class="col-md-6 pt-5">
+                            <div class="text-center pb-3"><i class="fa-brands fa-dropbox"></i></div>
+                            <h6>DropBox</h6>
+                            <div class="top-body-button pt-3 text-center">
+                                <a type="button" href="https://www.dropbox.com/request/1GcUVWYgFRAPeqzbbDfa">File Uplod Here</a>
+                            </div>
+                        </div>
+                        <div class="newudcode"><h2 class="text-center text-success pt-5 pb-3">Upload</h2></div>
+                        <div class="newudcode"><p class="fs-3 fw-bold">You can send any trail image or photo via WeTransfer or DropBox.</p></div>
+
+                        <p>info@seoexpate.com</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--================================free_trail services section end here=======================-->
+    </div>
+</section>
+<!--================================free_trail services section end here=======================-->
 
-    <!--================================editor_all_services section end here=======================-->
-    <section class="WHAT_MAKES footer_btm_all_services"  style="background: unset" >
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 margintop">
-                    <h4>Photoshop Services</h4>
-                    <a href="clipping-path.php" class="d-flex pt-4">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Clipping Path Service</h6>
-                        </div>
-                    </a>
-                    <a href="jewelry-retouching.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Jewelry Retouching Service</h6>
-                        </div>
-                    </a>
-                    <a href="ecommerce-photo-edit.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>E-Commerce Photo Editing</h6>
-                        </div>
-                    </a>
-                    <a href="image-masking.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Image Masking Service</h6>
-                        </div>
-                    </a>
-                    <a href="color-correction.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Color Correction Service</h6>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 margintop">
-                    <h4>Photoshop Services</h4>
-                    <a href="real-estate-photo.php" class="d-flex pt-4">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Real Estate Photo Editing</h6>
-                        </div>
-                    </a>
-                    <a href="photo-retouching.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Photo Retouching</h6>
-                        </div>
-                    </a>
-                    <a href="background-remove.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Remove Background Image</h6>
-                        </div>
-                    </a>
-                    <a href="ghost-mannequin.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Ghost Mannequin Effect</h6>
-                        </div>
-                    </a>
-                    <a href="shadow-making.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Shadow Making Service</h6>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 margintop">
-                    <h4>Photoshop Services</h4>
-                    <a href="photo-restoration.php" class="d-flex pt-4">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Photo Restoration</h6>
-                        </div>
-                    </a>
-                    <a href="image-manipulation.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Image Manipulation Service</h6>
-                        </div>
-                    </a>
-                    <a href="wedding-photo.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Wedding Photo Editing</h6>
-                        </div>
-                    </a>
-                    <a href="raster-vector.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Raster to Vector Conversion</h6>
-                        </div>
-                    </a>
-                    <a href="background-remove.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Photo Background Removing</h6>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 margintop">
-                    <h4>Graphics Design Services</h4>
-                    <a href="t-shirt-design.php" class="d-flex pt-4">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>T-Shirt Design</h6>
-                        </div>
-                    </a>
-                    <a href="logo-design.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Logo Designs Service</h6>
-                        </div>
-                    </a>
-                    <a href="banner-design.php" class="d-flex pt-2">
-                        <div>
-                            <i class="fa-regular fa-square-check"></i>
-                        </div>
-                        <div class="what_make-txt">
-                            <h6>Banner Design</h6>
-                        </div>
-                    </a>
-                </div>
+<?php include 'includes/footer-services.php'?>
+
+<!--================================Thrive_Globally section start here=======================-->
+<section class="PAY_MENT" style="padding: 20px 0;">
+    <div class="container">
+        <div class="row">
+            <div class="PAY_IMG">
+                <img src="images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
             </div>
         </div>
-    </section>
-    <!--================================editor_all_services section end here=======================-->
+    </div>
+</section>
+<!--================================Thrive_Globally section end here=======================-->
 
-    <!--================================Thrive_Globally section start here=======================-->
-    <section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================================Thrive_Globally section end here=======================-->
+
 
 <script>
     document.getElementById("freeTrialForm").addEventListener("submit", function(event) {
