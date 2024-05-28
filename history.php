@@ -389,6 +389,7 @@ $history = $result->fetch_assoc();
 	</div>
 </section>
 <!--================================top-slider-part section end here=======================-->
+
 <!--================================top_featured section start here=======================-->
 <section class="top_featured">
 	<div class="container">

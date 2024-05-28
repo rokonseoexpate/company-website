@@ -226,7 +226,7 @@
 		</div>
 		<div class="row text-center pt-3 mt-5 footer_bottom">
 			<div class="col-md-6">
-				<p>© 2024 – SEO Expate Bangladesh Ltd. | All Rights Reserved | Serving clients since 2015 <br> Terms of Service Privacy Policy</p>
+				<p>© 2012 – SEO Expate Bangladesh Ltd. | All Rights Reserved | Serving clients since 2012 <br> Terms of Service Privacy Policy</p>
 			</div>
 			<div class="col-md-6 text-right">
 				<div class="d-flex gap-2">
