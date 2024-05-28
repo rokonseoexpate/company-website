@@ -54,7 +54,7 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+	<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">		
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-md-7" style="z-index:500; ">
@@ -94,7 +94,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">PPC Lead Generation</li>
 						</ol>

@@ -190,17 +190,17 @@ ob_start();
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
 		    		<div class="top_body_txt_part">
 						<h1>Pricing</h1>		
 						<p style="text-align:justify;">Pricing is a crucial aspect of any business and is vital to a company's success. Besides, in today's competitive market, pricing strategies are more important than anything. For this reason, SEO Expate Bangladesh LTD. will offer you various services at affordable prices. We know our customer's demands and we work on the basis of it. Furthermore, you can get multiple <a href="graphic_design.php" class="text-success">graphic design</a> services such as logo design, banner design, and t-shirt design. We can provide many photo editing services like clipping path, color correction, ghost mannequin effect, real estate photo editing, etc. We assure you that you'll get every photo editing service from us at a cheaper rate than other companies.</p>
-						<p style="text-align:justify;">In addition, our <a href="/" class="text-success">company</a> is a reliable place where you can trust and have our services without any issues. Moreover, we have top-class workers and designers who work hard to give you the best service ever. So, if you are willing to take our service, then join us and we'll fulfill your demand by giving the best service ever.</p>
+						<p style="text-align:justify;">In addition, our <a href="index.php" class="text-success">company</a> is a reliable place where you can trust and have our services without any issues. Moreover, we have top-class workers and designers who work hard to give you the best service ever. So, if you are willing to take our service, then join us and we'll fulfill your demand by giving the best service ever.</p>
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="free-trial.php">Free Trial</a>
+						<a type="button" href="free_trial.php">Free Trial</a>
 					</div>	
 				</div>			
 			</div>
