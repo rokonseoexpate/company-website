@@ -36,7 +36,7 @@
 				                  <li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
 				                  <li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
 				                  <li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping-management.php">Google Shopping Management</a></li>
+				                  <li><a class="dropdown-item" href="shopping-management.php">Google Shopping Management</a></li>
 				                  <li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
 				                  <li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
 				                </ul>
@@ -52,7 +52,8 @@
 		</div>
 	</div>
 	<!--================================photo editor sub Header section end here=======================-->
-	
+
+
 	<!--================================top-body section start here=======================-->
 	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 		<div class="container ">

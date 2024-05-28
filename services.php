@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Services";
     ob_start();
 ?>
 	<!--================================Header section end here=======================-->

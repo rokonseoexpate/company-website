@@ -21,7 +21,7 @@ $title = $branch['name'];
 			<div class="col-12" style="z-index:500;">
 				<div class="top_body_txt_part">
 					<h1 class="" style="font-size: 45px; line-height: 55px;"><?php echo $branch['name'] ?></h1>
-					<p style="margin-top: -35px; text-align: justify;">Stay connected with SEO Expate Bangladesh Ltd. </p>
+					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
 				</div>
 			</div>
 		</div>
@@ -38,9 +38,9 @@ $title = $branch['name'];
 					<a class="text-light" href="/">
 						<p>Home</p>
 					</a>
-					<p class="text-light px-3 ">»</p>
+					<p class="text-light px-3 ">/</p>
 					<p class="text-light">All Branch</p>
-					<p class="text-light px-3 ">»</p>
+					<p class="text-light px-3 ">/</p>
 					<p class="text-light"><?php echo $branch['name'] ?></p>					
 				</div>
 			</div>

@@ -244,6 +244,7 @@ ob_start();
 	<!--================================top_ready_start section end here=======================-->
 
 
+
 	<!--================================Thrive_Globally section start here=======================-->
 	<section class="PAY_MENT" style="padding: 20px 0;">
         <div class="container">

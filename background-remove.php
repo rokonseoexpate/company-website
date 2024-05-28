@@ -620,7 +620,7 @@
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
-						<div class="what-make-txt">
+						<div class="what_make-txt">
 							<h6>Jewelry Retouching Service</h6>
 						</div>
 					</a>
