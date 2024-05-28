@@ -14,12 +14,12 @@ $conn = $db->get_connection();
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
                     <ul class="navbar-nav ">
-                        <li class="nav-item"><a class="nav-link" href="training.php"> Training</a></li>
+                        <li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle" href="regular-course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -54,7 +54,7 @@ $conn = $db->get_connection();
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development phpdevelopment" style="background-image: url(images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
     <div class="container ">
         <div class="row">
             <div class="col-md-7 ecomrespp" style="z-index:500; ">
@@ -100,8 +100,8 @@ $conn = $db->get_connection();
                 <div class="top_about_us_txt" style="z-index:500;">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb breadcumb_gph">
-                            <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-                            <li class="breadcrumb-item "><a href="training.php" class="text-light">Our Training</a></li>
+                            <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                            <li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
                             <li class="breadcrumb-item active text-light" aria-current="page">Digital Marketing Training</li>
                         </ol>
                     </nav>
@@ -228,10 +228,7 @@ $conn = $db->get_connection();
 
 
 
-
-
 <?php
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>
-

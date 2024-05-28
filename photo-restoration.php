@@ -2,7 +2,6 @@
     $title = "Photo Restoration";
     ob_start();
 ?>
-
 	<!--================================photo editor sub Header section end here=======================-->
 	<div class="photo_edipth">
 		<div class="container">
@@ -167,7 +166,7 @@
 				                </div> 
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="graphic_design.php" data-bs-toggle="dropdown"> Graphic Design </a>
+				                <a class="nav-link  dropdown-toggle" href="graphic-design.php" data-bs-toggle="dropdown"> Graphic Design </a>
 				                <ul class="dropdown-menu dropdown-menu-end">
 				                  <li><a class="dropdown-item" href="t-shirt-design.php"> T-Shirt Design</a></li>
 				                  <li><a class="dropdown-item" href="logo-design.php">Logo Designs Service</a></li>
@@ -190,7 +189,7 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
@@ -217,7 +216,7 @@
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
 							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
+							<li class="breadcrumb-item "><a href="photo_editor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Photo Restoration</li>
 						</ol>
 						</nav>
@@ -300,7 +299,7 @@
             <div class="row">
                 <div class="newudcode"><h5>Photo Restoration Service in the SEO Expate BD Limited</h5></div>
                 <div class="pb-5 border-bottom border-success border-2">
-                    <p>Customers choose the Photo Restoration Service from our <a href="/" class="text-success">company</a> for its unmatched quality and customer-centric approach. Their dedicated team uses the latest technology to restore damaged or aged photographs. This service ensures every detail is preserved. What sets them apart is their ability to understand the emotional value behind each photo. Moreover, our company treats every project with the utmost care and respect. Besides, they offer personalized solutions, tailoring their services to meet individual needs and guarantee satisfaction with every restoration. However, the competitive pricing and exceptional customer service make <a href="/" class="text-success">SEO Expate</a> BD Limited popular and unique in this sector.</p>
+                    <p>Customers choose the Photo Restoration Service from our <a href="/" class="text-success">company</a> for its unmatched quality and customer-centric approach. Their dedicated team uses the latest technology to restore damaged or aged photographs. This service ensures every detail is preserved. What sets them apart is their ability to understand the emotional value behind each photo. Moreover, our company treats every project with the utmost care and respect. Besides, they offer personalized solutions, tailoring their services to meet individual needs and guarantee satisfaction with every restoration. However, the competitive pricing and exceptional customer service make <a href="/" class="text-success">SEO Expate</a> BD Limited popular and unique in this sector.</p>                   
                 </div>
             </div>
             <div class="row shadow px-5 py-3">

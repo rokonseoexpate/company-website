@@ -14,7 +14,7 @@
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
 				            <li class="nav-item dropdown has-megamenu ">
-				                <a class="nav-link dropdown-toggle" href="photo_editor.php" data-bs-toggle="dropdown"> Photo Editing Services </a>
+				                <a class="nav-link dropdown-toggle" href="photo-editor.php" data-bs-toggle="dropdown"> Photo Editing Services </a>
 				                <div class="dropdown-menu megamenu" role="menu">
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
@@ -170,16 +170,16 @@
 				                <a class="nav-link  dropdown-toggle" href="graphic-design.php" data-bs-toggle="dropdown"> Graphic Design </a>
 				                <ul class="dropdown-menu dropdown-menu-end">
 				                  <li><a class="dropdown-item" href="t-shirt-design.php"> T-Shirt Design</a></li>
-				                  <li><a class="dropdown-item" href="logo_design.php">Logo Designs Service</a></li>
-				                  <li><a class="dropdown-item" href="banner_design.php">Banner Design</a></li>
+				                  <li><a class="dropdown-item" href="logo-design.php">Logo Designs Service</a></li>
+				                  <li><a class="dropdown-item" href="banner-design.php">Banner Design</a></li>
 				                </ul>
 				            </li>
-				            <li class="nav-item"><a class="nav-link" href="photo_editor_pricing.php"> Pricing </a></li>
-				            <li class="nav-item"><a class="nav-link" href="photo_edit_portfolio.php"> Portfolio </a></li>
+				            <li class="nav-item"><a class="nav-link" href="photo-editor-pricing.php"> Pricing </a></li>
+				            <li class="nav-item"><a class="nav-link" href="photo-edit-portfolio.php"> Portfolio </a></li>
 				        </ul>
 				        <ul class="navbar-nav booknowbtn">
 						    <li class="nav-item">
-						        <a type="submit" class="nav-link btn" href="get_quote.php">Get Quote</a>
+						        <a type="submit" class="nav-link btn" href="get-quote.php">Get Quote</a>
 						    </li>
 						</ul>
 				    </div>
@@ -190,7 +190,7 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
@@ -1953,7 +1953,7 @@
 							<h6>Jewelry Retouching Service</h6>
 						</div>
 					</a>
-					<a href="ecommerce-photo_edit.php" class="d-flex pt-2">
+					<a href="ecommerce-photo-edit.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>

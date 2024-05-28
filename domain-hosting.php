@@ -21,7 +21,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-solid fa-user-group"></i></div>
+												<div><i class="fa-solid fa-user-group" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Web Hosting</h6>
 													<p>Best Hosting Packages for You</p>
@@ -32,7 +32,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-solid fa-server"></i></div>
+												<div><i class="fa-solid fa-server" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">VPS Unmanaged</h6>
 													<p>Virtual Private Server for You</p>
@@ -43,7 +43,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-solid fa-user-group"></i></div>
+												<div><i class="fa-solid fa-user-group" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Premium Hosting</h6>
 													<p>Heavy Traffic Hosting Packages</p>
@@ -54,7 +54,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-solid fa-server"></i></div>
+												<div><i class="fa-solid fa-server" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">VPS Managed</h6>
 													<p>Virtual Private Server for You</p>
@@ -65,7 +65,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-solid fa-user-group"></i></div>
+												<div><i class="fa-solid fa-user-group" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Reseller Hosting</h6>
 													<p>Start Your Hosting Business</p>
@@ -76,7 +76,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-solid fa-server"></i></div>
+												<div><i class="fa-solid fa-server" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Dedicated Server</h6>
 													<p>Dedicated Resource for You</p>
@@ -94,7 +94,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-solid fa-dollar-sign"></i></div>
+												<div><i class="fa-solid fa-dollar-sign" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Domain Price List</h6>
 													<p>See Our all Domain Prices</p>
@@ -105,7 +105,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-regular fa-credit-card"></i></div>
+												<div><i class="fa-regular fa-credit-card" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Domain Reseller Price</h6>
 													<p>See Business Domain Prices</p>
@@ -116,7 +116,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-solid fa-earth-americas"></i></div>
+												<div><i class="fa-solid fa-earth-americas" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Domain Registration</h6>
 													<p>Register Your Domains Today</p>
@@ -127,7 +127,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-brands fa-windows"></i></div>
+												<div><i class="fa-brands fa-windows" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">Reseller Registration</h6>
 													<p>Start Domain Reseller Business</p>
@@ -138,7 +138,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-solid fa-hand-holding-dollar"></i></div>
+												<div><i class="fa-solid fa-hand-holding-dollar" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">.BD Domain Registration</h6>
 													<p>Bangladeshi Local Domain</p>
@@ -149,7 +149,7 @@ ob_start();
 									<div class="col-lg-6 col-6">
 										<div class="col-megamenu">
 											<a href="#" class="d-flex">
-												<div><i class="fa-regular fa-money-bill-1"></i></div>
+												<div><i class="fa-regular fa-money-bill-1" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">.BD Domain Price</h6>
 													<p>Bangladeshi Domain Prices</p>
@@ -194,22 +194,22 @@ ob_start();
 			</div>
 		</div>
 		<div class="row domain-count">
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6">
 				<h5 class="text-light">.com <span>1199 tk</span></h5>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6">
 				<h5 class="text-light">.xyz <span>1450 tk</span></h5>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6">
 				<h5 class="text-light">.net <span> 1449 tk</span></h5>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6">
 				<h5 class="text-light">.org <span> 1449 tk</span></h5>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6">
 				<h5 class="text-light">.biz <span> 2150 tk</span></h5>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6">
 				<h6 class="text-light">* All Prices 1st Year</h6>
 			</div>
 		</div>
@@ -223,12 +223,12 @@ ob_start();
 		<div class="row">
 			<div class="domai_pricing_table_txt">
 				<h3>SEO Expate Ltd <span>WEB Hosting Packages</span></h3>
-				<p class="text-justify pt-2">We provide top-notch domain and hosting services. Indeed, our service will meet your unique needs. Therefore, by choosing us, you access a world of limitless possibilities. Also, our domain and hosting service is comprehensive. Moreover, we cater to all your website needs. Ultimately, we aim to provide a seamless online experience. Choose us today for superior domain and hosting services.</p>
+				<p class="text-justify pt-2">We provide top-notch domain and hosting services. Indeed, <a href="services.php" class="text-success">our service</a> will meet your unique needs. Therefore, by choosing us, you access a world of limitless possibilities. Also, our domain and hosting service is comprehensive. Moreover, we cater to all your website needs. Ultimately, we aim to provide a seamless online experience. Choose us today for superior domain and hosting services.</p>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				<div class="pricingTable">
 					<div class="pricing_heading">
-						<h3 class="title">Pricing Plan 1</h3>
+						<h6 class="title">Pricing Plan 1</h6>
 						<span class="value">
 							$13.76
 							<span class="month">Per Year</span>
@@ -256,7 +256,7 @@ ob_start();
 			<div class="col-md-3 col-sm-6">
 				<div class="pricingTable">
 					<div class="pricing_heading">
-						<h3 class="title">Pricing Plan 2</h3>
+						<h6 class="title">Pricing Plan 2</h6>
 						<span class="value">
 							$18.34
 							<span class="month">Per Year</span>
@@ -284,7 +284,7 @@ ob_start();
 			<div class="col-md-3 col-sm-6">
 				<div class="pricingTable">
 					<div class="pricing_heading">
-						<h3 class="title">Pricing Plan 3</h3>
+						<h6 class="title">Pricing Plan 3</h6>
 						<span class="value">
 							$22.93
 							<span class="month">Per Year</span>
@@ -312,7 +312,7 @@ ob_start();
 			<div class="col-md-3 col-sm-6">
 				<div class="pricingTable">
 					<div class="pricing_heading">
-						<h3 class="title">Pricing Plan 4</h3>
+						<h6 class="title">Pricing Plan 4</h6>
 						<span class="value">
 							$27.51
 							<span class="month">Per Year</span>
@@ -342,7 +342,7 @@ ob_start();
 			<div class="col-md-3 col-sm-6">
 				<div class="pricingTable">
 					<div class="pricing_heading">
-						<h3 class="title">Pricing Plan 5</h3>
+						<h6 class="title">Pricing Plan 5</h6>
 						<span class="value">
 							$41.27
 							<span class="month">Per Year</span>
@@ -370,7 +370,7 @@ ob_start();
 			<div class="col-md-3 col-sm-6">
 				<div class="pricingTable">
 					<div class="pricing_heading">
-						<h3 class="title">Pricing Plan 6</h3>
+						<h6 class="title">Pricing Plan 6</h6>
 						<span class="value">
 							$55.03
 							<span class="month">Per Year</span>
@@ -398,7 +398,7 @@ ob_start();
 			<div class="col-md-3 col-sm-6">
 				<div class="pricingTable">
 					<div class="pricing_heading">
-						<h3 class="title">Pricing Plan 7</h3>
+						<h6 class="title">Pricing Plan 7</h6>
 						<span class="value">
 							$64.20
 							<span class="month">Per Year</span>
@@ -426,7 +426,7 @@ ob_start();
 			<div class="col-md-3 col-sm-6">
 				<div class="pricingTable">
 					<div class="pricing_heading">
-						<h3 class="title">Pricing Plan 8</h3>
+						<h6 class="title">Pricing Plan 8</h6>
 						<span class="value">
 							$73.37
 							<span class="month">Per Year</span>
@@ -469,79 +469,79 @@ ob_start();
 <!--================================all_plan section start here=======================-->
 <section class="all_plan">
 	<div class="container">
-		<div class="row">
-			<h4>ALL OUR PLANS INCLUDE</h4>
-			<div class="col-md-2">
+		<div class="row newudcode">
+			<h6>ALL OUR PLANS INCLUDE</h6>
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-solid fa-shield-virus"></i>
+					<i class="fa-solid fa-shield-virus" alt=" seo expate" description=" seo expate"></i>
 					<p>EASY-TO-USE <br>CONTROL PANEL</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-brands fa-linux"></i>
+					<i class="fa-brands fa-linux" alt=" seo expate" description=" seo expate"></i>
 					<p>CLOUD <br>LINUX OS</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-solid fa-rocket"></i>
+					<i class="fa-solid fa-rocket" alt=" seo expate" description=" seo expate"></i>
 					<p>99.9% UPTIME <br>GUARANTEE</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-solid fa-headset"></i>
+					<i class="fa-solid fa-headset" alt=" seo expate" description=" seo expate"></i>
 					<p>24/7/365 <br> PREMIUM SUPPORT</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-brands fa-app-store-ios"></i>
+					<i class="fa-brands fa-app-store-ios" alt=" seo expate" description=" seo expate"></i>
 					<p>1-CLICK <br>INSTALL APPS</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-solid fa-database"></i>
+					<i class="fa-solid fa-database" alt=" seo expate" description=" seo expate"></i>
 					<p>UNLIMITED <br>DATABASE</p>
 				</div>
 			</div>
 		</div>
-		<div class="row pt-5">
-			<div class="col-md-2">
+		<div class="row">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-solid fa-road-lock"></i>
+					<i class="fa-solid fa-road-lock" alt=" seo expate" description=" seo expate"></i>
 					<p>SSL <br>CERTIFICATES</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-brands fa-google-wallet"></i>
+					<i class="fa-brands fa-google-wallet" alt=" seo expate" description=" seo expate"></i>
 					<p>FREE <br>SITEBUILDER</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-brands fa-nfc-symbol"></i>
+					<i class="fa-brands fa-nfc-symbol" alt=" seo expate" description=" seo expate"></i>
 					<p>TRANSFER <br>WEBSITE & DOMAIN</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-solid fa-money-bill-1"></i>
+					<i class="fa-solid fa-money-bill-1" alt=" seo expate" description=" seo expate"></i>
 					<p>30 DAYS <br>MONEY BACK</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-solid fa-shield-virus"></i>
+					<i class="fa-solid fa-shield-virus" alt=" seo expate" description=" seo expate"></i>
 					<p>EASY-TO-USE <br>CONTROL PANEL</p>
 				</div>
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 col-sm-6 pt-5">
 				<div class="all_plan_icon">
-					<i class="fa-solid fa-headset"></i>
+					<i class="fa-solid fa-headset" alt=" seo expate" description=" seo expate"></i>
 					<p>24/7/365 <br>PREMIUM SUPPORT</p>
 				</div>
 			</div>
@@ -553,24 +553,26 @@ ob_start();
 <!--================================SSD_WEB section start here=======================-->
 <section class="SSD_WEB">
 	<div class="container">
-		<div class="row">
-			<h4>SSD <span>WEB Hosting </span>Bangladesh</h4>
-			<p>SEO Expate Bangladesh Ltd is a hosting provider gaining popularity for its exceptional performance and top-notch services. Additionally, in today's digital age, having a reliable and fast web hosting service is crucial for any business. However, this service is different from the rest due to its utilization of solid state drives (SSDs). However, unlike traditional hard disk drives, SSDs offer lightning-fast read and write speeds, significantly improving website loading times. Therefore, this translates to a seamless user experience, reduced bounce rates, and improved search engine rankings. With this service, businesses can rest assured that cutting-edge technology will power their websites.</p>
-			<p>Furthermore, our service places a strong emphasis on customer support. Our dedicated support team is available 24/7 to assist with any technical issues or inquiries. Furthermore, from initial setup to ongoing maintenance, our team is ready to provide prompt and reliable support to ensure a seamless hosting experience. In conclusion, we offer a reliable and high-performance hosting solution for businesses and individuals in Bangladesh. To conclude, it is undoubtedly a top choice for anyone looking to establish a strong online presence.</p>
+		<div class="row newudcode">
+			<h5 class="pb-3">SSD <span class="text-success">WEB Hosting </span>Bangladesh</h5>
+			<p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd is a hosting provider gaining popularity for its exceptional performance and top-notch services. Additionally, in today's digital age, having a reliable and fast web hosting service is crucial for any business. However, this service is different from the rest due to its utilization of solid state drives (SSDs). However, unlike traditional hard disk drives, SSDs offer lightning-fast read and write speeds, significantly improving website loading times. Therefore, this translates to a seamless user experience, reduced bounce rates, and improved search engine rankings. With this service, businesses can rest assured that cutting-edge technology will power their websites.</p>
+			<p>Furthermore, <a href="services.php" class="text-success">our service</a> places a strong emphasis on customer support. Our dedicated support team is available 24/7 to assist with any technical issues or inquiries. Furthermore, from initial setup to ongoing maintenance, our team is ready to provide prompt and reliable support to ensure a seamless hosting experience. In conclusion, we offer a reliable and high-performance hosting solution for businesses and individuals in Bangladesh. To conclude, it is undoubtedly a top choice for anyone looking to establish a strong online presence.</p>
 		</div>
 	</div>
 </section>
 <!--================================SSD_WEB section end here=======================-->
 
 <!--================================WHAT_MAKES section start here=======================-->
-<section class="WHAT_MAKES">
+<section class="WHAT_MAKES ">
 	<div class="container">
-		<div class="row">
-			<h3 class="text-center pb-5">What Makes Our Hosting Services the Best</h3>
-			<div class="col-md-4">
+		<div class="row ">
+			<div class="newudcoded">
+				<h2 class="text-center pb-5 fs-1 fw-bold">What Makes Our Hosting Services the Best</h2>
+			</div>
+			<div class="col-md-4 pt-2">
 				<div class="d-flex">
 					<div class="what_make-icon">
-						<i class="fa-solid fa-circle-dollar-to-slot"></i>
+						<i class="fa-solid fa-circle-dollar-to-slot" alt=" seo expate" description=" seo expate"></i>
 					</div>
 					<div class="what_make-txt">
 						<h6>Guaranteed Refund Policy</h6>
@@ -578,10 +580,10 @@ ob_start();
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-2">
 				<div class="d-flex">
 					<div class="what_make-icon">
-						<i class="fa-solid fa-backward-fast"></i>
+						<i class="fa-solid fa-backward-fast" alt=" seo expate" description=" seo expate"></i>
 					</div>
 					<div class="what_make-txt">
 						<h6>Backups recover Service</h6>
@@ -589,10 +591,10 @@ ob_start();
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-2">
 				<div class="d-flex">
 					<div class="what_make-icon">
-						<i class="fa-regular fa-clock"></i>
+						<i class="fa-regular fa-clock" alt=" seo expate" description=" seo expate"></i>
 					</div>
 					<div class="what_make-txt">
 						<h6>24×7 Customer Support</h6>
@@ -601,11 +603,11 @@ ob_start();
 				</div>
 			</div>
 		</div>
-		<div class="row pt-5">
-			<div class="col-md-4">
+		<div class="row ">
+			<div class="col-md-4 pt-2">
 				<div class="d-flex">
 					<div class="what_make-icon">
-						<i class="fa-solid fa-anchor-lock"></i>
+						<i class="fa-solid fa-anchor-lock" alt=" seo expate" description=" seo expate"></i>
 					</div>
 					<div class="what_make-txt">
 						<h6>Optimized Control Panel</h6>
@@ -613,10 +615,10 @@ ob_start();
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-2">
 				<div class="d-flex">
 					<div class="what_make-icon">
-						<i class="fa-brands fa-playstation"></i>
+						<i class="fa-brands fa-playstation" alt=" seo expate" description=" seo expate"></i>
 					</div>
 					<div class="what_make-txt">
 						<h6>Better Server Up time</h6>
@@ -624,10 +626,10 @@ ob_start();
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-2">
 				<div class="d-flex">
 					<div class="what_make-icon">
-						<i class="fa-solid fa-layer-group"></i>
+						<i class="fa-solid fa-layer-group" alt=" seo expate" description=" seo expate"></i>
 					</div>
 					<div class="what_make-txt">
 						<h6>Server Level Protection</h6>
@@ -636,11 +638,11 @@ ob_start();
 				</div>
 			</div>
 		</div>
-		<div class="row pt-5">
-			<div class="col-md-4">
+		<div class="row">
+			<div class="col-md-4 pt-2">
 				<div class="d-flex">
 					<div class="what_make-icon">
-						<i class="fa-brands fa-microsoft"></i>
+						<i class="fa-brands fa-microsoft" alt=" seo expate" description=" seo expate"></i>
 					</div>
 					<div class="what_make-txt">
 						<h6>Optimized Software</h6>
@@ -648,10 +650,10 @@ ob_start();
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-2">
 				<div class="d-flex">
 					<div class="what_make-icon">
-						<i class="fa-solid fa-headset"></i>
+						<i class="fa-solid fa-headset" alt=" seo expate" description=" seo expate"></i>
 					</div>
 					<div class="what_make-txt">
 						<h6>Friendly Customer support</h6>
@@ -659,10 +661,10 @@ ob_start();
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 pt-2">
 				<div class="d-flex">
 					<div class="what_make-icon">
-						<i class="fa-solid fa-atom"></i>
+						<i class="fa-solid fa-atom" alt=" seo expate" description=" seo expate"></i>
 					</div>
 					<div class="what_make-txt">
 						<h6>Auto Updates</h6>
@@ -756,8 +758,8 @@ ob_start();
 				<h3>SERVICES WE OFFER BEST</h3>
 			</div>
 			<div class="explore_tabs">
-				<div class="container py-5">
-					<div class="row mb-5">
+				<div class="container py-5 mpresp">
+					<div class="row mb-5 mpresp">
 						<div class="p-5 bg-white rounded shadow mb-5">
 							<!-- Rounded tabs -->
 							<ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
@@ -781,14 +783,14 @@ ob_start();
 									<div class="row pt-2">
 										<div class="col-md-4">
 											<div class="explor_tab_img">
-												<img src="frontend/images/site-img5-300x188.png" alt="image">
+												<img src="frontend/images/site-img5-300x188.png" alt=" seo expate" description=" seo expate">
 											</div>
 										</div>
 										<div class="col-md-8">
 											<h4>SSD WEB Hosting Bangladesh</h4>
-											<p class="text-muted mb-0 pt-2 pb-2">IT industry is shifting from its age-old storage device technology of Hard Disk Drive (HDD) to Solid State Drive (SSD), it is a hardware advancement in IT industry. Now the question is,</p>
+											<p class="text-muted mb-0 pt-2 pb-2 justifytext">IT industry is shifting from its age-old storage device technology of Hard Disk Drive (HDD) to Solid State Drive (SSD), it is a hardware advancement in IT industry. Now the question is,</p>
 											<h4>What is SSD?</h4>
-											<p class="text-muted mb-0 pt-2">SSD is a storage device technology that uses integrated circuits (IC) assembles to store data for computer. It has no moving components to read or write data like the older FDD, HDD and other optical character recognition(OCR) devices. SSD’s are much more energy efficient and space saving. But the technology till date is expensive compare to HDD’s.</p>
+											<p class="text-muted mb-0 pt-2 justifytext">SSD is a storage device technology that uses integrated circuits (IC) assembles to store data for computer. It has no moving components to read or write data like the older FDD, HDD and other optical character recognition(OCR) devices. SSD’s are much more energy efficient and space saving. But the technology till date is expensive compare to HDD’s.</p>
 										</div>
 										<div class="top-body-button  text-center pt-3">
 											<a type="button" href="#"> Read More</a>
@@ -799,13 +801,13 @@ ob_start();
 									<div class="row pt-2">
 										<div class="col-md-4">
 											<div class="explor_tab_img">
-												<img src="frontend/images/site-img71-300x188.png" alt="image">
+												<img src="frontend/images/site-img71-300x188.png" alt=" seo expate" description=" seo expate">
 											</div>
 										</div>
 										<div class="col-md-8">
 											<h4>Domain Registration in Bangladesh</h4>
 											<h6>What is domain?</h6>
-											<p class="text-muted mb-0 pt-2">Whenever it comes about a need for website or any online presence the very word“domain” glances immediately.Precisely and simply domain is the name by which a website is addressed. It is similar in its meaning to branding.Technically, a domain is an administrative identity, authority and control in internet by which it could be addressed, introduced and accessed. The journey of this domain name starts with its registration into Domain Name System (DNS).</p>
+											<p class="text-muted mb-0 pt-2 justifytext">Whenever it comes about a need for website or any online presence the very word“domain” glances immediately.Precisely and simply domain is the name by which a website is addressed. It is similar in its meaning to branding.Technically, a domain is an administrative identity, authority and control in internet by which it could be addressed, introduced and accessed. The journey of this domain name starts with its registration into Domain Name System (DNS).</p>
 										</div>
 										<div class="top-body-button  text-center pt-3">
 											<a type="button" href="#"> Read More</a>
@@ -816,12 +818,12 @@ ob_start();
 									<div class="row pt-2">
 										<div class="col-md-4">
 											<div class="explor_tab_img">
-												<img src="frontend/images/site-img64.png" alt="image">
+												<img src="frontend/images/site-img64.png" alt=" seo expate" description=" seo expate">
 											</div>
 										</div>
 										<div class="col-md-8">
 											<h4>Website Design:</h4>
-											<p class="text-muted mb-0 pt-2">Seo Expate Bangladesh Ltd. provides personal, e-commerce, blogging and business website design service in Bangladesh with worldwide. We provide dynamic and responsive web design service. You can get the world class customizable web design services at low price by us. We have a great team that helps web coding solutions, website design and development at cheap rate from Bangladesh. We always work closely with every client to create a website completely. Seo Expate Bangladesh Ltd. is a professional web design company in Bangladesh that providing web design and development solutions to their clients.</p>
+											<p class="text-muted mb-0 pt-2 justifytext">Seo Expate Bangladesh Ltd. provides personal, e-commerce, blogging and business website design service in Bangladesh with worldwide. We provide dynamic and responsive web design service. You can get the world class customizable web design services at low price by us. We have a great team that helps web coding solutions, website design and development at cheap rate from Bangladesh. We always work closely with every client to create a website completely. Seo Expate Bangladesh Ltd. is a professional web design company in Bangladesh that providing web design and development solutions to their clients.</p>
 										</div>
 										<div class="top-body-button  text-center pt-3">
 											<a type="button" href="#"> Learn More</a>
@@ -832,12 +834,12 @@ ob_start();
 									<div class="row pt-2">
 										<div class="col-md-4">
 											<div class="explor_tab_img">
-												<img src="frontend/images/site-img8.png" alt="image">
+												<img src="frontend/images/site-img8.png" alt=" seo expate" description=" seo expate">
 											</div>
 										</div>
 										<div class="col-md-8">
 											<h4>eCommerce web design and unlimited web hosting.</h4>
-											<p class="text-muted mb-0 pt-2">We provide support for eCommerce business. We design eCommerce website. We help to promote your eCommerce business online. You can get Facebook marketing help form us. You can get google advertising service form us. All kind of eCommerce service you can get from us.</p>
+											<p class="text-muted mb-0 pt-2 justifytext">We provide support for eCommerce business. We design eCommerce website. We help to promote your eCommerce business online. You can get Facebook marketing help form us. You can get google advertising service form us. All kind of eCommerce service you can get from us.</p>
 										</div>
 										<div class="top-body-button  text-center pt-3">
 											<a type="button" href="#"> Learn More</a>
@@ -859,37 +861,37 @@ ob_start();
 		<div class="row">
 			<div class="col-md-6">
 				<div class="payment_method_img">
-					<img src="frontend/images/site-img17-e1439871857101-1.png" alt="image">
+					<img src="frontend/images/site-img17-e1439871857101-1.png" alt=" seo expate" description=" seo expate">
 				</div>
 			</div>
 			<div class="col-md-6">
-				<h4 class="pb-5">OUR PAYMENT METHOD. YOU CAN PAY US EASILY !</h4>
+				<h4 class="">OUR PAYMENT METHOD. YOU CAN PAY US EASILY !</h4>
 				<div class="row paymmentimages">
-					<div class="col-md-3">
-						<img src="frontend/images/bkash5.jpg" alt="image">
+					<div class="col-md-3 col-sm-6 pt-4">
+						<img src="frontend/images/bkash5.jpg" alt=" seo expate" description=" seo expate">
 					</div>
-					<div class="col-md-3">
-						<img src="frontend/images/rocket.png" alt="image">
+					<div class="col-md-3 col-sm-6 pt-4">
+						<img src="frontend/images/rocket.png" alt=" seo expate" description=" seo expate">
 					</div>
-					<div class="col-md-3">
-						<img src="frontend/images/nexuspay-1.png" alt="image">
+					<div class="col-md-3 col-sm-6 pt-4">
+						<img src="frontend/images/nexuspay-1.png" alt=" seo expate" description=" seo expate">
 					</div>
-					<div class="col-md-3">
-						<img src="frontend/images/nagad.png" alt="image">
+					<div class="col-md-3 col-sm-6 pt-4">
+						<img src="frontend/images/nagad.png" alt=" seo expate" description=" seo expate">
 					</div>
 				</div>
-				<div class="row paymmentimages pt-4">
-					<div class="col-md-3">
-						<img src="frontend/images/citybank.png" alt="image">
+				<div class="row paymmentimages ">
+					<div class="col-md-3 col-sm-6 pt-4">
+						<img src="frontend/images/citybank.png" alt=" seo expate" description=" seo expate">
 					</div>
-					<div class="col-md-3">
-						<img src="frontend/images/brac.jpg" alt="image">
+					<div class="col-md-3 col-sm-6 pt-4">
+						<img src="frontend/images/brac.jpg" alt=" seo expate" description=" seo expate">
 					</div>
-					<div class="col-md-3">
-						<img src="frontend/images/dbbl.png" alt="image">
+					<div class="col-md-3 col-sm-6 pt-4">
+						<img src="frontend/images/dbbl.png" alt=" seo expate" description=" seo expate">
 					</div>
-					<div class="col-md-3">
-						<img src="frontend/images/NBL_logo.png" alt="image">
+					<div class="col-md-3 col-sm-6 pt-4">
+						<img src="frontend/images/NBL_logo.png" alt=" seo expate" description=" seo expate">
 					</div>
 				</div>
 			</div>

@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Training";
 ob_start();
 ?>
 
@@ -69,12 +69,13 @@ ob_start();
 	<div class="container">
 		<div class="row">
 			<div class="col-12" style="z-index:500;">
-				<div class="breadcumb_gph d-flex">
-					<a class="text-light" href="/" class="text-success">
-						<p>Home</p>
-					</a>
-					<p class="text-light px-3 ">»</p>
-					<p class="text-light">Our Training</p>
+				<div class="top_about_us_txt" style="z-index:500;">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb breadcumb_gph">
+							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item active text-light" aria-current="page">Our Training</li>
+						</ol>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -89,18 +90,18 @@ ob_start();
 			<div class="col-12 pb-5">
 				<h4 class="text-center">SEO Expate Bangladesh Ltd. has been the foremost information technology service provider since 2013.</h4>
 				<div class="border-bottom border-3 border-success">
-					<p>The training programs of SEO Expate Bangladesh Ltd. a wide range of skills that are integral and necessary parts of everyday business. In our quest to address every organizational development need, we offer a gamut of training programs, which ranges from Executive Coaching and Leadership Training to basic Communication Skills. </p>
+					<p>The training programs of <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. a wide range of skills that are integral and necessary parts of everyday business. In our quest to address every organizational development need, we offer a gamut of training programs, which ranges from Executive Coaching and Leadership Training to basic Communication Skills. </p>
 				</div>
 			</div>
 			<div class="col-md-6">
 				<p>1. Practical & Project Based IT Training </p>
 				<p>2. Soft Skill & Leadership Training </p>
 				<p>3. Customized Services & On-Site Training </p>
-				<p>4. Skill/Career Development Services </p>
+				<p>4. Skill/Career <a href="software-development-course.php" class="text-success">Development Services</a> </p>
 			</div>
 			<div class="col-md-6">
 				<div class="clip_img">
-					<img src="frontend/images/Our-Training-Centers.png" alt="image" class="img-thumbnail">
+					<img src="frontend/images/Our-Training-Centers.png" alt="v " description="training programs" class="img-thumbnail">
 				</div>
 			</div>
 		</div>
@@ -109,28 +110,30 @@ ob_start();
 <!--================================editor_texts section end here=======================-->
 
 <!--================================Our_Branches section start here=======================-->
-<section class="Our_Branches type_of">
+<section class="Our_Branches type_of branchresp">
 	<div class="container">
 		<div class="row">
-			<div class="Our_Branches_txt pb-5">
-				<h3>Our Course / Training Services</h3>
+			<div class="Our_Branches_txt ">
+				<div class="Our_Departments bg-0 p-0" style="background: unset;">
+					<h6 class="text-start ">Our Course / Training Services</h6>
+				</div>
 				<hr>
 			</div>
-			<div class="col-md-4">
-				<a href="blog-post.php">
+			<div class="col-md-4 pt-5">
+				<a href="regular-course.php">
 					<div class="card">
-						<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body">
-							<h5 class="card-title">Website</h5>
-							<p class="card-text">Web Design & Development</p>
+							<h5 class="card-title">Regular Course</h5>
+							<p class="card-text">All Course List</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="academic-post.php">
+			<div class="col-md-4 pt-5">
+				<a href="graphics-course.php">
 					<div class="card hover-zoom">
-						<img src="frontend/images/corporate-website2.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/corporate-website2.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body">
 							<h5 class="card-title">Graphic Design</h5>
 							<p class="card-text">Photoshop, Illustrator, etc</p>
@@ -138,10 +141,10 @@ ob_start();
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="copy-writing.php">
+			<div class="col-md-4 pt-5">
+				<a href="digital-marketing-course.php">
 					<div class="card">
-						<img src="frontend/images/Bloging-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/Bloging-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body">
 							<h5 class="card-title">Digital Marketing</h5>
 							<p class="card-text">Digital Marketing Training</p>
@@ -150,22 +153,22 @@ ob_start();
 				</a>
 			</div>
 		</div>
-		<div class="row pt-5">
-			<div class="col-md-4">
-				<a href="static-web.php">
+		<div class="row">
+			<div class="col-md-4 pt-5">
+				<a href="website-course.php">
 					<div class="card">
-						<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body">
-							<h5 class="card-title">Microsoft Office</h5>
-							<p class="card-text">Microsoft Office Specialist</p>
+							<h5 class="card-title">Website</h5>
+							<p class="card-text">Web Design & Development</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="product-description.php">
+			<div class="col-md-4 pt-5">
+				<a href="software-development-course.php">
 					<div class="card">
-						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body">
 							<h5 class="card-title">Software</h5>
 							<p class="card-text">Software Development</p>
@@ -173,10 +176,10 @@ ob_start();
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="press-release.php">
+			<div class="col-md-4 pt-5">
+				<a href="server-administration-course.php">
 					<div class="card hover-zoom">
-						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body">
 							<h5 class="card-title">Networking</h5>
 							<p class="card-text">Network Administration</p>
@@ -185,11 +188,11 @@ ob_start();
 				</a>
 			</div>
 		</div>
-		<div class="row pt-5">
-			<div class="col-md-4">
-				<a href="static-web.php">
+		<div class="row ">
+			<div class="col-md-4 pt-5">
+				<a href="app-development-course.php">
 					<div class="card">
-						<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body">
 							<h5 class="card-title">App Development</h5>
 							<p class="card-text">Android & IOS Development</p>
@@ -197,21 +200,21 @@ ob_start();
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="product-description.php">
+			<div class="col-md-4 pt-5">
+				<a href="microsoft-office-course.php">
 					<div class="card">
-						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body">
-							<h5 class="card-title">Freelancing</h5>
-							<p class="card-text">Facebook, Web, Google</p>
+							<h5 class="card-title">Microsoft Office</h5>
+							<p class="card-text">Microsoft Office Specialist</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="press-release.php">
+			<div class="col-md-4 pt-5">
+				<a href="it-security-course.php">
 					<div class="card hover-zoom">
-						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body">
 							<h5 class="card-title">IT Service & Business</h5>
 							<p class="card-text">Business Management</p>
@@ -220,11 +223,11 @@ ob_start();
 				</a>
 			</div>
 		</div>
-		<div class="row pt-5">
-			<div class="col-md-4">
-				<a href="static-web.php">
+		<div class="row">
+			<div class="col-md-4 pt-5">
+				<a href="php-course.php">
 					<div class="card">
-						<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body pb-5">
 							<h5 class="card-title">PHP</h5>
 							<p class="card-text">Website Development With PHP & MySQL</p>
@@ -232,10 +235,10 @@ ob_start();
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="product-description.php">
+			<div class="col-md-4 pt-5">
+				<a href="laravel-course.php">
 					<div class="card">
-						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body pb-4">
 							<h5 class="card-title">Laravel</h5>
 							<p class="card-text">Website Development Using Laravel Framework (PHP)</p>
@@ -243,10 +246,10 @@ ob_start();
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="press-release.php">
+			<div class="col-md-4 pt-5">
+				<a href="wordpress-course.php">
 					<div class="card hover-zoom">
-						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
+						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
 						<div class="card-body pb-5">
 							<h5 class="card-title">Wordpress</h5>
 							<p class="card-text">Web Design & Development With Wordpress</p>
@@ -255,34 +258,34 @@ ob_start();
 				</a>
 			</div>
 		</div>
-		<div class="row pt-5">
-			<div class="col-md-4">
-				<a href="static-web.php">
+		<div class="row ">
+			<div class="col-md-4 pt-5">
+				<a href="aspnet-course.php">
 					<div class="card">
-						<img src="frontend/images/education-website.jpg" class="card-img-top" alt="Image">
-						<div class="card-body">
+						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
+						<div class="card-body pb-5">
 							<h5 class="card-title">ASP.NET</h5>
 							<p class="card-text">Web Application Development Using ASP.NET</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="product-description.php">
+			<div class="col-md-4 pt-5">
+				<a href="python-course.php">
 					<div class="card">
-						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Image">
-						<div class="card-body pb-4">
+						<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Training Services " description="Training Services">
+						<div class="card-body pb-5">
 							<h5 class="card-title">Python</h5>
 							<p class="card-text">Web Application Development Using Python</p>
 						</div>
 					</div>
 				</a>
 			</div>
-			<div class="col-md-4">
-				<a href="press-release.php">
+			<div class="col-md-4 pt-5">
+				<a href="website-course.php">
 					<div class="card hover-zoom">
-						<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Image">
-						<div class="card-body pb-5">
+						<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Training Services " description="Training Services">
+						<div class="card-body pb-4">
 							<h5 class="card-title">Website Design</h5>
 							<p class="card-text">Responsive Website Design With HTML, CSS, JS, Bootstrap.</p>
 						</div>
@@ -293,6 +296,206 @@ ob_start();
 	</div>
 </section>
 <!--================================Our_Branches section end here=======================-->
+
+<!--================================Core_Team section start here=======================-->
+<!-- <section class="Core_Team">
+		<div class="container">
+			<div class="row">
+				<div class="Core_Team_txt pb-5">
+					<h3>Our Course  <span>/ Training Services</span></h3>
+				</div>
+				<div class="Core_Team_members">
+					<div class="container mt-2">
+					  	<div class="row">
+					    	<div class="col-md-3 col-sm-6">
+					    		<a href="website-course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/ecommerce-website2.jpg" alt="Md-Mizanur-Rahman">
+					        		<div class="card-body">
+					        			<h5 class="card-title ">Website</h5>
+					        			<p class="card-text">Web Design & Development</p>
+					        		</div> 
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					    		<a href="graphics-course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/corporate-website2.jpg" alt="Mst-Razia-Sultana">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Graphic Design</h5>
+					        			<p class="card-text">Photoshop, Illustrator, etc</p>
+					        		</div> 
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					    		<a href="digital-marketing-course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Digital Marketing</h5>
+					        			<p class="card-text">Digital Marketing Training</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="microsoft_office_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Microsoft Office</h5>
+					        			<p class="card-text">Microsoft Office Specialist</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>    
+					  	</div>
+					  	<div class="row">
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="software_development_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Software</h5>
+					        			<p class="card-text">Software Development</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="server_administration_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Networking</h5>
+					        			<p class="card-text">Network Administration</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="app_development_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">App Development</h5>
+					        			<p class="card-text">Android & IOS Development</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="it_security_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">IT Service & Business</h5>
+					        			<p class="card-text">Business Management</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>    
+					  	</div>
+					  	<div class="row">
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="php_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">PHP</h5>
+					        			<p class="card-text">Website Development With PHP & MySQL</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="laravel_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Laravel</h5>
+					        			<p class="card-text">Website Development Using Laravel Framework (PHP)</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="wordpress_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Wordpress</h5>
+					        			<p class="card-text">Web Design & Development With Wordpress</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="aspnet_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">ASP.NET</h5>
+					        			<p class="card-text">Web Application Development Using ASP.NET</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>    
+					  	</div>
+					  	<div class="row">
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="python_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Python</h5>
+					        			<p class="card-text">Web Application Development Using Python</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="laravel_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Website Design</h5>
+					        			<p class="card-text">Responsive Website Design With HTML, CSS, JS, Bootstrap.</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="wordpress_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">Wordpress</h5>
+					        			<p class="card-text">Web Design & Development With Wordpress</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>
+					    	<div class="col-md-3 col-sm-6">
+					      		<a href="aspnet_course.php">
+					      		<div class="card card-block">
+					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
+					        		<div class="card-body">
+					        			<h5 class="card-title">ASP.NET</h5>
+					        			<p class="card-text">Web Application Development Using ASP.NET</p> 
+					        		</div>
+					  			</div>
+					  			</a>
+					    	</div>    
+					  	</div>  
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+<!--================================Core_Team section end here=======================-->
 
 <!--================================top_ready_start section start here=======================-->
 <section class="top_ready_start">
@@ -309,7 +512,7 @@ ob_start();
 			</div>
 			<div class="col-md-6">
 				<div class="top_ready_start_img text-left">
-					<img src="frontend/images/95991_prev_ui.png" alt="image">
+					<img src="frontend/images/95991_prev_ui.png" alt="We can build your story " description="We can build your story">
 				</div>
 			</div>
 		</div>
@@ -317,6 +520,18 @@ ob_start();
 </section>
 <!--================================top_ready_start section end here=======================-->
 
+
+<!--================================Thrive_Globally section start here=======================-->
+<section class="PAY_MENT" style="padding: 20px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="PAY_IMG">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description="payment" width="100%">
+			</div>
+		</div>
+	</div>
+</section>
+<!--================================Thrive_Globally section end here=======================-->
 
 <!--===========================footer part start===================================-->
 <?php
