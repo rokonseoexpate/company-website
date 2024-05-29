@@ -18,6 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $designation = $_POST['designation'];
     $branch_id = $_POST['branch'];
+    $priority = $_POST['priority'];
+    $dep_priority = $_POST['dep_priority'];
     $ein_no = $_POST['ein_no'];
     $team_no = $_POST['team_no'];
     $department_id = $_POST['department_id'];
@@ -65,13 +67,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_name = mysqli_real_escape_string($conn, $name);
     $sanitized_designation = mysqli_real_escape_string($conn, $designation);
     $sanitized_branch_id = mysqli_real_escape_string($conn, $branch_id);
+    $priority = mysqli_real_escape_string($conn, $priority);
     $sanitized_ein_no = mysqli_real_escape_string($conn, $ein_no);
     $sanitized_team_no = mysqli_real_escape_string($conn, $team_no);
     $sanitized_department_id = mysqli_real_escape_string($conn, $department_id);
 
     if (empty($errorMessage)) {
-        $insert_query = "INSERT INTO employees (name, designation, branch_id, department_id, phone, email, ein_no, team_no, alt_tag, alt_description, image) 
-                        VALUES ('$sanitized_name', '$sanitized_designation', '$sanitized_branch_id', '$sanitized_department_id', '$phone', '$email', '$sanitized_ein_no',
+        $insert_query = "INSERT INTO employees (name, designation, branch_id, priority, department_id, dep_priority, phone, email, ein_no, team_no, alt_tag, alt_description, image) 
+                        VALUES ('$sanitized_name', '$sanitized_designation', '$sanitized_branch_id','$priority', '$sanitized_department_id','$dep_priority', '$phone', '$email', '$sanitized_ein_no',
                                 '$sanitized_team_no', '$alt_tag', '$alt_description', '$image_path')";
         if (mysqli_query($conn, $insert_query)) {
             $successMessage = "Employee created successfully!";
@@ -112,6 +115,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <?php endwhile; ?>
                     </select>
                 </div>
+
+                <div class="form-group col-md-6">
+                    <label for="priority">Priority <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="priority" name="priority" placeholder="Priority" required>
+                </div>
+
+
                 <div class="form-group col-md-6">
                     <label for="department_id"> Department <span class="text-danger">*</span></label>
                     <select id="department_id" class="form-control" name="department_id" required>
@@ -121,7 +131,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <?php endwhile; ?>
                     </select>
                 </div>
-                
+
+                <div class="form-group col-md-6">
+                    <label for="dep_priority">Department Priority <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="dep_priority" name="dep_priority" placeholder="Department Priority" required>
+                </div>
+
                 <div class="form-group col-md-6">
                     <label for="ein">EIN No <span class="text-danger">*</span></label>
                     <input type="number" class="form-control" id="ein_no" name="ein_no" placeholder="Ein No" required>

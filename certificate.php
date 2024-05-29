@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Certificates";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -25,59 +25,226 @@ $conn = $db->get_connection();
 		</div>
 	</div>
 </section>
-
-
 <!--================================top-body section end here=======================-->
 
 <!--================================Core_Values section start here=======================-->
 <section class="Core_Values technology_company">
 	<div class="container">
-		<?php
-
-		$qry = "SELECT * FROM certificates order by id desc";
-		if ($result = $conn->query($qry)) {
-			$number = 1;
-			while ($row = $result->fetch_assoc()) {
-				$imagePath = $row['image'];
-				$imageName = basename($imagePath);
-				$newImagePath = 'uploads/' . $imageName;
-		?>
-
-				<div class="row pb-2">
-					<?php if ($number++ % 2 == 0) { ?>
-						<div class="col-md-6">
-							<div class="Core_Values_txt">
-								<h4>Lorem ipsum dolor sit amet.</h4>
-								<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
-								<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
-							</div>
-							<!-- <div class="top-body-button pt-4">
-						<a type="button" href="contact.php">Read More Details</a>
-					</div> -->
-						</div>
-						<div class="col-md-6">
-							<div class="Core_Values_img pb-5 pt-3 text-center">
-							<img src="<?php echo $newImagePath ?>" alt="image">
-							</div>
-						</div>
-					<?php } else { ?>
-						<div class="col-md-6">
-							<div class="Core_Values_img pb-5 pt-3 text-center">
-								<img src="<?php echo $newImagePath ?>" alt="image">
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="Core_Values_txt">
-								<h4><?php echo $row['title']?></h4>
-								<p><?php echo $row['description']?></p>
-							</div>
-						</div>
-						
-					<?php } ?>
+		<div class="row pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
 				</div>
-				<hr>
-		<?php }
-		} ?>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3 ">
+					<img src="frontend/images/Trade License SEOEBDLTD 23-24.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/Trade License Dhaka.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+		</div>
+		<hr>
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/TIN Certificate SEO Expate BD Ltd.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/SEO Expate BD Ltd. BACCO Membership Certificate - 2023.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+		</div>
+		<hr>
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/SEO Exparte BD Ltd-Incorporation.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/Mushak-2.3 BIN Certificate On 28.DEC.2022.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+		</div>
+		<hr>
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/ISO_27001_2022_SEO Expate Bangladesh Ltd.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/ISO_9001_2015_SEO Expate Bangladesh Ltd.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+		</div>
+		<hr>
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/I kor Moukhup- SEO Expate BD Ltd.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/BASIS Certificate SEO Expate Bangladesh Ltd 2024.jpg" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+		</div>
+		<hr>
+
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3 text-center">
+					<img src="frontend/images/freelancer certificate.png" alt=" seo expate" description=" seo expate">
+				</div>
+			</div>
+		</div>
+		<hr>
+
+		
+		<div class="row pt-4 pb-2">
+			<div class="col-md-6">
+				<div class="Core_Values_img pb-5 pt-3">
+					<img src="frontend/images/BFDS- certificate.jpg" alt="image">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="Core_Values_txt newudcode">
+					<h5>Lorem ipsum dolor sit amet.</h5>
+					<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Aliquam quo, unde inventore magnam ab delectus tempora quibusdam a deserunt officiis veniam doloribus nulla sit perferendis, quam, asperiores iste. Quam illum reprehenderit, iure fuga commodi cumque illo dolorum ipsa, voluptate doloribus, atque corporis ex ipsum corrupti facere enim quaerat nam fugiat vel odit delectus quidem dicta quo explicabo? </p>
+					<p>Animi tempore nobis quas corrupti ab ipsum, molestiae corporis, doloribus, nemo modi minima facilis ipsam iusto veniam cum. Quo, labore at doloremque vel beatae. At, perferendis porro soluta qui voluptates tempore, cumque. Quis provident assumenda, error delectus a quas repellat earum, alias omnis animi beatae adipisci, corporis! Placeat, itaque similique.</p>
+				</div>
+				<!-- <div class="top-body-button pt-4">
+						<a type="button" href="contact.html">Read More Details</a>
+					</div> -->
+			</div>
+		</div>
 	</div>
 </section>
 <!--================================Core_Values section end here=======================-->
@@ -97,7 +264,7 @@ $conn = $db->get_connection();
 			</div>
 			<div class="col-md-6">
 				<div class="top_ready_start_img text-left">
-					<img src="frontend/images/95991_prev_ui.png" alt="image">
+					<img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate">
 				</div>
 			</div>
 		</div>
@@ -110,7 +277,7 @@ $conn = $db->get_connection();
 	<div class="container">
 		<div class="row">
 			<div class="PAY_IMG">
-				<img src="images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
 			</div>
 		</div>
 	</div>

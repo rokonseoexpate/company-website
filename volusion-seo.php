@@ -37,7 +37,7 @@
 				                  <li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
 				                  <li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
 				                  <li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping-management.php">Google Shopping Management</a></li>
+				                  <li><a class="dropdown-item" href="shopping-management.php">Google Shopping Management</a></li>
 				                  <li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
 				                  <li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
 				                </ul>
@@ -55,14 +55,14 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">		
+	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-md-7 ecomresp" style="z-index:500;">
 		    		<div class="top_body_txt_part">
 						<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">Volusion SEO & Volusion  </h1>	
 						<h2 style="margin-top: -15px;" class="fs-1">Website Search Marketing</h2>	
-						<p style="text-align:justify;">At OuterBox we're an eCommerce-focused agency with Volusion <a href="index.php" class="text-success">SEO Expates</a> on staff. Over the last 10 years, we’ve worked on many Volusion SEO campaigns and know eCommerce search engine marketing inside and out. We’ll develop a custom plan to take your traffic and online sales to the next level.</p>						
+						<p style="text-align:justify;">At OuterBox we're an eCommerce-focused agency with Volusion <a href="/" class="text-success">SEO Expates</a> on staff. Over the last 10 years, we’ve worked on many Volusion SEO campaigns and know eCommerce search engine marketing inside and out. We’ll develop a custom plan to take your traffic and online sales to the next level.</p>						
 					</div>
 					<div class="row">
 						<div class="col-md-7 pt-2">
@@ -89,7 +89,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 						    <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Volusion SEO</li>
 						  </ol>

@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Notice Search";
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -21,13 +21,14 @@ $qry .= " ORDER BY id DESC";
 $result = mysqli_query($conn, $qry); // Executing the query
 
 ?>
+
 <!--================================cliping_service section start here=======================-->
 <section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0; margin-top: 60px;">
     <div class="container">
         <div class="row">
             <div class="col-12" style="z-index:500;">
                 <div class="breadcumb_gph d-flex">
-                    <a class="text-light" href="index.php" class="text-success"><p>Home</p></a>
+                    <a class="text-light" href="/" class="text-success"><p>Home</p></a>
                     <p class="text-light px-3 ">»</p>
                     <p class="text-light">Notice</p>
                 </div>

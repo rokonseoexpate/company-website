@@ -58,7 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mysqli_query($conn, $insert_query)) {
         // Data inserted successfully
         $successMessage = "Form submitted successfully!";
-
     } else {
         // Error occurred while inserting data
         echo "Error: " . mysqli_error($conn);
@@ -71,18 +70,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-
-<?php include 'includes/photo-editing-nav.php' ?>
-
+<?php include 'includes/photo-editing-nav.php'?>
 
 <!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
     <div class="container ">
         <div class="row">
             <div class="col-12" style="z-index:500;">
                 <div class="top_body_txt_part">
                     <h1>Free Trial</h1>
-                    <p style="text-align:justify;">SEO Expate photo editor provided you all type of image editing service.  If you like to edit your photo then you can see our service. SEO Expate photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service,  Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin,  Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic,  Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
+                    <p style="text-align:justify;">SEO Expate photo editor provided you all type of image editing service. If you like to edit your photo then you can see our service. SEO Expate photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service, Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin, Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic, Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
                     <p style="text-align:justify;">In the conclusion SEO Expate photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then SEO Expate photo editor company will help you to provide you one suitable and experienced editor person.</p>
                 </div>
                 <div class="top-body-button pt-3">
@@ -108,7 +105,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </ol>
                     </nav>
                 </div>
-                <div class=" pt-2 text-light"><h4 class="fs-1 fw-bold text-center">Free Trial</h4></div>
+                <div class=" pt-2 text-light">
+                    <h4 class="fs-1 fw-bold text-center">Free Trial</h4>
+                </div>
             </div>
         </div>
     </div>
@@ -120,11 +119,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="row">
             <h4>SEO Expate Photo Editor Provide Creative Photo Editing Service</h4>
-            <p>Complete Form &  Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
+            <p>Complete Form & Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
             <div class="col-md-6">
                 <form class="row g-3">
                     <div class="col-12">
-                        <label for="fullname" class="form-label">First Name & Last Name  <span>*</span></label>
+                        <label for="fullname" class="form-label">First Name & Last Name <span>*</span></label>
                         <input type="text" class="form-control" id="fullname" placeholder="Your Full Name" required>
                     </div>
                     <div class="col-12">
@@ -132,7 +131,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
                     </div>
                     <div class="col-12">
-                        <label for="inputPassword4" class="form-label">Phone / Whatsapp Number  <span>*</span></label>
+                        <label for="inputPassword4" class="form-label">Phone / Whatsapp Number <span>*</span></label>
                         <input type="text" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
                     </div>
                     <div class="col-12">
@@ -204,8 +203,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <a type="button" href="https://www.dropbox.com/request/1GcUVWYgFRAPeqzbbDfa">File Uplod Here</a>
                             </div>
                         </div>
-                        <div class="newudcode"><h2 class="text-center text-success pt-5 pb-3">Upload</h2></div>
-                        <div class="newudcode"><p class="fs-3 fw-bold">You can send any trail image or photo via WeTransfer or DropBox.</p></div>
+                        <div class="newudcode">
+                            <h2 class="text-center text-success pt-5 pb-3">Upload</h2>
+                        </div>
+                        <div class="newudcode">
+                            <p class="fs-3 fw-bold">You can send any trail image or photo via WeTransfer or DropBox.</p>
+                        </div>
 
                         <p>info@seoexpate.com</p>
                     </div>
@@ -223,14 +226,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="row">
             <div class="PAY_IMG">
-                <img src="images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+                <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
             </div>
         </div>
     </div>
 </section>
 <!--================================Thrive_Globally section end here=======================-->
-
-
 
 <script>
     document.getElementById("freeTrialForm").addEventListener("submit", function(event) {
@@ -300,4 +301,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>
-

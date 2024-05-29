@@ -1,55 +1,81 @@
 <?php
-    $title = "On-page Seo";
-    ob_start();
+$title = "On-page Seo";
+ob_start();
 ?>
 
-	<!--================================photo editor sub Header section end here=======================-->
-	<div class="photo_edipth">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-dark ">
-				<div class="container-fluid ">
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-				        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-				    </button>
-				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-				        <ul class="navbar-nav ">
-				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="seo_service.html" data-bs-toggle="dropdown">SEO Services</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="ecommerce_seo.html"> eCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="amazon_seo.html">Amazon SEO</a></li>
-				                  <li><a class="dropdown-item" href="b2b_seo.html">B2B SEO</a></li>
-				                  <li><a class="dropdown-item" href="shopify_seo.html">Shopify SEO</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_seo.html">WordPress SEO</a></li>
-				                  <li><a class="dropdown-item" href="woocommerce_seo.html">WooCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="lead_seo.html">Lead Generation SEO</a></li>
-				                  <li><a class="dropdown-item" href="nopcommerce_seo.html">NopCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="magento_seo.html">Magento SEO</a></li>
-				                  <li><a class="dropdown-item" href="volusion_seo.html">Volusion SEO</a></li>
-				                  <li><a class="dropdown-item" href="bigcommerce_seo.html">BigCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="consulting_seo.html">SEO Consulting</a></li>
-				                </ul>
-				            </li>
-				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="ppc_paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="amazon_ppc.html"> Amazon PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="ecommerce_ppc.html">eCommerce PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="google_ads.html">Google Ads Consulting</a></li>
-				                  <li><a class="dropdown-item" href="management_ads.html">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping_management.html">Google Shopping Management</a></li>
-				                  <li><a class="dropdown-item" href="ppc_consulting.html">PPC Consulting</a></li>
-				                  <li><a class="dropdown-item" href="ppc_lead.html">Lead Gen PPC Management</a></li>
-				                </ul>
-				            </li>
-				            <li class="nav-item"><a class="nav-link" href="onpage_seo.html"> On-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="offpage_seo.html"> Off-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="technical_seo.html"> Technical SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="package_price_seo.html"> SEO Packages & Pricing </a></li>
-				        </ul>
-				    </div>
-				</div> 
-			</nav>      
+<!--================================photo editor sub Header section end here=======================-->
+<div class="photo_edipth">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark ">
+			<div class="container-fluid ">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
+					<ul class="navbar-nav ">
+						<li class="nav-item dropdown">
+							<a class="nav-link  dropdown-toggle" href="seo-service.php" data-bs-toggle="dropdown">SEO Services</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="ecommerce-seo.php"> eCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="amazon-seo.php">Amazon SEO</a></li>
+								<li><a class="dropdown-item" href="b2b-seo.php">B2B SEO</a></li>
+								<li><a class="dropdown-item" href="shopify-seo.php">Shopify SEO</a></li>
+								<li><a class="dropdown-item" href="wordpress-seo.php">WordPress SEO</a></li>
+								<li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
+								<li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="magento-seo.php">Magento SEO</a></li>
+								<li><a class="dropdown-item" href="volusion-seo.php">Volusion SEO</a></li>
+								<li><a class="dropdown-item" href="bigcommerce-seo.php">BigCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="consulting-seo.php">SEO Consulting</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link  dropdown-toggle" href="ppc-paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="amazon-ppc.php"> Amazon PPC Management</a></li>
+								<li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
+								<li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
+								<li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
+								<li><a class="dropdown-item" href="shopping-management.php">Google Shopping Management</a></li>
+								<li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
+								<li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="package-price-seo.php"> SEO Packages & Pricing </a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+<!--================================photo editor sub Header section end here=======================-->
+
+<!--================================top-body section start here=======================-->
+<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+	<div class="container ">
+		<div class="row">
+			<div class="col-md-7 ecomresp" style="z-index:500;">
+				<div class="top_body_txt_part">
+					<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">On Page SEO Service</h1>
+					<h2 class="fs-3" style="margin-top: -15px; line-height: 35px;">On-Page SEO Service involves optimizing web page content for search engines and users.</h2>
+					<p style="text-align:justify;"> The <a href="/" class="text-success">SEO Expate</a> BD Ltd is the one of the most popular On-page <a href="seo-service.php" class="text-success">SEO Services</a> provider worldwide. We start by researching relevant keywords, ensuring they're strategically placed in titles, headers, and throughout the content. We also optimize meta descriptions and URLs to be concise and keyword-rich. Ensuring images have descriptive alt tags and improving website speed are crucial steps. Additionally, we focus on creating high-quality, engaging content that addresses user intent. We employ internal linking to enhance site navigation and distribute page authority. </p>
+				</div>
+				<div class="row">
+					<div class="col-md-7 pt-2">
+						<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Talk with our On Page SEO experts </a></div>
+					</div>
+					<div class="col-md-2 ecomrespons">
+						<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="On Page SEO Service" description=" On Page SEO Service" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 m-auto ecomrespp" style="z-index:500;">
+				<img src="frontend/images/On-Page-Optimization-for-Getting-High-Visibility-1.jpg" alt="On Page SEO Service" description=" On Page SEO Service" class="img-thumbnail">
+			</div>
 		</div>
 	</div>
 	<!--================================photo editor sub Header section end here=======================-->
@@ -62,11 +88,11 @@
 		    		<div class="top_body_txt_part">
 						<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">On Page SEO Service</h1>
 						<h2 class="fs-3" style="margin-top: -15px; line-height: 35px;">On-Page SEO Service involves optimizing web page content for search engines and users.</h2>		
-						<p style="text-align:justify;"> The <a href="index.html" class="text-success">SEO Expate</a> BD Ltd is the one of the most popular On-page <a href="seo_service.html" class="text-success">SEO Services</a> provider worldwide. We start by researching relevant keywords, ensuring they're strategically placed in titles, headers, and throughout the content. We also optimize meta descriptions and URLs to be concise and keyword-rich. Ensuring images have descriptive alt tags and improving website speed are crucial steps. Additionally, we focus on creating high-quality, engaging content that addresses user intent. We employ internal linking to enhance site navigation and distribute page authority. </p>					
+						<p style="text-align:justify;"> The <a href="/" class="text-success">SEO Expate</a> BD Ltd is the one of the most popular On-page <a href="seo-service.php" class="text-success">SEO Services</a> provider worldwide. We start by researching relevant keywords, ensuring they're strategically placed in titles, headers, and throughout the content. We also optimize meta descriptions and URLs to be concise and keyword-rich. Ensuring images have descriptive alt tags and improving website speed are crucial steps. Additionally, we focus on creating high-quality, engaging content that addresses user intent. We employ internal linking to enhance site navigation and distribute page authority. </p>					
 					</div>
 					<div class="row">
 						<div class="col-md-7 pt-2">
-							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.html" style="color: #F4B400;" class="fs-5 fw-bold ">Talk with our On Page SEO experts </a></div>
+							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Talk with our On Page SEO experts </a></div>
 						</div>
 						<div class="col-md-2 ecomrespons">
 							<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="On Page SEO Service" description=" On Page SEO Service" class="img-fluid" >
@@ -89,8 +115,8 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="seo_service.html" class="text-light">SEO</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">On Page SEO Service</li>
 						</ol>
 						</nav>
@@ -113,7 +139,7 @@
 	                </div>
                 </div>
                 <div class="col-md-6">
-                	<p>After That, Embed your primary keywords seamlessly within the first few lines of your content to signal relevance. Prioritize the creation of unique, engaging content that addresses your audience's needs and questions. Then, optimize your images by reducing file size and adding descriptive alt text, enhancing page speed and accessibility. Incorporate internal links to guide visitors through your site, boosting engagement and <a href="seo_service.html" class="text-success">SEO </a> value.</p>
+                	<p>After That, Embed your primary keywords seamlessly within the first few lines of your content to signal relevance. Prioritize the creation of unique, engaging content that addresses your audience's needs and questions. Then, optimize your images by reducing file size and adding descriptive alt text, enhancing page speed and accessibility. Incorporate internal links to guide visitors through your site, boosting engagement and <a href="seo-service.php" class="text-success">SEO </a> value.</p>
                 </div>
                 <div class="col-md-6">
                 	<div class="clip_img">
@@ -126,7 +152,7 @@
 					</div>
                 </div>
                 <div class="col-md-6 pt-5">
-                	<p>Therefore, ensure your website is mobile-friendly, catering to the huge number of users on handheld devices. Focus on fast loading times to keep your audience happy and engaged.Lastly, utilize structured data to help search engines understand and index your content more effectively. This checklist aims to refine your website's <a href="seo_service.html" class="text-success">SEO </a>, driving better rankings, and attracting more organic traffic.</p>
+                	<p>Therefore, ensure your website is mobile-friendly, catering to the huge number of users on handheld devices. Focus on fast loading times to keep your audience happy and engaged.Lastly, utilize structured data to help search engines understand and index your content more effectively. This checklist aims to refine your website's <a href="seo-service.php" class="text-success">SEO </a>, driving better rankings, and attracting more organic traffic.</p>
                 </div>
             </div>
         </div>
@@ -147,7 +173,7 @@
 					</div>
 				</div>
 				<div class="col-12">
-					<p>The images on your site need to be optimized with descriptive alt tags, reducing load times. Thus, it makes your site accessible to all users.Additionally, it is necessary to have mobile-friendly <a href="web_development.html" class="text-success">website</a>. More people use mobile devices to browse the internet than ever before. However, you can not overlook your site-speed; a fast-loading site improves user experience and is favorable for search engines. Implementing structured data markup can also enhance your site's visibility in search results. By adhering to these on-page SEO basics, you're optimizing for search engines. Furthermore, you're creating a better, more engaging experience for your visitors.</p>
+					<p>The images on your site need to be optimized with descriptive alt tags, reducing load times. Thus, it makes your site accessible to all users.Additionally, it is necessary to have mobile-friendly <a href="web_development.php" class="text-success">website</a>. More people use mobile devices to browse the internet than ever before. However, you can not overlook your site-speed; a fast-loading site improves user experience and is favorable for search engines. Implementing structured data markup can also enhance your site's visibility in search results. By adhering to these on-page SEO basics, you're optimizing for search engines. Furthermore, you're creating a better, more engaging experience for your visitors.</p>
 				</div>
 			</div>
 		</div>
@@ -474,7 +500,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">
@@ -498,7 +524,7 @@
         </div>
     </section>
 	<!--================================Thrive_Globally section end here=======================-->
-<?php 
+<?php
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>

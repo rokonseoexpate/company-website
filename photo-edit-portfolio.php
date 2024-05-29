@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "Portfolio";
     ob_start();
 ?>
 
@@ -14,7 +14,7 @@
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
 				            <li class="nav-item dropdown has-megamenu ">
-				                <a class="nav-link dropdown-toggle" href="photo_editor.php" data-bs-toggle="dropdown"> Photo Editing Services </a>
+				                <a class="nav-link dropdown-toggle" href="photo-editor.php" data-bs-toggle="dropdown"> Photo Editing Services </a>
 				                <div class="dropdown-menu megamenu" role="menu">
 				                    <div class="row g-3">
 				                        <div class="col-md-3 col-6">
@@ -170,16 +170,16 @@
 				                <a class="nav-link  dropdown-toggle" href="graphic-design.php" data-bs-toggle="dropdown"> Graphic Design </a>
 				                <ul class="dropdown-menu dropdown-menu-end">
 				                  <li><a class="dropdown-item" href="t-shirt-design.php"> T-Shirt Design</a></li>
-				                  <li><a class="dropdown-item" href="logo_design.php">Logo Designs Service</a></li>
-				                  <li><a class="dropdown-item" href="banner_design.php">Banner Design</a></li>
+				                  <li><a class="dropdown-item" href="logo-design.php">Logo Designs Service</a></li>
+				                  <li><a class="dropdown-item" href="banner-design.php">Banner Design</a></li>
 				                </ul>
 				            </li>
-				            <li class="nav-item"><a class="nav-link" href="photo_editor_pricing.php"> Pricing </a></li>
-				            <li class="nav-item"><a class="nav-link" href="photo_edit_portfolio.php"> Portfolio </a></li>
+				            <li class="nav-item"><a class="nav-link" href="photo-editor-pricing.php"> Pricing </a></li>
+				            <li class="nav-item"><a class="nav-link" href="photo-edit-portfolio.php"> Portfolio </a></li>
 				        </ul>
 				        <ul class="navbar-nav booknowbtn">
 						    <li class="nav-item">
-						        <a type="submit" class="nav-link btn" href="get_quote.php">Get Quote</a>
+						        <a type="submit" class="nav-link btn" href="get-quote.php">Get Quote</a>
 						    </li>
 						</ul>
 				    </div>
@@ -196,12 +196,12 @@
 		    	<div class="col-12" style="z-index:500;">
 		    		<div class="top_body_txt_part">
 						<h1>About Portfolio</h1>		
-						<p style="text-align:justify;"><a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD. is a trustworthy and reliable company worldwide. Besides, we have a lot of skillful, qualified and experienced workers. That's why you will get the best service from us without any doubt. We can provide you with all types of photo editing services at a minimal cost. Some of our photo editing services are raster to vector conversion, jewelry retouching, and shadow-making photo retouching.</p>
+						<p style="text-align:justify;"><a href="/" class="text-success">SEO Expate</a> Bangladesh LTD. is a trustworthy and reliable company worldwide. Besides, we have a lot of skillful, qualified and experienced workers. That's why you will get the best service from us without any doubt. We can provide you with all types of photo editing services at a minimal cost. Some of our photo editing services are raster to vector conversion, jewelry retouching, and shadow-making photo retouching.</p>
 						<p style="text-align:justify;">Moreover, you will get other photo editing services from us, too. We also provide other services such as graphic design, web development, content writing, digital marketing, software and mobile app development, SEO, etc. In addition, you can get domain hosting and outsourcing services from us as well. </p>
 						<p style="text-align:justify;">In conclusion, you can get our dynamic services at reasonable prices, which can be very beneficial for you. We have been providing these services for a long time and are the best in this sector. So, we recommend you use our service, and we will help you stand out in a competitive job market.</p>
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="free_trial.php">Free Trial</a>
+						<a type="button" href="free-trial.php">Free Trial</a>
 					</div>	
 				</div>			
 			</div>
@@ -1953,7 +1953,7 @@
 							<h6>Jewelry Retouching Service</h6>
 						</div>
 					</a>
-					<a href="ecommerce-photo_edit.php" class="d-flex pt-2">
+					<a href="ecommerce-photo-edit.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>

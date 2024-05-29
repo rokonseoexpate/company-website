@@ -18,10 +18,10 @@ $title = $branch['name'];
 <section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">
 	<div class="container ">
 		<div class="row">
-			<div class="col-12" style="z-index:500; ">
+			<div class="col-12" style="z-index:500;">
 				<div class="top_body_txt_part">
 					<h1 class="" style="font-size: 45px; line-height: 55px;"><?php echo $branch['name'] ?></h1>
-					<p style="margin-top: -35px; text-align: justify;">Stay connected with SEO Expate Bangladesh Ltd. </p>
+					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
 				</div>
 			</div>
 		</div>
@@ -35,12 +35,12 @@ $title = $branch['name'];
 		<div class="row">
 			<div class="col-12" style="z-index:500;">
 				<div class="breadcumb_gph d-flex">
-					<a class="text-light" href="index.php">
+					<a class="text-light" href="/">
 						<p>Home</p>
 					</a>
-					<p class="text-light px-3 ">»</p>
+					<p class="text-light px-3 ">/</p>
 					<p class="text-light">All Branch</p>
-					<p class="text-light px-3 ">»</p>
+					<p class="text-light px-3 ">/</p>
 					<p class="text-light"><?php echo $branch['name'] ?></p>					
 				</div>
 			</div>
@@ -61,7 +61,7 @@ $title = $branch['name'];
 			</div>
 			<div class="col-md-4">
 				<div class="branch-img">
-					<img src="frontend/images/branch1.png" alt="" class="img-thumbnail">
+					<img src="<?php echo 'pages/' . basename($branch['image']); ?>" alt="<?php echo $branch['name'] ?>" class="img-thumbnail">
 				</div>
 			</div>
 			<div class="col-md-4">
@@ -85,7 +85,7 @@ $title = $branch['name'];
 				<div class="container mt-2">
 					<div class="row">
 						<?php
-						$qry = "SELECT * FROM employees WHERE branch_id = " . $branch['id'] . " ORDER BY id DESC";
+						$qry = "SELECT * FROM employees WHERE branch_id = " . $branch['id'] . " ORDER BY priority ASC";
 						$result = mysqli_query($conn, $qry);
 
 						if ($result) {
@@ -128,12 +128,12 @@ $title = $branch['name'];
 					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
 				</div>
 				<div class="top-body-button pt-5">
-					<a type="button" href="contact.html">Get In Touch</a>
+					<a type="button" href="contact.php">Get In Touch</a>
 				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="top_ready_start_img text-left">
-					<img src="frontend/images/95991_prev_ui.png" alt="image">
+					<img src="frontend/images/95991_prev_ui.png" alt="SEO Expate Bangladesh LTD">
 				</div>
 			</div>
 		</div>
@@ -147,7 +147,7 @@ $title = $branch['name'];
 	<div class="container">
 		<div class="row">
 			<div class="PAY_IMG">
-				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" width="100%">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="SEO Expate Bangladesh LTD" width="100%">
 			</div>
 		</div>
 	</div>

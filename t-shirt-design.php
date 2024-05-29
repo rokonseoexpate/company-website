@@ -93,7 +93,7 @@ $conn = $db->get_connection();
 									</div>
 									<div class="col-md-3 col-6">
 										<div class="col-megamenu pb-2">
-											<a href="ecommerce-photo_edit.php" class="d-flex">
+											<a href="ecommerce-photo-edit.php" class="d-flex">
 												<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
 												<div>
 													<h6 class="title">E-Commerce Photo Editing</h6>
@@ -218,9 +218,9 @@ $conn = $db->get_connection();
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-dark">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-dark">Photo editor</a></li>
-							<li class="breadcrumb-item active text-dark" aria-current="page">T-Shirt Design</li>
+							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
+							<li class="breadcrumb-item active text-light" aria-current="page">T-Shirt Design</li>
 						</ol>
 					</nav>
 				</div>
@@ -228,10 +228,9 @@ $conn = $db->get_connection();
 					<h6>T-Shirt Design Service</h6>
 				</div>
 				<p class="pt-3">T-Shirt Design Service specializes in designing and producing custom t-shirts. The companies that deliver this service must have these criteria. Besides, we can offer you many options to help you create a design that is unique to your business needs as we provide this service. Again, you can choose the fabric and color of your t-shirt to design the graphic or message that will print on it. So, our T-Shirt Design Service will give you complete control over the look and feel of your custom t-shirts.</p>
-
 				<p>In fact, our T-shirt design service can be the best service for your company. It is one of the most beautiful processes to represent and describe occasional figures. Furthermore, males and females both can use it. Again, T-shirt design services make high-quality customs with their own design. This is why these design services are very demandable all around the country. We have professional designers and unique designs customized for customers. Lastly, we can provide the best service at a great value to satisfy the clients.</p>
 			</div>
-			<div class="col-md-6 m-auto">
+			<div class="col-md-6" style="margin: auto;">
 				<div class="clip_img">
 					<img src="frontend/images/baby-t-shirt-01-1024x614.jpg" alt="T-Shirt Design Service " description="T-Shirt Design Service">
 				</div>

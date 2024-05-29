@@ -64,7 +64,9 @@ $result = mysqli_query($conn, $query);
                     <th>Name</th>
                     <th>Designation</th>
                     <th>Branch</th>
+                    <th>Branch Priority</th>
                     <th>Department</th>
+                    <th>Department Priority</th>
                     <th>EIN No</th>
                     <th>Team No</th>
                     <th>Image</th>
@@ -81,7 +83,9 @@ $result = mysqli_query($conn, $query);
                         <td><?php echo $row['name']; ?></td>
                         <td><?php echo $row['designation']; ?></td>
                         <td><?php echo $row['branch_name']; ?></td>
+                        <td><?php echo $row['priority']; ?></td>
                         <td><?php echo $row['department_name']; ?></td>
+                        <td><?php echo $row['dep_priority']; ?></td>
                         <td><?php echo $row['ein_no']; ?></td>
                         <td><?php echo $row['team_no']; ?></td>
                         <td width="200px">

@@ -5,7 +5,7 @@
 
 <!--================================top-body section start here=======================-->
 <section class="top-body"
-    style="background-image: url(images/Advanced-technology.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
+    style="background-image: url(frontend/images/Advanced-technology.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
     <div class="container ">
         <div class="row">
             <div class="col-md-7" style="z-index:500;">

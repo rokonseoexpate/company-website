@@ -9,7 +9,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/index.php</loc>
+    <loc>http://company-website.test//</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -129,7 +129,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/press_enquiry.php</loc>
+    <loc>http://company-website.test/press-enquiry.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -315,7 +315,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/index.html</loc>
+    <loc>http://company-website.test//</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -459,7 +459,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/contact.html</loc>
+    <loc>http://company-website.test/contact.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -1689,7 +1689,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/domain_hosting.html</loc>
+    <loc>http://company-website.test/domain-hosting.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -2109,7 +2109,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/shoping-management.php</loc>
+    <loc>http://company-website.test/shopping-management.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>

@@ -36,7 +36,7 @@
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                                 <li class="breadcrumb-item "><a href="content-writing.php" class="text-light">Content Writing</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">Website Content Writing</li>
                             </ol>
@@ -53,10 +53,10 @@
         <div class="container shadow px-5 py-5 border-top border-5 border-success">
             <div class="row ">
                 <div class="col-12 ">
-                    <p>Contents are an essential part of a website. But it is tough to write your content as it takes a lot of time and effort. To keep your <a href="index.php" class="text-success">website</a> relevant, you have to keep updating your content. Technology is changing very fast, and it is becoming tough for businesses to cope up with the changes. It is tough to maintain your core business and write content for your website at the same time. Again, manage an in-house content creator team is very expensive.</p>
+                    <p>Contents are an essential part of a website. But it is tough to write your content as it takes a lot of time and effort. To keep your <a href="/" class="text-success">website</a> relevant, you have to keep updating your content. Technology is changing very fast, and it is becoming tough for businesses to cope up with the changes. It is tough to maintain your core business and write content for your website at the same time. Again, manage an in-house content creator team is very expensive.</p>
                 </div>
                 <div class="col-12">
-                    <p>This is where <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. fits in. We are a professional content creator agency. We have a lot of creative writers who are best in the industry they work with. We have access to all the latest technology that is needed for creating engaging content. One f the reason we are best is because of our enhanced customer care. We assist our clients until they are happy with our content. So, if you are looking for excellent and compelling content, Webtech is your only answer.</p>
+                    <p>This is where <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. fits in. We are a professional content creator agency. We have a lot of creative writers who are best in the industry they work with. We have access to all the latest technology that is needed for creating engaging content. One f the reason we are best is because of our enhanced customer care. We assist our clients until they are happy with our content. So, if you are looking for excellent and compelling content, Webtech is your only answer.</p>
                 </div>
             </div>
         </div>

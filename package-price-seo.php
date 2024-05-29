@@ -1,54 +1,89 @@
 <?php
-    $title = "Package Price Seo";
-    ob_start();
+$title = "Package Price Seo";
+ob_start();
 ?>
-	<!--================================photo editor sub Header section end here=======================-->
-	<div class="photo_edipth">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-dark ">
-				<div class="container-fluid ">
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-				        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-				    </button>
-				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-				        <ul class="navbar-nav ">
-				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="seo_service.html" data-bs-toggle="dropdown">SEO Services</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="ecommerce_seo.html"> eCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="amazon_seo.html">Amazon SEO</a></li>
-				                  <li><a class="dropdown-item" href="b2b_seo.html">B2B SEO</a></li>
-				                  <li><a class="dropdown-item" href="shopify_seo.html">Shopify SEO</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_seo.html">WordPress SEO</a></li>
-				                  <li><a class="dropdown-item" href="woocommerce_seo.html">WooCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="lead_seo.html">Lead Generation SEO</a></li>
-				                  <li><a class="dropdown-item" href="nopcommerce_seo.html">NopCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="magento_seo.html">Magento SEO</a></li>
-				                  <li><a class="dropdown-item" href="volusion_seo.html">Volusion SEO</a></li>
-				                  <li><a class="dropdown-item" href="bigcommerce_seo.html">BigCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="consulting_seo.html">SEO Consulting</a></li>
-				                </ul>
-				            </li>
-				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="ppc_paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="amazon_ppc.html"> Amazon PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="ecommerce_ppc.html">eCommerce PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="google_ads.html">Google Ads Consulting</a></li>
-				                  <li><a class="dropdown-item" href="management_ads.html">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping_management.html">Google Shopping Management</a></li>
-				                  <li><a class="dropdown-item" href="ppc_consulting.html">PPC Consulting</a></li>
-				                  <li><a class="dropdown-item" href="ppc_lead.html">Lead Gen PPC Management</a></li>
-				                </ul>
-				            </li>
-				            <li class="nav-item"><a class="nav-link" href="onpage_seo.html"> On-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="offpage_seo.html"> Off-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="technical_seo.html"> Technical SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="package_price_seo.html"> SEO Packages & Pricing </a></li>
-				        </ul>
-				    </div>
-				</div> 
-			</nav>      
+<!--================================photo editor sub Header section end here=======================-->
+<div class="photo_edipth">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-dark ">
+			<div class="container-fluid ">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+				</button>
+				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
+					<ul class="navbar-nav ">
+						<li class="nav-item dropdown">
+							<a class="nav-link  dropdown-toggle" href="seo-service.php" data-bs-toggle="dropdown">SEO Services</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="ecommerce-seo.php"> eCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="amazon-seo.php">Amazon SEO</a></li>
+								<li><a class="dropdown-item" href="b2b-seo.php">B2B SEO</a></li>
+								<li><a class="dropdown-item" href="shopify-seo.php">Shopify SEO</a></li>
+								<li><a class="dropdown-item" href="wordpress-seo.php">WordPress SEO</a></li>
+								<li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
+								<li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="magento-seo.php">Magento SEO</a></li>
+								<li><a class="dropdown-item" href="volusion-seo.php">Volusion SEO</a></li>
+								<li><a class="dropdown-item" href="bigcommerce-seo.php">BigCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="consulting-seo.php">SEO Consulting</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link  dropdown-toggle" href="ppc-paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="amazon-ppc.php"> Amazon PPC Management</a></li>
+								<li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
+								<li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
+								<li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
+								<li><a class="dropdown-item" href="shopping-management.php">Google Shopping Management</a></li>
+								<li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
+								<li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="package-price-seo.php"> SEO Packages & Pricing </a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+<!--================================photo editor sub Header section end here=======================-->
+
+<!--================================top-body section start here=======================-->
+<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+	<div class="container ">
+		<div class="row">
+			<div class="col-md-7 ecomresp" style="z-index:500;">
+				<div class="top_body_txt_part">
+					<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">SEO Packages: </h1>
+					<h2 class="fs-1" style=" margin-top: -15px;">Drive Organic Search Traffic & Online Sales</h2>
+					<p style="text-align:justify;">Looking to partner with an outcome-oriented SEO team? At <a href="/" class="text-success">SEO Expate</a>, we've been delivering verified SEO packages and search engine optimization campaigns since 2012. Additionally, we specialize in achieving landing page rankings, boosting organic traffic, and enhancing conversions. </p>
+
+					<div class="app_list">
+						<p class="text-light p-0 m-0"><span><i class="fa-solid fa-check-double" alt="SEO Packages" description=" SEO Packages"></i></span>In-house SEO experts</p>
+						<p class="text-light p-0 m-0"><span><i class="fa-solid fa-check-double" alt="SEO Packages" description=" SEO Packages"></i></span>Regular weekly meetings and thorough monthly summaries</p>
+						<p class="text-light p-0 m-0"><span><i class="fa-solid fa-check-double" alt="SEO Packages" description=" SEO Packages"></i></span>E-commerce Strategies for SEO aimed at increasing sales and capturing leads</p>
+					</div>
+				</div>
+				<!-- <div class="top-body-button pt-3">
+						<a type="button" href="contact.php">Talk with our SEO package experts</a>
+					</div> -->
+				<div class="row">
+					<div class="col-md-6 pt-2">
+						<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Talk with our SEO package experts</a></div>
+					</div>
+					<div class="col-md-2 ecomrespons">
+						<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="SEO Packages" description=" SEO Packages" class="img-fluid">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 m-auto ecomrespp" style="z-index:500;">
+				<img src="frontend/images/1660144511932.jpg" alt="SEO Packages" description=" SEO Packages" class="img-thumbnail">
+			</div>
 		</div>
 	</div>
 	<!--================================photo editor sub Header section end here=======================-->
@@ -61,7 +96,7 @@
 		    		<div class="top_body_txt_part">
 						<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">SEO Packages: </h1>
 						<h2 class="fs-1" style=" margin-top: -15px;">Drive Organic Search Traffic & Online Sales</h2>			
-						<p style="text-align:justify;">Looking to partner with an outcome-oriented SEO team? At <a href="index.html" class="text-success">SEO Expate</a>, we've been delivering verified SEO packages and search engine optimization campaigns since 2012. Additionally, we specialize in achieving landing page rankings, boosting organic traffic, and enhancing conversions. </p>
+						<p style="text-align:justify;">Looking to partner with an outcome-oriented SEO team? At <a href="/" class="text-success">SEO Expate</a>, we've been delivering verified SEO packages and search engine optimization campaigns since 2012. Additionally, we specialize in achieving landing page rankings, boosting organic traffic, and enhancing conversions. </p>
 						
 						<div class="app_list">
 							<p class="text-light p-0 m-0"><span><i class="fa-solid fa-check-double" alt="SEO Packages" description=" SEO Packages"></i></span>In-house SEO experts</p>
@@ -70,11 +105,11 @@
 						</div>					
 					</div>
 					<!-- <div class="top-body-button pt-3">
-						<a type="button" href="contact.html">Talk with our SEO package experts</a>
+						<a type="button" href="contact.php">Talk with our SEO package experts</a>
 					</div> -->
 					<div class="row">
 						<div class="col-md-6 pt-2">
-							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.html" style="color: #F4B400;" class="fs-5 fw-bold ">Talk with our SEO package experts</a></div>
+							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Talk with our SEO package experts</a></div>
 						</div>
 						<div class="col-md-2 ecomrespons">
 							<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="SEO Packages" description=" SEO Packages" class="img-fluid" >
@@ -97,8 +132,8 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.html" class="text-dark ">Home</a></li>
-							<li class="breadcrumb-item "><a href="seo_service.html" class="text-dark">» SEO</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-dark ">Home</a></li>
+							<li class="breadcrumb-item "><a href="seo-service.php" class="text-dark">» SEO</a></li>
 							<li class="breadcrumb-item active text-dark" aria-current="page">» SEO Packages</li>
 						</ol>
 						</nav>
@@ -156,8 +191,8 @@
             	<div class="col-12 pb-5">
                 	<div class="newudcode pb-3"><h5 class="">Customized SEO bundles crafted to secure top positions on Google's first page</h5></div>
 	                <div class="border-bottom border-3 border-success">
-	                    <p class="" style="text-align: justify;"><a href="index.html" class="text-success">SEO Expate</a> Ltd stands at the forefront of the industry, offering SEO packages that drive outcomes for your business. We have an experienced SEO team to bring you organic leads that convert into quality sales and revenue growth. Through our proven methodologies, you'll witness your website skyrocket its ranking. Also, attracting a surge of organic traffic and boosting overall visibility. Indeed, every business is unique; our SEO packages meticulously fulfil your specific requirements. We create your SEO strategy each month based on your website's needs. Our team focuses on ranking elements considered by search engines, ensuring your website stands out in search results. Most importantly, you can purchase this service worldwide with a secure payment process. It has the best value for your money, so consider getting it today.</p>
-	                    <p class=""style="text-align: justify;">Most importantly, if you want to attract customers or expand globally, our service can help you achieve your goals. Therefore, these packages are designed to attract customers in your area. Also, our National SEO package is ideal for reaching a wider audience and capturing enterprise or <a href="b2b_seo.html" class="text-success">B2B</a> leads. In addition, for e-commerce businesses, our service will boost your products to the top. Also, it will increase your growth rate and online sales. This service includes optimizing website code, creating content, developing landing pages, consulting on SEO campaigns, optimizing tags, and more. Your success is our priority, and we're committed to guiding you every step of the way. To conclude, collaborate with us and achieve your basic SEO success. <a href="contact.html" class="text-success">Contact us</a> now to discover how our <a href="services.html" class="text-success">service</a> can transform your business.</p>
+	                    <p class="" style="text-align: justify;"><a href="/" class="text-success">SEO Expate</a> Ltd stands at the forefront of the industry, offering SEO packages that drive outcomes for your business. We have an experienced SEO team to bring you organic leads that convert into quality sales and revenue growth. Through our proven methodologies, you'll witness your website skyrocket its ranking. Also, attracting a surge of organic traffic and boosting overall visibility. Indeed, every business is unique; our SEO packages meticulously fulfil your specific requirements. We create your SEO strategy each month based on your website's needs. Our team focuses on ranking elements considered by search engines, ensuring your website stands out in search results. Most importantly, you can purchase this service worldwide with a secure payment process. It has the best value for your money, so consider getting it today.</p>
+	                    <p class=""style="text-align: justify;">Most importantly, if you want to attract customers or expand globally, our service can help you achieve your goals. Therefore, these packages are designed to attract customers in your area. Also, our National SEO package is ideal for reaching a wider audience and capturing enterprise or <a href="b2b_seo.php" class="text-success">B2B</a> leads. In addition, for e-commerce businesses, our service will boost your products to the top. Also, it will increase your growth rate and online sales. This service includes optimizing website code, creating content, developing landing pages, consulting on SEO campaigns, optimizing tags, and more. Your success is our priority, and we're committed to guiding you every step of the way. To conclude, collaborate with us and achieve your basic SEO success. <a href="contact.php" class="text-success">Contact us</a> now to discover how our <a href="services.php" class="text-success">service</a> can transform your business.</p>
 	                </div>
                 </div>
             </div>
@@ -695,7 +730,7 @@
         <div class="container shadow py-5 px-5 " style="border-left:15px solid #F4B400;">
             <div class="row ">
             	<div class="col-12">
-                	<h6 class="fw-bold fs-5 pb-3">Why Use SEO Package from <a href="index.html" class="text-success">SEO Expate</a> Ltd.</h6>
+                	<h6 class="fw-bold fs-5 pb-3">Why Use SEO Package from <a href="/" class="text-success">SEO Expate</a> Ltd.</h6>
 	                <div><p>1. With a history dating back to 2012, we hold 12 years of SEO data to create our strategies. </p></div>
 	                <div><p>2. We are familiar with other websites' successful strategies and can adapt them to benefit your business.</p></div>
 	                <div><p>3. Our strategies are based on proven processes, so we eliminate guessing in the SEO campaign for better results. </p></div>
@@ -719,7 +754,7 @@
 				</div>
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2 margintop"><h6 class="">What are the components of SEO packages, and which SEO services do they include?</h6></div>
-					<p class="pt-3" >SEO packages consist of <a href="seo_service.html" class="text-success">SEO services</a> designed to elevate a business's organic search engine rankings. This service enables agencies to provide fundamental services at an economical rate. Generally offered as monthly subscription packages, these services cater to meet the unique needs and goals of the organization. It includes keyword research, on-site optimization, link building, website speed optimization, content creation, and more. We assure you that this service will increase your return on investment (ROI). To conclude, get this service for our website and increase your sales quickly. </p>												
+					<p class="pt-3" >SEO packages consist of <a href="seo-service.php" class="text-success">SEO services</a> designed to elevate a business's organic search engine rankings. This service enables agencies to provide fundamental services at an economical rate. Generally offered as monthly subscription packages, these services cater to meet the unique needs and goals of the organization. It includes keyword research, on-site optimization, link building, website speed optimization, content creation, and more. We assure you that this service will increase your return on investment (ROI). To conclude, get this service for our website and increase your sales quickly. </p>												
 				</div>				
 			</div>
 		</div>
@@ -740,7 +775,7 @@
 					</div>
 				</div>
 				<div class="col-12">
-					<p>Moreover, we have a reputation for being the top <a href="index.html" class="text-success">company</a> in the World. In addition, we harness a wealth of SEO data to identify effective strategies, tactics, and methods. Upon partnering with us, we thoroughly analyses your website and pinpoint weaknesses in your current approach. Also, enhance your site by implementing proven techniques developed by our in-house creative personnel. To conclude, we ensure that your most critical keywords land on the first page of search results. </p>
+					<p>Moreover, we have a reputation for being the top <a href="/" class="text-success">company</a> in the World. In addition, we harness a wealth of SEO data to identify effective strategies, tactics, and methods. Upon partnering with us, we thoroughly analyses your website and pinpoint weaknesses in your current approach. Also, enhance your site by implementing proven techniques developed by our in-house creative personnel. To conclude, we ensure that your most critical keywords land on the first page of search results. </p>
 				</div>
 			</div>
 		</div>
@@ -901,7 +936,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">
@@ -925,7 +960,7 @@
         </div>
     </section>
 	<!--================================Thrive_Globally section end here=======================-->
-<?php 
+<?php
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>

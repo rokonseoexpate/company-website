@@ -2,7 +2,6 @@
     $title = "Photo Restoration";
     ob_start();
 ?>
-
 	<!--================================photo editor sub Header section end here=======================-->
 	<div class="photo_edipth">
 		<div class="container">
@@ -216,8 +215,8 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="photo_editor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Photo Restoration</li>
 						</ol>
 						</nav>
@@ -300,7 +299,7 @@
             <div class="row">
                 <div class="newudcode"><h5>Photo Restoration Service in the SEO Expate BD Limited</h5></div>
                 <div class="pb-5 border-bottom border-success border-2">
-                    <p>Customers choose the Photo Restoration Service from our <a href="index.php" class="text-success">company</a> for its unmatched quality and customer-centric approach. Their dedicated team uses the latest technology to restore damaged or aged photographs. This service ensures every detail is preserved. What sets them apart is their ability to understand the emotional value behind each photo. Moreover, our company treats every project with the utmost care and respect. Besides, they offer personalized solutions, tailoring their services to meet individual needs and guarantee satisfaction with every restoration. However, the competitive pricing and exceptional customer service make <a href="index.php" class="text-success">SEO Expate</a> BD Limited popular and unique in this sector.</p>                   
+                    <p>Customers choose the Photo Restoration Service from our <a href="/" class="text-success">company</a> for its unmatched quality and customer-centric approach. Their dedicated team uses the latest technology to restore damaged or aged photographs. This service ensures every detail is preserved. What sets them apart is their ability to understand the emotional value behind each photo. Moreover, our company treats every project with the utmost care and respect. Besides, they offer personalized solutions, tailoring their services to meet individual needs and guarantee satisfaction with every restoration. However, the competitive pricing and exceptional customer service make <a href="/" class="text-success">SEO Expate</a> BD Limited popular and unique in this sector.</p>                   
                 </div>
             </div>
             <div class="row shadow px-5 py-3">

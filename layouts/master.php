@@ -197,15 +197,6 @@ $username = $_SESSION['username'];
             });
         })
     </script>
-
-    <script>
-        $(function() {
-            $('#shortDescription').summernote({
-                placeholder: 'Enter your Inquiry here...',
-                height: 300,
-            });
-        })
-    </script>
 </body>
 
 </html>

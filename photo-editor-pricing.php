@@ -200,7 +200,7 @@ ob_start();
 						<p style="text-align:justify;">In addition, our <a href="index.php" class="text-success">company</a> is a reliable place where you can trust and have our services without any issues. Moreover, we have top-class workers and designers who work hard to give you the best service ever. So, if you are willing to take our service, then join us and we'll fulfill your demand by giving the best service ever.</p>
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="free-trial.php">Free Trial</a>
+						<a type="button" href="free_trial.php">Free Trial</a>
 					</div>	
 				</div>			
 			</div>

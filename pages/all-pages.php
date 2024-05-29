@@ -1,5 +1,5 @@
 <?php
-    $title = "Home";
+    $title = "All Pages";
     ob_start();
     $content = ob_get_clean();
     include '../layouts/master.php';

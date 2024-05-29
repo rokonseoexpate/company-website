@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $designation = $_POST['designation'];
     $branch_id = $_POST['branch'];
+    $priority = $_POST['priority'];
     $ein_no = $_POST['ein_no'];
     $team_no = $_POST['team_no'];
     $department_id = $_POST['department_id'];
@@ -31,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
     $alt_tag = $_POST['alt_tag'];
     $alt_description = $_POST['alt_description'];
+    $dep_priority = $_POST['dep_priority'];
 
 
     
@@ -79,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_team_no = mysqli_real_escape_string($conn, $team_no);
 
 
-    $sql = "UPDATE employees SET name = '$sanitized_name', designation = '$sanitized_designation',email = '$email', phone = '$phone', branch_id = $branch_id, department_id = $department_id, ein_no = '$sanitized_ein_no', team_no = '$sanitized_team_no', alt_description='$alt_description',  alt_tag='$alt_tag' ";
+    $sql = "UPDATE employees SET name = '$sanitized_name', designation = '$sanitized_designation',email = '$email', phone = '$phone', branch_id = $branch_id, priority = $priority, department_id = $department_id, dep_priority = $dep_priority, ein_no = '$sanitized_ein_no', team_no = '$sanitized_team_no', alt_description='$alt_description',  alt_tag='$alt_tag' ";
     if ($image_path) {
         $sql .= ", image = '$image_path'";
     }
@@ -132,6 +134,11 @@ $row = mysqli_fetch_assoc($fetch_result);
                         <?php endwhile; ?>
                     </select>
                 </div>
+                <div class="form-group col-md-6">
+                    <label for="priority">Priority <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="priority" name="priority" placeholder="Priority" value="<?php echo $row['priority']; ?>">
+                </div>
+
 
                 <div class="form-group col-md-6">
                     <label for="department_id"> Department </label>
@@ -141,6 +148,11 @@ $row = mysqli_fetch_assoc($fetch_result);
                             <option value="<?php echo $department_row['id']; ?>" <?php echo ($department_row['id'] == $row['department_id']) ? 'selected' : ''; ?>><?php echo $department_row['name']; ?></option>
                         <?php endwhile; ?>
                     </select>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="dep_priority">Department Priority <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="dep_priority" name="dep_priority" placeholder="Department Priority" value="<?php echo $row['dep_priority']; ?>">
                 </div>
 
                 <div class="form-group col-md-6">

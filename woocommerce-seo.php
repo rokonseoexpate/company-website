@@ -1,7 +1,8 @@
 <?php
-    $title = "Amazon Seo";
+    $title = "Woocommerce Seo";
     ob_start();
 ?>
+
 	<!--================================photo editor sub Header section end here=======================-->
 	<div class="photo_edipth">
 		<div class="container">
@@ -36,7 +37,7 @@
 				                  <li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
 				                  <li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
 				                  <li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping-management.php">Google Shopping Management</a></li>
+				                  <li><a class="dropdown-item" href="shopping-management.php">Google Shopping Management</a></li>
 				                  <li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
 				                  <li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
 				                </ul>
@@ -68,12 +69,12 @@
 							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your WooCommerce SEO Proposal</a></div>
 						</div>
 						<div class="col-md-2 ecomrespons">
-							<img src="images/google-seo-proposal-audit.png.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-fluid" >
+							<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-fluid" >
 						</div>
 					</div>	
 				</div>
 				<div class="col-md-5 m-auto ecomrespp" style="z-index:500;" >
-					<img src="images/63c91ff4dd02fa5ad8af6729_woocommerce seo thumb.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-thumbnail">
+					<img src="frontend/images/63c91ff4dd02fa5ad8af6729_woocommerce seo thumb.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-thumbnail">
 				</div>			
 			</div>
 		</div>				
@@ -88,7 +89,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 						    <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">WooCommerce SEO</li>
 						  </ol>
@@ -106,11 +107,11 @@
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2"><h6>About WooCommerce SEO Service. </h6></div>
-					<p class="pt-3" ><a href="ecommerce-seo.php" class="text-success">Ecommerce</a> search engine optimization (SEO) is the practice of fine-tuning your website to meet search engine best practices, and updating your content to reflect what your customers are searching for. Benefits of <a href="seo-service.php" class="text-success">SEO</a> for store owners include increased visitors, brand awareness, and sales.</p>																								
+					<p class="pt-3" ><a href="ecommerce_seo.php" class="text-success">Ecommerce</a> search engine optimization (SEO) is the practice of fine-tuning your website to meet search engine best practices, and updating your content to reflect what your customers are searching for. Benefits of <a href="seo-service.php" class="text-success">SEO</a> for store owners include increased visitors, brand awareness, and sales.</p>																								
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
-						<img src="images/5-ecommerce-seo-tips-to-improve-organic-performance-5eac105b2cf2b.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-thumbnail">
+						<img src="frontend/images/5-ecommerce-seo-tips-to-improve-organic-performance-5eac105b2cf2b.webp" alt="WooCommerce SEO" description="WooCommerce SEO" class="img-thumbnail">
 					</div>
 				</div>
 			</div>
@@ -134,7 +135,7 @@
             </div>
         </div>
     </section>
-	<!--================================editor_texts section end here=======================-->
+	<!--================================editor-texts section end here=======================-->
 
 	<!--================================accordion section start here=======================-->
 	<section class="accordion_service">
@@ -145,7 +146,7 @@
 			      <div class="accordion-item">
 			        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. How much do WooCommerce SEO services cost?</h5>
 			        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
-			          <div class="accordion-body">WooCommerce SEO services will be priced about the same as traditional SEO services. Depending on the <a href="seo-service.php" class="text-success">SEO</a> <a href="index.php" class="text-success">company</a> you choose, hourly rates vary from $150/hour to $500/hour and beyond. View our SEO pricing and costs for more information on standard SEO pricing models and associated fees.
+			          <div class="accordion-body">WooCommerce SEO services will be priced about the same as traditional SEO services. Depending on the <a href="seo-service.php" class="text-success">SEO</a> <a href="/" class="text-success">company</a> you choose, hourly rates vary from $150/hour to $500/hour and beyond. View our SEO pricing and costs for more information on standard SEO pricing models and associated fees.
 			          </div>
 			        </div>
 			      </div>
@@ -209,7 +210,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="top_ready_start_img text-left">
-                        <img src="images/95991_prev_ui.png" alt="We can build your story" description="We can build your story">
+                        <img src="frontend/images/95991_prev_ui.png" alt="We can build your story" description="We can build your story">
                     </div>
                 </div>
             </div>
@@ -228,6 +229,7 @@
         </div>
     </section>
 	<!--================================Thrive_Globally section end here=======================-->
+
 <?php 
 $main_content = ob_get_clean();
 include './layouts/app.php';

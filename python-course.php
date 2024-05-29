@@ -2,7 +2,6 @@
 $title = "Home";
 ob_start();
 ?>
-
 	<!--================================photo editor sub Header section end here=======================-->
 <?php include 'includes/course-nav.php'?>
 	<!--================================photo editor sub Header section end here=======================-->
@@ -54,7 +53,7 @@ ob_start();
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Python</li>
 						</ol>
@@ -179,7 +178,6 @@ ob_start();
         </div>
     </section>
 	<!--================================Thrive_Globally section end here=======================-->
-
 <?php
 $main_content = ob_get_clean();
 include './layouts/app.php';

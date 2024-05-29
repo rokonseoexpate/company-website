@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="dashboard" class="brand-link">
-        <img src="/uploads/logo.png" alt="SEO Expate Bangladesh LTD" class="brand-image elevation-3" style="width: 220px; height: auto;">
+    <a href="dashboard.php" class="brand-link">
+        <img src="../frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="SEO Expate Bangladesh LTD" class="brand-image elevation-3" style="width: 220px; height: auto;">
     </a>
 
     <!-- Sidebar -->

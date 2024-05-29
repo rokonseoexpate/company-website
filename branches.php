@@ -21,7 +21,7 @@ $title = "All Branches";
 			<div class="col-12" style="z-index:500; ">
 				<div class="top_body_txt_part">
 					<h1 class="" style="font-size: 45px; line-height: 55px;">All Branches</h1>
-					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
+					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
 				</div>
 			</div>
 		</div>
@@ -37,7 +37,7 @@ $title = "All Branches";
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">All Branch</li>
 						</ol>
 					</nav>
@@ -85,121 +85,10 @@ $title = "All Branches";
 			}
 			?>
 
-
 		</div>
 	</div>
 </section>
 
-
-
-<!-- <section class="Core_Team allbranchlist" style="background: unset; padding-top: unset;">
-	<div class="container">
-		<div class="row">
-			<div class="Core_Team_txt pb-2">
-				<h6 class="fs-2 pb-3">Branch <span class="text-success">all Employees</span></h6>
-				<hr>
-			</div>
-			<div class="Core_Team_members">
-				<div class="container mt-2">
-					<div class="row">
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Nur Alam-Branch Manager-144.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Nur Alam</h5>
-									<p class="card-text fs-6">Branch Manager</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Asaduzzaman-Supervisor-174.PNG" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Asaduzzaman</h5>
-									<p class="card-text fs-6">Supervisor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Ahmed Ali-Supervisor-425.jpg" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Ahmed Ali</h5>
-									<p class="card-text fs-6">Supervisor</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Mst. Humaira Khatun-Team Leader-335.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Mst. Humaira Khatun</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Shakil Hasan-Team Leader-538.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Shakil Hasan</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Robiul Hasan-Team Leader-557.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Robiul Hasan</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row pt-5">
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Mst. Istiya Khatun-Team Leader-559.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Mst. Istiya Khatun</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Mst. Tanjila Khatun-Team Leader-386.jpg" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Mst. Tanjila Khatun</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/Md. Arafat Rahman-Team Leader-492.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">Md. Arafat Rahman</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-2 col-sm-6">
-							<div class="card card-block shadow">
-								<img src="images/A.M Rakibul Islam-Team Leader-561.png" alt=" Branch all Employees" description=" Branch all Employees" class="img-thumbnail">
-								<div class="card-body">
-									<h5 class="card-title fs-6">A.M Rakibul Islam</h5>
-									<p class="card-text fs-6">Team Leader</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section> -->
 
 
 <!--================================top_ready_start section start here=======================-->

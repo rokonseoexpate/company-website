@@ -2,6 +2,7 @@
     $title = "Amazon Seo";
     ob_start();
 ?>
+
 	<!--================================photo editor sub Header section end here=======================-->
 	<div class="photo_edipth">
 		<div class="container">
@@ -13,38 +14,38 @@
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
 				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="seo_service.html" data-bs-toggle="dropdown">SEO Services</a>
+				                <a class="nav-link  dropdown-toggle" href="seo-service.php" data-bs-toggle="dropdown">SEO Services</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="ecommerce_seo.html"> eCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="amazon_seo.html">Amazon SEO</a></li>
-				                  <li><a class="dropdown-item" href="b2b_seo.html">B2B SEO</a></li>
-				                  <li><a class="dropdown-item" href="shopify_seo.html">Shopify SEO</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_seo.html">WordPress SEO</a></li>
-				                  <li><a class="dropdown-item" href="woocommerce_seo.html">WooCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="lead_seo.html">Lead Generation SEO</a></li>
-				                  <li><a class="dropdown-item" href="nopcommerce_seo.html">NopCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="magento_seo.html">Magento SEO</a></li>
-				                  <li><a class="dropdown-item" href="volusion_seo.html">Volusion SEO</a></li>
-				                  <li><a class="dropdown-item" href="bigcommerce_seo.html">BigCommerce SEO</a></li>
-				                  <li><a class="dropdown-item" href="consulting_seo.html">SEO Consulting</a></li>
+				                  <li><a class="dropdown-item" href="ecommerce-seo.php"> eCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="amazon-seo.php">Amazon SEO</a></li>
+				                  <li><a class="dropdown-item" href="b2b-seo.php">B2B SEO</a></li>
+				                  <li><a class="dropdown-item" href="shopify-seo.php">Shopify SEO</a></li>
+				                  <li><a class="dropdown-item" href="wordpress-seo.php">WordPress SEO</a></li>
+				                  <li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
+				                  <li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="magento-seo.php">Magento SEO</a></li>
+				                  <li><a class="dropdown-item" href="volusion-seo.php">Volusion SEO</a></li>
+				                  <li><a class="dropdown-item" href="bigcommerce-seo.php">BigCommerce SEO</a></li>
+				                  <li><a class="dropdown-item" href="consulting-seo.php">SEO Consulting</a></li>
 				                </ul>
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="ppc_paid.html" data-bs-toggle="dropdown">PPC & Paid Search</a>
+				                <a class="nav-link  dropdown-toggle" href="ppc-paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="amazon_ppc.html"> Amazon PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="ecommerce_ppc.html">eCommerce PPC Management</a></li>
-				                  <li><a class="dropdown-item" href="google_ads.html">Google Ads Consulting</a></li>
-				                  <li><a class="dropdown-item" href="management_ads.html">Google Ads Management</a></li>
-				                  <li><a class="dropdown-item" href="shoping_management.html">Google Shopping Management</a></li>
-				                  <li><a class="dropdown-item" href="ppc_consulting.html">PPC Consulting</a></li>
-				                  <li><a class="dropdown-item" href="ppc_lead.html">Lead Gen PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="amazon-ppc.php"> Amazon PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
+				                  <li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
+				                  <li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
+				                  <li><a class="dropdown-item" href="shopping-management.php">Google Shopping Management</a></li>
+				                  <li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
+				                  <li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
 				                </ul>
 				            </li>
-				            <li class="nav-item"><a class="nav-link" href="onpage_seo.html"> On-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="offpage_seo.html"> Off-page SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="technical_seo.html"> Technical SEO </a></li>
-				            <li class="nav-item"><a class="nav-link" href="package_price_seo.html"> SEO Packages & Pricing </a></li>
+				            <li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
+				            <li class="nav-item"><a class="nav-link" href="package-price-seo.php"> SEO Packages & Pricing </a></li>
 				        </ul>
 				    </div>
 				</div> 
@@ -54,7 +55,7 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body app_development amazonseo" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">		
+	<section class="top-body app_development amazonseo" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-md-7 ecomresp" style="z-index:500;">
@@ -70,7 +71,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-6 pt-2 ">
-							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.html" style="color: #F4B400;" class="fs-5 fw-bold">Get Your Amazon SEO Proposal</a></div>
+							<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold">Get Your Amazon SEO Proposal</a></div>
 						</div>
 					</div>	
 				</div>
@@ -90,8 +91,8 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.html" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item "><a href="seo_service.html" class="text-light">SEO</a></li>
+						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Amazon SEO</li>
 						  </ol>
 						</nav>
@@ -112,7 +113,7 @@
 	                    <p class="text-start">Having a good online presence on Amazon.com is almost a need these days if you want to show your products to the proper customers. This is particularly valid if a sizable audience is required. It goes without saying that Amazon controls a large portion of online eCommerce sales; some estimates have its market share at over 50%.</p>
 	                    <p>eCommerce merchants typically adopt a "fight or flight" mentality in response to what is known as the Amazon conundrum. Most naturally attempt to either resist or ignore the Amazonian elephant in the room, believing that if they work hard enough, they will succeed and stop losing business to Amazon.</p>
 	                    <p>Why not figure out a strategy to leverage Amazon instead of ignoring it or trying to outcompete it? Why not manage both your Amazon product listing and your eCommerce website? For eCommerce businesses, this is typically the best line of action. This is particularly valid if you are marketing goods that are currently offered on Amazon. </p>
-	                    <p><a href="index.html" class="text-success">SEO Expate Bangladesh Ltd.</a> has been a top supplier of web development, digital marketing, and eCommerce website design services since 2010. Having led the way in <a href="ecommerce_seo.html" class="text-success">eCommerce SEO</a>  for almost 10 years, we are adept at utilizing our expertise to optimize Amazon's in-house search engines.</p>
+	                    <p><a href="/" class="text-success">SEO Expate Bangladesh Ltd.</a> has been a top supplier of web development, digital marketing, and eCommerce website design services since 2010. Having led the way in <a href="ecommerce-seo.php" class="text-success">eCommerce SEO</a>  for almost 10 years, we are adept at utilizing our expertise to optimize Amazon's in-house search engines.</p>
 	                </div>
                 </div>
             </div>
@@ -126,7 +127,7 @@
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2"><h6>The Leading Provider of Amazon Marketing Services</h6></div>
-					<p class="pt-3" >Allow us to utilize our more than 10 years of experience in <a href="digital_marketing.html" class="text-success">digital marketing</a>, SEO, and PPC for your Amazon business. </p>	
+					<p class="pt-3" >Allow us to utilize our more than 10 years of experience in <a href="digital-marketing.php" class="text-success">digital marketing</a>, SEO, and PPC for your Amazon business. </p>	
 					<h6 class="fw-bold fs-5">Focus on eCommerce</h6>	
 					<p>We are surrounded by eCommerce every day. We differentiate ourselves from the competition with our in-depth knowledge of eCommerce, CRO, remarketing, and other crucial eCommerce activities.</p>										
 				</div>
@@ -148,7 +149,7 @@
                 	<h6 class="fw-bold fs-5 pb-3">Can I Make It Big on Amazon?</h6>
 	                <div><p>Amazon might not be the best online store to sell your product or products. Get in touch with us right now, and we'll meet with your team to see if your product offering might work well on Amazon. </p></div>
 	                <h6 class="fw-bold fs-5 pb-3">Request an Estimate for Your Campaign on Amazon</h6>
-	                <div><p>We will create a customized strategy and approach for you because we recognize how special your company is. We will provide you with a personalized price quote when you complete the form below. Or give us a call at (number) if you'd prefer to talk over the phone about your <a href="contact.html" class="text-success">needs</a>. From 9 to 5 EST, Monday through Friday, we are open.</p></div>
+	                <div><p>We will create a customized strategy and approach for you because we recognize how special your company is. We will provide you with a personalized price quote when you complete the form below. Or give us a call at (number) if you'd prefer to talk over the phone about your <a href="contact.php" class="text-success">needs</a>. From 9 to 5 EST, Monday through Friday, we are open.</p></div>
                 </div>
             </div>
         </div>
@@ -182,7 +183,7 @@
                 	<h6 class="fw-bold fs-5 pb-3">Audits of Amazon Accounts BSR (Best Seller Ratings) Method of Ranking </h6>
                 	<h6 class="fw-bold fs-5 pb-3">Investigation of Rivals Amazon Product Listing Enhancement </h6>
                 	<h6 class="fw-bold fs-5 pb-3">Methodology for Amazon Product Reviews  </h6>
-                	<h6 class="fw-bold fs-5 pb-3">Sponsored Listings & <a href="ppc_lead.html" class="text-success">PPC Management Services</a> on Amazon </h6>
+                	<h6 class="fw-bold fs-5 pb-3">Sponsored Listings & <a href="ppc-lead.php" class="text-success">PPC Management Services</a> on Amazon </h6>
                 	<h6 class="fw-bold fs-5 pb-3">Whole Strategies for Amazon Advertising</h6>
                 </div>
             </div>
@@ -195,7 +196,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
-					<div class="cliping_service_txt pb-2"><h6>Why <a href="index.html" class="text-success">SEO Expate</a> for Your Amazon SEO?</h6></div>
+					<div class="cliping_service_txt pb-2"><h6>Why <a href="/" class="text-success">SEO Expate</a> for Your Amazon SEO?</h6></div>
 					<p class="pt-3" >Working with SEO Expate for SEO on Amazon.com has many advantages, such as:</p>							
 					<div class="app_list">
 						<p class=""><span><i class="fa-solid fa-check-double"></i></span>Product descriptions that are more effectively optimized to rank and convert. </p>
@@ -265,7 +266,7 @@
 			        </div>
 			      </div>
 			      <div class="accordion-item">
-			        <h5 class="accordion-header collapsed" id="headingFourr" data-bs-toggle="collapse" data-bs-target="#collapseFourr" aria-expanded="false" aria-controls="collapseFourr">Q. How can I use Amazon reviews and ratings to improve my <a href="seo_service.html" class="text-success">SEO</a>?
+			        <h5 class="accordion-header collapsed" id="headingFourr" data-bs-toggle="collapse" data-bs-target="#collapseFourr" aria-expanded="false" aria-controls="collapseFourr">Q. How can I use Amazon reviews and ratings to improve my <a href="seo-service.php" class="text-success">SEO</a>?
 			        </h5>
 			        <div id="collapseFourr" class="accordion-collapse collapse" aria-labelledby="headingFourr" data-bs-parent="#accordion">
 			          <div class="accordion-body"><p>Encourage satisfied customers to leave positive reviews and ratings by providing excellent customer service and a great product experience.</p>
@@ -296,7 +297,7 @@
 			        <h5 class="accordion-header collapsed" id="headingSeven" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Q. How Much a Month Do Amazon SEO Services Cost?
 			        </h5>
 			        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
-			          <div class="accordion-body">We tailor our SEO services and packages to each client's specific requirements. While some clients may require more technical optimization and code improvements, others may require more content development or marketing. After reviewing your <a href="index.html" class="text-success">website</a>, our knowledgeable staff will send you a comprehensive SEO proposal that details the strategies your <a href="index.html" class="text-success">company</a> needs to be successful.
+			          <div class="accordion-body">We tailor our SEO services and packages to each client's specific requirements. While some clients may require more technical optimization and code improvements, others may require more content development or marketing. After reviewing your <a href="/" class="text-success">website</a>, our knowledgeable staff will send you a comprehensive SEO proposal that details the strategies your <a href="/" class="text-success">company</a> needs to be successful.
 			          </div>
 			        </div>
 			      </div>
@@ -316,7 +317,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-						<a type="button" href="contact.html">Get In Touch</a>
+						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
                 </div>
                 <div class="col-md-6">
