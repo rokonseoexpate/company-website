@@ -54,7 +54,7 @@ $newImagePath = 'uploads/' . $imageName;
                 </div>
                 <div class="col-md-6 pt-4">
                     <div class="web_service_img">
-                        <img src="<?php echo $newImagePath ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo $blog['alt_description'] ?>" class="img-thumbnail">
+                        <img src="<?php echo $newImagePath ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo  strip_tags($blog['alt_description']) ?>" class="img-thumbnail">
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@ $newImagePath = 'uploads/' . $imageName;
                     <div class="col-md-6 pt-4">
                         <div class="card">
                             <div class="card-img blog_det_img">
-                                <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>" class="img-thumbnail">
+                                <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>" class="img-thumbnail">
                             </div>
                             <div class="card-body">
                                 <div class="title">
