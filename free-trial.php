@@ -121,65 +121,73 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h4>SEO Expate Photo Editor Provide Creative Photo Editing Service</h4>
             <p>Complete Form & Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
             <div class="col-md-6">
-                <form class="row g-3">
+                <form class="row g-3" id="freeTrialForm" method="POST" action="free-trial.php" enctype="multipart/form-data">
+
                     <div class="col-12">
                         <label for="fullname" class="form-label">First Name & Last Name <span>*</span></label>
-                        <input type="text" class="form-control" id="fullname" placeholder="Your Full Name" required>
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name">
+                        <span id="fullnameError" class="error text-danger"></span>
                     </div>
                     <div class="col-12">
-                        <label for="CompanyName" class="form-label">Company Name</label>
-                        <input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
+                        <label for="CompanyName" class="form-label">Company Name <span>*</span></label>
+                        <input type="text" name="company_name" class="form-control" id="CompanyName" placeholder="Company Name">
                     </div>
                     <div class="col-12">
                         <label for="inputPassword4" class="form-label">Phone / Whatsapp Number <span>*</span></label>
-                        <input type="text" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
+                        <input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451">
+                        <span id="phoneError" class="error text-danger"></span>
                     </div>
                     <div class="col-12">
                         <label for="inputEmail4" class="form-label">Email <span>*</span></label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
+                        <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com">
+                        <span id="emailError" class="error text-danger"></span>
                     </div>
                     <div class="col-12">
                         <label for="CompanyWebsite" class="form-label">Company Website</label>
-                        <input type="text" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
+                        <input type="text"  name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" >
                     </div>
                     <div class="col-12">
                         <label for="Addresses" class="form-label">Addresses </label>
-                        <input type="text" class="form-control" id="Addresses" placeholder="Addresses..." required>
+                        <input type="text" name="address" class="form-control" id="Addresses" placeholder="Addresses..." >
                     </div>
                     <div class="col-12">
                         <label for="stuf" class="form-label">Select Service Type <span>*</span></label>
-                        <select name="" id="stuf" style="width: 100%;" class="form-control">
-                            <option value="">Clipping Path</option>
-                            <option value="">Color Correction</option>
-                            <option value="">E-Commerce Photo Editing</option>
-                            <option value="">Ghost Mannequin Effect</option>
-                            <option value="">Image Manipulation</option>
-                            <option value="">Image Masking</option>
-                            <option value="">Jewelry Retouching</option>
-                            <option value="">Photo Background Removing</option>
-                            <option value="">Photo Restoration</option>
-                            <option value="">Photo Retouching</option>
-                            <option value="">Raster to Vector Conversion</option>
-                            <option value="">Real Estate Photo Editing</option>
-                            <option value="">Shadow Making</option>
-                            <option value="">Wedding Photo Editing</option>
-                            <option value="">T-Shirt Design</option>
-                            <option value="">Logo Design</option>
-                            <option value="">Banner Design</option>
-                            <option value="">Illustrator Art Work</option>
+                        <select name="service_type" id="stuf" style="width: 100%;" class="form-control">
+                            <option value="">Select Service</option>
+                            <option value="Clipping Path">Clipping Path</option>
+                            <option value="Color Correction">Color Correction</option>
+                            <option value="E-Commerce Photo Editing">E-Commerce Photo Editing</option>
+                            <option value="Ghost Mannequin Effect">Ghost Mannequin Effect</option>
+                            <option value="Image Manipulation">Image Manipulation</option>
+                            <option value="Image Masking">Image Masking</option>
+                            <option value="Jewelry Retouching">Jewelry Retouching</option>
+                            <option value="Photo Background Removing">Photo Background Removing</option>
+                            <option value="Photo Restoration">Photo Restoration</option>
+                            <option value="Photo Retouching">Photo Retouching</option>
+                            <option value="Raster to Vector Conversion">Raster to Vector Conversion</option>
+                            <option value="Real Estate Photo Editing">Real Estate Photo Editing</option>
+                            <option value="Shadow Making">Shadow Making</option>
+                            <option value="Wedding Photo Editing">Wedding Photo Editing</option>
+                            <option value="T-Shirt Design">T-Shirt Design</option>
+                            <option value="Logo Design">Logo Design</option>
+                            <option value="Banner Design">Banner Design</option>
+                            <option value="Illustrator Art Work">Illustrator Art Work</option>
                         </select>
+                        <span id="serviceTypeError" class="error text-danger"></span>
                     </div>
                     <div class="col-12 ">
                         <label for="file" class="form-label">File Upload (Limit - 1024MB/image, 100 files only) <span>*</span></label>
-                        <input type="file" class="form-control" id="file" placeholder="Choose a file">
+                        <input type="file" name="files[]" class="form-control" id="file" placeholder="Choose a file" multiple>
+                        <span id="filesError" class="error text-danger"></span>
                     </div>
                     <div class="col-12 ">
                         <label for="Image" class="form-label">Image File Link</label>
-                        <input type="text" class="form-control" id="Image" placeholder="Image Link" required>
+                        <input type="text" name="image_file_link" class="form-control" id="Image" placeholder="Image Link" >
                     </div>
                     <div class="col-12 ">
                         <label for="type" class="form-label">Message <span>*</span></label>
-                        <textarea type="text" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
+                        <textarea type="text" name="message" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
+                        <span id="messageError" class="error text-danger"></span>
                     </div>
                     <div class="col-12 text-center">
                         <button type="submit" class="btn">Submit</button>

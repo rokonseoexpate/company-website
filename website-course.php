@@ -27,7 +27,7 @@ ob_start();
 				                </ul>
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="it-traning.php" data-bs-toggle="dropdown">IT Training</a>
+				                <a class="nav-link  dropdown-toggle" href="it-training.php" data-bs-toggle="dropdown">IT Training</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
 				                  <li><a class="dropdown-item" href="microsoft-office-course.php"> Microsoft Office</a></li>
 				                  <li><a class="dropdown-item" href="software-development-course.php">Software Development Course</a></li>

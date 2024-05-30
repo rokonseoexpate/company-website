@@ -24,28 +24,28 @@ ob_start();
 								<li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
 								<li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
 								<li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="magento_seo.php">Magento SEO</a></li>
-								<li><a class="dropdown-item" href="volusion_seo.php">Volusion SEO</a></li>
-								<li><a class="dropdown-item" href="bigcommerce_seo.php">BigCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="consulting_seo.php">SEO Consulting</a></li>
+								<li><a class="dropdown-item" href="magento-seo.php">Magento SEO</a></li>
+								<li><a class="dropdown-item" href="volusion-seo.php">Volusion SEO</a></li>
+								<li><a class="dropdown-item" href="bigcommerce-seo.php">BigCommerce SEO</a></li>
+								<li><a class="dropdown-item" href="consulting-seo.php">SEO Consulting</a></li>
 							</ul>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="ppc_paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
+							<a class="nav-link  dropdown-toggle" href="ppc-paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
 							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="amazon_ppc.php"> Amazon PPC Management</a></li>
-								<li><a class="dropdown-item" href="ecommerce_ppc.php">eCommerce PPC Management</a></li>
-								<li><a class="dropdown-item" href="google_ads.php">Google Ads Consulting</a></li>
-								<li><a class="dropdown-item" href="management_ads.php">Google Ads Management</a></li>
-								<li><a class="dropdown-item" href="shoping_management.php">Google Shopping Management</a></li>
-								<li><a class="dropdown-item" href="ppc_consulting.php">PPC Consulting</a></li>
-								<li><a class="dropdown-item" href="ppc_lead.php">Lead Gen PPC Management</a></li>
+								<li><a class="dropdown-item" href="amazon-ppc.php"> Amazon PPC Management</a></li>
+								<li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
+								<li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
+								<li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
+								<li><a class="dropdown-item" href="shopping-management.php">Google Shopping Management</a></li>
+								<li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
+								<li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
 							</ul>
 						</li>
-						<li class="nav-item"><a class="nav-link" href="onpage_seo.php"> On-page SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="offpage_seo.php"> Off-page SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="technical_seo.php"> Technical SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="package_price_seo.php"> SEO Packages & Pricing </a></li>
+						<li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
+						<li class="nav-item"><a class="nav-link" href="package-price-seo.php"> SEO Packages & Pricing </a></li>
 					</ul>
 				</div>
 			</div>

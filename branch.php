@@ -104,11 +104,6 @@ $title = $branch['name'];
 										</div>
 									</div>
 								</div>
-
-
-
-
-								
 						<?php
 							}
 						} else {
