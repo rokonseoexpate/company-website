@@ -58,7 +58,7 @@ $title = "All Branches";
 			<?php
 			$i = 1;
 			$qry = "SELECT * FROM branches ORDER BY id DESC";
-			$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+			$result = mysqli_query($conn, $qry); 
 
 			if ($result) {
 				while ($row = mysqli_fetch_assoc($result)) {

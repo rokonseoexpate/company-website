@@ -125,124 +125,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div class="Our_Offices_txt pb-5 newudcode">
 				<h6 class="fs-1">Our <span class="text-success">Offices</span></h6>
 			</div>
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<!-- <iframe loading="lazy" src="https://maps.google.com/maps?q=SEO%20EXPATE%20BANGLADESH%20LTD.&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near" title="SEO EXPATE BANGLADESH LTD." aria-label="SEO EXPATE BANGLADESH LTD."></iframe>-->
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14490.35118817288!2d89.3941205!3d24.7753184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc5380c9b5d9d3%3A0x6b91dc7c9e5fc33b!2sSEO%20Expate%20Bangladesh%20Ltd!5e0!3m2!1sen!2sbd!4v1714979476233!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Head Office (Bogura, Bangladesh)</h6>
-					<p>Floor 1, Kagjipara, SEO Expate Tower, Majhira, Shahajanpur, Bogura-5801, Bangladesh</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14490.648871887286!2d89.3980751!3d24.772768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc531d5ea1640d%3A0xf19f6922f3bc02f!2sSEO%20Expate%20Bangladesh%20Ltd.%20(Second%20%26%20Third%20Branch)!5e0!3m2!1sen!2sbd!4v1714979275811!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<?php
+			$i = 1;
+			$qry = "SELECT * FROM branches ORDER BY id DESC";
+			$result = mysqli_query($conn, $qry);
 
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h4>Second Branch (Bogura, Bangladesh)</h4>
-					<p>Floor 2, Mofazzal Tower, Majhira Bazar, Shahajanpur, Bogura-5801, Bangladesh</p>
-				</div>
-			</div>
+			if ($result) {
+				while ($row = mysqli_fetch_assoc($result)) {
+			?>
+					<div class="col-md-6">
+						<div class="Our_Offices_map">
+							
+							<?php echo $row['map']?>
+						</div>
+						<div class="Our_Offices_map_txt newudcode">
+							<h6 class="fs-3 text-start pt-3"><?php echo $row['name']?></h6>
+							<p><?php echo $row['address']?></p>
+						</div>
+					</div>
+			<?php
+				}
+			} else {
+				echo "Error: " . mysqli_error($conn);
+			}
+			?>
 		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14490.648871887286!2d89.3980751!3d24.772768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc531d5ea1640d%3A0xf19f6922f3bc02f!2sSEO%20Expate%20Bangladesh%20Ltd.%20(Second%20%26%20Third%20Branch)!5e0!3m2!1sen!2sbd!4v1714979275811!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Third Branch (Bogura, Bangladesh)</h6>
-					<p>Floor 4 & 5, Mofazzal Tower, Majhira Bazar, Shahajanpur, Bogura-5801, Bangladesh</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14600.643503507843!2d90.4136593!3d23.8128777!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7007111992f%3A0x4a05864d5f212784!2sSEO%20Expate%20Bangladesh%20Ltd%20(Dhaka%20Corporate%20Branch)!5e0!3m2!1sen!2sbd!4v1714979353960!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Corporate Office (Dhaka, Bangladesh)</h6>
-					<p>House – 386, Level-2, Road-6, Baridhara DOHS, Dhaka – 1212, Bangladesh</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14482.106951074984!2d89.3761003!3d24.8458533!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc55f311f064c9%3A0xcccf3b81a63cf3a2!2sSEO%20Expate%20Bangladesh%20Ltd%20(Jalesharitola%20Branch)!5e0!3m2!1sen!2sbd!4v1714979388336!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Jalesharitola Branch (Bogura, Bangladesh)</h6>
-					<p>Romena Afaz Complex, 2nd floor, Romena Afaz Road, Jalesharitola, Bogura -5800, Bangladesh</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14473.442307695166!2d88.7518353!3d24.9197835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb7fdf7a7630e3%3A0x79e9258f0c2e1a5!2sSEO%20Expate%20Bangladesh%20Ltd%20(%20Naogaon%20Branch)!5e0!3m2!1sen!2sbd!4v1714979058007!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Naogaon Branch (Naogaon, Bangladesh)</h6>
-					<p>Mohadevpur Upazila Gate number 04, Hannan Tower 1st floor, Mohadevpur, Naogaon – 6530, Bangladesh</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14473.442307695166!2d88.7518353!3d24.9197835!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb7fdf7a7630e3%3A0x79e9258f0c2e1a5!2sSEO%20Expate%20Bangladesh%20Ltd%20(%20Naogaon%20Branch)!5e0!3m2!1sen!2sbd!4v1714979058007!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Naogaon Second Branch (Naogaon, Bangladesh)</h6>
-					<p>Mohadevpur Upazila Gate number 04, Hannan Tower 3rd floor, Mohadevpur, Naogaon – 6530, Bangladesh</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14543.713951081956!2d89.5708516!3d24.3141294!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fddbddce9d3cd7%3A0xd5bb934064df5339!2sSEO%20Expate%20Bangladesh%20Ltd%20(Ullapara%20Branch)!5e0!3m2!1sen!2sbd!4v1714979120073!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Ullapara Branch (Sirajganj, Bangladesh)</h6>
-					<p>Science College Road, Jhikira, Ullapara, Sirajganj – 6760, Bangladesh</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="Our_Offices_map newudcode">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14503.173115076665!2d89.4193984!3d24.6652429!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdb3e28219a68d%3A0xe3fc6aa5cca9080a!2sSEO%20Expate%20Bangladesh%20Ltd.%20(Sherpur%20Branch)!5e0!3m2!1sen!2sbd!4v1714979318319!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Sherpur Branch (Bogura, Bangladesh)</h6>
-					<p>Sherpur Bus Stand, Sherpur Bazar, SEO Expate Tower, Sherpur, Bogura – 5840, Bangladesh</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14428.664734005948!2d89.4150669!3d25.2986201!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fd21739fac11a3%3A0x2fa35f2554560469!2sSEO%20Expate%20Bangladesh%20Ltd.%20(Palashbari%20Branch)!5e0!3m2!1sen!2sbd!4v1714979195140!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Palashbari Branch (Gaibandha, Bangladesh)</h6>
-					<p>Palashbari RDRS Bazar, SEO Expate Tower, Palashbari, Gaibandha – 5730, Bangladesh</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="Our_Offices_map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14414.504885475113!2d89.3151111!3d25.4173194!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fcdb007cf6dc07%3A0x51731e36c84f7c21!2sSEO%20Expate%20Bangladesh%20Limited%2C%20Pirganj%20Branch!5e0!3m2!1sen!2sbd!4v1714979239719!5m2!1sen!2sbd" width="600" height="450" style="border:5px solid #fff;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<div class="Our_Offices_map_txt newudcode">
-					<h6 class="fs-3 text-start pt-3">Pirganj Branch (Rangpur, Bangladesh)</h6>
-					<p>East side of Islami Bank S, B Plaza, Pirganj, Rangpur</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-
-			</div>
-		</div>
 	</div>
 </section>
 <!--================================Our_Offices section end here=======================-->
@@ -316,125 +224,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				<div class="contact_form_icons">
 					<h5>Trusted by</h5>
 					<div class="row">
-						<div class="col-md-4">
-							<img src="frontend/images/unicef-client-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/usaid-org-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/undp-org-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
+						<?php
+						$qry = "SELECT * FROM trusted_bies order by orderBy ASC";
+						if ($result = $conn->query($qry)) {
+							while ($row = $result->fetch_assoc()) {
+								$imagePath = $row['image'];
+								$imageName = basename($imagePath);
+								$newImagePath = 'uploads/' . $imageName;
+						?>
+								<div class="col-md-4">
+									<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>">
+								</div>
+						<?php }
+						} ?>
 					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/unwomen-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/who-org-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/fao-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/sands-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/murka-games-limited-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/safe-guard-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/atec-global-client-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/bbc-action-media-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/sesame-workshop-bangladesh-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/ifrc-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/crazylabs-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/voodoo-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/swiss-marketing-systems-gmbh-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/princetech-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/fhi360-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/financial-fondue-gmbh-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/playmania-israeli-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/pinklime-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/mcafee-enterprises-inc-entertainment-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/kuato-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/plan-international-bangladesh-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/cog-media-agency-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/frobolous-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/capital-numbers-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row margintop">
-						<div class="col-md-4">
-							<img src="frontend/images/a2i-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/ict-division-govt-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/robi-axiata-company-logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row margintop pt-4">
-						<div class="col-md-4">
-							<img src="frontend/images/SAU-Logo-150x150.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-							<img src="frontend/images/resize_prev_ui.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-4">
-						</div>
-					</div>
+
 				</div>
 			</div>
 			<div class="col-md-6 pb-5">
@@ -465,65 +269,68 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 									</ul>
 									<div class="tab-content" id="myTabContent">
 										<div id="Hire" role="tabpanel" aria-labelledby="Hire-tab" class="tab-pane fade px-4 py-5 show active">
-											<form class="row g-3">
+											<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="row g-3" id="hireForm">
 												<div class="col-12">
+													<input type="hidden" name="type" value="hire" id="">
 													<label for="fullname" class="form-label">Your Name <span>*</span></label>
-													<input type="text" class="form-control" id="fullname" placeholder="Your Full Name" required>
+													<input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name" required>
 												</div>
 												<div class="col-md-6">
 													<label for="inputEmail4" class="form-label">Email <span>*</span></label>
-													<input type="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
+													<input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
 												</div>
 												<div class="col-md-6">
 													<label for="inputPassword4" class="form-label">Phone Number <span>*</span></label>
-													<input type="text" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
+													<input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
 												</div>
 												<div class="col-md-6">
-													<label for="CompanyName" class="form-label">Company Name</label>
+													<label for="CompanyName" name="company_name" class="form-label">Company Name</label>
 													<input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
 												</div>
 												<div class="col-md-6">
 													<label for="CompanyWebsite" class="form-label">Company Website</label>
-													<input type="text" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
+													<input type="text" name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
 												</div>
 												<div class="col-12">
 													<label for="stuf" class="form-label">Number of Staff Required <span>*</span></label>
-													<input type="text" class="form-control" id="stuf" placeholder="Number of Staff Required" required>
+													<input type="text" name="stuf" class="form-control" id="stuf" placeholder="Number of Staff Required" required>
 												</div>
 												<div class="col-12">
 													<label for="type" class="form-label">Briefly Describe Your Requirements <span>*</span></label>
-													<textarea type="text" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
+													<textarea type="text" name="description" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
 												</div>
 												<div class="col-12 text-center">
-													<button type="submit" class="btn">Submit & Schedule a Meeting</button>
+													<button type="submit" class="btn submitBtn">Submit & Schedule a Meeting</button>
 												</div>
 											</form>
 										</div>
+
 										<div id="Project" role="tabpanel" aria-labelledby="Project-tab" class="tab-pane fade px-4 py-5">
-											<form class="row g-3">
+											<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="row g-3">
 												<div class="col-12">
+													<input type="hidden" name="type" value="project" id="">
 													<label for="fullname" class="form-label">Your Name <span>*</span></label>
-													<input type="text" class="form-control" id="fullname" placeholder="Your Full Name" required>
+													<input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name" required>
 												</div>
 												<div class="col-md-6">
 													<label for="inputEmail4" class="form-label">Email <span>*</span></label>
-													<input type="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
+													<input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
 												</div>
 												<div class="col-md-6">
 													<label for="inputPassword4" class="form-label">Phone Number <span>*</span></label>
-													<input type="text" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
+													<input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
 												</div>
 												<div class="col-md-6">
-													<label for="CompanyName" class="form-label">Company Name</label>
+													<label for="CompanyName" name="company_name" class="form-label">Company Name</label>
 													<input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
 												</div>
 												<div class="col-md-6">
 													<label for="CompanyWebsite" class="form-label">Company Website</label>
-													<input type="text" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
+													<input type="text" name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
 												</div>
 												<div class="col-12">
 													<label for="type" class="form-label">Briefly Describe Your Requirements <span>*</span></label>
-													<textarea type="text" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
+													<textarea type="text" name="description" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
 												</div>
 												<div class="col-12 text-center">
 													<button type="submit" class="btn">Submit & Schedule a Meeting</button>
@@ -531,30 +338,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 											</form>
 										</div>
 										<div id="Partnership" role="tabpanel" aria-labelledby="Partnership-tab" class="tab-pane fade px-4 py-5">
-											<form class="row g-3">
+											<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="row g-3">
 												<div class="col-12">
+													<input type="hidden" name="type" value="partnership" id="">
 													<label for="fullname" class="form-label">Your Name <span>*</span></label>
-													<input type="text" class="form-control" id="fullname" placeholder="Your Full Name" required>
+													<input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name" required>
 												</div>
 												<div class="col-md-6">
 													<label for="inputEmail4" class="form-label">Email <span>*</span></label>
-													<input type="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
+													<input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
 												</div>
 												<div class="col-md-6">
 													<label for="inputPassword4" class="form-label">Phone Number <span>*</span></label>
-													<input type="text" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
+													<input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
 												</div>
 												<div class="col-md-6">
 													<label for="CompanyName" class="form-label">Company Name</label>
-													<input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
+													<input type="text" name="company_name" class="form-control" id="CompanyName" placeholder="Company Name" required>
 												</div>
 												<div class="col-md-6">
 													<label for="CompanyWebsite" class="form-label">Company Website</label>
-													<input type="text" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
+													<input type="text" name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
 												</div>
 												<div class="col-12">
 													<label for="type" class="form-label">Briefly Describe Your Requirements <span>*</span></label>
-													<textarea type="text" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
+													<textarea type="text" name="description" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
 												</div>
 												<div class="col-12 text-center">
 													<button type="submit" class="btn">Submit & Schedule a Meeting</button>
