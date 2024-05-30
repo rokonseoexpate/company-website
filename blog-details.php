@@ -17,7 +17,7 @@ $blog = mysqli_fetch_assoc($result);
 $relatedBlog = "SELECT * FROM blogs WHERE blog_category_id =  $blog[blog_category_id] AND id != $blog[id] LIMIT 2";
 
 $blogs = mysqli_query($conn, $relatedBlog);
-$relatedBlogs = mysqli_fetch_assoc($blogs);
+$relatedBlogs = mysqli_fetch_all($blogs);
 
 $imagePath = $blog['image'];
 $imageName = basename($imagePath);

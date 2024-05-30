@@ -836,7 +836,7 @@ $conn = $db->get_connection();
                                         <a href="blog-details.php" class="text-reset">
                                             <h5 class="card-title mb-3 text-light"><?php echo $csr['title'] ?></h5>
                                         </a>
-                                        <a href="blog-details.php?id=<? echo $csr['id'] ?>" class="text-reset">
+                                        <a href="blog-details.php?id=<?php echo $csr['id'] ?>" class="text-reset">
                                             <p class="text-danger">Read Insight →</p>
                                         </a>
                                     </div>
