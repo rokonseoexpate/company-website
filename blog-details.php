@@ -14,8 +14,10 @@ $title = $blog['title'];
 
 $relatedBlogQuery = "SELECT * FROM blogs WHERE blog_category_id =  {$blog['blog_category_id']} AND id != {$blog['id']} LIMIT 2";
 
-$blogs = mysqli_query($conn, $relatedBlog);
-$relatedBlogs = mysqli_fetch_all($blogs);
+$blogs = mysqli_query($conn, $relatedBlogQuery);
+
+// Use mysqli_fetch_all to fetch all related blogs
+$relatedBlogs = mysqli_fetch_all($blogs, MYSQLI_ASSOC);
 
 $imagePath = $blog['image'];
 $imageName = basename($imagePath);
@@ -23,7 +25,7 @@ $newImagePath = 'uploads/' . $imageName;
 
 ?>
 
-    <style>
+<style>
     img {
         max-width: 100%;
         height: auto
@@ -77,11 +79,14 @@ $newImagePath = 'uploads/' . $imageName;
             <h4 class=" fw-bold">Other CSR of SEO Expate Bangladesh Ltd.</h4>
             <?php
             foreach ($relatedBlogs as $row) {
+                $imagePath = $row['image'];
+                $imageName = basename($imagePath);
+                $newImagePath = 'uploads/' . $imageName;
             ?>
                 <div class="col-md-6 pt-4">
                     <div class="card">
                         <div class="card-img blog_det_img">
-                            <img src="<?php echo $row['image'] ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>" class="img-thumbnail">
+                            <img src="<?php echo $newImagePath ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>" class="img-thumbnail">
                         </div>
                         <div class="card-body">
                             <div class="title">
@@ -91,7 +96,8 @@ $newImagePath = 'uploads/' . $imageName;
                                 <p><?php
 
                                     if (!function_exists('limit_characters')) {
-                                        function limit_characters($text, $limit) {
+                                        function limit_characters($text, $limit)
+                                        {
                                             $text = strip_tags($text);
                                             if (strlen($text) > $limit) {
                                                 return substr($text, 0, $limit) . '...';
@@ -109,7 +115,7 @@ $newImagePath = 'uploads/' . $imageName;
                                 </p>
                             </div>
                             <div class="button ">
-                                <a href="blog-details.php?id=<?php echo $row['id']?>" class="text-success fw-bold">Read</a>
+                                <a href="blog-details.php?id=<?php echo $row['id'] ?>" class="text-success fw-bold">Read</a>
                             </div>
                         </div>
                     </div>
