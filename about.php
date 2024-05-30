@@ -4,9 +4,7 @@ ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
 ?>
-
     <!--================================top-body section start here=======================-->
     <section class="top-body top_about_us" style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
         <div class="container ">

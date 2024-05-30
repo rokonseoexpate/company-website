@@ -73,11 +73,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 }
 ?>
-
-<?php include 'includes/photo-editing-nav.php' ?>
-
-
-
 <!--================================photo editor sub Header section end here=======================-->
 <div class="photo_edipth">
     <div class="container">
@@ -265,7 +260,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
     <div class="container ">
         <div class="row">
             <div class="col-12" style="z-index:500;">
@@ -313,117 +308,122 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="row">
             <p>Complete Form & Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
             <div class="col-12">
-                <form class="row g-3 py-5 px-5">
+                <form class="row g-3" id="freeTrialForm" method="POST" action="get-quote.php" enctype="multipart/form-data">
                     <div class="col-12">
                         <label for="fullname" class="form-label">First Name & Last Name <span>*</span></label>
-                        <input type="text" class="form-control" id="fullname" placeholder="Your Full Name" required>
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name">
+                        <span id="fullnameError" class="error text-danger"></span>
                     </div>
                     <div class="col-12">
-                        <label for="CompanyName" class="form-label">Company Name</label>
-                        <input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
+                        <label for="CompanyName" class="form-label">Company Name <span>*</span></label>
+                        <input type="text" name="company_name" class="form-control" id="CompanyName" placeholder="Company Name">
                     </div>
                     <div class="col-12">
                         <label for="inputPassword4" class="form-label">Phone / Whatsapp Number <span>*</span></label>
-                        <input type="text" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
+                        <input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451">
+                        <span id="phoneError" class="error text-danger"></span>
                     </div>
                     <div class="col-12">
                         <label for="inputEmail4" class="form-label">Email <span>*</span></label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
+                        <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com">
+                        <span id="emailError" class="error text-danger"></span>
                     </div>
                     <div class="col-12">
                         <label for="CompanyWebsite" class="form-label">Company Website</label>
-                        <input type="text" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
+                        <input type="text"  name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" >
                     </div>
                     <div class="col-12">
                         <label for="Addresses" class="form-label">Addresses </label>
-                        <input type="text" class="form-control" id="Addresses" placeholder="Addresses..." required>
+                        <input type="text" name="address" class="form-control" id="Addresses" placeholder="Addresses..." >
                     </div>
                     <div class="col-12">
                         <label for="stuf" class="form-label">Service Type <span>*</span></label> <br>
                         <div class="pt-2">
-                            <input type="checkbox" id="Clipping" name="Clipping" value="Clipping">
+                            <input type="checkbox" id="Clipping" name="service_type[]" value="Clipping Path">
                             <label for="Clipping"> Clipping Path</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Color" name="Color" value="Color">
+                            <input type="checkbox" id="Color" name="service_type[]" value="Color Correction">
                             <label for="Color"> Color Correction</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Commerce" name="Commerce" value="Commerce">
+                            <input type="checkbox" id="Commerce" name="service_type[]" value="E-Commerce Photo Editing">
                             <label for="Commerce"> E-Commerce Photo Editing</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Ghost" name="Ghost" value="Ghost">
+                            <input type="checkbox" id="Ghost" name="service_type[]" value="Ghost Mannequin Effect">
                             <label for="Ghost"> Ghost Mannequin Effect</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Manipulation" name="Manipulation" value="Manipulation">
+                            <input type="checkbox" id="Manipulation" name="service_type[]" value="Image Manipulation">
                             <label for="Manipulation"> Image Manipulation</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Masking" name="Masking" value="Masking">
+                            <input type="checkbox" id="Masking" name="service_type[]" value="Image Masking">
                             <label for="Masking">Image Masking</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Jewelry" name="Jewelry" value="Jewelry">
+                            <input type="checkbox" id="Jewelry" name="service_type[]" value="Jewelry Retouching">
                             <label for="Jewelry"> Jewelry Retouching</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Background" name="Background" value="Background">
+                            <input type="checkbox" id="Background" name="service_type[]" value="Photo Background Removing">
                             <label for="Background"> Photo Background Removing</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Restoration" name="Restoration" value="Restoration">
+                            <input type="checkbox" id="Restoration" name="service_type[]" value="Photo Restoration">
                             <label for="Restoration"> Photo Restoration</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Retouching" name="Retouching" value="Retouching">
+                            <input type="checkbox" id="Retouching" name="service_type[]" value="Photo Retouching">
                             <label for="Retouching"> Photo Retouching</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Vector" name="Vector" value="Vector">
+                            <input type="checkbox" id="Vector" name="service_type[]" value="Raster to Vector Conversion">
                             <label for="Vector"> Raster to Vector Conversion</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Estate" name="Estate" value="Estate">
+                            <input type="checkbox" id="Estate" name="service_type[]" value="Real Estate Photo Editing">
                             <label for="Estate">Real Estate Photo Editing</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Shadow" name="Shadow" value="Shadow">
+                            <input type="checkbox" id="Shadow" name="service_type[]" value="Shadow Making">
                             <label for="Shadow"> Shadow Making</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Wedding" name="Wedding" value="Wedding">
+                            <input type="checkbox" id="Wedding" name="service_type[]" value="Wedding Photo Editing">
                             <label for="Wedding"> Wedding Photo Editing</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Design" name="Design" value="Design">
+                            <input type="checkbox" id="Design" name="service_type[]" value="T-Shirt Design">
                             <label for="Design"> T-Shirt Design</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Logo" name="Logo" value="Logo">
+                            <input type="checkbox" id="Logo" name="service_type[]" value="Logo Design">
                             <label for="Logo"> Logo Design</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Banner" name="Banner" value="Banner">
+                            <input type="checkbox" id="Banner" name="service_type[]" value="Banner Design">
                             <label for="Banner"> Banner Design</label><br>
                         </div>
                         <div class="pt-2">
-                            <input type="checkbox" id="Work" name="Work" value="Work">
+                            <input type="checkbox" id="Work" name="service_type[]" value="Illustrator Art Work">
                             <label for="Work">Illustrator Art Work</label><br><br>
                         </div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 ">
                         <label for="file" class="form-label">File Upload (Limit - 1024MB/image, 100 files only) <span>*</span></label>
-                        <input type="file" class="form-control" id="file" placeholder="Choose a file">
+                        <input type="file" name="files[]" class="form-control" id="file" placeholder="Choose a file" multiple>
+                        <span id="filesError" class="error text-danger"></span>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 ">
                         <label for="Image" class="form-label">Image File Link</label>
-                        <input type="text" class="form-control" id="Image" placeholder="Image Link" required>
+                        <input type="text" name="image_file_link" class="form-control" id="Image" placeholder="Image Link" >
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 ">
                         <label for="type" class="form-label">Message <span>*</span></label>
-                        <textarea type="text" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
+                        <textarea type="text" name="message" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
+                        <span id="messageError" class="error text-danger"></span>
                     </div>
                     <div class="col-12 text-center">
                         <button type="submit" class="btn">Submit</button>
@@ -611,73 +611,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 </section>
 <!--================================Thrive_Globally section end here=======================-->
-
-
-
-
-<!---->
-<!--<script>-->
-<!--    document.getElementById("freeTrialForm").addEventListener("submit", function(event) {-->
-<!--        event.preventDefault(); // Prevent form submission-->
-<!--        // Validate form fields-->
-<!--        if (validateForm()) {-->
-<!--            this.submit(); // Submit the form if validation passes-->
-<!--        }-->
-<!--    });-->
-<!---->
-<!--    function validateForm() {-->
-<!--        // Reset error messages-->
-<!--        document.querySelectorAll('.error').forEach(function(element) {-->
-<!--            element.innerHTML = '';-->
-<!--        });-->
-<!---->
-<!--        // Get form inputs-->
-<!--        var fullname = document.getElementById("fullname").value;-->
-<!--        var phone = document.getElementById("inputPassword4").value;-->
-<!--        var email = document.getElementById("inputEmail4").value;-->
-<!--        var serviceType = document.getElementById("stuf").value;-->
-<!--        var files = document.getElementById("file").value;-->
-<!--        var message = document.getElementById("type").value;-->
-<!---->
-<!--        // Perform validation-->
-<!--        var isValid = true;-->
-<!--        if (fullname.trim() === "") {-->
-<!--            document.getElementById("fullnameError").innerHTML = "Please enter your full name.";-->
-<!--            isValid = false;-->
-<!--        }-->
-<!--        if (phone.trim() === "") {-->
-<!--            document.getElementById("phoneError").innerHTML = "Please enter your phone number.";-->
-<!--            isValid = false;-->
-<!--        }-->
-<!--        if (email.trim() === "") {-->
-<!--            document.getElementById("emailError").innerHTML = "Please enter your email address.";-->
-<!--            isValid = false;-->
-<!--        } else if (!isValidEmail(email)) {-->
-<!--            document.getElementById("emailError").innerHTML = "Please enter a valid email address.";-->
-<!--            isValid = false;-->
-<!--        }-->
-<!--        if (serviceType.trim() === "") {-->
-<!--            document.getElementById("serviceTypeError").innerHTML = "Please select a service type.";-->
-<!--            isValid = false;-->
-<!--        }-->
-<!--        if (files.trim() === "") {-->
-<!--            document.getElementById("filesError").innerHTML = "Please select at least one file to upload.";-->
-<!--            isValid = false;-->
-<!--        }-->
-<!--        if (message.trim() === "") {-->
-<!--            document.getElementById("messageError").innerHTML = "Please enter a message.";-->
-<!--            isValid = false;-->
-<!--        }-->
-<!---->
-<!--        return isValid; // Return true if all validations pass-->
-<!--    }-->
-<!---->
-<!--    function isValidEmail(email) {-->
-<!--        // Regular expression for email validation-->
-<!--        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;-->
-<!--        return emailRegex.test(email);-->
-<!--    }-->
-<!--</script>-->
 
 
 <?php
