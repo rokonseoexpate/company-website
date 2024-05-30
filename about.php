@@ -4,7 +4,6 @@ ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
 ?>
 
 <!--================================top-body section start here=======================-->
