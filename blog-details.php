@@ -1,5 +1,5 @@
 <?php
-$title = "Blog Post";
+
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -10,21 +10,22 @@ $sql = "SELECT * FROM blogs WHERE id = $id";
 $result = mysqli_query($conn, $sql);
 $blog = mysqli_fetch_assoc($result);
 
-// $relatedBlog = "SELECT * FROM blogs WHERE blog_category_id =  $blog[blog_category_id]"  ;
-// $relatedBlog = "SELECT * FROM blogs WHERE blog_category_id =  $blog[blog_category_id] AND id NOT IN ($blog[id] ORDER BY id DESC LIMIT 2";
+$title = $blog['title'];
 
-// $relatedBlog = "SELECT * FROM blogs WHERE blog_category_id =  $blog[blog_category_id] AND id != $blog[id] ORDER BY id DESC LIMIT 2";
-$relatedBlog = "SELECT * FROM blogs WHERE blog_category_id =  $blog[blog_category_id] AND id != $blog[id] LIMIT 2";
+$relatedBlogQuery = "SELECT * FROM blogs WHERE blog_category_id =  {$blog['blog_category_id']} AND id != {$blog['id']} LIMIT 2";
 
-$blogs = mysqli_query($conn, $relatedBlog);
-$relatedBlogs = mysqli_fetch_assoc($blogs);
+$blogs = mysqli_query($conn, $relatedBlogQuery);
+
+// Use mysqli_fetch_all to fetch all related blogs
+$relatedBlogs = mysqli_fetch_all($blogs, MYSQLI_ASSOC);
 
 $imagePath = $blog['image'];
 $imageName = basename($imagePath);
 $newImagePath = 'uploads/' . $imageName;
 
 ?>
-<style>
+
+    <style>
     img {
         max-width: 100%;
         height: auto
@@ -39,7 +40,7 @@ $newImagePath = 'uploads/' . $imageName;
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
                                 <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
-                                <li class="breadcrumb-item active text-light" aria-current="page">Blog Details <?php echo $blog['blog_category_id'] ?> </li>
+                                <li class="breadcrumb-item active text-light" aria-current="page"><?php echo $blog['title'] ?> </li>
                             </ol>
                         </nav>
                     </div>
@@ -53,7 +54,7 @@ $newImagePath = 'uploads/' . $imageName;
             </div>
             <div class="col-md-6 pt-4">
                 <div class="web_service_img">
-                    <img src="<?php echo $newImagePath ?>" alt=" Seop-Expate- Blanket-Distribution" description=" Seop-Expate- Blanket-Distribution" class="img-thumbnail">
+                    <img src="<?php echo $newImagePath ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo $blog['alt_description'] ?>" class="img-thumbnail">
                 </div>
             </div>
         </div>
@@ -66,30 +67,6 @@ $newImagePath = 'uploads/' . $imageName;
     <div class="container">
         <div class="row">
             <div class="what_you_need_txt">
-                <!-- <p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. distributed winter clothes to homeless people, who were suffering in winter. This IT company contributes to Corporate Social Responsibility (CSR) every year by helping the helpless. Following this, team SEO Expate Bangladesh Ltd. focuses on sharing the winter warmth with homeless people each year.</p>
-                <p>On the evening of 17th January 2023, some of the team members of <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. distributed winter clothes to homeless people. More than 40 people received blankets and winter clothes on this occasion.</p>
-                <div class="blog_det_img">
-                    <img src="frontend/images/Seop-Expate- blanket-distribution-thumbnail.jpg" alt=" seo expate" description=" seo expate" class="img-thumbnail">
-                    <p class="text-center fs-6">Figure 01: Team SEO Expate Bangladesh Ltd. sharing the winter warmth with homeless people</p>
-                </div>
-                <div style="border-left: 6px solid var(--secondary-text-color);">
-                    <p class="px-3">We are overwhelmed with smiles of gratitude as the team Riseup Labs distributed winter clothes to the many homeless people. Riseup Labs strongly supports underprivileged people and we will continue to do what we can to inspire positive changes in our society.</p>
-                    <p class="px-3 fw-bold"><i>Md Mizanur Rahman, Founder and CEO of SEO Expate Bangladesh Ltd.</i></p>
-                </div>
-                <p>SEO Expate Bangladesh Ltd. distributed winter clothes to the homeless, street children, rickshaw pullers, laborers, and others. After receiving the clothes they convey their gratitude to team SEO Expate Bangladesh Ltd. The team members also got happy to have a chance to share the winter warmth with these people.</p>
-                <div style="border-left: 6px solid var(--secondary-text-color);">
-                    <p class="px-3"><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. always gives attention to underprivileged people. They work for them, whenever they get a chance to do. Today was one of them. I am touched by seeing the happy face of those people who received winter clothes from us. They thanked us for getting those clothes. That’s why I am proud to be a team member of SEO Expate Bangladesh Ltd.</p>
-                    <p class="px-3 fw-bold"><i>A new team member of SEO Expate Bangladesh Ltd.</i></p>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="frontend/images/Seop-Expate- blanket-distribution-thumbnail.jpg" alt=" seo expate" description=" seo expate" class="img-thumbnail">
-                    </div>
-                    <div class="col-md-6">
-                        <img src="frontend/images/Seop-Expate- blanket-distribution-thumbnail.jpg" alt=" seo expate" description=" seo expate" class="img-thumbnail">
-                    </div>
-                </div> -->
-
                 <p><?php echo $blog['description'] ?></p>
             </div>
         </div>
@@ -101,22 +78,40 @@ $newImagePath = 'uploads/' . $imageName;
         <div class="row">
             <h4 class=" fw-bold">Other CSR of SEO Expate Bangladesh Ltd.</h4>
             <?php
-            foreach ($relatedBlogs as $r_blog) {
+            foreach ($relatedBlogs as $row) {
             ?>
                 <div class="col-md-6 pt-4">
                     <div class="card">
                         <div class="card-img blog_det_img">
-                            <img src="frontend/images/Taka Bitoron.jpg" alt=" seo expate" description=" seo expate" class="img-thumbnail">
+                            <img src="<?php echo $row['image'] ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>" class="img-thumbnail">
                         </div>
                         <div class="card-body">
                             <div class="title">
-                                <h4>Charity Fund</h4>
+                                <h4><?php echo $row['title'] ?></h4>
                             </div>
                             <div class="description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sed, neque eius tempora saepe quae sit cumque. Eum, deserunt, harum!</p>
+                                <p><?php
+
+                                    if (!function_exists('limit_characters')) {
+                                        function limit_characters($text, $limit) {
+                                            $text = strip_tags($text);
+                                            if (strlen($text) > $limit) {
+                                                return substr($text, 0, $limit) . '...';
+                                            }
+                                            return $text;
+                                        }
+                                    }
+
+                                    // Example usage within your script
+                                    $description = isset($row['description']) ? $row['description'] : '';
+                                    echo limit_characters($description, 132);
+
+                                    ?>
+
+                                </p>
                             </div>
                             <div class="button ">
-                                <a href="index.php" class="text-success fw-bold">SEO Expate</a>
+                                <a href="blog-details.php?id=<?php echo $row['id']?>" class="text-success fw-bold">Read</a>
                             </div>
                         </div>
                     </div>
