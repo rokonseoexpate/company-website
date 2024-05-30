@@ -76,7 +76,7 @@ $conn = $db->get_connection();
                                 $newImagePath = 'uploads/' . $imageName;
                                 ?>
                                 <div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
-                                    <img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="img">
+                                    <img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description'])  ?>">
                                 </div>
                                 <?php
                                 $active = false;
@@ -93,12 +93,14 @@ $conn = $db->get_connection();
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
-
                 </div>
             </div>
     </section>
     <!--================================top-slider-part section end here=======================-->
+
+   
+
+
 
     <!--================================top-text-slider-part section start here=======================-->
     <section class="top_body_text_slider" style="background-image: url('frontend/images/slideimg.png');">
@@ -343,7 +345,7 @@ $conn = $db->get_connection();
                                     <div class="owl-item">
                                         <div class="card bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
                                             <div class="bbb_viewed_image">
-                                                <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="">
+                                                <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag']?>" description="<?php echo strip_tags($row['alt_description'])?>">
                                             </div>
                                             <div class="card-body bbb_viewed_content text-center">
                                                 <h5 class="card-title"><?php echo $row['short_title']?></h5>
@@ -478,7 +480,7 @@ $conn = $db->get_connection();
                                 ?>
                                 <div class="slider-card">
                                     <div class="d-flex justify-content-center align-items-center mb-4">
-                                        <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image" >
+                                        <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag']?>" description="<?php echo strip_tags($row['alt_description'])?>">
                                     </div>
                                     <h5 class="mb-0 text-center"><b><?php echo $row['short_title']?></b></h5>
                                     <p class="text-center p-4"><?php echo $row['title']?> </p>
@@ -527,7 +529,7 @@ $conn = $db->get_connection();
                                         $imagePath = $row['image'];
                                         $imageName = basename($imagePath);
                                         $newImagePath = 'uploads/' . $imageName;
-                                        echo $newImagePath; ?>" alt="image">
+                                        echo $newImagePath; ?>" alt="<?php echo $row['alt_tag']?>" description="<?php echo strip_tags($row['alt_description'])?>">
                                     </div>
                                 </div>
                                 <?php

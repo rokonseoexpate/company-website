@@ -209,168 +209,20 @@ $conn = $db->get_connection();
                         ?>
                             <div class="col-md-3 col-sm-6">
                                 <div class="card card-block">
-                                    <img src="<?php echo $newImagePath ?>" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo $team['alt_description']; ?>" class="img-thumbnail">
+                                    <img src="<?php echo $newImagePath ?>" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo strip_tags( $team['alt_description']); ?>" class="img-thumbnail">
                                     <div class="card-body">
                                         <h5 class="card-title "><?php echo $team['name']; ?></h5>
                                         <p class="card-text"><?php echo $team['designation']; ?></p>
                                         <div class="d-flex gap-2" style=" justify-content:center;">
-                                            <a href="<?php echo $team['website'] ?>"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                            <a href="<?php echo $team['facebook'] ?>"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                            <a href="<?php echo $team['linkedin'] ?>"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
+                                            <a href="<?php echo $team['website'] ?>"><i class="fa-solid fa-globe" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo $team['alt_description']; ?>"></i></a>
+                                            <a href="<?php echo $team['facebook'] ?>"><i class="fa-brands fa-facebook" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo $team['alt_description']; ?>"></i></a>
+                                            <a href="<?php echo $team['linkedin'] ?>"><i class="fa-brands fa-linkedin" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo $team['alt_description']; ?>"></i></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         <?php } ?>
                     </div>
-                    <!-- <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/Md-Abdur-Razzak-CFO-1-scaled.jpg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title ">Md Abdur Razzak</h5>
-                                    <p class="card-text">CFO</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/Atiqur-Rahman-Project-Director-1-scaled.jpg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title">Atiqur Rahman</h5>
-                                    <p class="card-text">Project Director</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/Md.-Rezwan-Rifat-Head-of-Operations-1-scaled.jpg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title">Md. Rezwan (Rifat)</h5>
-                                    <p class="card-text">Head of Operations</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/Md-Rabbi-Hossain-Chief-Technical-Officer-1-scaled.jpg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title">Md Rabbi Hossain</h5>
-                                    <p class="card-text">Chief Technical Officer</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="justify-content: center;">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/Sadia-Afrin-Customer-Relationship-Manager-1-scaled.jpg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sadia Afrin</h5>
-                                    <p class="card-text">Customer Relationship Manager</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/Md.-Nihal-Ahmed-Head-of-Content-Writing-1-scaled.jpg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title">Md. Nihal Ahmed</h5>
-                                    <p class="card-text">Head of Content Writing</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/Mosaraf-Hossain-Head-of-Audit-scaled.jpg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title">Mosaraf Hossain</h5>
-                                    <p class="card-text">Head of Audit</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/ATM.-Meshkat-Hasan-Head-Of-Web-Development-scaled.jpg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title">ATM. Meshkat Hasan</h5>
-                                    <p class="card-text">Head Of Web Development</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="justify-content: center;">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/Md. Monirul lslam - Head of Accounts.jpg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title">Md. Monirul lslam</h5>
-                                    <p class="card-text">Head of Accounts</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="card card-block">
-                                <img src="frontend/images/MD. ANIKUZZAMAN.jpeg" alt="Core Team Member" description="Core Team Member" class="img-thumbnail">
-                                <div class="card-body">
-                                    <h5 class="card-title">Md. Anikuzzaman</h5>
-                                    <p class="card-text">Head of HR</p>
-                                    <div class="d-flex gap-2" style=" justify-content:center;">
-                                        <a href="/"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                        <a href="#"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3"></div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -399,14 +251,16 @@ $conn = $db->get_connection();
                         ?>
                             <div class="col-md-3 col-sm-6">
                                 <div class="card card-block">
-                                    <img src="<?php echo $newImagePath ?>" alt="<?php echo $advisor['alt_tag'] ?>" description="<?php echo $advisor['alt_description'] ?>" class="img-thumbnail">
+                                    <img src="<?php echo $newImagePath ?>" alt="<?php echo $advisor['alt_tag'] ?>" description="<?php echo strip_tags($advisor['alt_description']) ?>" class="img-thumbnail">
                                     <div class="card-body">
                                         <h5 class="card-title"><?php echo $advisor['name'] ?></h5>
                                         <p class="card-text"><?php echo $advisor['designation'] ?></p>
                                         <div class="d-flex gap-2" style=" justify-content:center;">
-                                            <a href="<?php echo $advisor['website'] ?>"><i class="fa-solid fa-globe" alt="Core Team Member" description="Core Team Member"></i></a>
-                                            <a href="<?php echo $advisor['facebook'] ?>"><i class="fa-brands fa-facebook" alt="Core Team Member" description="Core Team Member"></i></a>
-                                            <a href="<?php echo $advisor['linkedin'] ?>"><i class="fa-brands fa-linkedin" alt="Core Team Member" description="Core Team Member"></i></a>
+                                            <a href="<?php echo $advisor['website'] ?>">
+                                                <i class="fa-solid fa-globe" alt="<?php echo $advisor['alt_tag'] ?>" description="<?php echo $team['alt_description']; ?>"></i>
+                                            </a>
+                                            <a href="<?php echo $advisor['facebook'] ?>"><i class="fa-brands fa-facebook" alt="<?php echo $advisor['alt_tag'] ?>" description="<?php echo $team['alt_description']; ?>"></i></a>
+                                            <a href="<?php echo $advisor['linkedin'] ?>"><i class="fa-brands fa-linkedin" alt="<?php echo $advisor['alt_tag'] ?>" description="<?php echo $team['alt_description']; ?>"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -440,7 +294,7 @@ $conn = $db->get_connection();
             ?>
                     <div class="col-md-3 pb-5">
                         <div class="card">
-                            <img src="<?php echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>">
+                            <img src="<?php echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $row['name'] ?></h5>
                                 <p class="card-text"><?php echo $row['address'] ?></p>
@@ -456,99 +310,6 @@ $conn = $db->get_connection();
             }
             ?>
         </div>
-        <!-- <div class="row ">
-            <div class="col-md-3 pb-5">
-                <div class="card">
-                    <img src="frontend/images/SEO-Expate-Jalesharitola-Branch.jpg" class="card-img-top" alt="our branch image" description="our branch image">
-                    <div class="card-body">
-                        <h5 class="card-title">Jalesharitola Branch (Bogura)</h5>
-                        <p class="card-text">Romena Afaz Complex, 2nd floor, Romena Afaz Road, Jalesharitola, Bogura -5800, Bangladesh</p>
-                        <div><a href="branches.php" class="text-success">View Location Map →</a></div>
-                        <div class="pt-2 pb-4"><a href="branches.php" class="text-success">See More →</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 pb-5">
-                <div class="card hover-zoom">
-                    <img src="frontend/images/SEO-Expate-Sherpur-Branch-1.jpg" class="card-img-top" alt="our branch image" description="our branch image">
-                    <div class="card-body">
-                        <h5 class="card-title">Sherpur Branch (Bogura)</h5>
-                        <p class="card-text">Sherpur Bus Stand, Sherpur Bazar, SEO Expate Tower, Sherpur, Bogura – 5840, Bangladesh</p>
-                        <div><a href="branches.php" class=" text-success">View Location Map →</a></div>
-                        <div class="pt-2 pb-5"><a href="branches.php" class=" text-success">See More →</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 pb-5">
-                <div class="card">
-                    <img src="frontend/images/SEO-Expate-Naogaon-Branch-1.jpg" class="card-img-top" alt="our branch image" description="our branch image">
-                    <div class="card-body">
-                        <h5 class="card-title">Naogaon Branch (Naogaon)</h5>
-                        <p class="card-text">Mohadevpur Upazila Gate number 04, Hannan Tower 1st floor, Mohadevpur, Naogaon – 6530, Bangladesh</p>
-                        <div><a href="branches.php" class=" text-success">View Location Map →</a></div>
-                        <div class="pt-2"><a href="branches.php" class=" text-success">See More →</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 pb-5">
-                <div class="card">
-                    <img src="frontend/images/SEO-Expate-Naogaon-Second-Branch.jpg" class="card-img-top" alt="our branch image" description="our branch image">
-                    <div class="card-body">
-                        <h5 class="card-title">Second Branch (Naogaon)</h5>
-                        <p class="card-text">Mohadevpur Upazila Gate number 04, Hannan Tower 3rd floor, Mohadevpur, Naogaon – 6530, Bangladesh</p>
-                        <div><a href="branches.php" class=" text-success">View Location Map →</a></div>
-                        <div class="pt-2 pb-4"><a href="branches.php" class=" text-success">See More →</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="col-md-3 pb-5">
-                <div class="card">
-                    <img src="frontend/images/SEO-Expate-Ullapara-Branch.jpg" class="card-img-top" alt="our branch image" description="our branch image">
-                    <div class="card-body">
-                        <h5 class="card-title">Ullapara Branch (Sirajganj)</h5>
-                        <p class="card-text">Science College Road, Jhikira, Ullapara, Sirajganj – 6760, Bangladesh</p>
-                        <div><a href="branches.php" class="text-success">View Location Map →</a></div>
-                        <div class="pt-2"><a href="branches.php" class="text-success">See More →</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 pb-5">
-                <div class="card hover-zoom">
-                    <img src="frontend/images/SEO-Expate-Ullapara-2nd-Branch-1.jpg" class="card-img-top" alt="our branch image" description="our branch image">
-                    <div class="card-body">
-                        <h5 class="card-title">Ullapara Second Branch (Sirajganj)</h5>
-                        <p class="card-text">Science College Road, Jhikira, Ullapara, Sirajganj – 6760, Bangladesh</p>
-                        <div><a href="branches.php" class=" text-success">View Location Map →</a></div>
-                        <div class="pt-2"><a href="branches.php" class=" text-success">See More →</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 pb-5">
-                <div class="card">
-                    <img src="frontend/images/SEO-Expate-Palashbari-Branch-Gaibandha-Branch.jpg" class="card-img-top" alt="our branch image" description="our branch image">
-                    <div class="card-body">
-                        <h5 class="card-title">Palashbari Branch (Gaibandha)</h5>
-                        <p class="card-text">Palashbari RDRS Bazar, SEO Expate Tower, Palashbari, Gaibandha – 5730, Bangladesh</p>
-                        <div><a href="branches.php" class=" text-success">View Location Map →</a></div>
-                        <div class="pt-2"><a href="branches.php" class=" text-success">See More →</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="frontend/images/SEO-Expate-Pirganj-Branch.jpg" class="card-img-top" alt="our branch image" description="our branch image">
-                    <div class="card-body">
-                        <h5 class="card-title">Pirganj Branch (Rangpur)</h5>
-                        <p class="card-text">East side of Islami Bank S, B Plaza, Pirganj, Rangpur</p>
-                        <div><a href="branches.php" class=" text-success">View Location Map →</a></div>
-                        <div class="pt-2 pb-4"><a href="branches.php" class=" text-success">See More →</a></div>
-                        <p>&nbsp</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </section>
 <!--================================Our_Branches section end here=======================-->
@@ -573,7 +334,7 @@ $conn = $db->get_connection();
                     ?>
                             <div class="slider-card">
                                 <div class="d-flex justify-content-center align-items-center mb-4">
-                                    <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>">
+                                    <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
                                 </div>
                                 <h5 class="mb-0 text-center"><b>Winner</b></h5>
                                 <p class="text-center p-4">Digital Bangladesh Award 2023 </p>
@@ -609,7 +370,7 @@ $conn = $db->get_connection();
                 <div class="col-md-3 <?php if ($key > 3) {
                                             echo 'mt-4';
                                         } ?>">
-                    <a href="department.php"><img src="<?php echo $newImagePath ?>" alt="<?php echo $department['alt_tag'] ?>" description="<?php echo $department['alt_description'] ?>"></a>
+                    <a href="department.php"><img src="<?php echo $newImagePath ?>" alt="<?php echo $department['alt_tag'] ?>" description="<?php echo strip_tags($department['alt_description']) ?>"></a>
                     <h5 class="text-light pt-3"><?php echo $department['name'] ?></h5>
                 </div>
             <?php } ?>
@@ -748,10 +509,10 @@ $conn = $db->get_connection();
                         <?php
 
                         $blogQuery = "SELECT blogs.*, blog_categories.name as category_name
-                FROM blogs 
-                LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
-                WHERE blog_category_id = 4
-                ORDER BY blogs.id DESC";
+                                        FROM blogs 
+                                        LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+                                        WHERE blog_category_id = 4
+                                        ORDER BY blogs.id DESC";
 
                         $blogs = $conn->query($blogQuery);
                         foreach ($blogs as $blog) {
@@ -763,7 +524,7 @@ $conn = $db->get_connection();
                             <div class="col-lg-4 col-md-12 mb-4">
                                 <div class="card" style="background: #00000091;">
                                     <div class="bg-image hover-zoom ">
-                                        <img src="<?php echo $newImagePath ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo $blog['alt_description'] ?>" class="w-100" />
+                                        <img src="<?php echo $newImagePath ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo strip_tags($blog['alt_description']) ?>" class="w-100" />
                                         <a href="blog-details.php?id=<?php echo $blog['id'] ?>">
                                             <div class="mask">
                                                 <div class="d-flex justify-content-start align-items-end h-100">
@@ -776,7 +537,7 @@ $conn = $db->get_connection();
                                         <a href="blog-details.php?=" class="text-reset">
                                             <h5 class="card-title mb-3 text-light"><?php echo $blog['title'] ?></h5>
                                         </a>
-                                        <a href="blog-details.php?id=<?php echo $blog['id']?>" class="text-reset">
+                                        <a href="blog-details.php?id=<?php echo $blog['id'] ?>" class="text-reset">
                                             <p class="text-danger">Read Insight →</p>
                                             <p>&nbsp</p>
                                             <p>&nbsp</p>
@@ -786,7 +547,6 @@ $conn = $db->get_connection();
                             </div>
                         <?php } ?>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -823,7 +583,7 @@ $conn = $db->get_connection();
                             <div class="col-lg-4 col-md-12 mb-4">
                                 <div class="card" style="background: #00000091;">
                                     <div class="bg-image hover-zoom ">
-                                        <img src="<?php echo  $newImagePath ?>" alt="<?php echo $csr['alt_tag'] ?>" description="<?php echo $csr['alt_description'] ?>" class="w-100" />
+                                        <img src="<?php echo  $newImagePath ?>" alt="<?php echo $csr['alt_tag'] ?>" description="<?php echo strip_tags($csr['alt_description']) ?>" class="w-100" />
                                         <a href="blog-details.php?id=<?php echo $csr['id'] ?>">
                                             <div class="mask">
                                                 <div class="d-flex justify-content-start align-items-end h-100">
@@ -844,7 +604,6 @@ $conn = $db->get_connection();
                             </div>
                         <?php } ?>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -881,7 +640,7 @@ $conn = $db->get_connection();
                             <div class="col-lg-4 col-md-12 mb-4">
                                 <div class="card" style="background: #00000091;">
                                     <div class="bg-image hover-zoom ">
-                                        <img src="<?php echo $newImagePath ?>" alt="<?php echo $event['alt_tag'] ?>" description="<?php echo $event['alt_description'] ?>" class="w-100" />
+                                        <img src="<?php echo $newImagePath ?>" alt="<?php echo $event['alt_tag'] ?>" description="<?php echo strip_tags($event['alt_description']) ?>" class="w-100" />
                                         <a href="blog-details.php?id=<?php echo $event['id'] ?>">
                                             <div class="mask">
                                                 <div class="d-flex justify-content-start align-items-end h-100">
@@ -902,7 +661,6 @@ $conn = $db->get_connection();
                             </div>
                         <?php } ?>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -933,7 +691,7 @@ $conn = $db->get_connection();
                     ?>
                             <div class="slider-card">
                                 <div class="d-flex justify-content-center align-items-center mb-4">
-                                    <img src="<?php echo $newImagePath; ?>" alt="<?php echo $row['alt_tag']?>" description="<?php echo $row['alt_description']?>">
+                                    <img src="<?php echo $newImagePath; ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
                                 </div>
                             </div>
                     <?php
@@ -1030,7 +788,7 @@ $conn = $db->get_connection();
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
 
-                    <?php
+                        <?php
                         $qry = "SELECT * FROM history_galleries WHERE image_type = 2 ORDER BY id DESC";
                         if ($result = $conn->query($qry)) {
                             $active = true;
@@ -1040,7 +798,7 @@ $conn = $db->get_connection();
                                 $imageName = basename($imagePath);
                                 $newImagePath = 'uploads/' . $imageName;
                         ?>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="<?php echo $index; ?>" <?php echo $active ? 'class="active"' : ''; ?> aria-label="Slide <?php echo $index; ?>"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="<?php echo $index; ?>" <?php echo $active ? 'class="active"' : ''; ?> aria-label="Slide <?php echo $index; ?>"></button>
                         <?php
                                 $active = false;
                                 $index++;
@@ -1049,7 +807,7 @@ $conn = $db->get_connection();
                         ?>
                     </div>
                     <div class="carousel-inner pb-5">
-                    <?php
+                        <?php
                         $result->data_seek(0);
                         $active = true;
                         while ($row = $result->fetch_assoc()) {
@@ -1057,9 +815,9 @@ $conn = $db->get_connection();
                             $imageName = basename($imagePath);
                             $newImagePath = 'uploads/' . $imageName;
                         ?>
-                        <div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
-                            <img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="<?php echo $row['alt_tag']?>" description="<?php echo $row['alt_description']?>">
-                        </div>
+                            <div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
+                                <img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
+                            </div>
                         <?php
                             $active = false;
                         }
@@ -1161,7 +919,7 @@ $conn = $db->get_connection();
             </div>
             <div class="slider pt-5">
                 <div class="owl-carousel">
-                <?php
+                    <?php
                     $i = 1;
                     $qry = "SELECT * FROM featured_youtubes ORDER BY sort_by ASC";
                     $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
@@ -1169,11 +927,11 @@ $conn = $db->get_connection();
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
                     ?>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315" src="<?php echo $row['link']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
+                            <div class="slider-card">
+                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                    <iframe width="560" height="315" src="<?php echo $row['link']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
                     <?php
                         }
                     } else {

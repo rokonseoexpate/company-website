@@ -47,19 +47,17 @@ $conn = $db->get_connection();
 								<h4><?php echo $row['title'] ?></h4>
 								<p><?php echo $row['description'] ?></p>
 							</div>
-							<!-- <div class="top-body-button pt-4">
-						<a type="button" href="contact.html">Read More Details</a>
-					</div> -->
+						
 						</div>
 						<div class="col-md-6">
 							<div class="Core_Values_img pb-5 pt-3 text-center">
-								<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>">
+								<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
 							</div>
 						</div>
 					<?php } else { ?>
 						<div class="col-md-6">
 							<div class="Core_Values_img pb-5 pt-3 text-center">
-								<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>">
+								<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
 							</div>
 						</div>
 						<div class="col-md-6">
