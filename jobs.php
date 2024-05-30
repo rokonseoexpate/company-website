@@ -7,7 +7,7 @@ $conn = $db->get_connection();
 ?>
 
     <!--================================top-body section start here=======================-->
-    <section class="top-body top_about_us" style="background-image: url(images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;">
+    <section class="top-body top_about_us" style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;">
         <div class="container ">
             <div class="row">
                 <div class="top_about_us_txt pb-5" style="z-index:500;">
@@ -29,67 +29,44 @@ $conn = $db->get_connection();
     <!--================================OpenPosition section start here=======================-->
     <section class="OpenPosition">
         <div class="container">
+
             <div class="row pb-5">
                 <div class="col-12">
                     <h6 class="fw-bold fs-1">Currently Open Positions</h6>
                     <p>Welcome to SEO Expate Bangladesh Ltd.' job portal. Apply your desired jobs that best fit your skills and passions from below.</p>
-                    <h6 class="fw-bold">Senior WordPress Developer</h6>
-                    <a href="#"><h3 class="fw-bold text-success">Senior WordPress Developer</h3></a>
-                    <div class="d-flex gap-5">
-                        <p>Job Type: Full time</p>
-                        <p>Vacancies: 3</p>
-                        <p> Deadline: Jun 25, 2024</p>
-                    </div>
-                    <div class="top-body-button pt-3">
-                        <a type="button" href="#">Apply Here</a>
-                    </div>
                 </div>
             </div>
+            <?php
+            $qry = "SELECT * FROM jobs";
+            $result = mysqli_query($conn, $qry);
+
+            if ($result) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                <div class="row pt-3 pb-5">
+                    <div class="col-12">
+                        <h6 class="fw-bold"><?php echo $row['title']?></h6>
+                        <a href="#"><h3 class="fw-bold text-success"><?php echo $row['title']?></h3></a>
+
+                        <div class="d-flex gap-5">
+                            <p>Job Type: <?php echo $row['job_type']?></p>
+                            <p>Vacancies: <?php echo $row['vacancies']?></p>
+                            <p> Deadline: <?php echo date('d M Y', strtotime($row['deadline']));?></p>
+
+                        </div>
+                        <div class="top-body-button pt-3">
+                            <a type="button" target="_blank" href="<?php echo $row['apply_link']?>">Apply Here</a>
+                        </div>
+                    </div>
+                </div>
             <hr>
-            <div class="row pt-3 pb-5">
-                <div class="col-12">
-                    <h6 class="fw-bold">Senior Web Developer</h6>
-                    <a href="#"><h3 class="fw-bold text-success">Senior Web Developer</h3></a>
-                    <div class="d-flex gap-5">
-                        <p>Job Type: Full time</p>
-                        <p>Vacancies: 5</p>
-                        <p> Deadline: Jun 25, 2024</p>
-                    </div>
-                    <div class="top-body-button pt-3">
-                        <a type="button" href="#">Apply Here</a>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row pt-3 pb-5">
-                <div class="col-12">
-                    <h6 class="fw-bold">Senior Web Developer</h6>
-                    <a href="#"><h3 class="fw-bold text-success">Senior App Developer</h3></a>
-                    <div class="d-flex gap-5">
-                        <p>Job Type: Full time</p>
-                        <p>Vacancies: 2</p>
-                        <p> Deadline: Jun 25, 2024</p>
-                    </div>
-                    <div class="top-body-button pt-3">
-                        <a type="button" href="#">Apply Here</a>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row pt-3">
-                <div class="col-12">
-                    <h6 class="fw-bold">Senior Web Developer</h6>
-                    <a href="#"><h3 class="fw-bold text-success">Senior Laravel Developer</h3></a>
-                    <div class="d-flex gap-5">
-                        <p>Job Type: Full time</p>
-                        <p>Vacancies: 4</p>
-                        <p> Deadline: Jun 25, 2024</p>
-                    </div>
-                    <div class="top-body-button pt-3">
-                        <a type="button" href="#">Apply Here</a>
-                    </div>
-                </div>
-            </div>
+            <?php
+            }
+        } else {
+            echo "Error: " . mysqli_error($conn);
+        }
+        ?>
+
         </div>
     </section>
     <!--================================OpenPosition section end here=======================-->
@@ -104,7 +81,7 @@ $conn = $db->get_connection();
                     <p class=" pt-2"  style="text-align: justify;">We strongly believe that the productivity of a team greatly depends on a company culture. That's why we enable a positive work environment that increases creativity and innovation. This leads to seamless design, production, and testing stages, ensuring we deliver world-class technology solutions.</p>
                 </div>
                 <div class="Our_Infrustructure_img pt-3">
-                    <img src="images/infrustructureer-1024x490.jpg" alt="job" description=" job">
+                    <img src="frontend/images/infrustructureer-1024x490.jpg" alt="job" description=" job">
                 </div>
             </div>
         </div>
@@ -118,19 +95,19 @@ $conn = $db->get_connection();
                 <div class="updatecode pb-3"><h6 class="text-center" style="padding-bottom: unset;">Our Engagement Models</h6></div>
                 <p class=" pb-4" style="text-align: justify;">We have a different engagement model precisely created for our services. Therefore, with years of experience, we develop these models to guarantee top-quality performance, exceptional functionality, and impressive efficiency for your business.</p>
                 <div class="col-md-4">
-                    <img src="images/slide4.jpg" alt="image">
+                    <img src="frontend/images/slide4.jpg" alt="image">
                     <h5 class=" pt-3">Agile Approach</h5>
                     <hr>
                     <p>The Agile approach allows for changes to be made throughout the development process. By breaking down projects into smaller, manageable chunks, Agile allows for faster development cycles. Also, this reduces the risk of major problems arising later in the project.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/Manage Every Part of Your IT Operation.jpg" alt="Our Engagement Models" description=" Our Engagement Models">
+                    <img src="frontend/images/Manage Every Part of Your IT Operation.jpg" alt="Our Engagement Models" description=" Our Engagement Models">
                     <h5 class=" pt-3">Dedicated Team</h5>
                     <hr>
                     <p>Our dedicated teams provide quality services, accelerate projects, and make the best use of resources. This allows you to expand your capacity and access specific skill sets to tackle difficult projects.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/Having A Proactive and Proficient Team.jpg" alt="Our Engagement Models" description=" Our Engagement Models">
+                    <img src="frontend/images/Having A Proactive and Proficient Team.jpg" alt="Our Engagement Models" description=" Our Engagement Models">
                     <h5 class=" pt-3">Staff Augmentation</h5>
                     <hr>
                     <p>SEO Expate uses this method to find the exact expertise we need for a specific project. We can quickly adjust our team size based on project needs.</p>
@@ -138,13 +115,13 @@ $conn = $db->get_connection();
             </div>
             <div class="row pt-3">
                 <div class="col-md-6">
-                    <img src="images/Speeding Up Your Business's Success.JPG" alt="Our Engagement Models" description=" Our Engagement Models">
+                    <img src="frontend/images/Speeding Up Your Business's Success.JPG" alt="Our Engagement Models" description=" Our Engagement Models">
                     <h5 class=" pt-3">Hourly</h5>
                     <hr>
                     <p>We encourage the hourly work model because it gives greater flexibility in scheduling. Besides, we can gain experience in different industries and with diverse teams by working on hourly projects.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="images/Having A Proactive and Proficient Team.jpg" alt="Our Engagement Models" description=" Our Engagement Models">
+                    <img src="frontend/images/Having A Proactive and Proficient Team.jpg" alt="Our Engagement Models" description=" Our Engagement Models">
                     <h5 class=" pt-3">Managed Service</h5>
                     <hr>
                     <p>We will manage your business remotely through this engagement model. This service includes managing network, application, and infrastructure for security and many other operations.</p>
@@ -171,7 +148,7 @@ $conn = $db->get_connection();
                             <div class="col-lg-4 col-md-12 mb-4">
                                 <div class="card" style="background: #00000091;">
                                     <div class="bg-image hover-zoom ">
-                                        <img src="images/Waz Mahfil.jpg"
+                                        <img src="frontend/images/Waz Mahfil.jpg"
                                              class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
                                         <a href="#!">
                                             <div class="mask">
@@ -198,7 +175,7 @@ $conn = $db->get_connection();
                                 <div class="card"  style="background: #00000091;">
                                     <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
                                          data-mdb-ripple-color="light">
-                                        <img src="images/Womens Day.jpg"
+                                        <img src="frontend/images/Womens Day.jpg"
                                              class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
                                         <a href="#!">
                                             <div class="mask">
@@ -222,7 +199,7 @@ $conn = $db->get_connection();
                             <div class="col-lg-4 col-md-6 mb-4">
                                 <div class="card"  style="background: #00000091;">
                                     <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                        <img src="images/Iftar Mahfil.jpg"
+                                        <img src="frontend/images/Iftar Mahfil.jpg"
                                              class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
                                         <a href="#!">
                                             <div class="mask">
@@ -250,7 +227,7 @@ $conn = $db->get_connection();
                             <div class="col-lg-4 col-md-12 mb-4">
                                 <div class="card"  style="background: #00000091;">
                                     <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                        <img src="images/Employye Birthday.jpg"
+                                        <img src="frontend/images/Employye Birthday.jpg"
                                              class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
                                         <a href="#!">
                                             <div class="mask">
@@ -279,7 +256,7 @@ $conn = $db->get_connection();
                                 <div class="card"  style="background: #00000091;">
                                     <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
                                          data-mdb-ripple-color="light">
-                                        <img src="images/birthday-celebr.jpg"
+                                        <img src="frontend/images/birthday-celebr.jpg"
                                              class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
                                         <a href="#!">
                                             <div class="mask">
@@ -303,7 +280,7 @@ $conn = $db->get_connection();
                             <div class="col-lg-4 col-md-6 mb-4">
                                 <div class="card"  style="background: #00000091;">
                                     <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                        <img src="images/blanket 21  Feb.jpg"
+                                        <img src="frontend/images/blanket 21  Feb.jpg"
                                              class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
                                         <a href="#!">
                                             <div class="mask">
@@ -352,7 +329,7 @@ $conn = $db->get_connection();
                 </div>
                 <div class="col-md-6">
                     <div class="top_ready_start_img text-left">
-                        <img src="images/95991_prev_ui.png" alt="Our Engagement Models" description=" Our Engagement Models">
+                        <img src="frontend/images/95991_prev_ui.png" alt="Our Engagement Models" description=" Our Engagement Models">
                     </div>
                 </div>
             </div>
@@ -365,7 +342,7 @@ $conn = $db->get_connection();
         <div class="container">
             <div class="row">
                 <div class="PAY_IMG">
-                    <img src="images/Payment-method-banner-image-1024x73.webp" alt="Our Engagement Models" description=" Our Engagement Models" width="100%">
+                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="Our Engagement Models" description=" Our Engagement Models" width="100%">
                 </div>
             </div>
         </div>

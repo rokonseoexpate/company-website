@@ -1,6 +1,16 @@
 <?php
 $title = "Blog Post";
 ob_start();
+
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
+$sql = "SELECT * FROM blogs WHERE id = $id";
+$result = mysqli_query($conn, $sql);
+$blog = mysqli_fetch_assoc($result);
+
+$title = $blog['name'];
 ?>
 
     <?php include  'includes/sub-nav.php' ?>
@@ -19,7 +29,7 @@ ob_start();
                     </div>
                 </div>
                 <div class="col-md-5 m-auto ecomrespp" style="z-index:500;" >
-                    <img src="frontend/images/content-writing-2-1024x683.png" alt=" Top Blog Writing Services Available in Bangladesh" description=" Top Blog Writing Services Available in Bangladesh" class="img-thumbnail">
+                    <img src="<?php echo 'pages/' . basename($blog['image']); ?>" alt=" Top Blog Writing Services Available in Bangladesh" description=" Top Blog Writing Services Available in Bangladesh" class="img-thumbnail">
                 </div>
             </div>
         </div>

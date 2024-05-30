@@ -441,7 +441,7 @@ $conn = $db->get_connection();
             ?>
                     <div class="col-md-3 pb-5">
                         <div class="card">
-                            <img src="<?php echo $newImagePath; ?>" class="card-img-top" alt="our branch image" description="our branch image">
+                            <img src="<?php echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $row['name'] ?></h5>
                                 <p class="card-text"><?php echo $row['address'] ?></p>
@@ -564,34 +564,27 @@ $conn = $db->get_connection();
             </div>
             <div class="slider pt-5">
                 <div class="owl-carousel">
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/1.png" alt="Achievements and Recognitions" description="Achievements and Recognitions">
-                        </div>
-                        <h5 class="mb-0 text-center"><b>Winner</b></h5>
-                        <p class="text-center p-4">Digital Bangladesh Award 2023 </p>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/04.png" alt="Achievements and Recognitions" description="Achievements and Recognitions">
-                        </div>
-                        <h5 class="mb-0 text-center"><b>Exhibitor </b></h5>
-                        <p class="text-center p-4">Basis Soft Expo 2023 </p>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/06.png" alt="Achievements and Recognitions" description="Achievements and Recognitions">
-                        </div>
-                        <h5 class="mb-0 text-center"><b>Science Fair </b></h5>
-                        <p class="text-center p-4"></p>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/07.png" alt="Achievements and Recognitions" description="Achievements and Recognitions">
-                        </div>
-                        <h5 class="mb-0 text-center"><b> FBCCI </b></h5>
-                        <p class="text-center p-4">FBCCI Intro Smart Bangladesh</p>
-                    </div>
+                    <?php
+                    $i = 1;
+                    $qry = "SELECT * FROM history_galleries WHERE image_type = 4 ORDER BY id DESC";
+                    $result = mysqli_query($conn, $qry);
+
+                    if ($result) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                            <div class="slider-card">
+                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                    <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>">
+                                </div>
+                                <h5 class="mb-0 text-center"><b>Winner</b></h5>
+                                <p class="text-center p-4">Digital Bangladesh Award 2023 </p>
+                            </div>
+                    <?php
+                        }
+                    } else {
+                        echo "Error: " . mysqli_error($conn);
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -604,93 +597,25 @@ $conn = $db->get_connection();
     <div class="container">
         <div class="row">
             <h6 class="pb-5 text-light">Our Departments</h6>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/illustration-financial-concept_53876-37658.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">finance department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/61465747-operations-management-chart-with-keywords-and-icons-sketch.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Operation Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/HR_main_2-1.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Human Resources (HR) Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/audit-image-1-540x238-1.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Audit Department</h5>
-            </div>
+            <?php
+            $query = "SELECT * FROM departments ORDER BY id ASC";
+            $result = $conn->query($query);
+            foreach ($result as $key => $department) {
+
+                $imagePath = $department['image'];
+                $imageName = basename($imagePath);
+                $newImagePath = 'uploads/' . $imageName;
+            ?>
+
+                <div class="col-md-3 <?php if ($key > 3) {
+                                            echo 'mt-4';
+                                        } ?>">
+                    <a href="department.php"><img src="<?php echo $newImagePath ?>" alt="<?php echo $department['alt_tag'] ?>" description="<?php echo $department['alt_description'] ?>"></a>
+                    <h5 class="text-light pt-3"><?php echo $department['name'] ?></h5>
+                </div>
+            <?php } ?>
         </div>
-        <div class="row pt-3">
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/tender-flow.png" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Govt Project and Tender submission Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/5fb10aac5da65965468139.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Customer Support Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/insights-2022-research-and-development-tax-credit-960x600-1.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Research and Development Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/VS-Team-working-collaboratively-on-a-graphic-Header.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Training Department</h5>
-            </div>
-        </div>
-        <div class="row pt-3">
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/images.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">IT Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/SEO-Digital-Marketing.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">SEO and Digital Marketing Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/Web-Development-Software.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Web and Software Development Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/1520156545851.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Content Writing Department</h5>
-            </div>
-        </div>
-        <div class="row pt-3">
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/11.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Graphics Design Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/55910139-direct-marketing-business-graphics-sign-concept-illustration-design-graphic.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Graphics ( Direct Marketing Department )</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/bentuk-direct-marketing-1.png" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Web ( Direct Marketing Department)</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/2b1ad69a63e6a81124e40cac3cd284c6.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">WordPress Design Depertment</h5>
-            </div>
-        </div>
-        <div class="row pt-3">
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/local-marketing-agency.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Local Marketing Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/event-management-strategy.png" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Event Management Department</h5>
-            </div>
-            <div class="col-md-3">
-                <a href="department.php"><img src="frontend/images/images-1.jpg" alt="Our Department" description="Our Department"></a>
-                <h5 class="text-light pt-3">Office Maintenance Department</h5>
-            </div>
-            <div class="col-md-3">
-            </div>
-        </div>
+
     </div>
 </section>
 <!--================================Our_Departments section end here=======================-->
@@ -821,158 +746,48 @@ $conn = $db->get_connection();
             <div>
                 <div class=" container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ">
-                                    <img src="frontend/images/Waz Mahfil.jpg" alt="Our Culture" description="Our Culture" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Waz Mahfil</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                        <p>&nbsp</p>
-                                        <p>&nbsp</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Womens Day.jpg" alt="Our Culture" description="Our Culture" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">International Women's Day</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        $blogQuery = "SELECT blogs.*, blog_categories.name as category_name
+                FROM blogs 
+                LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+                WHERE blog_category_id = 4
+                ORDER BY blogs.id DESC";
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Iftar Mahfil.jpg" alt="Our Culture" description="Our Culture" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
+                        $blogs = $conn->query($blogQuery);
+                        foreach ($blogs as $blog) {
+
+                            $imagePath = $blog['image'];
+                            $imageName = basename($imagePath);
+                            $newImagePath = 'uploads/' . $imageName;
+                        ?>
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <div class="card" style="background: #00000091;">
+                                    <div class="bg-image hover-zoom ">
+                                        <img src="<?php echo $newImagePath ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo $blog['alt_description'] ?>" class="w-100" />
+                                        <a href="blog-details.php?id=<?php echo $blog['id'] ?>">
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5><span class="badge bg-success ms-2"><?php echo $blog['category_name'] ?></span></h5>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Iftar Mahfil</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                        <p>&nbsp</p>
-                                        <p>&nbsp</p>
-                                    </a>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="blog-details.php?=" class="text-reset">
+                                            <h5 class="card-title mb-3 text-light"><?php echo $blog['title'] ?></h5>
+                                        </a>
+                                        <a href="blog-details.php?id=<?php echo $blog['id']?>" class="text-reset">
+                                            <p class="text-danger">Read Insight →</p>
+                                            <p>&nbsp</p>
+                                            <p>&nbsp</p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php } ?>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Employye Birthday.jpg" alt="Our Culture" description="Our Culture" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5>
-                                                    <span class="badge bg-success ms-2">Culture and Engagement</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Employye Birthday</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                        <p>&nbsp</p>
-                                        <p>&nbsp</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/birthday-celebr.jpg" alt="Our Culture" description="Our Culture" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">birthday-celebr</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/blanket 21  Feb.jpg" alt="Our Culture" description="Our Culture" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5>
-                                                    <span class="badge bg-success ms-2">Culture and Engagement</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">21 February</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                        <p>&nbsp</p>
-                                        <p>&nbsp</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -991,150 +806,46 @@ $conn = $db->get_connection();
             <div>
                 <div class=" container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ">
-                                    <img src="frontend/images/Blod Donet.jpg" alt="Corporate social responsibility (CSR) Initiatives by SEO Expate" description="Corporate social responsibility (CSR) Initiatives by SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">CSR</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Blod Donet</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Ballo Bibaho.JPG" alt="Corporate social responsibility (CSR) Initiatives by SEO Expate" description="Corporate social responsibility (CSR) Initiatives by SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">CSR</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Child Marriges</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        $blogQuery = "SELECT blogs.*, blog_categories.name as category_name
+                                        FROM blogs 
+                                        LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+                                        WHERE blog_category_id = 5
+                                        ORDER BY blogs.id DESC";
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Atim and gorib sikkhtaire majhe taka bitoron.jpg" alt="Corporate social responsibility (CSR) Initiatives by SEO Expate" description="Corporate social responsibility (CSR) Initiatives by SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">CSR</span></h5>
+                        $blogs = $conn->query($blogQuery);
+                        foreach ($blogs as $csr) {
+
+                            $imagePath = $csr['image'];
+                            $imageName = basename($imagePath);
+                            $newImagePath = 'uploads/' . $imageName;
+                        ?>
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <div class="card" style="background: #00000091;">
+                                    <div class="bg-image hover-zoom ">
+                                        <img src="<?php echo  $newImagePath ?>" alt="<?php echo $csr['alt_tag'] ?>" description="<?php echo $csr['alt_description'] ?>" class="w-100" />
+                                        <a href="blog-details.php?id=<?php echo $csr['id'] ?>">
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5><span class="badge bg-success ms-2"><?php echo $csr['category_name'] ?? '' ?></span></h5>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Atim and gorib sikkhtaire majhe taka bitoron</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="blog-details.php" class="text-reset">
+                                            <h5 class="card-title mb-3 text-light"><?php echo $csr['title'] ?></h5>
+                                        </a>
+                                        <a href="blog-details.php?id=<? echo $csr['id'] ?>" class="text-reset">
+                                            <p class="text-danger">Read Insight →</p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php } ?>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Khela Samgoggri Bitoron.jpg" alt="Corporate social responsibility (CSR) Initiatives by SEO Expate" description="Corporate social responsibility (CSR) Initiatives by SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5>
-                                                    <span class="badge bg-success ms-2">CSR</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Khela Samgoggri Bitoron</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Taka Bitoron.jpg" alt="Corporate social responsibility (CSR) Initiatives by SEO Expate" description="Corporate social responsibility (CSR) Initiatives by SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">CSR</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Charity Fund</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Seop-Expate- blanket-distribution-thumbnail.jpg" alt="Corporate social responsibility (CSR) Initiatives by SEO Expate" description="Corporate social responsibility (CSR) Initiatives by SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5>
-                                                    <span class="badge bg-success ms-2">CSR</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Seop-Expate- blanket-distribution</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1153,150 +864,46 @@ $conn = $db->get_connection();
             <div>
                 <div class=" container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ">
-                                    <img src="frontend/images/06.jpg" alt="Events of SEO Expate" description="Events of SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Event</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Iftar Mahfil</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/05.jpg" alt="Events of SEO Expate" description="Events of SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Event</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Udbodhoni Onusthan</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        $blogQuery = "SELECT blogs.*, blog_categories.name as category_name
+                                        FROM blogs 
+                                        LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+                                        WHERE blog_category_id = 6
+                                        ORDER BY blogs.id DESC";
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/04.jpg" alt="Events of SEO Expate" description="Events of SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Event</span></h5>
+                        $blogs = $conn->query($blogQuery);
+                        foreach ($blogs as $event) {
+
+                            $imagePath = $event['image'];
+                            $imageName = basename($imagePath);
+                            $newImagePath = 'uploads/' . $imageName;
+                        ?>
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <div class="card" style="background: #00000091;">
+                                    <div class="bg-image hover-zoom ">
+                                        <img src="<?php echo $newImagePath ?>" alt="<?php echo $event['alt_tag'] ?>" description="<?php echo $event['alt_description'] ?>" class="w-100" />
+                                        <a href="blog-details.php?id=<?php echo $event['id'] ?>">
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5><span class="badge bg-success ms-2"><?php $event['category_name'] ?></span></h5>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Smart Bangladesh</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="blog-details.php" class="text-reset">
+                                            <h5 class="card-title mb-3 text-light"><?php echo $event['title'] ?></h5>
+                                        </a>
+                                        <a href="blog-details.php?id=<?php echo $event['id'] ?>" class="text-reset">
+                                            <p class="text-danger">Read Insight →</p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php } ?>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/03.jpg" alt="Events of SEO Expate" description="Events of SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5>
-                                                    <span class="badge bg-success ms-2">Event</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Songbordhona Onusthan</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/02.jpg" alt="Events of SEO Expate" description="Events of SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Event</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Mot Binimoy Sova</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/01.jpg" alt="Events of SEO Expate" description="Events of SEO Expate" class="w-100" />
-                                    <a href="blog_details.php">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5>
-                                                    <span class="badge bg-success ms-2">Event</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="blog_details.php" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Women Entrepreneurs</h5>
-                                    </a>
-                                    <a href="blog_details.php" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -1314,51 +921,28 @@ $conn = $db->get_connection();
             </div>
             <div class="slider pt-5">
                 <div class="owl-carousel">
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (1).jpg" alt="We're Highlighted On" description="We're Highlighted On">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (1).PNG" alt="We're Highlighted On" description="We're Highlighted On">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (2).jpg" alt="We're Highlighted On" description="We're Highlighted On">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (4).jpg" alt="We're Highlighted On" description="We're Highlighted On">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (5).jpg" alt="We're Highlighted On" description="We're Highlighted On">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (6).jpg" alt="We're Highlighted On" description="We're Highlighted On">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (7).jpg" alt="We're Highlighted On" description="We're Highlighted On">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (8).jpg" alt="We're Highlighted On" description="We're Highlighted On">
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <img src="frontend/images/News (3).jpg" alt="We're Highlighted On" description="We're Highlighted On">
-                        </div>
-                    </div>
+                    <?php
+                    $i = 1;
+                    $qry = "SELECT * FROM history_galleries WHERE image_type = 3 ORDER BY id DESC";
+                    $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+                    if ($result) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $imagePath = $row['image'];
+                            $imageName = basename($imagePath);
+                            $newImagePath = 'uploads/' . $imageName;
+                    ?>
+                            <div class="slider-card">
+                                <div class="d-flex justify-content-center align-items-center mb-4">
+                                    <img src="<?php echo $newImagePath; ?>" alt="<?php echo $row['alt_tag']?>" description="<?php echo $row['alt_description']?>">
+                                </div>
+                            </div>
+                    <?php
+                        }
+                    } else {
+                        echo "Error: " . mysqli_error($conn);
+                    }
+                    ?>
                 </div>
             </div>
             <div class="bbb_main_container">
@@ -1446,25 +1030,43 @@ $conn = $db->get_connection();
             <div class="col-12 pt-5">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                    <?php
+                        $qry = "SELECT * FROM history_galleries WHERE image_type = 2 ORDER BY id DESC";
+                        if ($result = $conn->query($qry)) {
+                            $active = true;
+                            $index = 0;
+                            while ($row = $result->fetch_assoc()) {
+                                $imagePath = $row['image'];
+                                $imageName = basename($imagePath);
+                                $newImagePath = 'uploads/' . $imageName;
+                        ?>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="<?php echo $index; ?>" <?php echo $active ? 'class="active"' : ''; ?> aria-label="Slide <?php echo $index; ?>"></button>
+                        <?php
+                                $active = false;
+                                $index++;
+                            }
+                        }
+                        ?>
                     </div>
                     <div class="carousel-inner pb-5">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="frontend/images/slide1.png" class="d-block w-100" alt="Our Reliable Customers and Associates" description="Our Reliable Customers and Associates">
+                    <?php
+                        $result->data_seek(0);
+                        $active = true;
+                        while ($row = $result->fetch_assoc()) {
+                            $imagePath = $row['image'];
+                            $imageName = basename($imagePath);
+                            $newImagePath = 'uploads/' . $imageName;
+                        ?>
+                        <div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
+                            <img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="<?php echo $row['alt_tag']?>" description="<?php echo $row['alt_description']?>">
                         </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="frontend/images/slide2.png" class="d-block w-100" alt="Our Reliable Customers and Associates" description="Our Reliable Customers and Associates">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="frontend/images/slide3.png" class="d-block w-100" alt="Our Reliable Customers and Associates" description="Our Reliable Customers and Associates">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="frontend/images/slide4.png" class="d-block w-100" alt="Our Reliable Customers and Associates" description="Our Reliable Customers and Associates">
-                        </div>
+                        <?php
+                            $active = false;
+                        }
+                        ?>
                     </div>
+
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -1560,31 +1162,25 @@ $conn = $db->get_connection();
             </div>
             <div class="slider pt-5">
                 <div class="owl-carousel">
+                <?php
+                    $i = 1;
+                    $qry = "SELECT * FROM featured_youtubes ORDER BY sort_by ASC";
+                    $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+
+                    if ($result) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
                     <div class="slider-card">
                         <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EIXp39hWU2w?si=Wa3a30NuN4rrhHOF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="<?php echo $row['link']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bSYexSp8Ybs?si=RIss4wWbk_YONtYm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ha2rO-rjLNA?si=wonWf8QZWF1YQawf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Inx2v2z7G0Q?si=iiR08XJOOmD0-fQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="slider-card">
-                        <div class="d-flex justify-content-center align-items-center mb-4">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/hItrynkfRiM?si=KpC_IxIBux5R6_6y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                    </div>
+                    <?php
+                        }
+                    } else {
+                        echo "Error: " . mysqli_error($conn);
+                    }
+                    ?>
                 </div>
             </div>
         </div>

@@ -4,8 +4,6 @@ ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-// Fetch the branch details from the database based on the ID
-$id = $_GET['id']; // Assuming the ID is passed via URL parameter
 $sql = "SELECT * FROM branches WHERE id = $id";
 $result = mysqli_query($conn, $sql);
 $branch = mysqli_fetch_assoc($result);
@@ -104,6 +102,11 @@ $title = $branch['name'];
 										</div>
 									</div>
 								</div>
+
+
+
+
+								
 						<?php
 							}
 						} else {

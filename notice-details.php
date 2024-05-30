@@ -36,136 +36,58 @@ $title = $row['title'];
 	<section class=" Cnotice">
         <div class="container">
             <div class="row">
-            	<div class="col-md-8">
-            		<div class="recentno0tice">
-	            		<div class="title pt-3">
-	            			<h5>Eid Ul Fitr 2024</h5>
-	            		</div>
-	            		<div class="text-center mt-3 mb-5"></div>
-	                    <div class="row ">
-	                        <div class="col-sm-12 box mar-bottom10 pb-3">
-	                            <div class="text-start px-5"><strong>Title :</strong> Eid Ul Fitr 2024</div>
-	                            <div class=" text-start px-5"><strong>Notice Date :</strong> 06 April 2024</div>
-	                        </div>
-	                        <div class="col-sm-12 mar-bottom10 box"></div>
-	                        <div class="col-sm-12 box" align="center">
-	                            <iframe src="frontend/images/434851978_403671812407986_8393123070098562643_n.pdf" width="100%" height="800"></iframe>   
-	                        </div>
-	                    </div>
+                <div class="col-md-8">
+                    <div class="recentno0tice">
+                        <div class="title pt-3">
+                            <h3><?php echo $row['title'];?></h3>
+                        </div>
+                        <div class="text-center mt-3 mb-5"></div>
+                        <div class="row ">
+                            <div class="col-sm-12 box mar-bottom10 pb-3">
+                                <div class="text-start px-5"><strong>Title :</strong> <?php echo $row['title'];?></div>
+                                <div class=" text-start px-5"><strong>Notice Date :</strong> <?php
+                                    $originalDate = $row['date'];
+                                    $newDate = date("d M Y", strtotime($originalDate));
+                                    echo $newDate;?></div>
+                            </div>
+                            <div class="col-sm-12 mar-bottom10 box"></div>
+                            <div class="col-sm-12 box" align="center">
+                                <iframe src="<?php
+                                $imagePath = $row['files'];
+                                $imageName = basename($imagePath);
+                                $newImagePath = 'uploads/' . $imageName;
+                                echo $newImagePath; ?>" width="100%" height="800"></iframe>
+                            </div>
+                        </div>
                     </div>
-            	</div>
+                </div>
             	<div class="col-md-4 text-center recentnotice">
             		<div class="recent_notice pt-3 pb-5">
-                        <h5 class="">Recent Notice</h5>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month"> April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                             <div class="col-sm-8 col-xs-8">
-                             	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                             </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>
-                        <div class="row notice-row notice-border">
-                            <div class="col-sm-2 col-xs-2 font-bold">
-                            	<span class="day" style="color:var(--secondary-text-color); font-weight: 700;"> 11 </span><br> <span class="month">April</span> 
-                            </div>
-                            <div class="col-sm-2 col-xs-2 year">2024</div>
-                            <div class="col-sm-8 col-xs-8">
-                            	<a href="notice_details.php"  class="margin-left-15">Eid Ul Fitr 2024</a>
-                            </div>
-                        </div>            
-                    </div>
+                        <h3 class="">Recent Notice</h3>
+                        <?php
+                        $i = 1;
+                        $qry = "SELECT * FROM notices ORDER BY id DESC";
+                        $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+                        if ($result) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                $date = date('d F', strtotime($row['date'])); // Format the date to 'd F' (day and month)
+                                ?>
+                                <div class="row notice-row notice-border">
+                                    <div class="col-sm-2 col-xs-2 font-bold">
+                                        <span class="day" style="color: var(--secondary-text-color); font-weight: 700;"><?php echo $date; ?></span>
+                                    </div>
+                                    <div class="col-sm-2 col-xs-2 year"><?php echo date('Y', strtotime($row['date'])); ?></div>
+                                    <div class="col-sm-8 col-xs-8">
+                                        <a href="notice-details.php?id=<?php echo $row['id']; ?>" class="margin-left-15"><?php echo $row['title']; ?></a>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                        } else {
+                            echo "Error: " . mysqli_error($conn);
+                        }
+                        ?>
             	</div>
             </div>
         </div>

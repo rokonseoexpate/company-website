@@ -1,10 +1,35 @@
 <?php
 $title = "Blog Post";
 ob_start();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
+$id = $_GET['id'];
+$sql = "SELECT * FROM blogs WHERE id = $id";
+$result = mysqli_query($conn, $sql);
+$blog = mysqli_fetch_assoc($result);
+
+// $relatedBlog = "SELECT * FROM blogs WHERE blog_category_id =  $blog[blog_category_id]"  ;
+// $relatedBlog = "SELECT * FROM blogs WHERE blog_category_id =  $blog[blog_category_id] AND id NOT IN ($blog[id] ORDER BY id DESC LIMIT 2";
+
+// $relatedBlog = "SELECT * FROM blogs WHERE blog_category_id =  $blog[blog_category_id] AND id != $blog[id] ORDER BY id DESC LIMIT 2";
+$relatedBlog = "SELECT * FROM blogs WHERE blog_category_id =  $blog[blog_category_id] AND id != $blog[id] LIMIT 2";
+
+$blogs = mysqli_query($conn, $relatedBlog);
+$relatedBlogs = mysqli_fetch_assoc($blogs);
+
+$imagePath = $blog['image'];
+$imageName = basename($imagePath);
+$newImagePath = 'uploads/' . $imageName;
+
 ?>
-
-
-<!--================================web_service section start here=======================-->
+<style>
+    img {
+        max-width: 100%;
+        height: auto
+    }
+</style>
 <section class="web_service text-light">
     <div class="container ">
         <div class="row">
@@ -14,13 +39,13 @@ ob_start();
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
                                 <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
-                                <li class="breadcrumb-item active text-light" aria-current="page">Blog Details</li>
+                                <li class="breadcrumb-item active text-light" aria-current="page">Blog Details <?php echo $blog['blog_category_id'] ?> </li>
                             </ol>
                         </nav>
                     </div>
                 </div>
                 <div class="top_body_txt_part">
-                    <h4>Seop-Expate- Blanket-Distribution</h4>
+                    <h4><?php echo $blog['title'] ?></h4>
                 </div>
                 <div class="button pt-5">
                     <a href="contact.php" class="text-light">Contact Us</a>
@@ -28,7 +53,7 @@ ob_start();
             </div>
             <div class="col-md-6 pt-4">
                 <div class="web_service_img">
-                    <img src="frontend/images/Seop-Expate- blanket-distribution-thumbnail.jpg" alt=" Seop-Expate- Blanket-Distribution" description=" Seop-Expate- Blanket-Distribution" class="img-thumbnail">
+                    <img src="<?php echo $newImagePath ?>" alt=" Seop-Expate- Blanket-Distribution" description=" Seop-Expate- Blanket-Distribution" class="img-thumbnail">
                 </div>
             </div>
         </div>
@@ -41,7 +66,7 @@ ob_start();
     <div class="container">
         <div class="row">
             <div class="what_you_need_txt">
-                <p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. distributed winter clothes to homeless people, who were suffering in winter. This IT company contributes to Corporate Social Responsibility (CSR) every year by helping the helpless. Following this, team SEO Expate Bangladesh Ltd. focuses on sharing the winter warmth with homeless people each year.</p>
+                <!-- <p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. distributed winter clothes to homeless people, who were suffering in winter. This IT company contributes to Corporate Social Responsibility (CSR) every year by helping the helpless. Following this, team SEO Expate Bangladesh Ltd. focuses on sharing the winter warmth with homeless people each year.</p>
                 <p>On the evening of 17th January 2023, some of the team members of <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. distributed winter clothes to homeless people. More than 40 people received blankets and winter clothes on this occasion.</p>
                 <div class="blog_det_img">
                     <img src="frontend/images/Seop-Expate- blanket-distribution-thumbnail.jpg" alt=" seo expate" description=" seo expate" class="img-thumbnail">
@@ -63,7 +88,9 @@ ob_start();
                     <div class="col-md-6">
                         <img src="frontend/images/Seop-Expate- blanket-distribution-thumbnail.jpg" alt=" seo expate" description=" seo expate" class="img-thumbnail">
                     </div>
-                </div>
+                </div> -->
+
+                <p><?php echo $blog['description'] ?></p>
             </div>
         </div>
     </div>
@@ -73,34 +100,28 @@ ob_start();
     <div class="container">
         <div class="row">
             <h4 class=" fw-bold">Other CSR of SEO Expate Bangladesh Ltd.</h4>
-            <div class="col-md-6 pt-4">
-                <div class="card">
-                    <div class="card-img blog_det_img">
-                        <img src="frontend/images/Taka Bitoron.jpg" alt=" seo expate" description=" seo expate" class="img-thumbnail">
-                    </div>
-                    <div class="card-body">
-                        <div class="title"><h4>Charity Fund</h4></div>
-                        <div class="description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sed, neque eius tempora saepe quae sit cumque. Eum, deserunt, harum!</p></div>
-                        <div class="button ">
-                            <a href="index.php" class="text-success fw-bold">SEO Expate</a>
+            <?php
+            foreach ($relatedBlogs as $r_blog) {
+            ?>
+                <div class="col-md-6 pt-4">
+                    <div class="card">
+                        <div class="card-img blog_det_img">
+                            <img src="frontend/images/Taka Bitoron.jpg" alt=" seo expate" description=" seo expate" class="img-thumbnail">
+                        </div>
+                        <div class="card-body">
+                            <div class="title">
+                                <h4>Charity Fund</h4>
+                            </div>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sed, neque eius tempora saepe quae sit cumque. Eum, deserunt, harum!</p>
+                            </div>
+                            <div class="button ">
+                                <a href="index.php" class="text-success fw-bold">SEO Expate</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 pt-4">
-                <div class="card">
-                    <div class="card-img blog_det_img">
-                        <img src="frontend/images/Taka Bitoron.jpg" alt=" seo expate" description=" seo expate"  class="img-thumbnail">
-                    </div>
-                    <div class="card-body">
-                        <div class="title"><h4>Charity Fund</h4></div>
-                        <div class="description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sed, neque eius tempora saepe quae sit cumque. Eum, deserunt, harum!</p></div>
-                        <div class="button ">
-                            <a href="index.php" class="text-success fw-bold">SEO Expate</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </section>
@@ -120,7 +141,7 @@ ob_start();
             </div>
             <div class="col-md-6">
                 <div class="top_ready_start_img text-left">
-                    <img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate" >
+                    <img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate">
                 </div>
             </div>
         </div>
