@@ -27,219 +27,57 @@ $conn = $db->get_connection();
 	<!--================================Cnotice section start here=======================-->
 	<section class=" Cnotice">
         <div class="container">
+			<div class="row">
+				<div class="col-md-12  ">
+					<form action="notice-search.php" class="form-inline d-flex gap-3 justify-content-center">
+						<div class="form-group mb-2 mr-sm-2 mb-sm-0">
+							<input type="date" name="formDate" placeholder="From Date..." class="form-control" value="<?php echo $formDate; ?>">
+						</div>
+						<div class="form-group mb-2 mr-sm-2 mb-sm-0">
+							<input type="date" name="toDate" placeholder="To Date..." class="form-control" value="<?php echo $toDate; ?>">
+						</div>
+						<div class="form-group mb-2 mr-sm-2 mb-sm-0">
+							<input type="submit" value="Search" class="btn btn-success">
+						</div>
+					</form>
+				</div>
+			</div>
             <div class="row">
-            	<div class="col-md-12  ">
-            		<form action="" class="form-inline d-flex gap-3 justify-content-center">
-            			<div class="form-group mb-2 mr-sm-2 mb-sm-0">
-            				<input type="date"  placeholder="From Date..." class="form-control ">
-            			</div>            			
-            			<div class="form-group mb-2 mr-sm-2 mb-sm-0">
-            				<input type="text"  placeholder="To Date..." class="form-control ">
-            			</div>
-            			<div class="form-group mb-2 mr-sm-2 mb-sm-0">
-            				<input type="text" id="keyword" placeholder="Title..." class="form-control">
-            			</div>
-            			<div class="form-group mb-2 mr-sm-2 mb-sm-0">
-            				<select id="type" class="form-control">
-            					<option value="featured">Latest News</option> 
-            					<option value="1">Old News</option>
-            					<option value="2">Events</option>
-            					<option value="3">Update</option> 
-            					<option value="4">Notices</option>
-            				</select>
-            			</div>
-            			<div class="form-group mb-2 mr-sm-2 mb-sm-0">
-            				<input type="submit" value="Search" class="btn btn-success">
-            			</div>
-            		</form>
+			<?php
+			$i = 1;
+			$qry = "SELECT * FROM notices ORDER BY id DESC";
+			$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
+			if ($result) {
+				while ($row = mysqli_fetch_assoc($result)) {
+					?>
+            	<div class="col-md-3 pt-5">
+            		<div class="item-row">
+            			<a href="notice-details.php?id=<?php echo $row['id']; ?>">
+            				<div class="card">
+								<img src="<?php
+								$imagePath = $row['image'];
+								$imageName = basename($imagePath);
+								$newImagePath = 'uploads/' . $imageName;
+								echo $newImagePath; ?>" alt=" <?php echo $row['alt_tag']?> " description="<?php echo $row['alt_description']?>" class="card-img-top lazy">
+            					<div class="card-body">
+            						<h6 class="card-title"> 
+            							<span><?php echo $row['title']?></span>
+            						</h6> 
+            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
+            					</div>
+            				</div>
+            			</a>
+            		</div>
             	</div>
+					<?php
+				}
+			} else {
+				echo "Error: " . mysqli_error($conn);
+			}
+			?>
             </div>
-            <div class="row">
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            </div>
-            <div class="row">
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            </div>
-            <div class="row">
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            	<div class="col-md-3 pt-5">
-            		<div class="item-row">
-            			<a href="notice-details.php">
-            				<div class="card">
-            					<img src="frontend/images/Eid Ul Fitr.jpg" alt="notice" description=" notice" class="card-img-top lazy"> 
-            					<div class="card-body">
-            						<h6 class="card-title"> 
-            							<span>Eid Ul Fitr 2024</span>
-            						</h6> 
-            						<p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
-            					</div>
-            				</div>
-            			</a>
-            		</div>
-            	</div>
-            </div>
+
         </div>
     </section>
 

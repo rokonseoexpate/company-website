@@ -27,10 +27,13 @@ $result = mysqli_query($conn, $qry); // Executing the query
     <div class="container">
         <div class="row">
             <div class="col-12" style="z-index:500;">
-                <div class="breadcumb_gph d-flex">
-                    <a class="text-light" href="/" class="text-success"><p>Home</p></a>
-                    <p class="text-light px-3 ">»</p>
-                    <p class="text-light">Notice</p>
+                <div class="top_about_us_txt" style="z-index:500;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcumb_gph">
+                            <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                            <li class="breadcrumb-item active text-light" aria-current="page">Notice</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -57,6 +60,10 @@ $result = mysqli_query($conn, $qry); // Executing the query
         </div>
         <div class="row">
             <?php
+            $i = 1;
+            $qry = "SELECT * FROM notices ORDER BY id DESC";
+            $result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
+
             if ($result) {
                 while ($row = mysqli_fetch_assoc($result)) {
                     ?>
@@ -68,11 +75,11 @@ $result = mysqli_query($conn, $qry); // Executing the query
                                     $imagePath = $row['image'];
                                     $imageName = basename($imagePath);
                                     $newImagePath = 'uploads/' . $imageName;
-                                    echo $newImagePath; ?>" alt=" image " class="card-img-top lazy">
+                                    echo $newImagePath; ?>" alt=" <?php echo $row['alt_tag']?> " description="<?php echo $row['alt_description']?>" class="card-img-top lazy">
                                     <div class="card-body">
-                                        <h2 class="card-title">
-                                            <span><?php echo $row['title'] ?></span>
-                                        </h2>
+                                        <h6 class="card-title">
+                                            <span><?php echo $row['title']?></span>
+                                        </h6>
                                         <p style="margin-top: 10px; text-decoration: none; display: inline-block;"></p>
                                     </div>
                                 </div>
