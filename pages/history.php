@@ -199,9 +199,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="shortDescription">Alt Description</label>
-                                        <textarea id="shortDescription" name="accelerating_image_alt_description" placeholder="Description" class="form-control" cols="30" rows="10">
-                                        value="<?php echo $row['accelerating_image_alt_description']; ?>"
-                                        </textarea>
+                                        <textarea id="shortDescription" name="accelerating_image_alt_description" placeholder="Description" class="form-control" cols="30" rows="10"><?php echo $row['accelerating_image_alt_description']; ?></textarea>
                                     </div>
                                 </div>
                             </div>
