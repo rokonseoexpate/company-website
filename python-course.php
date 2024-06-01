@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Python Course";
 ob_start();
 ?>
 	<!--================================photo editor sub Header section end here=======================-->
