@@ -1,5 +1,6 @@
 <?php
 $title = "Create Employee";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -15,39 +16,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $job_details = $_POST['job_details'];
 
     if (empty($title)) {
-        $errorMessage .= "Name field is required. ";
+        $_SESSION['errorMessage'] .= "Name field is required. </br>";
     }
 
     if (empty($job_type)) {
-        $errorMessage .= "Job type field is required. ";
+        $_SESSION['errorMessage'] .= "Job type field is required.  </br>";
     }
 
     if (empty($vacancies)) {
-        $errorMessage .= "Vacancies field is required. ";
+        $_SESSION['errorMessage'] .= "Vacancies field is required.  </br>";
     }
 
     if (empty($deadline)) {
-        $errorMessage .= "Deadline field is required. ";
+        $_SESSION['errorMessage'] .= "Deadline field is required.  </br>";
     }
 
     if (empty($apply_link)) {
-        $errorMessage .= "Apply link field is required. ";
+        $_SESSION['errorMessage'] .= "Apply link field is required.  </br>";
     }
 
-    if (empty($errorMessage)) {
+    if ($_SESSION['errorMessage'] == null) {
         // Prepare the insert query
         $insert_query = "INSERT INTO jobs (title, job_type, vacancies, deadline, apply_link, job_details) VALUES ('$title', '$job_type', '$vacancies', '$deadline', '$apply_link', '$job_details')";
 
         // Execute the insert query
         if (mysqli_query($conn, $insert_query)) {
             // Insert successful
-            $successMessage = "Job created successfully!";
+            $_SESSION['successMessage'] = "Job created successfully!";
             // Redirect to the page or display success message as per your requirement
         } else {
             // Insert failed
-            $errorMessage = "Error creating job: " . mysqli_error($conn);
+            $_SESSION['errorMessage'] = "Error creating job: " . mysqli_error($conn);
         }
+    }else{
+        header('location:job-add.php');
+        exit();
     }
+
+    header('location:job-list.php');
+    exit();
 }
 ?>
 
@@ -66,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="form-group col-md-6">
                     <label for="job_type">Job Type <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="job_type" name="job_type" placeholder="Job Type" aria-required="">
+                    <input type="text" class="form-control" id="job_type" name="job_type" placeholder="Job Type" aria-="" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="vacancies">Vacancies  <span class="text-danger">*</span></label>

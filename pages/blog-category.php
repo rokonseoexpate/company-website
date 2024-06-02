@@ -1,5 +1,6 @@
 <?php
 $title = "Blogs Categories";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -12,11 +13,12 @@ if (isset($_GET['id'])) {
     $deleteQuery = "DELETE FROM blog_categories WHERE id = $id";
 
     if ($conn->query($deleteQuery) === TRUE) {
-        $errorMessage = "Successfully deleted record!";
-        header("Location: blog-category.php");
+        $_SESSION['successMessage']  = "Successfully deleted record!";
     } else {
-        echo "<script>alert('Error deleting record: " . $conn->error . "');</script>";
+        $_SESSION['errorMessage'] = "Error" . $conn->error ;
     }
+    header("Location: blog-category.php");
+    exit();
 }
 
 ?>
