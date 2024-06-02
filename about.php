@@ -1,16 +1,6 @@
 <?php
 $title = "About us";
 ob_start();
-$meta_description = "Meta description will be here";
-$meta_keyword = "Meta keyword will be here";
-$meta_author = "Meta author will be here";
-$og_title = "OG title will be here";
-$og_description = "OG description will be here";
-$og_image = "OG image will be here";
-$og_url = "OG url will be here";
-$twitter_description = "Twitter description will be here";
-$twitter_image = "Twitter image will be here";
-
 require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
@@ -1245,6 +1235,7 @@ $conn = $db->get_connection();
 <!--================================Thrive_Globally section end here=======================-->
 
 <?php
+
 $main_content = ob_get_clean();
 include './layouts/app.php';
 ?>
