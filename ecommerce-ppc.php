@@ -2,9 +2,7 @@
 $title = "E-Commerce PPC";
 ob_start();
 ?>
-<!--================================photo editor sub Header section end here=======================-->
-<?php include 'includes/big-ecommerce-nav.php' ?>
-<!--================================photo editor sub Header section end here=======================-->
+<?php include "includes/seo-nav.php" ?>
 
 <!--================================top-body section start here=======================-->
 <section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
