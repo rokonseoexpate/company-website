@@ -95,7 +95,7 @@ $conn = $db->get_connection();
 								<p><?php echo $row['description'] ?></p>
 							</div>
 							<!-- <div class="top-body-button pt-4">
-						<a type="button" href="contact.html">Read More Details</a>
+						<a type="button" href="contact.php">Read More Details</a>
 					</div> -->
 						</div>
 
