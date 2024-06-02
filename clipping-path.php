@@ -6,7 +6,7 @@ ob_start();
 
 <?php include 'includes/color-correction-nav.php' ?>
 <!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
     <div class="container ">
         <div class="row">
             <div class="col-12" style="z-index:500;">
@@ -41,7 +41,7 @@ ob_start();
                 <div class="pb-2 pt-2 text-light">
                     <h4 class="fs-1 fw-bold">Clipping Path Service</h4>
                 </div>
-                <p class="pt-2 text-light">We are offering one of the best clipping path services on the web. Most importantly, we enjoy our work and try to do it with great dedication. For that reason, we are the best in image path creation. You can use different types of software to do clipping paths, but you can hire us to do your task. Definitely, it will save you time and money if you purchase <a href="services.php" class="text-success">our service</a>. On the other hand, our service will be the best option towards accomplishment. However, we will create something special which will stand your images out from other competitors. We are also offering live support so you can ask any question regarding our clipping path service. Our experts will always be there to give you the creation of your imagination.</p>
+                <p class="pt-2 text-light">We are offering one of the best clipping path services on the web. Most importantly, we enjoy our work and try to do it with great dedication. For that reason, we are the best in image path creation. You can use different types of software to do clipping paths, but you can hire us to do your task. Definitely, it will save you time and money if you purchase <a href="services.php" class="text-primary">our service</a>. On the other hand, our service will be the best option towards accomplishment. However, we will create something special which will stand your images out from other competitors. We are also offering live support so you can ask any question regarding our clipping path service. Our experts will always be there to give you the creation of your imagination.</p>
             </div>
         </div>
     </div>
@@ -463,7 +463,7 @@ ob_start();
                     <h5 class="accordion-header collapsed" id="headingFourr" data-bs-toggle="collapse" data-bs-target="#collapseFourr" aria-expanded="false" aria-controls="collapseFourr">Q. Is it possible for someone like me to apply for a trial position?
                     </h5>
                     <div id="collapseFourr" class="accordion-collapse collapse" aria-labelledby="headingFourr" data-bs-parent="#accordion">
-                        <div class="accordion-body">A trail version of our service is available on our website. You can try this option before paying anything to judge our work quality.
+                        <div class="accordion-body">A trial version of our service is available on our website. You can try this option before paying anything to judge our work quality.
                         </div>
                     </div>
                 </div>

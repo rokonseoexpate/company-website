@@ -6,7 +6,7 @@ ob_start();
 <?php include 'includes/photo-editing-nav.php'?>
 
 <!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 	<div class="container ">
 		<div class="row">
 			<div class="col-12" style="z-index:500;">
@@ -33,8 +33,8 @@ ob_start();
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
 							<li class="breadcrumb-item "><a href="/" class="text-dark ">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-dark">» Photo editor</a></li>
-							<li class="breadcrumb-item active text" aria-current="page">» Logo Designs Service</li>
+							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-dark">/ Photo editor</a></li>
+							<li class="breadcrumb-item active text" aria-current="page">/ Logo Designs Service</li>
 						</ol>
 					</nav>
 				</div>
@@ -143,7 +143,7 @@ ob_start();
 							<li> Delivery in 1 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -164,7 +164,7 @@ ob_start();
 							<li> Delivery in 1 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -185,7 +185,7 @@ ob_start();
 							<li> Delivery in 1 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -208,7 +208,7 @@ ob_start();
 							<li> Delivery in 1 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -229,7 +229,7 @@ ob_start();
 							<li> Delivery in 1 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -250,7 +250,7 @@ ob_start();
 							<li> Delivery in 1 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -273,7 +273,7 @@ ob_start();
 							<li> Delivery in 1 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -294,7 +294,7 @@ ob_start();
 							<li> Delivery in 1 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -315,7 +315,7 @@ ob_start();
 							<li> Delivery in 1 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -338,7 +338,7 @@ ob_start();
 							<li> Delivery in 2 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -359,7 +359,7 @@ ob_start();
 							<li> Delivery in 2 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
@@ -380,7 +380,7 @@ ob_start();
 							<li> Delivery in 2 day</li>
 						</ul>
 						<div class="link">
-							<a href="#">Buy Now</a>
+							<a href="get-quote.php">Buy Now</a>
 						</div>
 					</div>
 				</div>
