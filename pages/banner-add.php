@@ -1,5 +1,6 @@
 <?php
 $title = "Add Banner";
+session_start();
 ob_start();
 
 require_once '../config/dbconnect.php';
@@ -32,13 +33,14 @@ if (isset($_POST['submit'])) {
         
         // Execute the statement
         if ($stmt->execute()) {
-            header("Location: banner.php");
-            exit;
+            $_SESSION['successMessage'] = "Record Created successfully!";
         } else {
-            echo "Error: " . $stmt->error;
+            $_SESSION['errorMessage'] =  "Error: " . $stmt->error;
         }
 
-        $stmt->close();
+        header("Location: banner.php");
+        exit;
+
     }
 }
 

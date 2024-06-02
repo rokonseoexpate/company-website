@@ -1,5 +1,6 @@
 <?php
 $title = "Core Team";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -18,6 +19,7 @@ if (isset($_GET['id'])) {
     $result_select_image = $conn->query($sql_select_image);
 
     if ($result_select_image) {
+
         if ($result_select_image->num_rows > 0) {
             $row = $result_select_image->fetch_assoc();
             $imagePath = $row['image'];
@@ -25,23 +27,26 @@ if (isset($_GET['id'])) {
             // Delete image file
             if (file_exists($imagePath)) {
                 if (!unlink($imagePath)) {
-                    $errorMessage = "Error deleting image file!";
+                    $_SESSION['errorMessage'] = "Error deleting image file!";
                 }
             } else {
-                $errorMessage = "Image file not found!";
+                $_SESSION['errorMessage'] = "Image file not found!";
             }
 
             // Delete record from database
             $sql = "DELETE FROM teams WHERE id=$id";
             if ($conn->query($sql) === TRUE) {
-                $successMessage = "Successfully deleted record!";
+                $_SESSION['successMessage'] = "Successfully deleted record!";
             } else {
-                $errorMessage = "Error deleting record from database: " . $conn->error;
+                $_SESSION['errorMessage'] = "Error deleting record from database: " . $conn->error;
             }
         } else {
-            $errorMessage = "Record with ID=$id not found!";
+            $_SESSION['errorMessage'] = "Record with ID=$id not found!";
         }
-    } 
+    }
+
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
 }
 ?>
 

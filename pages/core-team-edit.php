@@ -1,5 +1,6 @@
 <?php
 $title = "Update Team Member";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -22,7 +23,7 @@ if (isset($_GET['id'])) {
     $imageName = basename($imagePath);
     $newImagePath = '../uploads/' . $imageName;
 } else {
-    $errorMessage = 'Select team member';
+    $_SESSION['errorMessage'] = 'Select team member';
 
     echo "<script> window.location.href='core-team.php' </script>";
 }
@@ -41,13 +42,13 @@ if (isset($_POST['submit'])) {
     $path = $imagePath;
 
     if (empty($name)) {
-        $errorMessage = "Name is required!";
+        $_SESSION['errorMessage'] = "Name is required!";
     } elseif (empty($orderBy)) {
-        $errorMessage = "Priority is required!";
+        $_SESSION['errorMessage'] = "Priority is required!";
     } elseif (empty($type)) {
-        $errorMessage = "Type is required!";
+        $_SESSION['errorMessage'] = "Type is required!";
     } elseif (empty($designation)) {
-        $errorMessage = "Designation is required!";
+        $_SESSION['errorMessage'] = "Designation is required!";
     } else {
         if ($_FILES['image']['name'] != '') {
             // If a new image is uploaded
@@ -68,13 +69,13 @@ if (isset($_POST['submit'])) {
         }
     }
 
-    if (empty($errorMessage)) {
+    if (empty($_SESSION['errorMessage'])) {
         // Update record in the database
         $sql = "UPDATE teams SET name='$name', order_by='$orderBy', type='$type', designation='$designation', website='$website', facebook='$facebook', linkedin='$linkedin', image='$path', alt_tag='$alt_tag', alt_description='$alt_description' WHERE id=$id";
         if ($conn->query($sql) === TRUE) {
-            echo "Record updated successfully";
+            $_SESSION['successMessage'] = "Record updated successfully";
         } else {
-            echo "Error updating record: " . $conn->error;
+            $_SESSION['errorMessage'] = "Error updating record: " . $conn->error;
         }
 
         // Redirect to the list page after updating

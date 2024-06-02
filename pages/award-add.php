@@ -1,7 +1,7 @@
 <?php
 $title = "Add Award";
 ob_start();
-
+session_start();
 
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -32,16 +32,16 @@ if (isset($_POST['submit'])) {
         $result = $conn->query($query);
 
         if ($result === TRUE) {
-            $referrer = $_SERVER['HTTP_REFERER'];
-            header("Location: award.php");
-        } else {
-            echo "Error: " . $query . "<br>" . $conn->error;
-        }
+            $_SESSION['successMessage'] = "Record Created successfully!";
 
-        $conn->close();
-    }else{
-        echo "Error updating record: " . $conn->error;
+        } else {
+            $_SESSION['errorMessage'] =  "Error: " . $query . "<br>" . $conn->error;
+        }
     }
+    header("Location: award.php");
+    exit();
+
+
 }
 ?>
 

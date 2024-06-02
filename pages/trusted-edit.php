@@ -102,7 +102,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="image">Exiting Image</label>
-                        <img class="w-100" src="<?php echo $newImagePath ?>" alt="">
+                        <img class="w-25" src="<?php echo $newImagePath ?>" alt="">
                     </div>
                 </div>
                 

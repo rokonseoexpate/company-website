@@ -1,5 +1,6 @@
 <?php
 $title = "Update Certificates";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -58,9 +59,9 @@ if (isset($_POST['submit'])) {
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("sssssi", $title, $description, $path,$alt_tag, $alt_description,  $id);
     if ($stmt->execute()) {
-        echo "Record updated successfully";
+        $_SESSION['successMessage'] = "Record Updated successfully!";
     } else {
-        echo "Error updating record: " . $conn->error;
+        $_SESSION['errorMessage'] =  "Error updating record: " . $conn->error;
     }
 
     // Redirect to the list page after updating
@@ -95,7 +96,7 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="image">Exiting Image</label>
-                        <img class="w-100" src="<?php echo $newImagePath ?>" alt="">
+                        <img class="w-25" src="<?php echo $newImagePath ?>" alt="">
 
                     </div>
                 </div>
