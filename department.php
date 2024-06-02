@@ -1,11 +1,41 @@
 <?php
-$title = "All Departments
-";
-ob_start();
+$title = "All Departments";
 require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Title" content="Seo Expate Bangladesh LTD.">
+    <meta name="description" content="Seo Expate Bangladesh LTD.">
+    <meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $title;  ?></title>
+    <meta property="og:title" content="Home - IT Services, Technology Solutions">
+
+    <?php include('./includes/style.php') ?>
+
+    <div class="gtranslate_wrapper"></div>
+    <script>
+        window.gtranslateSettings = {
+            "default_language": "en",
+            "native_language_names": true,
+            "detect_browser_language": true,
+            "url_structure": "sub_domain",
+            "languages": ["en", "fr", "de", "it", "es"],
+            "wrapper_selector": ".gtranslate_wrapper",
+            "horizontal_position": "left",
+            "vertical_position": "bottom"
+        }
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+
+</head>
 
 
 <!--================================top-body section start here=======================-->
@@ -57,7 +87,7 @@ $conn = $db->get_connection();
 
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
-                            ?>
+                    ?>
                             <div class="Core_Team_txt pb-2 pt-5">
                                 <h3 class="fs-3 pb-3"><?= $row['name']; ?></h3>
                                 <hr>
@@ -71,22 +101,22 @@ $conn = $db->get_connection();
 
                                 // Fetch employees and display them
                                 while ($emp = mysqli_fetch_assoc($resultemps)) {
-                                    ?>
+                                ?>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="card card-block shadow">
-                                            <img src="<?php echo 'uploads/' . basename($emp['image']); ?>" alt="<?php echo $emp['alt_tag']; ?>" description="<?php echo $emp['alt_description']?>" class="img-thumbnail">
+                                            <img src="<?php echo 'uploads/' . basename($emp['image']); ?>" alt="<?php echo $emp['alt_tag']; ?>" description="<?php echo $emp['alt_description'] ?>" class="img-thumbnail">
                                             <div class="card-body">
                                                 <h5 class="card-title fs-6"><?php echo $emp['name']; ?></h5>
                                                 <p class="card-text fs-6"><?php echo $emp['designation']; ?></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <?php
+                                <?php
                                 }
                                 ?>
                             </div>
                             <hr>
-                            <?php
+                    <?php
                         }
                     } else {
                         echo "Error: " . mysqli_error($conn);

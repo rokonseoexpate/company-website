@@ -1,6 +1,5 @@
 <?php
 $title = "Contact";
-ob_start();
 
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -32,6 +31,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$conn->close();
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="Title" content="Seo Expate Bangladesh LTD.">
+	<meta name="description" content="Seo Expate Bangladesh LTD.">
+	<meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><?php echo $title;  ?></title>
+	<meta property="og:title" content="Home - IT Services, Technology Solutions">
+
+	<?php include('./includes/style.php') ?>
+
+	<div class="gtranslate_wrapper"></div>
+	<script>
+		window.gtranslateSettings = {
+			"default_language": "en",
+			"native_language_names": true,
+			"detect_browser_language": true,
+			"url_structure": "sub_domain",
+			"languages": ["en", "fr", "de", "it", "es"],
+			"wrapper_selector": ".gtranslate_wrapper",
+			"horizontal_position": "left",
+			"vertical_position": "bottom"
+		}
+	</script>
+	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+
+</head>
 
 
 <!--================================conversation_away section start here=======================-->
@@ -135,12 +165,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			?>
 					<div class="col-md-6">
 						<div class="Our_Offices_map">
-							
-							<?php echo $row['map']?>
+
+							<?php echo $row['map'] ?>
 						</div>
 						<div class="Our_Offices_map_txt newudcode">
-							<h6 class="fs-3 text-start pt-3"><?php echo $row['name']?></h6>
-							<p><?php echo $row['address']?></p>
+							<h6 class="fs-3 text-start pt-3"><?php echo $row['name'] ?></h6>
+							<p><?php echo $row['address'] ?></p>
 						</div>
 					</div>
 			<?php

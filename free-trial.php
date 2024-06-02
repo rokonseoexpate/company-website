@@ -1,6 +1,5 @@
 <?php
 $title = "Free Trial";
-ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
@@ -70,7 +69,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<?php include 'includes/photo-editing-nav.php'?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Title" content="Seo Expate Bangladesh LTD.">
+    <meta name="description" content="Seo Expate Bangladesh LTD.">
+    <meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $title;  ?></title>
+    <meta property="og:title" content="Home - IT Services, Technology Solutions">
+
+    <?php include('./includes/style.php') ?>
+
+    <div class="gtranslate_wrapper"></div>
+    <script>
+        window.gtranslateSettings = {
+            "default_language": "en",
+            "native_language_names": true,
+            "detect_browser_language": true,
+            "url_structure": "sub_domain",
+            "languages": ["en", "fr", "de", "it", "es"],
+            "wrapper_selector": ".gtranslate_wrapper",
+            "horizontal_position": "left",
+            "vertical_position": "bottom"
+        }
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+
+</head>
+
+<?php include 'includes/photo-editing-nav.php' ?>
 
 <!--================================top-body section start here=======================-->
 <section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
@@ -144,11 +175,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="col-12">
                         <label for="CompanyWebsite" class="form-label">Company Website</label>
-                        <input type="text"  name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website" >
+                        <input type="text" name="company_website" class="form-control" id="CompanyWebsite" placeholder="Company Website">
                     </div>
                     <div class="col-12">
                         <label for="Addresses" class="form-label">Addresses </label>
-                        <input type="text" name="address" class="form-control" id="Addresses" placeholder="Addresses..." >
+                        <input type="text" name="address" class="form-control" id="Addresses" placeholder="Addresses...">
                     </div>
                     <div class="col-12">
                         <label for="stuf" class="form-label">Select Service Type <span>*</span></label>
@@ -182,7 +213,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                     <div class="col-12 ">
                         <label for="Image" class="form-label">Image File Link</label>
-                        <input type="text" name="image_file_link" class="form-control" id="Image" placeholder="Image Link" >
+                        <input type="text" name="image_file_link" class="form-control" id="Image" placeholder="Image Link">
                     </div>
                     <div class="col-12 ">
                         <label for="type" class="form-label">Message <span>*</span></label>
@@ -227,7 +258,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </section>
 <!--================================free_trail services section end here=======================-->
 
-<?php include 'includes/footer-services.php'?>
+<?php include 'includes/footer-services.php' ?>
 
 <!--================================Thrive_Globally section start here=======================-->
 <section class="PAY_MENT" style="padding: 20px 0;">
