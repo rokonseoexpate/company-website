@@ -1,7 +1,7 @@
 <?php
 $title = "Add Blog Category";
 ob_start();
-
+session_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
@@ -11,26 +11,26 @@ if (isset($_POST['submit'])) {
     $slug = preg_replace('/[^A-Za-z0-9\-]/', '', str_replace(' ', '-', strtolower($name)));
     $slug = trim($slug, '-') . '-' . random_int(11111, 99999); // Corrected the concatenation here
 
-    $errorMessage = "";
-
     if (empty($name)) {
-        $errorMessage = "Name is required"; // Corrected the field name here
+        $_SESSION['errorMessage'] = "Name is required"; // Corrected the field name here
     }
 
-    if (empty($errorMessage)) {
+    if ($_SESSION['errorMessage'] == null) {
         $query = "INSERT INTO `blog_categories`(`name`, `slug`) VALUES('$name', '$slug')";
         $result = $conn->query($query);
 
         if ($result === TRUE) {
-            header("Location: blog-category.php");
-            exit;
-        } else {
-            echo "Error: " . $query . "<br>" . $conn->error;
-        }
+            $_SESSION['successMessage'] = "Blog Category Successfully";
+        } 
+
+        header("Location: blog-category.php");
+        exit;
+    } else {
+        header("Location: blog-category-add.php");
+        exit;
     }
 }
 
-$conn->close();
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">

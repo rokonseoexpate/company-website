@@ -1,5 +1,6 @@
 <?php
 $title = "Update Job";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -15,12 +16,12 @@ if (isset($_GET['id'])) {
     $job_data = mysqli_fetch_assoc($fetch_result);
 
     if (!$job_data) {
-        // Redirect or display error message if job not found
+
         header("Location: job-list.php");
         exit();
     }
 } else {
-    // Redirect or display error message if job ID is not provided
+
     header("Location: job-list.php");
     exit();
 }
@@ -35,18 +36,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $apply_link = $_POST['apply_link'];
     $job_details = $_POST['job_details'];
 
-    // Prepare update query
-    $update_query = "UPDATE jobs SET title = '$title', job_type = '$job_type', vacancies = '$vacancies', deadline = '$deadline', apply_link = '$apply_link', job_details = '$job_details' WHERE id = $job_id";
-
-    // Execute update query
-    if (mysqli_query($conn, $update_query)) {
-        // Update successful
-        $successMessage = "Job updated successfully!";
-        header("Location: job-list.php");
-    } else {
-        // Update failed
-        $errorMessage = "Error updating job: " . mysqli_error($conn);
+    if (empty($title)) {
+        $_SESSION['errorMessage'] .= "Name field is required. </br>";
     }
+
+    if (empty($job_type)) {
+        $_SESSION['errorMessage'] .= "Job type field is required.  </br>";
+    }
+
+    if (empty($vacancies)) {
+        $_SESSION['errorMessage'] .= "Vacancies field is required.  </br>";
+    }
+
+    if (empty($deadline)) {
+        $_SESSION['errorMessage'] .= "Deadline field is required.  </br>";
+    }
+
+    if (empty($apply_link)) {
+        $_SESSION['errorMessage'] .= "Apply link field is required.  </br>";
+    }
+
+    if ($_SESSION['errorMessage'] == null) {
+        // Prepare update query
+        $update_query = "UPDATE jobs SET title = '$title', job_type = '$job_type', vacancies = '$vacancies', deadline = '$deadline', apply_link = '$apply_link', job_details = '$job_details' WHERE id = $job_id";
+
+        // Execute update query
+        if (mysqli_query($conn, $update_query)) {
+            // Update successful
+            $_SESSION['successMessage'] = "Job updated successfully!";
+        } else {
+            // Update failed
+            $_SESSION['errorMessage'] = "Error updating job: " . mysqli_error($conn);
+        }
+    } else {
+        header('location:job-edit.php');
+        exit();
+    }
+
+    header('location:job-list.php');
+    exit();
 }
 ?>
 
@@ -60,23 +88,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="title">Title  <span class="text-danger">*</span></label>
+                    <label for="title">Title <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="<?php echo $job_data['title']; ?>" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="job_type">Job Type  <span class="text-danger">*</span></label>
+                    <label for="job_type">Job Type <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="job_type" name="job_type" placeholder="Job Type" value="<?php echo $job_data['job_type']; ?>" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="vacancies">Vacancies  <span class="text-danger">*</span></label>
+                    <label for="vacancies">Vacancies <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="vacancies" name="vacancies" placeholder="Vacancies" value="<?php echo $job_data['vacancies']; ?>" required>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="deadline">Deadline  <span class="text-danger">*</span></label>
+                    <label for="deadline">Deadline <span class="text-danger">*</span></label>
                     <input type="date" class="form-control" id="deadline" name="deadline" placeholder="Deadline" value="<?php echo $job_data['deadline']; ?>" required>
                 </div>
                 <div class="form-group col-md-12">
-                    <label for="apply_link">Apply Link  <span class="text-danger">*</span></label>
+                    <label for="apply_link">Apply Link <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="apply_link" name="apply_link" placeholder="Apply Link" value="<?php echo $job_data['apply_link']; ?>" required>
                 </div>
                 <div class="form-group col-md-12">

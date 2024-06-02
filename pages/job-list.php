@@ -1,5 +1,6 @@
 <?php
 $title = "Jobs list";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -11,17 +12,15 @@ if (isset($_GET['delete_id'])) {
     $sql_delete = "DELETE FROM jobs WHERE id = ?";
     $stmt = $conn->prepare($sql_delete);
     $stmt->bind_param("i", $delete_id);
-    
+
     if ($stmt->execute()) {
-        // Display success message
-        $successMessage = "Record deleted successfully!";
-        
-        // Refresh the page after deletion
-        header("Location: $_SERVER[PHP_SELF]");
-        exit(); // Exit after redirection
+        $_SESSION['successMessage'] = "Record deleted successfully!";
+
     } else {
-        echo "Error deleting record: " . $stmt->error;
+        $_SESSION['errorMessage']  = "Error deleting record: " . $stmt->error;
     }
+    header("Location: $_SERVER[PHP_SELF]");
+    exit();
 }
 
 ?>
@@ -53,7 +52,7 @@ if (isset($_GET['delete_id'])) {
                     <?php
                     $qry = "SELECT * FROM jobs ORDER BY id DESC";
                     $result = $conn->query($qry);
-                    
+
                     if ($result) {
                         $i = 1;
                         while ($row = $result->fetch_assoc()) {

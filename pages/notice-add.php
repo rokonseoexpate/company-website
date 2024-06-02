@@ -1,5 +1,6 @@
 <?php
 $title = "Create Notice";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -11,18 +12,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_tag = $_POST['alt_tag'];
     $alt_description = $_POST['alt_description'];
 
-    $errorMessage = '' ;
     if (empty($title)) {
-        $errorMessage = "Title is required.";
+        $_SESSION['errorMessage'] = "Title is required.";
     }
 
     if (empty($date)) {
-        $errorMessage = "Date field is required.";
+        $_SESSION['errorMessage'] = "Date field is required.";
     }
 
-    if (empty($errorMessage)) {
-
-
+    if ($_SESSION['errorMessage'] == null) {
         // Sanitize and prepare image name
         $imageName = $_FILES["image"]["name"];
         $imageName = preg_replace("/[^a-zA-Z0-9.]/", "-", $imageName); // Remove special characters except for letters, numbers, and periods
@@ -46,20 +44,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $insert_query = "INSERT INTO notices (title, date, image, files, alt_tag, alt_description) VALUES ('$title','$date', '$targetFilePath', '$pdfTargetFilePath', '$alt_tag', '$alt_description')";
                 if (mysqli_query($conn, $insert_query)) {
                     // Redirect or display success message as per your requirement
-                    $successMessage = "Notice Created Successfully";
-                    header("Location: notice-list.php");
-                    exit();
+                    $_SESSION['successMessage']  = "Notice Created Successfully";
                 } else {
                     // Handle insert failure
-                    $errorMessage = "Error creating notice: " . mysqli_error($conn);
+                    $_SESSION['errorMessage'] = "Error creating notice: " . mysqli_error($conn);
                 }
             } else {
-                $errorMessage = "Sorry, there was an error uploading your PDF file.";
+                $_SESSION['errorMessage'] = "Sorry, there was an error uploading your PDF file.";
             }
         } else {
-            $errorMessage = "Sorry, there was an error uploading your image file.";
+            $_SESSION['errorMessage'] = "Sorry, there was an error uploading your image file.";
         }
+    } else {
+        header("Location: notice-add.php");
+        exit();
     }
+    header("Location: notice-list.php");
+    exit();
 }
 ?>
 
@@ -82,12 +83,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="image">Image</label>
+                    <label for="image">Image <span class="text-danger">*</span></label>
                     <input type="file" class="form-control-file dropify" accept="image/*" name="image" placeholder="Image">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="pdf">PDF</label>
-                    <input type="file" class="form-control-file" accept=".pdf" name="pdf" placeholder="PDF">
+                    <label for="pdf">PDF <span class="text-danger">*</span></label>
+                    <input type="file" class="form-control-file" accept=".pdf" name="pdf" placeholder="PDF" required>
                 </div>
 
                 <div class="col-md-12 mt-4">

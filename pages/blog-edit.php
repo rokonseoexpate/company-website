@@ -1,5 +1,6 @@
 <?php
 $title = "Update Blog";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -24,6 +25,15 @@ if (isset($_POST['submit'])) {
     $alt_tag    = $_POST['alt_tag'];
     $alt_description    = $_POST['alt_description'];
 
+
+    if (empty($title)) {
+        $_SESSION['errorMessage'] = "Title is required";
+    }
+    if (empty($blogCategoryId)) {
+        $_SESSION['errorMessage'] = "Blog Category is required";
+    }
+
+
     $imagePath = $row['image'];
     $path = $imagePath;
 
@@ -39,20 +49,21 @@ if (isset($_POST['submit'])) {
             unlink($imagePath);
         }
     }
+    if ($_SESSION['errorMessage'] == null) {
+        // Update record in the database using prepared statement
+        $sql = "UPDATE blogs SET blog_category_id=?, title=?, description=?, slug=?, short_description=?, image=?, alt_tag=?, alt_description=? WHERE id=?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("isssssssi", $blogCategoryId, $title, $description, $slug, $short_description, $path, $alt_tag, $alt_description, $id);
 
-    // Update record in the database using prepared statement
-    $sql = "UPDATE blogs SET blog_category_id=?, title=?, description=?, slug=?, short_description=?, image=?, alt_tag=?, alt_description=? WHERE id=?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("isssssssi", $blogCategoryId, $title, $description, $slug, $short_description, $path, $alt_tag,$alt_description,$id);
-
-    if ($stmt->execute()) {
-        $successMessage = "Successfully updated record!";
+        if ($stmt->execute()) {
+            $_SESSION['successMessage'] = "Successfully updated record!";
+        } else {
+            $_SESSION['errorMessage'] = "Error updating record: " . $stmt->error;
+        }
     } else {
-        echo "Error updating record: " . $stmt->error;
+        header("Location: blog-edit.php?id=".$row['id']);
+        exit;
     }
-
-    $stmt->close();
-
     // Redirect to the list page after updating
     header("Location: blogs.php");
     exit();
@@ -78,7 +89,7 @@ $conn->close();
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="blog_category_id">Blog Category</label>
-                        <select name="blog_category_id" id="blog_category_id" class="form-control" required>
+                        <select name="blog_category_id" id="blog_category_id" class="form-control" >
                             <option value="">Select Category</option>
                             <?php while ($value = $categories->fetch_assoc()) { ?>
                                 <option value="<?php echo $value['id']; ?>" <?php echo $value['id'] == $row['blog_category_id'] ? 'selected' : ''; ?>>
@@ -126,7 +137,7 @@ $conn->close();
                     </div>
                 </div>
 
-                
+
                 <div class="col-md-12 mt-4">
                     <div class="form-group">
                         <label for="alt_text">Alt Text</label>
