@@ -4,6 +4,7 @@ ob_start();
 ?>
 
 <?php include 'includes/color-correction-nav.php' ?>
+
 <!--================================top-body section start here=======================-->
 <section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
     <div class="container ">
