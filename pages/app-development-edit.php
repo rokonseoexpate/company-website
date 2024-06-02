@@ -23,26 +23,35 @@ if (isset($_GET['id'])) {
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
 
-    $files = [];
+    // Check if new images are uploaded
     if (!empty($_FILES['images']['name'][0])) {
+        // Delete old images from the server
+        if (!empty($images)) {
+            foreach ($images as $oldImage) {
+                if (file_exists($oldImage)) {
+                    unlink($oldImage);
+                }
+            }
+        }
+
+        // Save new images to the server
+        $files = [];
         $fileCount = count($_FILES['images']['name']);
         for ($i = 0; $i < $fileCount; $i++) {
             $originalFileName = $_FILES['images']['name'][$i];
-            $fileNameWithoutSpaces = str_replace(' ', '-', $originalFileName); // Replace spaces with hyphens
+            $fileNameWithoutSpaces = str_replace(' ', '-', $originalFileName);
             $fileName = time() . '-' . $fileNameWithoutSpaces;
             $fileTmpName = $_FILES['images']['tmp_name'][$i];
             $fileDestination = '../uploads/' . $fileName;
             move_uploaded_file($fileTmpName, $fileDestination);
             $files[] = $fileDestination;
         }
-    }
 
-    // Combine existing images with new ones
-    if (!empty($images)) {
-        $files = array_merge($images, $files);
+        $encodedFiles = json_encode($files);
+    } else {
+        // Keep existing images if no new images are uploaded
+        $encodedFiles = json_encode($images);
     }
-
-    $encodedFiles = json_encode($files);
 
     $update_query = "UPDATE app_developments SET name = '$name', images = '$encodedFiles' WHERE id = '$portfolio_id'";
 
@@ -56,6 +65,7 @@ if (isset($_POST['submit'])) {
     }
 }
 ?>
+
 <div class="content-wrapper p-3" style="min-height: 485px;">
 
     <div class="card px-3">

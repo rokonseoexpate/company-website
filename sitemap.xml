@@ -987,13 +987,13 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/photo_editor.php</loc>
+    <loc>http://company-website.test/photo-editor.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/logo_design.php</loc>
+    <loc>http://company-website.test/logo-design.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
@@ -1005,7 +1005,7 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>http://company-website.test/banner_design.php</loc>
+    <loc>http://company-website.test/banner-design.php</loc>
     <lastmod>2024-05-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>

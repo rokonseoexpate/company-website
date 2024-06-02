@@ -189,7 +189,7 @@
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
@@ -216,7 +216,7 @@
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
 							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo_editor.php" class="text-light">Photo editor</a></li>
+							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Photo Restoration</li>
 						</ol>
 						</nav>
