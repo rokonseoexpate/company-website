@@ -3,6 +3,7 @@
 ob_start();
 require_once 'config/dbconnect.php';
 $db = new DB_con();
+$id = $_GET['id'];
 $conn = $db->get_connection();
 $sql = "SELECT * FROM branches WHERE id = $id";
 $result = mysqli_query($conn, $sql);
