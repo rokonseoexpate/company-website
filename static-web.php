@@ -4,7 +4,7 @@
 ?>
 
     <!--================================photo editor sub Header section end here=======================-->
-<?php include  'includes/sub-nav.php' ?>
+    <?php include "includes/content-nav.php" ?>
     <!--================================photo editor sub Header section end here=======================-->
 
     <!--================================top-body section start here=======================-->

@@ -7,7 +7,7 @@
                 </button>
                 <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
                     <ul class="navbar-nav ">
-                        <li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
+                        <li class="nav-item"><a class="nav-link" href="training.php"> Training</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle" href="regular-course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
                             <ul class="dropdown-menu dropdown-menu-end">
