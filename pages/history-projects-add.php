@@ -1,5 +1,6 @@
 <?php
 $title = "History Upload Projects";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -24,16 +25,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $insert_query = "INSERT INTO history_projects (title, image, description) VALUES ('$title', '$targetFilePath','$description')";
         if (mysqli_query($conn, $insert_query)) {
             // Redirect or display success message as per your requirement
-            $successMessage = "Project Created Successfully";
-            header("Location: history-projects-list.php");
-            exit();
+            $_SESSION['successMessage']  = "Project Created Successfully";
+
         } else {
             // Handle insert failure
-            $errorMessage = "Error creating notice: " . mysqli_error($conn);
+            $_SESSION['errorMessage']  = "Error creating notice: " . mysqli_error($conn);
         }
     } else {
-        $errorMessage = "Sorry, there was an error uploading your file.";
+        $_SESSION['errorMessage']  = "Sorry, there was an error uploading your file.";
     }
+
+    header("Location: history-projects-list.php");
+    exit();
 }
 ?>
 

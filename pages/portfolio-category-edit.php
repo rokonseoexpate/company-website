@@ -1,5 +1,6 @@
 <?php
 $title = "Update Web Development Portfolio Category";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -26,17 +27,17 @@ if(isset($_GET['id']) && !empty($_GET['id'])) {
         // Execute the update query
         if (mysqli_query($conn, $update_query)) {
             // Update successful
-            header('location: portfolio-category-list.php');
-            // Redirect to the page or display success message as per your requirement
+            $_SESSION['successMessage'] = "Record Updated successfully!";
+
         } else {
             // Update failed
-            $errorMessage = "Error updating job: " . mysqli_error($conn);
+            $_SESSION['successMessage']  = "Error updating job: " . mysqli_error($conn);
         }
+        // Redirect or handle the case where ID is not provided
+        header("Location: portfolio-category-list.php");
+        exit();
     }
-} else {
-    // Redirect or handle the case where ID is not provided
-    header("Location: portfolio-category-list.php");
-    exit();
+
 }
 ?>
 

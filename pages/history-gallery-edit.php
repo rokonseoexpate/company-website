@@ -1,5 +1,6 @@
 <?php
 $title = "Update Image";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -19,7 +20,7 @@ if (isset($_GET['id'])) {
 
     // Check if image exists
     if (!$row) {
-        echo "Image not found";
+        $_SESSION['errorMessage'] = "Image not found";
         exit();
     }
 
@@ -32,17 +33,16 @@ if (isset($_GET['id'])) {
         $alt_tag = $_POST['alt_tag'];
         $alt_description = $_POST['alt_description'];
 
-        $errorMessage = '';
         
         if (empty($title)) {
-            $errorMessage = 'Title is required.';
+            $_SESSION['errorMessage'] = 'Title is required.';
         }
 
         if (empty($image_type)) {
-            $errorMessage = 'Image type is required.';
+            $_SESSION['errorMessage'] = 'Image type is required.';
         }
 
-        if (empty($errorMessage)) {
+        if (empty($_SESSION['errorMessage'])) {
             // Check if a new image file is uploaded
             if ($_FILES["image"]["size"] > 0) {
                 // Delete old image file
@@ -68,14 +68,15 @@ if (isset($_GET['id'])) {
 
             // Execute query
             if ($stmt->execute()) {
-                $successMessage = "Updated successfully!";
-                // Redirect to image list page
-                header('Location: history-gallery-list.php');
-                exit();
+                $_SESSION['successMessage'] = "Updated successfully!";
+
             } else {
-                $errorMessage = "Error updating image: " . $stmt->error;
+                $_SESSION['errorMessage'] = "Error updating image: " . $stmt->error;
             }
         }
+        // Redirect to image list page
+        header('Location: history-gallery-list.php');
+        exit();
     }
 } else {
     echo "Image ID not provided";

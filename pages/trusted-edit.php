@@ -1,5 +1,6 @@
 <?php
 $title = "Update Certificates";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -19,15 +20,14 @@ if (isset($_GET['id'])) {
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $orderBy = $_POST['orderBy'];
-    $alt_tag    = $_POST['alt_tag'];
-    $alt_description    = $_POST['alt_description'];
+    $alt_tag = $_POST['alt_tag'];
+    $alt_description = $_POST['alt_description'];
 
-    $errorMessage = '';
 
     if (empty($name)) {
-        $errorMessage = 'Name field is required';
+        $_SESSION['errorMessage'] = 'Name field is required';
     } elseif (empty($orderBy)) {
-        $errorMessage = 'OrderBy field is required';
+        $_SESSION['errorMessage'] = 'OrderBy field is required';
     } else {
         if ($_FILES['image']['name'] != '') {
             $id = $_GET['id'];
@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
 
             $photo = $_FILES['image']['name'];
             $extension = pathinfo($photo, PATHINFO_EXTENSION);
-            $path = '../uploads/' . str_replace(' ', '-', strtolower($name))  . '-' . random_int(10000, 99999) . '.' . $extension;
+            $path = '../uploads/' . str_replace(' ', '-', strtolower($name)) . '-' . random_int(10000, 99999) . '.' . $extension;
 
             move_uploaded_file($_FILES['image']['tmp_name'], $path);
         } else {
@@ -55,23 +55,19 @@ if (isset($_POST['submit'])) {
         }
     }
 
-    if (empty($errorMessage)) {
+    if (empty($_SESSION['errorMessage'])) {
         // Update record in the database
         $sql = "UPDATE trusted_bies SET name='$name', orderBy='$orderBy' ,image='$path' , alt_tag='$alt_tag', alt_description='$alt_description' WHERE id=$id";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Record updated successfully";
+            $_SESSION['successMessage'] = "Record updated successfully";
         } else {
-            echo "Error updating record: " . $conn->error;
+            $_SESSION['errorMessage'] = "Error updating record: " . $conn->error;
         }
-
-        header("Location: trusted.php");
-        exit();
-    } else {
-        echo "Error updating record: " . $conn->error;
     }
+    header("Location: trusted.php");
+    exit();
 }
-
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">

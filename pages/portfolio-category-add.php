@@ -1,5 +1,6 @@
 <?php
 $title = "Web Development Portfolio Category";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -8,24 +9,24 @@ $conn = $db->get_connection();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $status = $_POST['status'];
-
-    $errorMessage = '';
+    
 
     if (empty($name)) {
-        $errorMessage = "name is required";
+        $_SESSION['errorMessage'] = "name is required";
     }
 
     
-    if (empty($errorMessage)) {
+    if (empty($_SESSION['errorMessage'])) {
         $insert_query = "INSERT INTO web_portfolio_categories (name, status) VALUES ('$name', '$status')";
         if (mysqli_query($conn, $insert_query)) {
-            $successMessage = "Created Successfully!";
-            header("Location: portfolio-category-add.php");
-        } else {
-            $errorMessage = "Error creating job: " . mysqli_error($conn);
-        }
-    }else{
+            $_SESSION['successMessage'] = "Created Successfully!";
 
+        } else {
+            $_SESSION['errorMessage'] = "Error creating job: " . mysqli_error($conn);
+        }
+        // Redirect or handle the case where ID is not provided
+        header("Location: portfolio-category-list.php");
+        exit();
     }
 }
 ?>

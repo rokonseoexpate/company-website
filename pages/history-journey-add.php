@@ -1,22 +1,22 @@
 <?php
 $title = "Create History Journey";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $errorMessage = '';
     // Retrieve form data
     $year = $_POST['year'];
     $details = $_POST['details'];
 
     if (empty($year)) {
-        $errorMessage .= 'Year is required. ';
+        $_SESSION['errorMessage']  .= 'Year is required. ';
     }
 
     if (empty($details)) {
-        $errorMessage .= "Message is required. ";
+        $_SESSION['errorMessage']  .= "Message is required. ";
     }
 
     if (empty($errorMessage)) {
@@ -26,12 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Execute the insert query
         if ($success) {
             // Insert successful
-            $successMessage = "History Journeys created successfully!";
-            header("Location: " . $_SERVER['PHP_SELF']);
-            exit();
+            $_SESSION['successMessage'] =  "History Journeys created successfully!";
+
         } else {
-            $errorMessage = "Error creating job: " . mysqli_error($conn);
+            $_SESSION['errorMessage'] =  "Error creating job: " . mysqli_error($conn);
         }
+        header("Location: history-journey-list.php");
+        exit();
     }
 }
 ?>
@@ -47,12 +48,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
                 <div class="form-group col-md-12">
                     <label for="title">Year <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="title" name="year" placeholder="Title">
+                    <input type="text" class="form-control" id="title" name="year" placeholder="Title" required>
                 </div>
 
                 <div class="form-group col-md-12">
                     <label for="job_details">Details <span class="text-danger">*</span> </label>
-                    <textarea id="summernote" name="details" class="form-control" cols="30" rows="10"></textarea>
+                    <textarea id="summernote" name="details" class="form-control" cols="30" rows="10" required></textarea>
                 </div>
                 <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-primary my-3">Submit</button>

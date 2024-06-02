@@ -1,5 +1,6 @@
 <?php
 $title = "Update Employee";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -89,13 +90,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute query
     if (mysqli_query($conn, $sql)) {
-        $successMessage = "Employee updated successfully!";
+        $_SESSION['successMessage'] =  "Employee updated successfully!";
         // Redirect to employee list page
-        header('Location: employee-list.php');
-        exit();
     } else {
-        $errorMessage = "Error updating employee: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] =  "Error updating employee: " . mysqli_error($conn);
     }
+    header('Location: employee-list.php');
+    exit();
 }
 
 // Fetch employee details based on ID

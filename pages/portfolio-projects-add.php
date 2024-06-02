@@ -1,5 +1,6 @@
 <?php
 $title = "Create Web Portfolio";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -43,12 +44,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Execute query
     if (mysqli_query($conn, $insert_query)) {
         // Insert successful
-        $successMessage = "Portfolio created successfully!";
+        $_SESSION['successMessage']  = "Portfolio created successfully!";
         // Redirect to employee list page or display success message as per your requirement
     } else {
         // Insert failed
-        $errorMessage = "Error creating Portfolio: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] = "Error creating Portfolio: " . mysqli_error($conn);
     }
+    // Redirect or handle the case where ID is not provided
+    header("Location: portfolio-projects-list.php");
+    exit();
 }
 ?>
 
@@ -64,12 +68,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="form-group col-md-6">
                     <label for="Title">Title</label>
-                    <input type="text" class="form-control" id="Title" name="title" placeholder="Title">
+                    <input type="text" class="form-control" id="Title" name="title" placeholder="Title" required>
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="category">Category</label>
-                    <select id="category_id" class="form-control" name="category_id">
+                    <select id="category_id" class="form-control" name="category_id" required>
                         <option value="">Choose...</option>
                         <?php while ($branch_row = mysqli_fetch_assoc($branch_result)) : ?>
                             <option value="<?php echo $branch_row['id']; ?>"><?php echo $branch_row['name']; ?></option>
@@ -78,12 +82,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="form-group col-md-12">
                     <label for="link">Link</label>
-                    <input type="text" class="form-control" id="link" name="link" placeholder="link">
+                    <input type="text" class="form-control" id="link" name="link" placeholder="link" required>
                 </div>
 
                 <div class="form-group col-md-12">
                     <label for="image">Image</label>
-                    <input type="file" class="form-control-file dropify" accept="image/*" name="image" placeholder="image">
+                    <input type="file" class="form-control-file dropify" accept="image/*" name="image" placeholder="image" required>
                 </div>
                 </div>
             <button type="submit" class="btn btn-primary my-3">Submit</button>

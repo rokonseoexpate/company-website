@@ -1,4 +1,5 @@
 <?php
+session_start();
 $title = "Branch list";
 ob_start();
 require_once '../config/dbconnect.php';
@@ -25,18 +26,16 @@ $conn = $db->get_connection();
                     <tr>
                         <th>#</th>
                         <th>Name</th>
-                        <!-- <th>Map</th> -->
                         <th>Image</th>
                         <th>Address</th>
-                        <!-- <th>Video Link</th> -->
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
                     $i = 1;
-                    $qry = "SELECT * FROM branches";
-                    $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
+                    $qry = "SELECT * FROM branches ORDER BY id DESC";
+                    $result = mysqli_query($conn, $qry);
 
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
@@ -44,11 +43,8 @@ $conn = $db->get_connection();
                             <tr>
                                 <td><?php echo $i++; ?></td>
                                 <td><?php echo $row['name']; ?></td>
-                                <!-- <td width="150px"><?php echo $row['map']; ?></td> -->
-
                                 <td width="150px"><img src="<?php echo $row['image']; ?>" alt="" class="img-fluid w-25"></td>
                                 <td><?php echo $row['address']; ?></td>
-                                <!-- <td width="250px"><?php echo $row['video_link']; ?></td> -->
                                 <td class="align-middle">
                                     <div class="d-inline-flex">
                                         <a href="branch-edit.php?id=<?php echo $row['id']; ?>">
@@ -73,15 +69,16 @@ $conn = $db->get_connection();
                         $sql_delete = "DELETE FROM branches WHERE id = $delete_id";
 
                         if (mysqli_query($conn, $sql_delete)) {
-                            // Display success message
-                            $successMessage = "Record deleted successfully!";
-
-                            // Refresh the page after deletion
-                            header("Location: $_SERVER[PHP_SELF]");
-                            exit(); // Exit after redirection
+                            // Set success message in session
+                            $_SESSION['successMessage'] = "Record deleted successfully!";
                         } else {
-                            echo "Error deleting record: " . mysqli_error($conn);
+                            // Set error message in session
+                            $_SESSION['errorMessage'] = "Error deleting record: " . mysqli_error($conn);
                         }
+
+                        // Redirect to the same page to show the message
+                        header("Location: $_SERVER[PHP_SELF]");
+                        exit();
                     }
                     ?>
                 </tbody>

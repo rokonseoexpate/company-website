@@ -1,5 +1,6 @@
 <?php
 $title = "Trusted By";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -25,11 +26,14 @@ if (isset($_GET['id'])) {
         $sql = "DELETE FROM trusted_bies WHERE id=$id";
         
         if ($conn->query($sql) === TRUE) {
-            $successMessage = "Successfully deleted record!";
+            $_SESSION['successMessage'] = "Successfully deleted record!";
         } else {
-            $successMessage = "Successfully deleted record!";
+            $_SESSION['errorMessage'] = "Successfully deleted record!";
         }
-    } 
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+
 }
 
 ?>
@@ -53,7 +57,7 @@ if (isset($_GET['id'])) {
             <tbody>
                 <?php
                 $i = 1;
-                $qry = "SELECT * FROM trusted_bies order by orderBy ASC";
+                $qry = "SELECT * FROM trusted_bies ORDER BY id DESC ";
                 if ($result = $conn->query($qry)) {
                     while ($row = $result->fetch_assoc()) {
                         $imagePath = $row['image'];

@@ -1,5 +1,6 @@
 <?php
 $title = "Create Employee";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -77,12 +78,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         VALUES ('$sanitized_name', '$sanitized_designation', '$sanitized_branch_id','$priority', '$sanitized_department_id','$dep_priority', '$phone', '$email', '$sanitized_ein_no',
                                 '$sanitized_team_no', '$alt_tag', '$alt_description', '$image_path')";
         if (mysqli_query($conn, $insert_query)) {
-            $successMessage = "Employee created successfully!";
-            header("Location: employee-list.php");
+            $_SESSION['successMessage']  = "Employee created successfully!";
+
         } else {
-            $errorMessage = "Error creating employee: " . mysqli_error($conn);
+            $_SESSION['errorMessage']  = "Error creating employee: " . mysqli_error($conn);
         }
     }
+    header("Location: employee-list.php");
+    exit();
 }
 ?>
 
