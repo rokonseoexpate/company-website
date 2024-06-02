@@ -1,5 +1,6 @@
 <?php
 $title = "Update Award";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -55,17 +56,14 @@ if (isset($_POST['submit'])) {
         $sql = "UPDATE awards SET title='$title', description='$description', image='$path', alt_tag='$alt_tag', alt_description='$alt_description' WHERE id=$id";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Record updated successfully";
+            $_SESSION['successMessage'] = "Record updated successfully";
         } else {
-            echo "Error updating record: " . $conn->error;
+            $_SESSION['errorMessage'] =  "Error updating record: " . $conn->error;
         }
-
-        // Redirect to the list page after updating
         header("Location: award.php");
         exit();
-    } else {
-        echo "Error updating record: " . $conn->error;
     }
+
 }
 
 ?>
@@ -95,7 +93,8 @@ if (isset($_POST['submit'])) {
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="image">Exiting Image</label>
-                        <img class="w-100" src="<?php echo $newImagePath ?>" alt="">
+                        <br>
+                        <img class="w-25" src="<?php echo $newImagePath ?>" alt="">
                     </div>
                 </div>
 

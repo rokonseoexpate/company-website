@@ -13,8 +13,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_tag    = $_POST['alt_tag'];
     $alt_description    = $_POST['alt_description'];
 
-
-    $_SESSION['errorMessage'] = '';
     if (empty($name) ) {
         $_SESSION['errorMessage'] = "Name is required!";
     } else if (empty($orderBy)) {

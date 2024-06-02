@@ -1,5 +1,6 @@
 <?php
 $title = "Award";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -24,10 +25,13 @@ if (isset($_GET['id'])) {
         // Delete record from the database
         $sql = "DELETE FROM awards WHERE id=$id";
         if ($conn->query($sql) === TRUE) {
-            $successMessage = "Successfully deleted record!";
+            $_SESSION['successMessage'] = "Successfully deleted record!";
         } else {
-            // echo "<script>alert('Error deleting record: " . $conn->error . "');</script>";
+            $_SESSION['errorMessage'] =  "Error deleting record: " . $conn->error . "";
         }
+
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
     } 
 }
 
