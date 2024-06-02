@@ -140,7 +140,7 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a href="banner.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'banner.php') ? 'active' : ''; ?>">
+                    <a href="banner.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'banner.php' || basename($_SERVER['PHP_SELF']) == 'banner-add.php'|| basename($_SERVER['PHP_SELF']) == 'banner-edit.php') ? 'active' : ''; ?>">
                         <i class="far fa-images nav-icon"></i>
                         <p>Banners</p>
                     </a>
@@ -156,7 +156,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="certificates.php" class="nav-link">
+                    <a href="certificates.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'certificates.php' || basename($_SERVER['PHP_SELF']) == 'certificate-add.php' || basename($_SERVER['PHP_SELF']) == 'certificate-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-certificate"></i>
                         <p>
                             Certificate
@@ -165,7 +165,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="trusted.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'trusted.php') ? 'active' : ''; ?>">
+                    <a href="trusted.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'trusted.php' || basename($_SERVER['PHP_SELF']) == 'trusted-create.php' || basename($_SERVER['PHP_SELF']) == 'trusted-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Trusted By
@@ -174,7 +174,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="award.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'award.php') ? 'active' : ''; ?>">
+                    <a href="award.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'award.php' ||basename($_SERVER['PHP_SELF']) == 'award-add.php' || basename($_SERVER['PHP_SELF']) == 'award-edit.php' ) ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-award"></i>
                         <p>
                             Award

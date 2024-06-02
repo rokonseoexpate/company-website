@@ -1,6 +1,7 @@
 <?php
 // Include database connection and configuration
 require_once '../config/dbconnect.php';
+session_start();
 $db = new DB_con();
 $conn = $db->get_connection();
 
@@ -17,11 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute the update query
     if (mysqli_query($conn, $update_query)) {
-        header("Location: youtube-video-list.php");
-        $successMessage = "Featured Youtube updated successfully!";
+
+        $_SESSION['successMessage'] = "Featured Youtube updated successfully!";
     } else {
-        $errorMessage = "Error updating featured Youtube: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] = "Error updating featured Youtube: " . mysqli_error($conn);
     }
+    // Refresh the page after deletion
+    header("Location: youtube-video-list.php");
+    exit(); // Exit after redirection
 }
 
 // Retrieve existing data if ID is provided

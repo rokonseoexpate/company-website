@@ -1,5 +1,6 @@
 <?php
-$title = "Update Blog";
+$title = "Update Banners";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -42,12 +43,10 @@ if (isset($_POST['submit'])) {
 
 
     if ($stmt->execute()) {
-        $successMessage = "Successfully updated record!";
+        $_SESSION['successMessage']  = "Successfully updated record!";
     } else {
-        echo "Error updating record: " . $stmt->error;
+        $_SESSION['errorMessage'] =  "Error updating record: " . $stmt->error;
     }
-
-    $stmt->close();
 
     // Redirect to the list page after updating
     header("Location: banner.php");

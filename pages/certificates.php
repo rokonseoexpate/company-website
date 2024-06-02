@@ -1,5 +1,6 @@
 <?php
 $title = "Certificates";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -24,11 +25,15 @@ if (isset($_GET['id'])) {
         // Delete record from the database
         $sql = "DELETE FROM certificates WHERE id=$id";
         if ($conn->query($sql) === TRUE) {
-            // echo "<script>alert('Record deleted successfully');</script>";
+            $_SESSION['successMessage'] = "Record Deleted successfully!";
         } else {
-            // echo "<script>alert('Error deleting record: " . $conn->error . "');</script>";
+            $_SESSION['errorMessage'] =  "Error deleting record: " . mysqli_error($conn);
         }
-    } 
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
+
+
 }
 
 ?>

@@ -1,5 +1,6 @@
 <?php
 $title = "Create Featured Youtube";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -17,12 +18,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Execute the insert query
     if (mysqli_query($conn, $insert_query)) {
 
-        $successMessage = "Feature Youtube created successfully!";
+        $_SESSION['successMessage']  = "Feature Youtube created successfully!";
 
     } else {
         // Insert failed
-        $errorMessage = "Error creating job: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] =  "Error creating job: " . mysqli_error($conn);
     }
+    // Refresh the page after deletion
+    header("Location: youtube-video-list.php");
+    exit(); // Exit after redirection
 }
 ?>
 

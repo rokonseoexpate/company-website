@@ -1,5 +1,6 @@
 <?php
 $title = "Add Core Team";
+session_start();
 ob_start();
 
 require_once '../config/dbconnect.php';
@@ -27,16 +28,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_tag    = $_POST['alt_tag'];
     $alt_description    = $_POST['alt_description'];
 
-    $errorMessage = '';
 
     if (empty($name)) {
-        $errorMessage = "Name is required!";
+        $_SESSION['errorMessage'] = "Name is required!";
     } elseif (empty($orderBy)) {
-        $errorMessage = "Priority is required!";
+        $_SESSION['errorMessage'] = "Priority is required!";
     } elseif (empty($type)) {
-        $errorMessage = "Type is required!";
+        $_SESSION['errorMessage'] = "Type is required!";
     } elseif (empty($designation)) {
-        $errorMessage = "Designation is required!";
+        $_SESSION['errorMessage'] = "Designation is required!";
     } else {
         $image = '';
 
@@ -51,18 +51,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $result = $conn->query($sql);
 
                 if ($result === TRUE) {
-                    header("Location: core-team.php");
-                    exit;
+                    $_SESSION['successMessage'] = "Record Created successfully!";
                 } else {
-                    $errorMessage = "Error: " . $sql . "<br>" . $conn->error;
+                    $_SESSION['errorMessage'] = "Error: " . $sql . "<br>" . $conn->error;
                 }
             } else {
-                $errorMessage = "Failed to upload image!";
+                $_SESSION['errorMessage'] = "Failed to upload image!";
             }
         } else {
-            $errorMessage = "Please select an image!";
+            $_SESSION['errorMessage'] = "Please select an image!";
         }
     }
+    header("Location: core-team.php");
+    exit;
 }
 ?>
 

@@ -1,10 +1,43 @@
 <?php
 $title = "Add Certificates";
 ob_start();
-
+session_start();
 require_once '../config/dbconnect.php';  
 $db = new DB_con();
 $conn = $db->get_connection();
+
+//  =========  Add Data ===================
+if (isset($_POST['submit'])) {
+    $title   = $_POST['title'];
+    $description    = $_POST['description'];
+    $alt_tag    = $_POST['alt_tag'];
+    $alt_description    = $_POST['alt_description'];
+
+
+    if (isset($_FILES['image'])) {
+        $photo = $_FILES['image']['name'];
+        $extension = pathinfo($photo, PATHINFO_EXTENSION);
+        $image = '../uploads/' . str_replace(' ', '-',  strtolower($title)) .'-' . random_int(10000, 99999) . '.' . $extension;
+
+        move_uploaded_file($_FILES['image']['tmp_name'], $image);
+    }
+
+
+    $sql = "INSERT INTO `certificates`(`title`, `description`, `image`, `alt_tag`, `alt_description` ) VALUES ('$title','$description','$image', '$alt_tag', '$alt_description')";
+    $result = $conn->query($sql);
+
+    if ($result === TRUE) {
+        $_SESSION['successMessage'] = "Record Created successfully!";
+
+    } else {
+        $_SESSION['errorMessage'] =  "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    header("Location: certificates.php");
+    exit();
+
+}
+
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
@@ -15,7 +48,7 @@ $conn = $db->get_connection();
             <a href="certificates.php" class="btn btn-sm btn-info">View List</a>
         </div>
 
-        <form action="../controller/backend/certificates.php" method="POST" enctype="multipart/form-data" id="submit">
+        <form action="" method="POST" enctype="multipart/form-data" id="submit">
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
