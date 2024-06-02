@@ -1,5 +1,6 @@
 <?php
 $title = "Update Department";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -72,22 +73,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt = $conn->prepare($insert_query);
             $stmt->bind_param("ssss", $name, $image_path, $alt_tag, $alt_description);
         }
-
         if ($stmt->execute()) {
-            // Redirect or display success message as per your requirement
-            header("Location: department-list.php");
-            exit();
+            $_SESSION['successMessage'] = "Record Updated successfully!";
         } else {
             // Handle insert/update failure
-            $errorMessage = $edit_mode ? "Error updating department: " : "Error creating department: ";
-            $errorMessage .= $stmt->error;
+            $_SESSION['errorMessage'] =   "Error updating department: " . $stmt->error;;
         }
-
         // Close statement
         $stmt->close();
-    }else{
-        $errorMessage =  $errorMessage ;
     }
+
+    header("Location: department-list.php");
+    exit();
+
 }
 ?>
 

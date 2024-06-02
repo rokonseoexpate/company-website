@@ -1,5 +1,6 @@
 <?php
 $title = "Employee List";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -29,11 +30,13 @@ if (isset($_GET['delete_id'])) {
     if (mysqli_query($conn, $delete_query)) {
         // If deletion from database is successful, delete the image file
         deleteImage($image_path);
-        $successMessage = "Employee deleted successfully.";
-        echo $successMessage;
+        $_SESSION['successMessage'] = "Employee deleted successfully.";
     } else {
         $successMessage = "Error: Unable to delete employee.";
     }
+
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
 }
 
 // Fetch employee data from the database

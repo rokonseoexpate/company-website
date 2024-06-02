@@ -112,7 +112,7 @@
                 </li>
 
                 <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'app-development-add.php' || basename($_SERVER['PHP_SELF']) == 'app-development-add.php' || basename($_SERVER['PHP_SELF']) == 'app-development-list.php') ? 'menu-open' : ''; ?>">
-                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php') ? 'active' : ''; ?>">
+                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'app-development-add.php' ) ? 'active' : ''; ?>">
                         <i class="nav-icon fab fa-android"></i>
                         <p>
                             App Development
@@ -133,7 +133,7 @@
 
 
                 <li class="nav-item">
-                    <a href="history-gallery-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history-gallery-list.php') ? 'active' : ''; ?>">
+                    <a href="history-gallery-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'history-gallery-list.php' || basename($_SERVER['PHP_SELF']) == 'history-gallery-add.php' || basename($_SERVER['PHP_SELF']) == 'history-gallery-edit.php') ? 'active' : ''; ?>">
                         <i class="far fa-images nav-icon"></i>
                         <p>Image Gallery </p>
                     </a>
@@ -194,7 +194,7 @@
                 </li>
 
                 <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'blog-category.php' || basename($_SERVER['PHP_SELF']) == 'blogs.php') ? 'menu-open' : ''; ?>">
-                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'portfolio-category-add.php' || basename($_SERVER['PHP_SELF']) == 'portfolio-category-list.php') ? 'active' : ''; ?>">
+                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'blog-category.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fab fa-android"></i>
                         <p>
                             Blog

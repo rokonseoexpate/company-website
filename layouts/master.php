@@ -1,15 +1,3 @@
-<?php
-
-session_start();
-
-// Check if user is logged in, otherwise redirect to login page
-if (!isset($_SESSION['username'])) {
-    header('Location: login.php');
-    exit();
-}
-
-$username = $_SESSION['username'];
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -132,32 +120,33 @@ $username = $_SESSION['username'];
     <script src="../assets/plugins/select2/js/select2.full.min.js"></script>
 
     <script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" referrerpolicy="no-referrer"></script>
 
     <script>
         $('.dropify').dropify();
     </script>
 
-    <?php if (isset($successMessage)) : ?>
+    <?php if (isset($_SESSION['successMessage'])) : ?>
         <script>
             iziToast.success({
                 title: 'Success',
                 position: 'topRight',
-                message: '<?php echo $successMessage; ?>',
+                message: '<?php echo $_SESSION['successMessage']; ?>',
             });
         </script>
+        <?php unset($_SESSION['successMessage']); ?>
     <?php endif; ?>
 
-    <?php if (isset($errorMessage)) : ?>
+    <?php if (isset($_SESSION['errorMessage'])) : ?>
         <script>
             iziToast.error({
                 title: 'Error',
                 position: 'topRight',
-                message: '<?php echo $errorMessage; ?>',
+                message: '<?php echo $_SESSION['errorMessage']; ?>',
             });
         </script>
+        <?php unset($_SESSION['errorMessage']); ?>
     <?php endif; ?>
-
     <script>
         $(function() {
             $('.select2').select2()

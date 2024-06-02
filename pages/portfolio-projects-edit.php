@@ -1,5 +1,6 @@
 <?php
 $title = "Update Web Portfolio";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -56,13 +57,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Execute query
     if (mysqli_query($conn, $update_query)) {
         // Update successful
-        $successMessage = "Portfolio updated successfully!";
-        header("Location: portfolio-projects-list.php");
+        $_SESSION['successMessage'] = "Portfolio updated successfully!";
+
         // Redirect to portfolio list page or display success message as per your requirement
     } else {
         // Update failed
-        $errorMessage = "Error updating Portfolio: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] = "Error updating Portfolio: " . mysqli_error($conn);
     }
+    header("Location: portfolio-projects-list.php");
+    exit();
 }
 ?>
 
@@ -77,12 +80,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
                 <div class="form-group col-md-6">
                     <label for="Title">Title</label>
-                    <input type="text" class="form-control" id="Title" name="title" placeholder="Title" value="<?php echo $project_row['title']; ?>">
+                    <input type="text" class="form-control" id="Title" name="title" placeholder="Title" value="<?php echo $project_row['title']; ?>" required>
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="category">Category</label>
-                    <select id="category_id" class="form-control" name="category_id">
+                    <select id="category_id" class="form-control" name="category_id" readonly="">
                         <option value="">Choose...</option>
                         <?php while ($branch_row = mysqli_fetch_assoc($branch_result)) : ?>
                             <option value="<?php echo $branch_row['id']; ?>" <?php if ($branch_row['id'] == $project_row['category_id']) echo 'selected'; ?>><?php echo $branch_row['name']; ?></option>
@@ -91,12 +94,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <div class="form-group col-md-12">
                     <label for="link">Link</label>
-                    <input type="text" class="form-control" id="link" name="link" placeholder="link" value="<?php echo $project_row['link']; ?>">
+                    <input type="text" class="form-control" id="link" name="link" placeholder="link" value="<?php echo $project_row['link']; ?>" required>
                 </div>
 
                 <div class="form-group col-md-6">
                     <label for="image">Image</label>
-                    <input type="file" class="form-control-file dropify" accept="image/*" name="image" placeholder="image">
+                    <input type="file" class="form-control-file dropify" accept="image/*" name="image" placeholder="image" required="">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="image">Existing Image</label>
