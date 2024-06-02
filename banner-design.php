@@ -220,7 +220,7 @@ $conn = $db->get_connection();
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
 							<li class="breadcrumb-item "><a href="/" class=" text-dark">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo_editor.php" class="text-dark">Photo editor</a></li>
+							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-dark">Photo editor</a></li>
 							<li class="breadcrumb-item active " aria-current="page">Banner Design</li>
 						</ol>
 					</nav>

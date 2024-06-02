@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Photo Editing Services";
 ob_start();
 ?>
 	<!--================================photo editor sub Header section end here=======================-->
@@ -189,7 +189,7 @@ ob_start();
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
@@ -841,13 +841,13 @@ ob_start();
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 pt-3">
-					<a href="banner_design.php">
+					<a href="banner-design.php">
 						<div class="card">
 				      		<img src="frontend/images/Banner-design-image.jpg" class="card-img-top" alt="  Photo Editor" description=" Photo Editor">
 				      		<div class="card-body">
 				        		<h5 class="card-title text-dark">Banner Design</h5>
 				        		<p class="card-text text-dark pb-3">Banner design is a crucial part of all business. Nowadays, no business or company will get proper publicity if they are not into this banner design service. It’s a way of modern-day advertising. Though banner is not a new invention as we all know in past people used the banner for various purposes. But now, it’s so important to represent a banner more conveniently. Philippines Photo Editor understands the importance of it. Therefore, we will serve you a business-friendly banner so someone can easily understand what your business is and what you are offering to them.</p>
-								<div class="button text-center pt-2"><a type="button" href="banner_design.php" class="text-light text-center"> Get It Now</a></div>
+								<div class="button text-center pt-2"><a type="button" href="banner-design.php" class="text-light text-center"> Get It Now</a></div>
 				      		</div>
 				    	</div>
 					</a>
@@ -869,7 +869,7 @@ ob_start();
 				      		<div class="card-body">
 				        		<h5 class="card-title text-dark">Logo Design Services</h5>
 				        		<p class="card-text text-dark pb-3">Logo design is crucial work for building a business into a brand. Our top level logo design is the first condition to create any business or company. Thus, only a good-looking and understandable logo can produce a lot of customers, and it can go publicly viral. Philippines Photo Editor knows how important it is to create a professional logo. Hereafter we are offering the superior logo design service for our customers.</p>
-								<div class="button text-center pt-2"><a type="button" href="logo_design.php" class="text-light text-center"> Get It Now</a></div>
+								<div class="button text-center pt-2"><a type="button" href="logo-design.php" class="text-light text-center"> Get It Now</a></div>
 				      		</div>
 				    	</div>
 					</a>

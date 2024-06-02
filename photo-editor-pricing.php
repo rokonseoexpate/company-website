@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Photo Editing Pricing";
 ob_start();
 ?>
 
@@ -190,7 +190,7 @@ ob_start();
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
@@ -200,7 +200,7 @@ ob_start();
 						<p style="text-align:justify;">In addition, our <a href="index.php" class="text-success">company</a> is a reliable place where you can trust and have our services without any issues. Moreover, we have top-class workers and designers who work hard to give you the best service ever. So, if you are willing to take our service, then join us and we'll fulfill your demand by giving the best service ever.</p>
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="free_trial.php">Free Trial</a>
+						<a type="button" href="free-trial.php">Free Trial</a>
 					</div>	
 				</div>			
 			</div>

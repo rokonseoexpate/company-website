@@ -189,7 +189,7 @@ ob_start();
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-12" style="z-index:500;">
@@ -740,7 +740,7 @@ ob_start();
 							<h6>T-Shirt Design</h6>
 						</div>
 					</a>
-					<a href="logo_design.php" class="d-flex pt-2">
+					<a href="logo-design.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -748,7 +748,7 @@ ob_start();
 							<h6>Logo Designs Service</h6>
 						</div>
 					</a>
-					<a href="banner_design.php" class="d-flex pt-2">
+					<a href="banner-design.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
