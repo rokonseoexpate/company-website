@@ -2,91 +2,17 @@
 $title = "Off-Page Seo";
 ob_start();
 ?>
-<!--================================photo editor sub Header section end here=======================-->
-<div class="photo_edipth">
-	<div class="container">
-		<nav class="navbar navbar-expand-lg navbar-dark ">
-			<div class="container-fluid ">
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-				</button>
-				<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-					<ul class="navbar-nav ">
-						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="seo-service.php" data-bs-toggle="dropdown">SEO Services</a>
-							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="ecommerce-seo.php"> eCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="amazon_seo.php">Amazon SEO</a></li>
-								<li><a class="dropdown-item" href="b2b-seo.php">B2B SEO</a></li>
-								<li><a class="dropdown-item" href="shopify-seo.php">Shopify SEO</a></li>
-								<li><a class="dropdown-item" href="wordpress-seo.php">WordPress SEO</a></li>
-								<li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
-								<li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="magento-seo.php">Magento SEO</a></li>
-								<li><a class="dropdown-item" href="volusion-seo.php">Volusion SEO</a></li>
-								<li><a class="dropdown-item" href="bigcommerce-seo.php">BigCommerce SEO</a></li>
-								<li><a class="dropdown-item" href="consulting-seo.php">SEO Consulting</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link  dropdown-toggle" href="ppc-paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
-							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="amazon-ppc.php"> Amazon PPC Management</a></li>
-								<li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
-								<li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
-								<li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
-								<li><a class="dropdown-item" href="shopping-management.php">Google Shopping Management</a></li>
-								<li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
-								<li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
-						<li class="nav-item"><a class="nav-link" href="package-price-seo.php"> SEO Packages & Pricing </a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</div>
-</div>
-<!--================================photo editor sub Header section end here=======================-->
 
-<!--================================top-body section start here=======================-->
-<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
-	<div class="container ">
-		<div class="row">
-			<div class="col-md-7 ecomresp" style="z-index:500;">
-				<div class="top_body_txt_part">
-					<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">Off-page SEO Services</h1>
-					<p style="text-align:justify;"> With the Off-page SEO services from <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD., you can unlock the full potential of your digital existence. Now, achieving a prominent place in search engine results is essential for success in the ever-evolving digital world. The key to making your website stand out from the competition is this method. Indeed, our dedicated experts are highly skilled in all aspects of this optimization and create customized tactics. </p>
-					<p style="text-align:justify;">Certainly, it will improve the online authority and credibility of your website. In fact, your brand's exposure, traffic, and engagement will all rapidly grow with our supreme Off-page SEO strategies. We use online mentions and high-quality backlinks to boost your website's visibility and search engine rankings. </p>
-				</div>
-				<div class="row">
-					<div class="col-md-7 pt-2">
-						<div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Talk with our Off-page SEO experts </a></div>
-					</div>
-					<div class="col-md-2 ecomrespons">
-						<img src="frontend/images/google-seo-proposal-audit.png.webp" alt="off Page SEO Service" description=" off Page SEO Service" class="img-fluid">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-5 m-auto ecomrespp" style="z-index:500;">
-				<img src="frontend/images/images (1).jpg" alt="off Page SEO Service" description=" off Page SEO Service" class="img-thumbnail">
-			</div>
-		</div>
-	</div>
-	<!--================================photo editor sub Header section end here=======================-->
-	
+<?php include "includes/seo-nav.php" ?>
+
 	<!--================================top-body section start here=======================-->
-	<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">		
+	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">		
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-md-7 ecomresp" style="z-index:500;">
 		    		<div class="top_body_txt_part">
 						<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">Off-page SEO Services</h1>		
-						<p style="text-align:justify;"> With the Off-page SEO services from <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD., you can unlock the full potential of your digital existence. Now, achieving a prominent place in search engine results is essential for success in the ever-evolving digital world. The key to making your website stand out from the competition is this method. Indeed, our dedicated experts are highly skilled in all aspects of this optimization and create customized tactics. </p>
+						<p style="text-align:justify;"> With the Off-page SEO services from <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD., you can unlock the full potential of your digital existence. Now, achieving a prominent place in search engine results is essential for success in the ever-evolving digital world. The key to making your website stand out from the competition is this method. Indeed, our dedicated experts are highly skilled in all aspects of this optimization and create customized tactics. </p>
 						<p style="text-align:justify;">Certainly, it will improve the online authority and credibility of your website. In fact, your brand's exposure, traffic, and engagement will all rapidly grow with our supreme Off-page SEO strategies. We use online mentions and high-quality backlinks to boost your website's visibility and search engine rankings. </p>					
 					</div>
 					<div class="row">
@@ -114,13 +40,13 @@ ob_start();
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Off-page SEO Service</li>
 						</ol>
 						</nav>
 					</div>
-					<p class="text-light">Collaboration and openness are of utmost importance to us. In close collaboration with you, our team will identify your company's objectives and create a custom made SEO plan to meet those goals. Of course, our complete services will provide results whether you're a start-up or an established business trying to remain ahead of the game. So, make sure your business grows by using us for Off-page SEO to overcome your rivals. Thus, boost your ranks, improve your online exposure, and see how your brand takes off in the realm of the internet. Finally, take the initial step toward long-term online success by partnering with <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD.</p>				
+					<p class="text-light">Collaboration and openness are of utmost importance to us. In close collaboration with you, our team will identify your company's objectives and create a custom made SEO plan to meet those goals. Of course, our complete services will provide results whether you're a start-up or an established business trying to remain ahead of the game. So, make sure your business grows by using us for Off-page SEO to overcome your rivals. Thus, boost your ranks, improve your online exposure, and see how your brand takes off in the realm of the internet. Finally, take the initial step toward long-term online success by partnering with <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD.</p>				
 				</div>
 			</div>
 		</div>
@@ -166,7 +92,7 @@ ob_start();
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2"><h6>Off-Site SEO Services Backed by Data</h6></div>
-					<p class="pt-3" >We at <a href="/" class="text-success">SEO Expate</a> BD are proud to provide Off-Site SEO Services that are supported by data-driven tactics. Here, our strategy includes an in-depth study of user behaviour, marketplaces, and market trends. Equipped with these insights, we develop customized off-page SEO strategies. Indeed, it ensures that our customers outperform the competition in the digital space. In effect, it improves their search engine rankings. Certainly, our Off-Site SEO services are successful and flexible to adjust to the evolving demands of the <a href="digital_marketing.php" class="text-success">digital marketplace</a>.</p>												
+					<p class="pt-3" >We at <a href="index.php" class="text-success">SEO Expate</a> BD are proud to provide Off-Site SEO Services that are supported by data-driven tactics. Here, our strategy includes an in-depth study of user behaviour, marketplaces, and market trends. Equipped with these insights, we develop customized off-page SEO strategies. Indeed, it ensures that our customers outperform the competition in the digital space. In effect, it improves their search engine rankings. Certainly, our Off-Site SEO services are successful and flexible to adjust to the evolving demands of the <a href="digital-marketing.php" class="text-success">digital marketplace</a>.</p>												
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
@@ -366,17 +292,17 @@ ob_start();
     </section> 
 	<!--================================top_ready_start section end here=======================-->
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                 	<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-	<!--================================Thrive_Globally section end here=======================-->
+<!--================================Thrive_Globally section start here=======================-->
+<section class="PAY_MENT" style="padding: 20px 0;">
+	<div class="container">
+		<div class="row">
+			<div class="PAY_IMG">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+			</div>
+		</div>
+	</div>
+</section>
+<!--================================Thrive_Globally section end here=======================-->
 <?php
 $main_content = ob_get_clean();
 include './layouts/app.php';

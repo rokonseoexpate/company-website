@@ -1,10 +1,10 @@
 <?php
-$title = "Content Writing Service";
+$title = "Copy Writing Service";
 ob_start();
 ?>
 
 <!--================================photo editor sub Header section end here=======================-->
-<?php include  'includes/sub-nav.php' ?>
+<?php include "includes/content-nav.php" ?>
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
@@ -21,7 +21,7 @@ ob_start();
                 </div>
             </div>
             <div class="col-md-5 m-auto ecomrespp" style="z-index:500;">
-               <img src="frontend/images/Easy Scalability.webp" alt=" seo expate" description=" seo expate" class="img-thumbnail">
+                <img src="frontend/images/Easy Scalability.webp" alt=" seo expate" description=" seo expate" class="img-thumbnail">
             </div>
         </div>
     </div>
@@ -230,7 +230,7 @@ ob_start();
             </div>
             <div class="col-md-6">
                 <div class="top_ready_start_img text-left">
-                   <img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate">
+                    <img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate">
                 </div>
             </div>
         </div>
@@ -243,7 +243,7 @@ ob_start();
     <div class="container">
         <div class="row">
             <div class="PAY_IMG">
-               <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+                <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
             </div>
         </div>
     </div>

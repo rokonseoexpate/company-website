@@ -230,7 +230,7 @@ ob_start();
 	<div class="container">
 		<div class="row">
 			<div class="PAY_IMG">
-				<img src="frontend/frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
 			</div>
 		</div>
 	</div>

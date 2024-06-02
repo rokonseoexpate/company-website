@@ -14,7 +14,7 @@ ob_start();
 			<div class="col-md-7 ecomresp" style="z-index:500; ">
 				<div class="top_body_txt_part">
 					<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">Web Design & Development With Wordpress</h1>
-					<p style="margin-top: -15px; text-align: justify;">WordPress is an open-source CMS-Content Management System . It is a popular tool for individuals without any coding experience who want to build websites and blogs. It enables learners to build and manage their own full-featured website using a web browser without knowing how to code. Our WordPress Essentials training will provide learners with the skills and best practice approach needed to successfully create and run a blog or <a href="website_course.php" class="text-success">website</a> .</p>
+					<p style="margin-top: -15px; text-align: justify;">WordPress is an open-source CMS-Content Management System . It is a popular tool for individuals without any coding experience who want to build websites and blogs. It enables learners to build and manage their own full-featured website using a web browser without knowing how to code. Our WordPress Essentials training will provide learners with the skills and best practice approach needed to successfully create and run a blog or <a href="website-course.php" class="text-success">website</a> .</p>
 				</div>
 				<div class="row">
 					<div class="col-md-6 pt-2" style="z-index:500; ">
@@ -54,7 +54,7 @@ ob_start();
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
 							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
+							<li class="breadcrumb-item "><a href="training.php" class="text-light">Our Training</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Wordpress</li>
 						</ol>
 					</nav>
@@ -78,12 +78,12 @@ ob_start();
 				<p>1. Wordpress Installation</p>
 				<p>2. Plugin Installation</p>
 				<p>3. Wordpress Customization</p>
-				<p>4. Dynamic <a href="website_course.php" class="text-success">website</a> Development </p>
+				<p>4. Dynamic <a href="website-course.php" class="text-success">website</a> Development </p>
 				<p>5. CMS-Content Management System </p>
 				<p>6. Websites (Portfolio, Blog, News, Corporate, E-Commerce )</p>
 				<p>7. Domain, Hosing, Cpanel </p>
 				<p>8. Marketplace Related Classes </p>
-				<p>9. And much more project you will create throughout this <a href="traning.php" class="text-success">course</a> </p>
+				<p>9. And much more project you will create throughout this <a href="training.php" class="text-success">course</a> </p>
 			</div>
 			<div class="col-12">
 				<p>In this course we will create real world projects, which will make you confident and will help you build complex web applications, while also helping you maintain your confidence on the <a href="jobs.php" class="text-success">job</a>.</p>
@@ -189,7 +189,7 @@ ob_start();
 			</div>
 			<div class="col-12">
 				<p>1. We have our own hostel for boys and girls.</p>
-				<p>2. We have good facilities for online and offline <a href="traning.php" class="text-success">courses</a>.</p>
+				<p>2. We have good facilities for online and offline <a href="training.php" class="text-success">courses</a>.</p>
 				<p>3. There are arrangements for job placement and internship.</p>
 				<p>4. Confirm your discount offer by registering today.</p>
 			</div>

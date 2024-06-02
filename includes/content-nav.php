@@ -1,10 +1,9 @@
-<!--================================photo editor sub Header section end here=======================-->
 <div class="photo_edipth">
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid ">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" alt=" seo expate" description=" seo expate"></i></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
                     <ul class="navbar-nav ">
@@ -26,4 +25,3 @@
         </nav>
     </div>
 </div>
-<!--================================photo editor sub Header section end here=======================-->
