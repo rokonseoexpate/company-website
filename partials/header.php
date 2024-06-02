@@ -1,3 +1,10 @@
+<?php
+if(!isset($_SESSION))
+{
+    session_start();
+}
+$username = $_SESSION['username'];
+?>
 <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">

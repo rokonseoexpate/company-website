@@ -1,5 +1,6 @@
 <?php
 $title = "Update App Portfolio";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -58,11 +59,15 @@ if (isset($_POST['submit'])) {
     // Execute query
     if (mysqli_query($conn, $update_query)) {
         // Update successful
-        $successMessage = "App Portfolio Updated successfully!";
+        $_SESSION['successMessage'] = "App Portfolio Updated successfully!";
     } else {
         // Update failed
-        $errorMessage = "Error updating App Portfolio: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] = "Error updating App Portfolio: " . mysqli_error($conn);
     }
+    header("Location: app-development-list.php");
+    exit();
+
+
 }
 ?>
 

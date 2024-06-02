@@ -1,6 +1,6 @@
 <?php
 $title = "Update Branch";
-ob_start();
+session_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
@@ -46,10 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Execute query
     if (mysqli_query($conn, $sql)) {
-        header('Location: branch-list.php');
+        $_SESSION['successMessage'] = "Record Updated successfully!";
     } else {
-        echo "Error updating record: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] =  "Error updating record: " . mysqli_error($conn);
     }
+    header('Location: branch-list.php');
+    exit();
 }
 
 

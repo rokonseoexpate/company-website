@@ -1,5 +1,6 @@
 <?php
 $title = "Edit History Journey";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -14,11 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $update_query = "UPDATE history_journeys SET year='$year', details='$details' WHERE id='$journey_id'";
 
     if (mysqli_query($conn, $update_query)) {
-        $successMessage = "History Journey updated successfully!";
-        header("Location: history-journey-list.php");
+        $_SESSION['successMessage'] = "History Journey updated successfully!";
+
     } else {
-        $errorMessage = "Error updating History Journey: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] = "Error updating History Journey: " . mysqli_error($conn);
     }
+    header("Location: history-journey-list.php");
+    exit();
 }
 
 // Check if journey ID is provided in the URL

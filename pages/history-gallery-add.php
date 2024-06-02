@@ -1,5 +1,6 @@
 <?php
 $title = "Upload Image";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -13,11 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_description = $_POST['alt_description'];
 
     if (empty($title)) {
-        $errorMessage = 'Title is required.';
+        $_SESSION['errorMessage'] = 'Title is required.';
     }
 
     if (empty($image_type)) {
-        $errorMessage = 'Image type is required.';
+        $_SESSION['errorMessage'] = 'Image type is required.';
     }
 
     // Sanitize and prepare image name
@@ -28,24 +29,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Handling image upload
     $targetDir = "../uploads/"; // Specify the directory where you want to store uploaded images
     $targetFilePath = $targetDir . $imageName;
-    if (empty($errorMessage)) {
+    if (empty($_SESSION['errorMessage'])) {
         // Upload file to server
         if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFilePath)) {
             // Insert notice into notices table
             $insert_query = "INSERT INTO history_galleries (title, short_title, image_type, image,alt_tag, alt_description) VALUES ('$title', '$short_title','$image_type', '$targetFilePath', '$alt_tag', '$alt_description')";
             if (mysqli_query($conn, $insert_query)) {
                 // Redirect or display success message as per your requirement
-                $successMessage = "Upload Image Successfully";
-                header("Location: history-gallery-list.php");
-                exit();
+                $_SESSION['successMessage'] = "Upload Image Successfully";
+
             } else {
                 // Handle insert failure
-                $errorMessage = "Error creating notice: " . mysqli_error($conn);
+                $_SESSION['errorMessage'] = "Error creating notice: " . mysqli_error($conn);
             }
         } else {
-            $errorMessage = "Sorry, there was an error uploading your file.";
+            $_SESSION['errorMessage'] = "Sorry, there was an error uploading your file.";
         }
+
     }
+    header("Location: history-gallery-list.php");
+    exit();
 }
 ?>
 
@@ -54,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="card px-3">
         <div class="d-flex justify-content-between align-items-center">
             <h1><?php echo $title; ?></h1>
-            <a href="notice-list.php" class="btn btn-sm btn-info">View List</a>
+            <a href="history-gallery-list.php" class="btn btn-sm btn-info">View List</a>
         </div>
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="row">

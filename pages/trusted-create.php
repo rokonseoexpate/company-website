@@ -1,5 +1,6 @@
 <?php
 $title = "Add Trusted By";
+session_start();
 ob_start();
 
 require_once '../config/dbconnect.php';
@@ -13,13 +14,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_description    = $_POST['alt_description'];
 
 
-    $errorMessage = '';
+    $_SESSION['errorMessage'] = '';
     if (empty($name) ) {
-        $errorMessage = "Name is required!";
+        $_SESSION['errorMessage'] = "Name is required!";
     } else if (empty($orderBy)) {
-        $errorMessage = "priority  is required!";
+        $_SESSION['errorMessage'] = "priority  is required!";
     } else {
-        $image = '';
 
         if (isset($_FILES['image'])) {
             $photo = $_FILES['image']['name'];
@@ -31,17 +31,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $result = $conn->query($sql);
 
                 if ($result === TRUE) {
-                    header("Location: trusted.php");
-                    exit;
+                    $_SESSION['successMessage'] = "Record Created successfully!";
+
+
                 } else {
-                    $errorMessage = "Error: " . $sql . "<br>" . $conn->error;
+                    $_SESSION['errorMessage'] = "Error: " . $sql . "<br>" . $conn->error;
                 }
             } else {
-                $errorMessage = "Failed to upload image!";
+                $_SESSION['errorMessage'] = "Failed to upload image!";
             }
         } else {
-            $errorMessage = "Please select an image!";
+            $_SESSION['errorMessage'] = "Please select an image!";
         }
+        header("Location: trusted.php");
+        exit;
     }
 }
 

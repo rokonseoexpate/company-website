@@ -1,12 +1,13 @@
 <?php
 $title = "Web Projects List";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
 // Fetch web project data from the database
-$query = "SELECT web_portfolios.*, web_portfolio_categories.name AS category_name FROM web_portfolios LEFT JOIN web_portfolio_categories ON web_portfolios.category_id = web_portfolio_categories.id";
+$query = "SELECT web_portfolios.*, web_portfolio_categories.name AS category_name FROM web_portfolios LEFT JOIN web_portfolio_categories ON web_portfolios.category_id = web_portfolio_categories.id ORDER BY id DESC ";
 $result = mysqli_query($conn, $query);
 
 // Check if delete_id is present in the URL
@@ -18,14 +19,14 @@ if (isset($_GET['delete_id'])) {
 
     if (mysqli_query($conn, $delete_query)) {
         // Deletion successful
-        $successMessage = "Web project deleted successfully!";
-        // Redirect to refresh the page and remove the deleted project from the list
-       // header("Location: portfolio-projects-list.php");
-        header("Location: $_SERVER[PHP_SELF]");
+        $_SESSION['successMessage'] = "Web project deleted successfully!";
     } else {
         // Deletion failed
-        $errorMessage = "Error deleting web project: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] = "Error deleting web project: " . mysqli_error($conn);
     }
+    header("Location: portfolio-projects-list.php");
+    exit();
+
 }
 ?>
 

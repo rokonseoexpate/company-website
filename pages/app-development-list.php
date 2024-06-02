@@ -1,5 +1,6 @@
 <?php
 $title = "App Portfolio list";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -31,7 +32,7 @@ $conn = $db->get_connection();
                 <tbody>
                 <?php
                 $i = 1;
-                $qry = "SELECT * FROM app_developments";
+                $qry = "SELECT * FROM app_developments ORDER BY id DESC";
                 $result = mysqli_query($conn, $qry); // Use mysqli_query() to execute the query
 
                 if ($result) {
@@ -60,14 +61,15 @@ $conn = $db->get_connection();
 
                     if (mysqli_query($conn, $sql_delete)) {
                         // Display success message
-                        $successMessage = "Record deleted successfully!";
+                        $_SESSION['successMessage'] = "Record deleted successfully!";
 
-                        // Refresh the page after deletion
-                        header("Location: $_SERVER[PHP_SELF]");
-                        exit(); // Exit after redirection
+
                     } else {
-                        echo "Error deleting record: " . mysqli_error($conn);
+                        $_SESSION['errorMessage'] = "Error deleting record: " . mysqli_error($conn);
                     }
+                    // Refresh the page after deletion
+                    header("Location: $_SERVER[PHP_SELF]");
+                    exit(); // Exit after redirection
                 }
                 ?>
                 </tbody>

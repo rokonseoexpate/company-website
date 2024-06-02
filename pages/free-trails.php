@@ -13,7 +13,7 @@ $qry = "SELECT * FROM free_trials order by id desc";
     <div class="card px-3">
         <div class="d-flex  justify-content-between align-items-center py-2">
             <h4> <strong> <?php echo $title  ?> </strong> </h4>
-            <a href="trusted-create.php" class="btn btn-sm btn-info"><i class="fa-solid fa-plus"></i></a>
+
         </div>
         <table class="table table-striped table-bordered" id="example1">
             <thead>

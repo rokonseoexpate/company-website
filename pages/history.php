@@ -1,5 +1,6 @@
 <?php
 $title = "History Page";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -94,11 +95,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Redirect to the same page to reload it
-        header("Location: " . $_SERVER['PHP_SELF']);
-        exit();
+        $_SESSION['successMessage'] = "Record Updated successfully!";
     } else {
         echo "Error updating record: " . $conn->error;
     }
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
 }
 
 ?>

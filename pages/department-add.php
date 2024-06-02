@@ -1,6 +1,6 @@
 <?php
 $title = "Create Department";
-ob_start();
+session_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
@@ -41,12 +41,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             // Redirect or display success message as per your requirement
-            header("Location: department-list.php");
-            exit();
+            $_SESSION['successMessage'] = "Record Created successfully!";
         } else {
             // Handle insert failure
             $errorMessage = "Error creating department: " . $stmt->error;
         }
+
+        header("Location: department-list.php");
+        exit();
+
+
     }
 }
 

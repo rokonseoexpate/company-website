@@ -1,6 +1,6 @@
 <?php
 $title = "Create Branch";
-ob_start();
+session_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
@@ -24,21 +24,22 @@ if (isset($_POST['submit'])) {
         // Upload new image file
         move_uploaded_file($_FILES["image"]["tmp_name"], $image_name);
         $image_path = $image_name;
-    } else {
-        $image_path = ''; // Set default image path if no image is uploaded
     }
 
     // Insert data into database
     $insert_query = "INSERT INTO branches (name, image, map, address, video_link,alt_tag, alt_description ) VALUES ('$name', '$image_path',' $map', '$address', '$video_link', '$alt_tag', '$alt_description')";
 
     // Execute query
-    if (mysqli_query($conn, $insert_query)) { 
-        $successMessage = "Branch created successfully!";
-        header("Location: branch-list.php");
+    if (mysqli_query($conn, $insert_query)) {
+        // Set success message in session
+        $_SESSION['successMessage'] = "Record Created successfully!";
+
     } else {
         // Insert failed
         $errorMessage = "Error creating Branch: " . mysqli_error($conn);
     }
+    header("Location: branch-list.php");
+    exit();
 }
 
 ?>

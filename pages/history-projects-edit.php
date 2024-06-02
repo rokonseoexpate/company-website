@@ -1,5 +1,6 @@
 <?php
 $title = "Update Image";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -51,28 +52,28 @@ if (isset($_GET['id'])) {
                 $update_query = "UPDATE history_projects SET title = '$title', description = '$description', image = '$targetFilePath' WHERE id = $image_id";
                 if (mysqli_query($conn, $update_query)) {
                     // Redirect or display success message as per your requirement
-                    $successMessage = "Updated Successfully";
+                    $_SESSION['successMessage']  = "Updated Successfully";
                     header("Location: history-projects-list.php");
                     exit();
                 } else {
                     // Handle update failure
-                    $errorMessage = "Error updating image: " . mysqli_error($conn);
+                    $_SESSION['errorMessage'] = "Error updating image: " . mysqli_error($conn);
                 }
             } else {
-                $errorMessage = "Sorry, there was an error uploading your file.";
+                $_SESSION['errorMessage'] = "Sorry, there was an error uploading your file.";
             }
         } else {
             // If no new image file is uploaded, update only the image type
             $update_query = "UPDATE history_projects SET title = '$title', description = '$description' WHERE id = $image_id";
             if (mysqli_query($conn, $update_query)) {
                 // Redirect or display success message as per your requirement
-                $successMessage = "Updated Successfully";
-                header("Location: history-projects-list.php");
-                exit();
+                $_SESSION['successMessage']  = "Updated Successfully";
             } else {
                 // Handle update failure
-                $errorMessage = "Error updating image type: " . mysqli_error($conn);
+                $_SESSION['errorMessage']  = "Error updating image type: " . mysqli_error($conn);
             }
+            header("Location: history-projects-list.php");
+            exit();
         }
     }
 } else {

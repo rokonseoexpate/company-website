@@ -1,5 +1,6 @@
 <?php
 $title = "History Projects List";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -83,14 +84,15 @@ $conn = $db->get_connection();
 
                     if (mysqli_query($conn, $sql_delete)) {
                         // Display success message
-                        $successMessage = "Record deleted successfully!";
 
+                        $_SESSION['successMessage'] = "Record deleted successfully!";
                         // Refresh the page after deletion
-                        header("Location: $_SERVER[PHP_SELF]");
-                        exit(); // Exit after redirection
+
                     } else {
-                        echo "Error deleting record: " . mysqli_error($conn);
+                        $_SESSION['errorMessage'] = "Error deleting record: " . mysqli_error($conn);
                     }
+                    header("Location: $_SERVER[PHP_SELF]");
+                    exit(); // Exit after redirection
                 }
                 ?>
             </tbody>

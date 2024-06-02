@@ -1,5 +1,6 @@
 <?php
 $title = "Create App Portfolio";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -28,12 +29,14 @@ if (isset($_POST['submit'])) {
     // Execute query
     if (mysqli_query($conn, $insert_query)) {
         // Insert successful
-        $successMessage = "App Portfolio Created successfully!";
+        $_SESSION['successMessage'] = "App Portfolio Created successfully!";
 
     } else {
         // Insert failed
-        $errorMessage = "Error creating Branch: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] = "Error creating Branch: " . mysqli_error($conn);
     }
+    header("Location: app-development-list.php");
+    exit();
 }
 
 ?>
