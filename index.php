@@ -479,8 +479,10 @@ $conn = $db->get_connection();
     <div class="container">
         <div class="row">
             <div class="top_featured_txt">
-            <div class="updatecode pb-2"><h6 class="" style="padding-bottom: unset;">We're Highlighted On</h6></div>
-					<p>In this category, SEO Expate Bangladesh Ltd. stands out as the most popular in the first place. Numerous local and international (offline and online) TV networks, newspapers, journals, TV channels, and other well-known platforms have highlighted our imaginative and inventive works! Also, we are one of the most followed companies on various social media platforms. Again, we are going like a bullet train in other media as well.</p>
+                <div class="updatecode pb-2">
+                    <h6 class="" style="padding-bottom: unset;">We're Highlighted On</h6>
+                </div>
+                <p>In this category, SEO Expate Bangladesh Ltd. stands out as the most popular in the first place. Numerous local and international (offline and online) TV networks, newspapers, journals, TV channels, and other well-known platforms have highlighted our imaginative and inventive works! Also, we are one of the most followed companies on various social media platforms. Again, we are going like a bullet train in other media as well.</p>
             </div>
             <div class="slider pt-5">
                 <div class="owl-carousel">
@@ -592,8 +594,10 @@ $conn = $db->get_connection();
     <div class="container">
         <div class="row">
             <div class="top_our_clients_txt">
-            <div class="updatecode pb-2"><h6 class="" style="padding-bottom: unset;">Featured on TV Channel</h6></div>
-					<p>I cannot recommend this IT firm enough. Their attention to detail, technical expertise, and dedication to customer satisfaction set them apart from other firms. I am extremely happy with the results of our collaboration.</p>
+                <div class="updatecode pb-2">
+                    <h6 class="" style="padding-bottom: unset;">Featured on TV Channel</h6>
+                </div>
+                <p>I cannot recommend this IT firm enough. Their attention to detail, technical expertise, and dedication to customer satisfaction set them apart from other firms. I am extremely happy with the results of our collaboration.</p>
             </div>
             <div class="slider pt-5">
                 <div class="owl-carousel">
@@ -649,8 +653,10 @@ $conn = $db->get_connection();
     <div class="container">
         <div class="row">
             <div class="industries_txt">
-            <div class="updatecode pb-2"><h6 class="" style="padding-bottom: unset;">Fields We Cover</h6></div>
-					<p>Having been in the information technology services provider business for more than ten years, we have finished several projects for our clients in almost every sector. Including the following items:</p>
+                <div class="updatecode pb-2">
+                    <h6 class="" style="padding-bottom: unset;">Fields We Cover</h6>
+                </div>
+                <p>Having been in the information technology services provider business for more than ten years, we have finished several projects for our clients in almost every sector. Including the following items:</p>
             </div>
             <div class="col-md-2">
                 <div class="industrie_serve">
@@ -804,8 +810,10 @@ $conn = $db->get_connection();
     <div class="container">
         <div class="row">
             <div class="top_our_technologies_txt">
-            <div class="updatecode pb-2"><h6 class="" style="padding-bottom: unset;">Innovative Technologies We Work With</h6></div>
-					<p>The most innovative and dependable technologies are used by SEO Expate Bangladesh Ltd to build and carry out the entire operation.</p>
+                <div class="updatecode pb-2">
+                    <h6 class="" style="padding-bottom: unset;">Innovative Technologies We Work With</h6>
+                </div>
+                <p>The most innovative and dependable technologies are used by SEO Expate Bangladesh Ltd to build and carry out the entire operation.</p>
             </div>
             <div class="explore_tabs">
                 <div class="container py-5">
@@ -1195,162 +1203,168 @@ $conn = $db->get_connection();
 
 <!--================================top_future_focused section start here=======================-->
 <section class="top_future_focused">
-        <div class="container">
-            <div class="row">
-                <div class="top_future_focused_txt pb-2">
-					<div class="updatecode pb-2"><h6 class="" style="padding-bottom: unset;">Dive into SEO Expate's Forward-Thinking Offerings</h6></div>
-                    <p>Choose the service you want to explore from the available options. We constantly work to save you time by providing you with the precise services you require to accomplish your objective.</p>
+    <div class="container">
+        <div class="row">
+            <div class="top_future_focused_txt pb-2">
+                <div class="updatecode pb-2">
+                    <h6 class="" style="padding-bottom: unset;">Dive into SEO Expate's Forward-Thinking Offerings</h6>
                 </div>
-                <div class="col-md-4 pt-3">
-                    <div class="top_future_focused_service">
-                        <a href="photo-editor.php" class="d-flex justify-content-between">
-                            <p>Graphic Design</p>
-                            <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 pt-3">
-                    <div class="top_future_focused_service">
-                        <a href="digital-marketing.php" class="d-flex justify-content-between">
-                            <p>Digital Marketing</p>
-                            <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 pt-3">
-                    <div class="top_future_focused_service">
-                        <a href="seo-service.php" class="d-flex justify-content-between">
-                            <p>SEO</p>
-                            <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
-                        </a>
-                    </div>
-                </div>               
+                <p>Choose the service you want to explore from the available options. We constantly work to save you time by providing you with the precise services you require to accomplish your objective.</p>
             </div>
-            <div class="row">
-                  <div class="col-md-4 pt-3">
-                    <div class="top_future_focused_service">
-                        <a href="#" class="d-flex justify-content-between">
-                            <p>QA (Quality Assurance)</p>
-                            <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
-                        </a>
-                    </div>
+            <div class="col-md-4 pt-3">
+                <div class="top_future_focused_service">
+                    <a href="photo-editor.php" class="d-flex justify-content-between">
+                        <p>Graphic Design</p>
+                        <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
+                    </a>
                 </div>
-                <div class="col-md-4 pt-3">
-                    <div class="top_future_focused_service">
-                        <a href="app-development.php" class="d-flex justify-content-between">
-                            <p>Mobile App Development</p>
-                            <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4 pt-3">
-                    <div class="top_future_focused_service">
-                        <a href="web-development.php" class="d-flex justify-content-between">
-                            <p>Web Design & Development</p>
-                            <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
-                        </a>
-                    </div>
-                </div>         
             </div>
-            <div class="row ">
-                  <div class="col-md-4 pt-3">
-                    <div class="top_future_focused_service">
-                        <a href="content-writing.php" class="d-flex justify-content-between">
-                            <p>Content Writing</p>
-                            <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
-                        </a>
-                    </div>
+            <div class="col-md-4 pt-3">
+                <div class="top_future_focused_service">
+                    <a href="digital-marketing.php" class="d-flex justify-content-between">
+                        <p>Digital Marketing</p>
+                        <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
+                    </a>
                 </div>
-                <div class="col-md-4 pt-3">
-                    <div class="top_future_focused_service">
-                        <a href="software-development.php" class="d-flex justify-content-between">
-                            <p>Software Development</p>
-                            <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
-                        </a>
-                    </div>
+            </div>
+            <div class="col-md-4 pt-3">
+                <div class="top_future_focused_service">
+                    <a href="seo-service.php" class="d-flex justify-content-between">
+                        <p>SEO</p>
+                        <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
+                    </a>
                 </div>
-                <div class="col-md-4 pt-3">
-                    <div class="top_future_focused_service">
-                        <a href="app-development.php" class="d-flex justify-content-between">
-                            <p>IoT Development</p>
-                            <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
-                        </a>
-                    </div>
-                </div>         
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="col-md-4 pt-3">
+                <div class="top_future_focused_service">
+                    <a href="#" class="d-flex justify-content-between">
+                        <p>QA (Quality Assurance)</p>
+                        <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 pt-3">
+                <div class="top_future_focused_service">
+                    <a href="app-development.php" class="d-flex justify-content-between">
+                        <p>Mobile App Development</p>
+                        <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 pt-3">
+                <div class="top_future_focused_service">
+                    <a href="web-development.php" class="d-flex justify-content-between">
+                        <p>Web Design & Development</p>
+                        <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-4 pt-3">
+                <div class="top_future_focused_service">
+                    <a href="content-writing.php" class="d-flex justify-content-between">
+                        <p>Content Writing</p>
+                        <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 pt-3">
+                <div class="top_future_focused_service">
+                    <a href="software-development.php" class="d-flex justify-content-between">
+                        <p>Software Development</p>
+                        <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 pt-3">
+                <div class="top_future_focused_service">
+                    <a href="app-development.php" class="d-flex justify-content-between">
+                        <p>IoT Development</p>
+                        <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!--================================top_future_focused section end here=======================-->
 
 <!--================================top_design_strategy section start here=======================-->
 <section class="top_design_strategy">
-        <div class="container">
-            <div class="row">
-                <div class="top_design_strategy_txt">
-					<div class="updatecode pb-2"><h6 class="" style="padding-bottom: unset;">Plan-Execute-Monitor: Focuses on planning, execution, and monitoring project progress.</h6></div>
-                    <p>Plan-Execute-Monitor, or Mode 1-2-3, is how SEO Expate Bangladesh Ltd operates. Anything nicely conceived, in our opinion, may be developed astonishingly. Our staff handles every aspect of development and deployment, guaranteeing a longer product life to increase sales.</p>
+    <div class="container">
+        <div class="row">
+            <div class="top_design_strategy_txt">
+                <div class="updatecode pb-2">
+                    <h6 class="" style="padding-bottom: unset;">Plan-Execute-Monitor: Focuses on planning, execution, and monitoring project progress.</h6>
                 </div>
-                <div class="top_design_strategy_Design d-flex pt-5">
-                    <div class="design_icon">
-                        <p>1</p>
-                    </div>
-                    <div class="design_icon_txt">
-                        <h6>Plan :</h6>
-                        <p>What goals do you have for your project? Break down the project into manageable tasks and phases. Determine the time, budget, and personnel needed. Anticipate potential challenges and develop solutions. Define how stakeholders will be informed and involved.</p>
-                    </div>
+                <p>Plan-Execute-Monitor, or Mode 1-2-3, is how SEO Expate Bangladesh Ltd operates. Anything nicely conceived, in our opinion, may be developed astonishingly. Our staff handles every aspect of development and deployment, guaranteeing a longer product life to increase sales.</p>
+            </div>
+            <div class="top_design_strategy_Design d-flex pt-5">
+                <div class="design_icon">
+                    <p>1</p>
                 </div>
-                <div class="top_design_strategy_Design d-flex pt-5">
-                    <div class="design_icon">
-                        <p>1</p>
-                    </div>
-                    <div class="design_icon_txt">
-                        <h6>Execute :</h6>
-                        <p>Assign tasks, manage resources, and track progress. Follow established procedures and protocols also Ensure quality and consistency. Be adaptable and make necessary changes to the strategy. Ensure that clients are informed and engaged. Proactively address challenges and keep them under control.</p>
-                    </div>
+                <div class="design_icon_txt">
+                    <h6>Plan :</h6>
+                    <p>What goals do you have for your project? Break down the project into manageable tasks and phases. Determine the time, budget, and personnel needed. Anticipate potential challenges and develop solutions. Define how stakeholders will be informed and involved.</p>
                 </div>
-                <div class="top_design_strategy_Design d-flex pt-5">
-                    <div class="design_icon">
-                        <p>1</p>
-                    </div>
-                    <div class="design_icon_txt">
-                        <h6>Monitor :</h6>
-                        <p>Track progress against the plan and measure key performance indicators (KPIs). Analyze data and identify trends. Look for potential issues or areas for improvement. Evaluate the effectiveness of the plan. Share progress, successes, and challenges. Capture lessons learned for future projects.</p>
-                    </div>
+            </div>
+            <div class="top_design_strategy_Design d-flex pt-5">
+                <div class="design_icon">
+                    <p>1</p>
                 </div>
-                <div class="top-body-button pt-5 text-center">
-					<a type="button" href="about.php">See How We Work</a>
-				</div>
+                <div class="design_icon_txt">
+                    <h6>Execute :</h6>
+                    <p>Assign tasks, manage resources, and track progress. Follow established procedures and protocols also Ensure quality and consistency. Be adaptable and make necessary changes to the strategy. Ensure that clients are informed and engaged. Proactively address challenges and keep them under control.</p>
+                </div>
+            </div>
+            <div class="top_design_strategy_Design d-flex pt-5">
+                <div class="design_icon">
+                    <p>1</p>
+                </div>
+                <div class="design_icon_txt">
+                    <h6>Monitor :</h6>
+                    <p>Track progress against the plan and measure key performance indicators (KPIs). Analyze data and identify trends. Look for potential issues or areas for improvement. Evaluate the effectiveness of the plan. Share progress, successes, and challenges. Capture lessons learned for future projects.</p>
+                </div>
+            </div>
+            <div class="top-body-button pt-5 text-center">
+                <a type="button" href="about.php">See How We Work</a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
 <!--================================top_design_strategy section end here=======================-->
 
 <!--================================top_award_winning section start here=======================-->
 <section class="top_award_winning">
-         <div class="container">
-             <div class="row">
-                 <div class="top_award_winning_txt">
-					 <div class="updatecode pb-2"><h6 class="" style="padding-bottom: unset;">Recognized IT Services Provider Since 2010.</h6></div>
-                 </div>
-                 <div class="top_award_winning_bannar pb-5">
-                     <img src="frontend/images/awardd.png" alt="Recognized IT Services" description=" Recognized IT Services">
-                 </div>
-                 <div class="col-md-6">
-                     <p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. is one of the most reputable and well-known names in the information technology industry. Also, we are the most comprehensive organization that can help you with your web development, digital marketing work, SEO strategy services and the list goes on. Throughout Every Touchpoint or Interaction, We are Focused. </p>
-                     <p>Everything we create and execute has a significant impact. We design software for enterprises that is user-friendly and also you can get one of the greatest user app experiences with us.</p>
-                 </div>
-                 <div class="col-md-6">
-                     <p>Building and managing websites and web applications is one of our primary jobs. To create excellent internet experiences, our web developers ensure functionality, usability, and visual appeal. </p>
-                     <p>SEO Expate Bangladesh Ltd. has created and is now working on numerous initiatives. Also, have many upcoming mega projects on hand. Therefore, we will be achieving some more gratuity in the upcoming future.</p>
-                 </div>
-                 <div class="top-body-button pt-5 text-center">
-					<a type="button" href="history.php">Read Our History</a>
-				</div>
-             </div>
-         </div>
-    </section>
+    <div class="container">
+        <div class="row">
+            <div class="top_award_winning_txt">
+                <div class="updatecode pb-2">
+                    <h6 class="" style="padding-bottom: unset;">Recognized IT Services Provider Since 2010.</h6>
+                </div>
+            </div>
+            <div class="top_award_winning_bannar pb-5">
+                <img src="frontend/images/awardd.png" alt="Recognized IT Services" description=" Recognized IT Services">
+            </div>
+            <div class="col-md-6">
+                <p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. is one of the most reputable and well-known names in the information technology industry. Also, we are the most comprehensive organization that can help you with your web development, digital marketing work, SEO strategy services and the list goes on. Throughout Every Touchpoint or Interaction, We are Focused. </p>
+                <p>Everything we create and execute has a significant impact. We design software for enterprises that is user-friendly and also you can get one of the greatest user app experiences with us.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Building and managing websites and web applications is one of our primary jobs. To create excellent internet experiences, our web developers ensure functionality, usability, and visual appeal. </p>
+                <p>SEO Expate Bangladesh Ltd. has created and is now working on numerous initiatives. Also, have many upcoming mega projects on hand. Therefore, we will be achieving some more gratuity in the upcoming future.</p>
+            </div>
+            <div class="top-body-button pt-5 text-center">
+                <a type="button" href="history.php">Read Our History</a>
+            </div>
+        </div>
+    </div>
+</section>
 <!--================================top_award_winning section end here=======================-->
 
 <!--================================top_ready_start section start here=======================-->
