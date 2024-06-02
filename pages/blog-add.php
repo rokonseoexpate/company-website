@@ -1,6 +1,7 @@
 <?php
 $title = "Add Blog";
 ob_start();
+session_start();
 
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -19,16 +20,16 @@ if (isset($_POST['submit'])) {
     $alt_tag    = $_POST['alt_tag'];
     $alt_description    = $_POST['alt_description'];
 
-    $image = '';
+   
 
     if (empty($title)) {
-        $errorMessage = "Title is required";
+        $_SESSION['errorMessage'] = "Title is required";
     }
     if (empty( $blog_category_id)) {
-        $errorMessage = "Blog Category is required";
+        $_SESSION['errorMessage'] = "Blog Category is required";
     }
 
-    if (empty($errorMessage)) {
+    if ($_SESSION['errorMessage'] == null) {
         if (isset($_FILES['image']['name']) && !empty($_FILES['image']['name'])) {
             $file = $_FILES['image']['name'];
             $extension = pathinfo($file, PATHINFO_EXTENSION);
@@ -42,14 +43,16 @@ if (isset($_POST['submit'])) {
 
         // Execute the statement
         if ($result == true) {
-            header("Location: blogs.php");
-            exit;
+            $_SESSION['successMessage'] = "Blog Created Successfully";
         } else {
-            echo "Error: " . $stmt->error;
+            $_SESSION['errorMessage'] = "Error: " . $stmt->error;
         }
-
-        $stmt->close();
+    }else{
+        header("Location: blog-add.php");
+        exit;
     }
+    header("Location: blogs.php");
+    exit;
 }
 
 
@@ -72,7 +75,7 @@ $conn->close();
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="blog_category_id">Blog Category</label>
+                        <label for="blog_category_id">Blog Category <span class="text-danger">*</span></label>
                         <select name="blog_category_id" id="blog_category_id" class="form-control" required>
                             <option value="">Select Category</option>
                             <?php while ($row = $categories->fetch_assoc()) { ?>
@@ -85,8 +88,8 @@ $conn->close();
 
                 <div class="col-md-12">
                     <div class="form-group">
-                        <label for="title">Title</label>
-                        <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                        <label for="title">Title <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
                         <span class="text-danger"><?php echo $titleErr; ?></span>
                     </div>
                 </div>

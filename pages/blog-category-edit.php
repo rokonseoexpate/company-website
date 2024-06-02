@@ -1,5 +1,6 @@
 <?php
 $title = "Update Blog";
+session_start();
 ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
@@ -27,13 +28,13 @@ if (isset($_POST['submit'])) {
         $sql = "UPDATE blog_categories SET name='$name', slug='$slug' WHERE id=$id";
 
         if ($conn->query($sql) === TRUE) {
-            $successMessage = "Successfully updated record!";
-            // Redirect to the list page after updating
-            header("Location: blog-category.php");
-            exit();
+            $_SESSION['successMessage'] = "Successfully updated record!";          
         } else {
-            echo "Error updating record: " . $conn->error;
+            $_SESSION['errorMessage'] = "Error updating record: " . $conn->error;
         }
+        
+        header("Location: blog-category.php");
+        exit();
     }
 }
 
