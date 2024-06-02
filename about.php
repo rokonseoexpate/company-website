@@ -174,7 +174,6 @@ $conn = $db->get_connection();
                                         </div>
                                         <div id="Servicess" role="tabpanel" aria-labelledby="Servicess-tab" class="tab-pane fade px-4 py-5">
                                             <p class="text-muted mb-0">It is obvious that choosing an IT company and investing there for your business is difficult. For that, to reduce this complexity we make some promises to our clients. We will always protect your data and systems from any kind of cyberattacks. We will provide a team of experienced IT professionals with the skills to solve your problems. Besides, our solutions will fit your budget and provide a good return on investment (ROI). Also, through regular guidance and support, we will ensure your technology investments are profitable. SEO Expate is staying ahead of the latest technology trends and offering top-quality solutions. Finally, we are frequently organizing your IT infrastructure to improve efficiency.</p>
-
                                         </div>
                                     </div>
                                 </div>

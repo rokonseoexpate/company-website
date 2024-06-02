@@ -135,8 +135,6 @@ $history = $result->fetch_assoc();
 						</div>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
 </section>
@@ -150,11 +148,8 @@ $history = $result->fetch_assoc();
 				<img src="frontend/images/1707203640310.jpg" alt="image">
 			</div>
 			<div class="col-md-6">
-				<h3>Our <span>One Mission</span></h3>
-				<p>To help enterprises achieve their business objectives by <br>providing IT services & technology solutions.</p>
-				<div class="top-body-button pt-3">
-					<a type="button" href="#">See More </a>
-				</div>
+			<div class="updatecode"><h6 class="" style="padding-bottom: unset; text-align: left !important;">Our <span> One Mission</span></h6></div>
+					<p>To help enterprises achieve their business objectives by <br>providing IT services & technology solutions.</p>
 			</div>
 		</div>
 	</div>
@@ -166,12 +161,11 @@ $history = $result->fetch_assoc();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<h3>Our <span> Promise</span></h3>
+				<div class="updatecode">
+					<h6 class="" style="padding-bottom: unset; text-align: left !important;">Our <span> Promise</span></h6>
+				</div>
 				<p>We promise to do our very best and always strive to do <br> the right thing for your project, your users, and your team. </p>
 				<p>We want you to think of us as your partners <br>in our journey together.</p>
-				<div class="top-body-button pt-3">
-					<a type="button" href="#">See More </a>
-				</div>
 			</div>
 			<div class="col-md-6">
 				<img src="frontend/images/Our-Promise.jpg" alt="image">
@@ -186,11 +180,10 @@ $history = $result->fetch_assoc();
 	<div class="container">
 		<div class="row">
 			<div class="our_global_impact_txt">
-				<h3>Our Global Impact Today</h3>
-				<p>Since 2013, SEO Expate has successfully supported 50+ clients in more than 30 countries by delivering 700+ projects. We have created opportunities for 150+ IT professionals in 30+ different industries. Our global impact today achieved through our commitments to our clients, our team, and the communities where we serve are present in all we do. These ideas shape the projects we embark on, the individuals we recruit, and our overall organizational initiatives.</p>
-				<div class="top-body-button pt-4">
-					<a type="button" href="#">Find out more </a>
+				<div class="updatecode">
+					<h6 class="text-light" style="padding-bottom: unset; text-align: left !important;">Our Global Impact Today</h6>
 				</div>
+				<p>Since 2013, <a href="index.html" class="text-success">SEO Expate</a> has successfully supported 50+ clients in more than 30 countries by delivering 700+ projects. We have created opportunities for 150+ IT professionals in 30+ different industries. Our global impact today achieved through our commitments to our clients, our team, and the communities where we serve are present in all we do. These ideas shape the projects we embark on, the individuals we recruit, and our overall organizational initiatives.</p>
 			</div>
 		</div>
 	</div>

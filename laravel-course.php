@@ -1,5 +1,5 @@
 <?php
-$title = "Web Development Using Laravel";
+$title = "Laravel Course";
 ob_start();
 ?>
 

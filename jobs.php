@@ -143,168 +143,58 @@ $conn = $db->get_connection();
 <!--================================Our_Engagement section end here=======================-->
 
 <!--================================Our_Culture section start here=======================-->
-<section class="Events_SEO">
+<section class="Events_SEO ">
     <div class="container">
         <div class="row">
             <div class="Events_SEO_txt">
-                <div class="app_development_txt text-center pb-3"><strong class="text-center text-light" style="padding-bottom: unset;">Our Culture</strong></div>
+                <p class="ptag">Our Culture</p>
                 <h6 class="pt-2 pb-5">SEO Expate ensures a good cultural atmosphere for the employees. It encourages employees' creativity and also helps us to grow our businesses.</h6>
             </div>
             <div>
                 <div class=" container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ">
-                                    <img src="frontend/images/Waz Mahfil.jpg" class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Waz Mahfil</h5>
-                                    </a>
-                                    <a href="#" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                        <p>&nbsp</p>
-                                        <p>&nbsp</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Womens Day.jpg" class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">International Women's Day</h5>
-                                    </a>
-                                    <a href="" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        $blogQuery = "SELECT blogs.*, blog_categories.name as category_name
+                FROM blogs 
+                LEFT JOIN blog_categories ON blogs.blog_category_id = blog_categories.id
+                WHERE blog_category_id = 4
+                ORDER BY blogs.id DESC";
 
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Iftar Mahfil.jpg" class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
+                        $blogs = $conn->query($blogQuery);
+                        foreach ($blogs as $blog) {
+
+                            $imagePath = $blog['image'];
+                            $imageName = basename($imagePath);
+                            $newImagePath = 'uploads/' . $imageName;
+                        ?>
+                            <div class="col-lg-4 col-md-12 mb-4">
+                                <div class="card" style="background: #00000091;">
+                                    <div class="bg-image hover-zoom ">
+                                        <img src="<?php echo $newImagePath ?>" alt="<?php echo $blog['alt_tag'] ?>" description="<?php echo $blog['alt_description'] ?>" class="w-100" />
+                                        <a href="blog-details.php?id=<?php echo $blog['id'] ?>">
+                                            <div class="mask">
+                                                <div class="d-flex justify-content-start align-items-end h-100">
+                                                    <h5><span class="badge bg-success ms-2"><?php echo $blog['category_name'] ?></span></h5>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Iftar Mahfil</h5>
-                                    </a>
-                                    <a href="" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                        <p>&nbsp</p>
-                                        <p>&nbsp</p>
-                                    </a>
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="blog-details.php?=" class="text-reset">
+                                            <h5 class="card-title mb-3 text-light"><?php echo $blog['title'] ?></h5>
+                                        </a>
+                                        <a href="blog-details.php?id=<?php echo $blog['id'] ?>" class="text-reset">
+                                            <p class="text-danger">Read Insight →</p>
+                                            <p>&nbsp</p>
+                                            <p>&nbsp</p>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php } ?>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/Employye Birthday.jpg" class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5>
-                                                    <span class="badge bg-success ms-2">Culture and Engagement</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">Employye Birthday</h5>
-                                    </a>
-                                    <a href="" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                        <p>&nbsp</p>
-                                        <p>&nbsp</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/birthday-celebr.jpg" class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5><span class="badge bg-success ms-2">Culture and Engagement</span></h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">birthday-celebr</h5>
-                                    </a>
-                                    <a href="" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="card" style="background: #00000091;">
-                                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                                    <img src="frontend/images/blanket 21  Feb.jpg" class="w-100" alt="Our Engagement Models" description=" Our Engagement Models" />
-                                    <a href="#!">
-                                        <div class="mask">
-                                            <div class="d-flex justify-content-start align-items-end h-100">
-                                                <h5>
-                                                    <span class="badge bg-success ms-2">Culture and Engagement</span>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body">
-                                    <a href="" class="text-reset">
-                                        <h5 class="card-title mb-3 text-light">21 February</h5>
-                                    </a>
-                                    <a href="#" class="text-reset">
-                                        <p class="text-danger">Read Insight →</p>
-                                        <p>&nbsp</p>
-                                        <p>&nbsp</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
