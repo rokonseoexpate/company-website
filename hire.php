@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="top_about_us_txt" style="z-index:500;">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb breadcumb_gph">
-                            <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                            <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                             <li class="breadcrumb-item active text-light" aria-current="page">Hire</li>
                         </ol>
                     </nav>
@@ -122,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="container">
         <div class="row">
             <div class="tbt_text" style="text-align: justify;">
-                <p><a href="index.php" class="text-success">SEO Expate</a> stays ahead of the curve by exploring and
+                <p><a href="/" class="text-success">SEO Expate</a> stays ahead of the curve by exploring and
                     implementing cutting-edge technologies to provide businesses with a competitive edge. Serving
                     clients across Bangladesh and internationally, with a commitment to delivering tailored solutions
                     for diverse markets. Our top priorities are forging close bonds with our customers, learning about
@@ -151,7 +151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <h4>Delivering IT Solutions Globally</h4>
                 <p class=" pt-4">In addition to creating a stress-free and sustainable IT environment, <a
-                        href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. produces outcomes that help
+                        href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. produces outcomes that help
                     our clients stay ahead of the competition. By utilizing the newest and most widely used
                     technologies, our IT specialists continuously deliver user-centric IT solutions that are customized
                     to the needs of the business. We have been assisting clients all over the world to boost engagement,
@@ -205,7 +205,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <h6 class="pb-3 text-light">Hire Us</h6>
             </div>
 
-            <p class="text-light pb-4" style="text-align: left;"><a href="index.php" class="text-success">SEO Expate</a>
+            <p class="text-light pb-4" style="text-align: left;"><a href="/" class="text-success">SEO Expate</a>
                 delivers IT services and tech solutions and provides higher value to clients. Our service areas are
                 Software Development, <a href="app-development.php" class="text-success">Mobile App Development</a>, <a
                     href="digital-marketing.php" class="text-success">Digital Marketing</a>, <a
@@ -331,10 +331,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="updatecode">
                 <h6 class="pb-3 "><span class="text-success">Our </span>Reliable Customers and Associates</h6>
             </div>
-            <p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. takes great pride in
+            <p><a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. takes great pride in
                 collaborating with businesses, firms, service providers, corporations, government departments, and other
                 organizations as a top information technology company.
-                Here take a look at some of the top companies and institutions that <a href="index.php"
+                Here take a look at some of the top companies and institutions that <a href="/"
                     class="text-success">SEO Expate</a> Bangladesh Ltd. has already worked with.</p>
             <div class="col-12 pt-5">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -391,7 +391,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="newupdcode">
                     <h5 class="pb-3 fs-1">We're Driven by <span class="text-success">our Core Values </span></h5>
                 </div>
-                <p><a href="index.php" class="text-success">SEO Expate</a> is one of the fastest-growing companies in
+                <p><a href="/" class="text-success">SEO Expate</a> is one of the fastest-growing companies in
                     the country. Besides, at the heart of our success lies a determined commitment to our core values.
                     Thus, these values guide us to tackle challenges in every sector to deliver exceptional results for
                     our clients.</p>
@@ -402,7 +402,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <h5 class="">Customer Obsession:</h5>
                     </div>
                     <h6 class=" pb-3">Commitment, Quality, Success</h6>
-                    <p><a href="index.php" class="text-success">SEO Expate</a> is obsessed with bringing success to
+                    <p><a href="/" class="text-success">SEO Expate</a> is obsessed with bringing success to
                         clients. In addition, we always put our clients first. Client needs are our 1st priority and we
                         do everything to provide a better experience to the clients. Whether it's making a sale,
                         marketing our services, or providing ongoing support, our main goal is to ensure our clients
@@ -434,7 +434,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         inventors, constantly pushing the boundaries to develop groundbreaking solutions that empower
                         your success. Besides, the innovations we create have a ripple effect, benefiting not only your
                         business but also your customers and the communities you serve. So, you can partner with <a
-                            href="index.php" class="text-success">SEO Expate</a>, and let's co-create the future
+                            href="/" class="text-success">SEO Expate</a>, and let's co-create the future
                         together. Therefore, we will boost our inventive spirit, and convert your ideas into real-world
                         success. </p>
                 </div>
@@ -448,7 +448,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <h5 class="">Long Term Thinking:</h5>
                     </div>
                     <h6 class=" pb-3">Integrity, Sustainability, Outcome</h6>
-                    <p><a href="index.php" class="text-success">SEO Expate</a> believes that technology is not just a
+                    <p><a href="/" class="text-success">SEO Expate</a> believes that technology is not just a
                         tool, it's a powerful force for positive change. Besides, we are a purpose-driven company with a
                         desire to improve lives through innovative solutions. In addition, our focus isn't just on
                         immediate results. Moreover, we take a long-term perspective, preparing sustainable technology

@@ -43,7 +43,7 @@
 		    	<div class="col-md-7 ecomresp" style="z-index:500;">
 		    		<div class="top_body_txt_part">
 						<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">Off-page SEO Services</h1>		
-						<p style="text-align:justify;"> With the Off-page SEO services from <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD., you can unlock the full potential of your digital existence. Now, achieving a prominent place in search engine results is essential for success in the ever-evolving digital world. The key to making your website stand out from the competition is this method. Indeed, our dedicated experts are highly skilled in all aspects of this optimization and create customized tactics. </p>
+						<p style="text-align:justify;"> With the Off-page SEO services from <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD., you can unlock the full potential of your digital existence. Now, achieving a prominent place in search engine results is essential for success in the ever-evolving digital world. The key to making your website stand out from the competition is this method. Indeed, our dedicated experts are highly skilled in all aspects of this optimization and create customized tactics. </p>
 						<p style="text-align:justify;">Certainly, it will improve the online authority and credibility of your website. In fact, your brand's exposure, traffic, and engagement will all rapidly grow with our supreme Off-page SEO strategies. We use online mentions and high-quality backlinks to boost your website's visibility and search engine rankings. </p>					
 					</div>
 					<div class="row">
@@ -71,13 +71,13 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Off-page SEO Service</li>
 						</ol>
 						</nav>
 					</div>
-					<p class="text-light">Collaboration and openness are of utmost importance to us. In close collaboration with you, our team will identify your company's objectives and create a custom made SEO plan to meet those goals. Of course, our complete services will provide results whether you're a start-up or an established business trying to remain ahead of the game. So, make sure your business grows by using us for Off-page SEO to overcome your rivals. Thus, boost your ranks, improve your online exposure, and see how your brand takes off in the realm of the internet. Finally, take the initial step toward long-term online success by partnering with <a href="index.php" class="text-success">SEO Expate</a> Bangladesh LTD.</p>				
+					<p class="text-light">Collaboration and openness are of utmost importance to us. In close collaboration with you, our team will identify your company's objectives and create a custom made SEO plan to meet those goals. Of course, our complete services will provide results whether you're a start-up or an established business trying to remain ahead of the game. So, make sure your business grows by using us for Off-page SEO to overcome your rivals. Thus, boost your ranks, improve your online exposure, and see how your brand takes off in the realm of the internet. Finally, take the initial step toward long-term online success by partnering with <a href="/" class="text-success">SEO Expate</a> Bangladesh LTD.</p>				
 				</div>
 			</div>
 		</div>
@@ -123,7 +123,7 @@
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2"><h6>Off-Site SEO Services Backed by Data</h6></div>
-					<p class="pt-3" >We at <a href="index.php" class="text-success">SEO Expate</a> BD are proud to provide Off-Site SEO Services that are supported by data-driven tactics. Here, our strategy includes an in-depth study of user behaviour, marketplaces, and market trends. Equipped with these insights, we develop customized off-page SEO strategies. Indeed, it ensures that our customers outperform the competition in the digital space. In effect, it improves their search engine rankings. Certainly, our Off-Site SEO services are successful and flexible to adjust to the evolving demands of the <a href="digital-marketing.php" class="text-success">digital marketplace</a>.</p>												
+					<p class="pt-3" >We at <a href="/" class="text-success">SEO Expate</a> BD are proud to provide Off-Site SEO Services that are supported by data-driven tactics. Here, our strategy includes an in-depth study of user behaviour, marketplaces, and market trends. Equipped with these insights, we develop customized off-page SEO strategies. Indeed, it ensures that our customers outperform the competition in the digital space. In effect, it improves their search engine rankings. Certainly, our Off-Site SEO services are successful and flexible to adjust to the evolving demands of the <a href="digital-marketing.php" class="text-success">digital marketplace</a>.</p>												
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">

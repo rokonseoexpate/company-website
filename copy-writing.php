@@ -55,7 +55,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="content-writing.php" class="text-light">Content Writing</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Copywriting Services</li>
 						</ol>
@@ -75,7 +75,7 @@
                 	<p>Copywriting has become an integrated part of any business. This is a great way to showcase your products to the right customers. People from all over the world love good content and bright pictures. We are no different. Instead of people in this part of the world easily trust other people. If you can portray your products well to the people, you can easily make them purchase your products. So, you must write the right description and advertising material for your products.</p>
                 </div>
                 <div class="col-12">
-                	<p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd provides copywriting services in Bangladesh. As a copywriting agency, we are focused on the best outcome for our clients. People in <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd are result-oriented.You might think of how we can boast of being the best. Well, we have some of the best industry-focused content writers on board. Besides, we always closely work with our clients to provide them with better service. We are serving customers from Bangladesh and many other countries with 100% satisfaction for a long time. </p>
+                	<p><a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd provides copywriting services in Bangladesh. As a copywriting agency, we are focused on the best outcome for our clients. People in <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd are result-oriented.You might think of how we can boast of being the best. Well, we have some of the best industry-focused content writers on board. Besides, we always closely work with our clients to provide them with better service. We are serving customers from Bangladesh and many other countries with 100% satisfaction for a long time. </p>
                 </div>
             </div>
         </div>

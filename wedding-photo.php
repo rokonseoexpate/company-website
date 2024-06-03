@@ -222,7 +222,7 @@
 		    		<div class="top_body_txt_part">
 						<h1>Wedding Photo Editing</h1>		
 						<p style="text-align:justify;">Wedding photo editing is an essential part of capturing and preserving the beautiful memories of a couple's special day. Besides, with the advancement of technology, photographers can enhance and make wedding photos even more stunning. Adjusting the lighting and colors to remove flaws and imperfections through wedding photo editing allows photographers to reflect the love and joy of the couple. Also, the wedding is a day one in a lifetime and photographs are the best way to keep the memory alive. </p>
-						<p style="text-align:justify;">Additionally, our professional wedding photo editing services offer a range of options, including retouching, color correction, background enhancement, etc. We will ensure that every photo is picture-perfect according to your requirements. We give attention to detail to reflect the couple's journey, reflecting the joy, tenderness, and unspoken promises on their special day. So, wedding photo editing services from <a href="index.php" class="text-success">SEO Expate Bangladesh Ltd</a> can deliver breathtaking images that will blow your mind. </p>						
+						<p style="text-align:justify;">Additionally, our professional wedding photo editing services offer a range of options, including retouching, color correction, background enhancement, etc. We will ensure that every photo is picture-perfect according to your requirements. We give attention to detail to reflect the couple's journey, reflecting the joy, tenderness, and unspoken promises on their special day. So, wedding photo editing services from <a href="/" class="text-success">SEO Expate Bangladesh Ltd</a> can deliver breathtaking images that will blow your mind. </p>						
 					</div>
 					<div class="top-body-button pt-3">
 						<a type="button" href="free_trial.php">Free Trial</a>
@@ -241,7 +241,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 						    <li class="breadcrumb-item "><a href="photo_editor.php" class="text-light">Photo editor</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Wedding Photo Editing</li>
 						  </ol>
@@ -323,9 +323,9 @@
 	<section class=" graphicdesigns_content" style="background: var(--bg-secondary-color);">
         <div class="container">
             <div class="row">
-                <h4>Wedding Photo Editing Service from <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd</h4>
+                <h4>Wedding Photo Editing Service from <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd</h4>
                 <div class="pb-5 border-bottom border-success border-2">
-                    <p>Preserve your wedding memories with our wedding photo editing service. We understand the importance of preserving the beauty and joy of your wedding day. In addition, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd has dedicated and skilled graphic designers who can give your images an artistic touch. Hence, we will help you to elevate moments into masterpieces, preserving precious memories forever. So, if you rely on our wedding photo editing service we will bring out the best photos with our expertise.</p>                   
+                    <p>Preserve your wedding memories with our wedding photo editing service. We understand the importance of preserving the beauty and joy of your wedding day. In addition, <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd has dedicated and skilled graphic designers who can give your images an artistic touch. Hence, we will help you to elevate moments into masterpieces, preserving precious memories forever. So, if you rely on our wedding photo editing service we will bring out the best photos with our expertise.</p>                   
                 </div>
             </div>
             <div class="row shadow px-5 py-3">
@@ -615,7 +615,7 @@
             	<div class="col-12 newudcode">
                 	<h5 class="text-light pb-3">Affordable Wedding Photo Editing Service ($0.50 for each image)</h5>
 	                <div>
-	                    <p class="text-light">The Wedding Photo Editing Service of <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd is very affordable and great for couples on a budget. Photo editing is a skill-based service and you can find many providers all over the internet. When it comes to wedding photo editing is always expensive. Therefore, we are offering this quality service at a reasonable price so that every couple can preserve their lovely moment with perfection.</p>
+	                    <p class="text-light">The Wedding Photo Editing Service of <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd is very affordable and great for couples on a budget. Photo editing is a skill-based service and you can find many providers all over the internet. When it comes to wedding photo editing is always expensive. Therefore, we are offering this quality service at a reasonable price so that every couple can preserve their lovely moment with perfection.</p>
 	                </div>
                 </div>
             </div>

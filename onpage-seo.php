@@ -36,14 +36,14 @@
 <?php include "includes/seo-nav.php" ?>
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-7 ecomresp" style="z-index:500;">
 				<div class="top_body_txt_part">
 					<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">On Page SEO Service</h1>
 					<h2 class="fs-3" style="margin-top: -15px; line-height: 35px;">On-Page SEO Service involves optimizing web page content for search engines and users.</h2>
-					<p style="text-align:justify;"> The <a href="index.php" class="text-success">SEO Expate</a> BD Ltd is the one of the most popular On-page <a href="seo-service.php" class="text-success">SEO Services</a> provider worldwide. We start by researching relevant keywords, ensuring they're strategically placed in titles, headers, and throughout the content. We also optimize meta descriptions and URLs to be concise and keyword-rich. Ensuring images have descriptive alt tags and improving website speed are crucial steps. Additionally, we focus on creating high-quality, engaging content that addresses user intent. We employ internal linking to enhance site navigation and distribute page authority. </p>
+					<p style="text-align:justify;"> The <a href="/" class="text-success">SEO Expate</a> BD Ltd is the one of the most popular On-page <a href="seo-service.php" class="text-success">SEO Services</a> provider worldwide. We start by researching relevant keywords, ensuring they're strategically placed in titles, headers, and throughout the content. We also optimize meta descriptions and URLs to be concise and keyword-rich. Ensuring images have descriptive alt tags and improving website speed are crucial steps. Additionally, we focus on creating high-quality, engaging content that addresses user intent. We employ internal linking to enhance site navigation and distribute page authority. </p>
 				</div>
 				<div class="row">
 					<div class="col-md-7 pt-2">
@@ -70,7 +70,7 @@
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">On Page SEO Service</li>
 						</ol>

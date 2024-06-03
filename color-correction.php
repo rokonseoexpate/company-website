@@ -66,7 +66,7 @@
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                                 <li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">Color Correction</li>
                             </ol>
@@ -154,7 +154,7 @@
             <div class="row">
                 <h4>SEO Expate Color Correction Services </h4>
                 <div class="pb-5 border-bottom border-success border-2">
-                    <p><a href="index.php" class="text-success">SEO Expate</a> Color Correction Service is an invaluable resource for anyone seeking to elevate the quality of their images. However, our unparalleled expertise will surely deliver results exceeding your expectations. So why settle for mediocre imagery when you can have stunning visuals that truly captivate your audience. Trust the <a href="index.php" class="text-success">SEO Expate</a> Color Correction Service to transform your images and unlock your brand's true potential. To conclude, get this service from us and increase your image visual quality.</p>
+                    <p><a href="/" class="text-success">SEO Expate</a> Color Correction Service is an invaluable resource for anyone seeking to elevate the quality of their images. However, our unparalleled expertise will surely deliver results exceeding your expectations. So why settle for mediocre imagery when you can have stunning visuals that truly captivate your audience. Trust the <a href="/" class="text-success">SEO Expate</a> Color Correction Service to transform your images and unlock your brand's true potential. To conclude, get this service from us and increase your image visual quality.</p>
                 </div>
             </div>
             <div class="row shadow px-5 py-3">

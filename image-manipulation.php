@@ -51,7 +51,7 @@
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Image Manipulation</li>
 						</ol>
@@ -141,7 +141,7 @@
 				<h5 class="">Image Manipulation Service in the SEO Expate BD Ltd</h5>
 			</div>
 			<div class="pb-5 border-bottom border-success border-2">
-				<p>In <a href="index.php" class="text-success">SEO Expate</a> BD Ltd., image manipulation is like being a wizard in a magical workshop. We make pictures come to life there. First, we start with a regular picture, maybe one of a beautiful landscape. Then, using our digital magic, we can make the colors brighter, and remove anything we don't want. However, we use our computers to make the pictures look exactly how we want them to. This helps our clients' websites and online shops look super cool and grab people's attention. In our magical workshop, we turn ordinary pictures into extraordinary ones that everyone will love!</p>
+				<p>In <a href="/" class="text-success">SEO Expate</a> BD Ltd., image manipulation is like being a wizard in a magical workshop. We make pictures come to life there. First, we start with a regular picture, maybe one of a beautiful landscape. Then, using our digital magic, we can make the colors brighter, and remove anything we don't want. However, we use our computers to make the pictures look exactly how we want them to. This helps our clients' websites and online shops look super cool and grab people's attention. In our magical workshop, we turn ordinary pictures into extraordinary ones that everyone will love!</p>
 			</div>
 		</div>
 		<div class="row shadow px-5 py-3">

@@ -73,7 +73,7 @@ $conn = $db->get_connection();
                 <h6><span>Our </span> Reliable Customers and Associates</h6>
             </div>
             <p>SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers, corporations, government departments, and other organizations as a top information technology company.
-                Here take a look at some of the top companies and institutions that <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. has already worked with.</p>
+                Here take a look at some of the top companies and institutions that <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. has already worked with.</p>
             <div class="col-12 pt-5">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -468,7 +468,7 @@ $conn = $db->get_connection();
                 <div class="updatecode pb-2">
                     <h6 class="" style="padding-bottom: unset;">Achievements and Recognitions</h6>
                 </div>
-                <p>For more than ten years, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. has been at the forefront of the ICT industry, driving innovation and empowering businesses to thrive in the digital age. As we celebrate this milestone, we take a moment to reflect on our achievements and recognitions, which stand as testaments to our dedication to excellence.</p>
+                <p>For more than ten years, <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. has been at the forefront of the ICT industry, driving innovation and empowering businesses to thrive in the digital age. As we celebrate this milestone, we take a moment to reflect on our achievements and recognitions, which stand as testaments to our dedication to excellence.</p>
                 <p>Explore a selection of our honors and accomplishments below.</p>
             </div>
             <div class="slider pt-5">
@@ -1393,7 +1393,7 @@ $conn = $db->get_connection();
                 <img src="frontend/images/awardd.png" alt="Recognized IT Services" description=" Recognized IT Services">
             </div>
             <div class="col-md-6">
-                <p><a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. is one of the most reputable and well-known names in the information technology industry. Also, we are the most comprehensive organization that can help you with your web development, digital marketing work, SEO strategy services and the list goes on. Throughout Every Touchpoint or Interaction, We are Focused. </p>
+                <p><a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. is one of the most reputable and well-known names in the information technology industry. Also, we are the most comprehensive organization that can help you with your web development, digital marketing work, SEO strategy services and the list goes on. Throughout Every Touchpoint or Interaction, We are Focused. </p>
                 <p>Everything we create and execute has a significant impact. We design software for enterprises that is user-friendly and also you can get one of the greatest user app experiences with us.</p>
             </div>
             <div class="col-md-6">

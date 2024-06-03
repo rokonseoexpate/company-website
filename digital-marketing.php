@@ -29,7 +29,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Digital Marketing</li>
 						</ol>
 						</nav>
@@ -39,7 +39,7 @@
 		    		<div class="top_body_txt_part">						
 						<h4 class="pb-3">Digital Marketing Main Features</h4>
 						<p style="text-align: justify;">Digital marketing is incredibly beneficial for all types of business. You can quickly spread your word using this excellent assistance from our website. Moreover, it promotes commodities, expands the customer base, resolves customer problems, and increases revenue with this service. </p>	
-						<p style="text-align: justify;">People are becoming more and more attracted to e-commerce. This digital era controls the online-focused market, and we help you develop your strategies on this platform. Our company, <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd, offers you the best solutions along with the entire maintenance procedure. Therefore, experience the most unexpected collaborating with us. </p>	
+						<p style="text-align: justify;">People are becoming more and more attracted to e-commerce. This digital era controls the online-focused market, and we help you develop your strategies on this platform. Our company, <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd, offers you the best solutions along with the entire maintenance procedure. Therefore, experience the most unexpected collaborating with us. </p>	
 					</div>
 					<div class="button pt-3 pb-5">
 						<a href="contact.php" class="text-light">Contact Us</a>

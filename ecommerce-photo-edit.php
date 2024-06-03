@@ -65,7 +65,7 @@ $title = "Ecommerce Photo Edit";
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Ecommerce Photo Editing</li>
 						</ol>
@@ -153,7 +153,7 @@ $title = "Ecommerce Photo Edit";
 		<div class="row">
 			<h4>E-Commerce Photo Editing Service With SEO Expate Ltd</h4>
 			<div class="pb-5 border-bottom border-success border-2">
-				<p><a href="index.php" class="text-success">SEO Expate</a> Ltd offers a comprehensive e-commerce photo editing service tailored to meet the unique needs of online businesses. Therefore, our team of experienced always trying to improve the visual appeal of your product images. And, ensuring they stand out in the competitive e-commerce landscape. However, with a keen eye for detail and a commitment to quality, we provide expert photo editing services. And, that is not only make your products look their best. Also, optimize them for search engines, driving more traffic to your online store. By partnering with us you can elevate your e-commerce website with visually stunning images that engage customers and drive conversions. Trust us to deliver exceptional results and help your online business thrive in the digital marketplace. Experience the difference with SEO Expate Ltd’s e-commerce photo editing service today.</p>
+				<p><a href="/" class="text-success">SEO Expate</a> Ltd offers a comprehensive e-commerce photo editing service tailored to meet the unique needs of online businesses. Therefore, our team of experienced always trying to improve the visual appeal of your product images. And, ensuring they stand out in the competitive e-commerce landscape. However, with a keen eye for detail and a commitment to quality, we provide expert photo editing services. And, that is not only make your products look their best. Also, optimize them for search engines, driving more traffic to your online store. By partnering with us you can elevate your e-commerce website with visually stunning images that engage customers and drive conversions. Trust us to deliver exceptional results and help your online business thrive in the digital marketplace. Experience the difference with SEO Expate Ltd’s e-commerce photo editing service today.</p>
 			</div>
 		</div>
 		<div class="row shadow px-5 py-3">
