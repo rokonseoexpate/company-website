@@ -59,9 +59,6 @@ $conn = $db->get_connection();
 								<h5><?php echo $row['title'] ?></h5>
 								<p><?php echo $row['description'] ?></p>
 							</div>
-							<!-- <div class="top-body-button pt-4">
-						<a type="button" href="contact.html">Read More Details</a>
-					</div> -->
 						</div>
 						<div class="col-md-6">
 							<div class="Core_Values_img pb-5 pt-3 text-center">
