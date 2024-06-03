@@ -65,7 +65,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb breadcumb_gph">
-								<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+								<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 								<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
 								<li class="breadcrumb-item active text-light" aria-current="page">Photo Background Removing</li>
 							</ol>
@@ -158,7 +158,7 @@
 			<div class="row">
 				<h4>Photo Background Removing Service from SEO Expate BD Ltd.</h4>
 				<div class="pb-5 border-bottom border-success border-2">
-					<p><a href="index.php" class="text-success">SEO Expate</a> BD Ltd offers an amazing Photo Background Removal Service that can make your pictures look even better! We use special technology to remove the background from your photos and replace it with something completely different. If you want to make yourself appear in different places, our service can help you do it all. You can let your imagination run wild and create incredible pictures that will impress your friends and family. However, get ready to have fun and transform your photos with Seoebl's Photo Background Removing Service. You can contact us at any time to get this attractive service.</p>
+					<p><a href="/" class="text-success">SEO Expate</a> BD Ltd offers an amazing Photo Background Removal Service that can make your pictures look even better! We use special technology to remove the background from your photos and replace it with something completely different. If you want to make yourself appear in different places, our service can help you do it all. You can let your imagination run wild and create incredible pictures that will impress your friends and family. However, get ready to have fun and transform your photos with Seoebl's Photo Background Removing Service. You can contact us at any time to get this attractive service.</p>
 				</div>
 			</div>
 			<div class="row shadow px-5 py-3">

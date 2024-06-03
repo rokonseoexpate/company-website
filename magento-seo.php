@@ -24,7 +24,7 @@ $title = "Magento SEO & Search Marketing Services ";
 <?php include 'includes/seo-nav.php'?>
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-7 ecomresp" style="z-index:500;">

@@ -40,7 +40,7 @@
 			<div class="col-md-7 ecomresp" style="z-index:500;">
 				<div class="top_body_txt_part">
 					<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">Technical SEO Consultancy</h1>
-					<p style="text-align:justify;"> Technical SEO consultancy from <a href="index.php" class="text-success">SEO Expate</a> will enhance your website performance for better online visibility. Besides, this method of ensuring the technical requirements of search engines with the goal of improved organic rankings. For that, <a href="index.php" class="text-success">SEO Expates</a> implement technical optimizations very carefully to boost search engine rankings. Moreover, we will provide actionable guidance to improve site speed, mobile-friendliness, and overall user experience. </p>
+					<p style="text-align:justify;"> Technical SEO consultancy from <a href="/" class="text-success">SEO Expate</a> will enhance your website performance for better online visibility. Besides, this method of ensuring the technical requirements of search engines with the goal of improved organic rankings. For that, <a href="/" class="text-success">SEO Expates</a> implement technical optimizations very carefully to boost search engine rankings. Moreover, we will provide actionable guidance to improve site speed, mobile-friendliness, and overall user experience. </p>
 				</div>
 				<div class="row">
 					<div class="col-md-9 pt-2">
@@ -66,7 +66,7 @@
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Technical SEO Consultancy</li>
 						</ol>
@@ -106,7 +106,7 @@
 			</div>
 			<div class="col-md-6 pt-5">
 				<h4 class="fs-4 fw-bold">Why do we need a technical SEO agency?</h4>
-				<p>Technical SEO is the most complex task that is performed in SEO. For that, it requires proper technical knowledge and expertise. Many businesses harm themself due to the lack of knowledge and resources. Therefore, a technical SEO agency can provide you with top-class service with specialized skills and experience.Additionally, an SEO agency stays updated with the trends and algorithms and will ensure an optimized <a href="index.php" class="text-success">website</a> for search engines. It needs proper website audits to find all the technical issues after that experts fix those issues with specific analysis. In fact, it is the best practice to improve your website's performance and visibility. </p>
+				<p>Technical SEO is the most complex task that is performed in SEO. For that, it requires proper technical knowledge and expertise. Many businesses harm themself due to the lack of knowledge and resources. Therefore, a technical SEO agency can provide you with top-class service with specialized skills and experience.Additionally, an SEO agency stays updated with the trends and algorithms and will ensure an optimized <a href="/" class="text-success">website</a> for search engines. It needs proper website audits to find all the technical issues after that experts fix those issues with specific analysis. In fact, it is the best practice to improve your website's performance and visibility. </p>
 			</div>
 			<div class="col-12">
 				<p>Moreover, if you want to make your site perfect you must need professional technical SEO service from an agency. Thus, you can overcome the competition and change your business landscape. Therefore, investing in technical SEO is essential for maximizing your website's potential and driving success in the digital world.</p>
@@ -184,7 +184,7 @@
 			<div class="col-12">
 				<h6 class="fw-bold fs-5 pb-3">Our Technical SEO Services </h6>
 				<div>
-					<p>At our agency, we've learned that providing personalized technical services works better for our clients than fixed SEO packages. Moreover, <a href="index.php" class="text-success">SEO Expate</a> is one of the leading SEO service providers in the global market. </p>
+					<p>At our agency, we've learned that providing personalized technical services works better for our clients than fixed SEO packages. Moreover, <a href="/" class="text-success">SEO Expate</a> is one of the leading SEO service providers in the global market. </p>
 				</div>
 				<div>
 					<p><strong class="text-success">1. TECHNICAL SEO CONSULTANCY : </strong> Technical SEO consultants optimize websites for better search engine visibility and performance. Also, they analyze technical aspects and implement strategies to improve rankings and user experience.</p>

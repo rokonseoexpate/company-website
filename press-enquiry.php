@@ -34,13 +34,13 @@
 <!--================================Header section end here=======================-->
 
 	<!--================================top-body section start here=======================-->
-	<section class="top-body app_development phpdevelopment" style="background-image: url(images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">		
+	<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">		
 		<div class="container ">
 		    <div class="row">
 		    	<div class="col-md-7" style="z-index:500; ">
 		    		<div class="top_body_txt_part">
 						<h1 class="" style="font-size: 45px; line-height: 55px;">PR Resources</h1>	
-						<p style="margin-top: -15px; text-align: justify;">Stay connected with <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. PR and Media team for latest information on new technology innovation, latest products and updates. We are changing and bringing digital transformation across the world. Publish news about our digital journey and strategies to build a better future with technology.</p>											
+						<p style="margin-top: -15px; text-align: justify;">Stay connected with <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. PR and Media team for latest information on new technology innovation, latest products and updates. We are changing and bringing digital transformation across the world. Publish news about our digital journey and strategies to build a better future with technology.</p>											
 					</div>	
 				</div>
 				<div class="col-md-5 m-auto" style="z-index:500; ">
@@ -59,7 +59,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Press Enquiry</li>
 						</ol>
 						</nav>

@@ -68,7 +68,7 @@
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                                 <li class="breadcrumb-item "><a href="content-writing.php" class="text-light">Content Writing</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">Blog Post Writing</li>
                             </ol>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="col-12">
                     <p>A really good blog writing service also offers guest posting. Guest posting gives new products and services a lot of attention from the public. Additionally, this is important for online shops. The quality of a blog depends on how professional the writers are. Also, good blog writing services ensure the blog will serve its true potential and fulfill its purpose. </p>
-                    <p><a href="index.php" class="text-success">SEO Expate</a> Ltd offers awesome blog writing services in Bangladesh. We're one of the top agencies for writing articles and blogs here. Also, our team includes talented and dedicated writers who love what they do. They've been in this field for a while and know how to write professional blogs. </p>
+                    <p><a href="/" class="text-success">SEO Expate</a> Ltd offers awesome blog writing services in Bangladesh. We're one of the top agencies for writing articles and blogs here. Also, our team includes talented and dedicated writers who love what they do. They've been in this field for a while and know how to write professional blogs. </p>
                 </div>
             </div>
         </div>
@@ -146,9 +146,9 @@
         <div class="container shadow py-5 px-5 " style="border-left:15px solid var(--secondary-text-color); background: var(--bg-secondary-color);">
             <div class="row ">
                 <div class="col-12">
-                    <h6 class="fw-bold fs-5 pb-3">Why <a href="index.php" class="text-success">SEO Expate</a> Ltd is Best for Blog Writing Services </h6>
+                    <h6 class="fw-bold fs-5 pb-3">Why <a href="/" class="text-success">SEO Expate</a> Ltd is Best for Blog Writing Services </h6>
                     <div>
-                        <p><a href="index.php" class="text-success">SEO Expate</a> offers top-notch blog writing services in Bangladesh. Our highly professional and experienced team ensures we meet all requirements and exceed customer expectations. Moreover, with a dedicated team of experts, we guarantee expertise and exceptional customer service as our competitive edge. Additionally, as an entrepreneur striving to grow your business, we understand the value of your time, money, and effort. Here are several reasons why partnering with us is the right choice for your journey: </p>
+                        <p><a href="/" class="text-success">SEO Expate</a> offers top-notch blog writing services in Bangladesh. Our highly professional and experienced team ensures we meet all requirements and exceed customer expectations. Moreover, with a dedicated team of experts, we guarantee expertise and exceptional customer service as our competitive edge. Additionally, as an entrepreneur striving to grow your business, we understand the value of your time, money, and effort. Here are several reasons why partnering with us is the right choice for your journey: </p>
                     </div>
                     <div>
                         <p>1. At SEO Expate, we ensure that an expert writes your desired article. This ensures that your blog posts have significant depth and appeal to your customers. Our writers are specially trained to write the best article for your needs. </p>
@@ -163,7 +163,7 @@
                         <p>4. We offer SEO-optimized writing services for our clients. Indeed, it can boost traffic to your website and increase exposure to potential customers. </p>
                     </div>
                     <div>
-                        <p>5. <a href="index.php" class="text-success">SEO Expate</a> fully equipped with the latest software tools and cutting-edge technology. Therefore, it will ensure efficient and rapid service delivery. </p>
+                        <p>5. <a href="/" class="text-success">SEO Expate</a> fully equipped with the latest software tools and cutting-edge technology. Therefore, it will ensure efficient and rapid service delivery. </p>
                     </div>
                     <div>
                         <p>6. Additionally, we offer guest post-writing services at an affordable price. </p>
@@ -190,7 +190,7 @@
                 <h6 class="text-center pb-5 fs-2">Blog Writing Service FAQ</h6>
                 <div id="accordion">
                     <div class="accordion-item">
-                        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. What industries does <a href="index.php" class="text-success">SEO Expate</a> specialize in?</h5>
+                        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. What industries does <a href="/" class="text-success">SEO Expate</a> specialize in?</h5>
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
                             <div class="accordion-body">We work with clients from all sorts of industries all over the world. Moreover, our team includes experts who have lots of experience in different areas. However, we've worked in fields like E-commerce, Healthcare, Education, IT, and more. In addition, our writers are talented and know a lot about these industries. Some of them are even skilled in multiple areas. So, choosing us for your services will be your best decision.
                             </div>

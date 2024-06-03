@@ -64,7 +64,7 @@
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                                 <li class="breadcrumb-item "><a href="content-writing.php" class="text-light">Content Writing</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">Content Writing Pricing</li>
                             </ol>

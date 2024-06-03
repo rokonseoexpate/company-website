@@ -101,14 +101,14 @@
 
     <!--================================top-body section start here=======================-->
     <section class="top-body app_development"
-        style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+        style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
         <div class="container ">
             <div class="row">
                 <div class="col-md-7 ecomresp" style="z-index:500;">
                     <div class="top_body_txt_part">
                         <h1 class="marginbottom" style="font-size: 45px;">Search Engine Marketing </h1>
                         <h2 class="margintop" style="margin-top: -15px;">for Websites with WordPress SEO Services</h2>
-                        <p style="text-align:justify;"> <a href="index.php" class="text-success">SEO Expate</a> BD Ltd.
+                        <p style="text-align:justify;"> <a href="/" class="text-success">SEO Expate</a> BD Ltd.
                             is one of the most nourished Search Engine companies all across the world. With the help of
                             our organization, many business and companies have achieved their dream and they are now one
                             of the most reliable companies to their consumers. If you are here then you will also get
@@ -144,7 +144,7 @@
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                                 <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">WordPress SEO</li>
                             </ol>
@@ -171,7 +171,7 @@
                 <div class="col-12 pb-5">
                     <h4 class="text-center">WordPress SEO Service </h4>
                     <div class="border-bottom border-3 border-success">
-                        <p class="text-center">We at <a href="index.php" class="text-success">SEO Expate</a> have
+                        <p class="text-center">We at <a href="/" class="text-success">SEO Expate</a> have
                             tried-and-true <a href="seo_service.php" class="text-success">SEO</a> techniques to enhance
                             your WordPress website. <br> We'll apply what we've learned from working with previous
                             WordPress clients to you.</p>
@@ -293,7 +293,7 @@
                 <div class="col-12">
                     <h6 class="fw-bold fs-5 pb-3">Cost of WordPress SEO </h6>
                     <div>
-                        <p>A few variables may affect the price of <a href="index.php" class="text-success">SEO
+                        <p>A few variables may affect the price of <a href="/" class="text-success">SEO
                                 Expate's</a> WordPress SEO services. We'll list the primary factors we look at while
                             deciding on the price below:</p>
                     </div>

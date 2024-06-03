@@ -41,7 +41,7 @@
 	<!--================================photo editor sub Header section end here=======================-->
 
 	<!--================================top-body section start here=======================-->
-	<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 		<div class="container ">
 			<div class="row">
 				<div class="col-md-7 ecomresp" style="z-index:500;">
@@ -79,7 +79,7 @@
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb breadcumb_gph">
-								<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+								<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 								<li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 								<li class="breadcrumb-item active text-light" aria-current="page">Amazon PPC</li>
 							</ol>
@@ -200,7 +200,7 @@
 					<div class="cliping_service_txt pb-2">
 						<h6>Extensive Keyword Research and Planning</h6>
 					</div>
-					<p class="pt-3">Keyword research and planning are vital factors for a successful PPC lead generation campaign. Besides, it needs huge research to identify the most relevant and high-converting keywords to get proper results from PPC campaigns. Also, this ensures that your ads are shown to the right audience, increasing the chances of generating high-quality leads. So, try the expert service of <a href="index.php" class="text-success">SEO Expate</a> and generate valuable leads through PPC advertising.</p>
+					<p class="pt-3">Keyword research and planning are vital factors for a successful PPC lead generation campaign. Besides, it needs huge research to identify the most relevant and high-converting keywords to get proper results from PPC campaigns. Also, this ensures that your ads are shown to the right audience, increasing the chances of generating high-quality leads. So, try the expert service of <a href="/" class="text-success">SEO Expate</a> and generate valuable leads through PPC advertising.</p>
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
@@ -225,7 +225,7 @@
 					<div class="cliping_service_txt pb-2 margintop">
 						<h6>Paid Traffic Landing Page Design</h6>
 					</div>
-					<p class="pt-3">A proper strategic landing page design will help you to boost your PPC lead generation. In addition, an optimized landing page attracts visitors toward conversion with intuitive navigation and clear calls to action. Additionally, the landing pages should have mobile responsiveness and fast loading times with a user-friendly interface. Moreover, SEO Expate has an expert team of developers and <a href="index.php" class="text-success">SEO experts</a> who are proficient in creating optimized landing pages. </p>
+					<p class="pt-3">A proper strategic landing page design will help you to boost your PPC lead generation. In addition, an optimized landing page attracts visitors toward conversion with intuitive navigation and clear calls to action. Additionally, the landing pages should have mobile responsiveness and fast loading times with a user-friendly interface. Moreover, SEO Expate has an expert team of developers and <a href="/" class="text-success">SEO experts</a> who are proficient in creating optimized landing pages. </p>
 				</div>
 			</div>
 		</div>
@@ -259,7 +259,7 @@
 				<div class="col-12">
 					<h6 class="fw-bold fs-5 pb-3">How does PPC advertising work on Amazon? </h6>
 					<div>
-						<p>Amazon PPC advertising operates by allowing sellers to bid on keywords. PPC advertising works by allowing advertisers to bid on keywords that they want their ads to appear in search results. Hence, when a user searches with keywords or phrases, the advertiser's ad will appear among the top results. Here, sellers pay when users or visitors click on their ads and visit the page <a href="index.php" class="text-success">SEO Expate</a>. </p>
+						<p>Amazon PPC advertising operates by allowing sellers to bid on keywords. PPC advertising works by allowing advertisers to bid on keywords that they want their ads to appear in search results. Hence, when a user searches with keywords or phrases, the advertiser's ad will appear among the top results. Here, sellers pay when users or visitors click on their ads and visit the page <a href="/" class="text-success">SEO Expate</a>. </p>
 					</div>
 					<h6 class="fw-bold fs-6 pb-3">There are two types of PPC advertising on Amazon:</h6>
 					<h6 class="fw-bold fs-5 pb-3">Manual bidding</h6>

@@ -65,7 +65,7 @@
 				<div class="top_about_us_txt" style="z-index:500;">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Our Training</li>
 						</ol>
 					</nav>
@@ -83,7 +83,7 @@
 			<div class="col-12 pb-5">
 				<h4 class="text-center">SEO Expate Bangladesh Ltd. has been the foremost information technology service provider since 2013.</h4>
 				<div class="border-bottom border-3 border-success">
-					<p>The training programs of <a href="index.php" class="text-success">SEO Expate</a> Bangladesh Ltd. a wide range of skills that are integral and necessary parts of everyday business. In our quest to address every organizational development need, we offer a gamut of training programs, which ranges from Executive Coaching and Leadership Training to basic Communication Skills. </p>
+					<p>The training programs of <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. a wide range of skills that are integral and necessary parts of everyday business. In our quest to address every organizational development need, we offer a gamut of training programs, which ranges from Executive Coaching and Leadership Training to basic Communication Skills. </p>
 				</div>
 			</div>
 			<div class="col-md-6">
