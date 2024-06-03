@@ -109,10 +109,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <button type="submit" class="btn btn-primary my-3">Submit</button>
                 </div>
             </div>
-
         </form>
     </div>
-
 </div>
 
 <?php

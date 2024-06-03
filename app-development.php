@@ -91,7 +91,7 @@ $conn = $db->get_connection();
 				</div>
 			</div>
 			<div class="col-12">
-				<p class="text-light pt-5" style="text-align: justify;">We started in 2013 and have been awarded as the top development <a href="/" class="text-success" style="border: unset; padding: unset;">Company</a> in various technology fields. However, our passion for technology begins with our training and skill development process. Furthermore, our Development team and consultants have completed certifications to bring knowledge and experience together to solve technological problems in the best possible way. Also, we take great pride in our <a href="award.html" class="text-success" style="border: unset; padding: unset;">success stories</a> and pursuing the best possible outcome from this organization. Currently, we operate from our offices in Bangladesh, located all across the country. Under those circumstances, We are leveraging years of experience in driving digital transformation worldwide. To conclude, we craft innovative <a href="digital_marketing.html" class="text-success" style="border: unset; padding: unset;">digital</a> solutions that align with your unique business needs and enhance your digital customer journey.</p>
+				<p class="text-light pt-5" style="text-align: justify;">We started in 2013 and have been awarded as the top development <a href="/" class="text-success" style="border: unset; padding: unset;">Company</a> in various technology fields. However, our passion for technology begins with our training and skill development process. Furthermore, our Development team and consultants have completed certifications to bring knowledge and experience together to solve technological problems in the best possible way. Also, we take great pride in our <a href="award.php" class="text-success" style="border: unset; padding: unset;">success stories</a> and pursuing the best possible outcome from this organization. Currently, we operate from our offices in Bangladesh, located all across the country. Under those circumstances, We are leveraging years of experience in driving digital transformation worldwide. To conclude, we craft innovative <a href="digital-marketing.php" class="text-success" style="border: unset; padding: unset;">digital</a> solutions that align with your unique business needs and enhance your digital customer journey.</p>
 			</div>
 		</div>
 	</div>
@@ -636,7 +636,7 @@ $conn = $db->get_connection();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
-				<a class="text-light" href="contact.html">Get in touch</a>
+				<a class="text-light" href="contact.php">Get in touch</a>
 				<h3 class="text-light pt-5">Together, let's craft something incredible!</h3>
 			</div>
 			<div class="col-md-7">

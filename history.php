@@ -198,7 +198,7 @@ $history = $result->fetch_assoc();
 				<div class="updatecode">
 					<h6 class="text-light" style="padding-bottom: unset; text-align: left !important;">Our Global Impact Today</h6>
 				</div>
-				<p>Since 2013, <a href="index.html" class="text-success">SEO Expate</a> has successfully supported 50+ clients in more than 30 countries by delivering 700+ projects. We have created opportunities for 150+ IT professionals in 30+ different industries. Our global impact today achieved through our commitments to our clients, our team, and the communities where we serve are present in all we do. These ideas shape the projects we embark on, the individuals we recruit, and our overall organizational initiatives.</p>
+				<p>Since 2013, <a href="/" class="text-success">SEO Expate</a> has successfully supported 50+ clients in more than 30 countries by delivering 700+ projects. We have created opportunities for 150+ IT professionals in 30+ different industries. Our global impact today achieved through our commitments to our clients, our team, and the communities where we serve are present in all we do. These ideas shape the projects we embark on, the individuals we recruit, and our overall organizational initiatives.</p>
 			</div>
 		</div>
 	</div>

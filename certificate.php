@@ -7,34 +7,17 @@ $conn = $db->get_connection();
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="Title" content="Seo Expate Bangladesh LTD.">
-	<meta name="description" content="Seo Expate Bangladesh LTD.">
-	<meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php echo $title;  ?></title>
-	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-
-	<?php include('./includes/style.php') ?>
-
-	<div class="gtranslate_wrapper"></div>
-	<script>
-		window.gtranslateSettings = {
-			"default_language": "en",
-			"native_language_names": true,
-			"detect_browser_language": true,
-			"url_structure": "sub_domain",
-			"languages": ["en", "fr", "de", "it", "es"],
-			"wrapper_selector": ".gtranslate_wrapper",
-			"horizontal_position": "left",
-			"vertical_position": "bottom"
-		}
-	</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="Title" content="Seo Expate Bangladesh LTD.">
+    <meta name="description" content="Seo Expate Bangladesh LTD.">
+    <meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
 
 </head>
+
+<body>
 
 <!--================================top-body section start here=======================-->
 <section class="top-body top_about_us" style="background-image: url(frontend/images/awards-and-recognitions-background-bannerr.png); background-repeat: no-repeat;  background-position:center center; background-size: cover; padding-top: 180px !important; padding-bottom: 300px;">
@@ -48,7 +31,7 @@ $conn = $db->get_connection();
 					<h1>Certificates</h1>
 				</div>
 				<div class="top-body-button pt-3">
-					<a type="button" href="contact.php">Let's Talk 😄</a>
+					<a type="button" href="contact.php">Let's Talk ðŸ˜„</a>
 				</div>
 			</div>
 		</div>
@@ -73,30 +56,26 @@ $conn = $db->get_connection();
 					<?php if ($number++ % 2 == 0) { ?>
 						<div class="col-md-6">
 							<div class="Core_Values_txt newudcode">
-								<h4><?php echo $row['title'] ?></h4>
+								<h5><?php echo $row['title'] ?></h5>
 								<p><?php echo $row['description'] ?></p>
 							</div>
-
 						</div>
 						<div class="col-md-6">
 							<div class="Core_Values_img pb-5 pt-3 text-center">
-								<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
+								<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>">
 							</div>
 						</div>
 					<?php } else { ?>
 						<div class="col-md-6">
 							<div class="Core_Values_img pb-5 pt-3 text-center">
-								<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
+								<img src="<?php echo $newImagePath ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo $row['alt_description'] ?>">
 							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="Core_Values_txt newudcode">
-								<h4><?php echo $row['title'] ?></h4>
+								<h5><?php echo $row['title'] ?></h5>
 								<p><?php echo $row['description'] ?></p>
 							</div>
-							<!-- <div class="top-body-button pt-4">
-						<a type="button" href="contact.html">Read More Details</a>
-					</div> -->
 						</div>
 
 					<?php } ?>
