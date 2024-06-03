@@ -42,6 +42,8 @@ $title = $branch['name'];
 
 </head>
 
+<?php include('./includes/navbar.php') ?>
+
 <!--================================top-body section start here=======================-->
 <section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">
 	<div class="container ">
@@ -67,7 +69,7 @@ $title = $branch['name'];
 						<p>Home</p>
 					</a>
 					<p class="text-light px-3 ">/</p>
-					<p class="text-light">All Branch</p>
+					<p><a href="branches.php" class="text-light">All Branch</a></p>
 					<p class="text-light px-3 ">/</p>
 					<p class="text-light"><?php echo $branch['name'] ?></p>
 				</div>
@@ -123,9 +125,7 @@ $title = $branch['name'];
 									<div class="card card-block shadow">
 										<img src="<?php
 													$imagePath = $row['image'];
-													$imageName = basename($imagePath);
-													$newImagePath = 'uploads/' . $imageName;
-													echo $newImagePath; ?>" alt="<?php echo $row['name']; ?>" class="img-thumbnail">
+													echo "pages/". $imagePath; ?>" alt="<?php echo $row['name']; ?>" class="img-thumbnail">
 										<div class="card-body">
 											<h5 class="card-title fs-6"><?php echo $row['name']; ?></h5>
 											<p class="card-text fs-6"><?php echo $row['designation']; ?></p>
@@ -182,8 +182,42 @@ $title = $branch['name'];
 </section>
 <!--================================Thrive_Globally section end here=======================-->
 
-<?php
 
-$main_content = ob_get_clean();
-include './layouts/app.php';
+
+<?php
+include('./includes/footer_menu.php');
 ?>
+
+
+<script src="frontend/js/jquery-3.5.1.js"></script>
+<script src="frontend/js/bootstrap.bundle.min.js"></script>
+<script src="frontend/js/owl.carousel.js"></script>
+<script src="frontend/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<?php if (isset($successMessage)): ?>
+	<script>
+
+		iziToast.success({
+			title: 'Success',
+			position: 'topRight',
+			message: '<?php echo $successMessage; ?>',
+		});
+	</script>
+<?php endif; ?>
+
+<?php if (isset($errorMessage)): ?>
+	<script>
+		iziToast.error({
+			title: 'Error',
+			position:'topRight',
+			message: '<?php echo $errorMessage; ?>',
+		});
+	</script>
+<?php endif; ?>
+
+
+</body>
+</html>

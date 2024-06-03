@@ -38,6 +38,7 @@ $conn = $db->get_connection();
 
 </head>
 
+<?php include('./includes/navbar.php') ?>
 <!--================================app_development section start here=======================-->
 <!-- <div id="particles-js"></div> -->
 <section class="app_development">
@@ -91,7 +92,7 @@ $conn = $db->get_connection();
 				</div>
 			</div>
 			<div class="col-12">
-				<p class="text-light pt-5" style="text-align: justify;">We started in 2013 and have been awarded as the top development <a href="/" class="text-success" style="border: unset; padding: unset;">Company</a> in various technology fields. However, our passion for technology begins with our training and skill development process. Furthermore, our Development team and consultants have completed certifications to bring knowledge and experience together to solve technological problems in the best possible way. Also, we take great pride in our <a href="award.html" class="text-success" style="border: unset; padding: unset;">success stories</a> and pursuing the best possible outcome from this organization. Currently, we operate from our offices in Bangladesh, located all across the country. Under those circumstances, We are leveraging years of experience in driving digital transformation worldwide. To conclude, we craft innovative <a href="digital_marketing.html" class="text-success" style="border: unset; padding: unset;">digital</a> solutions that align with your unique business needs and enhance your digital customer journey.</p>
+				<p class="text-light pt-5" style="text-align: justify;">We started in 2013 and have been awarded as the top development <a href="/" class="text-success" style="border: unset; padding: unset;">Company</a> in various technology fields. However, our passion for technology begins with our training and skill development process. Furthermore, our Development team and consultants have completed certifications to bring knowledge and experience together to solve technological problems in the best possible way. Also, we take great pride in our <a href="award.php" class="text-success" style="border: unset; padding: unset;">success stories</a> and pursuing the best possible outcome from this organization. Currently, we operate from our offices in Bangladesh, located all across the country. Under those circumstances, We are leveraging years of experience in driving digital transformation worldwide. To conclude, we craft innovative <a href="digital-marketing.php" class="text-success" style="border: unset; padding: unset;">digital</a> solutions that align with your unique business needs and enhance your digital customer journey.</p>
 			</div>
 		</div>
 	</div>
@@ -636,7 +637,7 @@ $conn = $db->get_connection();
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5">
-				<a class="text-light" href="contact.html">Get in touch</a>
+				<a class="text-light" href="contact.php">Get in touch</a>
 				<h3 class="text-light pt-5">Together, let's craft something incredible!</h3>
 			</div>
 			<div class="col-md-7">
@@ -677,7 +678,41 @@ $conn = $db->get_connection();
 <!--================================Thrive_Globally section end here=======================-->
 
 <!--===========================footer part start===================================-->
+
 <?php
-$main_content = ob_get_clean();
-include './layouts/app.php';
+include('./includes/footer_menu.php');
 ?>
+
+
+<script src="frontend/js/jquery-3.5.1.js"></script>
+<script src="frontend/js/bootstrap.bundle.min.js"></script>
+<script src="frontend/js/owl.carousel.js"></script>
+<script src="frontend/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<?php if (isset($successMessage)): ?>
+	<script>
+
+		iziToast.success({
+			title: 'Success',
+			position: 'topRight',
+			message: '<?php echo $successMessage; ?>',
+		});
+	</script>
+<?php endif; ?>
+
+<?php if (isset($errorMessage)): ?>
+	<script>
+		iziToast.error({
+			title: 'Error',
+			position:'topRight',
+			message: '<?php echo $errorMessage; ?>',
+		});
+	</script>
+<?php endif; ?>
+
+
+</body>
+</html>
