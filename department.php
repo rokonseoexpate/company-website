@@ -86,7 +86,7 @@ $conn = $db->get_connection();
 
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
-                    ?>
+                            ?>
                             <div class="Core_Team_txt pb-2 pt-5">
                                 <h3 class="fs-3 pb-3"><?= $row['name']; ?></h3>
                                 <hr>
@@ -100,7 +100,7 @@ $conn = $db->get_connection();
 
                                 // Fetch employees and display them
                                 while ($emp = mysqli_fetch_assoc($resultemps)) {
-                                ?>
+                                    ?>
                                     <div class="col-md-3 col-sm-6">
                                         <div class="card card-block shadow">
                                             <img src="<?php echo 'uploads/' . basename($emp['image']); ?>" alt="<?php echo $emp['alt_tag']; ?>" description="<?php echo $emp['alt_description'] ?>" class="img-thumbnail">
@@ -110,12 +110,12 @@ $conn = $db->get_connection();
                                             </div>
                                         </div>
                                     </div>
-                                <?php
+                                    <?php
                                 }
                                 ?>
                             </div>
                             <hr>
-                    <?php
+                            <?php
                         }
                     } else {
                         echo "Error: " . mysqli_error($conn);

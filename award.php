@@ -86,7 +86,7 @@ $conn = $db->get_connection();
                     $imagePath = $row['image'];
                     $imageName = basename($imagePath);
                     $newImagePath = 'uploads/' . $imageName;
-            ?>
+                    ?>
                     <div class="row pt-4 pb-2">
                         <?php if ($number++ % 2 == 0) { ?>
                             <div class="col-md-6">
@@ -115,7 +115,7 @@ $conn = $db->get_connection();
                         <?php } ?>
                     </div>
                     <hr>
-            <?php }
+                <?php }
             } ?>
 
         </div>

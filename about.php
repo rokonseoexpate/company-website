@@ -228,7 +228,7 @@ $history = $result->fetch_assoc();
                             $imagePath = $team['image'];
                             $imageName = basename($imagePath);
                             $newImagePath = 'uploads/' . $imageName;
-                        ?>
+                            ?>
                             <div class="col-md-3 col-sm-6">
                                 <div class="card card-block">
                                     <img src="<?php echo $newImagePath ?>" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo strip_tags( $team['alt_description']); ?>" class="img-thumbnail">
@@ -270,7 +270,7 @@ $history = $result->fetch_assoc();
                             $imagePath = $advisor['image'];
                             $imageName = basename($imagePath);
                             $newImagePath = 'uploads/' . $imageName;
-                        ?>
+                            ?>
                             <div class="col-md-3 col-sm-6">
                                 <div class="card card-block">
                                     <img src="<?php echo $newImagePath ?>" alt="<?php echo $advisor['alt_tag'] ?>" description="<?php echo strip_tags($advisor['alt_description']) ?>" class="img-thumbnail">
@@ -310,7 +310,7 @@ $history = $result->fetch_assoc();
 
             if ($result) {
                 while ($row = mysqli_fetch_assoc($result)) {
-            ?>
+                    ?>
                     <div class="col-md-3 pb-5">
                         <div class="card">
                             <img src="<?php
@@ -327,7 +327,7 @@ $history = $result->fetch_assoc();
                             </div>
                         </div>
                     </div>
-            <?php
+                    <?php
                 }
             } else {
                 echo "Error: " . mysqli_error($conn);
@@ -355,7 +355,7 @@ $history = $result->fetch_assoc();
 
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
-                    ?>
+                            ?>
                             <div class="slider-card">
                                 <div class="d-flex justify-content-center align-items-center mb-4">
                                     <img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
@@ -363,7 +363,7 @@ $history = $result->fetch_assoc();
                                 <h5 class="mb-0 text-center"><b>Winner</b></h5>
                                 <p class="text-center p-4">Digital Bangladesh Award 2023 </p>
                             </div>
-                    <?php
+                            <?php
                         }
                     } else {
                         echo "Error: " . mysqli_error($conn);
@@ -389,11 +389,11 @@ $history = $result->fetch_assoc();
                 $imagePath = $department['image'];
                 $imageName = basename($imagePath);
                 $newImagePath = 'uploads/' . $imageName;
-            ?>
+                ?>
 
                 <div class="col-md-3 <?php if ($key > 3) {
-                                            echo 'mt-4';
-                                        } ?>">
+                    echo 'mt-4';
+                } ?>">
                     <a href="department.php"><img src="<?php echo $newImagePath ?>" alt="<?php echo $department['alt_tag'] ?>" description="<?php echo strip_tags($department['alt_description']) ?>"></a>
                     <h5 class="text-light pt-3"><?php echo $department['name'] ?></h5>
                 </div>
@@ -544,7 +544,7 @@ $history = $result->fetch_assoc();
                             $imagePath = $blog['image'];
                             $imageName = basename($imagePath);
                             $newImagePath = 'uploads/' . $imageName;
-                        ?>
+                            ?>
                             <div class="col-lg-4 col-md-12 mb-4">
                                 <div class="card" style="background: #00000091;">
                                     <div class="bg-image hover-zoom ">
@@ -603,7 +603,7 @@ $history = $result->fetch_assoc();
                             $imagePath = $csr['image'];
                             $imageName = basename($imagePath);
                             $newImagePath = 'uploads/' . $imageName;
-                        ?>
+                            ?>
                             <div class="col-lg-4 col-md-12 mb-4">
                                 <div class="card" style="background: #00000091;">
                                     <div class="bg-image hover-zoom ">
@@ -660,7 +660,7 @@ $history = $result->fetch_assoc();
                             $imagePath = $event['image'];
                             $imageName = basename($imagePath);
                             $newImagePath = 'uploads/' . $imageName;
-                        ?>
+                            ?>
                             <div class="col-lg-4 col-md-12 mb-4">
                                 <div class="card" style="background: #00000091;">
                                     <div class="bg-image hover-zoom ">
@@ -712,13 +712,13 @@ $history = $result->fetch_assoc();
                             $imagePath = $row['image'];
                             $imageName = basename($imagePath);
                             $newImagePath = 'uploads/' . $imageName;
-                    ?>
+                            ?>
                             <div class="slider-card">
                                 <div class="d-flex justify-content-center align-items-center mb-4">
                                     <img src="<?php echo $newImagePath; ?>" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
                                 </div>
                             </div>
-                    <?php
+                            <?php
                         }
                     } else {
                         echo "Error: " . mysqli_error($conn);
@@ -821,9 +821,9 @@ $history = $result->fetch_assoc();
                                 $imagePath = $row['image'];
                                 $imageName = basename($imagePath);
                                 $newImagePath = 'uploads/' . $imageName;
-                        ?>
+                                ?>
                                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="<?php echo $index; ?>" <?php echo $active ? 'class="active"' : ''; ?> aria-label="Slide <?php echo $index; ?>"></button>
-                        <?php
+                                <?php
                                 $active = false;
                                 $index++;
                             }
@@ -838,11 +838,11 @@ $history = $result->fetch_assoc();
                             $imagePath = $row['image'];
                             $imageName = basename($imagePath);
                             $newImagePath = 'uploads/' . $imageName;
-                        ?>
+                            ?>
                             <div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
                                 <img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
                             </div>
-                        <?php
+                            <?php
                             $active = false;
                         }
                         ?>
@@ -950,13 +950,13 @@ $history = $result->fetch_assoc();
 
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
-                    ?>
+                            ?>
                             <div class="slider-card">
                                 <div class="d-flex justify-content-center align-items-center mb-4">
                                     <iframe width="560" height="315" src="<?php echo $row['link']; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                             </div>
-                    <?php
+                            <?php
                         }
                     } else {
                         echo "Error: " . mysqli_error($conn);
