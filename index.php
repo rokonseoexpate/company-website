@@ -7,18 +7,30 @@ $conn = $db->get_connection();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="Title" content="Seo Expate Bangladesh LTD.">
-	<meta name="description" content="Seo Expate Bangladesh LTD.">
-	<meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php echo $title;  ?></title>
-	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-	<?php include('./includes/style.php') ?>
-	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="Title" content="Seo Expate Bangladesh LTD.">
+    <meta name="description" content="Seo Expate Bangladesh LTD.">
+    <meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $title;  ?></title>
+    <meta property="og:title" content="Home - IT Services, Technology Solutions">
+    <?php include('./includes/style.php') ?>
+    <div class="gtranslate_wrapper"></div>
+    <script>
+        window.gtranslateSettings = {
+            "default_language": "en",
+            "native_language_names": true,
+            "detect_browser_language": true,
+            "url_structure": "sub_domain",
+            "languages": ["en", "fr", "de", "it", "es"],
+            "wrapper_selector": ".gtranslate_wrapper",
+            "horizontal_position": "left",
+            "vertical_position": "bottom"
+        }
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
@@ -664,7 +676,7 @@ $conn = $db->get_connection();
 <!--================================top_our_transform section end here=======================-->
 
 <!--================================top_our_industries  section start here=======================-->
-<section class="top_our_industries">
+<section class="top_our_industries Fields_We_Cover">
     <div class="container">
         <div class="row">
             <div class="industries_txt">
@@ -673,144 +685,144 @@ $conn = $db->get_connection();
                 </div>
                 <p>Having been in the information technology services provider business for more than ten years, we have finished several projects for our clients in almost every sector. Including the following items:</p>
             </div>
-            <div class="col-md-2">
+            <div class=" col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-network-wired"></i>
+                    <i class="fa-solid fa-network-wired" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Finance & Banking</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-dumpster-fire"></i>
+                    <i class="fa-solid fa-dumpster-fire" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>E-commerce</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-door-open"></i>
+                    <i class="fa-solid fa-door-open" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Telco</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-sign-hanging"></i>
+                    <i class="fa-solid fa-sign-hanging" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Real Estate</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-brands fa-accusoft"></i>
+                    <i class="fa-brands fa-accusoft" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Software</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-person-skiing-nordic"></i>
+                    <i class="fa-solid fa-person-skiing-nordic" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Health & Fitness</p>
                 </div>
             </div>
         </div>
         <div class="row pt-5">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-wine-glass"></i>
+                    <i class="fa-solid fa-wine-glass" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Food & Drink</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-music"></i>
+                    <i class="fa-solid fa-music" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Music</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-hospital"></i>
+                    <i class="fa-solid fa-hospital" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Medical</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-prescription-bottle-medical"></i>
+                    <i class="fa-solid fa-prescription-bottle-medical" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Pharmaceutical</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-gas-pump"></i>
+                    <i class="fa-solid fa-gas-pump" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Automotive</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-user-graduate"></i>
+                    <i class="fa-solid fa-user-graduate" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Education</p>
                 </div>
             </div>
         </div>
         <div class="row pt-5">
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                    <i class="fa-solid fa-cart-flatbed-suitcase" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Travel</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-person-through-window"></i>
+                    <i class="fa-solid fa-person-through-window" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Entertainment</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-calendar-day"></i>
+                    <i class="fa-solid fa-calendar-day" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Retail</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-fax"></i>
+                    <i class="fa-solid fa-fax" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Business</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-icons"></i>
+                    <i class="fa-solid fa-icons" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Photo & Video</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-id-card-clip"></i>
+                    <i class="fa-solid fa-id-card-clip" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Non-Profit</p>
                 </div>
             </div>
         </div>
         <div class="row pt-5">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col">
                 <div class="industrie_serve">
 
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-diagram-project"></i>
+                    <i class="fa-solid fa-diagram-project" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Startup</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-newspaper"></i>
+                    <i class="fa-solid fa-newspaper" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>AR/VR</p>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-6 col">
                 <div class="industrie_serve">
-                    <i class="fa-solid fa-couch"></i>
+                    <i class="fa-solid fa-couch" alt="Fields We Cover" description=" Fields We Cover"></i>
                     <p>Furniture</p>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col">
                 <div class="industrie_serve">
 
                 </div>
@@ -831,8 +843,8 @@ $conn = $db->get_connection();
                 <p>The most innovative and dependable technologies are used by SEO Expate Bangladesh Ltd to build and carry out the entire operation.</p>
             </div>
             <div class="explore_tabs">
-                <div class="container py-5">
-                    <div class="row mb-5">
+                <div class="container py-5 mpresp">
+                    <div class="row mb-5 mpresp">
                         <div class="p-5 bg-white rounded shadow mb-5">
                             <!-- Rounded tabs -->
                             <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
@@ -855,8 +867,7 @@ $conn = $db->get_connection();
                                     <a id="Tools-tab" data-bs-toggle="tab" data-bs-target="#Tools" href="#Tools" role="tab" aria-controls="Tools" aria-selected="false" class="nav-link border-0  font-weight-bold"> Tools</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
-                                    <a id="Integrations-tab" data-bs-toggle="tab" data-bs-target="#Integrations" href="#Integrations" role="tab" aria-controls="Integrations" aria-selected="false" class="nav-link border-0  font-weight-bold">
-                                        Integrations</a>
+                                    <a id="Integrations-tab" data-bs-toggle="tab" data-bs-target="#Integrations" href="#Integrations" role="tab" aria-controls="Integrations" aria-selected="false" class="nav-link border-0  font-weight-bold"> Integrations</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill" role="presentation">
                                     <a id="Cloud-tab" data-bs-toggle="tab" data-bs-target="#Cloud" href="#Cloud" role="tab" aria-controls="Cloud" aria-selected="false" class="nav-link border-0  font-weight-bold"> Cloud</a>
@@ -865,57 +876,57 @@ $conn = $db->get_connection();
                                     <a id="DevOps-tab" data-bs-toggle="tab" data-bs-target="#DevOps" href="#DevOps" role="tab" aria-controls="DevOps" aria-selected="false" class="nav-link border-0  font-weight-bold"> DevOps</a>
                                 </li>
                             </ul>
-                            <div class="tab-content" id="myTabContent">
+                            <div class="tab-content tabimges" id="myTabContent">
                                 <div id="Mobile" role="tabpanel" aria-labelledby="Mobile-tab" class="tab-pane fade px-4 py-5 show active">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
-                                            <img src="frontend/images/iOS.png" alt="">
+                                            <img src="frontend/images/iOS.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>iOS</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Android.png" alt="">
+                                            <img src="frontend/images/Android.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Android</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Flutter.png" alt="">
+                                            <img src="frontend/images/Flutter.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Flutter</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Objective-C.png" alt="">
+                                            <img src="frontend/images/Objective-C.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Objective-C</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/C-2.png" alt="">
+                                            <img src="frontend/images/C-2.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>C#</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/C-1.png" alt="">
+                                            <img src="frontend/images/C-1.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>C++</p>
                                         </div>
                                     </div>
                                     <div class="row pt-5">
                                         <div class="col-md-2">
-                                            <img src="frontend/images/swift-icon.png" alt="">
+                                            <img src="frontend/images/swift-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Swift</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/ionic-icon.png" alt="">
+                                            <img src="frontend/images/ionic-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Ionic</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/kotlin-icon.png" alt="">
+                                            <img src="frontend/images/kotlin-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Kotlin</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/augmented-reality-icon.png" alt="">
+                                            <img src="frontend/images/augmented-reality-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Augmented Reality</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/virtual-reality-icon.png" alt="">
+                                            <img src="frontend/images/virtual-reality-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Virtual Reality</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/react-native-icon.png" alt="">
+                                            <img src="frontend/images/react-native-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>React Native</p>
                                         </div>
                                     </div>
@@ -923,50 +934,50 @@ $conn = $db->get_connection();
                                 <div id="Front" role="tabpanel" aria-labelledby="Front-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
-                                            <img src="frontend/images/AngularJs.png" alt="">
+                                            <img src="frontend/images/AngularJs.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Angular</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/VueJS.png" alt="">
+                                            <img src="frontend/images/VueJS.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>VueJS</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/HTML.png" alt="">
+                                            <img src="frontend/images/HTML.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>HTML</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Bootstrap.png" alt="">
+                                            <img src="frontend/images/Bootstrap.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Bootstrap</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/mean-icon.png" alt="">
+                                            <img src="frontend/images/mean-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>MEAN</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/typescript-icon.png" alt="">
+                                            <img src="frontend/images/typescript-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>TypeScript</p>
                                         </div>
                                     </div>
                                     <div class="row pt-5">
                                         <div class="col-md-1"></div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/asp.net-icon.png" alt="">
+                                            <img src="frontend/images/asp.net-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>ASP.NET</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/CSS.png" alt="">
+                                            <img src="frontend/images/CSS.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>CSS</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/ReactJs.png" alt="">
+                                            <img src="frontend/images/ReactJs.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>ReactJs</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/jQuery.png" alt="">
+                                            <img src="frontend/images/jQuery.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>jQuery </p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/javascript-technology-icon-riseuplabs.png" alt="">
+                                            <img src="frontend/images/javascript-technology-icon-riseuplabs.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p> JavaScript</p>
                                         </div>
                                         <div class="col-md-1"></div>
@@ -975,50 +986,50 @@ $conn = $db->get_connection();
                                 <div id="Back" role="tabpanel" aria-labelledby="Back-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
-                                            <img src="frontend/images/java-icon.png" alt="">
+                                            <img src="frontend/images/java-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Java</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Laravel.png" alt="">
+                                            <img src="frontend/images/Laravel.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Laravel</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/PHP.png" alt="">
+                                            <img src="frontend/images/PHP.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>PHP</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/ASP.NET-MVC.png" alt="">
+                                            <img src="frontend/images/ASP.NET-MVC.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>ASP.NET-MVC</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/django-icon.png" alt="">
+                                            <img src="frontend/images/django-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Django</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/node.js-icon.png" alt="">
+                                            <img src="frontend/images/node.js-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Node.js</p>
                                         </div>
                                     </div>
                                     <div class="row pt-5">
                                         <div class="col-md-1"></div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/codeigniter-icon.png" alt="">
+                                            <img src="frontend/images/codeigniter-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Codeigniter</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/koa.js-icon.png" alt="">
+                                            <img src="frontend/images/koa.js-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Koa.js</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/flask-icon.png" alt="">
+                                            <img src="frontend/images/flask-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Flask</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/express.js-icon.png" alt="">
+                                            <img src="frontend/images/express.js-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p> Express.js</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/graphql-icon.png" alt="">
+                                            <img src="frontend/images/graphql-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p> GraphQL</p>
                                         </div>
                                         <div class="col-md-1"></div>
@@ -1027,93 +1038,99 @@ $conn = $db->get_connection();
                                 <div id="Database" role="tabpanel" aria-labelledby="Database-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
-                                            <img src="frontend/images/MySQL.png" alt="">
+                                            <img src="frontend/images/MySQL.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>MySQL</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Apache.png" alt="">
+                                            <img src="frontend/images/Apache.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Apache</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Firebase.png" alt="">
+                                            <img src="frontend/images/Firebase.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Firebase</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/sqlite-icon.png" alt="">
+                                            <img src="frontend/images/sqlite-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>SQLite</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/oracle-icon.png" alt="">
+                                            <img src="frontend/images/oracle-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Oracle</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/microsoft-sql-server-icon.png" alt="">
+                                            <img src="frontend/images/microsoft-sql-server-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Microsoft SQL Server</p>
                                         </div>
                                     </div>
                                     <div class="row pt-5">
                                         <div class="col-md-2">
-                                            <img src="frontend/images/amazon-dynamodb-icon.png" alt="">
+                                            <img src="frontend/images/amazon-dynamodb-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Amazon DynamoDB</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/mongodb-icon.png" alt="">
+                                            <img src="frontend/images/mongodb-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>MongoDB</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/apache-couchdb-icon.png" alt="">
+                                            <img src="frontend/images/apache-couchdb-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Apache CouchDB</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/postgresql-icon.png" alt="">
+                                            <img src="frontend/images/postgresql-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>PostgreSQL </p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/couchbase-icon.png" alt="">
+                                            <img src="frontend/images/couchbase-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Couchbase </p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/ravendb-icon.png" alt="">
+                                            <img src="frontend/images/ravendb-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>RavenDB </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div id="CMS" role="tabpanel" aria-labelledby="CMS-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
-                                        <div class="col-md-5">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-2">
+                                            <img src="frontend/images/shopifyimg.jpg" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
+                                            <p>Shopify</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/wordpress-icon.webp" alt="">
+                                            <img src="frontend/images/wordpress-icon.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>WordPress</p>
                                         </div>
-                                        <div class="col-md-5">
+                                        <div class="col-md-2">
+                                            <img src="frontend/images/magentoimg.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
+                                            <p>Magento</p>
                                         </div>
+                                        <div class="col-md-3"></div>
                                     </div>
                                 </div>
                                 <div id="Tools" role="tabpanel" aria-labelledby="Tools-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
-                                            <img src="frontend/images/3DS-Max.webp" alt="">
+                                            <img src="frontend/images/3DS-Max.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>3DS Max</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Autodesk-Maya.webp" alt="">
+                                            <img src="frontend/images/Autodesk-Maya.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Autodesk Maya</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Blender.webp" alt="">
+                                            <img src="frontend/images/Blender.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Blender</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Motion-Builder.webp" alt="">
+                                            <img src="frontend/images/Motion-Builder.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Motion Builder</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/sublime-text-technology-icon-75x75-1.webp" alt="">
+                                            <img src="frontend/images/sublime-text-technology-icon-75x75-1.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Sublime Text</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/xampp-technology-icon-75x75-1.webp" alt="">
+                                            <img src="frontend/images/xampp-technology-icon-75x75-1.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>XAMPP</p>
                                         </div>
                                     </div>
@@ -1121,27 +1138,27 @@ $conn = $db->get_connection();
                                 <div id="Integrations" role="tabpanel" aria-labelledby="Integrations-tab" class="tab-pane fade px-4 py-5">
                                     <div class="row pt-5">
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Firebase (1).png" alt="">
+                                            <img src="frontend/images/Firebase (1).png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Firebase</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/Retrofit.png" alt="">
+                                            <img src="frontend/images/Retrofit.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Retrofit</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/RapidPro.png" alt="">
+                                            <img src="frontend/images/RapidPro.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>RapidPro</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/MVVM.png" alt="">
+                                            <img src="frontend/images/MVVM.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>MVVM</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/PortWallet.png" alt="">
+                                            <img src="frontend/images/PortWallet.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>PortWallet</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/angaza-technology-icon.png" alt="">
+                                            <img src="frontend/images/angaza-technology-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Angaza</p>
                                         </div>
                                     </div>
@@ -1149,15 +1166,15 @@ $conn = $db->get_connection();
                                         <div class="col-md-3">
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/hubspot-icon.png" alt="">
+                                            <img src="frontend/images/hubspot-icon.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>HubSpot</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/PortWallet (1).png" alt="">
+                                            <img src="frontend/images/PortWallet (1).png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Xero</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/bkash-technology-logo.png" alt="">
+                                            <img src="frontend/images/bkash-technology-logo.png" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>bKash </p>
                                         </div>
                                         <div class="col-md-3">
@@ -1169,19 +1186,19 @@ $conn = $db->get_connection();
                                         <div class="col-md-2">
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/aws-technology-icon-75x75-1.webp" alt="">
+                                            <img src="frontend/images/aws-technology-icon-75x75-1.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>AWS</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/amazon-ec2-technology-icon-75x75-1.webp" alt="">
+                                            <img src="frontend/images/amazon-ec2-technology-icon-75x75-1.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Amazon EC2</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/amazon-s3-technology-icon-75x75-1.webp" alt="">
+                                            <img src="frontend/images/amazon-s3-technology-icon-75x75-1.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Amazon S3</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/amazon-route-53-technology-icon-75x75-1.webp" alt="">
+                                            <img src="frontend/images/amazon-route-53-technology-icon-75x75-1.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>Amazon Route 53</p>
                                         </div>
                                         <div class="col-md-2">
@@ -1195,11 +1212,11 @@ $conn = $db->get_connection();
                                         <div class="col-md-4">
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/github-technology-logo-75x75-1.webp" alt="">
+                                            <img src="frontend/images/github-technology-logo-75x75-1.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p>GitHub</p>
                                         </div>
                                         <div class="col-md-2">
-                                            <img src="frontend/images/cicd-technology-icon-75x75-1.webp" alt="">
+                                            <img src="frontend/images/cicd-technology-icon-75x75-1.webp" alt="Innovative Technologies We Work" description=" Innovative Technologies We Work">
                                             <p> CI/CD</p>
                                         </div>
                                         <div class="col-md-4">
@@ -1213,10 +1230,16 @@ $conn = $db->get_connection();
                 </div>
             </div>
         </div>
+    </div>
+
 </section>
 <!--================================top_our_technologies section end here=======================-->
 
 <!--================================top_future_focused section start here=======================-->
+
+
+
+
 <section class="top_future_focused">
     <div class="container">
         <div class="row">
