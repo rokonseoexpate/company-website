@@ -28,7 +28,7 @@
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 
 <?php include "includes/seo-nav.php" ?>
 <!--================================top-body section start here=======================-->

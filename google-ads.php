@@ -20,6 +20,7 @@ $title = "Google Ads";
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
+<body>
 <!--================================photo editor sub Header section end here=======================-->
 <?php include 'includes/big-ecommerce-nav.php' ?>
 <!--================================photo editor sub Header section end here=======================-->

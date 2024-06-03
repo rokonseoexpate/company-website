@@ -23,6 +23,7 @@ $conn = $db->get_connection();
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
+<body>
 <section class="top-awards"
         style="background-image: url(frontend/images/awards-and-recognitions-background-banner.png); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; width: 100%; height: 100%;">
         <div class="container">

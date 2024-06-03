@@ -18,7 +18,7 @@ $title = "It Training";
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
     <div class="py-5">
         <div class="container">
             <h4>Data Not Found</h4>

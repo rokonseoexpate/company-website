@@ -19,7 +19,7 @@ $title = "IT Service & Business management Specialist";
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <?php include 'includes/course-nav.php'?>
 
 <!--================================top-body section start here=======================-->

@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 
 <section class="top-body top_about_us topaboutus"
     style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">

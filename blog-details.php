@@ -52,15 +52,15 @@ $newImagePath = 'uploads/' . $imageName;
 		}
 	</script>
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
-
-</head>
-
     <style>
         img {
             max-width: 100%;
             height: auto
         }
     </style>
+</head>
+<body>
+
     <section class="web_service text-light">
         <div class="container ">
             <div class="row">

@@ -32,7 +32,7 @@ $title = "Color Correction";
     <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <?php include 'includes/color-correction-nav.php' ?>
 
 <!--================================top-body section start here=======================-->

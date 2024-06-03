@@ -37,7 +37,7 @@ $conn = $db->get_connection();
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <!--================================app_development section start here=======================-->
 <!-- <div id="particles-js"></div> -->
 <section class="app_development">

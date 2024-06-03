@@ -33,7 +33,7 @@ $title = "B2B Seo";
 
 </head>
 
-
+<body>
 <?php include "includes/seo-nav.php" ?>
 
 <!--================================top-body section start here=======================-->

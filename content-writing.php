@@ -32,7 +32,7 @@ $title = "Content Writing";
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <!--================================Header section end here=======================-->
 
 <!--================================photo editor sub Header section end here=======================-->

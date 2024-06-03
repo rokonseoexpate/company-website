@@ -32,7 +32,7 @@ $title = "Digital Marketing";
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <!--================================web_service section start here=======================-->
 <section class="web_service text-light">
 	<div class="container ">

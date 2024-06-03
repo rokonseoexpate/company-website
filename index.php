@@ -34,6 +34,8 @@ $conn = $db->get_connection();
 
 </head>
 
+<body>
+
 <!--================================top-body section start here=======================-->
 <section class="top-body" style="background-image: url(frontend/images/Advanced-technology.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
     <div class="container ">

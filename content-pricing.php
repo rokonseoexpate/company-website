@@ -32,7 +32,7 @@ $title = "Content Writing Pricing Package";
     <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <!--================================photo editor sub Header section end here=======================-->
 <?php include 'includes/sub-nav.php' ?>
 <!--================================photo editor sub Header section end here=======================-->

@@ -34,6 +34,7 @@
     <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
+<body>
 <section class="top-body app_development phpdevelopment"
     style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">
     <div class="container ">

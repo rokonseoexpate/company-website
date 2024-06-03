@@ -33,7 +33,7 @@ $conn = $db->get_connection();
     <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <!--================================top-body section start here=======================-->
 <section class="top-body top_about_us"
     style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">

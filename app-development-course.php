@@ -23,7 +23,7 @@ $conn = $db->get_connection();
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <!--================================photo editor sub Header section end here=======================-->
 <div class="photo_edipth">
     <div class="container">

@@ -29,7 +29,7 @@
 
 </head>
 
-
+<body>
 
 <!--================================photo editor sub Header section end here=======================-->
 <div class="photo_edipth">

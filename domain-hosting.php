@@ -32,7 +32,7 @@ $title = "Domain & Hosting";
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <!--================================domain_hosting Sub_Header section start here=======================-->
 <div class="domain_hosting">
 	<div class="container">

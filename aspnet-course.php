@@ -21,7 +21,7 @@ $title = "ASP.NET Course";
 
 </head>
 
-
+<body>
 	<!--================================photo editor sub Header section end here=======================-->
 	<?php  include_once "includes/course-nav.php"; ?>
 	<!--================================photo editor sub Header section end here=======================-->
