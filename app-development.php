@@ -38,6 +38,8 @@ $conn = $db->get_connection();
 
 </head>
 
+<body>
+
 <?php include('./includes/navbar.php') ?>
 <!--================================app_development section start here=======================-->
 <!-- <div id="particles-js"></div> -->

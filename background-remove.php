@@ -28,7 +28,6 @@
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
 <body>
 
 	<!--================================Header section start here=======================-->
