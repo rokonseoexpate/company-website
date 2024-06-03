@@ -1,539 +1,726 @@
-<?php
-$title = "Jewelry Retouching";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="Title" content="Seo Expate Bangladesh LTD.">
-	<meta name="description" content="Seo Expate Bangladesh LTD.">
-	<meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
+	<meta name="Title" content="This is the my site">
+	<meta name="description" content="This is the my site">
+	<meta name="keywords" content="seoebl, seoexpate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php echo $title;  ?></title>
+	<title>Jewelry Retouching</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
 	<?php include('./includes/style.php') ?>
 	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
+	<script>
+		window.gtranslateSettings = {
+			"default_language": "en",
+			"native_language_names": true,
+			"detect_browser_language": true,
+			"url_structure": "sub_domain",
+			"languages": ["en", "fr", "de", "it", "es"],
+			"wrapper_selector": ".gtranslate_wrapper",
+			"horizontal_position": "left",
+			"vertical_position": "bottom"
+		}
+	</script>
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
+
 <body>
-<?php include 'includes/photo-editing-nav.php'?>
 
-<!--================================top-body section start here=======================-->
-<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
-	<div class="container ">
-		<div class="row">
-			<div class="col-12" style="z-index:500;">
-				<div class="top_body_txt_part">
-					<h1>Jewelry Retouching</h1>
-					<p style="text-align:justify;">Jewelry Retouching is an exquisite process that transforms ordinary jewelry photographs into stunning, eye-catching images. It's akin to a meticulous spa treatment for each piece of jewelry. It ensures that every diamond sparkles brighter, and every gemstone bursts with vivid color. This specialized technique involves carefully removing any imperfections and enhancing the photo to highlight the jewelry's true beauty. Our experts manage Shadows and reflections to showcase the depth and dimension of each piece. However, it helps to maintain a natural and appealing look. Whether for e-commerce platforms, catalogs, or high-end advertisements, Jewelry Retouching breathes life into every image. </p>
-					<p style="text-align:justify;">Therefore, this work makes each piece of jewelry not just seen but truly experienced. By elevating the visual appeal, it captivates potential customers. Thus, this service makes every piece irresistible and elevates the perceived value and desirability of the jewelry. Finally, you can contact us at any to buy this service.</p>
-				</div>
-				<div class="top-body-button pt-3">
-					<a type="button" href="free-trial.php">Free Trial</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================top-body section end here=======================-->
+	<!--================================Header section start here=======================-->
+	<?php include "includes/navbar.php" ?>
+	<!--================================Header section end here=======================-->
 
-<!--================================cliping_service section start here=======================-->
-<section class="cliping_service photo_edit_all_service tshirtdesign" style="background: var(--button-bg-hover-color);">
-	<div class="container">
-		<div class="row">
-			<div class="col-12" style="z-index:500;">
-				<div class="top_about_us_txt" style="z-index:500;">
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
-							<li class="breadcrumb-item active text-light" aria-current="page">Jewelry Retouching</li>
-						</ol>
-					</nav>
-				</div>
-				<div class="pb-2 pt-2 text-light">
-					<h4 class="fs-1 fw-bold">Jewelry Retouching Service</h4>
-				</div>
-				<p class="pt-2 text-light">Jewelry Retouching service is a crucial step in the visual marketing of jewelry. It plays a pivotal role in capturing and retaining consumer interest. In the highly competitive jewelry market, where first impressions can break a sale, it is necessary to present nicely. Retouching elevates the presentation of each piece, highlighting its best features. Therefore, it ensures the true colors and intricate details shine through. It helps to create a consistent, brand-aligned look across all product lines. Besides, it enhances the perceived value and luxury appeal of the jewelry. Furthermore, in the digital age, where online shopping is prevalent, high-quality, retouched images provide customers with a close-to-real-life view.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================cliping_service section end here=======================-->
+	<!--================================photo editor sub Header section end here=======================-->
+	<?php include "includes/color-correction-nav.php" ?>
+	<!--================================photo editor sub Header section end here=======================-->
 
-<!--================================cliping_service section start here=======================-->
-<section class="cliping_service" style="background: unset; padding-bottom: unset;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6" style="z-index:500;">
-				<div class="cliping_service_txt pb-2 pt-2">
-					<h6>What is Jewelry Retouching?</h6>
+	<!--================================top-body section start here=======================-->
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
+		<div class="container ">
+			<div class="row">
+				<div class="col-12" style="z-index:500;">
+					<div class="top_body_txt_part">
+						<h1>Jewelry Retouching</h1>
+						<p style="text-align:justify;">Jewelry Retouching is an exquisite process that transforms ordinary jewelry photographs into stunning, eye-catching images. It's akin to a meticulous spa treatment for each piece of jewelry. It ensures that every diamond sparkles brighter, and every gemstone bursts with vivid color. This specialized technique involves carefully removing any imperfections and enhancing the photo to highlight the jewelry's true beauty. Our experts manage Shadows and reflections to showcase the depth and dimension of each piece. However, it helps to maintain a natural and appealing look. Whether for e-commerce platforms, catalogs, or high-end advertisements, Jewelry Retouching breathes life into every image. </p>
+						<p style="text-align:justify;">Therefore, this work makes each piece of jewelry not just seen but truly experienced. By elevating the visual appeal, it captivates potential customers. Thus, this service makes every piece irresistible and elevates the perceived value and desirability of the jewelry. Finally, you can contact us at any to buy this service.</p>
+					</div>
+					<div class="top-body-button pt-3">
+						<a type="button" href="free-trial.php">Free Trial</a>
+					</div>
 				</div>
-				<p class="pt-3">This service involves a series of carefully planned steps aimed at showcasing jewelry in its most enticing form. This journey continues as skilled retouchers use advanced digital tools to polish and perfect each image. The process encompasses the elimination of imperfections such as scratches and blemishes, and color correction. It helps to reveal the true hues of metals and gemstones. It also helps to refine details to accentuate the craftsmanship of each piece.</p>
-			</div>
-			<div class="col-md-6" style="margin: auto;">
-				<div class="clip_img">
-					<img src="frontend/images/Jewelry-Retouching-Service-3.webp" alt="Jewelry Retouching" description=" Jewelry Retouching" class="img-thumbnail">
-				</div>
-			</div>
-			<div class="col-12">
-				<p class="">This work elevates the visual appeal of the jewelry. Moreover, this service enhances product marketability. Besides, it creates a compelling visual narrative that resonates with potential buyers. Through this process, the jewelry retouching project breathes life into static images. It turns them into captivating stories of beauty and allure that captivate the viewer's imagination and desire.</p>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================cliping_service section end here=======================-->
+	</section>
+	<!--================================top-body section end here=======================-->
 
-<!--================================top_awards section start here=======================-->
-<section class="top_awards">
-	<div class="container">
-		<div class="row">
-			<div class="slider pt-5 shadow">
-				<div class="owl-carousel">
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/Jewelry-Retouching-Service-4.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
-						</div>
+	<!--================================cliping_service section start here=======================-->
+	<section class="cliping_service photo_edit_all_service tshirtdesign" style="background: var(--button-bg-hover-color);">
+		<div class="container">
+			<div class="row">
+				<div class="col-12" style="z-index:500;">
+					<div class="top_about_us_txt" style="z-index:500;">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb breadcumb_gph">
+								<li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+								<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
+								<li class="breadcrumb-item active text-light" aria-current="page">Jewelry Retouching</li>
+							</ol>
+						</nav>
 					</div>
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/Jewelry-Retouching-Service-2.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
-						</div>
+					<div class="pb-2 pt-2 text-light">
+						<h4 class="fs-1 fw-bold">Jewelry Retouching Service</h4>
 					</div>
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/Jewelry-Retouching-Service-3.webp" alt="Jewelry Retouching" description=" Jewelry Retouching">
-						</div>
-					</div>
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/Jewelry-Retouching-Service-1.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
-						</div>
-					</div>
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/Jewelry-Retouching-Service-6.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
-						</div>
-					</div>
-					<div class="slider-card">
-						<div class="d-flex justify-content-center align-items-center mb-4">
-							<img src="frontend/images/Jewelry-Retouching-Service-5.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
-						</div>
-					</div>
+					<p class="pt-2 text-light">Jewelry Retouching service is a crucial step in the visual marketing of jewelry. It plays a pivotal role in capturing and retaining consumer interest. In the highly competitive jewelry market, where first impressions can break a sale, it is necessary to present nicely. Retouching elevates the presentation of each piece, highlighting its best features. Therefore, it ensures the true colors and intricate details shine through. It helps to create a consistent, brand-aligned look across all product lines. Besides, it enhances the perceived value and luxury appeal of the jewelry. Furthermore, in the digital age, where online shopping is prevalent, high-quality, retouched images provide customers with a close-to-real-life view.</p>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================top_awards section end here=======================-->
+	</section>
+	<!--================================cliping_service section end here=======================-->
 
-<!--================================editor_texts section start here=======================-->
-<section class=" graphicdesigns_content" style="background: var(--bg-secondary-color);">
-	<div class="container">
-		<div class="row">
-			<div class="newudcode pb-2">
-				<h5>Jewelry Retouching Service in the SEO Expate BD Ltd</h5>
-			</div>
-			<div class="pb-5 border-bottom border-success border-2">
-				<p>At <a href="/" class="text-success">SEO Expate</a> BD Ltd, Jewelry Retouching is like a magic workshop. Here, every piece of jewelry gets a sparkling makeover. Our retouchers, work on each photo, carefully removing any tiny scratches or marks that shouldn't be there. We also make sure the colors of the gems look bright and true. Besides, we add just the right amount of shine so that every detail stands out. We use software to bring out the best in every piece. This process is super important for online shopping. By making each piece of jewelry look its best, we help customers fall in love with what they see.</p>
-			</div>
-		</div>
-		<div class="row shadow px-5 py-3">
-			<div class="col-md-4 m-auto">
-				<h5 class="fs-2 ">Starting Price</h5>
-			</div>
-			<div class="col-md-4 m-auto">
-				<h5 class="fs-2 ">$1.50 USD</h5>
-			</div>
-			<div class="col-md-4">
-				<img src="frontend/images/Jewelry-Retouching-Service.png" alt="Jewelry Retouching" description=" Jewelry Retouching" class="img-thumbnail">
+	<!--================================cliping_service section start here=======================-->
+	<section class="cliping_service" style="background: unset; padding-bottom: unset;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6" style="z-index:500;">
+					<div class="cliping_service_txt pb-2 pt-2">
+						<h6>What is Jewelry Retouching?</h6>
+					</div>
+					<p class="pt-3">This service involves a series of carefully planned steps aimed at showcasing jewelry in its most enticing form. This journey continues as skilled retouchers use advanced digital tools to polish and perfect each image. The process encompasses the elimination of imperfections such as scratches and blemishes, and color correction. It helps to reveal the true hues of metals and gemstones. It also helps to refine details to accentuate the craftsmanship of each piece.</p>
+				</div>
+				<div class="col-md-6" style="margin: auto;">
+					<div class="clip_img">
+						<img src="frontend/images/Jewelry-Retouching-Service-3.webp" alt="Jewelry Retouching" description=" Jewelry Retouching" class="img-thumbnail">
+					</div>
+				</div>
+				<div class="col-12">
+					<p class="">This work elevates the visual appeal of the jewelry. Moreover, this service enhances product marketability. Besides, it creates a compelling visual narrative that resonates with potential buyers. Through this process, the jewelry retouching project breathes life into static images. It turns them into captivating stories of beauty and allure that captivate the viewer's imagination and desire.</p>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================editor_texts section end here=======================-->
+	</section>
+	<!--================================cliping_service section end here=======================-->
 
-<!--================================domai_pricing_table section start here=======================-->
-<section class="domai_pricing_table t-shirt-price" style="background: var(--bg-secondary-color) !important; padding-top: unset;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Basic Jewelry Retouching</h6>
-						<p>Basic Jewelry Photo Retouching with this package</p>
-						<span class="value">$7</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>5 image edit</li>
-							<li> Each image edit 1.50$</li>
-							<li> Delivery in 1 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
+	<!--================================top_awards section start here=======================-->
+	<section class="top_awards">
+		<div class="container">
+			<div class="row">
+				<div class="slider pt-5 shadow">
+					<div class="owl-carousel">
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Jewelry-Retouching-Service-4.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Medium Jewelry Retouching </h6>
-						<p>Medium type Jewelry Photo Retouching</p>
-						<span class="value">
-							$12
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>5 image edit</li>
-							<li> Each image edit 2.50$</li>
-							<li> Delivery in 1 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Jewelry-Retouching-Service-2.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
+							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Complex Jewelry Retouching</h6>
-						<p>Complex Jewelry Photo Retouching service </p>
-						<span class="value">
-							$20
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>5 image edit</li>
-							<li> Each image edit 4$</li>
-							<li> Delivery in 1 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Jewelry-Retouching-Service-3.webp" alt="Jewelry Retouching" description=" Jewelry Retouching">
+							</div>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Jewelry-Retouching-Service-1.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
+							</div>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Jewelry-Retouching-Service-6.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
+							</div>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Jewelry-Retouching-Service-5.png" alt="Jewelry Retouching" description=" Jewelry Retouching">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row pt-3">
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Basic Jewelry Retouching</h6>
-						<p>Basic Jewelry Photo Retouching with this package</p>
-						<span class="value">
-							$15
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>10 image edit</li>
-							<li> Each image edit 1.50$</li>
-							<li> Delivery in 1 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Medium Jewelry Retouching </h6>
-						<p>Medium type Jewelry Photo Retouching</p>
-						<span class="value">
-							$25
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>10 image edit</li>
-							<li> Each image edit 2.50$</li>
-							<li> Delivery in 1 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Complex Jewelry Retouching</h6>
-						<p>Complex Jewelry Photo Retouching service </p>
-						<span class="value">
-							$40
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>10 image edit</li>
-							<li> Each image edit 4$</li>
-							<li> Delivery in 1 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row pt-3">
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Basic Jewelry Retouching</h6>
-						<p>Basic Jewelry Photo Retouching with this package</p>
-						<span class="value">
-							$75
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>50 image edit</li>
-							<li> Each image edit 1.50$</li>
-							<li> Delivery in 1 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Medium Jewelry Retouching</h6>
-						<p>Medium type Jewelry Photo Retouching</p>
-						<span class="value">
-							$125
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>50 image edit</li>
-							<li> Each image edit 2.50$</li>
-							<li> Delivery in 1 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Complex Jewelry Retouching</h6>
-						<p>Complex Jewelry Photo Retouching service </p>
-						<span class="value">
-							$200
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>50 image edit</li>
-							<li> Each image edit 4$</li>
-							<li> Delivery in 1 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row pt-3">
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Basic Jewelry Retouching</h6>
-						<p>Basic Jewelry Photo Retouching with this package</p>
-						<span class="value">
-							$150
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>100 image edit</li>
-							<li> Each image edit 1.50$</li>
-							<li> Delivery in 2 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Medium Jewelry Retouching</h6>
-						<p>Medium type Jewelry Photo Retouching</p>
-						<span class="value">
-							$250
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>100 image edit</li>
-							<li> Each image edit 2.50$</li>
-							<li> Delivery in 2 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="pricingTable">
-					<div class="pricing_heading">
-						<h6 class="title">Complex Jewelry Retouching</h6>
-						<p>Complex Jewelry Photo Retouching service</p>
-						<span class="value">
-							$400
-						</span>
-					</div>
-					<div class="content">
-						<ul>
-							<li>100 image edit</li>
-							<li> Each image edit 4$</li>
-							<li> Delivery in 2 day</li>
-						</ul>
-						<div class="link">
-							<a href="#">Buy Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================domai_pricing_table section end here=======================-->
+	</section>
+	<!--================================top_awards section end here=======================-->
 
-<!--================================editor_texts section start here=======================-->
-<section class=" graphicdesigns_content" style="background: var(--button-bg-hover-color);">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
+	<!--================================editor_texts section start here=======================-->
+	<section class=" graphicdesigns_content" style="background: var(--bg-secondary-color);">
+		<div class="container">
+			<div class="row">
 				<div class="newudcode pb-2">
-					<h5 class="text-light">How We Do Jewelry Retouch Service</h5>
+					<h5>Jewelry Retouching Service in the SEO Expate BD Ltd</h5>
 				</div>
-				<div>
-					<p class="text-light">First, we take a high-quality photo of the jewelry. Then, we use our digital paintbrushes (software on computers). Then, we carefully clean up any spots or smudges on the jewelry, and we make it look spotless. Next, we add a bit of magic to make the gems and metals glow. After that, we adjust colors so they're vivid and eye-catching, just like in real life. We also make sure the jewelry is the star of the show by removing any distractions in the background. Sometimes, we even draw in sparkles or reflections to give it that extra special touch. It's like giving the jewelry its very own spotlight. Our goal is to make the jewelry not just look good but look so amazing. </p>
+				<div class="pb-5 border-bottom border-success border-2">
+					<p>At <a href="index.php" class="text-success">SEO Expate</a> BD Ltd, Jewelry Retouching is like a magic workshop. Here, every piece of jewelry gets a sparkling makeover. Our retouchers, work on each photo, carefully removing any tiny scratches or marks that shouldn't be there. We also make sure the colors of the gems look bright and true. Besides, we add just the right amount of shine so that every detail stands out. We use software to bring out the best in every piece. This process is super important for online shopping. By making each piece of jewelry look its best, we help customers fall in love with what they see.</p>
+				</div>
+			</div>
+			<div class="row shadow px-5 py-3">
+				<div class="col-md-4 m-auto">
+					<h5 class="fs-2 ">Starting Price</h5>
+				</div>
+				<div class="col-md-4 m-auto">
+					<h5 class="fs-2 ">$1.50 USD</h5>
+				</div>
+				<div class="col-md-4">
+					<img src="frontend/images/Jewelry-Retouching-Service.png" alt="Jewelry Retouching" description=" Jewelry Retouching" class="img-thumbnail">
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================editor_texts section end here=======================-->
+	</section>
+	<!--================================editor_texts section end here=======================-->
 
-<!--================================accordion section start here=======================-->
-<section class="accordion_service">
-	<div class="container">
-		<div class="row">
-			<h6 class="text-center pb-5 fs-2">FAQ OF JEWELRY RETOUCHING SERVICE</h6>
-			<div id="accordion">
-				<div class="accordion-item">
-					<h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. What is the definition of jewelry retouching?</h5>
-					<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
-						<div class="accordion-body">Jewelry retouching is the practice of improving the quality of jewelry photos in order to attract more customers. Color correction, background removal, and blemish removal are just a few of the popular upgrades.
+	<!--================================domai_pricing_table section start here=======================-->
+	<section class="domai_pricing_table t-shirt-price" style="background: var(--bg-secondary-color) !important; padding-top: unset;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Basic Jewelry Retouching</h6>
+							<p>Basic Jewelry Photo Retouching with this package</p>
+							<span class="value">$7</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>5 image edit</li>
+								<li> Each image edit 1.50$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Q. In Photoshop, how do you reflect jewelry?
-					</h5>
-					<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-						<div class="accordion-body">Select Edit > Free Change to create a box around the jewelry that allows you to transform it. Select ‘Flip Vertical’ from the context menu when right-clicking on the box. The jewelry will be inverted as a result of this. Then, using your mouse, drag the box to the bottom of the original piece of jewelry
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Medium Jewelry Retouching </h6>
+							<p>Medium type Jewelry Photo Retouching</p>
+							<span class="value">
+								$12
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>5 image edit</li>
+								<li> Each image edit 2.50$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Q. What are the five fundamentals of jewelry photo retouching?
-					</h5>
-					<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
-						<div class="accordion-body">There are some basic things we maintain while we do jewelry photo retouching. <br>
-
-							1. At first, we crop and tidy up your photos. <br>
-							2. We adjust the white balance through software. <br>
-							3. We adjust the contrast and exposure. <br>
-							4. Color saturation and vibrancy can be tweaked if clients want. <br>
-							5. These are some of the basics we follow in the time of jewelry photo editing.
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Complex Jewelry Retouching</h6>
+							<p>Complex Jewelry Photo Retouching service </p>
+							<span class="value">
+								$20
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>5 image edit</li>
+								<li> Each image edit 4$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Q. Is Jewelry retouching necessary in online business?
-					</h5>
-					<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
-						<div class="accordion-body">The answer is a big yes. Doing jewelry retouching before putting your jewelry image online is very important.
+			</div>
+			<div class="row pt-3">
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Basic Jewelry Retouching</h6>
+							<p>Basic Jewelry Photo Retouching with this package</p>
+							<span class="value">
+								$15
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>10 image edit</li>
+								<li> Each image edit 1.50$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingFourr" data-bs-toggle="collapse" data-bs-target="#collapseFourr" aria-expanded="false" aria-controls="collapseFourr">Q. Do SEO Expate Photo Editor gives a discount on a bulk jewelry image editing?
-					</h5>
-					<div id="collapseFourr" class="accordion-collapse collapse" aria-labelledby="headingFourr" data-bs-parent="#accordion">
-						<div class="accordion-body">If you have a large quantity of images in your bag. Then we can give you discounts on the jewelry retouch service.
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Medium Jewelry Retouching </h6>
+							<p>Medium type Jewelry Photo Retouching</p>
+							<span class="value">
+								$25
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>10 image edit</li>
+								<li> Each image edit 2.50$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Q. Is it possible to take free trials from the SEO Expate Photo Editor?
-					</h5>
-					<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
-						<div class="accordion-body">We are happy to announce that now we are offering free trials to our customers. You can anytime visit our website and take the free service any day you want.
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Complex Jewelry Retouching</h6>
+							<p>Complex Jewelry Photo Retouching service </p>
+							<span class="value">
+								$40
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>10 image edit</li>
+								<li> Each image edit 4$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingSix" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Q. In Photoshop, how do you edit earrings?
-					</h5>
-					<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
-						<div class="accordion-body">There are several ways to replicate in Photoshop, but one method is to select the earring using the rectangular marquee selector tool, then edit>copy, then edit>paste. The earring gets pasted into a different layer as a result of this. Then transfer it to the desired location.
+			</div>
+			<div class="row pt-3">
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Basic Jewelry Retouching</h6>
+							<p>Basic Jewelry Photo Retouching with this package</p>
+							<span class="value">
+								$75
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>50 image edit</li>
+								<li> Each image edit 1.50$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="accordion-item">
-					<h5 class="accordion-header collapsed" id="headingSeven" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Q. Are we provide service support for 24 hours straight?
-					</h5>
-					<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
-						<div class="accordion-body">We can provide our clients with all day and night long service support. So, you can believe our customer care and can take information for all our services.
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Medium Jewelry Retouching</h6>
+							<p>Medium type Jewelry Photo Retouching</p>
+							<span class="value">
+								$125
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>50 image edit</li>
+								<li> Each image edit 2.50$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Complex Jewelry Retouching</h6>
+							<p>Complex Jewelry Photo Retouching service </p>
+							<span class="value">
+								$200
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>50 image edit</li>
+								<li> Each image edit 4$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row pt-3">
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Basic Jewelry Retouching</h6>
+							<p>Basic Jewelry Photo Retouching with this package</p>
+							<span class="value">
+								$150
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>100 image edit</li>
+								<li> Each image edit 1.50$</li>
+								<li> Delivery in 2 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Medium Jewelry Retouching</h6>
+							<p>Medium type Jewelry Photo Retouching</p>
+							<span class="value">
+								$250
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>100 image edit</li>
+								<li> Each image edit 2.50$</li>
+								<li> Delivery in 2 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Complex Jewelry Retouching</h6>
+							<p>Complex Jewelry Photo Retouching service</p>
+							<span class="value">
+								$400
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>100 image edit</li>
+								<li> Each image edit 4$</li>
+								<li> Delivery in 2 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================accordion section end here=======================-->
+	</section>
+	<!--================================domai_pricing_table section end here=======================-->
 
-<?php include 'includes/footer-services.php'?>
-
-<!--================================Thrive_Globally section start here=======================-->
-<section class="PAY_MENT" style="padding: 20px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="PAY_IMG">
-				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="Jewelry Retouching" description=" Jewelry Retouching" width="100%">
+	<!--================================editor_texts section start here=======================-->
+	<section class=" graphicdesigns_content" style="background: var(--button-bg-hover-color);">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="newudcode pb-2">
+						<h5 class="text-light">How We Do Jewelry Retouch Service</h5>
+					</div>
+					<div>
+						<p class="text-light">First, we take a high-quality photo of the jewelry. Then, we use our digital paintbrushes (software on computers). Then, we carefully clean up any spots or smudges on the jewelry, and we make it look spotless. Next, we add a bit of magic to make the gems and metals glow. After that, we adjust colors so they're vivid and eye-catching, just like in real life. We also make sure the jewelry is the star of the show by removing any distractions in the background. Sometimes, we even draw in sparkles or reflections to give it that extra special touch. It's like giving the jewelry its very own spotlight. Our goal is to make the jewelry not just look good but look so amazing. </p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================Thrive_Globally section end here=======================-->
-<?php
-$main_content = ob_get_clean();
-include './layouts/app.php';
-?>
+	</section>
+	<!--================================editor_texts section end here=======================-->
+
+	<!--================================accordion section start here=======================-->
+	<section class="accordion_service">
+		<div class="container">
+			<div class="row">
+				<h6 class="text-center pb-5 fs-2">FAQ OF JEWELRY RETOUCHING SERVICE</h6>
+				<div id="accordion">
+					<div class="accordion-item">
+						<h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. What is the definition of jewelry retouching?</h5>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+							<div class="accordion-body">Jewelry retouching is the practice of improving the quality of jewelry photos in order to attract more customers. Color correction, background removal, and blemish removal are just a few of the popular upgrades.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Q. In Photoshop, how do you reflect jewelry?
+						</h5>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+							<div class="accordion-body">Select Edit > Free Change to create a box around the jewelry that allows you to transform it. Select ‘Flip Vertical’ from the context menu when right-clicking on the box. The jewelry will be inverted as a result of this. Then, using your mouse, drag the box to the bottom of the original piece of jewelry
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Q. What are the five fundamentals of jewelry photo retouching?
+						</h5>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+							<div class="accordion-body">There are some basic things we maintain while we do jewelry photo retouching. <br>
+
+								1. At first, we crop and tidy up your photos. <br>
+								2. We adjust the white balance through software. <br>
+								3. We adjust the contrast and exposure. <br>
+								4. Color saturation and vibrancy can be tweaked if clients want. <br>
+								5. These are some of the basics we follow in the time of jewelry photo editing.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Q. Is Jewelry retouching necessary in online business?
+						</h5>
+						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+							<div class="accordion-body">The answer is a big yes. Doing jewelry retouching before putting your jewelry image online is very important.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingFourr" data-bs-toggle="collapse" data-bs-target="#collapseFourr" aria-expanded="false" aria-controls="collapseFourr">Q. Do SEO Expate Photo Editor gives a discount on a bulk jewelry image editing?
+						</h5>
+						<div id="collapseFourr" class="accordion-collapse collapse" aria-labelledby="headingFourr" data-bs-parent="#accordion">
+							<div class="accordion-body">If you have a large quantity of images in your bag. Then we can give you discounts on the jewelry retouch service.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Q. Is it possible to take free trials from the SEO Expate Photo Editor?
+						</h5>
+						<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+							<div class="accordion-body">We are happy to announce that now we are offering free trials to our customers. You can anytime visit our website and take the free service any day you want.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingSix" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Q. In Photoshop, how do you edit earrings?
+						</h5>
+						<div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+							<div class="accordion-body">There are several ways to replicate in Photoshop, but one method is to select the earring using the rectangular marquee selector tool, then edit>copy, then edit>paste. The earring gets pasted into a different layer as a result of this. Then transfer it to the desired location.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingSeven" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">Q. Are we provide service support for 24 hours straight?
+						</h5>
+						<div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
+							<div class="accordion-body">We can provide our clients with all day and night long service support. So, you can believe our customer care and can take information for all our services.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================accordion section end here=======================-->
+
+	<!--================================editor_all_services section end here=======================-->
+	<section class="WHAT_MAKES footer_btm_all_services"  style="background: unset" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h4>Photoshop Services</h4>
+					<a href="clipping-path.php" class="d-flex pt-4">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Clipping Path Service</h6>
+						</div>
+					</a>
+					<a href="jewelry-retouching.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Jewelry Retouching Service</h6>
+						</div>
+					</a>
+					<a href="ecommerce-photo-edit.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>E-Commerce Photo Editing</h6>
+						</div>
+					</a>
+					<a href="image-masking.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Image Masking Service</h6>
+						</div>
+					</a>
+					<a href="color-correction.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Color Correction Service</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<h4>Photoshop Services</h4>
+					<a href="real-estate-photo.php" class="d-flex pt-4">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Real Estate Photo Editing</h6>
+						</div>
+					</a>
+					<a href="photo-retouching.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Photo Retouching</h6>
+						</div>
+					</a>
+					<a href="background-remove.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Remove Background Image</h6>
+						</div>
+					</a>
+					<a href="ghost-mannequin.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Ghost Mannequin Effect</h6>
+						</div>
+					</a>
+					<a href="shadow-making.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Shadow Making Service</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<h4>Photoshop Services</h4>
+					<a href="photo-restoration.php" class="d-flex pt-4">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Photo Restoration</h6>
+						</div>
+					</a>
+					<a href="image-manipulation.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Image Manipulation Service</h6>
+						</div>
+					</a>
+					<a href="wedding-photo.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Wedding Photo Editing</h6>
+						</div>
+					</a>
+					<a href="raster-vector.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Raster to Vector Conversion</h6>
+						</div>
+					</a>
+					<a href="background-remove.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Photo Background Removing</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<h4>Graphics Design Services</h4>
+					<a href="t-shirt-design.php" class="d-flex pt-4">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>T-Shirt Design</h6>
+						</div>
+					</a>
+					<a href="logo-design.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Logo Designs Service</h6>
+						</div>
+					</a>
+					<a href="banner-design.php" class="d-flex pt-2">
+						<div>
+							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="what_make-txt">
+							<h6>Banner Design</h6>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================editor_all_services section end here=======================-->
+
+	<!--================================Thrive_Globally section start here=======================-->
+	<section class="PAY_MENT" style="padding: 20px 0;">
+		<div class="container">
+			<div class="row">
+				<div class="PAY_IMG">
+					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="Jewelry Retouching" description=" Jewelry Retouching" width="100%">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================Thrive_Globally section end here=======================-->
+
+	<!--===========================footer part start===================================-->
+	<?php include "includes/footer_menu.php" ?>
+	<!--===========================footer part end===================================-->
+
+	<script src="frontend/js/jquery-3.5.1.js"></script>
+	<script src="frontend/js/bootstrap.bundle.min.js"></script>
+	<script src="frontend/js/owl.carousel.js"></script>
+	<script src="frontend/js/main.js"></script>
+
+</body>
+
+</html>
