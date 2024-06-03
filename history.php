@@ -7,8 +7,8 @@ $conn = $db->get_connection();
 $sql = "SELECT * FROM histories WHERE id=1";
 $result = $conn->query($sql);
 $history = $result->fetch_assoc();
-?>
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +25,8 @@ $history = $result->fetch_assoc();
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
+
+<?php include('./includes/navbar.php') ?>
 
 <section class="top-body top-history" style="background-image: url(frontend/images/1.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
 	<div class="container ">
@@ -567,6 +569,39 @@ $history = $result->fetch_assoc();
 
 
 <?php
-$main_content = ob_get_clean();
-include './layouts/app.php';
+ include('./includes/footer_menu.php');
 ?>
+
+
+<script src="frontend/js/jquery-3.5.1.js"></script>
+<script src="frontend/js/bootstrap.bundle.min.js"></script>
+<script src="frontend/js/owl.carousel.js"></script>
+<script src="frontend/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+<?php if (isset($successMessage)): ?>
+	<script>
+
+		iziToast.success({
+			title: 'Success',
+			position: 'topRight',
+			message: '<?php echo $successMessage; ?>',
+		});
+	</script>
+<?php endif; ?>
+
+<?php if (isset($errorMessage)): ?>
+	<script>
+		iziToast.error({
+			title: 'Error',
+			position:'topRight',
+			message: '<?php echo $errorMessage; ?>',
+		});
+	</script>
+<?php endif; ?>
+
+
+</body>
+</html>
