@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title;  ?></title>
-    <meta property="og:title" content="Home - IT Services, Technology Solutions">
+    <meta property="og:title" content="free trail - IT Services, Technology Solutions">
 
     <?php include('./includes/style.php') ?>
 
@@ -101,6 +101,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </head>
 
+<body>
+<?php include "includes/navbar.php" ?>
 <?php include 'includes/photo-editing-nav.php' ?>
 
 <!--================================top-body section start here=======================-->
@@ -272,6 +274,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </section>
 <!--================================Thrive_Globally section end here=======================-->
 
+
+<?php
+include('./includes/footer_menu.php');
+?>
+
+<script src="frontend/js/jquery-3.5.1.js"></script>
+<script src="frontend/js/bootstrap.bundle.min.js"></script>
+<script src="frontend/js/owl.carousel.js"></script>
+<script src="frontend/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" ></script>
+
+
 <script>
     document.getElementById("freeTrialForm").addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent form submission
@@ -336,7 +350,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </script>
 
 
-<?php
-$main_content = ob_get_clean();
-include './layouts/app.php';
-?>
+
+
+<?php if (isset($successMessage)): ?>
+    <script>
+        iziToast.success({
+            title: 'Success',
+            position: 'topRight',
+            message: '<?php echo $successMessage; ?>',
+        });
+    </script>
+<?php endif; ?>
+
+<?php if (isset($errorMessage)): ?>
+    <script>
+        iziToast.error({
+            title: 'Error',
+            position:'topRight',
+            message: '<?php echo $errorMessage; ?>',
+        });
+    </script>
+<?php endif; ?>
+</body>
+</html>
+

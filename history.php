@@ -25,7 +25,7 @@ $history = $result->fetch_assoc();
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
-
+<body>
 <?php include('./includes/navbar.php') ?>
 
 <section class="top-body top-history" style="background-image: url(frontend/images/1.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">

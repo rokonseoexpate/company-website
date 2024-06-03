@@ -20,12 +20,15 @@ $title = "Google Ads";
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
+
+<body>
+<?php include "includes/navbar.php" ?>
 <!--================================photo editor sub Header section end here=======================-->
 <?php include 'includes/big-ecommerce-nav.php' ?>
 <!--================================photo editor sub Header section end here=======================-->
 
 <!--================================top-body section start here=======================-->
-<section class="top-body app_development" style="background-image: url(images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 	<div class="container ">
 		<div class="row">
 			<div class="col-md-7 ecomresp" style="z-index:500; ">
@@ -413,6 +416,33 @@ $title = "Google Ads";
 </section>
 <!--================================Thrive_Globally section end here=======================-->
 <?php
-$main_content = ob_get_clean();
-include './layouts/app.php';
+include('./includes/footer_menu.php');
 ?>
+
+<script src="frontend/js/jquery-3.5.1.js"></script>
+<script src="frontend/js/bootstrap.bundle.min.js"></script>
+<script src="frontend/js/owl.carousel.js"></script>
+<script src="frontend/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" ></script>
+
+<?php if (isset($successMessage)): ?>
+	<script>
+		iziToast.success({
+			title: 'Success',
+			position: 'topRight',
+			message: '<?php echo $successMessage; ?>',
+		});
+	</script>
+<?php endif; ?>
+
+<?php if (isset($errorMessage)): ?>
+	<script>
+		iziToast.error({
+			title: 'Error',
+			position:'topRight',
+			message: '<?php echo $errorMessage; ?>',
+		});
+	</script>
+<?php endif; ?>
+</body>
+</html>
