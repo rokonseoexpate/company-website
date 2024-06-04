@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" href="frontend/css/style.css">
 	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
@@ -36,7 +36,7 @@
 				    </button>
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
-				        	<li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
+				        	<li class="nav-item"><a class="nav-link" href="training.php"> Training</a></li>
 				        	<li class="nav-item dropdown">
 				                <a class="nav-link  dropdown-toggle" href="regular-course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
@@ -117,7 +117,7 @@
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
 						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
+						    <li class="breadcrumb-item "><a href="training.php" class="text-light">Our Training</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Website Design</li>
 						  </ol>
 						</nav>

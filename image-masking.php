@@ -10,6 +10,7 @@
 	<meta name="description" content="Seo Expate Bangladesh LTD.">
 	<meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 	<title><?php echo $title;  ?></title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 	<?php include('./includes/style.php') ?>

@@ -12,7 +12,7 @@ $title = "IT Service & Business management Specialist";
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo $title;  ?></title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 	<?php include('./includes/style.php') ?>
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>

@@ -15,7 +15,7 @@ $conn = $db->get_connection();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo $title;  ?></title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 	<?php include('./includes/style.php') ?>
 	
 	<div class="gtranslate_wrapper"></div>
@@ -40,7 +40,7 @@ $conn = $db->get_connection();
 						<p style="text-align:justify;">In the conclusion <a href="/" class="text-success">SEO Expate</a> photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then <a href="/" class="text-success">SEO Expate</a> photo editor company will help you to provide you one suitable and experienced editor person.</p>
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="free_trial.php">Free Trial</a>
+						<a type="button" href="free-trial.php">Free Trial</a>
 					</div>	
 				</div>			
 			</div>
@@ -49,7 +49,7 @@ $conn = $db->get_connection();
 	<!--================================top-body section end here=======================-->
 
 <!--================================cliping_service section start here=======================-->
-<section class="cliping_service photo_edit_all_service graphicdesigns" style="background: unset; background-image: url(images/Graphic-Design-banner.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+<section class="cliping_service photo_edit_all_service graphicdesigns" style="background: unset; background-image: url(frontend/images/Graphic-Design-banner.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6" style="z-index:500;">

@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" href="frontend/css/style.css">
 	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
@@ -44,30 +44,30 @@
 				    </button>
 				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
 				        <ul class="navbar-nav ">
-				        	<li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
+				        	<li class="nav-item"><a class="nav-link" href="training.php"> Training</a></li>
 				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="regular_course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
+				                <a class="nav-link  dropdown-toggle" href="regular-course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="website_course.php">Website</a></li>
-				                  <li><a class="dropdown-item" href="php_course.php">PHP</a></li>
-				                  <li><a class="dropdown-item" href="laravel_course.php">Laravel</a></li>
-				                  <li><a class="dropdown-item" href="aspnet_course.php">ASP.NET</a></li>
-				                  <li><a class="dropdown-item" href="python_course.php">Python</a></li>
-				                  <li><a class="dropdown-item" href="wordpress_course.php">WordPress</a></li>
-				                  <li><a class="dropdown-item" href="graphics_course.php">Graphics Design</a></li>
-				                  <li><a class="dropdown-item" href="digital_marketing_course.php">Digital Marketing</a></li>
+				                  <li><a class="dropdown-item" href="website-course.php">Website</a></li>
+				                  <li><a class="dropdown-item" href="php-course.php">PHP</a></li>
+				                  <li><a class="dropdown-item" href="laravel-course.php">Laravel</a></li>
+				                  <li><a class="dropdown-item" href="aspnet-course.php">ASP.NET</a></li>
+				                  <li><a class="dropdown-item" href="python-course.php">Python</a></li>
+				                  <li><a class="dropdown-item" href="wordpress-course.php">WordPress</a></li>
+				                  <li><a class="dropdown-item" href="graphics-course.php">Graphics Design</a></li>
+				                  <li><a class="dropdown-item" href="digital-marketing-course.php">Digital Marketing</a></li>
 				                </ul>
 				            </li>
 				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="it_traning.php" data-bs-toggle="dropdown">IT Training</a>
+				                <a class="nav-link  dropdown-toggle" href="it-training.php" data-bs-toggle="dropdown">IT Training</a>
 				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="microsoft_office_course.php"> Microsoft Office</a></li>
-				                  <li><a class="dropdown-item" href="software_development_course.php">Software Development Course</a></li>
-				                  <li><a class="dropdown-item" href="app_development_course.php">App Development Course</a></li>
-				                  <li><a class="dropdown-item" href="adobe_course.php">Adobe / Freelancing</a></li>
-				                  <li><a class="dropdown-item" href="server_administration_course.php">Network & Server Administration</a></li>
-				                  <li><a class="dropdown-item" href="it_security_course.php">IT Security, Service & Business Management</a></li>
-				                  <li><a class="dropdown-item" href="machine_learning_course.php">AI / Machine Learning / Robotics</a></li>
+				                  <li><a class="dropdown-item" href="microsoft-office-course.php"> Microsoft Office</a></li>
+				                  <li><a class="dropdown-item" href="software-development-course.php">Software Development Course</a></li>
+				                  <li><a class="dropdown-item" href="app-development-course.php">App Development Course</a></li>
+				                  <li><a class="dropdown-item" href="adobe-course.php">Adobe / Freelancing</a></li>
+				                  <li><a class="dropdown-item" href="server-administration-course.php">Network & Server Administration</a></li>
+				                  <li><a class="dropdown-item" href="it-security-course.php">IT Security, Service & Business Management</a></li>
+				                  <li><a class="dropdown-item" href="machine-learning-course.php">AI / Machine Learning / Robotics</a></li>
 				                </ul>
 				            </li>
 				        </ul>
