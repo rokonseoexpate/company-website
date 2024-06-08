@@ -41,183 +41,197 @@ $title = $branch['name'];
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
+
 <body>
-<?php include('./includes/navbar.php') ?>
+	<?php include('./includes/navbar.php') ?>
 
-<!--================================top-body section start here=======================-->
-<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">
-	<div class="container ">
-		<div class="row">
-			<div class="col-12" style="z-index:500;">
-				<div class="top_body_txt_part">
-					<h1 class="" style="font-size: 45px; line-height: 55px;"><?php echo $branch['name'] ?></h1>
-					<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================top-body section end here=======================-->
-
-<!--================================cliping_service section start here=======================-->
-<section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="col-12" style="z-index:500;">
-				<div class="breadcumb_gph d-flex">
-					<a class="text-light" href="/">
-						<p>Home</p>
-					</a>
-					<p class="text-light px-3 ">/</p>
-					<p><a href="branches.php" class="text-light">All Branch</a></p>
-					<p class="text-light px-3 ">/</p>
-					<p class="text-light"><?php echo $branch['name'] ?></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================cliping_service section end here=======================-->
-
-<!--================================all_branches_list section start here=======================-->
-<section class="all_branches_list">
-	<div class="container">
-		<div class="row">
-			<h2 class="fs-1 fw-bold text-center pb-5"><?php echo $branch['name'] ?></h2>
-			<div class="col-md-4">
-				<div class="branch-address">
-					<?php echo $branch['map'] ?>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="branch-img">
-					<img src="<?php echo 'pages/' . basename($branch['image']); ?>" alt="<?php echo $branch['name'] ?>" class="img-thumbnail">
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="branch-img">
-					<?php echo $branch['video_link'] ?>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================all_branches_list section end here=======================-->
-<!--================================Core_Team section start here=======================-->
-<section class="Core_Team allbranchlist" style="background: unset; padding-top: unset;">
-	<div class="container">
-		<div class="row">
-			<div class="Core_Team_txt pb-2">
-				<h3 class="fs-2 pb-3">Branch <span>all Employees</span></h3>
-				<hr>
-			</div>
-			<div class="Core_Team_members">
-				<div class="container mt-2">
-					<div class="row">
-						<?php
-						$qry = "SELECT * FROM employees WHERE branch_id = " . $branch['id'] . " ORDER BY priority ASC";
-						$result = mysqli_query($conn, $qry);
-
-						if ($result) {
-							while ($row = mysqli_fetch_assoc($result)) {
-						?>
-								<div class="col-md-2 col-sm-6">
-									<div class="card card-block shadow">
-										<img src="<?php
-													$imagePath = $row['image'];
-													echo "pages/". $imagePath; ?>" alt="<?php echo $row['name']; ?>" class="img-thumbnail">
-										<div class="card-body">
-											<h5 class="card-title fs-6"><?php echo $row['name']; ?></h5>
-											<p class="card-text fs-6"><?php echo $row['designation']; ?></p>
-										</div>
-									</div>
-								</div>
-						<?php
-							}
-						} else {
-							echo "Error: " . mysqli_error($conn);
-						}
-						?>
+	<!--================================top-body section start here=======================-->
+	<section class="top-body app_development phpdevelopment" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 60px; padding-top: 120px;">
+		<div class="container ">
+			<div class="row">
+				<div class="col-12" style="z-index:500;">
+					<div class="top_body_txt_part">
+						<h1 class="" style="font-size: 45px; line-height: 55px;"><?php echo $branch['name'] ?></h1>
+						<p style="margin-top: -35px; text-align: justify;">Stay connected with <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. </p>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================Core_Team section end here=======================-->
+	</section>
+	<!--================================top-body section end here=======================-->
 
-<!--================================top_ready_start section start here=======================-->
-<section class="top_ready_start">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="top_ready_start_txt">
-					<h3>We can build your story</h3>
-					<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-				</div>
-				<div class="top-body-button pt-5">
-					<a type="button" href="contact.php">Get In Touch</a>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="top_ready_start_img text-left">
-					<img src="frontend/images/95991_prev_ui.png" alt="SEO Expate Bangladesh LTD">
+	<!--================================cliping_service section start here=======================-->
+	<section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0;">
+		<div class="container">
+			<div class="row">
+				<div class="col-12" style="z-index:500;">
+					<div class="breadcumb_gph d-flex">
+						<a class="text-light" href="/">
+							<p>Home</p>
+						</a>
+						<p class="text-light px-3 ">/</p>
+						<p><a href="branches.php" class="text-light">All Branch</a></p>
+						<p class="text-light px-3 ">/</p>
+						<p class="text-light"><?php echo $branch['name'] ?></p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================top_ready_start section end here=======================-->
+	</section>
+	<!--================================cliping_service section end here=======================-->
 
-
-<!--================================Thrive_Globally section start here=======================-->
-<section class="PAY_MENT" style="padding: 20px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="PAY_IMG">
-				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="SEO Expate Bangladesh LTD" width="100%">
+	<!--================================all_branches_list section start here=======================-->
+	<section class="all_branches_list">
+		<div class="container">
+			<div class="row">
+				<h2 class="fs-1 fw-bold text-center pb-5"><?php echo $branch['name'] ?></h2>
+				<div class="col-md-4">
+					<div class="branch-address">
+						<div class="iframe-maps">
+							<iframe src="<?php echo $branch['map']?>" width="350" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="branch-img">
+						<img src="<?php echo 'pages/' . basename($branch['image']); ?>" alt="<?php echo $branch['name'] ?>" class="img-thumbnail">
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="branch-img">
+					<iframe width="100%" height="315" src="<?php echo $branch['video_link'] ?>" title="<?php echo $branch['name'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================Thrive_Globally section end here=======================-->
+	</section>
+	<!--================================all_branches_list section end here=======================-->
+	<!--================================Core_Team section start here=======================-->
+	<section class="Core_Team allbranchlist" style="background: unset; padding-top: unset;">
+		<div class="container">
+			<div class="row">
+				<div class="Core_Team_txt pb-2">
+					<h3 class="fs-2 pb-3">Branch <span>all Employees</span></h3>
+					<hr>
+				</div>
+				<div class="Core_Team_members">
+					<div class="container mt-2">
+						<div class="row">
+							<?php
+							$qry = "SELECT * FROM employees WHERE branch_id = " . $branch['id'] . " ORDER BY priority ASC";
+							$result = mysqli_query($conn, $qry);
+
+							if ($result) {
+								while ($row = mysqli_fetch_assoc($result)) {
+							?>
+									<div class="col-md-2 col-sm-6">
+										<div class="card card-block shadow">
+											<img src="<?php
+														$imagePath = $row['image'];
+														echo "pages/" . $imagePath; ?>" alt="<?php echo $row['name']; ?>" class="img-thumbnail">
+											<div class="card-body">
+												<h5 class="card-title fs-6"><?php echo $row['name']; ?></h5>
+												<p class="card-text fs-6"><?php echo $row['designation']; ?></p>
+											</div>
+										</div>
+									</div>
+							<?php
+								}
+							} else {
+								echo "Error: " . mysqli_error($conn);
+							}
+							?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================Core_Team section end here=======================-->
+
+	<!--================================top_ready_start section start here=======================-->
+	<section class="top_ready_start">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="top_ready_start_txt">
+						<h3>We can build your story</h3>
+						<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
+					</div>
+					<div class="top-body-button pt-5">
+						<a type="button" href="contact.php">Get In Touch</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="top_ready_start_img text-left">
+						<img src="frontend/images/95991_prev_ui.png" alt="SEO Expate Bangladesh LTD">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================top_ready_start section end here=======================-->
+
+
+	<!--================================Thrive_Globally section start here=======================-->
+	<section class="PAY_MENT" style="padding: 20px 0;">
+		<div class="container">
+			<div class="row">
+				<div class="PAY_IMG">
+					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="SEO Expate Bangladesh LTD" width="100%">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================Thrive_Globally section end here=======================-->
 
 
 
-<?php
-include('./includes/footer_menu.php');
-?>
+	<?php
+	include('./includes/footer_menu.php');
+	?>
 
 
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="frontend/js/jquery-3.5.1.js"></script>
+	<script src="frontend/js/bootstrap.bundle.min.js"></script>
+	<script src="frontend/js/owl.carousel.js"></script>
+	<script src="frontend/js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 
-<?php if (isset($successMessage)): ?>
+	<?php if (isset($successMessage)) : ?>
+		<script>
+			iziToast.success({
+				title: 'Success',
+				position: 'topRight',
+				message: '<?php echo $successMessage; ?>',
+			});
+		</script>
+	<?php endif; ?>
+
+	<?php if (isset($errorMessage)) : ?>
+		<script>
+			iziToast.error({
+				title: 'Error',
+				position: 'topRight',
+				message: '<?php echo $errorMessage; ?>',
+			});
+		</script>
+	<?php endif; ?>
+
 	<script>
+		function updateMap() {
+			const latitude = document.getElementById('latitude').value;
+			const longitude = document.getElementById('longitude').value;
+			const mapFrame = document.getElementById('mapFrame');
 
-		iziToast.success({
-			title: 'Success',
-			position: 'topRight',
-			message: '<?php echo $successMessage; ?>',
-		});
+			const newSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0193241947825!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581f8a6b6f11d%3A0xe8b37cb0db0a3062!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2s!4v1512000000000`;
+
+			mapFrame.src = newSrc;
+		}
 	</script>
-<?php endif; ?>
-
-<?php if (isset($errorMessage)): ?>
-	<script>
-		iziToast.error({
-			title: 'Error',
-			position:'topRight',
-			message: '<?php echo $errorMessage; ?>',
-		});
-	</script>
-<?php endif; ?>
-
-
 </body>
+
 </html>

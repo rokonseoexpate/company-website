@@ -7,7 +7,8 @@ $conn = $db->get_connection();
 
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
-    $map = $_POST['map'];
+    $latitude = $_POST['latitude'];
+    $longitude = $_POST['longitude'];
     $video_link = $_POST['video_link'];
     $address = $_POST['address'];
     $alt_tag = $_POST['alt_tag'];
@@ -27,7 +28,7 @@ if (isset($_POST['submit'])) {
     }
 
     // Insert data into database
-    $insert_query = "INSERT INTO branches (name, image, map, address, video_link,alt_tag, alt_description ) VALUES ('$name', '$image_path',' $map', '$address', '$video_link', '$alt_tag', '$alt_description')";
+    $insert_query = "INSERT INTO branches (name, image, longitude,latitude,  address, video_link,alt_tag, alt_description ) VALUES ('$name', '$image_path',' $longitude', '$latitude' , '$address', '$video_link', '$alt_tag', '$alt_description')";
 
     // Execute query
     if (mysqli_query($conn, $insert_query)) {
@@ -61,18 +62,22 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="form-group">
                         <label for="image">Image <span class="text-danger">* </span></label>
                         <input type="file" class="form-control dropify" id="image" name="image" placeholder="image" required>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="map">Map  <span class="text-warning">( width="400" height="300" )</span></label>
-                        <textarea name="map" placeholder="Map" class="form-control" id="" cols="5" rows="5" ></textarea>
+                        <label for="map">Video Link</label>
+                        <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="6" required></textarea>
                     </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="map">Map</label>
+                    <textarea name="map" id="" cols="5" rows="6"  class="form-control" required></textarea>
                 </div>
 
                 <div class="col-md-6">
@@ -82,12 +87,6 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="map">Video Link  <span class="text-warning">( width="100%" height="315" )</span></label>
-                        <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="5" ></textarea>
-                    </div>
-                </div>
                 
                 <div class="col-md-12 mt-4">
                     <div class="form-group">

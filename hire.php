@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result === TRUE) {
         $referrer = $_SERVER['HTTP_REFERER'];
         echo "<script>alert('successfully submited');</script>";
-        header("Location: contact.php");
+        header("Location: hire.php");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
