@@ -73,7 +73,7 @@ if (isset($_GET['delete_id'])) {
                     </td>
                     <td class="text-right">
                         <a href="portfolio-projects-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
-                        <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this web project?')">Delete</a>
+                        <a href="?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this web project?')">Delete</a>
                     </td>
                 </tr>
                 <?php

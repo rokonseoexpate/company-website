@@ -1,19 +1,20 @@
 <?php
-    require_once 'config/dbconnect.php';
-    $db = new DB_con();
-    $conn = $db->get_connection();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="Title" content="This is the my site">
 	<meta name="description" content="This is the my site">
-    <meta name="keywords" content="seoebl, seoexpate">
+	<meta name="keywords" content="seoebl, seoexpate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Web Development</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
+
 	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
 	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -22,45 +23,56 @@
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
+	<script>
+		window.gtranslateSettings = {
+			"default_language": "en",
+			"native_language_names": true,
+			"detect_browser_language": true,
+			"url_structure": "sub_domain",
+			"languages": ["en", "fr", "de", "it", "es"],
+			"wrapper_selector": ".gtranslate_wrapper",
+			"horizontal_position": "left",
+			"vertical_position": "bottom"
+		}
+	</script>
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
 
-<!--================================Header section start here=======================-->
-<?php include('./includes/navbar.php') ?>
-<!--================================Header section end here=======================-->
+	<!--================================Header section start here=======================-->
+	<?php include('./includes/navbar.php') ?>
+	<!--================================Header section end here=======================-->
 	<!--================================web_service section start here=======================-->
-	<section class="web_service text-light">		
+	<section class="web_service text-light">
 		<div class="container ">
-		    <div class="row">
-		    	<div class="top_about_us_txt pt-5">
+			<div class="row">
+				<div class="top_about_us_txt pt-5">
 					<div class="top_about_us_txt" style="z-index:500;">
-			    		<nav aria-label="breadcrumb">
-						  <ol class="breadcrumb breadcumb_gph">
-						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item active text-light" aria-current="page">Web Development</li>
-						  </ol>
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb breadcumb_gph">
+								<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+								<li class="breadcrumb-item active text-light" aria-current="page">Web Development</li>
+							</ol>
 						</nav>
-					</div>	
+					</div>
 				</div>
-		    	<div class="col-md-6" style="z-index:500;">
-		    		<div class="top_body_txt_part">						
-						<h4>We have Premium Website Development Services Empowering Business Growth With Professionalism</h4>		
+				<div class="col-md-6" style="z-index:500;">
+					<div class="top_body_txt_part">
+						<h4>We have Premium Website Development Services Empowering Business Growth With Professionalism</h4>
 					</div>
 					<div class="button pt-5">
 						<a href="contact.php" class="text-light">Contact Us</a>
-					</div>	
+					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="web_service_img">
 						<img src="frontend/images/iPhone-App-Screen-Mockups_prev_ui.png" alt="Web Development " description="Web Development">
 					</div>
-				</div>			
-			</div>			
-		</div>				
+				</div>
+			</div>
+		</div>
 	</section>
 	<!--================================web_service section end here=======================-->
 
@@ -68,13 +80,13 @@
 	<div class="our_mission our_promise" style="background-image: url(images/Web_Development_BG.jpg); background-repeat: no-repeat; background-size: cover;">
 		<div class="container">
 			<div class="row newudcode">
-			<h2 class="text-center pb-5">Why We Are The Best Web Development Company In Bangladesh?</h2>								
-				<div class="col-md-6">					
+				<h2 class="text-center pb-5">Why We Are The Best Web Development Company In Bangladesh?</h2>
+				<div class="col-md-6">
 					<p style="text-align: justify;"><a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd is a leading IT company and we are known as the best Web Development <a href="/" class="text-success">Company</a> in Bangladesh. Here, our web development team has years of experience in creating high-performance websites. We are updated with the latest development innovations therefore we can give you world-class services. Hence, we can say that no matter which industry you are in, we can provide you with an attractive, responsive, secure, flexible, and well-structured site. Also, we ensure dynamic websites, proper development, website security, and search engine optimization. The whole operation is built around your precise specifications and requirements. Moreover, we build customized websites based on our clients’ demands and budgets. </p>
 				</div>
 				<div class="col-md-6">
 					<img src="frontend/images/Best-Website-Design-Company-in-Bangladesh_prev_ui.png" alt="Web Development " description="Web Development" class="img-fluid">
-				</div>				
+				</div>
 			</div>
 		</div>
 	</div>
@@ -91,47 +103,47 @@
 				<div class="col-md-3 pt-5">
 					<a href="#web-portfolio">
 						<div class="card">
-				      		<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Web Development " description="Web Development">
-				      		<div class="card-body pb-4">
-				        		<h5 class="card-title">Ecommerce Website</h5>
-				        		<p class="card-text">A website that can properly manage all kinds of products you want to sell. Help your customers to purchase easily through eCommerce sites.</p>
-				        		<span>&nbsp</span>
-				      		</div>
-				    	</div>
+							<img src="frontend/images/ecommerce-website2.jpg" class="card-img-top" alt="Web Development " description="Web Development">
+							<div class="card-body pb-4">
+								<h5 class="card-title">Ecommerce Website</h5>
+								<p class="card-text">A website that can properly manage all kinds of products you want to sell. Help your customers to purchase easily through eCommerce sites.</p>
+								<span>&nbsp</span>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-md-3 pt-5">
 					<a href="#web-portfolio">
 						<div class="card hover-zoom">
-				      		<img src="frontend/images/corporate-website2.jpg" class="card-img-top" alt="Web Development " description="Web Development">
-				      		<div class="card-body pb-5">
-				        		<h5 class="card-title">Corporate Website</h5>
-				        		<p class="card-text">Maintain your business and other corporate body through a strong corporate website that upholds an official outlook. Make it easy, make it official.</p>
-				      		</div>
-				    	</div>
+							<img src="frontend/images/corporate-website2.jpg" class="card-img-top" alt="Web Development " description="Web Development">
+							<div class="card-body pb-5">
+								<h5 class="card-title">Corporate Website</h5>
+								<p class="card-text">Maintain your business and other corporate body through a strong corporate website that upholds an official outlook. Make it easy, make it official.</p>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-md-3 pt-5">
 					<a href="#web-portfolio">
 						<div class="card">
-				      		<img src="frontend/images/Bloging-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
-				      		<div class="card-body pb-5">
-				        		<h5 class="card-title">Blog / Portfolio Website</h5>
-				        		<p class="card-text">Publish all your writings and personal experience through a nice-looking blog/portfolio website. Give your readers an amazing reading environment.</p>
-				      		</div>
-				    	</div>
+							<img src="frontend/images/Bloging-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
+							<div class="card-body pb-5">
+								<h5 class="card-title">Blog / Portfolio Website</h5>
+								<p class="card-text">Publish all your writings and personal experience through a nice-looking blog/portfolio website. Give your readers an amazing reading environment.</p>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-md-3 pt-5">
 					<a href="#web-portfolio">
 						<div class="card">
-				      		<img src="frontend/images/education-website.jpg" class="card-img-top" v>
-				      		<div class="card-body pb-4">
-				        		<h5 class="card-title">Educational Website</h5>
-				        		<p class="card-text">Spread the proper education using an informative and learner-friendly educational website. Take the learning system to one step higher.</p>
-				        		<span>&nbsp</span>
-				      		</div>
-				    	</div>
+							<img src="frontend/images/education-website.jpg" class="card-img-top" v>
+							<div class="card-body pb-4">
+								<h5 class="card-title">Educational Website</h5>
+								<p class="card-text">Spread the proper education using an informative and learner-friendly educational website. Take the learning system to one step higher.</p>
+								<span>&nbsp</span>
+							</div>
+						</div>
 					</a>
 				</div>
 			</div>
@@ -139,45 +151,45 @@
 				<div class="col-md-3 pt-5">
 					<a href="#web-portfolio">
 						<div class="card">
-				      	<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
-				      	<div class="card-body pb-5">
-				        	<h5 class="card-title">News Website</h5>
-				        	<p class="card-text">Gather all the local and international latest news in one platform. Let your news website be an online hub of information and research.</p>
-				      	</div>
-				    </div>
+							<img src="frontend/images/news-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
+							<div class="card-body pb-5">
+								<h5 class="card-title">News Website</h5>
+								<p class="card-text">Gather all the local and international latest news in one platform. Let your news website be an online hub of information and research.</p>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-md-3 pt-5">
 					<a href="#web-portfolio">
 						<div class="card hover-zoom">
-				      	<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
-				      	<div class="card-body pb-5">
-				        	<h5 class="card-title">Entertainment Website</h5>
-				        	<p class="card-text">Make a web platform of fresh entertainment for people. Give an attractive look that fulfills your mind refreshment.</p>
-				      	</div>
-				    </div>
+							<img src="frontend/images/entertainment-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
+							<div class="card-body pb-5">
+								<h5 class="card-title">Entertainment Website</h5>
+								<p class="card-text">Make a web platform of fresh entertainment for people. Give an attractive look that fulfills your mind refreshment.</p>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-md-3 pt-5">
 					<a href="#web-portfolio">
 						<div class="card">
-				      	<img src="frontend/images/travel-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
-				      	<div class="card-body pb-5">
-				        	<h5 class="card-title">Travel Agency Website</h5>
-				        	<p class="card-text">Decorate an attractive website that represents all the traveling scopes both at home and abroad. Make sure travelers can find it easy and helpful.</p>
-				      	</div>
-				    </div>
+							<img src="frontend/images/travel-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
+							<div class="card-body pb-5">
+								<h5 class="card-title">Travel Agency Website</h5>
+								<p class="card-text">Decorate an attractive website that represents all the traveling scopes both at home and abroad. Make sure travelers can find it easy and helpful.</p>
+							</div>
+						</div>
 					</a>
 				</div>
 				<div class="col-md-3 pt-5">
 					<a href="#web-portfolio">
 						<div class="card">
-				      	<img src="frontend/images/Customize-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
-				      	<div class="card-body pb-5">
-				        	<h5 class="card-title">Custom Website</h5>
-				        	<p class="card-text">Make any kind of custom website you want. Make it simple and expressive so that it can fulfill your vision.</p>
-				      	</div>
-				    </div>
+							<img src="frontend/images/Customize-website.jpg" class="card-img-top" alt="Web Development " description="Web Development">
+							<div class="card-body pb-5">
+								<h5 class="card-title">Custom Website</h5>
+								<p class="card-text">Make any kind of custom website you want. Make it simple and expressive so that it can fulfill your vision.</p>
+							</div>
+						</div>
 					</a>
 				</div>
 			</div>
@@ -189,9 +201,9 @@
 	<div class="our_mission our_promise we_following">
 		<div class="container">
 			<div class="row updatecode">
-			<h6 class="text-center pb-5">We Believe in the Following Factors</h6>	
-			<hr>							
-				<div class="col-md-6">					
+				<h6 class="text-center pb-5">We Believe in the Following Factors</h6>
+				<hr>
+				<div class="col-md-6">
 					<p> <span><i class="fa-solid fa-circle"></i></span>Create and maintain business relationships with clients through quality support.</p>
 					<p> <span><i class="fa-solid fa-circle"></i></span>Provide international-grade IT support to corporate-level organizations.</p>
 					<p> <span><i class="fa-solid fa-circle"></i></span>Industry automation through <a href="software-development.php" class="text-success">software</a> & <a href="app-development.php" class="text-success">apps</a> to increase productivity.</p>
@@ -202,7 +214,7 @@
 				</div>
 				<div class="col-md-6">
 					<img src="frontend/images/slide4.jpg" alt="Web Development " description="Web Development" class="img-thumbnail">
-				</div>				
+				</div>
 			</div>
 		</div>
 	</div>
@@ -210,104 +222,108 @@
 
 	<!--================================explore_portfolio_tab  section start here=======================-->
 	<section class="top_body_explore_tab explore_portfolio_tab" id="web-portfolio">
-       <div class="container">
-           <div class="row">
-               	<div class="explore_txt">
-                   <div class="updatecode" style="margin-bottom: -40px;"><h6>Explore Our Portfolio</h6></div>
-                   <p>Here, we have some previous working experience we would like to share. Visit your chosen category of website, it will give you a clear view of our <a href="services.php" class="text-success">services</a>. Look through them and feel free to contact us for details.</p>                
-               	</div>
-			   <div class="explore_tabs">
-				   <div class="container py-5">
-					   <div class="row mb-5">
-						   <div class="p-5 bg-white rounded shadow mb-5">
-							   <!-- Rounded tabs -->
+		<div class="container">
+			<div class="row">
+				<div class="explore_txt">
+					<div class="updatecode" style="margin-bottom: -40px;">
+						<h6>Explore Our Portfolio</h6>
+					</div>
+					<p>Here, we have some previous working experience we would like to share. Visit your chosen category of website, it will give you a clear view of our <a href="services.php" class="text-success">services</a>. Look through them and feel free to contact us for details.</p>
+				</div>
+				<div class="explore_tabs">
+					<div class="container py-5">
+						<div class="row mb-5">
+							<div class="p-5 bg-white rounded shadow mb-5">
+								<!-- Rounded tabs -->
 
-							   <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
-								   <?php
-								   // Check database connection
-								   if (!$conn) {
-									   echo "Database connection failed: " . mysqli_connect_error();
-								   } else {
-									   $qry = "SELECT * FROM web_portfolio_categories";
-									   $result = mysqli_query($conn, $qry); // Execute the query
+								<ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
+									<?php
+									// Check database connection
+									if (!$conn) {
+										echo "Database connection failed: " . mysqli_connect_error();
+									} else {
+										$qry = "SELECT * FROM web_portfolio_categories";
+										$result = mysqli_query($conn, $qry); // Execute the query
 
-									   if ($result && mysqli_num_rows($result) > 0) {
-										   while ($row = mysqli_fetch_assoc($result)) {
-											   ?>
-											   <li class="nav-item flex-sm-fill" role="presentation">
-												   <a id="<?php echo $row['id']; ?>-tab" data-bs-toggle="pill" href="#<?php echo $row['id']; ?>" role="tab" aria-controls="<?php echo $row['id']; ?>" aria-selected="false" class="nav-link border-0 font-weight-bold<?php if ($firstTab) echo ' show active'; ?>"><?php echo $row['name']; ?></a>
-											   </li>
-											   <?php
-											   $firstTab = false;
-										   }
-									   } else {
-										   echo "No categories found.";
-									   }
-								   }
-								   ?>
-							   </ul>
-							   <div class="tab-content" id="myTabContent">
-								   <?php
-								   $firstTab = true;
-								   // Check database connection
-								   if (!$conn) {
-									   echo "Database connection failed: " . mysqli_connect_error();
-								   } else {
-									   $qry = "SELECT * FROM web_portfolios";
-									   $result = mysqli_query($conn, $qry);
+										if ($result && mysqli_num_rows($result) > 0) {
+											while ($row = mysqli_fetch_assoc($result)) {
+									?>
+												<li class="nav-item flex-sm-fill" role="presentation">
+													<a id="<?php echo $row['id']; ?>-tab" data-bs-toggle="pill" href="#<?php echo $row['id']; ?>" role="tab" aria-controls="<?php echo $row['id']; ?>" aria-selected="false" class="nav-link border-0 font-weight-bold<?php if ($firstTab) echo ' show active'; ?>"><?php echo $row['name']; ?></a>
+												</li>
+									<?php
+												$firstTab = false;
+											}
+										} else {
+											echo "No categories found.";
+										}
+									}
+									?>
+								</ul>
 
-									   if ($result && mysqli_num_rows($result) > 0) {
-										   while ($row = mysqli_fetch_assoc($result)) {
-											   ?>
-											   <div id="<?php echo $row['category_id']; ?>" role="tabpanel" aria-labelledby="<?php echo $row['category_id']; ?>-tab" class="tab-pane fade px-4 py-5<?php if ($firstTab) echo ' show active'; ?>">
-												   <div class="row">
-													   <?php
-													   // Check if category_id is not empty
-													   if (!empty($row['category_id'])) {
-														   $qryItems = "SELECT * FROM web_portfolios WHERE category_id = {$row['category_id']}";
-														   $resultItems = mysqli_query($conn, $qryItems);
+								
+								<div class="tab-content" id="myTabContent">
+									<?php
+									$firstTab = true;
+									// Check database connection
+									if (!$conn) {
+										echo "Database connection failed: " . mysqli_connect_error();
+									} else {
+										$qry = "SELECT * FROM web_portfolios";
+										$result = mysqli_query($conn, $qry);
 
-														   if ($resultItems && mysqli_num_rows($resultItems) > 0) {
-															   while ($item = mysqli_fetch_assoc($resultItems)) {
-																   ?>
-																   <div class="col-md-3 pt-5">
-																	   <a href="<?php echo $item['link']; ?>">
-																		   <div class="card" >
-																			   <img src="<?php echo 'uploads/' . basename($item['image']); ?>" class="card-img-top" alt="<?php echo $item['title']; ?>" description="<?php echo $item['link']; ?>">
-																			   <div class="card-body">
-																				   <h5 class="card-title pb-3"><?php echo $item['title']; ?></h5>
-																				   <a href="<?php echo $item['link']; ?>" class="btn pt-2">Live Preview</a>
-																			   </div>
-																		   </div>
-																	   </a>
-																   </div>
-																   <?php
-															   }
-														   } else {
-															   echo "No portfolio items found for this category.";
-														   }
-													   } else {
-														   echo "Category ID is empty.";
-													   }
-													   ?>
-												   </div>
-											   </div>
-											   <?php
-											   $firstTab = false;
-										   }
-									   } else {
-										   echo "No portfolios found.";
-									   }
-								   }
-								   ?>
-							   </div>
+										if ($result && mysqli_num_rows($result) > 0) {
+											while ($row = mysqli_fetch_assoc($result)) {
+									?>
+												<div id="<?php echo $row['category_id']; ?>" role="tabpanel" aria-labelledby="<?php echo $row['category_id']; ?>-tab" class="tab-pane fade px-4 py-5<?php if ($firstTab) echo ' show active'; ?>">
+													<div class="row">
+														<?php
+														// Check if category_id is not empty
+														if (!empty($row['category_id'])) {
+															$qryItems = "SELECT * FROM web_portfolios WHERE category_id = {$row['category_id']}";
+															$resultItems = mysqli_query($conn, $qryItems);
 
-						   </div>
-					   </div>
-				   </div>
-			   </div>
-       </div>
-   </section>
+															if ($resultItems && mysqli_num_rows($resultItems) > 0) {
+																while ($item = mysqli_fetch_assoc($resultItems)) {
+														?>
+																	<div class="col-md-3 pt-5">
+																		<a href="<?php echo $item['link']; ?>">
+																			<div class="card">
+																				<img src="<?php echo 'uploads/' . basename($item['image']); ?>" class="card-img-top" alt="<?php echo $item['title']; ?>" description="<?php echo $item['link']; ?>">
+																				<div class="card-body">
+																					<h5 class="card-title pb-3"><?php echo $item['title']; ?></h5>
+																					<a href="<?php echo $item['link']; ?>" class="btn pt-2">Live Preview</a>
+																				</div>
+																			</div>
+																		</a>
+																	</div>
+														<?php
+																}
+															} else {
+																echo "No portfolio items found for this category.";
+															}
+														} else {
+															echo "Category ID is empty.";
+														}
+														?>
+													</div>
+												</div>
+									<?php
+												$firstTab = false;
+											}
+										} else {
+											echo "No portfolios found.";
+										}
+									}
+									?>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
 	<!--================================explore_portfolio_tab section end here=======================-->
 
 	<!--================================what_you_need section start here=======================-->
@@ -315,7 +331,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="what_you_need_txt ">
-					<div class="newudcode"><h6>What Kinds of Website Do You Need?</h6></div>
+					<div class="newudcode">
+						<h6>What Kinds of Website Do You Need?</h6>
+					</div>
 					<p>What do you expect to get from your websites? <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd has various types of web development services from which you can choose your desired one. In addition, you need to have a website that properly represents your company and all buy and sell functionality. A well-structured website will represent your company to the world and also increase your sales rapidly. Depending on the category and functionality, the technology changes, but don’t worry we have a great command over technology. Therefore, we only need your requirements and rest is our responsibility.</p>
 					<h5 class="fs-4">E-Commerce Website:</h5>
 					<p>Our E-commerce website service will make your online business easier. It will allow your businesses to reach a wide range of potential customers from your targeted country. Also, we ensure the best security system and enable a safer transaction method. E-commerce websites typically have features like Product Catalogs, Shopping carts, Search and Filter Options, Order Management, Reviews and Ratings, etc. In addition, our responsive web design will give a good user experience. Our website is suitable for integrating third-party services. Moreover, we will establish a proper data analytics and Reporting feature that will help you to fetch customer details. </p>
@@ -379,96 +397,97 @@
 	<section class="accordion_service">
 		<div class="container">
 			<div class="row">
-			    <div id="accordion">
-			      <div class="accordion-item">
-			        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			         How long does it take to create a new website?
-			        </h5>
-			        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
-			          <div class="accordion-body">
-			            Every website is unique from the other. For that, the time depends on the requirements and also on the complexity of the site. The more functions you want to add to the site the more time it will take to develop. Besides, we focus on both time and quality so that we can provide the best service within the timeline.
-			          </div>
-			        </div>
-			      </div>
-			      <div class="accordion-item">
-			        <h5 class="accordion-header collapsed" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          What is the price of a custom website?
-			        </h5>
-			        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
-			          <div class="accordion-body">
-			           The prices of our customer website vary from 20,000 to 40,000 Taka, depending on the requirements. Our pricing is very affordable in comparison to the market. Moreover, the price can be varied according to the complexity of the site. Contact us through the hotline, email, or WhatsApp number for more information. 
-			          </div>
-			        </div>
-			      </div>
-			      <div class="accordion-item">
-			        <h5 class="accordion-header collapsed" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			          What do you offer after the website is created?
-			        </h5>
-			        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
-			          <div class="accordion-body">
-			            First of all, we will give you all kinds of support after delivering the website. In addition, we have many digital marketing services like Search Engine Optimization, Social Media Marketing, Google Ads, etc. Moreover, we have professional content writers and graphic designers. Therefore, we can provide you with a complete service from the web design to rank on search engines. 
-			          </div>
-			        </div>
-			      </div>
-			      <div class="accordion-item">
-			        <h5 class="accordion-header collapsed" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-			          What are the technologies you use to develop a website?
-			        </h5>
-			        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
-			          <div class="accordion-body">
-			           We design and develop different websites with different technologies as per the client's requirements. Here, we use PHP, Laravel, WordPress, Node.js, Jquery, Javascript, HTML, CSS, and a wide range of other technologies. dditionally, if you are not sure about the technology our expert developers will help you by analyzing your requirements. SEO Expate Bangladesh Ltd is a famous company for providing the best quality websites in the local and global market.  
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-		    </div>
-		  </div>
+				<div id="accordion">
+					<div class="accordion-item">
+						<h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							How long does it take to create a new website?
+						</h5>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+							<div class="accordion-body">
+								Every website is unique from the other. For that, the time depends on the requirements and also on the complexity of the site. The more functions you want to add to the site the more time it will take to develop. Besides, we focus on both time and quality so that we can provide the best service within the timeline.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							What is the price of a custom website?
+						</h5>
+						<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+							<div class="accordion-body">
+								The prices of our customer website vary from 20,000 to 40,000 Taka, depending on the requirements. Our pricing is very affordable in comparison to the market. Moreover, the price can be varied according to the complexity of the site. Contact us through the hotline, email, or WhatsApp number for more information.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							What do you offer after the website is created?
+						</h5>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+							<div class="accordion-body">
+								First of all, we will give you all kinds of support after delivering the website. In addition, we have many digital marketing services like Search Engine Optimization, Social Media Marketing, Google Ads, etc. Moreover, we have professional content writers and graphic designers. Therefore, we can provide you with a complete service from the web design to rank on search engines.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h5 class="accordion-header collapsed" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+							What are the technologies you use to develop a website?
+						</h5>
+						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+							<div class="accordion-body">
+								We design and develop different websites with different technologies as per the client's requirements. Here, we use PHP, Laravel, WordPress, Node.js, Jquery, Javascript, HTML, CSS, and a wide range of other technologies. dditionally, if you are not sure about the technology our expert developers will help you by analyzing your requirements. SEO Expate Bangladesh Ltd is a famous company for providing the best quality websites in the local and global market.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<!--================================accordion section end here=======================-->
 
 	<!--================================top_ready_start section start here=======================-->
 	<section class="top_ready_start">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="top_ready_start_txt">
-                        <h3>We can build your story</h3>
-                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-                    </div>
-                    <div class="top-body-button pt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="top_ready_start_txt">
+						<h3>We can build your story</h3>
+						<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
+					</div>
+					<div class="top-body-button pt-5">
 						<a type="button" href="contact.php">Get In Touch</a>
 					</div>
-                </div>
-                <div class="col-md-6">
-                    <div class="top_ready_start_img text-left">
-                        <img src="frontend/images/95991_prev_ui.png" alt="We can build your story " description="We can build your story">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> 
+				</div>
+				<div class="col-md-6">
+					<div class="top_ready_start_img text-left">
+						<img src="frontend/images/95991_prev_ui.png" alt="We can build your story " description="We can build your story">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--================================top_ready_start section end here=======================-->
 
 	<!--================================Thrive_Globally section start here=======================-->
 	<section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                 	<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description="payment" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
+		<div class="container">
+			<div class="row">
+				<div class="PAY_IMG">
+					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description="payment" width="100%">
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--================================Thrive_Globally section end here=======================-->
-<!--================================accordion section end here=======================-->
-<!--===========================footer part start===================================-->
-<?php include('./includes/footer_menu.php') ?>
-<!--===========================footer part end===================================-->
+	<!--================================accordion section end here=======================-->
+	<!--===========================footer part start===================================-->
+	<?php include('./includes/footer_menu.php') ?>
+	<!--===========================footer part end===================================-->
 
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
+	<script src="frontend/js/jquery-3.5.1.js"></script>
+	<script src="frontend/js/bootstrap.bundle.min.js"></script>
+	<script src="frontend/js/owl.carousel.js"></script>
+	<script src="frontend/js/main.js"></script>
 
 </body>
+
 </html>
