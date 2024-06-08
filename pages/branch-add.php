@@ -68,19 +68,16 @@ if (isset($_POST['submit'])) {
                         <input type="file" class="form-control dropify" id="image" name="image" placeholder="image" required>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="map">Latitude</label>
-                        <input type="text" name="latitude" class="form-control" placeholder="Latitude">
+                        <label for="map">Video Link</label>
+                        <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="6" required></textarea>
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="map">Longitude</label>
-                        <input type="text" name="longitude" class="form-control" placeholder="Longitude">
-                    </div>
+                <div class="form-group col-md-6">
+                    <label for="map">Map</label>
+                    <textarea name="map" id="" cols="5" rows="6"  class="form-control" required></textarea>
                 </div>
 
                 <div class="col-md-6">
@@ -90,12 +87,6 @@ if (isset($_POST['submit'])) {
                     </div>
                 </div>
 
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="map">Video Link  <span class="text-warning">( width="100%" height="315" )</span></label>
-                        <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="5" ></textarea>
-                    </div>
-                </div>
                 
                 <div class="col-md-12 mt-4">
                     <div class="form-group">

@@ -87,24 +87,9 @@ $title = $branch['name'];
 				<h2 class="fs-1 fw-bold text-center pb-5"><?php echo $branch['name'] ?></h2>
 				<div class="col-md-4">
 					<div class="branch-address">
-						<!-- <iframe id="map-iframe" width="357" height="482" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-
-						<iframe width="300" height="170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q='24.78250648976425','89.3925761814906'&hl=es&z=14&amp;output=embed">
-						</iframe>
-
-
-
-						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.953169801306!2d<?php echo $branch['longitude'] ?>!3d<?php echo $branch['latitude'] ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085817e663f90d1%3A0x1a74e7ccf0c00b4!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1632789246122!5m2!1sen!2sus" width="357" height="482" style="border:0;" loading="lazy">
-						</iframe> -->
-
-						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0628389270836!2d<?php echo $branch['longitude'] ?>!3d<?php echo $branch['latitude'] ?>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQ2JzIyLjEiTiA4OcKwMjMnNDguMyJF!5e0!3m2!1sen!2sus!4v1632789246122!5m2!1sen!2sus" width="357" height="482"  style="border:0;" allowfullscreen="" loading="lazy">
-						</iframe> -->
-
-						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.0628389270836!2d89.40828215530587!3d24.775116291582375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjQuNzcyODE0LCA4OS4zOTY3MzgzODUyMDg5!5e0!3m2!1sen!2sus!4v1632789246122!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-						</iframe> -->
-						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14488.774990656675!2d89.3925761814906!3d24.78250648976425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdad0064f6b97b%3A0xb7f18b18d8781d6b!2z4Kam4KeB4Kaw4KeB4Kay4Ka_4Kef4Ka-IOCmrOCmvuCmsuCmv-CmleCmviDgprjgprDgppXgpr7gprDgpr8g4Kaq4KeN4Kaw4Ka-4Kal4Kau4Ka_4KaVIOCmrOCmv-CmpuCnjeCmr-CmvuCmsuCnnw!5e0!3m2!1sen!2sbd!4v1717672303289!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-						<!-- 
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14488.774990656675!2d89.3925761814906!3d24.78250648976425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc533666f61d9f%3A0x58afb9b4c0203cb7!2sTMSS%20CNG%20and%20Gasoline%20Station!5e0!3m2!1sen!2sbd!4v1717672986514!5m2!1sen!2sbd" width="357" height="482" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+						<div class="iframe-maps">
+							<iframe src="<?php echo $branch['map']?>" width="350" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -114,7 +99,8 @@ $title = $branch['name'];
 				</div>
 				<div class="col-md-4">
 					<div class="branch-img">
-						<?php echo $branch['video_link'] ?>
+					<iframe width="100%" height="315" src="<?php echo $branch['video_link'] ?>" title="<?php echo $branch['name'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						
 					</div>
 				</div>
 			</div>
@@ -236,18 +222,15 @@ $title = $branch['name'];
 	<?php endif; ?>
 
 	<script>
-		// Get the iframe element
-		var iframe = document.getElementById('map-iframe');
+		function updateMap() {
+			const latitude = document.getElementById('latitude').value;
+			const longitude = document.getElementById('longitude').value;
+			const mapFrame = document.getElementById('mapFrame');
 
-		// Set the latitude and longitude values
-		var lat = 24.73776226052785; // Replace with your dynamic latitude value
-		var lon = 89.45282823416454; // Replace with your dynamic longitude value
+			const newSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0193241947825!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581f8a6b6f11d%3A0xe8b37cb0db0a3062!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2s!4v1512000000000`;
 
-		// Construct the new src URL
-		var newSrc = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14488.774990656675!2d' + lon + '!3d' + lat + '!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc533666f61d9f%3A0x58afb9b4c0203cb7!2sTMSS%20CNG%20and%20Gasoline%20Station!5e0!3m2!1sen!2sbd!4v1717672986514!5m2!1sen!2sbd';
-
-		// Set the new src attribute
-		iframe.src = newSrc;
+			mapFrame.src = newSrc;
+		}
 	</script>
 </body>
 

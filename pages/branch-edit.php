@@ -16,8 +16,7 @@ $row = mysqli_fetch_assoc($result);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $name = $_POST['name'];
-    $latitude = $_POST['latitude'];
-    $longitude = $_POST['longitude'];
+    $map = $_POST['map'];
     $address = $_POST['address'];
     $video_link = $_POST['video_link'];
     $alt_tag = $_POST['alt_tag'];
@@ -43,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Update query
     $id = $_GET['id'];
-    $sql = "UPDATE branches SET name = '$sanitized_name', longitude = '$longitude', latitude = '$latitude', image = '$image_path', video_link = '$sanitized_video_link', address = '$sanitized_address', alt_tag='$alt_tag',  alt_description='$alt_description' WHERE id = $id";
+    $sql = "UPDATE branches SET name = '$sanitized_name', map = '$map', image = '$image_path', video_link = '$sanitized_video_link', address = '$sanitized_address', alt_tag='$alt_tag',  alt_description='$alt_description' WHERE id = $id";
 
     // Execute query
     if (mysqli_query($conn, $sql)) {
@@ -90,21 +89,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="map">Video <span class="text-warning">( width="100%" height="315" )</span></label>
+                        <label for="map">Video Link</label>
                         <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="5" required><?php echo $row['video_link']; ?></textarea>
                     </div>
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="map">Latitude</label>
-                    <input type="text" name="latitude" value="<?php echo $row['latitude']?>"  class="form-control" placeholder="Latitude">
-                </div>
-
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="map">Longitude</label>
-                        <input type="text" name="longitude" value="<?php echo $row['longitude']?>" class="form-control" placeholder="Longitude">
-                    </div>
+                    <label for="map">Map</label>
+                    <textarea name="map" id="" cols="5" rows="6"  class="form-control" required><?php echo $row['map'] ?></textarea>
                 </div>
 
                 <div class="col-md-12 mt-4">
@@ -125,10 +117,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <button type="submit" class="btn btn-primary my-3">Update</button>
         </form>
     </div>
-
 </div>
-
 <?php
+
 
 $content = ob_get_clean();
 include '../layouts/master.php';
