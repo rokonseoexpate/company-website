@@ -16,7 +16,8 @@ $row = mysqli_fetch_assoc($result);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $name = $_POST['name'];
-    $map = $_POST['map'];
+    $latitude = $_POST['latitude'];
+    $longitude = $_POST['longitude'];
     $address = $_POST['address'];
     $video_link = $_POST['video_link'];
     $alt_tag = $_POST['alt_tag'];
@@ -42,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Update query
     $id = $_GET['id'];
-    $sql = "UPDATE branches SET name = '$sanitized_name', map = '$sanitized_map', image = '$image_path', video_link = '$sanitized_video_link', address = '$sanitized_address', alt_tag='$alt_tag',  alt_description='$alt_description' WHERE id = $id";
+    $sql = "UPDATE branches SET name = '$sanitized_name', longitude = '$longitude', latitude = '$latitude', image = '$image_path', video_link = '$sanitized_video_link', address = '$sanitized_address', alt_tag='$alt_tag',  alt_description='$alt_description' WHERE id = $id";
 
     // Execute query
     if (mysqli_query($conn, $sql)) {
@@ -54,11 +55,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit();
 }
 
-
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
-
     <div class="card px-3">
         <div class="d-flex  justify-content-between align-items-center">
             <h1>Update Branch</h1>
@@ -68,7 +67,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="row">
                 <div class="form-group col-md-12">
                     <label for="name">Branch</label>
-
                     <input type="text" class="form-control" id="name" name="name" placeholder="Branch" value="<?php echo $row['name']; ?>">
                 </div>
 
@@ -76,11 +74,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="image">Image</label>
                     <input type="file" class="form-control-file dropify" id="image" name="image" placeholder="image">
                 </div>
+
                 <div class="form-group col-md-6">
                     <label for="image">Existing Image</label>
                     <br>
                     <img src="<?php echo $row['image']; ?>" class="img-fluid" width="200px" alt="">
                 </div>
+
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="map">Address</label>
@@ -94,9 +94,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <textarea name="video_link" placeholder="video_link" class="form-control" id="" cols="5" rows="5" required><?php echo $row['video_link']; ?></textarea>
                     </div>
                 </div>
+
                 <div class="form-group col-md-6">
-                    <label for="map">Map <span class="text-warning">( width="400" height="300" )</span></label>
-                    <textarea type="text" class="form-control" name="map" placeholder="Map" cols="5" rows="5"><?php echo $row['map']; ?></textarea>
+                    <label for="map">Latitude</label>
+                    <input type="text" name="latitude" value="<?php echo $row['latitude']?>"  class="form-control" placeholder="Latitude">
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="map">Longitude</label>
+                        <input type="text" name="longitude" value="<?php echo $row['longitude']?>" class="form-control" placeholder="Longitude">
+                    </div>
                 </div>
 
                 <div class="col-md-12 mt-4">
@@ -112,7 +120,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <textarea id="shortDescription" name="alt_description" placeholder="Description" class="form-control" cols="30" rows="10"><?php echo $row['alt_description'] ?></textarea>
                     </div>
                 </div>
-
 
             </div>
             <button type="submit" class="btn btn-primary my-3">Update</button>
