@@ -15,6 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['title'];
     $category_id = $_POST['category_id'];
     $link = $_POST['link'];
+    $alt_tag = $_POST['alt_tag']; // New field for alt tag
+    $alt_description = $_POST['alt_description']; // New field for alt text
 
     // Check if a new image is uploaded
     if ($_FILES["image"]["size"] > 0) {
@@ -37,9 +39,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_category_id = mysqli_real_escape_string($conn, $category_id);
     $sanitized_link = mysqli_real_escape_string($conn, $link);
     $sanitized_image_path = mysqli_real_escape_string($conn, $image_path);
+    $sanitized_alt_tag = mysqli_real_escape_string($conn, $alt_tag); // Sanitize alt tag
+    $sanitized_alt_description = mysqli_real_escape_string($conn, $alt_description); // Sanitize alt description
 
     // Insert query
-    $insert_query = "INSERT INTO web_portfolios (title, category_id, link, image) VALUES ('$sanitized_name', '$sanitized_category_id', '$sanitized_link', '$sanitized_image_path')";
+    $insert_query = "INSERT INTO web_portfolios (title, category_id, link, image, alt_tag, alt_description) VALUES ('$sanitized_name', '$sanitized_category_id', '$sanitized_link', '$sanitized_image_path', '$sanitized_alt_tag', '$sanitized_alt_description')";
 
     // Execute query
     if (mysqli_query($conn, $insert_query)) {
@@ -89,14 +93,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label for="image">Image</label>
                     <input type="file" class="form-control-file dropify" accept="image/*" name="image" placeholder="image" required>
                 </div>
+
+                <!-- New fields for alt tag and alt text -->
+                <div class="form-group col-md-6">
+                    <label for="alt_tag">Alt Tag</label>
+                    <input type="text" class="form-control" id="alt_tag" name="alt_tag" placeholder="Alt Tag">
                 </div>
+                <div class="form-group col-md-6">
+                    <label for="alt_description">Alt Description</label>
+                    <textarea name="alt_description" class="form-control" colspan="5" rowspan="5" id="">
+
+                    </textarea>
+                </div>
+                <!-- End of new fields -->
+
+            </div>
             <button type="submit" class="btn btn-primary my-3">Submit</button>
 
         </form>
     </div>
 
 </div>
-
 
 <?php
 $content = ob_get_clean();

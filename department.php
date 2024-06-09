@@ -37,6 +37,8 @@ $conn = $db->get_connection();
         @media screen and (max-width: 2600px) {
             .allbranchlist .card {
                 width: 263px;
+                height: 300px;
+                overflow: hidden;
             }
         }
 
@@ -147,7 +149,7 @@ $conn = $db->get_connection();
             <div class="row">
                 <div class="Core_Team_txt pb-2 pt-5">
                     <h6 class="fs-1">Our <span class="text-success">Team Members</span></h6>
-                    
+
                 </div>
                 <?php
                 $qry = "SELECT * FROM departments";

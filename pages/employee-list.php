@@ -100,6 +100,9 @@ $result = mysqli_query($conn, $query);
                         </td>
                         <td class="align-middle">
                             <div class="d-inline-flex">
+                                <a href="employee-show.php?id=<?php echo $row['id']; ?>">
+                                    <button class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-eye"></i></button>
+                                </a>
                                 <a href="employee-edit.php?id=<?php echo $row['id']; ?>">
                                     <button class="btn btn-sm btn-info mr-2"> <i class="fa-solid fa-pen-to-square"></i></button>
                                 </a>

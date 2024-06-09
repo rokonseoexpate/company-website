@@ -63,7 +63,7 @@
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcumb_gph">
 							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
+							<li class="breadcrumb-item "><a href="graphic-design-and-photo-editing.php" class="text-light">Photo editor</a></li>
 							<li class="breadcrumb-item active text-light" aria-current="page">Real Estate Photo Editing</li>
 						</ol>
 					</nav>

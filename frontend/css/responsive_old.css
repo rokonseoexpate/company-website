@@ -32,16 +32,6 @@
     .header form {
         margin: 30px 0;
     }
-    .header .dropdown-mega .dropdown-menu {
-        width: 100%;
-        overflow-y: scroll;
-        height: 350px;
-    }
-    .header .navbar-nav .dropdown-menu{
-        width: 100%;
-        overflow-y: scroll;
-        height: 350px;
-    }
 }
 @media (min-width: 0px) and (max-width: 575px){
   .Fields_We_Cover .col{
@@ -600,26 +590,11 @@
   text-align: left !important;
  }
  .footer_part .footer-logos img{
-      width: 70%;
+      width: 20%;
       margin-top: 20px;
     }
- .ftresponsiv{
-    width: 33.33%;
- }
- .ftpv{
-    padding-bottom: 20px;
- }
- .basislogo1{
-    display: block;
- }
- .basislogo2{
-    display: none;
- }
- .ptunset{
-    padding-top: unset;
- }
  .footer_part .footer-logos .first_btm_logo img{
-  width: 50%;
+  width: 20%;
  }
    .domai_search_bar .domain-count .col-md-2 {
       border-right: unset; 

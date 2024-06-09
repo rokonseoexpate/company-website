@@ -451,7 +451,7 @@ $history = $result->fetch_assoc();
         </div>
         <div class="row pt-3">
             <div class="col-md-3">
-                <a href="photo-editor.php"><img src="frontend/images/iot-expertiser.png" alt="Core Service Areas" description="Core Service Areas"></a>
+                <a href="graphic-design-and-photo-editing.php"><img src="frontend/images/iot-expertiser.png" alt="Core Service Areas" description="Core Service Areas"></a>
                 <h5 class="text-light pt-3">Graphic Design</h5>
             </div>
             <div class="col-md-3">
@@ -559,7 +559,7 @@ $history = $result->fetch_assoc();
                                         </a>
                                     </div>
                                     <div class="card-body">
-                                        <a href="blog-details.php?=" class="text-reset">
+                                        <a href="blog-details.php?id=<?php echo $blog['id'] ?>" class="text-reset">
                                             <h5 class="card-title mb-3 text-light"><?php echo $blog['title'] ?></h5>
                                         </a>
                                         <a href="blog-details.php?id=<?php echo $blog['id'] ?>" class="text-reset">
@@ -618,7 +618,7 @@ $history = $result->fetch_assoc();
                                         </a>
                                     </div>
                                     <div class="card-body">
-                                        <a href="blog-details.php" class="text-reset">
+                                    <a href="blog-details.php?id=<?php echo $csr['id'] ?>" class="text-reset">
                                             <h5 class="card-title mb-3 text-light"><?php echo $csr['title'] ?></h5>
                                         </a>
                                         <a href="blog-details.php?id=<?php echo $csr['id'] ?>" class="text-reset">
@@ -675,7 +675,7 @@ $history = $result->fetch_assoc();
                                         </a>
                                     </div>
                                     <div class="card-body">
-                                        <a href="blog-details.php" class="text-reset">
+                                    <a href="blog-details.php?id=<?php echo $event['id'] ?>" class="text-reset">
                                             <h5 class="card-title mb-3 text-light"><?php echo $event['title'] ?></h5>
                                         </a>
                                         <a href="blog-details.php?id=<?php echo $event['id'] ?>" class="text-reset">

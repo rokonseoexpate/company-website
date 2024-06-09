@@ -5,4 +5,4 @@ ALTER TABLE `branches` ADD `map` TEXT NULL AFTER `image`;
 
 
 //updeya lagbe
-ALTER TABLE `branches` ADD `latitude` VARCHAR(255) NULL AFTER `name`, ADD `longitude` VARCHAR(255) NULL AFTER `latitude`;
+ALTER TABLE `web_portfolios` ADD `alt_tag` VARCHAR(255) NULL AFTER `image`, ADD `alt_description` TEXT NULL AFTER `alt_tag`;

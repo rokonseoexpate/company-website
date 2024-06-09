@@ -235,7 +235,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <div class="row pt-3">
             <div class="col-md-3">
-                <a href="photo-editor.php"><img src="frontend/images/iot-expertiser.png" alt=" seo expate"
+                <a href="graphic-design-and-photo-editing.php"><img src="frontend/images/iot-expertiser.png" alt=" seo expate"
                         description=" seo expate"></a>
                 <h5 class="text-light pt-3">Graphic Design</h5>
             </div>

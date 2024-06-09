@@ -1,5 +1,5 @@
 <?php
-$title = "Update Certificates";
+$title = "Update Trusted by";
 session_start();
 ob_start();
 require_once '../config/dbconnect.php';
