@@ -235,7 +235,6 @@ $conn = $db->get_connection();
 						<div class="row mb-5">
 							<div class="p-5 bg-white rounded shadow mb-5">
 								<!-- Rounded tabs -->
-
 								<ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 ">
 									<?php
 									// Check database connection
@@ -246,12 +245,13 @@ $conn = $db->get_connection();
 										$result = mysqli_query($conn, $qry); // Execute the query
 
 										if ($result && mysqli_num_rows($result) > 0) {
+											$firstTab = true; // Reset the firstTab variable for the tab headers
 											while ($row = mysqli_fetch_assoc($result)) {
-									?>
+												?>
 												<li class="nav-item flex-sm-fill" role="presentation">
-													<a id="<?php echo $row['id']; ?>-tab" data-bs-toggle="pill" href="#<?php echo $row['id']; ?>" role="tab" aria-controls="<?php echo $row['id']; ?>" aria-selected="false" class="nav-link border-0 font-weight-bold<?php if ($firstTab) echo ' show active'; ?>"><?php echo $row['name']; ?></a>
+													<a id="<?php echo $row['id']; ?>-tab" data-bs-toggle="pill" href="#<?php echo $row['id']; ?>" role="tab" aria-controls="<?php echo $row['id']; ?>" aria-selected="<?php echo $firstTab ? 'true' : 'false'; ?>" class="nav-link border-0 font-weight-bold<?php echo $firstTab ? ' show active' : ''; ?>"><?php echo $row['name']; ?></a>
 												</li>
-									<?php
+												<?php
 												$firstTab = false;
 											}
 										} else {
@@ -261,21 +261,20 @@ $conn = $db->get_connection();
 									?>
 								</ul>
 
-
 								<div class="tab-content" id="myTabContent">
 									<?php
-									$firstTab = true;
+									$firstTab = true; // Reset the firstTab variable for the tab content
 									// Check database connection
 									if (!$conn) {
 										echo "Database connection failed: " . mysqli_connect_error();
 									} else {
-										$qry = "SELECT * FROM web_portfolios";
+										$qry = "SELECT DISTINCT category_id FROM web_portfolios";
 										$result = mysqli_query($conn, $qry);
 
 										if ($result && mysqli_num_rows($result) > 0) {
 											while ($row = mysqli_fetch_assoc($result)) {
-									?>
-												<div id="<?php echo $row['category_id']; ?>" role="tabpanel" aria-labelledby="<?php echo $row['category_id']; ?>-tab" class="tab-pane fade px-4 py-5<?php if ($firstTab) echo ' show active'; ?>">
+												?>
+												<div id="<?php echo $row['category_id']; ?>" role="tabpanel" aria-labelledby="<?php echo $row['category_id']; ?>-tab" class="tab-pane fade px-4 py-5<?php echo $firstTab ? ' show active' : ''; ?>">
 													<div class="row">
 														<?php
 														// Check if category_id is not empty
@@ -285,7 +284,7 @@ $conn = $db->get_connection();
 
 															if ($resultItems && mysqli_num_rows($resultItems) > 0) {
 																while ($item = mysqli_fetch_assoc($resultItems)) {
-														?>
+																	?>
 																	<div class="col-md-3 pt-5">
 																		<a href="<?php echo $item['link']; ?>">
 																			<div class="card">
@@ -297,7 +296,7 @@ $conn = $db->get_connection();
 																			</div>
 																		</a>
 																	</div>
-														<?php
+																	<?php
 																}
 															} else {
 																echo "No portfolio items found for this category.";
@@ -308,7 +307,7 @@ $conn = $db->get_connection();
 														?>
 													</div>
 												</div>
-									<?php
+												<?php
 												$firstTab = false;
 											}
 										} else {
@@ -317,11 +316,11 @@ $conn = $db->get_connection();
 									}
 									?>
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 	</section>
 	<!--================================explore_portfolio_tab section end here=======================-->
