@@ -6,8 +6,6 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
-// Update query
-$id = $_GET['id'];
 // Fetch branch data for the dropdown
 $branch_query = "SELECT * FROM branches";
 $branch_result = mysqli_query($conn, $branch_query);
@@ -15,9 +13,13 @@ $branch_result = mysqli_query($conn, $branch_query);
 $department_query = "SELECT * FROM departments";
 $department_result = mysqli_query($conn, $department_query);
 
-$fetch_image_query = "SELECT image FROM employees WHERE id = $id";
-$fetch_image_result = mysqli_query($conn, $fetch_image_query);
-$row = mysqli_fetch_assoc($fetch_image_result);
+$id = $_GET['id'];
+$fetch_image_query = "SELECT image FROM employees WHERE id = ?";
+$fetch_image_stmt = $conn->prepare($fetch_image_query);
+$fetch_image_stmt->bind_param("i", $id);
+$fetch_image_stmt->execute();
+$fetch_image_result = $fetch_image_stmt->get_result();
+$row = $fetch_image_result->fetch_assoc();
 
 // Check if form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -35,8 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alt_description = $_POST['alt_description'];
     $dep_priority = $_POST['dep_priority'];
 
-
-    
     // Check for required fields
     $errorMessage = '';
     if (empty($name)) {
@@ -68,9 +68,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Upload new image file
         $target_dir = "../uploads/";
         $image_name = $_FILES["image"]["name"];
-
-        // Remove spaces from the image name
-        $image_name = str_replace(' ', '-', $image_name);
+        $image_name = str_replace(' ', '-', $image_name); // Remove spaces from the image name
         $image_path = $target_dir . $image_name;
         move_uploaded_file($_FILES["image"]["tmp_name"], $image_path);
     }
@@ -80,32 +78,45 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_designation = mysqli_real_escape_string($conn, $designation);
     $sanitized_ein_no = mysqli_real_escape_string($conn, $ein_no);
     $sanitized_team_no = mysqli_real_escape_string($conn, $team_no);
+    $sanitized_email = mysqli_real_escape_string($conn, $email);
+    $sanitized_phone = mysqli_real_escape_string($conn, $phone);
+    $sanitized_alt_tag = mysqli_real_escape_string($conn, $alt_tag);
+    $sanitized_alt_description = mysqli_real_escape_string($conn, $alt_description);
 
-
-    $sql = "UPDATE employees SET name = '$sanitized_name', designation = '$sanitized_designation',email = '$email', phone = '$phone', branch_id = $branch_id, priority = $priority, department_id = $department_id, dep_priority = $dep_priority, ein_no = '$sanitized_ein_no', team_no = '$sanitized_team_no', alt_description='$alt_description',  alt_tag='$alt_tag' ";
+    // Use prepared statements to prevent SQL injection and handle empty fields
+    $sql = "UPDATE employees SET name = ?, designation = ?, email = ?, phone = ?, branch_id = ?, priority = ?, department_id = ?, dep_priority = ?, ein_no = ?, team_no = ?, alt_description = ?, alt_tag = ?";
     if ($image_path) {
-        $sql .= ", image = '$image_path'";
+        $sql .= ", image = ?";
     }
-    $sql .= " WHERE id = $id";
+    $sql .= " WHERE id = ?";
+
+    $stmt = $conn->prepare($sql);
+    if ($image_path) {
+        $stmt->bind_param("ssssiiissssssi", $sanitized_name, $sanitized_designation, $sanitized_email, $sanitized_phone, $branch_id, $priority, $department_id, $dep_priority, $sanitized_ein_no, $sanitized_team_no, $sanitized_alt_description, $sanitized_alt_tag, $image_path, $id);
+    } else {
+        $stmt->bind_param("ssssiiisssssi", $sanitized_name, $sanitized_designation, $sanitized_email, $sanitized_phone, $branch_id, $priority, $department_id, $dep_priority, $sanitized_ein_no, $sanitized_team_no, $sanitized_alt_description, $sanitized_alt_tag, $id);
+    }
 
     // Execute query
-    if (mysqli_query($conn, $sql)) {
-        $_SESSION['successMessage'] =  "Employee updated successfully!";
-        // Redirect to employee list page
+    if ($stmt->execute()) {
+        $_SESSION['successMessage'] = "Employee updated successfully!";
     } else {
-        $_SESSION['errorMessage'] =  "Error updating employee: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] = "Error updating employee: " . $stmt->error;
     }
     header('Location: employee-list.php');
     exit();
 }
 
 // Fetch employee details based on ID
-$id = $_GET['id'];
-$fetch_query = "SELECT * FROM employees WHERE id = $id";
-$fetch_result = mysqli_query($conn, $fetch_query);
-$row = mysqli_fetch_assoc($fetch_result);
+$fetch_query = "SELECT * FROM employees WHERE id = ?";
+$fetch_stmt = $conn->prepare($fetch_query);
+$fetch_stmt->bind_param("i", $id);
+$fetch_stmt->execute();
+$fetch_result = $fetch_stmt->get_result();
+$row = $fetch_result->fetch_assoc();
 
 ?>
+
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
 

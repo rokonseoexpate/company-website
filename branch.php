@@ -85,6 +85,7 @@ $title = $branch['name'];
 		<div class="container">
 			<div class="row">
 				<h2 class="fs-1 fw-bold text-center pb-5"><?php echo $branch['name'] ?></h2>
+
 				<div class="col-md-4">
 					<div class="branch-address">
 						<div class="iframe-maps">
@@ -92,11 +93,13 @@ $title = $branch['name'];
 						</div>
 					</div>
 				</div>
+
 				<div class="col-md-4">
 					<div class="branch-img">
-						<img src="<?php echo 'pages/' . basename($branch['image']); ?>" alt="<?php echo $branch['name'] ?>" class="img-thumbnail">
+						<img src="<?php echo 'uploads/' . basename($branch['image']); ?>" alt="<?php echo $branch['name'] ?>" class="img-thumbnail">
 					</div>
 				</div>
+
 				<div class="col-md-4">
 					<div class="branch-img">
 					<iframe width="100%" height="315" src="<?php echo $branch['video_link'] ?>" title="<?php echo $branch['name'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -221,17 +224,6 @@ $title = $branch['name'];
 		</script>
 	<?php endif; ?>
 
-	<script>
-		function updateMap() {
-			const latitude = document.getElementById('latitude').value;
-			const longitude = document.getElementById('longitude').value;
-			const mapFrame = document.getElementById('mapFrame');
-
-			const newSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0193241947825!2d${longitude}!3d${latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808581f8a6b6f11d%3A0xe8b37cb0db0a3062!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2s!4v1512000000000`;
-
-			mapFrame.src = newSrc;
-		}
-	</script>
 </body>
 
 </html>

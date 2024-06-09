@@ -1,3 +1,4 @@
+
 <?php
 $title = "Web Projects List";
 session_start();
@@ -5,15 +6,11 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
 // Fetch web project data from the database
 $query = "SELECT web_portfolios.*, web_portfolio_categories.name AS category_name FROM web_portfolios LEFT JOIN web_portfolio_categories ON web_portfolios.category_id = web_portfolio_categories.id ORDER BY id DESC ";
 $result = mysqli_query($conn, $query);
-
-// Check if delete_id is present in the URL
 if (isset($_GET['delete_id'])) {
     $delete_id = $_GET['delete_id'];
-
     // Delete query
     $delete_query = "DELETE FROM web_portfolios WHERE id = $delete_id";
 
@@ -31,17 +28,16 @@ if (isset($_GET['delete_id'])) {
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">
-
     <div class="card px-3">
         <div class="d-flex justify-content-between align-items-center">
             <h1><?php echo $title; ?></h1>
             <a href="portfolio-projects-add.php" class="btn btn-sm btn-info">Add New</a>
         </div>
-        <?php if(isset($successMessage)) { ?>
-            <div class="alert alert-success mt-3" role="alert"><?php echo $successMessage; ?></div>
+        <?php if(isset($_SESSION['successMessage'])) { ?>
+            <div class="alert alert-success mt-3" role="alert"><?php echo $_SESSION['successMessage']; unset($_SESSION['successMessage']); ?></div>
         <?php } ?>
-        <?php if(isset($errorMessage)) { ?>
-            <div class="alert alert-danger mt-3" role="alert"><?php echo $errorMessage; ?></div>
+        <?php if(isset($_SESSION['errorMessage'])) { ?>
+            <div class="alert alert-danger mt-3" role="alert"><?php echo $_SESSION['errorMessage']; unset($_SESSION['errorMessage']); ?></div>
         <?php } ?>
         <table id="example1" class="table table-striped table-bordered">
             <thead>
@@ -66,7 +62,7 @@ if (isset($_GET['delete_id'])) {
                     <td><?php echo $row['link']; ?></td>
                     <td>
                         <?php if ($row['image'] && file_exists($row['image'])) : ?>
-                            <img src="<?php echo $row['image']; ?>" class="img-fluid w-25" alt="">
+                            <img style="width: 250px; height:70px" src="<?php echo $row['image']; ?>" class="img-fluid w-25" alt="">
                         <?php else : ?>
                             <span>No Image</span>
                         <?php endif; ?>
