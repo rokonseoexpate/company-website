@@ -261,7 +261,7 @@ $conn = $db->get_connection();
 									?>
 								</ul>
 
-								
+
 								<div class="tab-content" id="myTabContent">
 									<?php
 									$firstTab = true;

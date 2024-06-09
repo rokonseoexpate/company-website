@@ -85,6 +85,7 @@ $title = $branch['name'];
 		<div class="container">
 			<div class="row">
 				<h2 class="fs-1 fw-bold text-center pb-5"><?php echo $branch['name'] ?></h2>
+
 				<div class="col-md-4">
 					<div class="branch-address">
 						<div class="iframe-maps">
@@ -92,11 +93,13 @@ $title = $branch['name'];
 						</div>
 					</div>
 				</div>
+
 				<div class="col-md-4">
 					<div class="branch-img">
-						<img src="<?php echo 'pages/' . basename($branch['image']); ?>" alt="<?php echo $branch['name'] ?>" class="img-thumbnail">
+						<img src="<?php echo 'uploads/' . basename($branch['image']); ?>" alt="<?php echo $branch['name'] ?>" class="img-thumbnail">
 					</div>
 				</div>
+
 				<div class="col-md-4">
 					<div class="branch-img">
 					<iframe width="100%" height="315" src="<?php echo $branch['video_link'] ?>" title="<?php echo $branch['name'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
