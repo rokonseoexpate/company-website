@@ -6,7 +6,9 @@ $title = "Department list";
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!$_SESSION['username']) {
+    header("Location: login.php");
+}
 if (isset($_GET['delete_id'])) {
     $delete_id = $_GET['delete_id'];
     $sql_delete = "DELETE FROM departments WHERE id = $delete_id";

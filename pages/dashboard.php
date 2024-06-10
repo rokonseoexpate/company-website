@@ -2,10 +2,13 @@
 $title = "Dashboard";
 ob_start();
 $content = ob_get_clean();
-include '../layouts/master.php';
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
+include '../layouts/master.php';
 ?>
 
 <div class="content-wrapper" style="min-height: 485px;">

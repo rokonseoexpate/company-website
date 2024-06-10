@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!$_SESSION['username']) {
+    header("Location: login.php");
+}
 ?>
 
 <div class="content-wrapper p-3" style="min-height: 485px;">

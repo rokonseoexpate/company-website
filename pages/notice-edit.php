@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 $id = $_GET['id'];
 // Fetch notice details from database
 $fetch_query = "SELECT * FROM notices WHERE id = '$id'";

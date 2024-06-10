@@ -1,8 +1,19 @@
 <?php
-    $title = "Add new page";
-    ob_start();
-    $content = ob_get_clean();
-    include '../layouts/master.php';
+$title = "Add new page";
+session_start();
+ob_start();
+include '../layouts/master.php';
+require_once '../config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
+if (!$_SESSION['username']) {
+    header("Location: login.php");
+}
+
+$content = ob_get_clean();
+
+
 ?>
 
 <div class="content-wrapper" style="min-height: 485px;">
@@ -38,8 +49,7 @@
                         <div class="icon">
                             <i class="ion ion-bag" style="font-family: Ionicons, Bangla506, sans-serif;"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"
-                                style="font-family: &quot;Font Awesome 5 Free&quot;, Bangla506, sans-serif;"></i></a>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right" style="font-family: &quot;Font Awesome 5 Free&quot;, Bangla506, sans-serif;"></i></a>
                     </div>
                 </div>
 
@@ -53,8 +63,7 @@
                         <div class="icon">
                             <i class="ion ion-stats-bars" style="font-family: Ionicons, Bangla506, sans-serif;"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"
-                                style="font-family: &quot;Font Awesome 5 Free&quot;, Bangla506, sans-serif;"></i></a>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right" style="font-family: &quot;Font Awesome 5 Free&quot;, Bangla506, sans-serif;"></i></a>
                     </div>
                 </div>
 
@@ -68,8 +77,7 @@
                         <div class="icon">
                             <i class="ion ion-person-add" style="font-family: Ionicons, Bangla506, sans-serif;"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"
-                                style="font-family: &quot;Font Awesome 5 Free&quot;, Bangla506, sans-serif;"></i></a>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right" style="font-family: &quot;Font Awesome 5 Free&quot;, Bangla506, sans-serif;"></i></a>
                     </div>
                 </div>
 
@@ -83,8 +91,7 @@
                         <div class="icon">
                             <i class="ion ion-pie-graph" style="font-family: Ionicons, Bangla506, sans-serif;"></i>
                         </div>
-                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"
-                                style="font-family: &quot;Font Awesome 5 Free&quot;, Bangla506, sans-serif;"></i></a>
+                        <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right" style="font-family: &quot;Font Awesome 5 Free&quot;, Bangla506, sans-serif;"></i></a>
                     </div>
                 </div>
 

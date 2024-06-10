@@ -6,7 +6,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 $name = isset($_POST['name']) ? $_POST['name'] : '';
 $orderBy = isset($_POST['orderBy']) ? $_POST['orderBy'] : '';
 $type = isset($_POST['type']) ? $_POST['type'] : '';

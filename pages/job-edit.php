@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 // Check if job ID is provided in the URL
 if (isset($_GET['id'])) {
     $job_id = $_GET['id'];

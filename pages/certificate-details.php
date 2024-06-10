@@ -5,6 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 
 // Initialize $row to prevent uninitialized variable error
 $row = array();

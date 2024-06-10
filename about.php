@@ -318,7 +318,7 @@ $history = $result->fetch_assoc();
                             <img src="<?php
                             $imagePath = $row['image'];
                             $imageName = basename($imagePath);
-                            $newImagePath = 'pages/' . $imageName;
+                            $newImagePath = 'uploads/' . $imageName;
 
                             echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['alt_tag'] ?>" description="<?php echo strip_tags($row['alt_description']) ?>">
                             <div class="card-body">

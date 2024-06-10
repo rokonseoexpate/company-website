@@ -12,6 +12,11 @@ if (file_exists($file_path)) {
 $db = new DB_con();
 $conn = $db->get_connection();
 
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
+
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Sanitize input and hash passwords

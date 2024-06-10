@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!$_SESSION['username']) {
+    header("Location: login.php");
+}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $image_type = $_POST['image_type'];
     $title = $_POST['title'];

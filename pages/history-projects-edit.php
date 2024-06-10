@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!$_SESSION['username']) {
+    header("Location: login.php");
+}
 // Check if image ID is provided via GET request
 if (isset($_GET['id'])) {
     $image_id = $_GET['id'];

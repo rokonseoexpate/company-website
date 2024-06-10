@@ -15,7 +15,9 @@ if (file_exists($file_path)) {
 $db = new DB_con();
 // Get database connection
 $conn = $db->get_connection();
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

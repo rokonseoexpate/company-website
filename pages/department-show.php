@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!$_SESSION['username']) {
+    header("Location: login.php");
+}
 // Check if department ID is provided for editing
 $department_id = isset($_GET['id']) ? $_GET['id'] : null;
 $edit_mode = !empty($department_id);
