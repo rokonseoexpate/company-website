@@ -75,7 +75,7 @@ if (isset($_POST['submit'])) {
     <div class="card px-3">
         <div class="d-flex  justify-content-between align-items-center py-2">
             <h5> <strong> <?php echo $title; ?></strong> </h5>
-            <a href="certificates.php" class="btn btn-sm btn-info">View List</a>
+            <a href="award.php" class="btn btn-sm btn-info">View List</a>
         </div>
 
         <form action="<?php echo $_SERVER['PHP_SELF'] . '?id=' . $id; ?>" method="POST" enctype="multipart/form-data" id="submit">

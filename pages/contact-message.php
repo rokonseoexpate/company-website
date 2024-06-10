@@ -1,6 +1,7 @@
 <?php
 $title = "Contact Message List";
 ob_start();
+session_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
