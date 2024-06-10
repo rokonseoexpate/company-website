@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="Title" content="This is the my site">
 	<meta name="description" content="This is the my site">
-    <meta name="keywords" content="seoebl, seoexpate">
+  <meta name="keywords" content="seoebl, seoexpate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Adobe / Freelancing Specialist</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
@@ -73,7 +73,7 @@
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
 						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
+						    <li class="breadcrumb-item "><a href="training.php" class="text-light">Our Training</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Adobe / Freelancing</li>
 						  </ol>
 						</nav>

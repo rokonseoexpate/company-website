@@ -19,6 +19,7 @@ $history = $result->fetch_assoc();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title;  ?></title>
     <meta property="og:title" content="Home - IT Services, Technology Solutions">
+    <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
     <?php include('./includes/style.php') ?>
     <div class="gtranslate_wrapper"></div>
     <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
@@ -237,7 +238,7 @@ $history = $result->fetch_assoc();
                                         <h5 class="card-title "><?php echo $team['name']; ?></h5>
                                         <p class="card-text"><?php echo $team['designation']; ?></p>
                                         <div class="d-flex gap-2" style=" justify-content:center;">
-                                            <a href="<?php echo $team['website'] ?>"><i class="fa-solid fa-globe" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo $team['alt_description']; ?>"></i></a>
+                                            <a href="/"><i class="fa-solid fa-globe" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo $team['alt_description']; ?>"></i></a>
                                             <a href="<?php echo $team['facebook'] ?>"><i class="fa-brands fa-facebook" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo $team['alt_description']; ?>"></i></a>
                                             <a href="<?php echo $team['linkedin'] ?>"><i class="fa-brands fa-linkedin" alt="<?php echo $team['alt_tag']; ?>" description="<?php echo $team['alt_description']; ?>"></i></a>
                                         </div>

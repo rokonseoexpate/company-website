@@ -16,6 +16,7 @@ $conn = $db->get_connection();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title;  ?></title>
     <meta property="og:title" content="Home - IT Services, Technology Solutions">
+    <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
     <?php include('./includes/style.php') ?>
     <div class="gtranslate_wrapper"></div>
     <script>
@@ -31,7 +32,6 @@ $conn = $db->get_connection();
         }
     </script>
     <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
-
 </head>
 
 <body>

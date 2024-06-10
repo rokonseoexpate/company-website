@@ -11,7 +11,7 @@
 	<meta name="description" content="This is the my site">
     <meta name="keywords" content="seoebl, seoexpate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Wedding Photo Editing</title>
+	<title>Product Description</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 		
 	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" href="frontend/css/style.css">
 	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>

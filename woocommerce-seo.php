@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<link rel="stylesheet" href="frontend/css/style.css">
 	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
@@ -87,7 +87,7 @@
 		    		<div class="top_body_txt_part">
 						<h1 class="marginbottom" style="font-size: 45px; line-height: 55px;">WooCommerce SEO & Website Search </h1>	
 						<h2 class="margintop" style="margin-top: -15px;" class="fs-1">SEngine Optimization Services</h2>	
-						<p style="text-align:justify;">WooCommerce is one of the most popular eCommerce shopping carts and at OuterBox we are proficient in WooCommerce SEO and search engine marketing. Since 2016 we’ve been eCommerce experts and have performed <a href="seo_service.php" class="text-success">SEO</a> on all major eCommerce platforms. Let OuterBox help you make the most of your online store and increase your sales.</p>						
+						<p style="text-align:justify;">WooCommerce is one of the most popular eCommerce shopping carts and at OuterBox we are proficient in WooCommerce SEO and search engine marketing. Since 2016 we’ve been eCommerce experts and have performed <a href="seo-service.php" class="text-success">SEO</a> on all major eCommerce platforms. Let OuterBox help you make the most of your online store and increase your sales.</p>						
 					</div>
 					<div class="row">
 						<div class="col-md-7 pt-2">
@@ -115,7 +115,7 @@
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
 						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item "><a href="seo_service.php" class="text-light">SEO</a></li>
+						    <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">WooCommerce SEO</li>
 						  </ol>
 						</nav>
@@ -132,7 +132,7 @@
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
 					<div class="cliping_service_txt pb-2"><h6>About WooCommerce SEO Service. </h6></div>
-					<p class="pt-3" ><a href="ecommerce_seo.php" class="text-success">Ecommerce</a> search engine optimization (SEO) is the practice of fine-tuning your website to meet search engine best practices, and updating your content to reflect what your customers are searching for. Benefits of <a href="seo_service.php" class="text-success">SEO</a> for store owners include increased visitors, brand awareness, and sales.</p>																								
+					<p class="pt-3" ><a href="ecommerce-seo.php" class="text-success">Ecommerce</a> search engine optimization (SEO) is the practice of fine-tuning your website to meet search engine best practices, and updating your content to reflect what your customers are searching for. Benefits of <a href="seo-service.php" class="text-success">SEO</a> for store owners include increased visitors, brand awareness, and sales.</p>																								
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
@@ -150,9 +150,9 @@
             <div class="row ">
             	<div class="col-12">
                 	<h6 class="fw-bold fs-5 pb-3">WooCommerce SEO Plans</h6>
-                	<p>With proven <a href="ecommerce_seo.php" class="text-success">Ecommerce SEO</a> strategies we can take your WooCommerce website to the next level.</p>
+                	<p>With proven <a href="ecommerce-seo.php" class="text-success">Ecommerce SEO</a> strategies we can take your WooCommerce website to the next level.</p>
 	                <h6 class="fw-bold fs-5 pb-3">We Know WooCommerce</h6>
-	                <h6 class="fw-bold fs-6 pb-3">2. <a href="bigcommerce_seo.php" class="text-success">BigCommerce</a> app installation and configuration </h6>
+	                <h6 class="fw-bold fs-6 pb-3">2. <a href="bigcommerce-seo.php" class="text-success">BigCommerce</a> app installation and configuration </h6>
 	                <p>We have a full in-house team of WooCommerce SEO's and WooCommerce developers.</p>
 	                <h6 class="fw-bold fs-5 pb-3">Unsure About WooCommerce SEO? Ask Us.</h6>
 	                <p>Marketing your WooCommerce site can be tricky. Allow our experts to guide you in the right direction.</p>
@@ -171,7 +171,7 @@
 			      <div class="accordion-item">
 			        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. How much do WooCommerce SEO services cost?</h5>
 			        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
-			          <div class="accordion-body">WooCommerce SEO services will be priced about the same as traditional SEO services. Depending on the <a href="seo_service.php" class="text-success">SEO</a> <a href="/" class="text-success">company</a> you choose, hourly rates vary from $150/hour to $500/hour and beyond. View our SEO pricing and costs for more information on standard SEO pricing models and associated fees.
+			          <div class="accordion-body">WooCommerce SEO services will be priced about the same as traditional SEO services. Depending on the <a href="seo-service.php" class="text-success">SEO</a> <a href="/" class="text-success">company</a> you choose, hourly rates vary from $150/hour to $500/hour and beyond. View our SEO pricing and costs for more information on standard SEO pricing models and associated fees.
 			          </div>
 			        </div>
 			      </div>

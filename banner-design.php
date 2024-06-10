@@ -115,47 +115,47 @@
 			<div class="row text-center text-lg-start pt-5">
 				<div class="col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100">
-						<img class="img-fluid " src="images/Social-Media-post-Design-4-1024x1024.jpg" alt=" Our Banner" description="Our Banner">
+						<img class="img-fluid " src="frontend/images/Social-Media-post-Design-4-1024x1024.jpg" alt=" Our Banner" description="Our Banner">
 					</a>
 				</div>
 				<div class="col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100">
-						<img class="img-fluid " src="images/Social-Media-post-Design-1-600x657.jpg" alt=" Our Banner" description="Our Banner">
+						<img class="img-fluid " src="frontend/images/Social-Media-post-Design-1-600x657.jpg" alt=" Our Banner" description="Our Banner">
 					</a>
 				</div>
 				<div class="col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100">
-						<img class="img-fluid " src="images/Social-Media-post-Design-3-510x510.jpg" alt=" Our Banner" description="Our Banner">
+						<img class="img-fluid " src="frontend/images/Social-Media-post-Design-3-510x510.jpg" alt=" Our Banner" description="Our Banner">
 					</a>
 				</div>
 				<div class="col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100">
-						<img class="img-fluid " src="images/FB-Post-Design-Background-remove-01-510x510.jpg" alt=" Our Banner" description="Our Banner">
+						<img class="img-fluid " src="frontend/images/FB-Post-Design-Background-remove-01-510x510.jpg" alt=" Our Banner" description="Our Banner">
 					</a>
 				</div>
 				<div class="col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100">
-						<img class="img-fluid " src="images/shadow-making-design-Fb-post-Design-01-510x510.jpg" alt=" Our Banner" description="Our Banner">
+						<img class="img-fluid " src="frontend/images/shadow-making-design-Fb-post-Design-01-510x510.jpg" alt=" Our Banner" description="Our Banner">
 					</a>
 				</div>
 				<div class="col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100">
-						<img class="img-fluid img-thumbnail" src="images/social-media-Banner-Design3-600x583.jpg" alt=" Our Banner" description="Our Banner">
+						<img class="img-fluid img-thumbnail" src="frontend/images/social-media-Banner-Design3-600x583.jpg" alt=" Our Banner" description="Our Banner">
 					</a>
 				</div>
 				<div class="col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100">
-						<img class="img-fluid img-thumbnail" src="images/social-media-Group-Cover-Photo-600x315.jpg" alt=" Our Banner" description="Our Banner">
+						<img class="img-fluid img-thumbnail" src="frontend/images/social-media-Group-Cover-Photo-600x315.jpg" alt=" Our Banner" description="Our Banner">
 					</a>
 				</div>
 				<div class="col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100">
-						<img class="img-fluid img-thumbnail" src="images/Philipine-Photo-editor-FB-Cover-Photo-Editing-600x264.jpg" alt=" Our Banner" description="Our Banner">
+						<img class="img-fluid img-thumbnail" src="frontend/images/Philipine-Photo-editor-FB-Cover-Photo-Editing-600x264.jpg" alt=" Our Banner" description="Our Banner">
 					</a>
 				</div>
 				<div class="col-md-4 col-6">
 					<a href="#" class="d-block mb-4 h-100">
-						<img class="img-fluid img-thumbnail" src="images/Social-Media-post-Design-2-600x372.jpg" alt=" Our Banner" description="Our Banner">
+						<img class="img-fluid img-thumbnail" src="frontend/images/Social-Media-post-Design-2-600x372.jpg" alt=" Our Banner" description="Our Banner">
 					</a>
 				</div>
 			</div>

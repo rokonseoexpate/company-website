@@ -51,7 +51,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-7 pt-2">
-                            <div class=" border-bottom border-3 border-success pb-3"><a href="contactphp" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your BigCommerce SEO Proposal</a></div>
+                            <div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your BigCommerce SEO Proposal</a></div>
                         </div>
                         <div class="col-md-2 ecomrespons">
                             <img src="frontend/images/google-seo-proposal-audit.png.webp" alt=" BigCommerce SEO Services" description=" BigCommerce SEO Services" class="img-fluid">
@@ -74,8 +74,8 @@
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="indexphp" class="text-light ">Home</a></li>
-                                <li class="breadcrumb-item "><a href="seo-servicephp" class="text-light">SEO</a></li>
+                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">BigCommerce SEO</li>
                             </ol>
                         </nav>
@@ -228,7 +228,7 @@
                         <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
                     </div>
                     <div class="top-body-button pt-5">
-                        <a type="button" href="contactphp">Get In Touch</a>
+                        <a type="button" href="contact.php">Get In Touch</a>
                     </div>
                 </div>
                 <div class="col-md-6">

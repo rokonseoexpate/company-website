@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academic Writing </title>
     <meta property="og:title" content="Home - IT Services, Technology Solutions">
-
+    <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
     
   <?php include('./includes/style.php') ?>
 

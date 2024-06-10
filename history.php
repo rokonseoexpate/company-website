@@ -19,6 +19,7 @@ $history = $result->fetch_assoc();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo $title;  ?></title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 	<?php include('./includes/style.php') ?>
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
@@ -70,7 +71,7 @@ $history = $result->fetch_assoc();
 				</div>
 			</div>
 			<div class="top-body-button pt-5 text-center">
-				<a type="button" href="<?= $history['accelerating_button_link']; ?>">Know More About Our Journey</a>
+				<a type="button" href="about.php">Know More About Our Journey</a>
 			</div>
 		</div>
 	</div>
@@ -211,7 +212,7 @@ $history = $result->fetch_assoc();
 <div class="world_impact">
 	<div class="container">
 		<div class="row">
-			<img src="frontend/images/web-store_prev_ui.png" alt="">
+			<img src="frontend/images/web-store_prev_ui.png" alt="Seo expate Bangladesh ltd" description="Seo expate Bangladesh ltd">
 		</div>
 	</div>
 </div>
@@ -223,7 +224,6 @@ $history = $result->fetch_assoc();
 		<div class="row">
 			<div class="overview_success_txt">
 				<h3><?= $history['overview_success'] ?></h3>
-				<h3></h3>
 				<p><?= strip_tags($history['overview_success_details']) ?></p>
 			</div>
 			<?php
@@ -236,7 +236,7 @@ $history = $result->fetch_assoc();
 				if ($row = mysqli_fetch_assoc($result)) {
 			?>
 					<div class="overview_success_img pt-5">
-						<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+						<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo basename($row['image']); ?>">
 					</div>
 				<?php
 				}
@@ -246,7 +246,7 @@ $history = $result->fetch_assoc();
 				?>
 					<div class="col-md-6">
 						<div class="overview_success_img pt-4">
-							<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+							<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo basename($row['image']); ?>">
 						</div>
 					</div>
 			<?php
@@ -268,7 +268,7 @@ $history = $result->fetch_assoc();
 	<div class="container">
 		<div class="row">
 			<div class="Our_Great_Start_txt pb-5">
-				<h3><?= $history['great_success'] ?></h3>
+				<div class="updatecode"><h6 class="" style="padding-bottom: unset;">Our Great Start</h6></div>
 				<p><?= $history['great_success_details'] ?></p>
 			</div>
 			<?php
@@ -282,7 +282,7 @@ $history = $result->fetch_assoc();
 
 					<div class="col-md-6 pt-3">
 						<div class="img">
-							<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
+							<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="<?php echo basename($row['image']); ?>">
 						</div>
 						<div class="Our_Great_Start_img_txt pt-4">
 							<h5><?php echo $row['title'] ?></h5>
@@ -305,11 +305,11 @@ $history = $result->fetch_assoc();
 <section class="top_body_project_countdown">
 	<div class="container">
 		<div class="row">
-			<div class="ptc_txt">
-				<h3><?= $history['introduction_title'] ?></h3>
-				<h4><?= $history['introduction_title_tagline'] ?></h4>
-				<p class=" pt-4"><?= $history['introduction_details'] ?></p>
-			</div>
+				<div class="ptc_txt">
+					<div class="updatecode"><h6 style="padding-bottom: unset;"><span>A Short Introduction to Our Approach</span></h6></div>
+					<div class="updatecode"><h6 class="text-dark" style="padding-bottom: unset;">Delivering IT Solutions Globally</h6></div>
+	                <p class=" pt-4">In addition to creating a stress-free and sustainable IT environment, SEO Expate Bangladesh Ltd. produces outcomes that help our clients stay ahead of the competition. By utilizing the newest and most widely used technologies, our IT specialists continuously deliver user-centric IT solutions that are customized to the needs of the business. We have been assisting clients all over the world to boost engagement, sales, and conversions for more than ten years. Take a peek at the reliable numbers!</p>
+	            </div>
 			<div class="ptc_countdown_wrp pt-5">
 				<div class="ptc_countdown">
 					<div class="count_container">
@@ -342,9 +342,10 @@ $history = $result->fetch_assoc();
 <section class="top-slider-part">
 	<div class="container ">
 		<div class="row">
-			<h3><span>Our </span> Reliable Customers and Associates</h3>
+		<div class="updatecode"><h6 style="padding-bottom: unset;"><span>Our </span> Reliable Customers and Associates</h6></div>
 			<p>SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers, corporations, government departments, and other organizations as a top information technology company.
 				Here take a look at some of the top companies and institutions that SEO Expate Bangladesh Ltd. has already worked with.</p>
+
 			<div class="col-12 pt-5">
 				<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
@@ -405,10 +406,10 @@ $history = $result->fetch_assoc();
 <section class="top_featured">
 	<div class="container">
 		<div class="row">
-			<div class="top_featured_txt">
-				<h3 class="pb-3"><?= $history['highlighted_title'] ?></h3>
-				<p><?= $history['highlighted_details'] ?></p>
-			</div>
+		<div class="top_featured_txt">
+					<div class="updatecode pb-3"><h6 style="padding-bottom: unset;">We're Highlighted On</h6></div>
+					<p>In this category, <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd. stands out as the most popular in the first place. Numerous local and international (offline and online) TV networks, newspapers, journals, TV channels, and other well-known platforms have highlighted our imaginative and inventive works! Also, we are one of the most followed companies on various social media platforms. Again, we are going like a bullet train in other media as well.</p>
+				</div>
 			<div class="slider pt-5">
 				<div class="owl-carousel">
 					<?php
@@ -516,7 +517,7 @@ $history = $result->fetch_assoc();
 	<div class="container">
 		<div class="row">
 			<div class="top_awards_txt">
-				<h3>Achievements and Recognitions</h3>
+			<div class="updatecode pb-3"><h6 style="padding-bottom: unset;">Achievements and Recognitions</h6></div>
 				<p>For more than ten years, SEO Expate Bangladesh Ltd. has been at the forefront of the ICT industry, driving innovation and empowering businesses to thrive in the digital age. As we celebrate this milestone, we take a moment to reflect on our achievements and recognitions, which stand as testaments to our dedication to excellence.</p>
 				<p>Explore a selection of our honors and accomplishments below.</p>
 			</div>
