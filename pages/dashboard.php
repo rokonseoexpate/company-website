@@ -1,6 +1,7 @@
 <?php
 $title = "Dashboard";
 ob_start();
+session_start();
 $content = ob_get_clean();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
