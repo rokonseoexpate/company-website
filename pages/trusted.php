@@ -73,7 +73,11 @@ if (isset($_GET['id'])) {
                             <td> <?php echo $row['orderBy'] ?> </td>
 
                             <td class="text-right">
+
+                                <a href="trusted-show.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-info"><i class="fa-solid fa-eye"></i></a>
+                               
                                 <a href="trusted-edit.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
+
                                 <a href="?id=<?php echo  $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')"><i class="fa-solid fa-trash"></i></a>
                             </td>
                         </tr>

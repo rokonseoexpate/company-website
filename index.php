@@ -1254,7 +1254,7 @@ $conn = $db->get_connection();
             </div>
             <div class="col-md-4 pt-3">
                 <div class="top_future_focused_service">
-                    <a href="photo-editor.php" class="d-flex justify-content-between">
+                    <a href="graphic-design-and-photo-editing.php" class="d-flex justify-content-between">
                         <p>Graphic Design</p>
                         <i class="fa-solid fa-arrow-right-long" alt="Dive into SEO Expate" description=" Dive into SEO Expate"></i>
                     </a>

@@ -20,16 +20,14 @@ if (isset($_POST['submit'])) {
     $alt_tag    = $_POST['alt_tag'];
     $alt_description    = $_POST['alt_description'];
 
-   
-
     if (empty($title)) {
         $_SESSION['errorMessage'] = "Title is required";
     }
-    if (empty( $blog_category_id)) {
+    if (empty($blog_category_id)) {
         $_SESSION['errorMessage'] = "Blog Category is required";
     }
 
-    if ($_SESSION['errorMessage'] == null) {
+    if (!isset($_SESSION['errorMessage']) == null) {
         if (isset($_FILES['image']['name']) && !empty($_FILES['image']['name'])) {
             $file = $_FILES['image']['name'];
             $extension = pathinfo($file, PATHINFO_EXTENSION);
@@ -47,7 +45,7 @@ if (isset($_POST['submit'])) {
         } else {
             $_SESSION['errorMessage'] = "Error: " . $stmt->error;
         }
-    }else{
+    } else {
         header("Location: blog-add.php");
         exit;
     }

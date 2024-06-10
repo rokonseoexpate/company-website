@@ -1,4 +1,3 @@
-
 <?php
 $title = "Web Projects List";
 session_start();
@@ -23,7 +22,6 @@ if (isset($_GET['delete_id'])) {
     }
     header("Location: portfolio-projects-list.php");
     exit();
-
 }
 ?>
 
@@ -33,49 +31,54 @@ if (isset($_GET['delete_id'])) {
             <h1><?php echo $title; ?></h1>
             <a href="portfolio-projects-add.php" class="btn btn-sm btn-info">Add New</a>
         </div>
-        <?php if(isset($_SESSION['successMessage'])) { ?>
-            <div class="alert alert-success mt-3" role="alert"><?php echo $_SESSION['successMessage']; unset($_SESSION['successMessage']); ?></div>
+        <?php if (isset($_SESSION['successMessage'])) { ?>
+            <div class="alert alert-success mt-3" role="alert"><?php echo $_SESSION['successMessage'];
+                                                                unset($_SESSION['successMessage']); ?></div>
         <?php } ?>
-        <?php if(isset($_SESSION['errorMessage'])) { ?>
-            <div class="alert alert-danger mt-3" role="alert"><?php echo $_SESSION['errorMessage']; unset($_SESSION['errorMessage']); ?></div>
+        <?php if (isset($_SESSION['errorMessage'])) { ?>
+            <div class="alert alert-danger mt-3" role="alert"><?php echo $_SESSION['errorMessage'];
+                                                                unset($_SESSION['errorMessage']); ?></div>
         <?php } ?>
         <table id="example1" class="table table-striped table-bordered">
             <thead>
-            <tr class="text-center">
-                <th>#</th>
-                <th>Category</th>
-                <th>Title</th>
-                <th>Link</th>
-                <th>Image</th>
-                <th class="text-right px-4">Action</th>
-            </tr>
+                <tr class="text-center">
+                    <th>#</th>
+                    <th>Category</th>
+                    <th>Title</th>
+                    <th>Link</th>
+                    <th>Image</th>
+                    <th class="text-right px-4">Action</th>
+                </tr>
             </thead>
             <tbody>
-            <?php
-            $count = 1;
-            while ($row = mysqli_fetch_assoc($result)) :
-                ?>
-                <tr>
-                    <td><?php echo $count; ?></td>
-                    <td><?php echo $row['category_name']; ?></td>
-                    <td><?php echo $row['title']; ?></td>
-                    <td><?php echo $row['link']; ?></td>
-                    <td>
-                        <?php if ($row['image'] && file_exists($row['image'])) : ?>
-                            <img style="width: 250px; height:70px" src="<?php echo $row['image']; ?>" class="img-fluid w-25" alt="">
-                        <?php else : ?>
-                            <span>No Image</span>
-                        <?php endif; ?>
-                    </td>
-                    <td class="text-right">
-                        <a href="portfolio-projects-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
-                        <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this web project?')">Delete</a>
-                    </td>
-                </tr>
                 <?php
-                $count++;
-            endwhile;
-            ?>
+                $count = 1;
+                while ($row = mysqli_fetch_assoc($result)) :
+                ?>
+                    <tr>
+                        <td><?php echo $count; ?></td>
+                        <td><?php echo $row['category_name']; ?></td>
+                        <td><?php echo $row['title']; ?></td>
+                        <td><?php echo $row['link']; ?></td>
+                        <td>
+                            <?php if ($row['image'] && file_exists($row['image'])) : ?>
+                                <img style="width: 250px; height:70px" src="<?php echo $row['image']; ?>" class="img-fluid w-25" alt="">
+                            <?php else : ?>
+                                <span>No Image</span>
+                            <?php endif; ?>
+                        </td>
+                        <td class="text-right">
+                            <a href="portfolio-projects-show.php?id=<?php echo $row['id']; ?>">
+                                <button class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-eye"></i></button>
+                            </a>
+                            <a href="portfolio-projects-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-info">Edit</a>
+                            <a href="?delete_id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this web project?')">Delete</a>
+                        </td>
+                    </tr>
+                <?php
+                    $count++;
+                endwhile;
+                ?>
             </tbody>
         </table>
     </div>

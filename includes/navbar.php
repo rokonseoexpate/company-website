@@ -65,7 +65,7 @@
                                                             </a>
                                                         </div>
                                                         <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="photo-editor.php">
+                                                            <a class="list-group-item d-flex" href="graphic-design-and-photo-editing.php">
                                                                 <div><i class="fa-solid fa-paintbrush" alt=" seo expate" description=" seo expate"></i></div>
                                                                 <div>
                                                                     <h5>Graphic Design</h5>

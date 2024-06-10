@@ -93,7 +93,7 @@ $title = "All Branches";
 							<img src="<?php
 										$imagePath = $row['image'];
 										$imageName = basename($imagePath);
-										$newImagePath = 'pages/' . $imageName;
+										$newImagePath = 'uploads/' . $imageName;
 										echo $newImagePath; ?>" class="card-img-top" alt="<?php echo $row['name'] ?>">
 							<div class="card-body">
 								<h5 class="card-title"><?php echo $row['name'] ?></h5>

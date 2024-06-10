@@ -79,11 +79,14 @@ if (isset($_GET['id'])) {
                         <td><?php echo $row['name']; ?></td>
                         <td><?php echo $row['designation']; ?></td>
                         <td>
-                            <img class="w-50" style="height: 50px;" src="<?php echo$row['image']; ?>" alt="">
+                            <img class="w-50" style="height: 50px;" src="<?php echo $row['image']; ?>" alt="">
                         </td>
                         <td> <?php echo $row['order_by'] ?> </td>
 
                         <td class="text-right">
+                            <a href="core-team-details.php?id=<?php echo $row['id']; ?>">
+                                <button class="btn btn-sm btn-info mr-1"><i class="fa-solid fa-eye"></i></button>
+                            </a>
                             <a href="core-team-edit.php?id=<?php echo  $row['id']; ?>" class="btn btn-sm btn-info"><i class="fa-solid fa-pen-to-square"></i></a>
                             <a href="?id=<?php echo  $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this record?')"><i class="fa-solid fa-trash"></i></a>
                         </td>

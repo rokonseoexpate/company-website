@@ -15,9 +15,12 @@ if (isset($_GET['id'])) {
     $project_id = $_GET['id'];
 
     // Fetch project details from the database
-    $fetch_query = "SELECT * FROM web_portfolios WHERE id = $project_id";
-    $fetch_result = mysqli_query($conn, $fetch_query);
-    $project_row = mysqli_fetch_assoc($fetch_result);
+    $fetch_query = "SELECT * FROM web_portfolios WHERE id = ?";
+    $fetch_stmt = $conn->prepare($fetch_query);
+    $fetch_stmt->bind_param("i", $project_id);
+    $fetch_stmt->execute();
+    $fetch_result = $fetch_stmt->get_result();
+    $project_row = $fetch_result->fetch_assoc();
 } else {
     // Redirect or display an error message if project ID is not provided
 }
@@ -27,6 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['title'];
     $category_id = $_POST['category_id'];
     $link = $_POST['link'];
+    $alt_tag = $_POST['alt_tag'];
+    $alt_description = $_POST['alt_description'];
 
     // Check if a new image is uploaded
     if ($_FILES["image"]["size"] > 0) {
@@ -50,19 +55,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sanitized_category_id = mysqli_real_escape_string($conn, $category_id);
     $sanitized_link = mysqli_real_escape_string($conn, $link);
     $sanitized_image_path = mysqli_real_escape_string($conn, $image_path);
+    $sanitized_alt_tag = mysqli_real_escape_string($conn, $alt_tag);
+    $sanitized_alt_description = mysqli_real_escape_string($conn, $alt_description);
 
     // Update query
-    $update_query = "UPDATE web_portfolios SET title = '$sanitized_name', category_id = '$sanitized_category_id', link = '$sanitized_link', image = '$sanitized_image_path' WHERE id = $project_id";
+    $update_query = "UPDATE web_portfolios SET title = ?, category_id = ?, link = ?, image = ?, alt_tag = ?, alt_description = ? WHERE id = ?";
+    $update_stmt = $conn->prepare($update_query);
+    $update_stmt->bind_param("siisssi", $sanitized_name, $sanitized_category_id, $sanitized_link, $sanitized_image_path, $sanitized_alt_tag, $sanitized_alt_description, $project_id);
+    $update_result = $update_stmt->execute();
 
-    // Execute query
-    if (mysqli_query($conn, $update_query)) {
+    if ($update_result) {
         // Update successful
         $_SESSION['successMessage'] = "Portfolio updated successfully!";
-
-        // Redirect to portfolio list page or display success message as per your requirement
     } else {
         // Update failed
-        $_SESSION['errorMessage'] = "Error updating Portfolio: " . mysqli_error($conn);
+        $_SESSION['errorMessage'] = "Error updating Portfolio: " . $update_stmt->error;
     }
     header("Location: portfolio-projects-list.php");
     exit();
@@ -99,21 +106,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <div class="form-group col-md-6">
                     <label for="image">Image</label>
-                    <input type="file" class="form-control-file dropify" accept="image/*" name="image" placeholder="image" required="">
+                    <input type="file" class="form-control-file dropify" accept="image/*" name="image" placeholder="image">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="image">Existing Image</label>
                     <br>
                     <img src="<?php echo $project_row['image']; ?>" alt="" width="250px">
                 </div>
+                <!-- Add alt tag and alt description fields -->
+                <div class="form-group col-md-6">
+                    <label for="alt_tag">Alt Tag</label>
+                    <input type="text" class="form-control" id="alt_tag" name="alt_tag" placeholder="Alt Tag" value="<?php echo $project_row['alt_tag']; ?>">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="alt_description">Alt Description</label>
+                    <input type="text" class="form-control" id="alt_description" name="alt_description" placeholder="Alt Description" value="<?php echo $project_row['alt_description']; ?>">
+                </div>
+                <!-- End of alt tag and alt description fields -->
             </div>
             <button type="submit" class="btn btn-primary my-3">Submit</button>
-
         </form>
     </div>
-
 </div>
-
 
 <?php
 $content = ob_get_clean();

@@ -47,12 +47,16 @@ $conn = $db->get_connection();
                                 <td><?php echo $row['address']; ?></td>
                                 <td class="align-middle">
                                     <div class="d-inline-flex">
+                                        <a href="branch-show.php?id=<?php echo $row['id']; ?>">
+                                            <button class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-eye"></i></button>
+                                        </a>
                                         <a href="branch-edit.php?id=<?php echo $row['id']; ?>">
-                                    <button class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-pen-to-square"></i></button>
-                                    </a>
+                                            <button class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-pen-to-square"></i>
+                                            </button>
+                                        </a>
                                         <a href="?delete_id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this record?')">
-                                        <button class="btn btn-danger btn-sm" ><i class="fa-solid fa-trash"></i></button>
-                                    </a>
+                                            <button class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></button>
+                                        </a>
                                     </div>
 
                                 </td>

@@ -62,6 +62,9 @@ if (isset($_GET['delete_id'])) {
                             <td class="text-center"><img style="width: 150px; height:100px" src="<?php echo  $newImagePath ?>" alt="<?php echo $row['name']; ?>"></td>
                             <td class="align-middle text-center">
                                 <div class="d-inline-flex">
+                                    <a href="department-show.php?id=<?php echo $row['id']; ?>">
+                                        <button class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-eye"></i></button>
+                                    </a>
                                     <a href="department-edit.php?id=<?php echo $row['id']; ?>">
                                         <button class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-pen-to-square"></i></button>
                                     </a>

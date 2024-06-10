@@ -64,6 +64,9 @@ $conn = $db->get_connection();
                             </td>
                             <td class="align-middle">
                                 <div class="d-inline-flex justify-content-center">
+                                    <a href="history-gallery-show.php?id=<?php echo $row['id']; ?>">
+                                        <button class="btn btn-sm btn-info mr-2"><i class="fa-solid fa-eye"></i></button>
+                                    </a>
                                     <a href="history-gallery-edit.php?id=<?php echo $row['id']; ?>">
                                         <button class="btn btn-sm btn-info mr-2"> <i class="fa-solid fa-pen-to-square"></i></button>
                                     </a>
