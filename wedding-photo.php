@@ -9,12 +9,12 @@
 	<title>Wedding Photo Editing</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 		
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
+	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="frontend/css/style.css">
+	<link rel="stylesheet" href="frontend/css/responsive.css">
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
@@ -225,7 +225,7 @@
 						<p style="text-align:justify;">Additionally, our professional wedding photo editing services offer a range of options, including retouching, color correction, background enhancement, etc. We will ensure that every photo is picture-perfect according to your requirements. We give attention to detail to reflect the couple's journey, reflecting the joy, tenderness, and unspoken promises on their special day. So, wedding photo editing services from <a href="/" class="text-success">SEO Expate Bangladesh Ltd</a> can deliver breathtaking images that will blow your mind. </p>						
 					</div>
 					<div class="top-body-button pt-3">
-						<a type="button" href="free_trial.php">Free Trial</a>
+						<a type="button" href="free-trial.php">Free Trial</a>
 					</div>	
 				</div>			
 			</div>
@@ -242,13 +242,13 @@
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
 						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item "><a href="photo_editor.php" class="text-light">Photo editor</a></li>
+						    <li class="breadcrumb-item "><a href="photo-editor.php" class="text-light">Photo editor</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Wedding Photo Editing</li>
 						  </ol>
 						</nav>
 					</div>
 					<div class="pb-2 pt-2 text-light"><h4 class="fs-1 fw-bold">Wedding Photo Editing Service</h4></div>
-					<p class="pt-2 text-light" >A wedding photo editing service is the key to perfecting your special wedding memories. Besides, with our expertise and advanced techniques, these services enhance and transform your photos into attractive works of art. Our service covers <a href="clipping_path.php" class="text-success">clipping path</a>, <a href="image_masking.php" class="text-success">image masking</a>, <a href="photo_restoration.php" class="text-success">photo restoration</a>, raster to vector conversion, etc. Thus, will give you perfect images that capture the essence of your special day.</p>					
+					<p class="pt-2 text-light" >A wedding photo editing service is the key to perfecting your special wedding memories. Besides, with our expertise and advanced techniques, these services enhance and transform your photos into attractive works of art. Our service covers <a href="clipping-path.php" class="text-success">clipping path</a>, <a href="image-masking.php" class="text-success">image masking</a>, <a href="photo-restoration.php" class="text-success">photo restoration</a>, raster to vector conversion, etc. Thus, will give you perfect images that capture the essence of your special day.</p>					
 				</div>
 			</div>
 		</div>
@@ -629,7 +629,7 @@
 			<div class="row">
 				<div class="col-md-3">
 					<h4>Photoshop Services</h4>
-					<a href="clipping_path.php" class="d-flex pt-4">
+					<a href="clipping-path.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -637,7 +637,7 @@
 							<h6>Clipping Path Service</h6>
 						</div>
 					</a>
-					<a href="jewelry_retouching.php" class="d-flex pt-2">
+					<a href="jewelry-retouching.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -645,7 +645,7 @@
 							<h6>Jewelry Retouching Service</h6>
 						</div>
 					</a>
-					<a href="ecommerce_photo_edit.php" class="d-flex pt-2">
+					<a href="ecommerce-photo-edit.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -653,7 +653,7 @@
 							<h6>E-Commerce Photo Editing</h6>
 						</div>
 					</a>
-					<a href="image_masking.php" class="d-flex pt-2">
+					<a href="image-masking.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -661,7 +661,7 @@
 							<h6>Image Masking Service</h6>
 						</div>
 					</a>
-					<a href="color_correction.php" class="d-flex pt-2">
+					<a href="color-correction.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -672,7 +672,7 @@
 				</div>
 				<div class="col-md-3">
 					<h4>Photoshop Services</h4>
-					<a href="real_estate_photo.php" class="d-flex pt-4">
+					<a href="real-estate-photo.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -680,7 +680,7 @@
 							<h6>Real Estate Photo Editing</h6>
 						</div>
 					</a>
-					<a href="photo_retouching.php" class="d-flex pt-2">
+					<a href="photo-retouching.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -688,7 +688,7 @@
 							<h6>Photo Retouching</h6>
 						</div>
 					</a>
-					<a href="background_remove.php" class="d-flex pt-2">
+					<a href="background-remove.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -696,7 +696,7 @@
 							<h6>Remove Background Image</h6>
 						</div>
 					</a>
-					<a href="ghost_mannequin.php" class="d-flex pt-2">
+					<a href="ghost-mannequin.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -704,7 +704,7 @@
 							<h6>Ghost Mannequin Effect</h6>
 						</div>
 					</a>
-					<a href="shadow_making.php" class="d-flex pt-2">
+					<a href="shadow-making.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -715,7 +715,7 @@
 				</div>
 				<div class="col-md-3">
 					<h4>Photoshop Services</h4>
-					<a href="photo_restoration.php" class="d-flex pt-4">
+					<a href="photo-restoration.php" class="d-flex pt-4">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -723,7 +723,7 @@
 							<h6>Photo Restoration</h6>
 						</div>
 					</a>
-					<a href="image_manipulation.php" class="d-flex pt-2">
+					<a href="image-manipulation.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -731,7 +731,7 @@
 							<h6>Image Manipulation Service</h6>
 						</div>
 					</a>
-					<a href="wedding_photo.php" class="d-flex pt-2">
+					<a href="wedding-photo.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -739,7 +739,7 @@
 							<h6>Wedding Photo Editing</h6>
 						</div>
 					</a>
-					<a href="raster_vector.php" class="d-flex pt-2">
+					<a href="raster-vector.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -747,7 +747,7 @@
 							<h6>Raster to Vector Conversion</h6>
 						</div>
 					</a>
-					<a href="background_remove.php" class="d-flex pt-2">
+					<a href="background-remove.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -766,7 +766,7 @@
 							<h6>T-Shirt Design</h6>
 						</div>
 					</a>
-					<a href="logo_design.php" class="d-flex pt-2">
+					<a href="logo-design.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>
@@ -774,7 +774,7 @@
 							<h6>Logo Designs Service</h6>
 						</div>
 					</a>
-					<a href="banner_design.php" class="d-flex pt-2">
+					<a href="banner-design.php" class="d-flex pt-2">
 						<div>
 							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
 						</div>

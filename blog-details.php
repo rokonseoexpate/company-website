@@ -35,7 +35,7 @@ $newImagePath = 'uploads/' . $imageName;
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title><?php echo $title;  ?></title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-
+    <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 	<?php include('./includes/style.php') ?>
 
 	<div class="gtranslate_wrapper"></div>

@@ -10,7 +10,7 @@
 	<title>Domain & Hosting</title>
 
 	<?php include('./includes/style.php') ?>
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
 	<script>

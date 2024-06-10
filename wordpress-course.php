@@ -25,51 +25,12 @@
 <body>
 
 	<!--================================Header section start here=======================-->
-	<?php include('./includes/navbar.php') ?>
+	<?php include "includes/navbar.php" ?>
+	<?php include 'includes/course-nav.php'?>
 	<!--================================Header section end here=======================-->
 
 	<!--================================photo editor sub Header section end here=======================-->
-	<div class="photo-edipth">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-dark ">
-				<div class="container-fluid ">
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"  aria-expanded="false" aria-label="Toggle navigation">
-				        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-				    </button>
-				    <div class="collapse navbar-collapse  justify-content-center" id="main-nav">
-				        <ul class="navbar-nav ">
-				        	<li class="nav-item"><a class="nav-link" href="traning.php"> Training</a></li>
-				        	<li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="regular-course.php" data-bs-toggle="dropdown">Regular Course / Training</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="website-course.php">Website</a></li>
-				                  <li><a class="dropdown-item" href="php-course.php">PHP</a></li>
-				                  <li><a class="dropdown-item" href="laravel-course.php">Laravel</a></li>
-				                  <li><a class="dropdown-item" href="aspnet-course.php">ASP.NET</a></li>
-				                  <li><a class="dropdown-item" href="python-course.php">Python</a></li>
-				                  <li><a class="dropdown-item" href="wordpress-course.php">WordPress</a></li>
-				                  <li><a class="dropdown-item" href="graphics-course.php">Graphics Design</a></li>
-				                  <li><a class="dropdown-item" href="digital-marketing-course.php">Digital Marketing</a></li>
-				                </ul>
-				            </li>
-				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="it-traning.php" data-bs-toggle="dropdown">IT Training</a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="microsoft-office-course.php"> Microsoft Office</a></li>
-				                  <li><a class="dropdown-item" href="software-development-course.php">Software Development Course</a></li>
-				                  <li><a class="dropdown-item" href="app-development-course.php">App Development Course</a></li>
-				                  <li><a class="dropdown-item" href="adobe-course.php">Adobe / Freelancing</a></li>
-				                  <li><a class="dropdown-item" href="server-administration-course.php">Network & Server Administration</a></li>
-				                  <li><a class="dropdown-item" href="it-security-course.php">IT Security, Service & Business Management</a></li>
-				                  <li><a class="dropdown-item" href="machine-learning-course.php">AI / Machine Learning / Robotics</a></li>
-				                </ul>
-				            </li>
-				        </ul>
-				    </div>
-				</div> 
-			</nav>      
-		</div>
-	</div>
+
 	<!--================================photo editor sub Header section end here=======================-->
 	
 	<!--================================top-body section start here=======================-->
@@ -119,7 +80,7 @@
 			    		<nav aria-label="breadcrumb">
 						  <ol class="breadcrumb breadcumb_gph">
 						    <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-						    <li class="breadcrumb-item "><a href="traning.php" class="text-light">Our Training</a></li>
+						    <li class="breadcrumb-item "><a href="training.php" class="text-light">Our Training</a></li>
 						    <li class="breadcrumb-item active text-light" aria-current="page">Wordpress</li>
 						  </ol>
 						</nav>
@@ -148,7 +109,7 @@
                 	<p>6. Websites (Portfolio, Blog, News, Corporate, E-Commerce )</p>
                 	<p>7. Domain, Hosing, Cpanel </p>
                 	<p>8. Marketplace Related Classes </p>
-                	<p>9. And much more project you will create throughout this <a href="traning.php" class="text-success">course</a> </p>
+                	<p>9. And much more project you will create throughout this <a href="training.php" class="text-success">course</a> </p>
                 </div>
                 <div class="col-12">
                 	<p>In this course we will create real world projects, which will make you confident and will help you build complex web applications, while also helping you maintain your confidence on the <a href="jobs.php" class="text-success">job</a>.</p>
@@ -254,7 +215,7 @@
                 </div>
                 <div class="col-12">
                 	<p>1. We have our own hostel for boys and girls.</p>
-                	<p>2. We have good facilities for online and offline <a href="traning.php" class="text-success">courses</a>.</p>
+                	<p>2. We have good facilities for online and offline <a href="training.php" class="text-success">courses</a>.</p>
                 	<p>3. There are arrangements for job placement and internship.</p>
                 	<p>4. Confirm your discount offer by registering today.</p>
                 </div>

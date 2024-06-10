@@ -16,6 +16,7 @@ $conn = $db->get_connection();
 	<title><?php echo $title;  ?></title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 	<?php include('./includes/style.php') ?>
+    <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
@@ -71,7 +72,7 @@ $conn = $db->get_connection();
                         <div class="d-flex gap-5">
                             <p>Job Type: <?php echo $row['job_type'] ?></p>
                             <p>Vacancies: <?php echo $row['vacancies'] ?></p>
-                            <p> Deadline: <?php echo date('d M Y', strtotime($row['deadline'])); ?></p>
+                            <p>Deadline: <?php echo date('d M Y', strtotime($row['deadline'])); ?></p>
 
                         </div>
                         <div class="top-body-button pt-3">
