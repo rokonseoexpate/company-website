@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!$_SESSION['username']) {
+    header("Location: login.php");
+}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $journey_id = mysqli_real_escape_string($conn, $_POST['journey_id']);
     $year = mysqli_real_escape_string($conn, $_POST['year']);

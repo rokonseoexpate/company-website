@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 // Check if ID is provided in URL
 if(isset($_GET['id']) && !empty($_GET['id'])) {
     $id = $_GET['id'];

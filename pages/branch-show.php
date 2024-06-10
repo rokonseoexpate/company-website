@@ -5,6 +5,9 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 
 // Fetch the branch details from the database based on the ID
 $id = $_GET['id']; // Assuming the ID is passed via URL parameter

@@ -1,8 +1,13 @@
 <?php
+require_once '../config/dbconnect.php';
 $title = "Web Projects List";
 session_start();
 ob_start();
-require_once '../config/dbconnect.php';
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
+
 $db = new DB_con();
 $conn = $db->get_connection();
 // Fetch web project data from the database

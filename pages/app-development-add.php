@@ -3,6 +3,11 @@ $title = "Create App Portfolio";
 session_start();
 ob_start();
 require_once '../config/dbconnect.php';
+
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
+
 $db = new DB_con();
 $conn = $db->get_connection();
 

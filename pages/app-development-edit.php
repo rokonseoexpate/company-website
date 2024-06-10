@@ -6,6 +6,11 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
+
+
 // Fetch existing portfolio data
 if (isset($_GET['id'])) {
     $portfolio_id = $_GET['id'];

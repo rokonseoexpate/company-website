@@ -5,7 +5,9 @@ session_start();
 require_once '../config/dbconnect.php';  
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 //  =========  Add Data ===================
 if (isset($_POST['submit'])) {
     $title   = $_POST['title'];

@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 // Fetch branches from the database
 $branch_query = "SELECT * FROM web_portfolio_categories";
 $branch_result = mysqli_query($conn, $branch_query);

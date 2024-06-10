@@ -4,7 +4,9 @@ session_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 if (isset($_POST['submit'])) {
     $name = $_POST['name'];
     $latitude = $_POST['latitude'];
@@ -17,8 +19,8 @@ if (isset($_POST['submit'])) {
     // Check if a new image is uploaded
     if ($_FILES["image"]["size"] > 0) {
         $image_name = $_FILES["image"]["name"];
-        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name ); 
-        $image_name = preg_replace("/\s+/", "-", $image_name );
+        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
+        $image_name = preg_replace("/\s+/", "-", $image_name);
         $target_dir = "../uploads/";
         $target_file = $target_dir . $image_name;
 
@@ -34,7 +36,6 @@ if (isset($_POST['submit'])) {
     if (mysqli_query($conn, $insert_query)) {
         // Set success message in session
         $_SESSION['successMessage'] = "Record Created successfully!";
-
     } else {
         // Insert failed
         $errorMessage = "Error creating Branch: " . mysqli_error($conn);
@@ -77,17 +78,17 @@ if (isset($_POST['submit'])) {
 
                 <div class="form-group col-md-6">
                     <label for="map">Map</label>
-                    <textarea name="map" id="" cols="5" rows="6"  class="form-control" required></textarea>
+                    <textarea name="map" id="" cols="5" rows="6" class="form-control" required></textarea>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="map">Address <span class="text-danger">* </span></label>
-                        <textarea name="address" placeholder="address" class="form-control" id="" cols="5" rows="5" ></textarea>
+                        <textarea name="address" placeholder="address" class="form-control" id="" cols="5" rows="5"></textarea>
                     </div>
                 </div>
 
-                
+
                 <div class="col-md-12 mt-4">
                     <div class="form-group">
                         <label for="alt_text">Alt Text</label>

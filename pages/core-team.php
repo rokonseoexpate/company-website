@@ -6,6 +6,9 @@ require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 // Show team information
 $qry = "SELECT * FROM teams ORDER BY id DESC";
 $result = $conn->query($qry);

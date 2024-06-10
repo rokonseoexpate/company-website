@@ -5,7 +5,9 @@ ob_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
-
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+}
 // Fetch data from the database
 $sql = "SELECT * FROM histories WHERE id = 1";
 $result = $conn->query($sql);
