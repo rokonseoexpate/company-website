@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['errorMessage'] = "Blog Category is required";
     }
 
-    if (!isset($_SESSION['errorMessage']) == null) {
+    if (isset($_SESSION['errorMessage']) == null) {
         if (isset($_FILES['image']['name']) && !empty($_FILES['image']['name'])) {
             $file = $_FILES['image']['name'];
             $extension = pathinfo($file, PATHINFO_EXTENSION);
