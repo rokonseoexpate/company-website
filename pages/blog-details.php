@@ -55,7 +55,7 @@ if (isset($_GET['id'])) {
                     <th>Alt Text</th>
                     <td><?php echo $row['alt_tag'] ?></td>
                 </tr>
-                
+
                 <tr>
                     <th>Alt Description</th>
                     <td><?php echo $row['alt_description'] ?></td>
