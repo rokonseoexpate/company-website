@@ -167,8 +167,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			?>
 					<div class="col-md-6">
 						<div class="Our_Offices_map">
-
-							<?php echo $row['map'] ?>
+						<iframe src="<?php echo $row['map']?>" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 						<div class="Our_Offices_map_txt newudcode">
 							<h6 class="fs-3 text-start pt-3"><?php echo $row['name'] ?></h6>
@@ -182,7 +181,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			}
 			?>
 		</div>
-
 	</div>
 </section>
 <!--================================Our_Offices section end here=======================-->
