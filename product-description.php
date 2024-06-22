@@ -254,18 +254,6 @@
 </section>
 <!--================================top_ready_start section end here=======================-->
 
-<!--================================Thrive_Globally section start here=======================-->
-<section class="PAY_MENT" style="padding: 20px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="PAY_IMG">
-				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" Product Description Writing Services" description=" Product Description Writing Services" width="100%">
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================Thrive_Globally section end here=======================-->
-<!--===========================footer part start===================================-->
 <?php include('./includes/footer_menu.php') ?>
 <!--===========================footer part end===================================-->
 

@@ -282,13 +282,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 									<!-- Rounded tabs -->
 									<ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center border-0 ">
 										<li class="nav-item flex-sm-fill" role="presentation">
-											<a id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" href="#home" role="tab" aria-controls="personal" aria-selected="true" class="nav-link border-0  font-weight-bold active">Career & Jobs </a>
+											<a id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" href="#home" role="tab" aria-controls="personal" aria-selected="false" class="nav-link border-0  font-weight-bold">Career & Jobs </a>
 										</li>
 										<li class="nav-item flex-sm-fill" role="presentation">
 											<a id="employment-tab" data-bs-toggle="tab" data-bs-target="#employment" href="#employment" role="tab" aria-controls="employment" aria-selected="false" class="nav-link border-0  font-weight-bold"> Press Enquiry</a>
 										</li>
 										<li class="nav-item flex-sm-fill" role="presentation">
-											<a id="Hire-tab" data-bs-toggle="tab" data-bs-target="#Hire" href="#Hire" role="tab" aria-controls="Hire" aria-selected="false" class="nav-link border-0  font-weight-bold">Hire IT Experts</a>
+											<a id="Hire-tab" data-bs-toggle="tab" data-bs-target="#Hire" href="#Hire" role="tab" aria-controls="Hire" aria-selected="true" class="nav-link border-0  font-weight-bold active">Hire IT Experts</a>
 										</li>
 										<li class="nav-item flex-sm-fill" role="presentation">
 											<a id="Project-tab" data-bs-toggle="tab" data-bs-target="#Project" href="#Project" role="tab" aria-controls="Project" aria-selected="false" class="nav-link border-0  font-weight-bold">Project Outsource</a>

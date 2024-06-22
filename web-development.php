@@ -247,11 +247,11 @@ $conn = $db->get_connection();
 										if ($result && mysqli_num_rows($result) > 0) {
 											$firstTab = true; // Reset the firstTab variable for the tab headers
 											while ($row = mysqli_fetch_assoc($result)) {
-												?>
+									?>
 												<li class="nav-item flex-sm-fill" role="presentation">
 													<a id="<?php echo $row['id']; ?>-tab" data-bs-toggle="pill" href="#<?php echo $row['id']; ?>" role="tab" aria-controls="<?php echo $row['id']; ?>" aria-selected="<?php echo $firstTab ? 'true' : 'false'; ?>" class="nav-link border-0 font-weight-bold<?php echo $firstTab ? ' show active' : ''; ?>"><?php echo $row['name']; ?></a>
 												</li>
-												<?php
+									<?php
 												$firstTab = false;
 											}
 										} else {
@@ -273,7 +273,7 @@ $conn = $db->get_connection();
 
 										if ($result && mysqli_num_rows($result) > 0) {
 											while ($row = mysqli_fetch_assoc($result)) {
-												?>
+									?>
 												<div id="<?php echo $row['category_id']; ?>" role="tabpanel" aria-labelledby="<?php echo $row['category_id']; ?>-tab" class="tab-pane fade px-4 py-5<?php echo $firstTab ? ' show active' : ''; ?>">
 													<div class="row">
 														<?php
@@ -284,19 +284,19 @@ $conn = $db->get_connection();
 
 															if ($resultItems && mysqli_num_rows($resultItems) > 0) {
 																while ($item = mysqli_fetch_assoc($resultItems)) {
-																	?>
+														?>
 																	<div class="col-md-3 pt-5">
 																		<a href="<?php echo $item['link']; ?>">
-																			<div class="card">
-																				<img src="<?php echo 'uploads/' . basename($item['image']); ?>" class="card-img-top" alt="<?php echo $item['title']; ?>" description="<?php echo $item['link']; ?>">
-																				<div class="card-body">
-																					<h5 class="card-title pb-3"><?php echo $item['title']; ?></h5>
+																			<div class="card ">
+																				<img src="<?php echo 'uploads/' . basename($item['image']); ?>" class="cardHeight card-img-top" alt="<?php echo $item['title']; ?>" description="<?php echo $item['link']; ?>">
+																				<div class="card-body ">
+																					<h5 class="card-title cardHeight pb-3"><?php echo $item['title']; ?></h5>
 																					<a href="<?php echo $item['link']; ?>" class="btn pt-2">Live Preview</a>
 																				</div>
 																			</div>
 																		</a>
 																	</div>
-																	<?php
+														<?php
 																}
 															} else {
 																echo "No portfolio items found for this category.";
@@ -307,7 +307,7 @@ $conn = $db->get_connection();
 														?>
 													</div>
 												</div>
-												<?php
+									<?php
 												$firstTab = false;
 											}
 										} else {
@@ -466,18 +466,6 @@ $conn = $db->get_connection();
 	</section>
 	<!--================================top_ready_start section end here=======================-->
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="PAY_IMG">
-					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description="payment" width="100%">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================Thrive_Globally section end here=======================-->
-	<!--================================accordion section end here=======================-->
 	<!--===========================footer part start===================================-->
 	<?php include('./includes/footer_menu.php') ?>
 	<!--===========================footer part end===================================-->
