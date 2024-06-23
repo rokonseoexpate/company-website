@@ -14,12 +14,7 @@
 	<title>Training</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 		
-	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="frontend/css/style.css">
-	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
+	<?php include('./includes/style.php') ?>
 
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
@@ -290,206 +285,6 @@
 </section>
 <!--================================Our_Branches section end here=======================-->
 
-<!--================================Core_Team section start here=======================-->
-<!-- <section class="Core_Team">
-		<div class="container">
-			<div class="row">
-				<div class="Core_Team_txt pb-5">
-					<h3>Our Course  <span>/ Training Services</span></h3>
-				</div>
-				<div class="Core_Team_members">
-					<div class="container mt-2">
-					  	<div class="row">
-					    	<div class="col-md-3 col-sm-6">
-					    		<a href="website-course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/ecommerce-website2.jpg" alt="Md-Mizanur-Rahman">
-					        		<div class="card-body">
-					        			<h5 class="card-title ">Website</h5>
-					        			<p class="card-text">Web Design & Development</p>
-					        		</div> 
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					    		<a href="graphics-course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/corporate-website2.jpg" alt="Mst-Razia-Sultana">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Graphic Design</h5>
-					        			<p class="card-text">Photoshop, Illustrator, etc</p>
-					        		</div> 
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					    		<a href="digital-marketing-course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Digital Marketing</h5>
-					        			<p class="card-text">Digital Marketing Training</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="microsoft_office_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Microsoft Office</h5>
-					        			<p class="card-text">Microsoft Office Specialist</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>    
-					  	</div>
-					  	<div class="row">
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="software_development_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Software</h5>
-					        			<p class="card-text">Software Development</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="server_administration_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Networking</h5>
-					        			<p class="card-text">Network Administration</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="app_development_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">App Development</h5>
-					        			<p class="card-text">Android & IOS Development</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="it_security_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">IT Service & Business</h5>
-					        			<p class="card-text">Business Management</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>    
-					  	</div>
-					  	<div class="row">
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="php_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">PHP</h5>
-					        			<p class="card-text">Website Development With PHP & MySQL</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="laravel_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Laravel</h5>
-					        			<p class="card-text">Website Development Using Laravel Framework (PHP)</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="wordpress_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Wordpress</h5>
-					        			<p class="card-text">Web Design & Development With Wordpress</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="aspnet_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">ASP.NET</h5>
-					        			<p class="card-text">Web Application Development Using ASP.NET</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>    
-					  	</div>
-					  	<div class="row">
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="python_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Python</h5>
-					        			<p class="card-text">Web Application Development Using Python</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="laravel_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Website Design</h5>
-					        			<p class="card-text">Responsive Website Design With HTML, CSS, JS, Bootstrap.</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="wordpress_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/Bloging-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">Wordpress</h5>
-					        			<p class="card-text">Web Design & Development With Wordpress</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>
-					    	<div class="col-md-3 col-sm-6">
-					      		<a href="aspnet_course.php">
-					      		<div class="card card-block">
-					    			<img src="frontend/images/news-website.jpg" alt="Shajahan-Ali-Director">
-					        		<div class="card-body">
-					        			<h5 class="card-title">ASP.NET</h5>
-					        			<p class="card-text">Web Application Development Using ASP.NET</p> 
-					        		</div>
-					  			</div>
-					  			</a>
-					    	</div>    
-					  	</div>  
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-<!--================================Core_Team section end here=======================-->
-
 <!--================================top_ready_start section start here=======================-->
 <section class="top_ready_start">
 	<div class="container">
@@ -513,27 +308,11 @@
 </section>
 <!--================================top_ready_start section end here=======================-->
 
-
-<!--================================Thrive_Globally section start here=======================-->
-<section class="PAY_MENT" style="padding: 20px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="PAY_IMG">
-				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description="payment" width="100%">
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================Thrive_Globally section end here=======================-->
-
 <!--===========================footer part start===================================-->
 <?php include('./includes/footer_menu.php') ?>
 <!--===========================footer part end===================================-->
 
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
+<?php include "includes/script.php" ?>
 
 </body>
 </html>

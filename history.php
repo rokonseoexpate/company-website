@@ -346,56 +346,7 @@ $history = $result->fetch_assoc();
 			<p>SEO Expate Bangladesh Ltd. takes great pride in collaborating with businesses, firms, service providers, corporations, government departments, and other organizations as a top information technology company.
 				Here take a look at some of the top companies and institutions that SEO Expate Bangladesh Ltd. has already worked with.</p>
 
-			<div class="col-12 pt-5">
-				<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-					<div class="carousel-indicators">
-						<?php
-						$qry = "SELECT * FROM history_galleries WHERE image_type = 2 ORDER BY id DESC";
-						if ($result = $conn->query($qry)) {
-							$active = true;
-							$index = 0;
-							while ($row = $result->fetch_assoc()) {
-								$imagePath = $row['image'];
-								$imageName = basename($imagePath);
-								$newImagePath = 'uploads/' . $imageName;
-						?>
-								<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="<?php echo $index; ?>" <?php echo $active ? 'class="active"' : ''; ?> aria-label="Slide <?php echo $index; ?>"></button>
-						<?php
-								$active = false;
-								$index++;
-							}
-						}
-						?>
-					</div>
-
-					<div class="carousel-inner pb-5">
-						<?php
-						$result->data_seek(0);
-						$active = true;
-						while ($row = $result->fetch_assoc()) {
-							$imagePath = $row['image'];
-							$imageName = basename($imagePath);
-							$newImagePath = 'uploads/' . $imageName;
-						?>
-							<div class="carousel-item <?php echo $active ? 'active' : ''; ?>" data-bs-interval="10000">
-								<img src="<?php echo $newImagePath; ?>" class="d-block w-100" alt="img">
-							</div>
-						<?php
-							$active = false;
-						}
-						?>
-					</div>
-
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
-			</div>
+				<?php include "includes/reliable-customers.php" ?>
 
 		</div>
 	</div>
@@ -410,103 +361,8 @@ $history = $result->fetch_assoc();
 					<div class="updatecode pb-3"><h6 style="padding-bottom: unset;">We're Highlighted On</h6></div>
 					<p>In this category, <a href="index.html" class="text-success">SEO Expate</a> Bangladesh Ltd. stands out as the most popular in the first place. Numerous local and international (offline and online) TV networks, newspapers, journals, TV channels, and other well-known platforms have highlighted our imaginative and inventive works! Also, we are one of the most followed companies on various social media platforms. Again, we are going like a bullet train in other media as well.</p>
 				</div>
-			<div class="slider pt-5">
-				<div class="owl-carousel">
-					<?php
-					$i = 1;
-					$qry = "SELECT * FROM history_galleries WHERE image_type = 3 ORDER BY id DESC";
-					$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
-
-					if ($result) {
-						while ($row = mysqli_fetch_assoc($result)) {
-					?>
-							<div class="slider-card">
-								<div class="d-flex justify-content-center align-items-center mb-4">
-									<img src="<?php
-												$imagePath = $row['image'];
-												$imageName = basename($imagePath);
-												$newImagePath = 'uploads/' . $imageName;
-												echo $newImagePath; ?>" alt="image">
-								</div>
-							</div>
-					<?php
-						}
-					} else {
-						echo "Error: " . mysqli_error($conn);
-					}
-					?>
-
-				</div>
-			</div>
-			<div class="bbb_main_container">
-				<div class="bbb_viewed_slider_container">
-					<div class="owl-carousel owl-theme bbb_viewed_slider">
-						<div class="owl-item">
-							<div class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-								<div class="bbb_viewed_image">
-									<img src="frontend/images/mukto-sokal.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="owl-item">
-							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-								<div class="bbb_viewed_image">
-									<img src="frontend/images/6578bb0f9469d.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="owl-item">
-							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-								<div class="bbb_viewed_image">
-									<img src="frontend/images/logo-fb.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="owl-item">
-							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-								<div class="bbb_viewed_image">
-									<img src="frontend/images/loggo.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="owl-item">
-							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-								<div class="bbb_viewed_image">
-									<img src="frontend/images/bogura.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="owl-item">
-							<div class=" bbb_viewed_item is_new d-flex flex-column align-items-center justify-content-center text-center">
-								<div class="bbb_viewed_image">
-									<img src="frontend/images/jaijaidin.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="owl-item">
-							<div class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-								<div class="bbb_viewed_image">
-									<img src="frontend/images/satmatha.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="owl-item">
-							<div class=" bbb_viewed_item d-flex flex-column align-items-center justify-content-center text-center">
-								<div class="bbb_viewed_image">
-									<img src="frontend/images/mukto-sokal.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class="owl-item">
-							<div class=" bbb_viewed_item discount d-flex flex-column align-items-center justify-content-center text-center">
-								<div class="bbb_viewed_image">
-									<img src="frontend/images/daily-korotoya.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		
+				<?php include "includes/highlighted-on.php" ?>
 
 		</div>
 	</div>
@@ -521,32 +377,8 @@ $history = $result->fetch_assoc();
 				<p>For more than ten years, SEO Expate Bangladesh Ltd. has been at the forefront of the ICT industry, driving innovation and empowering businesses to thrive in the digital age. As we celebrate this milestone, we take a moment to reflect on our achievements and recognitions, which stand as testaments to our dedication to excellence.</p>
 				<p>Explore a selection of our honors and accomplishments below.</p>
 			</div>
-			<div class="slider pt-5">
-				<div class="owl-carousel">
-					<?php
-					$i = 1;
-					$qry = "SELECT * FROM history_galleries WHERE image_type = 4 ORDER BY id DESC";
-					$result = mysqli_query($conn, $qry); // Utilizing mysqli_query() to execute the query
 
-					if ($result) {
-						while ($row = mysqli_fetch_assoc($result)) {
-					?>
-							<div class="slider-card">
-								<div class="d-flex justify-content-center align-items-center mb-4">
-									<img src="<?php echo 'uploads/' . basename($row['image']); ?>" alt="image">
-								</div>
-								<h5 class="mb-0 text-center"><b><?php echo $row['short_title'] ?></b></h5>
-								<p class="text-center p-4"><?php echo $row['title'] ?> </p>
-							</div>
-
-					<?php
-						}
-					} else {
-						echo "Error: " . mysqli_error($conn);
-					}
-					?>
-				</div>
-			</div>
+			<?php include "includes/achievements-recognitions.php" ?>
 		</div>
 	</div>
 </section>

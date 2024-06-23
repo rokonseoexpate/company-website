@@ -14,12 +14,7 @@
 	<title>Software Development</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 		
-	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="frontend/css/style.css">
-	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
+	<?php include('./includes/style.php') ?>
 
 	<div class="gtranslate_wrapper"></div>
 	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
@@ -391,26 +386,12 @@
 	<!--================================top_ready_start section end here=======================-->
 
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="PAY_IMG">
-					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description=" payment" width="100%">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================Thrive_Globally section end here=======================-->
 
 <!--===========================footer part start===================================-->
 <?php include('./includes/footer_menu.php') ?>
 <!--===========================footer part end===================================-->
 
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
+<?php include "includes/script.php" ?>
 
 </body>
 </html>

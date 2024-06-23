@@ -230,7 +230,7 @@
 
                 <li class="nav-item">
                     <a href="products.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'products.php' || basename($_SERVER['PHP_SELF']) == 'product-add.php' || basename($_SERVER['PHP_SELF']) == 'product-edit.php') ? 'active' : ''; ?>">
-                    <i class="fa-brands fa-product-hunt"></i>
+                        <i class="fa-brands fa-product-hunt"></i>
                         <p>
                             Products
                         </p>
