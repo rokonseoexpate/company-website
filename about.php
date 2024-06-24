@@ -692,7 +692,6 @@ $history = $result->fetch_assoc();
                     <p>SEO Expate Bangladesh Ltd is a national powerhouse and global player in IT <a href="services.php" class="text-success"> services</a> and technology solutions. Our innovative works have been featured in multiple TV channels, Newspapers, Magazines, and other popular platforms. This recognition boosts our passion to keep innovating.</p>
                 </div>
                 <?php include('./includes/highlighted-on.php') ?>
-
             </div>
         </div>
     </section>

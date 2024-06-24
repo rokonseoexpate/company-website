@@ -237,7 +237,11 @@ $title = "E-Commerce PPC";
 		</div>
 	</section>
 
-	<?php include('./includes/seo-build-story.php') ?>
+	<section class="top_ready_start">
+		<div class="container">
+			<?php include('./includes/seo-build-story.php') ?>
+		</div>
+	</section>
 
 	<?php include('./includes/footer_menu.php'); ?>
 

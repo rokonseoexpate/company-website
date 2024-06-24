@@ -38,7 +38,7 @@ $conn = $db->get_connection();
 
 <body>
 
-   <?php include "includes/navbar.php" ?>
+    <?php include "includes/navbar.php" ?>
 
     <?php include "includes/content-nav.php" ?>
     <!--================================photo editor sub Header section end here=======================-->
@@ -924,9 +924,12 @@ $conn = $db->get_connection();
         </div>
     </div>
 
-    <!--================================seopackages section end here=======================-->
-	<?php include('./includes/seo-build-story.php') ?>
-    <!--===========================footer part start===================================-->
+    <section class="top_ready_start">
+        <div class="container">
+            <?php include('./includes/seo-build-story.php') ?>
+        </div>
+    </section>
+    
     <?php include "includes/footer_menu.php" ?>
     <!--===========================footer part end===================================-->
 

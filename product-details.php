@@ -19,6 +19,7 @@ if (isset($_GET['slug'])) {
     // Check if a row is returned
     if ($row) {
         $title = $row['title'];
+        $demoLink = $row['link'];
         $description = $row['description'];
         $short_description = $row['short_description'];
         $imagePath = $row['image'];
@@ -40,11 +41,7 @@ if (isset($_GET['slug'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Product Details</title>
 
-	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="frontend/css/style.css">
-	<link rel="stylesheet" href="frontend/css/responsive.css">
+	<?php include "includes/style.php" ?>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
@@ -104,8 +101,8 @@ if (isset($_GET['slug'])) {
 					</div>
 					<div class="text-center pt-5">
 						<div class="top-body-button pt-3 d-flex gap-4">
-							<a type="button" href="contact.html">Show Demo</a>
-							<a type="button" href="contact.html">Purchase</a>
+							<a type="button" href="<?php echo $demoLink ?>">Show Demo</a>
+							<a type="button" href="contact.php#contactForm">Purchase</a>
 						</div>
 					</div>
 				</div>
@@ -120,10 +117,7 @@ if (isset($_GET['slug'])) {
 
 	<?php include('./includes/footer_menu.php') ?>
 
-	<script src="frontend/js/jquery-3.5.1.js"></script>
-	<script src="frontend/js/bootstrap.bundle.min.js"></script>
-	<script src="frontend/js/owl.carousel.js"></script>
-	<script src="frontend/js/main.js"></script>
+	<?php include "includes/script.php" ?>
 
 </body>
 

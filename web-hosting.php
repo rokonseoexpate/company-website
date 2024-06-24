@@ -313,83 +313,7 @@ $conn = $db->get_connection();
 	<!--================================all_plan section start here=======================-->
 	<section class="all_plan">
 		<div class="container">
-			<div class="row newudcode">
-				<h6>ALL OUR PLANS INCLUDE</h6>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-solid fa-shield-virus" alt=" seo expate" description=" seo expate"></i>
-						<p>EASY-TO-USE <br>CONTROL PANEL</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-brands fa-linux" alt=" seo expate" description=" seo expate"></i>
-						<p>CLOUD <br>LINUX OS</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-solid fa-rocket" alt=" seo expate" description=" seo expate"></i>
-						<p>99.9% UPTIME <br>GUARANTEE</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-solid fa-headset" alt=" seo expate" description=" seo expate"></i>
-						<p>24/7/365 <br> PREMIUM SUPPORT</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-brands fa-app-store-ios" alt=" seo expate" description=" seo expate"></i>
-						<p>1-CLICK <br>INSTALL APPS</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-solid fa-database" alt=" seo expate" description=" seo expate"></i>
-						<p>UNLIMITED <br>DATABASE</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-solid fa-road-lock" alt=" seo expate" description=" seo expate"></i>
-						<p>SSL <br>CERTIFICATES</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-brands fa-google-wallet" alt=" seo expate" description=" seo expate"></i>
-						<p>FREE <br>SITEBUILDER</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-brands fa-nfc-symbol" alt=" seo expate" description=" seo expate"></i>
-						<p>TRANSFER <br>WEBSITE & DOMAIN</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-solid fa-money-bill-1" alt=" seo expate" description=" seo expate"></i>
-						<p>30 DAYS <br>MONEY BACK</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-solid fa-shield-virus" alt=" seo expate" description=" seo expate"></i>
-						<p>EASY-TO-USE <br>CONTROL PANEL</p>
-					</div>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 pt-5">
-					<div class="all_plan_icon">
-						<i class="fa-solid fa-headset" alt=" seo expate" description=" seo expate"></i>
-						<p>24/7/365 <br>PREMIUM SUPPORT</p>
-					</div>
-				</div>
-			</div>
+			<?php include "includes/all-our-plan.php" ?>
 		</div>
 	</section>
 	<!--================================all_plan section end here=======================-->
@@ -398,17 +322,14 @@ $conn = $db->get_connection();
 	<section class="SSD_WEB">
 		<div class="container">
 			<div class="row newudcode">
-				<p> SEO Expate Bangladesh Ltd is a domain hosting <a href="index.html" class="text-success">company</a> in Bangladesh. Do you need a website hosting in Bangladesh ? Do you want to do a website ? You need domain name registration in Bangladesh and a hosting company in Bangladesh. We are best domain hosting provider for you. We provide best web hosting in Bangladesh. You can see our domain hosting price in Bangladesh. For creating a professional <a href="web_development.html" class="text-success">website</a> for your business or personal use, try to avoid free domain and hosting. If you use free <a href="domain_hosting.html" class="text-success">domain and hosting</a>, so you will not get better result form your website. Our hosting recommend WordPress, drupal,Joomla, Prestashop and many more. You can get cheap domain and web hosting from us.</p>
+				<p> SEO Expate Bangladesh Ltd is a domain hosting <a href="/" class="text-success">company</a> in Bangladesh. Do you need a website hosting in Bangladesh ? Do you want to do a website ? You need domain name registration in Bangladesh and a hosting company in Bangladesh. We are best domain hosting provider for you. We provide best web hosting in Bangladesh. You can see our domain hosting price in Bangladesh. For creating a professional <a href="web-development.php" class="text-success">website</a> for your business or personal use, try to avoid free domain and hosting. If you use free <a href="domain-hosting.php" class="text-success">domain and hosting</a>, so you will not get better result form your website. Our hosting recommend WordPress, drupal,Joomla, Prestashop and many more. You can get cheap domain and web hosting from us.</p>
 			</div>
 		</div>
 	</section>
-	<!--================================SSD_WEB section end here=======================-->
 
-	<!--================================payment_method section start here=======================-->
 	<section class="payment_method">
 		<?php include "includes/payment-method.php" ?>
 	</section>
-	<!--================================payment_method section end here=======================-->
 
 	<?php include "includes/footer_menu.php" ?>
 

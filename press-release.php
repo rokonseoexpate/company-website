@@ -15,11 +15,8 @@ $conn = $db->get_connection();
 	<title>Presss Release</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 
-	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="frontend/css/style.css">
-	<link rel="stylesheet" href="frontend/css/responsive.css">
+	<?php include "includes/style.php" ?>
+
 	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
@@ -238,7 +235,11 @@ $conn = $db->get_connection();
 		</div>
 	</section>
 
-	<?php include('./includes/seo-build-story.php') ?>
+	<section class="top_ready_start">
+		<div class="container">
+			<?php include('./includes/seo-build-story.php') ?>
+		</div>
+	</section>
 
 	<?php include('./includes/footer_menu.php') ?>
 

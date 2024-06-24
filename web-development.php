@@ -445,18 +445,15 @@ $conn = $db->get_connection();
 
 	<!--================================top_ready_start section start here=======================-->
 	<section class="top_ready_start">
-	<?php include "includes/seo-build-story.php" ?>
+		<div class="container">
+			<?php include "includes/seo-build-story.php" ?>
+		</div>
+
 	</section>
-	<!--================================top_ready_start section end here=======================-->
 
-	<!--===========================footer part start===================================-->
 	<?php include('./includes/footer_menu.php') ?>
-	<!--===========================footer part end===================================-->
 
-	<script src="frontend/js/jquery-3.5.1.js"></script>
-	<script src="frontend/js/bootstrap.bundle.min.js"></script>
-	<script src="frontend/js/owl.carousel.js"></script>
-	<script src="frontend/js/main.js"></script>
+	<?php include "includes/script.php" ?>
 
 </body>
 

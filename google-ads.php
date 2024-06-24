@@ -394,7 +394,11 @@ $title = "Google Ads";
 		</div>
 	</section>
 	<!--================================editor_texts section end here=======================-->
-	<?php include('./includes/seo-build-story.php') ?>
+	<section class="top_ready_start">
+		<div class="container">
+			<?php include('./includes/seo-build-story.php') ?>
+		</div>
+	</section>
 
 	<?php include('./includes/footer_menu.php'); ?>
 

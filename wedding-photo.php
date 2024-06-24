@@ -57,7 +57,7 @@ $conn = $db->get_connection();
 					</div>
 					<div class="top-body-button pt-3">
 						<a type="button" href="free-trial.php">Free Trial</a>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</div>

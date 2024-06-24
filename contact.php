@@ -64,338 +64,335 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 
 <body>
-<?php include "includes/navbar.php" ?>
+	<?php include "includes/navbar.php" ?>
 
-<!--================================conversation_away section start here=======================-->
-<section class="conversation_away pbunsetc">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="top_ready_start_txt ">
-					<div class="top_about_us_txt" style="z-index:500;">
-						<nav aria-label="breadcrumb">
-							<ol class="breadcrumb breadcumb_gph">
-								<li class="breadcrumb-item "><a href="/" class="text-dark ">Home</a></li>
-								<li class="breadcrumb-item active text-dark" aria-current="page">» Contact</li>
-							</ol>
-						</nav>
-					</div>
-					<h3>We’re just a</h3>
-					<h4>Conversation away!</h4>
-					<p>We combine international outlook with the knowledge from across the industries and technologies, into creating a digital masterpiece that delivers result.</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="top_ready_start_img">
-					<img src="frontend/images/95991_prev_ui.png" alt=" Conversation away" description=" Conversation away">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================conversation_away section end here=======================-->
-
-<!--================================contact_icons section start here=======================-->
-<section class="contact_icons">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 borderr">
-				<div class="contact_icons_txt d-flex">
-					<div class="icon_key">
-						<i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
-					</div>
-					<div class="icon_key_text">
-						<p>Looking for Jobs?</p>
-						<h5>Current Job Openings</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 borderb">
-				<div class="contact_icons_txt d-flex">
-					<div class="icon_key">
-						<i class="fa-brands fa-searchengin fa-rotate-90"></i>
-					</div>
-					<div class="icon_key_text">
-						<p>Looking for Business Collaboration or Partnership?</p>
-						<h5>info@seoexpate.com</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6 borderl">
-				<div class="contact_icons_txt d-flex">
-					<div class="icon_key">
-						<i class="fa-brands fa-searchengin fa-rotate-90"></i>
-					</div>
-					<div class="icon_key_text">
-						<p>Press Inquiries</p>
-						<h5>info@seoexpate.com</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 ">
-				<div class="contact_icons_txt d-flex">
-					<div class="icon_key">
-						<i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
-					</div>
-					<div class="icon_key_text">
-						<p>Everything Else</p>
-						<h5>info@seoexpate.com</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================contact_icons section end here=======================-->
-
-<!--================================Our_Offices section start here=======================-->
-<section class="Our_Offices">
-	<div class="container">
-		<div class="row">
-			<div class="Our_Offices_txt pb-5 newudcode">
-				<h6 class="fs-1">Our <span class="text-success">Offices</span></h6>
-			</div>
-			<?php
-			$i = 1;
-			$qry = "SELECT * FROM branches ORDER BY id DESC";
-			$result = mysqli_query($conn, $qry);
-
-			if ($result) {
-				while ($row = mysqli_fetch_assoc($result)) {
-			?>
-					<div class="col-md-6">
-						<div class="Our_Offices_map">
-						<iframe src="<?php echo $row['map']?>" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<!--================================conversation_away section start here=======================-->
+	<section class="conversation_away pbunsetc">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="top_ready_start_txt ">
+						<div class="top_about_us_txt" style="z-index:500;">
+							<nav aria-label="breadcrumb">
+								<ol class="breadcrumb breadcumb_gph">
+									<li class="breadcrumb-item "><a href="/" class="text-dark ">Home</a></li>
+									<li class="breadcrumb-item active text-dark" aria-current="page">» Contact</li>
+								</ol>
+							</nav>
 						</div>
-						<div class="Our_Offices_map_txt newudcode">
-							<h6 class="fs-3 text-start pt-3"><?php echo $row['name'] ?></h6>
-							<p><?php echo $row['address'] ?></p>
+						<h3>We’re just a</h3>
+						<h4>Conversation away!</h4>
+						<p>We combine international outlook with the knowledge from across the industries and technologies, into creating a digital masterpiece that delivers result.</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="top_ready_start_img">
+						<img src="frontend/images/95991_prev_ui.png" alt=" Conversation away" description=" Conversation away">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================conversation_away section end here=======================-->
+
+	<!--================================contact_icons section start here=======================-->
+	<section class="contact_icons">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 borderr">
+					<div class="contact_icons_txt d-flex">
+						<div class="icon_key">
+							<i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+						</div>
+						<div class="icon_key_text">
+							<p>Looking for Jobs?</p>
+							<h5>Current Job Openings</h5>
 						</div>
 					</div>
-			<?php
+				</div>
+				<div class="col-md-6 borderb">
+					<div class="contact_icons_txt d-flex">
+						<div class="icon_key">
+							<i class="fa-brands fa-searchengin fa-rotate-90"></i>
+						</div>
+						<div class="icon_key_text">
+							<p>Looking for Business Collaboration or Partnership?</p>
+							<h5>info@seoexpate.com</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 borderl">
+					<div class="contact_icons_txt d-flex">
+						<div class="icon_key">
+							<i class="fa-brands fa-searchengin fa-rotate-90"></i>
+						</div>
+						<div class="icon_key_text">
+							<p>Press Inquiries</p>
+							<h5>info@seoexpate.com</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 ">
+					<div class="contact_icons_txt d-flex">
+						<div class="icon_key">
+							<i class="fa-solid fa-magnifying-glass fa-rotate-90"></i>
+						</div>
+						<div class="icon_key_text">
+							<p>Everything Else</p>
+							<h5>info@seoexpate.com</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================contact_icons section end here=======================-->
+
+	<!--================================Our_Offices section start here=======================-->
+	<section class="Our_Offices">
+		<div class="container">
+			<div class="row">
+				<div class="Our_Offices_txt pb-5 newudcode">
+					<h6 class="fs-1">Our <span class="text-success">Offices</span></h6>
+				</div>
+				<?php
+				$i = 1;
+				$qry = "SELECT * FROM branches ORDER BY id DESC";
+				$result = mysqli_query($conn, $qry);
+
+				if ($result) {
+					while ($row = mysqli_fetch_assoc($result)) {
+				?>
+						<div class="col-md-6">
+							<div class="Our_Offices_map">
+								<iframe src="<?php echo $row['map'] ?>" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+							</div>
+							<div class="Our_Offices_map_txt newudcode">
+								<h6 class="fs-3 text-start pt-3"><?php echo $row['name'] ?></h6>
+								<p><?php echo $row['address'] ?></p>
+							</div>
+						</div>
+				<?php
+					}
+				} else {
+					echo "Error: " . mysqli_error($conn);
 				}
-			} else {
-				echo "Error: " . mysqli_error($conn);
-			}
-			?>
-		</div>
-	</div>
-</section>
-<!--================================Our_Offices section end here=======================-->
-
-<!--================================contact_icons section start here=======================-->
-<section class="contact_icons">
-	<div class="container">
-		<div class="row">
-			<div class="contact_icon_text newudcode">
-				<h5 class="text-center pb-5">Drop us a line to Start a Project with us</h5>
-			</div>
-			<div class="col-md-6 borderr">
-				<div class="contact_icons_txt d-flex">
-					<div class="icon_key">
-						<i class="fa-solid fa-pencil" alt=" seo expate" description=" seo expate"></i>
-					</div>
-					<div class="icon_key_text">
-						<p>Ready to share a project?</p>
-						<h5>Submit a Form</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 borderb">
-				<div class="contact_icons_txt d-flex">
-					<div class="icon_key">
-						<i class="fa-regular fa-envelope" alt=" seo expate" description=" seo expate"></i>
-					</div>
-					<div class="icon_key_text">
-						<p>Share a detailed specification</p>
-						<h5>info@seoexpate.com</h5>
-					</div>
-				</div>
+				?>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-6 borderl">
-				<div class="contact_icons_txt d-flex">
-					<div class="icon_key">
-						<i class="fa-brands fa-whatsapp" alt=" seo expate" description=" seo expate"></i>
-					</div>
-					<div class="icon_key_text">
-						<p>Connect on WhatsApp</p>
-						<h5>+8801409957451</h5>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 ">
-				<div class="contact_icons_txt d-flex">
-					<div class="icon_key">
-						<i class="fa-brands fa-skype" alt=" seo expate" description=" seo expate"></i>
-					</div>
-					<div class="icon_key_text">
-						<p>Connect on Skype</p>
-						<h5>seoexpate</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================contact_icons section end here=======================-->
+	</section>
+	<!--================================Our_Offices section end here=======================-->
 
-<!--================================contact_form section start here=======================-->
-<section class="contact_form">
-<?php include('./includes/trusted-contact-form.php') ?>
-</section>
-<!--================================contact_form section end here=======================-->
-
-<!--================================analog_clock section start here=======================-->
-<section class="analog_clock">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<canvas id="canvas" width="150" height="150"></canvas>
-				<h5 class="pt-5">Bangladesh</h5>
-				<p>Floor-14, Tropical Alauddin Tower, Plot No-32/C, <br> Road-2, Sector-3, Uttara, Dhaka-1230</p>
-			</div>
-			<div class="col-md-6">
-				<div class="container">
-					<div class="clock">
-						<label style="--i: 1"><span>1</span></label>
-						<label style="--i: 2"><span>2</span></label>
-						<label style="--i: 3"><span>3</span></label>
-						<label style="--i: 4"><span>4</span></label>
-						<label style="--i: 5"><span>5</span></label>
-						<label style="--i: 6"><span>6</span></label>
-						<label style="--i: 7"><span>7</span></label>
-						<label style="--i: 8"><span>8</span></label>
-						<label style="--i: 9"><span>9</span></label>
-						<label style="--i: 10"><span>10</span></label>
-						<label style="--i: 11"><span>11</span></label>
-						<label style="--i: 12"><span>12</span></label>
-						<div class="indicator">
-							<span class="hand hour"></span>
-							<span class="hand minute"></span>
-							<span class="hand second"></span>
+	<!--================================contact_icons section start here=======================-->
+	<section class="contact_icons">
+		<div class="container">
+			<div class="row">
+				<div class="contact_icon_text newudcode">
+					<h5 class="text-center pb-5">Drop us a line to Start a Project with us</h5>
+				</div>
+				<div class="col-md-6 borderr">
+					<div class="contact_icons_txt d-flex">
+						<div class="icon_key">
+							<i class="fa-solid fa-pencil" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="icon_key_text">
+							<p>Ready to share a project?</p>
+							<h5>Submit a Form</h5>
 						</div>
 					</div>
-					<div class="mode-switch"></div>
 				</div>
-				<h5>Bangladesh</h5>
-				<p>Floor-14, Tropical Alauddin Tower, Plot No-32/C, <br> Road-2, Sector-3, Uttara, Dhaka-1230</p>
+				<div class="col-md-6 borderb">
+					<div class="contact_icons_txt d-flex">
+						<div class="icon_key">
+							<i class="fa-regular fa-envelope" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="icon_key_text">
+							<p>Share a detailed specification</p>
+							<h5>info@seoexpate.com</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 borderl">
+					<div class="contact_icons_txt d-flex">
+						<div class="icon_key">
+							<i class="fa-brands fa-whatsapp" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="icon_key_text">
+							<p>Connect on WhatsApp</p>
+							<h5>+8801409957451</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 ">
+					<div class="contact_icons_txt d-flex">
+						<div class="icon_key">
+							<i class="fa-brands fa-skype" alt=" seo expate" description=" seo expate"></i>
+						</div>
+						<div class="icon_key_text">
+							<p>Connect on Skype</p>
+							<h5>seoexpate</h5>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--================================analog_clock section end here=======================-->
+	</section>
+	<!--================================contact_icons section end here=======================-->
+
+	<!--================================contact_form section start here=======================-->
+	<section class="contact_form" id="contactForm">
+		<?php include('./includes/trusted-contact-form.php') ?>
+	</section>
+	<!--================================contact_form section end here=======================-->
+
+	<!--================================analog_clock section start here=======================-->
+	<section class="analog_clock">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<canvas id="canvas" width="150" height="150"></canvas>
+					<h5 class="pt-5">Bangladesh</h5>
+					<p>Floor-14, Tropical Alauddin Tower, Plot No-32/C, <br> Road-2, Sector-3, Uttara, Dhaka-1230</p>
+				</div>
+				<div class="col-md-6">
+					<div class="container">
+						<div class="clock">
+							<label style="--i: 1"><span>1</span></label>
+							<label style="--i: 2"><span>2</span></label>
+							<label style="--i: 3"><span>3</span></label>
+							<label style="--i: 4"><span>4</span></label>
+							<label style="--i: 5"><span>5</span></label>
+							<label style="--i: 6"><span>6</span></label>
+							<label style="--i: 7"><span>7</span></label>
+							<label style="--i: 8"><span>8</span></label>
+							<label style="--i: 9"><span>9</span></label>
+							<label style="--i: 10"><span>10</span></label>
+							<label style="--i: 11"><span>11</span></label>
+							<label style="--i: 12"><span>12</span></label>
+							<div class="indicator">
+								<span class="hand hour"></span>
+								<span class="hand minute"></span>
+								<span class="hand second"></span>
+							</div>
+						</div>
+						<div class="mode-switch"></div>
+					</div>
+					<h5>Bangladesh</h5>
+					<p>Floor-14, Tropical Alauddin Tower, Plot No-32/C, <br> Road-2, Sector-3, Uttara, Dhaka-1230</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================================analog_clock section end here=======================-->
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-	$(document).ready(function() {
-		$(".submitBtn").click(function() {
-			var name = $("#fullname").val();
-			var email = $("#inputEmail4").val();
-			var phone = $("#inputPassword4").val();
-			var company_name = $("#CompanyName").val();
-			var company_website = $("#CompanyWebsite").val();
-			var stuf = $("#stuf").val();
-			var description = $("#summernote").val();
-
-			// Validation for name
-			if (name === "") {
-				$(".nameErr").php("Please enter your name");
-				return;
-			} else {
-				$(".nameErr").php("");
-			}
-
-			// Validation for email
-			if (email === "") {
-				$(".emailErr").php("Please enter your email");
-				return;
-			} else {
-				$(".emailErr").php("");
-			}
-
-			// Validation for phone
-			if (phone === "") {
-				$(".phoneErr").php("Please enter your phone number");
-				return;
-			} else {
-				$(".phoneErr").php("");
-			}
-
-			// Validation for Company name
-			if (company_name === "") {
-				$(".company_nameErr").php("Please enter your company name");
-				return;
-			} else {
-				$(".company_nameErr").php("");
-			}
-
-			// Validation for Company Website
-			if (company_website === "") {
-				$(".company_websiteErr").php("Please enter your company name");
-				return;
-			} else {
-				$(".company_websiteErr").php("");
-			}
-
-
-			// Validation for stuf
-			if (stuf === "") {
-				$(".stufErr").php("Please enter number of staff required");
-				return;
-			} else {
-				$(".stufErr").php("");
-			}
-
-			// Validation for description
-			if (description === "") {
-				$(".descriptionErr").php("Please describe your requirements");
-				return;
-			} else {
-				$(".descriptionErr").php("");
-			}
-
-			// If all validations pass, submit the form
-			$("#hireForm").submit();
-		});
-	});
-</script>
-
-
-
-<?php
-include('./includes/footer_menu.php');
-?>
-
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" ></script>
-
-<?php if (isset($successMessage)): ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
-		iziToast.success({
-			title: 'Success',
-			position: 'topRight',
-			message: '<?php echo $successMessage; ?>',
+		$(document).ready(function() {
+			$(".submitBtn").click(function() {
+				var name = $("#fullname").val();
+				var email = $("#inputEmail4").val();
+				var phone = $("#inputPassword4").val();
+				var company_name = $("#CompanyName").val();
+				var company_website = $("#CompanyWebsite").val();
+				var stuf = $("#stuf").val();
+				var description = $("#summernote").val();
+
+				// Validation for name
+				if (name === "") {
+					$(".nameErr").php("Please enter your name");
+					return;
+				} else {
+					$(".nameErr").php("");
+				}
+
+				// Validation for email
+				if (email === "") {
+					$(".emailErr").php("Please enter your email");
+					return;
+				} else {
+					$(".emailErr").php("");
+				}
+
+				// Validation for phone
+				if (phone === "") {
+					$(".phoneErr").php("Please enter your phone number");
+					return;
+				} else {
+					$(".phoneErr").php("");
+				}
+
+				// Validation for Company name
+				if (company_name === "") {
+					$(".company_nameErr").php("Please enter your company name");
+					return;
+				} else {
+					$(".company_nameErr").php("");
+				}
+
+				// Validation for Company Website
+				if (company_website === "") {
+					$(".company_websiteErr").php("Please enter your company name");
+					return;
+				} else {
+					$(".company_websiteErr").php("");
+				}
+
+
+				// Validation for stuf
+				if (stuf === "") {
+					$(".stufErr").php("Please enter number of staff required");
+					return;
+				} else {
+					$(".stufErr").php("");
+				}
+
+				// Validation for description
+				if (description === "") {
+					$(".descriptionErr").php("Please describe your requirements");
+					return;
+				} else {
+					$(".descriptionErr").php("");
+				}
+
+				// If all validations pass, submit the form
+				$("#hireForm").submit();
+			});
 		});
 	</script>
-<?php endif; ?>
 
-<?php if (isset($errorMessage)): ?>
-	<script>
-		iziToast.error({
-			title: 'Error',
-			position:'topRight',
-			message: '<?php echo $errorMessage; ?>',
-		});
-	</script>
-<?php endif; ?>
+
+
+	<?php
+	include('./includes/footer_menu.php');
+	?>
+	<?php include "includes/script.php" ?>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+
+	<?php if (isset($successMessage)) : ?>
+		<script>
+			iziToast.success({
+				title: 'Success',
+				position: 'topRight',
+				message: '<?php echo $successMessage; ?>',
+			});
+		</script>
+	<?php endif; ?>
+
+	<?php if (isset($errorMessage)) : ?>
+		<script>
+			iziToast.error({
+				title: 'Error',
+				position: 'topRight',
+				message: '<?php echo $errorMessage; ?>',
+			});
+		</script>
+	<?php endif; ?>
 </body>
-</html>
 
+</html>

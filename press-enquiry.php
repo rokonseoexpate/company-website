@@ -95,11 +95,11 @@ $conn = $db->get_connection();
 	</section>
 	<!--================================editor_texts section end here=======================-->
 
-	<!--================================top_ready_start section start here=======================-->
-	<section class="top_ready_start" style="padding-top: unset;">
-		<?php include "includes/seo-build-story.php" ?>
+	<section class="top_ready_start">
+		<div class="container">
+			<?php include('./includes/seo-build-story.php') ?>
+		</div>
 	</section>
-
 	<!--===========================footer part start===================================-->
 	<?php include('./includes/footer_menu.php') ?>
 	<!--===========================footer part end===================================-->

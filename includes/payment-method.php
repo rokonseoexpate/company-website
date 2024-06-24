@@ -1,7 +1,7 @@
 <div class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<div class="payment_method_img">
+					<div class="payment_method_img text-center">
 						<img src="frontend/images/site-img17-e1439871857101-1.png" alt=" seo expate" description=" seo expate">
 					</div>
 				</div>
