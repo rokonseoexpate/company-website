@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <?php include "includes/navbar.php" ?>
 
-    <section class="top-body top_about_us topaboutus" style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
+    <section class="top-body top_about_us topaboutus" style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;   ">
         <div class="container ">
             <div class="row">
                 <div class="col-12" style="z-index:500;">

@@ -38,7 +38,7 @@ $conn = $db->get_connection();
     <?php include "includes/navbar.php" ?>
 
     <!--================================top-body section start here=======================-->
-    <section class="top-body" style="background-image: url(frontend/images/Advanced-technology.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
+    <section class="top-body" style="background-image: url(frontend/images/Advanced-technology.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;   ">
         <div class="container ">
             <div class="row">
                 <div class="col-md-7" style="z-index:500;">

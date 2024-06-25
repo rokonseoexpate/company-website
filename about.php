@@ -45,7 +45,7 @@ $history = $result->fetch_assoc();
 
 
     <!--================================top-body section start here=======================-->
-    <section class="top-body top_about_us" style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
+    <section class="top-body top_about_us" style="background-image: url(frontend/images/2.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;   ">
         <div class="container ">
             <div class="row">
                 <div class="top_about_us_txt pb-5" style="z-index:500;">

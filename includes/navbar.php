@@ -128,27 +128,34 @@
                                                 <div class="row">
                                                     <?php
                                                     $i = 1;
-                                                    $qry = "SELECT * FROM products where status = 1 order by priority asc";
+                                                    $qry = "SELECT * FROM products WHERE status = 1 ORDER BY priority ASC";
+                                                    $result = $conn->query($qry);
 
-                                                    if ($result = $conn->query($qry)) {
+                                                    if ($result && $result->num_rows > 0) {
                                                         while ($row = $result->fetch_assoc()) {
                                                     ?>
                                                             <div class="col-lg-4 col-sm-6 py-4">
                                                                 <div class="list-group">
                                                                     <a class="list-group-item d-flex" href="product-details.php?slug=<?php echo $row['slug']; ?>">
-                                                                        <div><i class="fa-solid fa-school" alt=" seo expate" description=" seo expate"></i></div>
+                                                                        <div><i class="fa-solid fa-school" alt="seo expate" description="seo expate"></i></div>
                                                                         <div>
                                                                             <h5><?php echo $row['title']; ?></h5>
-                                                                            <p><?php echo substr($row['short_description'], 1, 100); ?></p>
+                                                                            <p><?php echo substr($row['short_description'], 0, 100); // Changed to 0 to get the correct substring 
+                                                                                ?></p>
                                                                         </div>
                                                                     </a>
                                                                 </div>
                                                             </div>
-                                                    <?php
+                                                        <?php
                                                         }
+                                                    } else {
+                                                        ?>
+                                                        <p class="text-danger text-center">Don't found any product?</p>
+                                                    <?php
                                                     }
                                                     ?>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>

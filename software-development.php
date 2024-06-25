@@ -42,7 +42,7 @@ $conn = $db->get_connection();
 
 
 	<!--================================top-body section start here=======================-->
-	<section class="top-body web_service" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
+	<section class="top-body web_service" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;   ">
 		<div class="container ">
 			<div class="row">
 				<div class="col-12" style="z-index:500;">

@@ -40,7 +40,7 @@ $conn = $db->get_connection();
 	<?php include('./includes/navbar.php') ?>
 
 	<!--================================cliping_service section start here=======================-->
-	<section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0; margin-top: 60px;">
+	<section class="cliping_service eCommerceSEO" style="background: var(--global-bg-color); padding: 15px 0; ">
 		<div class="container">
 			<div class="row">
 				<div class="col-12" style="z-index:500;">
