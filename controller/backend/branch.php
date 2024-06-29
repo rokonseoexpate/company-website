@@ -42,15 +42,7 @@
     } else {
         echo "Record not found.";
     }
-
 }
- 
-
-
-
-
-
-
 
 //  =========  Edit Data ==================
 

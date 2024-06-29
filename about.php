@@ -385,7 +385,16 @@ $history = $result->fetch_assoc();
                     <div class="col-md-3 <?php if ($key > 3) {
                                                 echo 'mt-4';
                                             } ?>">
-                        <a href="department.php"><img src="<?php echo $newImagePath ?>" alt="<?php echo $department['alt_tag'] ?>" description="<?php echo strip_tags($department['alt_description']) ?>"></a>
+                        <a href="department.php">
+
+                            <div class="financbox">
+                                <img class="pic-1" src="<?php echo $newImagePath ?>" alt="<?php echo $department['alt_tag'] ?>" description="<?php echo strip_tags($department['alt_description']) ?>">
+                                <div class="box-content">
+                                    <h3 class="title"><?php echo $department['name'] ?></h3>
+                                    <span class="post">Viwe Details</span>
+                                </div>
+                            </div>
+                        </a>
                         <h5 class="text-light pt-3"><?php echo $department['name'] ?></h5>
                     </div>
                 <?php } ?>
@@ -423,37 +432,103 @@ $history = $result->fetch_assoc();
                 <h6 class="pb-3 text-light">Core Service Areas</h6>
                 <p class="text-light pb-4" style="text-align: justify;">SEO Expate delivers IT <a href="services.php" class="text-success">services</a> and tech solutions and provides higher value to clients. Our service areas are Software Development, Mobile App Development, Digital Marketing, Graphics Design, Content Writing, and many more. Also, we have a freelancing training program that helps thousands of youth to build their career.</p>
                 <div class="col-md-3">
-                    <a href="web-development.php"><img src="frontend/images/core-servicr.png" alt="Core Service Areas" description="Core Service Areas"></a>
+                    <a href="web-development.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-servicr.png" alt="Core Service Areas" description="Core Service Areas">
+                            <div class="box-content">
+                                <h3 class="title">Web Development</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Web Development</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="software-development.php"><img src="frontend/images/core-servicerter.png" alt="Core Service Areas" description="Core Service Areas"></a>
+
+                    <a href="software-development.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-servicerter.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Software Development</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Software Development</h5>
+
                 </div>
                 <div class="col-md-3">
-                    <a href="app-development.php"><img src="frontend/images/core-service-areaer.png" alt="Core Service Areas" description="Core Service Areas"></a>
+                    <a href="app-development.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-service-areaer.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Mobile App Development</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Mobile App Development</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="domain-hosting.php"><img src="frontend/images/core-servicer.png" alt="Core Service Areas" description="Core Service Areas"></a>
+                    <a href="domain-hosting.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-servicer.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Domain & Hosting</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Domain & Hosting</h5>
                 </div>
             </div>
             <div class="row pt-3">
                 <div class="col-md-3">
-                    <a href="graphic-design-and-photo-editing.php"><img src="frontend/images/iot-expertiser.png" alt="Core Service Areas" description="Core Service Areas"></a>
+                    <a href="graphic-design-and-photo-editing.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/iot-expertiser.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Graphic Design</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Graphic Design</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="digital-marketing.php"><img src="frontend/images/core-service.png" alt="Core Service Areas" description="Core Service Areas"></a>
+                    <a href="digital-marketing.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-service.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Digital Marketing</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Digital Marketing</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="seo-service.php"><img src="frontend/images/core-service-areater.png" alt="Core Service Areas" description="Core Service Areas"></a>
+                    <a href="seo-service.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-service-areater.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">SEO</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">SEO</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="content-writing.php"><img src="frontend/images/core-service-arear.png" alt="Core Service Areas" description="Core Service Areas"></a>
+                    <a href="content-writing.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-service-arear.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Content Writing</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Content Writing</h5>
                 </div>
             </div>
