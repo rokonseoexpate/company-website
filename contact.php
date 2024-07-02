@@ -16,7 +16,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$stuf = $_POST['stuf'];
 	$description = $_POST['description'];
 
-	$sql = "INSERT INTO `contacts`(`name`, `email`, `phone`, `company_name`, `company_website`, `type`, `stuf`, `description`) VALUES('$name', '$email', '$phone', '$companyName', '$companyWebsite', '$type', '$stuf', '$description')";
+	$files = [];
+    if (!empty($_FILES['attachments']['name'][0])) {
+        $fileCount = count($_FILES['attachments']['name']);
+        for ($i = 0; $i < $fileCount; $i++) {
+            $originalFileName = $_FILES['attachments']['name'][$i];
+            $fileNameWithoutSpaces = str_replace(' ', '-', $originalFileName); // Replace spaces with hyphens
+            $fileName = time() . '-' . $fileNameWithoutSpaces;
+            $fileTmpName = $_FILES['attachments']['tmp_name'][$i];
+            $fileDestination = 'uploads/' . $fileName;
+            move_uploaded_file($fileTmpName, $fileDestination);
+            $files[] = $fileDestination;
+        }
+    }
+    $encodedFiles = json_encode($files);
+
+
+	$sql = "INSERT INTO contacts(name, email, phone, company_name, company_website, attachments, type, stuf, description) VALUES('$name', '$email', '$phone', '$companyName', '$companyWebsite','$encodedFiles', '$type', '$stuf', '$description')";
 
 	$result = $conn->query($sql);
 
@@ -31,6 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$conn->close();
 }
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -255,8 +274,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			<div class="row">
 				<div class="col-md-6">
 					<canvas id="canvas" width="150" height="150"></canvas>
-					<h5 class="pt-5">Bangladesh</h5>
-					<p>Floor-14, Tropical Alauddin Tower, Plot No-32/C, <br> Road-2, Sector-3, Uttara, Dhaka-1230</p>
+					<h5 class="pt-5">USA</h5>
+					<p>80 Washington Square E, New York, NY 10003, USA </p>
 				</div>
 				<div class="col-md-6">
 					<div class="container">
@@ -282,7 +301,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						<div class="mode-switch"></div>
 					</div>
 					<h5>Bangladesh</h5>
-					<p>Floor-14, Tropical Alauddin Tower, Plot No-32/C, <br> Road-2, Sector-3, Uttara, Dhaka-1230</p>
+					<p>Floor 1, Kagjipara, SEO Expate Tower, Majhira, <br> Shahajanpur, Bogura-5801, Bangladesh</p>
 				</div>
 			</div>
 		</div>

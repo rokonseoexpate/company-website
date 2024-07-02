@@ -4499,3 +4499,12 @@ font-weight: 600;
 .domai_search_bar .txtalign{
   text-align: justify;
 }
+
+.Res_flex{
+  flex: 50% !important; 
+}
+@media (min-width: 0px) and (max-width: 913px){
+  .Res_coll{
+      width: 100% !important; 
+  }
+}

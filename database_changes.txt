@@ -1,3 +1,6 @@
 ALTER TABLE `employees` ADD `priority` INT NULL DEFAULT NULL AFTER `branch_id`;
 ALTER TABLE `employees` ADD `dep_priority` INT NULL DEFAULT NULL AFTER `department_id`;
     
+database query calate hobe
+
+ALTER TABLE `contacts` ADD `attachment` LONGTEXT NULL AFTER `description`;
