@@ -52,7 +52,7 @@
 										<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="row g-3" enctype="multipart/form-data">
 
 											<div class="col-12">
-												<input type="hidden" name="type" value="personal" id="">
+												<input type="hidden" name="type" value="Career" id="">
 												<label for="fullname" class="form-label">Your Name <span>*</span></label>
 												<input type="text" name="name" class="form-control" id="fullname" placeholder="Your Full Name" required>
 											</div>
@@ -68,8 +68,8 @@
 											</div>
 
 											<div class="col-md-6">
-												<label for="CompanyName" name="company_name" class="form-label">Company Name</label>
-												<input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
+												<label for="CompanyName"  class="form-label">Company Name</label>
+												<input type="text" class="form-control" name="company_name" id="CompanyName" placeholder="Company Name" required>
 											</div>
 
 											<div class="col-md-6">
@@ -110,8 +110,8 @@
 												<input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
 											</div>
 											<div class="col-md-6">
-												<label for="CompanyName" name="company_name" class="form-label">Company Name</label>
-												<input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
+												<label for="CompanyName"  class="form-label">Company Name</label>
+												<input type="text" class="form-control" name="company_name" id="CompanyName" placeholder="Company Name" required>
 											</div>
 											<div class="col-md-6">
 												<label for="CompanyWebsite" class="form-label">Company Website</label>
@@ -154,8 +154,8 @@
 												<input type="text" name="phone" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
 											</div>
 											<div class="col-md-6">
-												<label for="CompanyName" name="company_name" class="form-label">Company Name</label>
-												<input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
+												<label for="CompanyName"class="form-label">Company Name</label>
+												<input type="text" class="form-control"  name="company_name" id="CompanyName" placeholder="Company Name" required>
 											</div>
 											<div class="col-md-6">
 												<label for="CompanyWebsite" class="form-label">Company Website</label>

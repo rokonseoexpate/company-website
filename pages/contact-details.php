@@ -66,7 +66,6 @@ if (isset($_GET['id'])) {
                     <td><?php echo $row['description'] ?></td>
                 </tr>
 
-
                 <tr>
                     <td>Attachment</td>
 
@@ -74,8 +73,17 @@ if (isset($_GET['id'])) {
                     <?php if (isset($images) && !empty($images)) { ?>
                         <td>
                             <?php foreach ($images as $image) { ?>
-                                <a href="<?php echo $image; ?>" download>
-                                    <img src="<?php echo $image; ?>" alt="image" style="height: 100px; width: 120px; margin-bottom: 5px;">
+                                <?php
+                                $extension = pathinfo($image, PATHINFO_EXTENSION);
+                                $previewImage = $image;
+                                if($extension== 'pdf'){
+                                    $previewImage = 'uploads/static/pdf.png';
+                                }else if($extension === 'docx'){
+                                    $previewImage = 'uploads/static/docs.png';
+                                }
+                                ?>
+                                <a href="<?php echo  '../' . $image; ?>" download>
+                                    <img src="<?php echo '../' . $previewImage; ?>" alt="image" style="height: 100px; width: 120px; margin: 5px;">
                                 </a>
                             <?php } ?>
                         </td>

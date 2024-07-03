@@ -1,9 +1,19 @@
 <?php
 $title = "Contact";
 
+session_start();
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -17,28 +27,76 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$description = $_POST['description'];
 
 	$files = [];
-    if (!empty($_FILES['attachments']['name'][0])) {
-        $fileCount = count($_FILES['attachments']['name']);
-        for ($i = 0; $i < $fileCount; $i++) {
-            $originalFileName = $_FILES['attachments']['name'][$i];
-            $fileNameWithoutSpaces = str_replace(' ', '-', $originalFileName); // Replace spaces with hyphens
-            $fileName = time() . '-' . $fileNameWithoutSpaces;
-            $fileTmpName = $_FILES['attachments']['tmp_name'][$i];
-            $fileDestination = 'uploads/' . $fileName;
-            move_uploaded_file($fileTmpName, $fileDestination);
-            $files[] = $fileDestination;
-        }
-    }
-    $encodedFiles = json_encode($files);
-
+	if (!empty($_FILES['attachments']['name'][0])) {
+		$fileCount = count($_FILES['attachments']['name']);
+		for ($i = 0; $i < $fileCount; $i++) {
+			$originalFileName = $_FILES['attachments']['name'][$i];
+			$fileNameWithoutSpaces = str_replace(' ', '-', $originalFileName); // Replace spaces with hyphens
+			$fileName = time() . '-' . $fileNameWithoutSpaces;
+			$fileTmpName = $_FILES['attachments']['tmp_name'][$i];
+			$fileDestination = 'uploads/contact/' . $fileName;
+			move_uploaded_file($fileTmpName, $fileDestination);
+			$files[] = $fileDestination;
+		}
+	}
+	$encodedFiles = json_encode($files);
 
 	$sql = "INSERT INTO contacts(name, email, phone, company_name, company_website, attachments, type, stuf, description) VALUES('$name', '$email', '$phone', '$companyName', '$companyWebsite','$encodedFiles', '$type', '$stuf', '$description')";
 
 	$result = $conn->query($sql);
 
 	if ($result === TRUE) {
+
+		//Create an instance; passing `true` enables exceptions
+		$mail = new PHPMailer(true);
+
+		try {
+			//Server settings
+			// $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+			$mail->isSMTP();                                            //Send using SMTP
+			$mail->Host       = 'sandbox.smtp.mailtrap.io';                     //Set the SMTP server to send through
+			$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+			$mail->Username   = '4d5fe1dbbdefcb';                     //SMTP username
+			$mail->Password   = 'b7ac257e665ba1';                               //SMTP password
+			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
+			$mail->Port       = 2525;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+			//Recipients
+			$mail->setFrom($email);
+
+			if ($type == 'Career') {
+				$mail->addAddress('career@seoexpate.com');
+			} else {
+				$mail->addAddress('info@seoexpate.com');
+			}
+
+			//Content
+			$mail->isHTML(true);                                  //Set email format to HTML
+			$mail->Subject = strtoupper($type);
+			$mail->Body    = '<h3> Hello you got the new message from ' . $name . '</h3>
+			    <strong> Name : </strong> <span>' . $name . ' </span> <br/>
+			    <strong> Email :  </strong> <span>' . $email . ' </span> <br/>
+			    <strong> Phone :  </strong> <span>' . $phone . ' </span> <br/>
+			    <strong> Company Name :  </strong> <span>' . $companyName . ' </span> <br/>
+			    <strong> Company Website :  </strong> <span>' . $companyWebsite . '</span> <br/>
+			    <strong> Description :  </strong> <span>' . $description . ' </span>';
+
+			$mailSend = $mail->send();
+
+			if ($mailSend) {
+
+				$_SESSION['successMessage'] = 'Thank you. Your message send success.';
+
+				header("Location: {$_SERVER["HTTP_REFERER"]}");
+				exit(0);
+			}
+		} catch (Exception $e) {
+			echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+		}
+
+
 		$referrer = $_SERVER['HTTP_REFERER'];
-		echo "<script>alert('successfully submited');</script>";
+
 		header("Location: contact.php");
 	} else {
 		echo "Error: " . $sql . "<br>" . $conn->error;
@@ -47,9 +105,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$conn->close();
 }
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,6 +119,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 	<?php include('./includes/style.php') ?>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<div class="gtranslate_wrapper"></div>
 	<script>
@@ -384,8 +440,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		});
 	</script>
 
-
-
 	<?php
 	include('./includes/footer_menu.php');
 	?>
@@ -393,13 +447,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 
-	<?php if (isset($successMessage)) : ?>
+
+	<?php if ($_SESSION['successMessage']) : ?>
 		<script>
 			iziToast.success({
 				title: 'Success',
 				position: 'topRight',
-				message: '<?php echo $successMessage; ?>',
+				message: '<?php echo $_SESSION['successMessage']; ?>',
 			});
+			<?php unset($_SESSION['successMessage']); ?>
 		</script>
 	<?php endif; ?>
 

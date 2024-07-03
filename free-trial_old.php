@@ -1,5 +1,4 @@
 <?php
-session_start();
 $title = "Free Trial";
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -57,13 +56,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mysqli_query($conn, $insert_query)) {
         // Data inserted successfully
-        $_SESSION['successMess'] = "Form submitted successfully!";
+        $successMessage = "Form submitted successfully!";
     } else {
         // Error occurred while inserting data
         echo "Error: " . mysqli_error($conn);
     }
 
-    header("Location: free-trial.php");
     // Close database connection
     mysqli_close($conn);
 } else {
@@ -84,7 +82,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title><?php echo $title;  ?></title>
     <meta property="og:title" content="free trail - IT Services, Technology Solutions">
     <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?php include('./includes/style.php') ?>
 
     <div class="gtranslate_wrapper"></div>
@@ -265,14 +262,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <?php include 'includes/footer-services.php' ?>
 
+
     <?php
     include('./includes/footer_menu.php');
     ?>
 
-    <script src="frontend/js/jquery-3.5.1.js"></script>
-    <script src="frontend/js/bootstrap.bundle.min.js"></script>
-    <script src="frontend/js/owl.carousel.js"></script>
-    <script src="frontend/js/main.js"></script>
+    <?php include "includes/script.php" ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 
 
@@ -339,14 +335,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     </script>
 
-    <?php if ($_SESSION['successMess']) : ?>
+
+
+
+    <?php if (isset($successMessage)) : ?>
         <script>
             iziToast.success({
                 title: 'Success',
                 position: 'topRight',
-                message: '<?php echo $_SESSION['successMess']; ?>',
+                message: '<?php echo $successMessage; ?>',
             });
-            <?php unset($_SESSION['successMess']); ?>
         </script>
     <?php endif; ?>
 
