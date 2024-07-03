@@ -3,4 +3,4 @@ ALTER TABLE `employees` ADD `dep_priority` INT NULL DEFAULT NULL AFTER `departme
     
 database query calate hobe
 
-ALTER TABLE `contacts` ADD `attachment` LONGTEXT NULL AFTER `description`;
+ALTER TABLE `contacts` ADD `attachments` LONGTEXT NULL AFTER `description`;

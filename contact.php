@@ -53,12 +53,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		try {
 			//Server settings
 			// $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+			// $mail->SMTPDebug = 2;                      //Enable verbose debug output
 			$mail->isSMTP();                                            //Send using SMTP
 			$mail->Host       = 'sandbox.smtp.mailtrap.io';                     //Set the SMTP server to send through
 			$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
 			$mail->Username   = '4d5fe1dbbdefcb';                     //SMTP username
 			$mail->Password   = 'b7ac257e665ba1';                               //SMTP password
-			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
+			$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 			$mail->Port       = 2525;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 			//Recipients
@@ -71,6 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			}
 
 			//Content
+			
 			$mail->isHTML(true);                                  //Set email format to HTML
 			$mail->Subject = strtoupper($type);
 			$mail->Body    = '<h3> Hello you got the new message from ' . $name . '</h3>
