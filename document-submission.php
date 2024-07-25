@@ -396,7 +396,7 @@ $conn = $db->get_connection();
 						</h5>
 						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
 							<div class="accordion-body">Google Drive, Canva, and Microsoft provide easy-peasy ways to create PPTs with a wide range of options for layouts, animations, template designs, etc. You can also take the help of PPT converter tools to transform docs/PDFs into PPT.
-							</div>
+							</div>  
 						</div>
 					</div>
 					<div class="accordion-item">
