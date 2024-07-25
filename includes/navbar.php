@@ -136,7 +136,7 @@
                                                     ?>
                                                             <div class="col-lg-4 col-sm-6 py-4">
                                                                 <div class="list-group">
-                                                                    <a class="list-group-item d-flex" href="product-details.php?slug=<?php echo $row['slug']; ?>">
+                                                                    <a class="list-group-item d-flex" href="product-details.php?id=<?php echo $row['id']; ?>">
                                                                         <div><i class="fa-solid fa-school" alt="seo expate" description="seo expate"></i></div>
                                                                         <div>
                                                                             <h5><?php echo $row['title']; ?></h5>

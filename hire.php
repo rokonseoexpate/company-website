@@ -210,37 +210,103 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     Software Development, <a href="app-development.php" class="text-success">Mobile App Development</a>, <a href="digital-marketing.php" class="text-success">Digital Marketing</a>, <a href="graphic-design.php" class="text-success">Graphics Design</a>, <a href="content-writing.php" class="text-success">Content Writing</a>, and many more. Also, we have a freelancing training
                     program that helps thousands of youth to build their career.</p>
                 <div class="col-md-3">
-                    <a href="web-development.php"><img src="frontend/images/core-servicr.png" alt=" seo expate" description=" seo expate"></a>
+                    <a href="web-development.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-servicr.png" alt="Core Service Areas" description="Core Service Areas">
+                            <div class="box-content">
+                                <h3 class="title">Web Development</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Web Development</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="software-development.php"><img src="frontend/images/core-servicerter.png" alt=" seo expate" description=" seo expate"></a>
+
+                    <a href="software-development.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-servicerter.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Software Development</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Software Development</h5>
+
                 </div>
                 <div class="col-md-3">
-                    <a href="app-development.php"><img src="frontend/images/core-service-areaer.png" alt=" seo expate" description=" seo expate"></a>
+                    <a href="app-development.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-service-areaer.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Mobile App Development</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Mobile App Development</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="domain-hosting.php"><img src="frontend/images/core-servicer.png" alt=" seo expate" description=" seo expate"></a>
+                    <a href="domain-hosting.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-servicer.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Domain & Hosting</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Domain & Hosting</h5>
                 </div>
             </div>
             <div class="row pt-3">
                 <div class="col-md-3">
-                    <a href="graphic-design-and-photo-editing.php"><img src="frontend/images/iot-expertiser.png" alt=" seo expate" description=" seo expate"></a>
+                    <a href="graphic-design-and-photo-editing.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/iot-expertiser.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Graphic Design</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Graphic Design</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="digital-marketing.php"><img src="frontend/images/core-service.png" alt=" seo expate" description=" seo expate"></a>
+                    <a href="digital-marketing.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-service.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Digital Marketing</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Digital Marketing</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="seo-service.php"><img src="frontend/images/core-service-areater.png" alt=" seo expate" description=" seo expate"></a>
+                    <a href="seo-service.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-service-areater.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">SEO</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">SEO</h5>
                 </div>
                 <div class="col-md-3">
-                    <a href="content-writing.php"><img src="frontend/images/core-service-arear.png" alt=" seo expate" description=" seo expate"></a>
+                    <a href="content-writing.php">
+                        <div class="financbox">
+                            <img class="pic-1" src="frontend/images/core-service-arear.png" alt="Our Department" description="Our Department">
+                            <div class="box-content">
+                                <h3 class="title">Content Writing</h3>
+                                <span class="post">Viwe Details</span>
+                            </div>
+                        </div>
+                    </a>
                     <h5 class="text-light pt-3">Content Writing</h5>
                 </div>
             </div>

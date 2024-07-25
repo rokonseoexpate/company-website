@@ -72,7 +72,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			}
 
 			//Content
-			
 			$mail->isHTML(true);                                  //Set email format to HTML
 			$mail->Subject = strtoupper($type);
 			$mail->Body    = '<h3> Hello you got the new message from ' . $name . '</h3>
@@ -84,7 +83,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			    <strong> Description :  </strong> <span>' . $description . ' </span>';
 
 			$mailSend = $mail->send();
-
 			if ($mailSend) {
 
 				$_SESSION['successMessage'] = 'Thank you. Your message send success.';

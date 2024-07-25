@@ -3,15 +3,13 @@ require_once 'config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
 
-
-
-if (isset($_GET['slug'])) {
-    $slug = $_GET['slug'];
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
 
     // Use a prepared statement to safely query the database
-    $qry = "SELECT * FROM products WHERE slug=?";
+    $qry = "SELECT * FROM products WHERE id=?";
     $stmt = $conn->prepare($qry);
-    $stmt->bind_param("s", $slug);
+    $stmt->bind_param("s", $id);
     $stmt->execute();
     $result = $stmt->get_result();
     $row = $result->fetch_assoc();
@@ -28,6 +26,7 @@ if (isset($_GET['slug'])) {
     } else {
         echo "Product not found.";
     }
+
 }
 ?>
 <!DOCTYPE html>

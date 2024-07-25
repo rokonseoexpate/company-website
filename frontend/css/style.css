@@ -4508,3 +4508,23 @@ font-weight: 600;
       width: 100% !important; 
   }
 }
+
+/* new css code 2024_07_10 */
+.back_link_code .card-body {
+    background: #fff;
+    transform: translateY(-35px);
+    width: 80%;
+    margin: auto;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+@media only screen and (max-width: 767px){
+    .back_link_code .card-body{
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .back_link_code .backlinktop{
+        margin-top: -70px;
+    }
+}
