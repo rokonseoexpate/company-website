@@ -1,3 +1,10 @@
+<?php
+
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +16,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Logo Design</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
+
 	<?php include('./includes/style.php') ?>
+
 	<div class="gtranslate_wrapper"></div>
 	<script>
 		window.gtranslateSettings = {
@@ -30,13 +38,9 @@
 
 <body>
 
-	<!--================================Header section start here=======================-->
 	<?php include "includes/navbar.php" ?>
-	<!--================================Header section end here=======================-->
 
-	<!--================================photo editor sub Header section end here=======================-->
-	<?php include "includes/color-correction-nav.php" ?>
-	<!--================================photo editor sub Header section end here=======================-->
+	<?php include "includes/photo-editing-nav.php" ?>
 
 	<!--================================top-body section start here=======================-->
 	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
@@ -421,193 +425,12 @@
 			</div>
 		</div>
 	</section>
-	<!--================================domai_pricing_table section end here=======================-->
 
-	<!--================================editor_all_services section end here=======================-->
-	<section class="WHAT_MAKES footer_btm_all_services"  style="background: unset" >
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<h4>Photoshop Services</h4>
-					<a href="clipping-path.php" class="d-flex pt-4">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Clipping Path Service</h6>
-						</div>
-					</a>
-					<a href="jewelry-retouching.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Jewelry Retouching Service</h6>
-						</div>
-					</a>
-					<a href="ecommerce-photo-edit.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>E-Commerce Photo Editing</h6>
-						</div>
-					</a>
-					<a href="image-masking.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Image Masking Service</h6>
-						</div>
-					</a>
-					<a href="color-correction.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Color Correction Service</h6>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3">
-					<h4>Photoshop Services</h4>
-					<a href="real-estate-photo.php" class="d-flex pt-4">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Real Estate Photo Editing</h6>
-						</div>
-					</a>
-					<a href="photo-retouching.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Photo Retouching</h6>
-						</div>
-					</a>
-					<a href="background-remove.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Remove Background Image</h6>
-						</div>
-					</a>
-					<a href="ghost-mannequin.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Ghost Mannequin Effect</h6>
-						</div>
-					</a>
-					<a href="shadow-making.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Shadow Making Service</h6>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3">
-					<h4>Photoshop Services</h4>
-					<a href="photo-restoration.php" class="d-flex pt-4">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Photo Restoration</h6>
-						</div>
-					</a>
-					<a href="image-manipulation.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Image Manipulation Service</h6>
-						</div>
-					</a>
-					<a href="wedding-photo.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Wedding Photo Editing</h6>
-						</div>
-					</a>
-					<a href="raster-vector.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Raster to Vector Conversion</h6>
-						</div>
-					</a>
-					<a href="background-remove.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Photo Background Removing</h6>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3">
-					<h4>Graphics Design Services</h4>
-					<a href="t-shirt-design.php" class="d-flex pt-4">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>T-Shirt Design</h6>
-						</div>
-					</a>
-					<a href="logo-design.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Logo Designs Service</h6>
-						</div>
-					</a>
-					<a href="banner-design.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Banner Design</h6>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================editor_all_services section end here=======================-->
+	<?php include('./includes/footer-services.php') ?>
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="PAY_IMG">
-					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================Thrive_Globally section end here=======================-->
-
-	<!--===========================footer part start===================================-->
 	<?php include "includes/footer_menu.php" ?>
-	<!--===========================footer part end===================================-->
 
-	<script src="js/jquery-3.5.1.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/main.js"></script>
+	<?php include "includes/script.php" ?>
 
 </body>
 

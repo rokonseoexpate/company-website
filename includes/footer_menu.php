@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-3 col-sm-6 contact_info">
 				<div class="">
-					<h5 class="mb-4"><a class="navbar-brand" href="index.php">
+					<h5 class="mb-4"><a class="navbar-brand" href="/">
 							<img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="SEO Expate Bangladesh Ltd" description="SEO Expate Bangladesh Ltd" width="" height="auto"></a>
 					</h5>
 				</div>

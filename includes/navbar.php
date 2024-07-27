@@ -8,8 +8,7 @@
                         <a class="navbar-brand" href="/">
                             <img src="frontend/images/SEO-Expate-Bangladesh-Ltd.png" alt="logo seo expate" description="logo seo expate" width="300" height="auto">
                         </a>
-                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbar-content">
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
                             <i class="fas fa-stream text-white" alt=" seo expate" description=" seo expate"></i>
                         </button>
                         <div class="collapse navbar-collapse" id="navbar-content">
@@ -18,8 +17,7 @@
                                     <a class="nav-link " href="hire.php">Hire</a>
                                 </li>
                                 <li class="nav-item dropdown dropdown-mega position-static">
-                                    <a class="nav-link dropdown-toggle" href="services.php" data-bs-toggle="dropdown"
-                                       data-bs-auto-close="outside">Services</a>
+                                    <a class="nav-link dropdown-toggle" href="services.php" data-bs-toggle="dropdown" data-bs-auto-close="outside">Services</a>
                                     <div class="dropdown-menu shadow">
                                         <div class="mega-content px-md-4">
                                             <div class="container-fluid">
@@ -123,126 +121,84 @@
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown dropdown-mega position-static">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                       data-bs-auto-close="outside">Products</a>
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
                                     <div class="dropdown-menu shadow">
                                         <div class="mega-content px-md-4">
                                             <div class="container-fluid">
                                                 <div class="row">
-                                                    <div class="col-lg-4 col-sm-6 py-4">
-                                                        <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="#">
-                                                                <div><i class="fa-solid fa-school" alt=" seo expate" description=" seo expate"></i></div>
-                                                                <div>
-                                                                    <h5>School Management Software</h5>
-                                                                    <p>We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality.</p>
+                                                    <?php
+                                                    $i = 1;
+                                                    $qry = "SELECT * FROM products WHERE status = 1 ORDER BY priority ASC";
+                                                    $result = $conn->query($qry);
+
+                                                    if ($result && $result->num_rows > 0) {
+                                                        while ($row = $result->fetch_assoc()) {
+                                                    ?>
+                                                            <div class="col-lg-4 col-sm-6 py-4">
+                                                                <div class="list-group">
+                                                                    <a class="list-group-item d-flex" href="product-details.php?id=<?php echo $row['id']; ?>">
+                                                                        <div><i class="fa-solid fa-school" alt="seo expate" description="seo expate"></i></div>
+                                                                        <div>
+                                                                            <h5><?php echo $row['title']; ?></h5>
+                                                                            <p><?php echo substr($row['short_description'], 0, 100); // Changed to 0 to get the correct substring 
+                                                                                ?></p>
+                                                                        </div>
+                                                                    </a>
                                                                 </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="#">
-                                                                <div><i class="fa-solid fa-code-branch" alt=" seo expate" description=" seo expate"></i></div>
-                                                                <div>
-                                                                    <h5>POS Software</h5>
-                                                                    <p>We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality.</p>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="#">
-                                                                <div><i class="fa-solid fa-users" alt=" seo expate" description=" seo expate"></i></div>
-                                                                <div>
-                                                                    <h5>Job Portal</h5>
-                                                                    <p>We count on our technically sound expert developers for the ability to understand your ideas and transform them into reality.</p>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-sm-6 py-4 ">
-                                                        <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="#">
-                                                                <div><i class="fa-solid fa-cart-shopping" alt=" seo expate" description=" seo expate"></i></div>
-                                                                <div>
-                                                                    <h5>Ecommerce Solution</h5>
-                                                                    <p>We ensure your vision for a perfect business website with a user-friendly design and appearance to catch emerging technologies and trends.</p>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="#">
-                                                                <div><i class="fa-solid fa-person-biking" alt=" seo expate" description=" seo expate"></i></div>
-                                                                <div>
-                                                                    <h5>Ride Sharing Mobile App</h5>
-                                                                    <p>We ensure your vision for a perfect business website with a user-friendly design and appearance to catch emerging technologies and trends.</p>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="#">
-                                                                <div><i class="fa-solid fa-globe" alt=" seo expate" description=" seo expate"></i></div>
-                                                                <div>
-                                                                    <h5>Website Template Create</h5>
-                                                                    <p>We ensure your vision for a perfect business website with a user-friendly design and appearance to catch emerging technologies and trends.</p>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-4 col-sm-6 py-4">
-                                                        <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="#">
-                                                                <div><i class="fa-solid fa-user-graduate" alt=" seo expate" description=" seo expate"></i></div>
-                                                                <div>
-                                                                    <h5>eLearning Platform</h5>
-                                                                    <p>We utilize the latest software technologies to develop different custom software with amazing graphics.</p>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="#">
-                                                                <div><i class="fa-solid fa-user-lock" alt=" seo expate" description=" seo expate"></i></div>
-                                                                <div>
-                                                                    <h5>Child Marriage Controlling System</h5>
-                                                                    <p>We utilize the latest software technologies to develop different custom software with amazing graphics.</p>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                        <div class="list-group">
-                                                            <a class="list-group-item d-flex" href="#">
-                                                                <div><i class="fa-solid fa-layer-group" alt=" seo expate" description=" seo expate"></i></div>
-                                                                <div>
-                                                                    <h5>Online Booking/Rental Solution</h5>
-                                                                    <p>We utilize the latest software technologies to develop different custom software with amazing graphics.</p>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
+                                                            </div>
+                                                        <?php
+                                                        }
+                                                    } else {
+                                                        ?>
+                                                        <p class="text-danger text-center">Don't found any product?</p>
+                                                    <?php
+                                                    }
+                                                    ?>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown nev_submenu">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                       data-bs-auto-close="outside">Company</a>
+                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Company</a>
                                     <ul class="dropdown-menu shadow">
                                         <li><a class="dropdown-item" href="about.php">About Us</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="branches.php">Branches</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="department.php">Department </a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="certificate.php">Certificate </a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="award.php">Awards</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="history.php">History</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="contact.php">Contact</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="jobs.php">Jobs</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="notice.php">Notice</a></li>
-                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
                                         <li><a class="dropdown-item" href="press-enquiry.php">Press Enquiry</a></li>
                                     </ul>
                                 </li>

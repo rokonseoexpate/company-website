@@ -1,3 +1,10 @@
+<?php
+
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -243,47 +250,17 @@
 	<!--================================top_ready_start section start here=======================-->
 	<section class="top_ready_start" style="padding-top: unset;">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="top_ready_start_txt">
-						<h3>We can build your story</h3>
-						<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-					</div>
-					<div class="top-body-button pt-5">
-						<a type="button" href="contact.php">Get In Touch</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="top_ready_start_img text-left">
-						<img src="frontend/images/95991_prev_ui.png" alt="laravel" description=" laravel">
-					</div>
-				</div>
-			</div>
+		<?php include 'includes/seo-build-story.php' ?>
 		</div>
 	</section>
 	<!--================================top_ready_start section end here=======================-->
 
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="PAY_IMG">
-					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="laravel" description=" laravel" width="100%">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================Thrive_Globally section end here=======================-->
-
 	<!--===========================footer part start===================================-->
 	<?php include "includes/footer_menu.php" ?>
 	<!--===========================footer part end===================================-->
 
-	<script src="frontend/js/jquery-3.5.1.js"></script>
-	<script src="frontend/js/bootstrap.bundle.min.js"></script>
-	<script src="frontend/js/owl.carousel.js"></script>
-	<script src="frontend/js/main.js"></script>
+	<?php include "includes/script.php" ?>
 
 </body>
 

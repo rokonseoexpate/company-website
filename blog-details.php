@@ -28,30 +28,30 @@ $newImagePath = 'uploads/' . $imageName;
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="Title" content="Seo Expate Bangladesh LTD.">
-	<meta name="description" content="Seo Expate Bangladesh LTD.">
-	<meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php echo $title;  ?></title>
-	<meta property="og:title" content="Home - IT Services, Technology Solutions">
+    <meta charset="UTF-8">
+    <meta name="Title" content="Seo Expate Bangladesh LTD.">
+    <meta name="description" content="Seo Expate Bangladesh LTD.">
+    <meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $title;  ?></title>
+    <meta property="og:title" content="Home - IT Services, Technology Solutions">
     <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
-	<?php include('./includes/style.php') ?>
+    <?php include('./includes/style.php') ?>
 
-	<div class="gtranslate_wrapper"></div>
-	<script>
-		window.gtranslateSettings = {
-			"default_language": "en",
-			"native_language_names": true,
-			"detect_browser_language": true,
-			"url_structure": "sub_domain",
-			"languages": ["en", "fr", "de", "it", "es"],
-			"wrapper_selector": ".gtranslate_wrapper",
-			"horizontal_position": "left",
-			"vertical_position": "bottom"
-		}
-	</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+    <div class="gtranslate_wrapper"></div>
+    <script>
+        window.gtranslateSettings = {
+            "default_language": "en",
+            "native_language_names": true,
+            "detect_browser_language": true,
+            "url_structure": "sub_domain",
+            "languages": ["en", "fr", "de", "it", "es"],
+            "wrapper_selector": ".gtranslate_wrapper",
+            "horizontal_position": "left",
+            "vertical_position": "bottom"
+        }
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
     <style>
         img {
             max-width: 100%;
@@ -59,6 +59,7 @@ $newImagePath = 'uploads/' . $imageName;
         }
     </style>
 </head>
+
 <body>
     <?php include('./includes/navbar.php') ?>
 
@@ -110,7 +111,7 @@ $newImagePath = 'uploads/' . $imageName;
                 <h4 class=" fw-bold">Other CSR of SEO Expate Bangladesh Ltd.</h4>
                 <?php
                 foreach ($relatedBlogs as $row) {
-                    ?>
+                ?>
                     <div class="col-md-6 pt-4">
                         <div class="card">
                             <div class="card-img blog_det_img">
@@ -124,7 +125,8 @@ $newImagePath = 'uploads/' . $imageName;
                                     <p><?php
 
                                         if (!function_exists('limit_characters')) {
-                                            function limit_characters($text, $limit) {
+                                            function limit_characters($text, $limit)
+                                            {
                                                 $text = strip_tags($text);
                                                 if (strlen($text) > $limit) {
                                                     return substr($text, 0, $limit) . '...';
@@ -142,7 +144,7 @@ $newImagePath = 'uploads/' . $imageName;
                                     </p>
                                 </div>
                                 <div class="button ">
-                                    <a href="blog-details.php?id=<?php echo $row['id']?>" class="text-success fw-bold">Read</a>
+                                    <a href="blog-details.php?id=<?php echo $row['id'] ?>" class="text-success fw-bold">Read</a>
                                 </div>
                             </div>
                         </div>
@@ -155,66 +157,37 @@ $newImagePath = 'uploads/' . $imageName;
     <!--================================top_ready_start section start here=======================-->
     <section class="top_ready_start">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="top_ready_start_txt">
-                        <h3>We can build your story</h3>
-                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-                    </div>
-                    <div class="top-body-button pt-5">
-                        <a type="button" href="contact.php">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="top_ready_start_img text-left">
-                        <img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate">
-                    </div>
-                </div>
-            </div>
+            <?php include('./includes/seo-build-story.php') ?>
         </div>
     </section>
     <!--================================top_ready_start section end here=======================-->
 
-    <!--================================Thrive_Globally section start here=======================-->
-    <section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================================Thrive_Globally section end here=======================-->
 
+    <?php include('./includes/footer_menu.php'); ?>
 
+    <?php include "includes/script.php" ?>
 
-<?php include('./includes/footer_menu.php'); ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <?php if (isset($successMessage)) : ?>
+        <script>
+            iziToast.success({
+                title: 'Success',
+                position: 'topRight',
+                message: '<?php echo htmlspecialchars($successMessage); ?>',
+            });
+        </script>
+    <?php endif; ?>
 
-<?php if (isset($successMessage)): ?>
-    <script>
-        iziToast.success({
-            title: 'Success',
-            position: 'topRight',
-            message: '<?php echo htmlspecialchars($successMessage); ?>',
-        });
-    </script>
-<?php endif; ?>
-
-<?php if (isset($errorMessage)): ?>
-    <script>
-        iziToast.error({
-            title: 'Error',
-            position: 'topRight',
-            message: '<?php echo htmlspecialchars($errorMessage); ?>',
-        });
-    </script>
-<?php endif; ?>
+    <?php if (isset($errorMessage)) : ?>
+        <script>
+            iziToast.error({
+                title: 'Error',
+                position: 'topRight',
+                message: '<?php echo htmlspecialchars($errorMessage); ?>',
+            });
+        </script>
+    <?php endif; ?>
 </body>
+
 </html>
