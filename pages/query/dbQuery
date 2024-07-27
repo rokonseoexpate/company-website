@@ -4,5 +4,8 @@ ALTER TABLE `history_galleries` ADD `alt_tag` VARCHAR(255) NULL AFTER `short_tit
 ALTER TABLE `branches` ADD `map` TEXT NULL AFTER `image`;
 
 
-//updeya lagbe
+
 ALTER TABLE `web_portfolios` ADD `alt_tag` VARCHAR(255) NULL AFTER `image`, ADD `alt_description` TEXT NULL AFTER `alt_tag`;
+
+//updeya lagbe
+ALTER TABLE `blogs` CHANGE `title` `title` TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL;

@@ -1,7 +1,7 @@
 <?php
 $title = "Blog Details";
 ob_start();
-
+session_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
@@ -55,7 +55,7 @@ if (isset($_GET['id'])) {
                     <th>Alt Text</th>
                     <td><?php echo $row['alt_tag'] ?></td>
                 </tr>
-                
+
                 <tr>
                     <th>Alt Description</th>
                     <td><?php echo $row['alt_description'] ?></td>

@@ -86,63 +86,6 @@ $conn = $db->get_connection();
         </div>
     </section>
     <!--================================cliping_service section end here=======================-->
-    <!--================================Core_Team section start here=======================-->
-    <!-- <section class="Core_Team allbranchlist department_team_members" style="background: unset; padding-top: unset;">
-    <div class="container">
-        <div class="row">
-            <div class="Core_Team_txt pb-2 pt-5">
-                <h6 class="fs-1 pb-3">Our <span class="text-success">Team Members</span></h6>
-            </div>
-            <div class="Core_Team_members">
-
-                <div class="container">
-                    <?php
-                    $qry = "SELECT * FROM departments";
-                    $result = mysqli_query($conn, $qry);
-
-                    if ($result) {
-                        while ($row = mysqli_fetch_assoc($result)) {
-                    ?>
-                            <div class="Core_Team_txt pb-2 pt-5">
-                                <h3 class="fs-3 pb-3"><?= $row['name']; ?></h3>
-                                <hr>
-                            </div>
-                            <div class="row pt-5">
-                                <?php
-                                $depId = $row['id'];
-                                // Complete the SQL query to select employees based on department ID
-                                $emps =  "SELECT * FROM employees WHERE department_id = '$depId' ORDER BY dep_priority ASC";
-                                $resultemps = mysqli_query($conn, $emps);
-
-                                // Fetch employees and display them
-                                while ($emp = mysqli_fetch_assoc($resultemps)) {
-                                ?>
-                                    <div class="col-md-3 col-sm-6">
-                                        <div class="card card-block shadow">
-                                            <img src="<?php echo 'uploads/' . basename($emp['image']); ?>" alt="<?php echo $emp['alt_tag']; ?>" description="<?php echo $emp['alt_description'] ?>" class="img-thumbnail">
-                                            <div class="card-body">
-                                                <h5 class="card-title fs-6"><?php echo $emp['name']; ?></h5>
-                                                <p class="card-text fs-6"><?php echo $emp['designation']; ?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <?php
-                                }
-                                    ?>
-                            </div>
-                            <hr>
-                            <?php
-                        }
-                    } else {
-                        echo "Error: " . mysqli_error($conn);
-                    }
-                            ?>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
-    <!--================================Core_Team section end here=======================-->
 
     <section class="Core_Team allbranchlist department_team_members" style="background: unset; padding-top: unset;">
         <div class="container">
@@ -206,51 +149,18 @@ $conn = $db->get_connection();
     </section>
 
 
-    <!--================================top_ready_start section start here=======================-->
     <section class="top_ready_start">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="top_ready_start_txt">
-                        <h3>We can build your story</h3>
-                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-                    </div>
-                    <div class="top-body-button pt-5">
-                        <a type="button" href="contact.php">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="top_ready_start_img text-left">
-                        <img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate">
-                    </div>
-                </div>
-            </div>
+            <?php include('./includes/seo-build-story.php') ?>
         </div>
     </section>
-    <!--================================top_ready_start section end here=======================-->
-
-
-    <!--================================Thrive_Globally section start here=======================-->
-    <section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================================Thrive_Globally section end here=======================-->
-
 
     <?php
     include('./includes/footer_menu.php');
     ?>
 
-    <script src="frontend/js/jquery-3.5.1.js"></script>
-    <script src="frontend/js/bootstrap.bundle.min.js"></script>
-    <script src="frontend/js/owl.carousel.js"></script>
-    <script src="frontend/js/main.js"></script>
+    <?php include "includes/script.php" ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 
     <?php if (isset($successMessage)) : ?>

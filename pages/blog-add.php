@@ -8,7 +8,9 @@ $db = new DB_con();
 $conn = $db->get_connection();
 if (!isset($_SESSION['username'])) {
     header("Location: login.php");
+    exit;
 }
+
 $titleErr = "";
 $description = "";
 if (isset($_POST['submit'])) {
@@ -29,7 +31,8 @@ if (isset($_POST['submit'])) {
         $_SESSION['errorMessage'] = "Blog Category is required";
     }
 
-    if (!isset($_SESSION['errorMessage']) == null) {
+    if (!isset($_SESSION['errorMessage'])) {
+        $image = null;
         if (isset($_FILES['image']['name']) && !empty($_FILES['image']['name'])) {
             $file = $_FILES['image']['name'];
             $extension = pathinfo($file, PATHINFO_EXTENSION);
@@ -37,16 +40,16 @@ if (isset($_POST['submit'])) {
             move_uploaded_file($_FILES['image']['tmp_name'], $image);
         }
 
-        $sql = "INSERT INTO `blogs`(`title`, `slug`,`blog_category_id`, `short_description`, `description`, `image`,`alt_tag`,`alt_description`) VALUES ('$title','$slug','$blog_category_id','$short','$description','$image','$alt_tag', '$alt_description')";
+        $stmt = $conn->prepare("INSERT INTO blogs (title, slug, blog_category_id, short_description, description, image, alt_tag, alt_description) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssisssss", $title, $slug, $blog_category_id, $short, $description, $image, $alt_tag, $alt_description);
 
-        $result = $conn->query($sql);
-
-        // Execute the statement
-        if ($result == true) {
+        if ($stmt->execute()) {
             $_SESSION['successMessage'] = "Blog Created Successfully";
         } else {
             $_SESSION['errorMessage'] = "Error: " . $stmt->error;
         }
+
+        $stmt->close();
     } else {
         header("Location: blog-add.php");
         exit;
@@ -54,7 +57,6 @@ if (isset($_POST['submit'])) {
     header("Location: blogs.php");
     exit;
 }
-
 
 // Fetch blog categories
 $blogCategoryQuery = "SELECT * FROM blog_categories";

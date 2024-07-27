@@ -1,3 +1,11 @@
+<?php
+
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,7 +82,7 @@
                     <div class="top_about_us_txt" style="z-index:500;">
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb breadcumb_gph">
-                                <li class="breadcrumb-item "><a href="index.php" class="text-light ">Home</a></li>
+                                <li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
                                 <li class="breadcrumb-item "><a href="seo-service.php" class="text-light">SEO</a></li>
                                 <li class="breadcrumb-item active text-light" aria-current="page">BigCommerce SEO</li>
                             </ol>
@@ -218,49 +226,15 @@
     </section>
     <!--================================accordion section end here=======================-->
 
-    <!--================================top_ready_start section start here=======================-->
     <section class="top_ready_start">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="top_ready_start_txt">
-                        <h3>We can build your story</h3>
-                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-                    </div>
-                    <div class="top-body-button pt-5">
-                        <a type="button" href="contact.php">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="top_ready_start_img text-left">
-                        <img src="frontend/images/95991_prev_ui.png" alt=" We can build your story" description=" We can build your story">
-                    </div>
-                </div>
-            </div>
+            <?php include('./includes/seo-build-story.php') ?>
         </div>
     </section>
-    <!--================================top_ready_start section end here=======================-->
 
-    <!--================================Thrive_Globally section start here=======================-->
-    <section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================================Thrive_Globally section end here=======================-->
-
-    <!--===========================footer part start===================================-->
     <?php include "includes/footer_menu.php" ?>
-    <!--===========================footer part end===================================-->
 
-    <script src="frontend/js/jquery-3.5.1.js"></script>
-    <script src="frontend/js/bootstrap.bundle.min.js"></script>
-    <script src="frontend/js/owl.carousel.js"></script>
-    <script src="frontend/js/main.js"></script>
+    <?php include "includes/script.php" ?>
 
 </body>
 

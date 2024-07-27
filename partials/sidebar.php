@@ -13,7 +13,6 @@
             </div>
         </div>
 
-
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -112,7 +111,7 @@
                 </li>
 
                 <li class="nav-item <?php echo (basename($_SERVER['PHP_SELF']) == 'app-development-add.php' || basename($_SERVER['PHP_SELF']) == 'app-development-add.php' || basename($_SERVER['PHP_SELF']) == 'app-development-list.php') ? 'menu-open' : ''; ?>">
-                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'app-development-add.php' ) ? 'active' : ''; ?>">
+                    <a href="#" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'app-development-add.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fab fa-android"></i>
                         <p>
                             App Development
@@ -138,9 +137,9 @@
                         <p>Image Gallery </p>
                     </a>
                 </li>
-                
+
                 <li class="nav-item">
-                    <a href="banner.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'banner.php' || basename($_SERVER['PHP_SELF']) == 'banner-add.php'|| basename($_SERVER['PHP_SELF']) == 'banner-edit.php') ? 'active' : ''; ?>">
+                    <a href="banner.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'banner.php' || basename($_SERVER['PHP_SELF']) == 'banner-add.php' || basename($_SERVER['PHP_SELF']) == 'banner-edit.php') ? 'active' : ''; ?>">
                         <i class="far fa-images nav-icon"></i>
                         <p>Banners</p>
                     </a>
@@ -174,7 +173,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="award.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'award.php' ||basename($_SERVER['PHP_SELF']) == 'award-add.php' || basename($_SERVER['PHP_SELF']) == 'award-edit.php' ) ? 'active' : ''; ?>">
+                    <a href="award.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'award.php' || basename($_SERVER['PHP_SELF']) == 'award-add.php' || basename($_SERVER['PHP_SELF']) == 'award-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-award"></i>
                         <p>
                             Award
@@ -219,12 +218,20 @@
                     </ul>
                 </li>
 
-
                 <li class="nav-item">
                     <a href="job-list.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'job-list.php' || basename($_SERVER['PHP_SELF']) == 'job-add.php' || basename($_SERVER['PHP_SELF']) == 'job-edit.php') ? 'active' : ''; ?>">
                         <i class="nav-icon fas fa-briefcase"></i>
                         <p>
                             Jobs
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="products.php" class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'products.php' || basename($_SERVER['PHP_SELF']) == 'product-add.php' || basename($_SERVER['PHP_SELF']) == 'product-edit.php') ? 'active' : ''; ?>">
+                        <i class="fa-brands fa-product-hunt"></i>
+                        <p>
+                            Products
                         </p>
                     </a>
                 </li>

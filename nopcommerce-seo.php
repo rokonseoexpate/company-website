@@ -1,9 +1,13 @@
 <?php
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 $title = "Nopcommerce Seo";
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="Title" content="Seo Expate Bangladesh LTD.">
@@ -15,13 +19,24 @@ $title = "Nopcommerce Seo";
 	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 	<?php include('./includes/style.php') ?>
 	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
+	<script>
+		window.gtranslateSettings = {
+			"default_language": "en",
+			"native_language_names": true,
+			"detect_browser_language": true,
+			"url_structure": "sub_domain",
+			"languages": ["en", "fr", "de", "it", "es"],
+			"wrapper_selector": ".gtranslate_wrapper",
+			"horizontal_position": "left",
+			"vertical_position": "bottom"
+		}
+	</script>
 	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
+<?php include "includes/navbar.php" ?>
 
 <?php include "includes/seo-nav.php" ?>
-
 
 <!--================================top-body section start here=======================-->
 <section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
@@ -130,7 +145,6 @@ $title = "Nopcommerce Seo";
 </section>
 <!--================================cliping_service section end here=======================-->
 
-<!--================================top_ready_start section start here=======================-->
 <section class="top_ready_start">
 	<div class="container">
 		<div class="row">
@@ -145,25 +159,13 @@ $title = "Nopcommerce Seo";
 			</div>
 			<div class="col-md-6">
 				<div class="top_ready_start_img text-left">
-					<img src="frontend/images/95991_prev_ui.png" alt="Nopcommerce SEO" description=" Nopcommerce SEO">
+					<img src="frontend/images/95991_prev_ui.png" alt=" SEO Services" description=" SEO Services">
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<!--================================top_ready_start section end here=======================-->
 
-<!--================================Thrive_Globally section start here=======================-->
-<section class="PAY_MENT" style="padding: 20px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="PAY_IMG">
-				<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="Nopcommerce SEO" description=" Nopcommerce SEO" width="100%">
-			</div>
-		</div>
-	</div>
-</section>
-<!--================================Thrive_Globally section end here=======================-->
 <?php
 $main_content = ob_get_clean();
 include './layouts/app.php';

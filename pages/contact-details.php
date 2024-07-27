@@ -1,7 +1,7 @@
 <?php
 $title = "Certificates Details";
 ob_start();
-
+session_start();
 require_once '../config/dbconnect.php';
 $db = new DB_con();
 $conn = $db->get_connection();
@@ -11,10 +11,12 @@ if (!isset($_SESSION['username'])) {
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-
     $qry = "SELECT * FROM contacts WHERE id=$id";
     $result = $conn->query($qry);
     $row = $result->fetch_assoc();
+
+    // print_r($row['attachments']);
+    // die();
 }
 
 ?>
@@ -63,10 +65,36 @@ if (isset($_GET['id'])) {
                     <th>Description</th>
                     <td><?php echo $row['description'] ?></td>
                 </tr>
+
                 <tr>
+                    <td>Attachment</td>
+
+                    <?php $images = json_decode($row['attachments']); ?>
+                    <?php if (isset($images) && !empty($images)) { ?>
+                        <td>
+                            <?php foreach ($images as $image) { ?>
+                                <?php
+                                $extension = pathinfo($image, PATHINFO_EXTENSION);
+                                $previewImage = $image;
+                                if($extension== 'pdf'){
+                                    $previewImage = 'uploads/static/pdf.png';
+                                }else if($extension === 'docx'){
+                                    $previewImage = 'uploads/static/docs.png';
+                                }
+                                ?>
+                                <a href="<?php echo  '../' . $image; ?>" download>
+                                    <img src="<?php echo '../' . $previewImage; ?>" alt="image" style="height: 100px; width: 120px; margin: 5px;">
+                                </a>
+                            <?php } ?>
+                        </td>
+                    <?php } ?>
+
+
+                </tr>
+                <tr>
+
                     <th>Created At</th>
                     <td><?php echo !empty($row['created_at']) ? date('d M Y', strtotime($row['created_at'])) : 'Not available'; ?></td>
-
                 </tr>
             </tbody>
         </table>

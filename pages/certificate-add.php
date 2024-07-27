@@ -17,9 +17,13 @@ if (isset($_POST['submit'])) {
 
 
     if (isset($_FILES['image'])) {
+        $image_name = $_FILES["image"]["name"];
+        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
+        $image_name = preg_replace("/\s+/", "-", $image_name);
+
         $photo = $_FILES['image']['name'];
         $extension = pathinfo($photo, PATHINFO_EXTENSION);
-        $image = '../uploads/' . str_replace(' ', '-',  strtolower($title)) .'-' . random_int(10000, 99999) . '.' . $extension;
+        $image = '../uploads/' . str_replace(' ', '-',  strtolower($image_name)) .'-' . random_int(10000, 99999) . '.' . $extension;
 
         move_uploaded_file($_FILES['image']['tmp_name'], $image);
     }

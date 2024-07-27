@@ -1,3 +1,10 @@
+<?php
+
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,25 +17,22 @@
     <title>WordPress SEO</title>
     <meta property="og:title" content="Home - IT Services, Technology Solutions">
 
-    <link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-    <link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="frontend/css/style.css">
-    <link rel="stylesheet" href="frontend/css/responsive.css">
+    <?php include('./includes/style.php') ?>
+
     <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
     <div class="gtranslate_wrapper"></div>
     <script>
-    window.gtranslateSettings = {
-        "default_language": "en",
-        "native_language_names": true,
-        "detect_browser_language": true,
-        "url_structure": "sub_domain",
-        "languages": ["en", "fr", "de", "it", "es"],
-        "wrapper_selector": ".gtranslate_wrapper",
-        "horizontal_position": "left",
-        "vertical_position": "bottom"
-    }
+        window.gtranslateSettings = {
+            "default_language": "en",
+            "native_language_names": true,
+            "detect_browser_language": true,
+            "url_structure": "sub_domain",
+            "languages": ["en", "fr", "de", "it", "es"],
+            "wrapper_selector": ".gtranslate_wrapper",
+            "horizontal_position": "left",
+            "vertical_position": "bottom"
+        }
     </script>
     <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
@@ -40,68 +44,9 @@
     <?php include('./includes/navbar.php') ?>
     <!--================================Header section end here=======================-->
 
-    <!--================================photo editor sub Header section end here=======================-->
-    <div class="photo_edipth">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <div class="container-fluid ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" alt=" seo expate"
-                                description=" seo expate"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="seo-service.php"
-                                    data-bs-toggle="dropdown">SEO Services</a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="ecommerce-seo.php"> eCommerce SEO</a></li>
-                                    <li><a class="dropdown-item" href="amazon-seo.php">Amazon SEO</a></li>
-                                    <li><a class="dropdown-item" href="b2b-seo.php">B2B SEO</a></li>
-                                    <li><a class="dropdown-item" href="shopify-seo.php">Shopify SEO</a></li>
-                                    <li><a class="dropdown-item" href="wordpress-seo.php">WordPress SEO</a></li>
-                                    <li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
-                                    <li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
-                                    <li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
-                                    <li><a class="dropdown-item" href="magento-seo.php">Magento SEO</a></li>
-                                    <li><a class="dropdown-item" href="volusion-seo.php">Volusion SEO</a></li>
-                                    <li><a class="dropdown-item" href="bigcommerce-seo.php">BigCommerce SEO</a></li>
-                                    <li><a class="dropdown-item" href="consulting-seo.php">SEO Consulting</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="ppc-paid.php" data-bs-toggle="dropdown">PPC
-                                    & Paid Search</a>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="amazon-ppc.php"> Amazon PPC Management</a></li>
-                                    <li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
-                                    <li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="shoping-management.php">Google Shopping
-                                            Management</a></li>
-                                    <li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
-                                    <li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
-                            <li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
-                            <li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
-                            <li class="nav-item"><a class="nav-link" href="package-price-seo.php"> SEO Packages &
-                                    Pricing </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!--================================photo editor sub Header section end here=======================-->
-
+    <?php include "includes/seo-nav.php" ?>
     <!--================================top-body section start here=======================-->
-    <section class="top-body app_development"
-        style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
+    <section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
         <div class="container ">
             <div class="row">
                 <div class="col-md-7 ecomresp" style="z-index:500;">
@@ -117,19 +62,16 @@
                     </div>
                     <div class="row">
                         <div class="col-md-7 pt-2">
-                            <div class=" border-bottom border-3 border-success pb-3"><a href="contact.php"
-                                    style="color: #F4B400;" class="fs-5 fw-bold ">Get Your WordPress SEO Proposal</a>
+                            <div class=" border-bottom border-3 border-success pb-3"><a href="contact.php" style="color: #F4B400;" class="fs-5 fw-bold ">Get Your WordPress SEO Proposal</a>
                             </div>
                         </div>
                         <div class="col-md-2 ecomrespons">
-                            <img src="frontend/images/google-seo-proposal-audit.png.webp" alt="Search Engine Marketing"
-                                description="Search Engine Marketing" class="img-fluid">
+                            <img src="frontend/images/google-seo-proposal-audit.png.webp" alt="Search Engine Marketing" description="Search Engine Marketing" class="img-fluid">
                         </div>
                     </div>
                 </div>
                 <div class="col-md-5 m-auto ecomrespp" style="z-index:500;">
-                    <img src="frontend/images/wordpress-search-engine-optimization.webp" alt="Search Engine Marketing"
-                        description="Search Engine Marketing" class="img-thumbnail">
+                    <img src="frontend/images/wordpress-search-engine-optimization.webp" alt="Search Engine Marketing" description="Search Engine Marketing" class="img-thumbnail">
                 </div>
             </div>
         </div>
@@ -150,8 +92,7 @@
                             </ol>
                         </nav>
                     </div>
-                    <p class="pt-2 text-light">Our in-house WordPress development and <a href="seo_service.php"
-                            class="text-success">SEO</a> teams are fully functional. That’s why you can say we are one
+                    <p class="pt-2 text-light">Our in-house WordPress development and <a href="seo-service.php" class="text-success">SEO</a> teams are fully functional. That’s why you can say we are one
                         of the leaders in this industry.WordPress SEO services are search engine optimization (SEO)
                         oriented services that aid in enhancing a website created on the WordPress platform. Keyword
                         research, on-page optimization, technical SEO / code optimization, off-site optimization, and
@@ -172,7 +113,7 @@
                     <h4 class="text-center">WordPress SEO Service </h4>
                     <div class="border-bottom border-3 border-success">
                         <p class="text-center">We at <a href="/" class="text-success">SEO Expate</a> have
-                            tried-and-true <a href="seo_service.php" class="text-success">SEO</a> techniques to enhance
+                            tried-and-true <a href="seo-service.php" class="text-success">SEO</a> techniques to enhance
                             your WordPress website. <br> We'll apply what we've learned from working with previous
                             WordPress clients to you.</p>
                     </div>
@@ -184,14 +125,12 @@
                 </div>
                 <div class="col-md-6">
                     <div class="clip_img">
-                        <img src="frontend/images/avadaSEO.png" alt="WordPress SEO Service" description="WordPress SEO Service"
-                            class="img-thumbnail">
+                        <img src="frontend/images/avadaSEO.png" alt="WordPress SEO Service" description="WordPress SEO Service" class="img-thumbnail">
                     </div>
                 </div>
                 <div class="col-md-6 pt-5">
                     <div class="clip_img">
-                        <img src="frontend/images/WP-SEO-SERVICES-BANNER.png" alt="WordPress SEO Service"
-                            description="WordPress SEO Service" class="img-thumbnail">
+                        <img src="frontend/images/WP-SEO-SERVICES-BANNER.png" alt="WordPress SEO Service" description="WordPress SEO Service" class="img-thumbnail">
                     </div>
                 </div>
                 <div class="col-md-6 pt-5 newudcode">
@@ -223,8 +162,7 @@
                 </div>
                 <div class="col-md-6" style="margin: auto;">
                     <div class="clip_img">
-                        <img src="frontend/images/Complete-WordPress-SEO-Guide.png" alt="WordPress Website SEO Services"
-                            description="WordPress Website SEO Services" class="img-thumbnail">
+                        <img src="frontend/images/Complete-WordPress-SEO-Guide.png" alt="WordPress Website SEO Services" description="WordPress Website SEO Services" class="img-thumbnail">
                     </div>
                 </div>
             </div>
@@ -245,8 +183,7 @@
                     </div>
                     <h6 class="fw-bold fs-5 pb-3">Updates on Technology and On-Site Optimization</h6>
                     <div>
-                        <p>You'll be informed each month about the services rendered by our <a href="seo_service.php"
-                                class="text-success">SEO</a> team, the tasks completed, and our team members who
+                        <p>You'll be informed each month about the services rendered by our <a href="seo-service.php" class="text-success">SEO</a> team, the tasks completed, and our team members who
                             contributed. Even years after completion, completed work is documented for future reference.
                         </p>
                     </div>
@@ -262,8 +199,7 @@
             <div class="row">
                 <div class="col-md-6" style="margin: auto;">
                     <div class="clip_img">
-                        <img src="frontend/images/woo-commerce-seo.jpg" alt="WordPress Website SEO Services"
-                            description="WordPress Website SEO Services" class="img-thumbnail">
+                        <img src="frontend/images/woo-commerce-seo.jpg" alt="WordPress Website SEO Services" description="WordPress Website SEO Services" class="img-thumbnail">
                     </div>
                 </div>
                 <div class="col-md-6" style="z-index:500;">
@@ -271,12 +207,9 @@
                         <h6>WordPress SEO for WooCommerce Stores </h6>
                     </div>
                     <p class="pt-3">You have different SEO objectives if you manage a WordPress-powered WooCommerce
-                        website. As the top eCommerce SEO firm in the world, SEO Expate offers tested <a
-                            href="seo_service.php" class="text-success">SEO</a> techniques to increase the online sales
-                        of your WordPress website. As specialists in <a href="ecommerce_seo.php"
-                            class="text-success">eCommerce SEO</a>, we create plans to enhance thousands of products
-                        over hundreds of categories, and we have hands-on expertise running an <a
-                            href="seo_service.php" class="text-success">SEO</a> campaign for a sizable database-driven
+                        website. As the top eCommerce SEO firm in the world, SEO Expate offers tested <a href="seo-service.php" class="text-success">SEO</a> techniques to increase the online sales
+                        of your WordPress website. As specialists in <a href="ecommerce-seo.php" class="text-success">eCommerce SEO</a>, we create plans to enhance thousands of products
+                        over hundreds of categories, and we have hands-on expertise running an <a href="seo-service.php" class="text-success">SEO</a> campaign for a sizable database-driven
                         website. Our team is prepared to position your WordPress website at the top of Google's search
                         results, whether you require a full-service SEO package or a knowledgeable SEO consultant.</p>
                 </div>
@@ -287,8 +220,7 @@
 
     <!--================================editor_texts section start here=======================-->
     <section class=" graphicdesigns_content">
-        <div class="container shadow py-5 px-5 "
-            style="border-left:15px solid var(--secondary-text-color); background: var(--bg-secondary-color);">
+        <div class="container shadow py-5 px-5 " style="border-left:15px solid var(--secondary-text-color); background: var(--bg-secondary-color);">
             <div class="row ">
                 <div class="col-12">
                     <h6 class="fw-bold fs-5 pb-3">Cost of WordPress SEO </h6>
@@ -314,11 +246,9 @@
                 <h6 class="text-center pb-5 fs-2">FAQ’s for WordPress SEO</h6>
                 <div id="accordion">
                     <div class="accordion-item">
-                        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. What are
+                        <h5 class="accordion-header" id="headingOne" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Q. What are
                             some basic SEO practices for WordPress websites?</h5>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordion">
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
                             <div class="accordion-body">1. Install and configure an SEO plugin: Popular options like
                                 Yoast SEO and All in One SEO offer guidance and features for on-page optimization. <br>
                                 2. Optimize titles and meta descriptions: Craft clear, concise, and keyword-rich titles
@@ -339,12 +269,10 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h5 class="accordion-header collapsed" id="headingTwo" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Q. What are
+                        <h5 class="accordion-header collapsed" id="headingTwo" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Q. What are
                             some benefits of using an SEO plugin for WordPress?
                         </h5>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordion">
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
                             <div class="accordion-body">
                                 <p>Simplified optimization: SEO plugins offer guided steps and checklists for on-page
                                     optimization tasks.Technical SEO assistance: Some plugins provide features to
@@ -358,12 +286,10 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h5 class="accordion-header collapsed" id="headingThree" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Q. How
+                        <h5 class="accordion-header collapsed" id="headingThree" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Q. How
                             often should I update my website content for SEO?
                         </h5>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordion">
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
                             <div class="accordion-body">It depends on your niche and content strategy. Ideally, aim for
                                 a consistent publishing schedule, whether it's weekly, bi-weekly, or monthly. Regularly
                                 updating your website shows search engines your site is active and encourages them to
@@ -372,12 +298,10 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h5 class="accordion-header collapsed" id="headingFour" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Q. Can I
+                        <h5 class="accordion-header collapsed" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Q. Can I
                             do SEO for my WordPress website myself?
                         </h5>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#accordion">
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
                             <div class="accordion-body">Absolutely! While hiring an SEO professional can significantly
                                 benefit your website, there are plenty of resources and tools available to learn basic
                                 SEO and apply them to your WordPress website. However, be prepared to invest time and
@@ -386,12 +310,10 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h5 class="accordion-header collapsed" id="headingFourr" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFourr" aria-expanded="false" aria-controls="collapseFourr">Q. How
+                        <h5 class="accordion-header collapsed" id="headingFourr" data-bs-toggle="collapse" data-bs-target="#collapseFourr" aria-expanded="false" aria-controls="collapseFourr">Q. How
                             long does it take to see results from SEO?
                         </h5>
-                        <div id="collapseFourr" class="accordion-collapse collapse" aria-labelledby="headingFourr"
-                            data-bs-parent="#accordion">
+                        <div id="collapseFourr" class="accordion-collapse collapse" aria-labelledby="headingFourr" data-bs-parent="#accordion">
                             <div class="accordion-body">SEO is a long-term strategy. Results can take anywhere from a
                                 few months to a year or more, depending on the competitiveness of your niche, the
                                 quality of your content and optimization efforts, and the overall strength of your
@@ -400,12 +322,10 @@
                         </div>
                     </div>
                     <div class="accordion-item">
-                        <h5 class="accordion-header collapsed" id="headingFive" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Q. Is it
+                        <h5 class="accordion-header collapsed" id="headingFive" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Q. Is it
                             safe to use black hat SEO techniques for my WordPress website?
                         </h5>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                            data-bs-parent="#accordion">
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
                             <div class="accordion-body">It's strongly discouraged to use black hat SEO techniques like
                                 keyword stuffing, link buying, or cloaking. These practices can harm your website's
                                 reputation and potentially lead to penalties from search engines.
@@ -446,61 +366,20 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="frontend/images/middle-infographic.png" alt="WordPress Website SEO Services"
-                        description="WordPress Website SEO Services" class="img-thumbnail">
+                    <img src="frontend/images/middle-infographic.png" alt="WordPress Website SEO Services" description="WordPress Website SEO Services" class="img-thumbnail">
                 </div>
             </div>
         </div>
     </section>
-    <!--================================cliping_service section end here=======================-->
-
-    <!--================================top_ready_start section start here=======================-->
     <section class="top_ready_start">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="top_ready_start_txt">
-                        <h3>We can build your story</h3>
-                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided
-                            the best service for them</h6>
-                    </div>
-                    <div class="top-body-button pt-5">
-                        <a type="button" href="contact.php">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="top_ready_start_img text-left">
-                        <img src="frontend/images/95991_prev_ui.png" alt="WordPress Website SEO Services"
-                            description="WordPress Website SEO Services">
-                    </div>
-                </div>
-            </div>
+            <?php include('./includes/seo-build-story.php') ?>
         </div>
     </section>
-    <!--================================top_ready_start section end here=======================-->
 
-    <!--================================Thrive_Globally section start here=======================-->
-    <section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description="payment"
-                        width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================================Thrive_Globally section end here=======================-->
-
-    <!--===========================footer part start===================================-->
     <?php include('./includes/footer_menu.php') ?>
-    <!--===========================footer part end===================================-->
 
-    <script src="frontend/js/jquery-3.5.1.js"></script>
-    <script src="frontend/js/bootstrap.bundle.min.js"></script>
-    <script src="frontend/js/owl.carousel.js"></script>
-    <script src="frontend/js/main.js"></script>
-
+    <?php include "includes/script.php" ?>
 </body>
 
 </html>

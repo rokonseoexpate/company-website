@@ -35,7 +35,7 @@ if (isset($_GET['id'])) {
 
     <div class="card px-3">
         <div class="d-flex justify-content-between align-items-center">
-            <h1>Show Web Portfolio</h1>
+            <h1>Web Portfolio Details</h1>
             <a href="portfolio-projects-list.php" class="btn btn-info">View List</a>
         </div>
         <table class="table table-striped table-hover table-bordered">
