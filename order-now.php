@@ -1,240 +1,236 @@
 <?php
-    require_once 'config/dbconnect.php';
-    $db = new DB_con();
-    $conn = $db->get_connection();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="Title" content="This is the my site">
 	<meta name="description" content="This is the my site">
-    <meta name="keywords" content="seoebl, seoexpate">
+	<meta name="keywords" content="seoebl, seoexpate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Order Now </title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
-	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="frontend/css/style.css">
-	<link rel="stylesheet" href="frontend/css/responsive.css">
+
+	<?php include "includes/style.php" ?>
+
 	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
 
-<!--================================Header section start here=======================-->
-<?php include('./includes/navbar.php') ?>
-<!--================================Header section end here=======================-->
+	<!--================================Header section start here=======================-->
+	<?php include('./includes/navbar.php') ?>
+	<!--================================Header section end here=======================-->
 
 	<!--================================photo editor sub Header section end here=======================-->
 	<div class="photo_edipth">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-dark ">
 				<div class="container-fluid ">
-				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
-				        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars" alt=" seo expate" description=" seo expate"></i></span>
-				    </button>
-				    <div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-				        <ul class="navbar-nav ">
-				            <li class="nav-item dropdown has-megamenu ">
-				                <a class="nav-link dropdown-toggle" href="graphic-design-and-photo-editing.php" data-bs-toggle="dropdown"> Photo Editing Services </a>
-				                <div class="dropdown-menu megamenu" role="menu">
-				                    <div class="row g-3">
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="clipping-path.php" class="d-flex">
-				                                   <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Clipping Path</h6>
-				                                    </div>
-				                                </a>
-				                            </div> 
-				                        </div>
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="background-remove.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Photo Background Removing</h6>
-				                                    </div>
-				                                </a>
-				                            </div>  
-				                        </div>
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="image-masking.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Image Masking</h6>
-				                                    </div>
-				                                </a>
-				                            </div> 
-				                        </div>    
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="shadow-making.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Shadow Making</h6>
-				                                    </div>
-				                                </a>
-				                            </div>
-				                        </div>
-				                    </div>
-				                    <div class="row g-3">
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="ghost-mannequin.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Ghost Mannequin Effect</h6>
-				                                    </div>
-				                                </a>
-				                            </div> 
-				                        </div>
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="photo-retouching.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Photo Retouching</h6>
-				                                    </div>
-				                                </a>
-				                            </div>  
-				                        </div>
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="color-correction.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Color Correction</h6>
-				                                    </div>
-				                                </a>
-				                            </div> 
-				                        </div>    
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="ecommerce-photo-edit.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">E-Commerce Photo Editing</h6>
-				                                    </div>
-				                                </a>
-				                            </div>
-				                        </div>
-				                    </div>
-				                    <div class="row g-3">
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="jewelry-retouching.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Jewelry Retouching</h6>
-				                                    </div>
-				                                </a>
-				                            </div> 
-				                        </div>
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="wedding-photo.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Wedding Photo Editing</h6>
-				                                    </div>
-				                                </a>
-				                            </div>  
-				                        </div>
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="photo-restoration.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Photo Restoration</h6>
-				                                    </div>
-				                                </a>
-				                            </div> 
-				                        </div>    
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="real-estate-photo.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Real Estate Photo Editing</h6>
-				                                    </div>
-				                                </a>
-				                            </div>
-				                        </div>
-				                    </div>
-				                    <div class="row g-3">
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="image-manipulation.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Image Manipulation</h6>
-				                                    </div>
-				                                </a>
-				                            </div> 
-				                        </div>
-				                        <div class="col-md-3 col-6">
-				                            <div class="col-megamenu pb-2">
-				                                <a href="raster-vector.php" class="d-flex">
-				                                    <div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
-				                                    <div>
-				                                        <h6 class="title">Raster to Vector Conversion</h6>
-				                                    </div>
-				                                </a>
-				                            </div>  
-				                        </div>
-				                    </div>
-				                </div> 
-				            </li>
-				            <li class="nav-item dropdown">
-				                <a class="nav-link  dropdown-toggle" href="graphic-design.php" data-bs-toggle="dropdown"> Graphic Design </a>
-				                <ul class="dropdown-menu dropdown-menu-end">
-				                  <li><a class="dropdown-item" href="t-shirt-design.php"> T-Shirt Design</a></li>
-				                  <li><a class="dropdown-item" href="logo-design.php">Logo Designs Service</a></li>
-				                  <li><a class="dropdown-item" href="banner-design.php">Banner Design</a></li>
-				                </ul>
-				            </li>
-				            <li class="nav-item"><a class="nav-link" href="photo-editor-pricing.php"> Pricing </a></li>
-				            <li class="nav-item"><a class="nav-link" href="photo-edit-portfolio.php"> Portfolio </a></li>
-				        </ul>
-				        <ul class="navbar-nav booknowbtn">
-						    <li class="nav-item">
-						        <a type="submit" class="nav-link btn" href="get-quote.php">Get Quote</a>
-						    </li>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"><i class="fa-solid fa-bars" alt=" seo expate" description=" seo expate"></i></span>
+					</button>
+					<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
+						<ul class="navbar-nav ">
+							<li class="nav-item dropdown has-megamenu ">
+								<a class="nav-link dropdown-toggle" href="graphic-design-and-photo-editing.php" data-bs-toggle="dropdown"> Photo Editing Services </a>
+								<div class="dropdown-menu megamenu" role="menu">
+									<div class="row g-3">
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="clipping-path.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Clipping Path</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="background-remove.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Photo Background Removing</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="image-masking.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Image Masking</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="shadow-making.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Shadow Making</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row g-3">
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="ghost-mannequin.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Ghost Mannequin Effect</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="photo-retouching.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Photo Retouching</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="color-correction.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Color Correction</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="ecommerce-photo-edit.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">E-Commerce Photo Editing</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row g-3">
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="jewelry-retouching.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Jewelry Retouching</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="wedding-photo.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Wedding Photo Editing</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="photo-restoration.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Photo Restoration</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="real-estate-photo.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Real Estate Photo Editing</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="row g-3">
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="image-manipulation.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Image Manipulation</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="col-md-3 col-6">
+											<div class="col-megamenu pb-2">
+												<a href="raster-vector.php" class="d-flex">
+													<div><i class="fa-regular fa-compass" alt=" seo expate" description=" seo expate"></i></div>
+													<div>
+														<h6 class="title">Raster to Vector Conversion</h6>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link  dropdown-toggle" href="graphic-design.php" data-bs-toggle="dropdown"> Graphic Design </a>
+								<ul class="dropdown-menu dropdown-menu-end">
+									<li><a class="dropdown-item" href="t-shirt-design.php"> T-Shirt Design</a></li>
+									<li><a class="dropdown-item" href="logo-design.php">Logo Designs Service</a></li>
+									<li><a class="dropdown-item" href="banner-design.php">Banner Design</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="photo-editor-pricing.php"> Pricing </a></li>
+							<li class="nav-item"><a class="nav-link" href="photo-edit-portfolio.php"> Portfolio </a></li>
 						</ul>
-				    </div>
-				</div> 
-			</nav>      
+						<ul class="navbar-nav booknowbtn">
+							<li class="nav-item">
+								<a type="submit" class="nav-link btn" href="get-quote.php">Get Quote</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</div>
 	</div>
 	<!--================================photo editor sub Header section end here=======================-->
-	
+
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 		<div class="container ">
-		    <div class="row">
-		    	<div class="col-12" style="z-index:500;">
-		    		<div class="top_body_txt_part">
-						<h1>Order Now</h1>		
-						<p style="text-align:justify;"><a href="/" class="text-success">SEO Expate</a> photo editor provided you all type of image editing service.  If you like to edit your photo then you can see our service. SEO Expate photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service,  Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin,  Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic,  Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
-						<p style="text-align:justify;">In the conclusion <a href="/" class="text-success">SEO Expate</a> photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then <a href="/" class="text-success">SEO Expate</a> photo editor company will help you to provide you one suitable and experienced editor person.</p>						
+			<div class="row">
+				<div class="col-12" style="z-index:500;">
+					<div class="top_body_txt_part">
+						<h1>Order Now</h1>
+						<p style="text-align:justify;"><a href="/" class="text-success">SEO Expate</a> photo editor provided you all type of image editing service. If you like to edit your photo then you can see our service. SEO Expate photo editor give you all type of graphic designs service ex: Clipping Path Service, Jewelry image Retouching Service, ECommerce Photo Editing Service, Image Masking Service, Image Color Correction Service, Real Estate Photo Editing, Photo Retouchin, Image background remove service, Image Ghost Mannequin Effect Service, Image Shadow Making Service, Photo Restoration service, Image Manipulation Servic, Wedding Photo Editing service, Image Raster to Vector Conversion service, Photo Background Removing service,Banner designs service, logo designs service.</p>
+						<p style="text-align:justify;">In the conclusion <a href="/" class="text-success">SEO Expate</a> photo editor company have more then 100 professional graphic designer people who doing graphic designs service for you. If you need to do photo editor person for your business then <a href="/" class="text-success">SEO Expate</a> photo editor company will help you to provide you one suitable and experienced editor person.</p>
 					</div>
 					<div class="top-body-button pt-3">
 						<a type="button" href="free_trial.php">Free Trial</a>
-					</div>	
-				</div>			
+					</div>
+				</div>
 			</div>
-		</div>				
+		</div>
 	</section>
 	<!--================================top-body section end here=======================-->
 
@@ -245,15 +241,17 @@
 				<div class="col-12" style="z-index:500;">
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
-						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="graphic-design-and-photo-editing.php" class="text-light">Photo editor</a></li>
-							<li class="breadcrumb-item active text-light" aria-current="page">Order Now</li>
-						</ol>
+							<ol class="breadcrumb breadcumb_gph">
+								<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+								<li class="breadcrumb-item "><a href="graphic-design-and-photo-editing.php" class="text-light">Photo editor</a></li>
+								<li class="breadcrumb-item active text-light" aria-current="page">Order Now</li>
+							</ol>
 						</nav>
 					</div>
-					<div class=" pt-2 text-light"><h4 class="fs-1 fw-bold text-center">Order Now</h4></div>	
-					<p class="fs-6 pt-2 fw-bold text-center text-light">Start Your Free Quote With SEO Expate Photo Editor</p>				
+					<div class=" pt-2 text-light">
+						<h4 class="fs-1 fw-bold text-center">Order Now</h4>
+					</div>
+					<p class="fs-6 pt-2 fw-bold text-center text-light">Start Your Free Quote With SEO Expate Photo Editor</p>
 				</div>
 			</div>
 		</div>
@@ -264,11 +262,11 @@
 	<section class="free_trail">
 		<div class="container">
 			<div class="row">
-				<p>Complete Form &  Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
+				<p>Complete Form & Fill up the Required ( * ) Fields to Submit the Form Properly.</p>
 				<div class="col-md-6">
 					<form class="row g-3">
 						<div class="col-12">
-							<label for="fullname" class="form-label">First Name & Last Name  <span>*</span></label>
+							<label for="fullname" class="form-label">First Name & Last Name <span>*</span></label>
 							<input type="text" class="form-control" id="fullname" placeholder="Your Full Name" required>
 						</div>
 						<div class="col-12">
@@ -276,13 +274,13 @@
 							<input type="text" class="form-control" id="CompanyName" placeholder="Company Name" required>
 						</div>
 						<div class="col-12">
-							<label for="inputPassword4" class="form-label">Phone / Whatsapp Number  <span>*</span></label>
+							<label for="inputPassword4" class="form-label">Phone / Whatsapp Number <span>*</span></label>
 							<input type="text" class="form-control" id="inputPassword4" placeholder="+8801409957451" required>
 						</div>
 						<div class="col-12">
 							<label for="inputEmail4" class="form-label">Email <span>*</span></label>
 							<input type="email" class="form-control" id="inputEmail4" placeholder="info@seoexpate.com" required>
-						</div>												
+						</div>
 						<div class="col-12">
 							<label for="CompanyWebsite" class="form-label">Company Website</label>
 							<input type="text" class="form-control" id="CompanyWebsite" placeholder="Company Website" required>
@@ -371,7 +369,7 @@
 							<input type="Number" class="form-control" id="Quantity " placeholder="Quantity " required>
 						</div>
 						<div class="col-12">
-							<label for="stuf" class="form-label">Select Delivery Time  <span>*</span></label>
+							<label for="stuf" class="form-label">Select Delivery Time <span>*</span></label>
 							<select name="" id="stuf" style="width: 100%;" class="form-control">
 								<option value="">Select Time</option>
 								<option value="">2 Hours-Express Delivery</option>
@@ -396,7 +394,7 @@
 						<div class="col-12">
 							<label for="type" class="form-label">Instructions <span>*</span></label>
 							<textarea type="text" class="form-control" id="type" placeholder="Start Typing Here..."></textarea>
-						</div>												  												 												 
+						</div>
 						<div class="col-12 text-center">
 							<button type="submit" class="btn">Submit</button>
 						</div>
@@ -427,7 +425,7 @@
 	<!--================================free_trail services section end here=======================-->
 
 	<!--================================editor_all_services section end here=======================-->
-	<section class="WHAT_MAKES footer_btm_all_services"  style="background: unset" >
+	<section class="WHAT_MAKES footer_btm_all_services" style="background: unset">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3">
@@ -593,23 +591,24 @@
 
 	<!--================================Thrive_Globally section start here=======================-->
 	<section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                 	<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
+		<div class="container">
+			<div class="row">
+				<div class="PAY_IMG">
+					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--================================Thrive_Globally section end here=======================-->
-<!--===========================footer part start===================================-->
-<?php include('./includes/footer_menu.php') ?>
-<!--===========================footer part end===================================-->
+	<!--===========================footer part start===================================-->
+	<?php include('./includes/footer_menu.php') ?>
+	<!--===========================footer part end===================================-->
 
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
+	<script src="frontend/js/jquery-3.5.1.js"></script>
+	<script src="frontend/js/bootstrap.bundle.min.js"></script>
+	<script src="frontend/js/owl.carousel.js"></script>
+	<script src="frontend/js/main.js"></script>
 
 </body>
+
 </html>

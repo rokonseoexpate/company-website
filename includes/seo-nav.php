@@ -39,7 +39,30 @@
 						<li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
 						<li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
 						<li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
+
+						<li class="nav-item dropdown">
+													<a class="nav-link  dropdown-toggle" href="back-link.php" data-bs-toggle="dropdown">Backlink SEO</a>
+													<ul class="dropdown-menu dropdown-menu-end">
+														<li><a class="dropdown-item" href="directory-submission.php"> Directory Submission</a></li>
+														<li><a class="dropdown-item" href="link-building.php">Link Building</a></li>
+														<li><a class="dropdown-item" href="Web-20-submission.php">Web 2.0 submission</a></li>
+														<li><a class="dropdown-item" href="article-submission.php">Article Submission</a></li>
+														<li><a class="dropdown-item" href="press-release-submission.php">Press Release Submission</a></li>
+														<li><a class="dropdown-item" href="document-submission.php">Document Submission</a></li>
+														<li><a class="dropdown-item" href="image-submission.php">Image Submission</a></li>
+														<li><a class="dropdown-item" href="guest-blog-post.php">Guest Blog Post</a></li>
+														<li><a class="dropdown-item" href="404-broken-page-backlink.php">404 Broken Page Backlink</a></li>
+													</ul>
+												</li>
+
+
 						<li class="nav-item"><a class="nav-link" href="package-price-seo.php"> SEO Packages & Pricing </a></li>
+
+
+						
+
+
+
 					</ul>
 				</div>
 			</div>

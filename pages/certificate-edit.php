@@ -48,9 +48,11 @@ if (isset($_POST['submit'])) {
         }
 
         $photo = $_FILES['image']['name'];
+        $image_name = preg_replace("/[^\w\-\.]/", "-", $image_name);
+        $image_name = preg_replace("/\s+/", "-", $image_name);
         $extension = pathinfo($photo, PATHINFO_EXTENSION);
         // $path = '../uploads/' . random_int(10000, 99999) . '.' . $extension;
-        $path = '../uploads/' . str_replace(' ', '-',  strtolower($title)) .'-' . random_int(10000, 99999) . '.' . $extension;
+        $path = '../uploads/' . str_replace(' ', '-',  strtolower($image_name)) .'-' . random_int(10000, 99999) . '.' . $extension;
         move_uploaded_file($_FILES['image']['tmp_name'], $path);
     } else {
         $path = $imagePath;
@@ -97,7 +99,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div class="col-md-4">
                     <div class="form-group">
-                        <label for="image">Exiting Image</label>
+                        <label for="image">Existing Image</label>
                         <img class="w-25" src="<?php echo $newImagePath ?>" alt="">
 
                     </div>

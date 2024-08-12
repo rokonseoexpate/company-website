@@ -26,19 +26,6 @@ $title = $branch['name'];
 	<?php include('./includes/style.php') ?>
 
 	<div class="gtranslate_wrapper"></div>
-	<script>
-		window.gtranslateSettings = {
-			"default_language": "en",
-			"native_language_names": true,
-			"detect_browser_language": true,
-			"url_structure": "sub_domain",
-			"languages": ["en", "fr", "de", "it", "es"],
-			"wrapper_selector": ".gtranslate_wrapper",
-			"horizontal_position": "left",
-			"vertical_position": "bottom"
-		}
-	</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
@@ -89,7 +76,7 @@ $title = $branch['name'];
 				<div class="col-md-4">
 					<div class="branch-address">
 						<div class="iframe-maps">
-							<iframe src="<?php echo $branch['map']?>" width="350" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="<?php echo $branch['map'] ?>" width="350" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
@@ -102,8 +89,8 @@ $title = $branch['name'];
 
 				<div class="col-md-4">
 					<div class="branch-img">
-					<iframe width="100%" height="315" src="<?php echo $branch['video_link'] ?>" title="<?php echo $branch['name'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-						
+						<iframe width="100%" height="315" src="<?php echo $branch['video_link'] ?>" title="<?php echo $branch['name'] ?>" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 					</div>
 				</div>
 			</div>
@@ -156,39 +143,10 @@ $title = $branch['name'];
 	<!--================================top_ready_start section start here=======================-->
 	<section class="top_ready_start">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="top_ready_start_txt">
-						<h3>We can build your story</h3>
-						<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-					</div>
-					<div class="top-body-button pt-5">
-						<a type="button" href="contact.php">Get In Touch</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="top_ready_start_img text-left">
-						<img src="frontend/images/95991_prev_ui.png" alt="SEO Expate Bangladesh LTD">
-					</div>
-				</div>
-			</div>
+			<?php include('./includes/seo-build-story.php') ?>
 		</div>
 	</section>
 	<!--================================top_ready_start section end here=======================-->
-
-
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="PAY_IMG">
-					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="SEO Expate Bangladesh LTD" width="100%">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================Thrive_Globally section end here=======================-->
-
 
 
 	<?php
@@ -196,10 +154,8 @@ $title = $branch['name'];
 	?>
 
 
-	<script src="frontend/js/jquery-3.5.1.js"></script>
-	<script src="frontend/js/bootstrap.bundle.min.js"></script>
-	<script src="frontend/js/owl.carousel.js"></script>
-	<script src="frontend/js/main.js"></script>
+	<?php include "includes/script.php" ?>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js" integrity="sha512-Zq9o+E00xhhR/7vJ49mxFNJ0KQw1E1TMWkPTxrWcnpfEFDEXgUiwJHIKit93EW/XxE31HSI5GEOW06G6BF1AtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 

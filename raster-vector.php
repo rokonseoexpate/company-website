@@ -1,57 +1,48 @@
 <?php
-    require_once 'config/dbconnect.php';
-    $db = new DB_con();
-    $conn = $db->get_connection();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="Title" content="This is the my site">
 	<meta name="description" content="This is the my site">
-    <meta name="keywords" content="seoebl, seoexpate">
+	<meta name="keywords" content="seoebl, seoexpate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Raster Vector</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
-	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="frontend/css/style.css">
-	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
+
+	<?php include('./includes/style.php') ?>
 
 	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
 
-<!--================================Header section start here=======================-->
-<?php include('./includes/navbar.php') ?>
-<!--================================Header section end here=======================-->
+	<?php include('./includes/navbar.php') ?>
 
+	<?php include 'includes/photo-editing-nav.php' ?>
 
-
-<?php include 'includes/photo-editing-nav.php' ?>
 	<!--================================top-body section start here=======================-->
-	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">		
+	<section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
 		<div class="container ">
-		    <div class="row">
-		    	<div class="col-12" style="z-index:500;">
-		    		<div class="top_body_txt_part">
-						<h1>Raster to Vector Conversion</h1>		
+			<div class="row">
+				<div class="col-12" style="z-index:500;">
+					<div class="top_body_txt_part">
+						<h1>Raster to Vector Conversion</h1>
 						<p style="text-align:justify;">Raster to Vector Conversion is a transformative service that converts raster images into scalable vector graphics. This process meticulously traces the contours and edges of objects in the raster image. It recreates them as mathematical equations and geometric shapes. The resulting vector files are versatile and can be easily edited, scaled, and manipulated. It offers greater flexibility and usability compared to raster images. This conversion provides huge benefits. It includes scalability without loss of quality. It also enables images to be resized indefinitely without pixelation. Moreover, vector graphics are ideal for printing. They maintain crispness regardless of size.</p>
-						<p style="text-align:justify;">However, businesses utilize it to convert logos, and other raster-based designs into vector format for enhanced flexibility. With precision, Raster to Vector Conversion service empowers users to seamlessly transition from pixel-based images to infinitely scalable vectors. Therefore, it will open up new possibilities for design and presentation.</p>						
+						<p style="text-align:justify;">However, businesses utilize it to convert logos, and other raster-based designs into vector format for enhanced flexibility. With precision, Raster to Vector Conversion service empowers users to seamlessly transition from pixel-based images to infinitely scalable vectors. Therefore, it will open up new possibilities for design and presentation.</p>
 					</div>
 					<div class="top-body-button pt-3">
 						<a type="button" href="free-trial.php">Free Trial</a>
-					</div>	
-				</div>			
+					</div>
+				</div>
 			</div>
-		</div>				
+		</div>
 	</section>
 	<!--================================top-body section end here=======================-->
 
@@ -62,15 +53,17 @@
 				<div class="col-12" style="z-index:500;">
 					<div class="top_about_us_txt" style="z-index:500;">
 						<nav aria-label="breadcrumb">
-						<ol class="breadcrumb breadcumb_gph">
-							<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
-							<li class="breadcrumb-item "><a href="graphic-design-and-photo-editing.php" class="text-light">Photo editor</a></li>
-							<li class="breadcrumb-item active text-light" aria-current="page">Raster to Vector Conversion</li>
-						</ol>
+							<ol class="breadcrumb breadcumb_gph">
+								<li class="breadcrumb-item "><a href="/" class="text-light ">Home</a></li>
+								<li class="breadcrumb-item "><a href="graphic-design-and-photo-editing.php" class="text-light">Photo editor</a></li>
+								<li class="breadcrumb-item active text-light" aria-current="page">Raster to Vector Conversion</li>
+							</ol>
 						</nav>
 					</div>
-					<div class="pb-2 pt-2 text-light"><h4 class="fs-1 fw-bold">Raster to Vector Conversion Service</h4></div>
-					<p class="pt-2 text-light" >Raster to vector conversion is like turning a rough sketch into a clear, detailed drawing. Imagine you have a picture made of tiny colored squares (pixels), like a mosaic. This picture might look good from far away, but when you zoom in, it gets blurry. It makes the image clear and sharp at any size. This is super important for things like maps, logos, and technical drawings. Finally, it lets you resize them without losing quality. </p>					
+					<div class="pb-2 pt-2 text-light">
+						<h4 class="fs-1 fw-bold">Raster to Vector Conversion Service</h4>
+					</div>
+					<p class="pt-2 text-light">Raster to vector conversion is like turning a rough sketch into a clear, detailed drawing. Imagine you have a picture made of tiny colored squares (pixels), like a mosaic. This picture might look good from far away, but when you zoom in, it gets blurry. It makes the image clear and sharp at any size. This is super important for things like maps, logos, and technical drawings. Finally, it lets you resize them without losing quality. </p>
 				</div>
 			</div>
 		</div>
@@ -82,8 +75,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
-					<div class="cliping_service_txt pb-2 pt-2"><h6>Our Raster to Vector Conversion Project</h6></div>
-					<p class="pt-3" >Our raster to vector conversion project is a transformative journey from pixelated images to crisp, scalable vectors. By converting raster images—those made of countless tiny squares—into vector graphics, defined by precise mathematical equations. Thus we unlock a world of clarity and flexibility. This process ensures that whether a graphic is scaled to the size of a postage stamp or a billboard. </p>															
+					<div class="cliping_service_txt pb-2 pt-2">
+						<h6>Our Raster to Vector Conversion Project</h6>
+					</div>
+					<p class="pt-3">Our raster to vector conversion project is a transformative journey from pixelated images to crisp, scalable vectors. By converting raster images—those made of countless tiny squares—into vector graphics, defined by precise mathematical equations. Thus we unlock a world of clarity and flexibility. This process ensures that whether a graphic is scaled to the size of a postage stamp or a billboard. </p>
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
@@ -91,7 +86,7 @@
 					</div>
 				</div>
 				<div class="col-12">
-					<p class="" >Therefore, it's a pivotal step for businesses aiming to elevate their branding. It is a crucial step for engineers drafting detailed plans and for designers crafting visuals. Our project not only enhances visual appeal but also streamlines edits and adjustments, proving indispensable across various industries. By embracing this conversion, we're setting a new standard for precision, efficiency, and aesthetic excellence.</p>
+					<p class="">Therefore, it's a pivotal step for businesses aiming to elevate their branding. It is a crucial step for engineers drafting detailed plans and for designers crafting visuals. Our project not only enhances visual appeal but also streamlines edits and adjustments, proving indispensable across various industries. By embracing this conversion, we're setting a new standard for precision, efficiency, and aesthetic excellence.</p>
 				</div>
 			</div>
 		</div>
@@ -103,39 +98,39 @@
 		<div class="container">
 			<div class="row">
 				<div class="slider pt-5 shadow">
-		            <div class="owl-carousel">
-		               <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                        <img src="frontend/images/Raster-to-Vector-Conversion-Service-3.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion">
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                  		<img src="frontend/images/Raster-to-Vector-Conversion-Service-4.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion" >
-		              		</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/Raster-to-Vector-Conversion-Service-2.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion">
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/Raster-to-Vector-Conversion-Service-5.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion" >
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/Raster-to-Vector-Conversion-Service-6.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion" >
-		                  	</div>
-		                </div>
-		                <div class="slider-card">
-		                  	<div class="d-flex justify-content-center align-items-center mb-4">
-		                       <img src="frontend/images/Raster-to-Vector-Conversion-Service-1.webp" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion">
-		                  	</div>
-		                </div>			                	                    
-		            </div>
-		        </div>
+					<div class="owl-carousel">
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Raster-to-Vector-Conversion-Service-3.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion">
+							</div>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Raster-to-Vector-Conversion-Service-4.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion">
+							</div>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Raster-to-Vector-Conversion-Service-2.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion">
+							</div>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Raster-to-Vector-Conversion-Service-5.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion">
+							</div>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Raster-to-Vector-Conversion-Service-6.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion">
+							</div>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<img src="frontend/images/Raster-to-Vector-Conversion-Service-1.webp" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -143,493 +138,316 @@
 
 	<!--================================editor_texts section start here=======================-->
 	<section class=" graphicdesigns_content" style="background: var(--bg-secondary-color);">
-        <div class="container">
-            <div class="row">
-                <div class="newudcode"><h5>Raster to Vector Conversion Service in the SEO Expate Bangladesh Ltd.</h5></div>
-                <div class="pb-5 border-bottom border-success border-2">
-                    <p>Our <a href="/" class="text-success">company</a> specializes in a unique raster to vector conversion service. It caters to a wide range of clients seeking clear and precise graphics for their projects. Whether you're a designer, architect, or engineer, our service transforms raster images into scalable vector graphics effortlessly. We use advanced technology and expert techniques for this service. We ensure that every detail from the original image is accurately preserved in the vector format. This means clearer lines, smoother curves, and better overall quality for your designs.</p> 
-                    <p>Our service is easy to use and delivers quick results, saving you time and effort in your projects. With our help, you can enhance the clarity and flexibility of your graphics. We make them suitable for a variety of applications. From logo design to architectural drawings, our raster to vector conversion service is your solution for high-quality, easy-to-edit graphics. Therefore, it is high time for you to buy this unique service from SEO Expate Bangladesh Ltd quickly.</p>                  
-                </div>
-            </div>
-            <div class="row shadow px-5 py-3">
-                <div class="col-md-4 m-auto">
-                	<h5 class="fs-2 ">Starting Price</h5>
-                </div>               
-                <div class="col-md-4 m-auto">
-                	<h5 class="fs-2 ">$10.00 USD</h5>
-                </div>               
-                <div class="col-md-4">
-                	<img src="frontend/images/Raster-to-Vector-Conversion-Service.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion"  class="img-thumbnail">
-                </div>               
-            </div>
-        </div>
-    </section>
-	<!--================================editor_texts section end here=======================-->
-
-	<!--================================domai_pricing_table section start here=======================-->
-	<section class="domai_pricing_table t-shirt-price" style="background: var(--bg-secondary-color) !important; padding-top: unset;" >
-	    <div class="container">
-		    <div class="row">
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Basic Raster to Vector </h6>
-		                    <p>Basic Raster to Vector Conversion with this package</p>
-		                    <span class="value">$10</span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>1 image edit</li>
-		                        <li> Each image edit 10$</li>
-		                        <li> Delivery in 1 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Medium Raster to Vector</h6>
-		                    <p>Medium type Raster to Vector Conversion </p>
-		                    <span class="value">
-		                        $15
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>1 image edit</li>
-		                        <li>  Each image edit 15$</li>
-		                        <li> Delivery in 1 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Complex Raster to Vector </h6>
-		                    <p>Complex Raster to Vector Conversion Service</p>
-		                    <span class="value">
-		                        $20
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>1 image edit</li>
-		                        <li>  Each image edit 20$</li>
-		                        <li> Delivery in 1 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>		        
-		    </div>
-		    <div class="row pt-3">
-		    	<div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Basic Raster to Vector </h6>
-		                    <p>Basic Raster to Vector Conversion with this package</p>
-		                    <span class="value">
-		                        $100
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>10 image edit</li>
-		                        <li> Each image edit 10$</li>
-		                        <li> Delivery in 1 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Medium Raster to Vector </h6>
-		                    <p>Medium type Raster to Vector Conversion </p>
-		                    <span class="value">
-		                        $150
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>10 image edit</li>
-		                        <li> Each image edit 15$</li>
-		                        <li> Delivery in 1 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Complex Raster to Vector </h6>
-		                    <p>Complex Raster to Vector Conversion Service</p>
-		                    <span class="value">
-		                        $200
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>10 image edit</li>
-		                        <li> Each image edit 20$</li>
-		                       <li> Delivery in 1 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		    <div class="row pt-3">
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Basic Raster to Vector </h6>
-		                    <p>Basic Raster to Vector Conversion with this package</p>
-		                    <span class="value">
-		                        $300
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>30 image edit</li>
-		                        <li>  Each image edit 10$</li>
-		                        <li> Delivery in 1 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Medium Raster to Vector </h6>
-		                    <p>Medium type Raster to Vector Conversion</p>
-		                    <span class="value">
-		                        $450
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>30 image edit</li>
-		                        <li>  Each image edit 15$</li>
-		                        <li> Delivery in 1 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Complex Raster to Vector </h6>
-		                    <p>Complex Raster to Vector Conversion Service </p>
-		                    <span class="value">
-		                        $600
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>30 image edit</li>
-		                        <li> Each image edit 20$</li>
-		                        <li> Delivery in 1 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		    <div class="row pt-3">
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Basic Raster to Vector </h6>
-		                    <p>Basic Raster to Vector Conversion with this package</p>
-		                    <span class="value">
-		                        $500
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>50 image edit</li>
-		                        <li>   Each image edit 10$</li>
-		                        <li>  Delivery in 2 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Medium Raster to Vector </h6>
-		                    <p>Medium type Raster to Vector Conversion</p>
-		                    <span class="value">
-		                        $750
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>50 image edit</li>
-		                        <li>   Each image edit 15$</li>
-		                        <li> Delivery in 2 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		        <div class="col-md-4 col-sm-6">
-		            <div class="pricingTable">
-		                <div class="pricing_heading">
-		                    <h6 class="title">Complex Raster to Vector </h6>
-		                    <p>Complex Raster to Vector Conversion Service </p>
-		                    <span class="value">
-		                        $1000
-		                    </span>
-		                </div>
-		                <div class="content">
-		                    <ul>
-		                        <li>50 image edit</li>
-		                        <li> Each image edit 20$</li>
-		                        <li> Delivery in 2 day</li>
-		                    </ul>
-		                    <div class="link">
-		                        <a href="#">Buy Now</a>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </div>
-		</div>		
-	</section>
-	<!--================================domai_pricing_table section end here=======================-->
-
-	<!--================================editor_texts section start here=======================-->
-	<section class=" graphicdesigns_content" style="background: var(--button-bg-hover-color);">
-        <div class="container">
-            <div class="row">
-            	<div class="col-12">
-                	<div class="newudcode"><h5 class="text-light">Affordable Raster to Vector Conversion Service ($4.99 each image)</h5></div>
-	                <div>
-	                    <p class="text-light">Affordable raster to vector conversion services offer cost-effective solution for individuals and businesses seeking to enhance their digital images. These services utilize advanced algorithms and skilled professionals to efficiently convert raster graphics into scalable vector formats. It requires minimum cost compared to traditional methods. By providing budget-friendly options, affordable raster to vector conversion services cater to a wide range of clients. Whether it's transforming logos, illustrations, or technical drawings, affordable conversion services ensure that clients receive optimal results. Therefore, it makes them an indispensable resource for those seeking economical yet professional graphic solutions.</p>
-	                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	<!--================================editor_texts section end here=======================-->
-
-	<!--================================editor_all_services section end here=======================-->
-	<section class="WHAT_MAKES footer_btm_all_services"  style="background: unset" >
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<h4>Photoshop Services</h4>
-					<a href="clipping-path.php" class="d-flex pt-4">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Clipping Path Service</h6>
-						</div>
-					</a>
-					<a href="jewelry-retouching.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Jewelry Retouching Service</h6>
-						</div>
-					</a>
-					<a href="ecommerce-photo-edit.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>E-Commerce Photo Editing</h6>
-						</div>
-					</a>
-					<a href="image-masking.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Image Masking Service</h6>
-						</div>
-					</a>
-					<a href="color-correction.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Color Correction Service</h6>
-						</div>
-					</a>
+				<div class="newudcode">
+					<h5>Raster to Vector Conversion Service in the SEO Expate Bangladesh Ltd.</h5>
 				</div>
-				<div class="col-md-3">
-					<h4>Photoshop Services</h4>
-					<a href="real-estate-photo.php" class="d-flex pt-4">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Real Estate Photo Editing</h6>
-						</div>
-					</a>
-					<a href="photo-retouching.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Photo Retouching</h6>
-						</div>
-					</a>
-					<a href="background-remove.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Remove Background Image</h6>
-						</div>
-					</a>
-					<a href="ghost-mannequin.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Ghost Mannequin Effect</h6>
-						</div>
-					</a>
-					<a href="shadow-making.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Shadow Making Service</h6>
-						</div>
-					</a>
+				<div class="pb-5 border-bottom border-success border-2">
+					<p>Our <a href="/" class="text-success">company</a> specializes in a unique raster to vector conversion service. It caters to a wide range of clients seeking clear and precise graphics for their projects. Whether you're a designer, architect, or engineer, our service transforms raster images into scalable vector graphics effortlessly. We use advanced technology and expert techniques for this service. We ensure that every detail from the original image is accurately preserved in the vector format. This means clearer lines, smoother curves, and better overall quality for your designs.</p>
+					<p>Our service is easy to use and delivers quick results, saving you time and effort in your projects. With our help, you can enhance the clarity and flexibility of your graphics. We make them suitable for a variety of applications. From logo design to architectural drawings, our raster to vector conversion service is your solution for high-quality, easy-to-edit graphics. Therefore, it is high time for you to buy this unique service from SEO Expate Bangladesh Ltd quickly.</p>
 				</div>
-				<div class="col-md-3">
-					<h4>Photoshop Services</h4>
-					<a href="photo-restoration.php" class="d-flex pt-4">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Photo Restoration</h6>
-						</div>
-					</a>
-					<a href="image-manipulation.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Image Manipulation Service</h6>
-						</div>
-					</a>
-					<a href="wedding-photo.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Wedding Photo Editing</h6>
-						</div>
-					</a>
-					<a href="raster-vector.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Raster to Vector Conversion</h6>
-						</div>
-					</a>
-					<a href="background-remove.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Photo Background Removing</h6>
-						</div>
-					</a>
+			</div>
+			<div class="row shadow px-5 py-3">
+				<div class="col-md-4 m-auto">
+					<h5 class="fs-2 ">Starting Price</h5>
 				</div>
-				<div class="col-md-3">
-					<h4>Graphics Design Services</h4>
-					<a href="t-shirt-design.php" class="d-flex pt-4">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>T-Shirt Design</h6>
-						</div>
-					</a>
-					<a href="logo-design.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Logo Designs Service</h6>
-						</div>
-					</a>
-					<a href="banner-design.php" class="d-flex pt-2">
-						<div>
-							<i class="fa-regular fa-square-check" alt=" seo expate" description=" seo expate"></i>
-						</div>
-						<div class="what_make-txt">
-							<h6>Banner Design</h6>
-						</div>
-					</a>
+				<div class="col-md-4 m-auto">
+					<h5 class="fs-2 ">$10.00 USD</h5>
+				</div>
+				<div class="col-md-4">
+					<img src="frontend/images/Raster-to-Vector-Conversion-Service.png" alt=" Raster to Vector Conversion" description=" Raster to Vector Conversion" class="img-thumbnail">
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--================================editor_all_services section end here=======================-->
+	<!--================================editor_texts section end here=======================-->
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                 	<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-	<!--================================Thrive_Globally section end here=======================-->
-<!--===========================footer part start===================================-->
-<?php include('./includes/footer_menu.php') ?>
-<!--===========================footer part end===================================-->
+	<!--================================domai_pricing_table section start here=======================-->
+	<section class="domai_pricing_table t-shirt-price" style="background: var(--bg-secondary-color) !important; padding-top: unset;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Basic Raster to Vector </h6>
+							<p>Basic Raster to Vector Conversion with this package</p>
+							<span class="value">$10</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>1 image edit</li>
+								<li> Each image edit 10$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Medium Raster to Vector</h6>
+							<p>Medium type Raster to Vector Conversion </p>
+							<span class="value">
+								$15
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>1 image edit</li>
+								<li> Each image edit 15$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Complex Raster to Vector </h6>
+							<p>Complex Raster to Vector Conversion Service</p>
+							<span class="value">
+								$20
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>1 image edit</li>
+								<li> Each image edit 20$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row pt-3">
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Basic Raster to Vector </h6>
+							<p>Basic Raster to Vector Conversion with this package</p>
+							<span class="value">
+								$100
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>10 image edit</li>
+								<li> Each image edit 10$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Medium Raster to Vector </h6>
+							<p>Medium type Raster to Vector Conversion </p>
+							<span class="value">
+								$150
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>10 image edit</li>
+								<li> Each image edit 15$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Complex Raster to Vector </h6>
+							<p>Complex Raster to Vector Conversion Service</p>
+							<span class="value">
+								$200
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>10 image edit</li>
+								<li> Each image edit 20$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row pt-3">
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Basic Raster to Vector </h6>
+							<p>Basic Raster to Vector Conversion with this package</p>
+							<span class="value">
+								$300
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>30 image edit</li>
+								<li> Each image edit 10$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Medium Raster to Vector </h6>
+							<p>Medium type Raster to Vector Conversion</p>
+							<span class="value">
+								$450
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>30 image edit</li>
+								<li> Each image edit 15$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Complex Raster to Vector </h6>
+							<p>Complex Raster to Vector Conversion Service </p>
+							<span class="value">
+								$600
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>30 image edit</li>
+								<li> Each image edit 20$</li>
+								<li> Delivery in 1 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row pt-3">
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Basic Raster to Vector </h6>
+							<p>Basic Raster to Vector Conversion with this package</p>
+							<span class="value">
+								$500
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>50 image edit</li>
+								<li> Each image edit 10$</li>
+								<li> Delivery in 2 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Medium Raster to Vector </h6>
+							<p>Medium type Raster to Vector Conversion</p>
+							<span class="value">
+								$750
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>50 image edit</li>
+								<li> Each image edit 15$</li>
+								<li> Delivery in 2 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="pricingTable">
+						<div class="pricing_heading">
+							<h6 class="title">Complex Raster to Vector </h6>
+							<p>Complex Raster to Vector Conversion Service </p>
+							<span class="value">
+								$1000
+							</span>
+						</div>
+						<div class="content">
+							<ul>
+								<li>50 image edit</li>
+								<li> Each image edit 20$</li>
+								<li> Delivery in 2 day</li>
+							</ul>
+							<div class="link">
+								<a href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
+	<section class=" graphicdesigns_content" style="background: var(--button-bg-hover-color);">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="newudcode">
+						<h5 class="text-light">Affordable Raster to Vector Conversion Service ($4.99 each image)</h5>
+					</div>
+					<div>
+						<p class="text-light">Affordable raster to vector conversion services offer cost-effective solution for individuals and businesses seeking to enhance their digital images. These services utilize advanced algorithms and skilled professionals to efficiently convert raster graphics into scalable vector formats. It requires minimum cost compared to traditional methods. By providing budget-friendly options, affordable raster to vector conversion services cater to a wide range of clients. Whether it's transforming logos, illustrations, or technical drawings, affordable conversion services ensure that clients receive optimal results. Therefore, it makes them an indispensable resource for those seeking economical yet professional graphic solutions.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<?php include('./includes/footer-services.php') ?>
+
+	<?php include('./includes/footer_menu.php') ?>
+
+	<?php include "includes/script.php" ?>
 
 </body>
+
 </html>

@@ -1,89 +1,32 @@
 <?php
-    require_once 'config/dbconnect.php';
-    $db = new DB_con();
-    $conn = $db->get_connection();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="Title" content="This is the my site">
 	<meta name="description" content="This is the my site">
-    <meta name="keywords" content="seoebl, seoexpate">
+	<meta name="keywords" content="seoebl, seoexpate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SEO Service </title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
-	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="frontend/css/style.css">
-	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
+
+	<?php include('./includes/style.php') ?>
 
 	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
 
-<!--================================Header section start here=======================-->
-<?php include('./includes/navbar.php') ?>
-<!--================================Header section end here=======================-->
+	<?php include('./includes/navbar.php') ?>
 
 
-	<!--================================photo editor sub Header section end here=======================-->
-	<div class="photo_edipth">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-dark ">
-				<div class="container-fluid ">
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-					</button>
-					<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-						<ul class="navbar-nav ">
-							<li class="nav-item dropdown">
-								<a class="nav-link  dropdown-toggle" href="seo-service.php" data-bs-toggle="dropdown">SEO Services</a>
-								<ul class="dropdown-menu dropdown-menu-end">
-									<li><a class="dropdown-item" href="ecommerce-seo.php"> eCommerce SEO</a></li>
-									<li><a class="dropdown-item" href="amazon-seo.php">Amazon SEO</a></li>
-									<li><a class="dropdown-item" href="b2b-seo.php">B2B SEO</a></li>
-									<li><a class="dropdown-item" href="shopify-seo.php">Shopify SEO</a></li>
-									<li><a class="dropdown-item" href="wordpress-seo.php">WordPress SEO</a></li>
-									<li><a class="dropdown-item" href="woocommerce-seo.php">WooCommerce SEO</a></li>
-									<li><a class="dropdown-item" href="lead-seo.php">Lead Generation SEO</a></li>
-									<li><a class="dropdown-item" href="nopcommerce-seo.php">NopCommerce SEO</a></li>
-									<li><a class="dropdown-item" href="magento-seo.php">Magento SEO</a></li>
-									<li><a class="dropdown-item" href="volusion-seo.php">Volusion SEO</a></li>
-									<li><a class="dropdown-item" href="bigcommerce-seo.php">BigCommerce SEO</a></li>
-									<li><a class="dropdown-item" href="consulting-seo.php">SEO Consulting</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link  dropdown-toggle" href="ppc-paid.php" data-bs-toggle="dropdown">PPC & Paid Search</a>
-								<ul class="dropdown-menu dropdown-menu-end">
-									<li><a class="dropdown-item" href="amazon-ppc.php"> Amazon PPC Management</a></li>
-									<li><a class="dropdown-item" href="ecommerce-ppc.php">eCommerce PPC Management</a></li>
-									<li><a class="dropdown-item" href="google-ads.php">Google Ads Consulting</a></li>
-									<li><a class="dropdown-item" href="management-ads.php">Google Ads Management</a></li>
-									<li><a class="dropdown-item" href="shopping-management.php">Google Shopping Management</a></li>
-									<li><a class="dropdown-item" href="ppc-consulting.php">PPC Consulting</a></li>
-									<li><a class="dropdown-item" href="ppc-lead.php">Lead Gen PPC Management</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="onpage-seo.php"> On-page SEO </a></li>
-							<li class="nav-item"><a class="nav-link" href="offpage-seo.php"> Off-page SEO </a></li>
-							<li class="nav-item"><a class="nav-link" href="technical-seo.php"> Technical SEO </a></li>
-							<li class="nav-item"><a class="nav-link" href="package-price-seo.php"> SEO Packages & Pricing </a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</div>
-	<!--================================photo editor sub Header section end here=======================-->
+	<?php include "includes/seo-nav.php" ?>
 
 	<!--================================top-body section start here=======================-->
 	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
@@ -110,7 +53,7 @@
 	<!--================================top-body section end here=======================-->
 
 	<!--================================cliping_service section start here=======================-->
-	<section class="cliping_service photo_edit_all_service tshirtdesign" >
+	<section class="cliping_service photo_edit_all_service tshirtdesign">
 		<div class="container">
 			<div class="row">
 				<div class="col-12" style="z-index:500;">
@@ -122,8 +65,10 @@
 							</ol>
 						</nav>
 					</div>
-					<div class="pb-2 pt-2 "><h4 class="fs-1 fw-bold">Guaranteed Top Rankings: Climb the Ladder with Our Proven SEO Strategies.</h4></div>
-					<p class="pt-2 " >Struggling to attract organic traffic and convert website visitors into customers? Here at <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd., we offer guaranteed top rankings that unlock sustainable growth and dominate your online presence. Our adaptable SEO packages can help you achieve both local and global domination, regardless of your goals. While our SEO package is ideal for broadening your reach and obtaining business or B2B leads, our Local SEO packages are designed to assist you draw in clients in your surrounding area. Additionally, if your company is an online retailer, our eCommerce SEO packages will push your goods to the top, accelerating your pace of growth and increasing your revenue. In addition to content production, landing page construction, SEO campaign advice, tag optimization, and website code optimization, we also offer other SEO services.</p>
+					<div class="pb-2 pt-2 ">
+						<h4 class="fs-1 fw-bold">Guaranteed Top Rankings: Climb the Ladder with Our Proven SEO Strategies.</h4>
+					</div>
+					<p class="pt-2 ">Struggling to attract organic traffic and convert website visitors into customers? Here at <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd., we offer guaranteed top rankings that unlock sustainable growth and dominate your online presence. Our adaptable SEO packages can help you achieve both local and global domination, regardless of your goals. While our SEO package is ideal for broadening your reach and obtaining business or B2B leads, our Local SEO packages are designed to assist you draw in clients in your surrounding area. Additionally, if your company is an online retailer, our eCommerce SEO packages will push your goods to the top, accelerating your pace of growth and increasing your revenue. In addition to content production, landing page construction, SEO campaign advice, tag optimization, and website code optimization, we also offer other SEO services.</p>
 					<p class="pt-2 ">In short, SEO Expate always thinks of a consumer-friendly business environment. With this in mind whatever we do is for the satisfaction of our clients. So, give us an opportunity and contact us to get any support for your business.</p>
 				</div>
 			</div>
@@ -136,14 +81,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
-					<div class="cliping_service_txt pb-2 pt-2"><h6>Why Choose Our Proven SEO Strategies?</h6></div>
-					<p class="pt-3" ><a href="/" class="text-success">SEO Expate</a> doesn't just offer empty promises. Our data-driven strategies and transparent reporting show you exactly how your rankings are improving. Here are some of the reasons why you need to take services from us. </p>
+					<div class="cliping_service_txt pb-2 pt-2">
+						<h6>Why Choose Our Proven SEO Strategies?</h6>
+					</div>
+					<p class="pt-3"><a href="/" class="text-success">SEO Expate</a> doesn't just offer empty promises. Our data-driven strategies and transparent reporting show you exactly how your rankings are improving. Here are some of the reasons why you need to take services from us. </p>
 					<div class="app_list">
 						<p class=""><span><i class="fa-solid fa-check-double"></i></span>Our team of SEO experts has a proven track record of success in diverse industries, ensuring we understand your unique challenges and goals. </p>
 						<p class=""><span><i class="fa-solid fa-check-double"></i></span><a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd.’s SEO team is one of the largest in the whole world.</p>
 						<p class=""><span><i class="fa-solid fa-check-double"></i></span> Besides, we strictly adhere to ethical SEO practices, building long-term rankings that won't get sanctioned by search engines. </p>
-						<p class=""><span><i class="fa-solid fa-check-double"></i></span>  We tailor our SEO solutions to your specific needs and budget, ensuring you get the maximum return on investment. </p>
-						<p class=""><span><i class="fa-solid fa-check-double"></i></span>  Because SEO Expate is so sure of its strategy, we guarantee top ranks for specific keywords within a certain period of time.</p>
+						<p class=""><span><i class="fa-solid fa-check-double"></i></span> We tailor our SEO solutions to your specific needs and budget, ensuring you get the maximum return on investment. </p>
+						<p class=""><span><i class="fa-solid fa-check-double"></i></span> Because SEO Expate is so sure of its strategy, we guarantee top ranks for specific keywords within a certain period of time.</p>
 					</div>
 				</div>
 				<div class="col-md-6" style="margin: auto;">
@@ -157,7 +104,7 @@
 	<!--================================cliping_service section end here=======================-->
 
 	<!--================================cliping_service section start here=======================-->
-	<section class="cliping_service " >
+	<section class="cliping_service ">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6" style="margin: auto;">
@@ -166,8 +113,10 @@
 					</div>
 				</div>
 				<div class="col-md-6 margintop" style="z-index:500;">
-					<div class="cliping_service_txt pb-2 pt-2"><h6>What SEO services are included in SEO packages?</h6></div>
-					<p class="pt-3" >SEO packages are collections of SEO services designed to improve a company's natural search engine rankings. By providing SEO packages, SEO businesses are able to provide the most crucial SEO services at a discounted, bundled cost. SEO packages can be further tailored to the demands and objectives of the business. They are typically monthly subscription packages that are available for both regional and national SEO campaigns. Services including keyword research, content production, link building, on-site optimization, website speed optimization, and more are included in SEO packages. </p>
+					<div class="cliping_service_txt pb-2 pt-2">
+						<h6>What SEO services are included in SEO packages?</h6>
+					</div>
+					<p class="pt-3">SEO packages are collections of SEO services designed to improve a company's natural search engine rankings. By providing SEO packages, SEO businesses are able to provide the most crucial SEO services at a discounted, bundled cost. SEO packages can be further tailored to the demands and objectives of the business. They are typically monthly subscription packages that are available for both regional and national SEO campaigns. Services including keyword research, content production, link building, on-site optimization, website speed optimization, and more are included in SEO packages. </p>
 				</div>
 			</div>
 		</div>
@@ -194,8 +143,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6" style="z-index:500;">
-					<div class="cliping_service_txt pb-2"><h6>SEO Packages for Various Other Platforms</h6></div>
-					<p class="pt-3" >SEO differs based on the platform and content management system. Your chosen agency must be an authority on the platform you're using, with the ability to apply upgrades with ease and a thorough awareness of its details. Our proficiency in Shopify SEO campaigns, WordPress SEO, and all major platforms enables us to market your website efficiently and accelerate organic search results. Call us or fill out our online form to discuss the difficulties with your platform or to find out more about how we specifically support it.</p>
+					<div class="cliping_service_txt pb-2">
+						<h6>SEO Packages for Various Other Platforms</h6>
+					</div>
+					<p class="pt-3">SEO differs based on the platform and content management system. Your chosen agency must be an authority on the platform you're using, with the ability to apply upgrades with ease and a thorough awareness of its details. Our proficiency in Shopify SEO campaigns, WordPress SEO, and all major platforms enables us to market your website efficiently and accelerate organic search results. Call us or fill out our online form to discuss the difficulties with your platform or to find out more about how we specifically support it.</p>
 				</div>
 				<div class="col-md-6" style="margin: auto;">
 					<div class="clip_img">
@@ -221,7 +172,7 @@
 						<p>Ethical Approach: Their commitment to white hat SEO techniques ensures sustainable results without the risk of penalties from search engines.</p>
 						<p>Cost-Effectiveness: While specific pricing might not be readily available, their potential strength lies in offering competitive rates within the Bangladesh market, especially for businesses seeking value for their investment.</p>
 						<p>Local Knowledge Advantage: As a Bangladesh-based company, they may have a deeper understanding of the local SEO landscape and cultural nuances, which could be beneficial if your target audience is primarily located in Bangladesh.</p>
-						<p>Remember, it's crucial to thoroughly research and compare various SEO service providers before making a decision.  Look for testimonials, reviews, and case studies to understand how other businesses have benefited from their services. Consider factors like budget, specific needs, and desired level of customization when selecting the best fit for your company.</p>
+						<p>Remember, it's crucial to thoroughly research and compare various SEO service providers before making a decision. Look for testimonials, reviews, and case studies to understand how other businesses have benefited from their services. Consider factors like budget, specific needs, and desired level of customization when selecting the best fit for your company.</p>
 					</div>
 				</div>
 			</div>
@@ -248,7 +199,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="explore_txt">
-					<div class="newudcode"><h6>What Our Web optimization Administration in bd will Offer You?</h6></div>
+					<div class="newudcode">
+						<h6>What Our Web optimization Administration in bd will Offer You?</h6>
+					</div>
 					<p style="width: 100%;">It is vital to put resources into beginning a business, however it means quite a bit to remember that the venture doesn't come up short. So you ought to employ a Search engine optimization office that can really get your business to research and designated clients. To that end we don't dissect all that well prior to undertaking each Search engine optimization project. We don't believe that any of our clients' cash should fall flat. The right Search engine optimization office in Bangladesh will esteem your business the manner in which they work on their site. They will deal with your significant time and speculation. In this way, as the best Web optimization Specialist co-op in Bangladesh, we need to give equivalent significance to each business and convey the sites to research. Staying up with the times, we likewise offer a wide range of advantages and the valuable chance to pay in portions. In Bangladesh, we work with a first-rank assurance.</p>
 				</div>
 				<div class="explore_tabs">
@@ -297,7 +250,7 @@
 												<p class="text-muted mb-0">First, We try to understand the Client’s Requirements and His Goal. As like, How Much Keywords You want to rank for, Which page is the targeted page, Service page list , The content Quality of your website is good or bad, etc. Then we Develop an actionable SEO Strategy for the work of our SEO Service in Bangladesh.</p>
 											</div>
 											<div id="employment" role="tabpanel" aria-labelledby="employment-tab" class="tab-pane fade px-4 py-5">
-												<p class="text-muted mb-0">After reviewing the project, we do profitable keyword research to find the best keywords  for your services and Products. Our Depth Keyword Research Includes: LSI / Long TailKeywords, Buying Intent Keywords, Informative Keywords, Geo-targeted Keywords Etc</p>
+												<p class="text-muted mb-0">After reviewing the project, we do profitable keyword research to find the best keywords for your services and Products. Our Depth Keyword Research Includes: LSI / Long TailKeywords, Buying Intent Keywords, Informative Keywords, Geo-targeted Keywords Etc</p>
 
 											</div>
 											<div id="Services" role="tabpanel" aria-labelledby="Services-tab" class="tab-pane fade px-4 py-5">
@@ -439,7 +392,7 @@
 						</div>
 					</div>
 					<div class="accordion-item">
-						<h5 class="accordion-header collapsed" id="headingSevven" data-bs-toggle="collapse" data-bs-target="#collapseSevven" aria-expanded="false" aria-controls="collapseSevven">Q.  How can I get started with SEO Expate Bangladesh Ltd.?
+						<h5 class="accordion-header collapsed" id="headingSevven" data-bs-toggle="collapse" data-bs-target="#collapseSevven" aria-expanded="false" aria-controls="collapseSevven">Q. How can I get started with SEO Expate Bangladesh Ltd.?
 						</h5>
 						<div id="collapseSevven" class="accordion-collapse collapse" aria-labelledby="headingSevven" data-bs-parent="#accordion">
 							<div class="accordion-body">We encourage you to contact us today for a free SEO consultation. During the consultation, we will discuss your business goals, website, and current SEO strategy. We will then provide you with a customized proposal and answer any questions you may have.
@@ -450,53 +403,17 @@
 			</div>
 		</div>
 	</section>
-	<!--================================accordion section end here=======================-->
-
-	<!--================================top_ready_start section start here=======================-->
 	<section class="top_ready_start">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="top_ready_start_txt">
-						<h3>We can build your story</h3>
-						<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-					</div>
-					<div class="top-body-button pt-5">
-						<a type="button" href="contact.php">Get In Touch</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="top_ready_start_img text-left">
-						<img src="frontend/images/95991_prev_ui.png" alt=" SEO Services" description=" SEO Services">
-					</div>
-				</div>
-			</div>
+			<?php include('./includes/seo-build-story.php') ?>
 		</div>
 	</section>
-	<!--================================top_ready_start section end here=======================-->
-
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="PAY_IMG">
-					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" SEO Services" description=" SEO Services" width="100%">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================Thrive_Globally section end here=======================-->
 
 
+	<?php include('./includes/footer_menu.php') ?>
 
-<!--===========================footer part start===================================-->
-<?php include('./includes/footer_menu.php') ?>
-<!--===========================footer part end===================================-->
-
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
+	<?php include "includes/script.php" ?>
 
 </body>
+
 </html>

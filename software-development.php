@@ -1,41 +1,35 @@
 <?php
-    require_once 'config/dbconnect.php';
-    $db = new DB_con();
-    $conn = $db->get_connection();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="Title" content="This is the my site">
 	<meta name="description" content="This is the my site">
-    <meta name="keywords" content="seoebl, seoexpate">
+	<meta name="keywords" content="seoebl, seoexpate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Software Development</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
-	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="frontend/css/style.css">
-	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
+
+	<?php include('./includes/style.php') ?>
 
 	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
 
-<!--================================Header section start here=======================-->
-<?php include('./includes/navbar.php') ?>
-<!--================================Header section end here=======================-->
+	<!--================================Header section start here=======================-->
+	<?php include('./includes/navbar.php') ?>
+	<!--================================Header section end here=======================-->
 
 
 	<!--================================top-body section start here=======================-->
-	<section class="top-body web_service" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;  margin-top: 60px; ">
+	<section class="top-body web_service" style="background-image: url(frontend/images/72d076db-72f4-4121-a467-0195035b7f60.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover;   ">
 		<div class="container ">
 			<div class="row">
 				<div class="col-12" style="z-index:500;">
@@ -71,8 +65,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12" style="z-index:500;">
-					<div class="pb-2 pt-2 text-light"><h4 class="fs-1 fw-bold">Software Development Service Summary</h4></div>
-					<p class="pt-2 text-light" >Our software development <a href="services.php" class="text-success">services</a> offer special solutions to meet your business needs. However, with a team of developers, we specialize in making custom software, mobile apps, and web platforms. Also, it can streamline processes and enhance user experiences. However, from initial concept to final deployment, we maintain communication and collaboration. And, ensure that your vision is brought to accurately. Also, our agile approach allows for flexibility and adaptability throughout the development process, ensuring high-quality results that align with your goals. To conclude, trust us to deliver innovative, reliable, and scalable software solutions that drive your business forward.</p>
+					<div class="pb-2 pt-2 text-light">
+						<h4 class="fs-1 fw-bold">Software Development Service Summary</h4>
+					</div>
+					<p class="pt-2 text-light">Our software development <a href="services.php" class="text-success">services</a> offer special solutions to meet your business needs. However, with a team of developers, we specialize in making custom software, mobile apps, and web platforms. Also, it can streamline processes and enhance user experiences. However, from initial concept to final deployment, we maintain communication and collaboration. And, ensure that your vision is brought to accurately. Also, our agile approach allows for flexibility and adaptability throughout the development process, ensuring high-quality results that align with your goals. To conclude, trust us to deliver innovative, reliable, and scalable software solutions that drive your business forward.</p>
 				</div>
 			</div>
 		</div>
@@ -83,7 +79,9 @@
 	<div class="our_mission our_promise we_following">
 		<div class="container">
 			<div class="row">
-				<div class="updatecode"><h6 class="text-center pb-2">Benefits of Software Development Services for Small, Medium & Large Businesses</h6></div>
+				<div class="updatecode">
+					<h6 class="text-center pb-2">Benefits of Software Development Services for Small, Medium & Large Businesses</h6>
+				</div>
 				<p class="border-bottom border-success border-2 pb-4 mb-5">Software development services offer lots of benefits for businesses of all sizes. Therefore, for small companies, custom software can boost productivity efficiency and help you with the other competitors. Also, medium-sized companies can benefit from solutions that keep up growth, plan operations, and increase production. Large companies can use this service to solve difficult problems, and stay ahead of industry trends. Furthermore, software development services help businesses to grow, adapt to changing market demands, and drive success through technology-driven solutions tailored to their needs.</p>
 				<div class="col-md-6">
 					<h6 class="fs-1 fw-bold">Benefits</h6>
@@ -106,8 +104,10 @@
 	<div class="our_mission our_promise we_following" style="background: var(--bg-secondary-color);">
 		<div class="container">
 			<div class="row">
-				<div class="updatecode"><h6 class="text-center pb-2">Core Software Development Services</h6></div>
-				<p class="border-bottom border-success border-2 pb-4 mb-5">Our core development services offer you the best solutions for your customized software. Therefore, we collaborate with our customers and create something better for their needs. Our team carefully plans the whole project to finish it without any problems. Also, the development includes properly following the customer's instructions and ensuring it functions properly.  So, these services enable the successful creation and deployment of custom software applications that drive business growth and innovation.</p>
+				<div class="updatecode">
+					<h6 class="text-center pb-2">Core Software Development Services</h6>
+				</div>
+				<p class="border-bottom border-success border-2 pb-4 mb-5">Our core development services offer you the best solutions for your customized software. Therefore, we collaborate with our customers and create something better for their needs. Our team carefully plans the whole project to finish it without any problems. Also, the development includes properly following the customer's instructions and ensuring it functions properly. So, these services enable the successful creation and deployment of custom software applications that drive business growth and innovation.</p>
 				<div class="col-md-6">
 					<img src="frontend/images/istockphoto-1502289545-612x612.jpg" alt="Software Development" description="Software Development" class="img-thumbnail">
 				</div>
@@ -130,7 +130,9 @@
 	<div class="our_mission our_promise we_following">
 		<div class="container">
 			<div class="row">
-				<div class="updatecode"><h6 class="text-center pb-2">Desktop Software Development Services</h6></div>
+				<div class="updatecode">
+					<h6 class="text-center pb-2">Desktop Software Development Services</h6>
+				</div>
 				<p class="border-bottom border-success border-2 pb-4 mb-5">Desktop Software Development is the process of making computer programs for specific functionality. You can take advantage of using desktop software for its speed and performance. Besides, they run on desktops or laptops with macOS, Windows, or Linux operating systems. The independence of internet connectivity also makes desktop software in demand for businesses. And SEO Expate Bangladesh Ltd. is helping businesses by providing best-in-class desktop software development services globally.</p>
 				<div class="col-md-6">
 					<h6 class="fs-2 fw-bold">System Software Development</h6>
@@ -154,10 +156,10 @@
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Application Software Development</p>
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Browsers & Firmware Development</p>
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Driver Software Development</p>
-							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span>  API Development</p>
+							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> API Development</p>
 						</div>
 						<div class="col-md-6">
-							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span>   Security and Assurance</p>
+							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Security and Assurance</p>
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span>Desktop Software Integration</p>
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"> </i></span>Research and Development</p>
 						</div>
@@ -172,7 +174,9 @@
 	<div class="our_mission our_promise we_following" style="background: var(--bg-secondary-color);">
 		<div class="container">
 			<div class="row">
-				<div class="updatecode"><h6 class="text-center pb-2">Mobile Software Development Services</h6></div>
+				<div class="updatecode">
+					<h6 class="text-center pb-2">Mobile Software Development Services</h6>
+				</div>
 				<p class="border-bottom border-success border-2 pb-4 mb-5">Do you need a mobile app and are looking for a mobile software development company? Then, you can have smart mobile app solutions at SEO Expate Bangladesh Ltd. If you need simple mobile apps or game development, we have quality mobile app solutions for you. To fulfill your needs, <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. offers mobile apps development with customization services.Here, you can have mobile app solutions for smartphones, smartwatches, iPhones, iPad, Apple Watch, Android, iOS, Windows Phone, and many more. You can rely on SEO Expate Bangladesh Ltd. the most reliable custom software development company. The expert team at <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. has expertise in Java, J2ME, J2EE, Ajax, PHP, Java, Ruby on Rails, and more to develop your mobile software.</p>
 				<div class="col-md-6">
 					<img src="frontend/images/istockphoto-1174690086-612x612.jpg" alt="Software Development" description="Software Development" class="img-thumbnail">
@@ -197,7 +201,7 @@
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Custom iOS and Android Apps Development</p>
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> eCommerce Mobile App Development</p>
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Native Mobile App Development, Native Mobile Software</p>
-							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span>  Android Mobile App Development, Mobile Game Development</p>
+							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Android Mobile App Development, Mobile Game Development</p>
 						</div>
 						<div class="col-md-6">
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> iPad App Development, iPhone App Development</p>
@@ -216,7 +220,9 @@
 	<div class="our_mission our_promise we_following">
 		<div class="container">
 			<div class="row">
-				<div class="updatecode"><h6 class="text-center pb-2">Custom Software Development Services</h6></div>
+				<div class="updatecode">
+					<h6 class="text-center pb-2">Custom Software Development Services</h6>
+				</div>
 				<p class="border-bottom border-success border-2 pb-4 mb-5">The custom software solution provides superior functionality. As a result, Small-to-midsize (SMB) and enterprises can gain a competitive advantage by using custom software. However, suppose you need custom software development services like desktop, <a href="web-development.php" class="text-success">web</a>, <a href="app-development.php" class="text-success">mobile apps</a>, cloud computing, and more. In that case, <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. can offer you the best solution for custom software development. With a proven record in custom software development for large enterprises and organizations, expert developers at <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd. excel in custom mobile app development, desktop software development, and many more. Let's work together.</p>
 				<div class="col-md-6">
 					<h6 class="fs-2 fw-bold">Custom Enterprise Software Development </h6>
@@ -239,8 +245,8 @@
 						<div class="col-md-6">
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> ACorporate & Interorganizational Software Systems</p>
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Software for a Specific Business Function</p>
-							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span>  Cross-industry, DevOps and QA</p>
-							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span>   Product Life-cycle Management (PLM) Software</p>
+							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Cross-industry, DevOps and QA</p>
+							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Product Life-cycle Management (PLM) Software</p>
 						</div>
 						<div class="col-md-6">
 							<p> <span><i class="fa-solid fa-circle" alt="Software Development" description="Software Development"></i></span> Healthcare Revenue Cycle Management</p>
@@ -287,7 +293,7 @@
 						<h5 class="accordion-header collapsed" id="headingFour" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Q. I have got an idea, how and where do I start?
 						</h5>
 						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
-							<div class="accordion-body">If you need a software solution, you can contact us by up this form. Click here and tell us your needs and we’ll get back to you.  After analyzing your requirements, our team can arrange a meeting with you if you want. We will also share project proposals for budget and timeline estimates with you. If you want to know more about how we work then please <a href="#" class="text-success">visit us</a>.
+							<div class="accordion-body">If you need a software solution, you can contact us by up this form. Click here and tell us your needs and we’ll get back to you. After analyzing your requirements, our team can arrange a meeting with you if you want. We will also share project proposals for budget and timeline estimates with you. If you want to know more about how we work then please <a href="#" class="text-success">visit us</a>.
 							</div>
 						</div>
 					</div>
@@ -370,47 +376,19 @@
 	<!--================================top_ready_start section start here=======================-->
 	<section class="top_ready_start">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="top_ready_start_txt">
-						<h3>We can build your story</h3>
-						<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-					</div>
-					<div class="top-body-button pt-5">
-						<a type="button" href="contact.php">Get In Touch</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="top_ready_start_img text-left">
-						<img src="frontend/images/95991_prev_ui.png" alt=" seo expate" description=" seo expate">
-					</div>
-				</div>
-			</div>
+			<?php include('./includes/seo-build-story.php') ?>
 		</div>
 	</section>
 	<!--================================top_ready_start section end here=======================-->
 
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="PAY_IMG">
-					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description=" payment" width="100%">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================Thrive_Globally section end here=======================-->
 
-<!--===========================footer part start===================================-->
-<?php include('./includes/footer_menu.php') ?>
-<!--===========================footer part end===================================-->
+	<!--===========================footer part start===================================-->
+	<?php include('./includes/footer_menu.php') ?>
+	<!--===========================footer part end===================================-->
 
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
+	<?php include "includes/script.php" ?>
 
 </body>
+
 </html>

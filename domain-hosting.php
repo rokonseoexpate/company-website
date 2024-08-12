@@ -1,3 +1,10 @@
+<?php
+
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,199 +19,14 @@
 	<?php include('./includes/style.php') ?>
 	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
-	<div class="gtranslate_wrapper"></div>
-	<script>
-		window.gtranslateSettings = {
-			"default_language": "en",
-			"native_language_names": true,
-			"detect_browser_language": true,
-			"url_structure": "sub_domain",
-			"languages": ["en", "fr", "de", "it", "es"],
-			"wrapper_selector": ".gtranslate_wrapper",
-			"horizontal_position": "left",
-			"vertical_position": "bottom"
-		}
-	</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
 
-	<!--================================Header section start here=======================-->
 	<?php include "includes/navbar.php" ?>
-	<!--================================Header section end here=======================-->
 
-	<!--================================domain_hosting Sub_Header section start here=======================-->
-	<div class="domain_hosting">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-dark ">
-				<div class="container-fluid ">
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
-					</button>
-					<div class="collapse navbar-collapse  justify-content-center" id="main_nav">
-						<ul class="navbar-nav ">
-							<li class="nav-item dropdown has-megamenu ">
-								<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Hosting </a>
-								<div class="dropdown-menu megamenu" role="menu">
-									<div class="row g-3">
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-solid fa-user-group" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">Web Hosting</h6>
-														<p>Best Hosting Packages for You</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-solid fa-server" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">VPS Unmanaged</h6>
-														<p>Virtual Private Server for You</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-solid fa-user-group" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">Premium Hosting</h6>
-														<p>Heavy Traffic Hosting Packages</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-solid fa-server" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">VPS Managed</h6>
-														<p>Virtual Private Server for You</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-solid fa-user-group" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">Reseller Hosting</h6>
-														<p>Start Your Hosting Business</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-solid fa-server" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">Dedicated Server</h6>
-														<p>Dedicated Resource for You</p>
-													</div>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="nav-item dropdown has-megamenu">
-								<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Domain </a>
-								<div class="dropdown-menu megamenu" role="menu">
-									<div class="row g-3">
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-solid fa-dollar-sign" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">Domain Price List</h6>
-														<p>See Our all Domain Prices</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-regular fa-credit-card" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">Domain Reseller Price</h6>
-														<p>See Business Domain Prices</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-solid fa-earth-americas" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">Domain Registration</h6>
-														<p>Register Your Domains Today</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-brands fa-windows" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">Reseller Registration</h6>
-														<p>Start Domain Reseller Business</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-solid fa-hand-holding-dollar" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">.BD Domain Registration</h6>
-														<p>Bangladeshi Local Domain</p>
-													</div>
-												</a>
-											</div>
-										</div>
-										<div class="col-lg-6 col-6">
-											<div class="col-megamenu">
-												<a href="#" class="d-flex">
-													<div><i class="fa-regular fa-money-bill-1" alt=" seo expate" description=" seo expate"></i></div>
-													<div>
-														<h6 class="title">.BD Domain Price</h6>
-														<p>Bangladeshi Domain Prices</p>
-													</div>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Offer </a>
-								<ul class="dropdown-menu dropdown-menu-end">
-									<li><a class="dropdown-item" href="#"> Free Migration</a></li>
-								</ul>
-							</li>
-							<li class="nav-item"><a class="nav-link" href="#"> Payment </a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</div>
-	<!--================================domain_hosting Sub_Header section end here=======================-->
+	<?php include "includes/domain-hosting-nav.php" ?>
 
 	<!--================================domai_search_bar section start here=======================-->
 	<section class="domai_search_bar" style="background-image: url(frontend/images/website-support-5.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 80px 0;">
@@ -888,69 +710,15 @@
 
 	<!--================================payment_method section start here=======================-->
 	<section class="payment_method">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="payment_method_img">
-						<img src="frontend/images/site-img17-e1439871857101-1.png" alt=" seo expate" description=" seo expate">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<h4 class="">OUR PAYMENT METHOD. YOU CAN PAY US EASILY !</h4>
-					<div class="row paymmentimages">
-						<div class="col-md-3 col-sm-6 pt-4">
-							<img src="frontend/images/bkash5.jpg" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-3 col-sm-6 pt-4">
-							<img src="frontend/images/rocket.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-3 col-sm-6 pt-4">
-							<img src="frontend/images/nexuspay-1.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-3 col-sm-6 pt-4">
-							<img src="frontend/images/nagad.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-					<div class="row paymmentimages ">
-						<div class="col-md-3 col-sm-6 pt-4">
-							<img src="frontend/images/citybank.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-3 col-sm-6 pt-4">
-							<img src="frontend/images/brac.jpg" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-3 col-sm-6 pt-4">
-							<img src="frontend/images/dbbl.png" alt=" seo expate" description=" seo expate">
-						</div>
-						<div class="col-md-3 col-sm-6 pt-4">
-							<img src="frontend/images/NBL_logo.png" alt=" seo expate" description=" seo expate">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<?php include "includes/payment-method.php" ?>
 	</section>
 	<!--================================payment_method section end here=======================-->
-
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="PAY_IMG">
-					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" seo expate" description=" seo expate" width="100%">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================Thrive_Globally section end here=======================-->
 
 	<!--===========================footer part start===================================-->
 	<?php include "includes/footer_menu.php" ?>
 	<!--===========================footer part end===================================-->
 
-	<script src="frontend/js/jquery-3.5.1.js"></script>
-	<script src="frontend/js/bootstrap.bundle.min.js"></script>
-	<script src="frontend/js/owl.carousel.js"></script>
-	<script src="frontend/js/main.js"></script>
+	<?php include "includes/script.php" ?>
 
 </body>
 

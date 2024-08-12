@@ -1,43 +1,33 @@
 <?php
-    require_once 'config/dbconnect.php';
-    $db = new DB_con();
-    $conn = $db->get_connection();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="Title" content="This is the my site">
-	<meta name="description" content="This is the my site">
-    <meta name="keywords" content="seoebl, seoexpate">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Static Web</title>
-	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
-	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
-	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-	<link rel="stylesheet" href="frontend/css/style.css">
-	<link rel="stylesheet" href="frontend/css/responsive.css">
-	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
-	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="Title" content="This is the my site">
+    <meta name="description" content="This is the my site">
+    <meta name="keywords" content="seoebl, seoexpate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Web</title>
+    <meta property="og:title" content="Home - IT Services, Technology Solutions">
+
+    <?php include('./includes/style.php') ?>
+
+    <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
+
+    <div class="gtranslate_wrapper"></div>
+ 
 
 </head>
 
 <body>
+    <?php include('./includes/navbar.php') ?>
 
-<!--================================Header section start here=======================-->
-<?php include('./includes/navbar.php') ?>
-<!--================================Header section end here=======================-->
-
-
-
-    <!--================================photo editor sub Header section end here=======================-->
     <?php include "includes/content-nav.php" ?>
-    <!--================================photo editor sub Header section end here=======================-->
 
     <!--================================top-body section start here=======================-->
     <section class="top-body app_development" style="background-image: url('frontend/images/1692873456499.jpg'); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
@@ -52,7 +42,7 @@
                         <a type="button" href="contact.php">Contact Us</a>
                     </div>
                 </div>
-                <div class="col-md-5 m-auto ecomrespp" style="z-index:500;" >
+                <div class="col-md-5 m-auto ecomrespp" style="z-index:500;">
                     <img src="frontend/images/Easy Scalability.webp" alt="Website content writing  " description="Website content writing " class="img-thumbnail">
                 </div>
             </div>
@@ -103,13 +93,21 @@
                     <h6 class="fw-bold fs-5 pb-3">Key Benefits of Website Content Writing Services</h6>
                     <h6 class="fw-bold fs-6 pb-3">Let’s see why you should spend your money, time, and effort on professional website content writing services:</h6>
                     <h6 class="fw-bold fs-6 pb-3">Keep You Updated</h6>
-                    <div><p class="">Your website must be continuously updated with the latest content based on the latest trends. Website content writing will give your old content a new look. It is very time-consuming to write entirely new content. You can use the data that are available on your website and repurpose and refresh your content that will address the latest trends and customer demands.</p></div>
+                    <div>
+                        <p class="">Your website must be continuously updated with the latest content based on the latest trends. Website content writing will give your old content a new look. It is very time-consuming to write entirely new content. You can use the data that are available on your website and repurpose and refresh your content that will address the latest trends and customer demands.</p>
+                    </div>
                     <h6 class="fw-bold fs-6 pb-3">Increased Search Engine Ranking</h6>
-                    <div><p class="">You need a lot off contents for your website, but you have to make sure that they are of the best quality. Because quality content can achieve a higher rank on search engines. Using the right keywords in the contents will make them SEO friendly. The search engine loves SEO friendly contents. So, the content will rank your website higher.</p></div>
+                    <div>
+                        <p class="">You need a lot off contents for your website, but you have to make sure that they are of the best quality. Because quality content can achieve a higher rank on search engines. Using the right keywords in the contents will make them SEO friendly. The search engine loves SEO friendly contents. So, the content will rank your website higher.</p>
+                    </div>
                     <h6 class="fw-bold fs-6 pb-3">Ambassador of Your Business</h6>
-                    <div><p class="">Contents are one of the best ways to let people know about your business. Good quality content for your website will deliver your message to your customers in a very effective way. If your site has some excellent content, it becomes straightforward for you to keep your customers engaged on your website.</p></div>
+                    <div>
+                        <p class="">Contents are one of the best ways to let people know about your business. Good quality content for your website will deliver your message to your customers in a very effective way. If your site has some excellent content, it becomes straightforward for you to keep your customers engaged on your website.</p>
+                    </div>
                     <h6 class="fw-bold fs-6 pb-3">Saves You Time and Energy</h6>
-                    <div><p>Original contents are very effective in engaging your customers with your products and create a relationship with them. With the right content, you can win the hearts of your clients. Contents are a great way to cater to this. But it is a time-consuming job. A professional agency will do all these tasks for you, and you can invest your time and energy in your core business activities.</p></div>
+                    <div>
+                        <p>Original contents are very effective in engaging your customers with your products and create a relationship with them. With the right content, you can win the hearts of your clients. Contents are a great way to cater to this. But it is a time-consuming job. A professional agency will do all these tasks for you, and you can invest your time and energy in your core business activities.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,14 +121,30 @@
                 <div class="col-12">
                     <h6 class="fw-bold fs-5 pb-3">Why SEO Expate Bangladesh Ltd is best for Website Content Writing Services</h6>
                     <h6 class="fw-bold fs-6 pb-3">Let’s look at some of the factors that make us the best in this industry:</h6>
-                    <div><p>1. We provide search engine optimized content so that our clients can rank higher for their websites. Search engines love SEO friendly contents. Our creative writers will search the right keywords for your product and use them in your content. </p></div>
-                    <div><p>2. Our content will deliver the exact message that you want to give your customers. The contents we write are based on the concepts that Webtech can only produce. </p></div>
-                    <div><p>3. Our contents are result-oriented. We have different analysis tools to make sure that you are getting the best one.</p></div>
-                    <div><p>4. Our expert writers make content in a way that your reads will be attracted and visit your website for sure.</p></div>
-                    <div><p>5. We have access to a lot of creative content creators and content marketing managers, and they work in teams so that you get the best result.</p></div>
-                    <div><p>6. We are always updated with the latest trends and technology. We are equipped with the latest software tools and other latest technology needed to serve you effectively and efficiently.</p></div>
-                    <div><p>7. We have a dedicate customer care team, and our customer care hotline is available 24/7. You can call anytime if you have any queries related to your project.</p></div>
-                    <div><p>8. We have 5+ years of experience in the industry, and we have served clients from the USA, UK, Canada, and Bangladesh. We have a global outreach.</p></div>
+                    <div>
+                        <p>1. We provide search engine optimized content so that our clients can rank higher for their websites. Search engines love SEO friendly contents. Our creative writers will search the right keywords for your product and use them in your content. </p>
+                    </div>
+                    <div>
+                        <p>2. Our content will deliver the exact message that you want to give your customers. The contents we write are based on the concepts that Webtech can only produce. </p>
+                    </div>
+                    <div>
+                        <p>3. Our contents are result-oriented. We have different analysis tools to make sure that you are getting the best one.</p>
+                    </div>
+                    <div>
+                        <p>4. Our expert writers make content in a way that your reads will be attracted and visit your website for sure.</p>
+                    </div>
+                    <div>
+                        <p>5. We have access to a lot of creative content creators and content marketing managers, and they work in teams so that you get the best result.</p>
+                    </div>
+                    <div>
+                        <p>6. We are always updated with the latest trends and technology. We are equipped with the latest software tools and other latest technology needed to serve you effectively and efficiently.</p>
+                    </div>
+                    <div>
+                        <p>7. We have a dedicate customer care team, and our customer care hotline is available 24/7. You can call anytime if you have any queries related to your project.</p>
+                    </div>
+                    <div>
+                        <p>8. We have 5+ years of experience in the industry, and we have served clients from the USA, UK, Canada, and Bangladesh. We have a global outreach.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,51 +217,16 @@
         </div>
     </section>
     <!--================================accordion section end here=======================-->
-
-    <!--================================top_ready_start section start here=======================-->
     <section class="top_ready_start">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="top_ready_start_txt">
-                        <h3>We can build your story</h3>
-                        <h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-                    </div>
-                    <div class="top-body-button pt-5">
-                        <a type="button" href="contact.php">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="top_ready_start_img text-left">
-                        <img src="frontend/images/95991_prev_ui.png" alt="Get In Touch " description="Get In Touch">
-                    </div>
-                </div>
-            </div>
+            <?php include('./includes/seo-build-story.php') ?>
         </div>
     </section>
-    <!--================================top_ready_start section end here=======================-->
 
-    <!--================================Thrive_Globally section start here=======================-->
-    <section class="PAY_MENT" style="padding: 20px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="PAY_IMG">
-                    <img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt="payment" description="payment" width="100%">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================================Thrive_Globally section end here=======================-->
+    <?php include('./includes/footer_menu.php') ?>
 
-
-<!--===========================footer part start===================================-->
-<?php include('./includes/footer_menu.php') ?>
-<!--===========================footer part end===================================-->
-
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
+    <?php include "includes/script.php" ?>
 
 </body>
+
 </html>

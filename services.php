@@ -1,19 +1,20 @@
 <?php
-    require_once 'config/dbconnect.php';
-    $db = new DB_con();
-    $conn = $db->get_connection();
+require_once 'config/dbconnect.php';
+$db = new DB_con();
+$conn = $db->get_connection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="Title" content="This is the my site">
 	<meta name="description" content="This is the my site">
-    <meta name="keywords" content="seoebl, seoexpate">
+	<meta name="keywords" content="seoebl, seoexpate">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Services</title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
-		
+
 	<link rel="stylesheet" href="frontend/css/bootstrap.min.css">
 	<link rel="stylesheet" href="frontend/css/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -22,33 +23,31 @@
 	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
 	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"url_structure":"sub_domain","languages":["en","fr","de","it","es"],"wrapper_selector":".gtranslate_wrapper","horizontal_position":"left","vertical_position":"bottom"}</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
 
-<!--================================Header section start here=======================-->
-<?php include('./includes/navbar.php') ?>
-<!--================================Header section end here=======================-->
+	<!--================================Header section start here=======================-->
+	<?php include('./includes/navbar.php') ?>
 	<!--================================Header section end here=======================-->
-	
+	<!--================================Header section end here=======================-->
+
 	<!--================================top-body section start here=======================-->
-	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 90px;">		
+	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 90px;">
 		<div class="container ">
-		    <div class="row">
-		    	<div class="col-12" style="z-index:500; ">
-		    		<div class="top_body_txt_part">
-						<h1 class="" style="font-size: 65px; line-height: 55px;">Our  Services</h1>
-						<p>We Provide Complete Business Automation Services</p>							
+			<div class="row">
+				<div class="col-12" style="z-index:500; ">
+					<div class="top_body_txt_part">
+						<h1 class="" style="font-size: 65px; line-height: 55px;">Our Services</h1>
+						<p>We Provide Complete Business Automation Services</p>
 					</div>
 					<div class="top-body-button pt-3">
 						<a type="button" href="contact.php">Contact Us</a>
-					</div>	
-				</div>			
+					</div>
+				</div>
 			</div>
-		</div>				
+		</div>
 	</section>
 	<!--================================top-body section end here=======================-->
 
@@ -61,7 +60,7 @@
 						<nav aria-label="breadcrumb">
 							<ol class="breadcrumb breadcumb_gph">
 								<li class="breadcrumb-item "><a href="/" class=" text-light">Home</a></li>
-								<li class="breadcrumb-item active text-light" aria-current="page">Our  Services</li>
+								<li class="breadcrumb-item active text-light" aria-current="page">Our Services</li>
 							</ol>
 						</nav>
 					</div>
@@ -86,28 +85,40 @@
 				<div class="col-md-6">
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
-							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p> iOS App</p></div>
+							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> iOS App</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p> Android App</p></div>
+							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> Android App</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p>  Windows Phone App</p></div>
+							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> Windows Phone App</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p>  Facebook App</p></div>
+							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> Facebook App</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p>  E-commerce Mobile App</p></div>
+							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> E-commerce Mobile App</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p> Custom Business Mobile App</p></div>
+							<div><i class="fa-brands fa-apple" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> Custom Business Mobile App</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -121,32 +132,44 @@
 		<div class="container">
 			<div class="row">
 				<h6 class="text-center fw-bold fs-1 pt-5 pb-5">Web Development</h6>
-				<div><img src="frontend/images/Screenshot_7.jpg" alt=" Mobile App Development" description="Mobile App Development"  class="img-thumbnail"></div>
+				<div><img src="frontend/images/Screenshot_7.jpg" alt=" Mobile App Development" description="Mobile App Development" class="img-thumbnail"></div>
 				<div class="col-md-6">
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
-							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p> E-Commerce Web</p></div>
+							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> E-Commerce Web</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p> Web Application</p></div>
+							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> Web Application</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p>  Shopify App</p></div>
+							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> Shopify App</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p>  e-Learning Platform</p></div>
+							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> e-Learning Platform</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p>   WordPress Theme</p></div>
+							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> WordPress Theme</p>
+							</div>
 						</div>
 						<div class="d-flex">
-							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development" ></i></div>
-							<div><p>  WordPress Website</p></div>
+							<div><i class="fa-solid fa-cart-flatbed-suitcase" alt=" Mobile App Development" description="Mobile App Development"></i></div>
+							<div>
+								<p> WordPress Website</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -166,7 +189,7 @@
 		<div class="container">
 			<div class="row">
 				<h6 class="text-center fw-bold fs-1 pt-5 pb-5">Software Development</h6>
-				<div><img src="frontend/images/software-dev-australia.jpg" alt=" Software Development" description="Software Development"  class="img-thumbnail"></div>
+				<div><img src="frontend/images/software-dev-australia.jpg" alt=" Software Development" description="Software Development" class="img-thumbnail"></div>
 				<div class="col-md-6">
 					<p class=" pt-5" style="text-align: justify;">We are here to turn your creative ideas into software by bringing the best quality and cost-effective solution. We utilize the latest software technologies to develop different software with amazing graphics.</p>
 					<div class="top-body-button pt-3">
@@ -177,27 +200,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-solid fa-computer" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Desktop Software</p></div>
+							<div>
+								<p> Desktop Software</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-computer" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Mobile Software</p></div>
+							<div>
+								<p> Mobile Software</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-computer" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Web-Based Software</p></div>
+							<div>
+								<p> Web-Based Software</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-computer" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Custom Software</p></div>
+							<div>
+								<p> Custom Software</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-computer" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Software Product</p></div>
+							<div>
+								<p> Software Product</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-computer" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Enterprise Software</p></div>
+							<div>
+								<p> Enterprise Software</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -216,27 +251,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-brands fa-uncharted" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> IoT App</p></div>
+							<div>
+								<p> IoT App</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-uncharted" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  IoT Software</p></div>
+							<div>
+								<p> IoT Software</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-uncharted" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   IIoT</p></div>
+							<div>
+								<p> IIoT</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-uncharted" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   IoMT</p></div>
+							<div>
+								<p> IoMT</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-uncharted" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>    IoT Data</p></div>
+							<div>
+								<p> IoT Data</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-uncharted" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Managed IoT</p></div>
+							<div>
+								<p> Managed IoT</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -267,27 +314,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-brands fa-hive" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Blockchain Software</p></div>
+							<div>
+								<p> Blockchain Software</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-hive" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> NFT</p></div>
+							<div>
+								<p> NFT</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-hive" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Blockchain Wallet</p></div>
+							<div>
+								<p> Blockchain Wallet</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-hive" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Tokenization</p></div>
+							<div>
+								<p> Tokenization</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-hive" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   DeFI App</p></div>
+							<div>
+								<p> DeFI App</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-hive" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Smart Contract</p></div>
+							<div>
+								<p> Smart Contract</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -306,27 +365,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-solid fa-puzzle-piece" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Video Game</p></div>
+							<div>
+								<p> Video Game</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-puzzle-piece" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  3D Game</p></div>
+							<div>
+								<p> 3D Game</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-puzzle-piece" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>    2D Game</p></div>
+							<div>
+								<p> 2D Game</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-puzzle-piece" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   VR Game</p></div>
+							<div>
+								<p> VR Game</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-puzzle-piece" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>    AR Game</p></div>
+							<div>
+								<p> AR Game</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-puzzle-piece" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Real-time Multiplayer Game</p></div>
+							<div>
+								<p> Real-time Multiplayer Game</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -357,27 +428,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-brands fa-sketch" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> App Development</p></div>
+							<div>
+								<p> App Development</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-sketch" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Game Development</p></div>
+							<div>
+								<p> Game Development</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-sketch" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   360º Virtual Tour</p></div>
+							<div>
+								<p> 360º Virtual Tour</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-sketch" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Object Tracking</p></div>
+							<div>
+								<p> Object Tracking</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-sketch" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   Spark AR Effects</p></div>
+							<div>
+								<p> Spark AR Effects</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-sketch" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Custom Solutions</p></div>
+							<div>
+								<p> Custom Solutions</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -396,27 +479,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Manual QA Testing</p></div>
+							<div>
+								<p> Manual QA Testing</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   Web Testing</p></div>
+							<div>
+								<p> Web Testing</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   App Testing</p></div>
+							<div>
+								<p> App Testing</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>    Performance Testing</p></div>
+							<div>
+								<p> Performance Testing</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   Functional Testing</p></div>
+							<div>
+								<p> Functional Testing</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   Test Automation</p></div>
+							<div>
+								<p> Test Automation</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -438,7 +533,7 @@
 				<h6 class="text-center fw-bold fs-1 pt-5 pb-5">Quality Assurance</h6>
 				<div><img src="frontend/images/ar-vr-mr-featured-image.webp" alt="image" class="img-thumbnail"></div>
 				<div class="col-md-6">
-					<p class=" pt-5" style="text-align: justify;"><a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd, a well-recognized quality assurance company, for QA testing services. As a top QA Company, we'll customize each deployment or update to your business objectives and modernize your platform for a speedier, more secure, and more pleasant user and customer experience.  Take advantage of the greatest quality assurance services available from the most dependable and promising QA service provider company!</p>
+					<p class=" pt-5" style="text-align: justify;"><a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd, a well-recognized quality assurance company, for QA testing services. As a top QA Company, we'll customize each deployment or update to your business objectives and modernize your platform for a speedier, more secure, and more pleasant user and customer experience. Take advantage of the greatest quality assurance services available from the most dependable and promising QA service provider company!</p>
 					<div class="top-body-button pt-3">
 						<a type="button" href="software-development.php">See more</a>
 					</div>
@@ -447,27 +542,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-brands fa-accusoft" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Software QA</p></div>
+							<div>
+								<p> Software QA</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-accusoft" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Managed QA</p></div>
+							<div>
+								<p> Managed QA</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-accusoft" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   Web Testing</p></div>
+							<div>
+								<p> Web Testing</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-accusoft" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Game Testing</p></div>
+							<div>
+								<p> Game Testing</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-accusoft" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   Ecommerce Testing</p></div>
+							<div>
+								<p> Ecommerce Testing</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-accusoft" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  AR VR Testing</p></div>
+							<div>
+								<p> AR VR Testing</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -486,27 +593,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Software R&D Center</p></div>
+							<div>
+								<p> Software R&D Center</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   Client Innovation Center</p></div>
+							<div>
+								<p> Client Innovation Center</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> IoT R&D Center</p></div>
+							<div>
+								<p> IoT R&D Center</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Product Engineering</p></div>
+							<div>
+								<p> Product Engineering</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>Platform Engineering</p></div>
+							<div>
+								<p>Platform Engineering</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> NextGen Engineering</p></div>
+							<div>
+								<p> NextGen Engineering</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -537,27 +656,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-solid fa-life-ring" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Customer Support</p></div>
+							<div>
+								<p> Customer Support</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-life-ring" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Contact Center</p></div>
+							<div>
+								<p> Contact Center</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-life-ring" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Virtual Assistant</p></div>
+							<div>
+								<p> Virtual Assistant</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-life-ring" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>eCommerce Support</p></div>
+							<div>
+								<p>eCommerce Support</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-life-ring" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Content Moderation</p></div>
+							<div>
+								<p> Content Moderation</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-life-ring" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Data Service</p></div>
+							<div>
+								<p> Data Service</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -576,27 +707,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>Mobile App Development</p></div>
+							<div>
+								<p>Mobile App Development</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>Web Development</p></div>
+							<div>
+								<p>Web Development</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Software Development</p></div>
+							<div>
+								<p> Software Development</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>Game Development</p></div>
+							<div>
+								<p>Game Development</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> AR / VR / MR Solutions</p></div>
+							<div>
+								<p> AR / VR / MR Solutions</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-charging-station" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>Multimedia Content Development</p></div>
+							<div>
+								<p>Multimedia Content Development</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -627,27 +770,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-solid fa-building-circle-exclamation" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Image Editing</p></div>
+							<div>
+								<p> Image Editing</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-building-circle-exclamation" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> 2D / 3D Animation</p></div>
+							<div>
+								<p> 2D / 3D Animation</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-building-circle-exclamation" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Motion Graphics</p></div>
+							<div>
+								<p> Motion Graphics</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-building-circle-exclamation" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Illustration</p></div>
+							<div>
+								<p> Illustration</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-building-circle-exclamation" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Creative Script</p></div>
+							<div>
+								<p> Creative Script</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-building-circle-exclamation" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Infographic Video</p></div>
+							<div>
+								<p> Infographic Video</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -666,32 +821,44 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-solid fa-dumpster-fire" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>SEO Audit</p></div>
+							<div>
+								<p>SEO Audit</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-dumpster-fire" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>Ecommerce SEO</p></div>
+							<div>
+								<p>Ecommerce SEO</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-dumpster-fire" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Local SEO</p></div>
+							<div>
+								<p> Local SEO</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-dumpster-fire" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>Enterprise SEO</p></div>
+							<div>
+								<p>Enterprise SEO</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-dumpster-fire" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Page Speed Optimization</p></div>
+							<div>
+								<p> Page Speed Optimization</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-dumpster-fire" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>PPC Management</p></div>
+							<div>
+								<p>PPC Management</p>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6">
-					<p class=" pt-5" style="text-align: justify;">Increase Revenue With <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd  Digital Marketing Services. More Traffic. More Leads. More Conversion. More Sales. More revenue. More Business. It is the beauty of SEO Expate Bangladesh Ltd  Digital Marketing Services. We are helping our clients worldwide engage unlimited traffic for their business and convert them into revenue.</p>
+					<p class=" pt-5" style="text-align: justify;">Increase Revenue With <a href="/" class="text-success">SEO Expate</a> Bangladesh Ltd Digital Marketing Services. More Traffic. More Leads. More Conversion. More Sales. More revenue. More Business. It is the beauty of SEO Expate Bangladesh Ltd Digital Marketing Services. We are helping our clients worldwide engage unlimited traffic for their business and convert them into revenue.</p>
 					<div class="top-body-button pt-3">
 						<a type="button" href="digital-marketing.php">See more</a>
 					</div>
@@ -717,27 +884,39 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-brands fa-centos" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>VR Simulator</p></div>
+							<div>
+								<p>VR Simulator</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-centos" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Training Simulator</p></div>
+							<div>
+								<p> Training Simulator</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-centos" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>   Embedded System</p></div>
+							<div>
+								<p> Embedded System</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-centos" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Control System</p></div>
+							<div>
+								<p> Control System</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-centos" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Creative Script</p></div>
+							<div>
+								<p> Creative Script</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-brands fa-centos" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Process Automation</p></div>
+							<div>
+								<p> Process Automation</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -756,23 +935,33 @@
 					<div class="mobileapp_iconlist">
 						<div class="d-flex">
 							<div><i class="fa-solid fa-circle-nodes" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> App Development</p></div>
+							<div>
+								<p> App Development</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-circle-nodes" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>Game Development</p></div>
+							<div>
+								<p>Game Development</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-circle-nodes" alt=" Software Development" description="Software Development"></i></div>
-							<div><p>  Web Development</p></div>
+							<div>
+								<p> Web Development</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-circle-nodes" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Modeling & Animation</p></div>
+							<div>
+								<p> Modeling & Animation</p>
+							</div>
 						</div>
 						<div class="d-flex">
 							<div><i class="fa-solid fa-circle-nodes" alt=" Software Development" description="Software Development"></i></div>
-							<div><p> Graphics Design</p></div>
+							<div>
+								<p> Graphics Design</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -790,45 +979,20 @@
 	<!--================================top_ready_start section start here=======================-->
 	<section class="top_ready_start">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="top_ready_start_txt">
-						<h3>We can build your story</h3>
-						<h6>We have partnered with great companies and entrepreneurs all over the world. And, provided the best service for them</h6>
-					</div>
-					<div class="top-body-button pt-5">
-						<a type="button" href="contact.php">Get In Touch</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="top_ready_start_img text-left">
-						<img src="frontend/images/95991_prev_ui.png" alt=" Software Development" description="Software Development">
-					</div>
-				</div>
-			</div>
+			<?php include('./includes/seo-build-story.php') ?>
 		</div>
 	</section>
 	<!--================================top_ready_start section end here=======================-->
 
-	<!--================================Thrive_Globally section start here=======================-->
-	<section class="PAY_MENT" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row">
-				<div class="PAY_IMG">
-					<img src="frontend/images/Payment-method-banner-image-1024x73.webp" alt=" Software Development" description="Software Development" width="100%">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================================Thrive_Globally section end here=======================-->
-<!--===========================footer part start===================================-->
-<?php include('./includes/footer_menu.php') ?>
-<!--===========================footer part end===================================-->
+	<!--===========================footer part start===================================-->
+	<?php include('./includes/footer_menu.php') ?>
+	<!--===========================footer part end===================================-->
 
-<script src="frontend/js/jquery-3.5.1.js"></script>
-<script src="frontend/js/bootstrap.bundle.min.js"></script>
-<script src="frontend/js/owl.carousel.js"></script>
-<script src="frontend/js/main.js"></script>
+	<script src="frontend/js/jquery-3.5.1.js"></script>
+	<script src="frontend/js/bootstrap.bundle.min.js"></script>
+	<script src="frontend/js/owl.carousel.js"></script>
+	<script src="frontend/js/main.js"></script>
 
 </body>
+
 </html>
