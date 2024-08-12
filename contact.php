@@ -3,8 +3,8 @@ $title = "Contact";
 
 session_start();
 
-use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
 
 require_once 'config/dbconnect.php';
 $db = new DB_con();
@@ -14,67 +14,66 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$phone = $_POST['phone'];
-	$companyName = $_POST['company_name'];
-	$companyWebsite = $_POST['company_website'];
-	$type = $_POST['type'];
-	$stuf = $_POST['stuf'];
-	$description = $_POST['description'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $companyName = $_POST['company_name'];
+    $companyWebsite = $_POST['company_website'];
+    $type = $_POST['type'];
+    $stuf = $_POST['stuf'];
+    $description = $_POST['description'];
 
-	$files = [];
-	if (!empty($_FILES['attachments']['name'][0])) {
-		$fileCount = count($_FILES['attachments']['name']);
-		for ($i = 0; $i < $fileCount; $i++) {
-			$originalFileName = $_FILES['attachments']['name'][$i];
-			$fileNameWithoutSpaces = str_replace(' ', '-', $originalFileName); // Replace spaces with hyphens
-			$fileName = time() . '-' . $fileNameWithoutSpaces;
-			$fileTmpName = $_FILES['attachments']['tmp_name'][$i];
-			$fileDestination = 'uploads/contact/' . $fileName;
-			move_uploaded_file($fileTmpName, $fileDestination);
-			$files[] = $fileDestination;
-		}
-	}
-	$encodedFiles = json_encode($files);
+    $files = [];
+    if (!empty($_FILES['attachments']['name'][0])) {
+        $fileCount = count($_FILES['attachments']['name']);
+        for ($i = 0; $i < $fileCount; $i++) {
+            $originalFileName = $_FILES['attachments']['name'][$i];
+            $fileNameWithoutSpaces = str_replace(' ', '-', $originalFileName); // Replace spaces with hyphens
+            $fileName = time() . '-' . $fileNameWithoutSpaces;
+            $fileTmpName = $_FILES['attachments']['tmp_name'][$i];
+            $fileDestination = 'uploads/contact/' . $fileName;
+            move_uploaded_file($fileTmpName, $fileDestination);
+            $files[] = $fileDestination;
+        }
+    }
+    $encodedFiles = json_encode($files);
 
-	$sql = "INSERT INTO contacts(name, email, phone, company_name, company_website, attachments, type, stuf, description) VALUES('$name', '$email', '$phone', '$companyName', '$companyWebsite','$encodedFiles', '$type', '$stuf', '$description')";
+    $sql = "INSERT INTO contacts(name, email, phone, company_name, company_website, attachments, type, stuf, description) VALUES('$name', '$email', '$phone', '$companyName', '$companyWebsite','$encodedFiles', '$type', '$stuf', '$description')";
 
-	$result = $conn->query($sql);
+    $result = $conn->query($sql);
 
-	if ($result === TRUE) {
+    if ($result === true) {
 
-		//Create an instance; passing `true` enables exceptions
-		$mail = new PHPMailer(true);
+        //Create an instance; passing `true` enables exceptions
+        $mail = new PHPMailer(true);
 
-		try {
-			//Server settings
-			// $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-			// $mail->SMTPDebug = 2;                      //Enable verbose debug output
-			$mail->isSMTP();                                            //Send using SMTP
-			$mail->Host       = 'sandbox.smtp.mailtrap.io';                     //Set the SMTP server to send through
-			$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-			$mail->Username   = '4d5fe1dbbdefcb';                     //SMTP username
-			$mail->Password   = 'b7ac257e665ba1';                               //SMTP password
-			$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-			$mail->Port       = 2525;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        try {
+            //Server settings
+            // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+            // $mail->SMTPDebug = 2;                      //Enable verbose debug output
+            $mail->isSMTP(); //Send using SMTP
+            $mail->Host = 'sandbox.smtp.mailtrap.io'; //Set the SMTP server to send through
+            $mail->SMTPAuth = true; //Enable SMTP authentication
+            $mail->Username = 'c58578cea557be'; //SMTP username
+            $mail->Password = '2f48e474c9c971'; //SMTP password
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; //Enable implicit TLS encryption
+            $mail->Port = 2525; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-			//Recipients
-			$mail->setFrom($email);
+            //Recipients
+            $mail->setFrom($email);
 
-			if ($type == 'Career') {
-				$mail->addAddress('career@seoexpate.com');
-			} else {
-				$mail->addAddress('info@seoexpate.com');
-			}
+            if ($type == 'Career') {
+                $mail->addAddress('career@seoexpate.com');
+            } else {
+                $mail->addAddress('info@seoexpate.com');
+            }
 
-			//Content
-			$mail->isHTML(true);                                  //Set email format to HTML
-			$mail->Subject = strtoupper($type);
-			$mail->Body    = '<h3> Hello you got the new message from ' . $name . '</h3>
+            //Content
+            $mail->isHTML(true); //Set email format to HTML
+            $mail->Subject = strtoupper($type);
+            $mail->Body = '<h3> Hello you got the new message from ' . $name . '</h3>
 			    <strong> Name : </strong> <span>' . $name . ' </span> <br/>
 			    <strong> Email :  </strong> <span>' . $email . ' </span> <br/>
 			    <strong> Phone :  </strong> <span>' . $phone . ' </span> <br/>
@@ -82,27 +81,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			    <strong> Company Website :  </strong> <span>' . $companyWebsite . '</span> <br/>
 			    <strong> Description :  </strong> <span>' . $description . ' </span>';
 
-			$mailSend = $mail->send();
-			if ($mailSend) {
+            $mailSend = $mail->send();
+            if ($mailSend) {
 
-				$_SESSION['successMessage'] = 'Thank you. Your message send success.';
+                $_SESSION['successMessage'] = 'Thank you. Your message send success.';
 
-				header("Location: {$_SERVER["HTTP_REFERER"]}");
-				exit(0);
-			}
-		} catch (Exception $e) {
-			echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-		}
+                header("Location: {$_SERVER["HTTP_REFERER"]}");
+                exit(0);
+            }
+        } catch (Exception $e) {
+            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        }
 
+        $referrer = $_SERVER['HTTP_REFERER'];
 
-		$referrer = $_SERVER['HTTP_REFERER'];
+        header("Location: contact.php");
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
 
-		header("Location: contact.php");
-	} else {
-		echo "Error: " . $sql . "<br>" . $conn->error;
-	}
-
-	$conn->close();
+    $conn->close();
 }
 ?>
 
@@ -115,31 +113,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<meta name="description" content="Seo Expate Bangladesh LTD.">
 	<meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><?php echo $title;  ?></title>
+	<title><?php echo $title; ?></title>
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
-	<?php include('./includes/style.php') ?>
+	<?php include './includes/style.php'?>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<div class="gtranslate_wrapper"></div>
-	<script>
-		window.gtranslateSettings = {
-			"default_language": "en",
-			"native_language_names": true,
-			"detect_browser_language": true,
-			"url_structure": "sub_domain",
-			"languages": ["en", "fr", "de", "it", "es"],
-			"wrapper_selector": ".gtranslate_wrapper",
-			"horizontal_position": "left",
-			"vertical_position": "bottom"
-		}
-	</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
-	<?php include "includes/navbar.php" ?>
+	<?php include "includes/navbar.php"?>
 
 	<!--================================conversation_away section start here=======================-->
 	<section class="conversation_away pbunsetc">
@@ -233,13 +218,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 					<h6 class="fs-1">Our <span class="text-success">Offices</span></h6>
 				</div>
 				<?php
-				$i = 1;
-				$qry = "SELECT * FROM branches ORDER BY id DESC";
-				$result = mysqli_query($conn, $qry);
+$i = 1;
+$qry = "SELECT * FROM branches ORDER BY id DESC";
+$result = mysqli_query($conn, $qry);
 
-				if ($result) {
-					while ($row = mysqli_fetch_assoc($result)) {
-				?>
+if ($result) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        ?>
 						<div class="col-md-6">
 							<div class="Our_Offices_map">
 								<iframe src="<?php echo $row['map'] ?>" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -250,11 +235,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 							</div>
 						</div>
 				<?php
-					}
-				} else {
-					echo "Error: " . mysqli_error($conn);
-				}
-				?>
+}
+} else {
+    echo "Error: " . mysqli_error($conn);
+}
+?>
 			</div>
 		</div>
 	</section>
@@ -320,7 +305,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	<!--================================contact_form section start here=======================-->
 	<section class="contact_form" id="contactForm">
-		<?php include('./includes/trusted-contact-form.php') ?>
+		<?php include './includes/trusted-contact-form.php'?>
 	</section>
 	<!--================================contact_form section end here=======================-->
 
@@ -441,25 +426,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	</script>
 
 	<?php
-	include('./includes/footer_menu.php');
-	?>
-	<?php include "includes/script.php" ?>
+include './includes/footer_menu.php';
+?>
+	<?php include "includes/script.php"?>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 
 
-	<?php if ($_SESSION['successMessage']) : ?>
+	<?php if ($_SESSION['successMessage']): ?>
 		<script>
 			iziToast.success({
 				title: 'Success',
 				position: 'topRight',
 				message: '<?php echo $_SESSION['successMessage']; ?>',
 			});
-			<?php unset($_SESSION['successMessage']); ?>
+			<?php unset($_SESSION['successMessage']);?>
 		</script>
-	<?php endif; ?>
+	<?php endif;?>
 
-	<?php if (isset($errorMessage)) : ?>
+	<?php if (isset($errorMessage)): ?>
 		<script>
 			iziToast.error({
 				title: 'Error',
@@ -467,7 +452,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				message: '<?php echo $errorMessage; ?>',
 			});
 		</script>
-	<?php endif; ?>
+	<?php endif;?>
 </body>
 
 </html>

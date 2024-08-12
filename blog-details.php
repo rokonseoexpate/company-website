@@ -39,19 +39,7 @@ $newImagePath = 'uploads/' . $imageName;
     <?php include('./includes/style.php') ?>
 
     <div class="gtranslate_wrapper"></div>
-    <script>
-        window.gtranslateSettings = {
-            "default_language": "en",
-            "native_language_names": true,
-            "detect_browser_language": true,
-            "url_structure": "sub_domain",
-            "languages": ["en", "fr", "de", "it", "es"],
-            "wrapper_selector": ".gtranslate_wrapper",
-            "horizontal_position": "left",
-            "vertical_position": "bottom"
-        }
-    </script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+ 
     <style>
         img {
             max-width: 100%;

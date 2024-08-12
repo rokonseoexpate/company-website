@@ -21,20 +21,6 @@ $conn = $db->get_connection();
 
 	<?php include('./includes/style.php') ?>
 
-	<div class="gtranslate_wrapper"></div>
-	<script>
-		window.gtranslateSettings = {
-			"default_language": "en",
-			"native_language_names": true,
-			"detect_browser_language": true,
-			"languages": ["en", "fr", "de", "it", "es"],
-			"wrapper_selector": ".gtranslate_wrapper",
-			"horizontal_position": "left",
-			"vertical_position": "bottom"
-		}
-	</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
-
 </head>
 <style>
 	#myBtn {
@@ -60,13 +46,10 @@ $conn = $db->get_connection();
 
 <body>
 
-	<!--================================Header section start here=======================-->
 	<?php include('./includes/navbar.php') ?>
 
 
-	<!--================================Header section end here=======================-->
 	<?php include "includes/seo-nav.php" ?>
-	<!--================================top-body section start here=======================-->
 
 	<section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
 		<div class="container ">
@@ -620,7 +603,7 @@ $conn = $db->get_connection();
 	<?php include('./includes/footer_menu.php') ?>
 
 	<!--===========================footer part end===================================-->
-	
+
 	<?php include "includes/script.php" ?>
 	<script>
 		// Get the button

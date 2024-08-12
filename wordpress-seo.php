@@ -17,34 +17,21 @@ $conn = $db->get_connection();
     <title>WordPress SEO</title>
     <meta property="og:title" content="Home - IT Services, Technology Solutions">
 
-    <?php include('./includes/style.php') ?>
+    <?php include './includes/style.php'?>
 
     <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
     <div class="gtranslate_wrapper"></div>
-    <script>
-        window.gtranslateSettings = {
-            "default_language": "en",
-            "native_language_names": true,
-            "detect_browser_language": true,
-            "url_structure": "sub_domain",
-            "languages": ["en", "fr", "de", "it", "es"],
-            "wrapper_selector": ".gtranslate_wrapper",
-            "horizontal_position": "left",
-            "vertical_position": "bottom"
-        }
-    </script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
 
     <!--================================Header section start here=======================-->
-    <?php include('./includes/navbar.php') ?>
+    <?php include './includes/navbar.php'?>
     <!--================================Header section end here=======================-->
 
-    <?php include "includes/seo-nav.php" ?>
+    <?php include "includes/seo-nav.php"?>
     <!--================================top-body section start here=======================-->
     <section class="top-body app_development" style="background-image: url(frontend/images/1692873456499.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; padding-top: 20px;">
         <div class="container ">
@@ -373,13 +360,13 @@ $conn = $db->get_connection();
     </section>
     <section class="top_ready_start">
         <div class="container">
-            <?php include('./includes/seo-build-story.php') ?>
+            <?php include './includes/seo-build-story.php'?>
         </div>
     </section>
 
-    <?php include('./includes/footer_menu.php') ?>
+    <?php include './includes/footer_menu.php'?>
 
-    <?php include "includes/script.php" ?>
+    <?php include "includes/script.php"?>
 </body>
 
 </html>

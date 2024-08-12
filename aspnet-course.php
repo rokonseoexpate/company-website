@@ -18,33 +18,20 @@ $conn = $db->get_connection();
 	<meta property="og:title" content="Home - IT Services, Technology Solutions">
 	<link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
 
-	<?php include('./includes/style.php') ?>
+	<?php include './includes/style.php'?>
 
 	<div class="gtranslate_wrapper"></div>
-	<script>
-		window.gtranslateSettings = {
-			"default_language": "en",
-			"native_language_names": true,
-			"detect_browser_language": true,
-			"url_structure": "sub_domain",
-			"languages": ["en", "fr", "de", "it", "es"],
-			"wrapper_selector": ".gtranslate_wrapper",
-			"horizontal_position": "left",
-			"vertical_position": "bottom"
-		}
-	</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
 
 </head>
 
 <body>
 
 	<!--================================Header section start here=======================-->
-	<?php include "includes/navbar.php" ?>
+	<?php include "includes/navbar.php"?>
 	<!--================================Header section end here=======================-->
 
 	<!--================================photo editor sub Header section end here=======================-->
-	<?php include "includes/course-nav.php" ?>
+	<?php include "includes/course-nav.php"?>
 	<!--================================photo editor sub Header section end here=======================-->
 
 	<!--================================top-body section start here=======================-->
@@ -222,18 +209,18 @@ $conn = $db->get_connection();
 	<!--================================top_ready_start section start here=======================-->
 	<section class="top_ready_start" style="padding-top: unset;">
 		<div class="container">
-			<?php include 'includes/seo-build-story.php' ?>
+			<?php include 'includes/seo-build-story.php'?>
 		</div>
 	</section>
 	<!--================================top_ready_start section end here=======================-->
 
 
 	<!--===========================footer part start===================================-->
-	<?php include "includes/footer_menu.php" ?>
+	<?php include "includes/footer_menu.php"?>
 	<!--===========================footer part end===================================-->
 
 
-	<?php include "includes/script.php" ?>
+	<?php include "includes/script.php"?>
 
 </body>
 

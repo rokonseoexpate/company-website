@@ -20,20 +20,6 @@ $conn = $db->get_connection();
 
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
-	<div class="gtranslate_wrapper"></div>
-	<script>
-		window.gtranslateSettings = {
-			"default_language": "en",
-			"native_language_names": true,
-			"detect_browser_language": true,
-			"languages": ["en", "fr", "de", "it", "es"],
-			"wrapper_selector": ".gtranslate_wrapper",
-			"horizontal_position": "left",
-			"vertical_position": "bottom"
-		}
-	</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
-
 </head>
 <style>
 	#myBtn {

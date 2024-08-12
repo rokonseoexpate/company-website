@@ -17,30 +17,15 @@ $conn = $db->get_connection();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BD Domain Registration </title>
 
-
-	<?php include('./includes/style.php') ?>
-
-	<div class="gtranslate_wrapper"></div>
-	<script>
-		window.gtranslateSettings = {
-			"default_language": "en",
-			"native_language_names": true,
-			"detect_browser_language": true,
-			"languages": ["en", "fr", "de", "it", "es"],
-			"wrapper_selector": ".gtranslate_wrapper",
-			"horizontal_position": "left",
-			"vertical_position": "bottom"
-		}
-	</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+	<?php include './includes/style.php'?>
 
 </head>
 
 
 <body>
-	<?php include "includes/navbar.php" ?>
+	<?php include "includes/navbar.php"?>
 
-	<?php include "includes/domain-hosting-nav.php" ?>
+	<?php include "includes/domain-hosting-nav.php"?>
 
 	<!--================================domain_registration section start here=======================-->
 	<section class="domain_registration">
@@ -118,10 +103,10 @@ $conn = $db->get_connection();
 		</div>
 	</section>
 	<!--================================domai_support section end here=======================-->
-	<?php include "includes/footer_menu.php" ?>
+	<?php include "includes/footer_menu.php"?>
 
 
-	<?php include "includes/script.php" ?>
+	<?php include "includes/script.php"?>
 
 </body>
 

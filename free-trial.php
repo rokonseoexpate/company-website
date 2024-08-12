@@ -81,32 +81,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="description" content="Seo Expate Bangladesh LTD.">
     <meta name="keywords" content="seoebl, seoexpate, Seo Expate Bangladesh LTD.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title;  ?></title>
+    <title><?php echo $title; ?></title>
     <meta property="og:title" content="free trail - IT Services, Technology Solutions">
     <link rel="shortcut icon" href="frontend/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <?php include('./includes/style.php') ?>
-
-    <div class="gtranslate_wrapper"></div>
-    <script>
-        window.gtranslateSettings = {
-            "default_language": "en",
-            "native_language_names": true,
-            "detect_browser_language": true,
-            "url_structure": "sub_domain",
-            "languages": ["en", "fr", "de", "it", "es"],
-            "wrapper_selector": ".gtranslate_wrapper",
-            "horizontal_position": "left",
-            "vertical_position": "bottom"
-        }
-    </script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/lc.js" defer></script>
+    <?php include './includes/style.php'?>
 
 </head>
 
 <body>
-    <?php include "includes/navbar.php" ?>
-    <?php include 'includes/photo-editing-nav.php' ?>
+    <?php include "includes/navbar.php"?>
+    <?php include 'includes/photo-editing-nav.php'?>
 
     <!--================================top-body section start here=======================-->
     <section class="top-body" style="background-image: url(frontend/images/wavy-abstract-shapes_1048-4986.jpg); background-repeat: no-repeat;  background-position: center center; background-size: cover; ">
@@ -263,11 +248,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </section>
     <!--================================free_trail services section end here=======================-->
 
-    <?php include 'includes/footer-services.php' ?>
+    <?php include 'includes/footer-services.php'?>
 
     <?php
-    include('./includes/footer_menu.php');
-    ?>
+include './includes/footer_menu.php';
+?>
 
     <script src="frontend/js/jquery-3.5.1.js"></script>
     <script src="frontend/js/bootstrap.bundle.min.js"></script>
@@ -339,18 +324,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     </script>
 
-    <?php if ($_SESSION['successMess']) : ?>
+    <?php if (isset($_SESSION['successMess'])): ?>
         <script>
             iziToast.success({
                 title: 'Success',
                 position: 'topRight',
                 message: '<?php echo $_SESSION['successMess']; ?>',
             });
-            <?php unset($_SESSION['successMess']); ?>
+            <?php unset($_SESSION['successMess']);?>
         </script>
-    <?php endif; ?>
+    <?php endif;?>
 
-    <?php if (isset($errorMessage)) : ?>
+    <?php if (isset($errorMessage)): ?>
         <script>
             iziToast.error({
                 title: 'Error',
@@ -358,7 +343,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 message: '<?php echo $errorMessage; ?>',
             });
         </script>
-    <?php endif; ?>
+    <?php endif;?>
 </body>
 
 </html>
